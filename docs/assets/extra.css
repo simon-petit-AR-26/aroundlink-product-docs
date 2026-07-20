@@ -1,0 +1,169 @@
+/* ==========================================================================
+   AroundLink — Direction artistique appliquée au thème Material
+   Tokens repris de la DA produit (Plus Jakarta Sans, marine #1a3055,
+   accent #2a52a0, rayons 6/8/12, ombres teintées marine).
+   ========================================================================== */
+
+:root {
+  /* --- DA tokens --- */
+  --al-brand:            #1a3055;
+  --al-brand-light:      #24406e;
+  --al-brand-dark:       #14214a;
+  --al-accent:           #2a52a0;
+  --al-accent-hover:     #213f7c;
+  --al-warm:             #e0653c;
+  --al-ink:              #16233d;   /* texte / titres (marine foncé) */
+  --al-ink-1:            #55617a;   /* texte atténué */
+  --al-bg:               #f5f7fa;   /* fond de page (teinte marine 4%) */
+  --al-surface:          #ffffff;
+  --al-surface-2:        #f1f4fa;
+  --al-border:           #dce1ea;
+  --al-primary-light-1:  #e9eef7;   /* fond des chips */
+  --al-primary-light-3:  #f8fafd;
+  --al-radius-sm:        6px;
+  --al-radius-md:        8px;
+  --al-radius-lg:        12px;
+  --al-pill:             999px;
+  --al-shadow-sm:        0 1px 3px rgb(20 33 61 / .08), 0 1px 2px rgb(20 33 61 / .05);
+  --al-shadow-md:        0 6px 16px -6px rgb(20 33 61 / .12);
+  --al-shadow-lg:        0 14px 34px -12px rgb(20 33 61 / .18);
+}
+
+/* ------- Palette Material : mode clair ------- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--al-brand);
+  --md-primary-fg-color--light: var(--al-brand-light);
+  --md-primary-fg-color--dark:  var(--al-brand-dark);
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+
+  --md-accent-fg-color:         var(--al-accent);
+  --md-accent-fg-color--transparent: #2a52a01a;
+
+  --md-typeset-a-color:         var(--al-accent);
+  --md-default-bg-color:        var(--al-bg);
+  --md-typeset-color:           var(--al-ink);
+  --md-footer-bg-color:         var(--al-brand);
+  --md-footer-bg-color--dark:   var(--al-brand-dark);
+}
+
+/* ------- Palette Material : mode sombre ------- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--al-brand);
+  --md-primary-fg-color--light: var(--al-brand-light);
+  --md-primary-fg-color--dark:  var(--al-brand-dark);
+  --md-accent-fg-color:         #6d90c9;
+  --md-typeset-a-color:         #8fb0e6;
+  --md-default-bg-color:        #0f141d;
+  --md-footer-bg-color:         #0c1017;
+}
+
+/* ------- Typographie (Plus Jakarta Sans) ------- */
+body, .md-typeset {
+  font-feature-settings: "kern", "liga";
+}
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-header__title {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  letter-spacing: -.004em;
+}
+.md-typeset h1 { font-weight: 800; color: var(--al-ink); }
+.md-typeset h2 { font-weight: 700; color: var(--al-ink); }
+.md-typeset h3 { font-weight: 700; }
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2 { color: inherit; }
+
+/* ------- En-tête ------- */
+.md-header { box-shadow: var(--al-shadow-sm); }
+.md-header__button.md-logo img { height: 1.9rem; }
+
+/* ------- Lien actif dans la navigation ------- */
+.md-nav__link--active,
+.md-nav__item .md-nav__link--active { color: var(--al-accent); font-weight: 600; }
+
+/* ------- Chip « Pour qui » ------- */
+.al-audience {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  padding: .14rem .55rem;
+  border-radius: var(--al-pill);
+  background: var(--al-primary-light-1);
+  color: var(--al-brand);
+  vertical-align: baseline;
+}
+[data-md-color-scheme="slate"] .al-audience {
+  background: rgb(255 255 255 / .10);
+  color: #cbd9f2;
+}
+
+/* ------- Blocs « Détails internes » + admonitions ------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: var(--al-radius-md);
+  border-left-width: .2rem;
+  box-shadow: var(--al-shadow-sm);
+  font-size: .72rem;
+}
+
+/* ------- Citation « Cas d'usage » ------- */
+.md-typeset blockquote {
+  border-left: .2rem solid var(--al-accent);
+  border-radius: 0 var(--al-radius-sm) var(--al-radius-sm) 0;
+  background: var(--al-primary-light-3);
+  color: var(--al-ink-1);
+}
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: rgb(255 255 255 / .04);
+  color: inherit;
+}
+
+/* ------- Code ------- */
+.md-typeset code { border-radius: var(--al-radius-sm); }
+.md-typeset pre > code { border-radius: var(--al-radius-md); }
+
+/* ------- Tables ------- */
+.md-typeset table:not([class]) {
+  border-radius: var(--al-radius-md);
+  box-shadow: var(--al-shadow-sm);
+  overflow: hidden;
+}
+.md-typeset table:not([class]) th {
+  background: var(--al-surface-2);
+  color: var(--al-ink);
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: rgb(255 255 255 / .05); color: inherit;
+}
+
+/* ------- Cartes de la page d'accueil (grid cards) ------- */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border: 1px solid var(--al-border);
+  border-radius: var(--al-radius-lg);
+  box-shadow: var(--al-shadow-sm);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--al-shadow-md);
+  border-color: var(--al-accent);
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+  border-color: rgb(255 255 255 / .10);
+}
+
+/* ------- Boutons/CTA générés par Material ------- */
+.md-typeset .md-button--primary {
+  background: var(--al-accent);
+  border-color: var(--al-accent);
+  border-radius: var(--al-radius-md);
+}
+.md-typeset .md-button--primary:hover {
+  background: var(--al-accent-hover);
+  border-color: var(--al-accent-hover);
+}

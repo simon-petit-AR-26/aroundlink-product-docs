@@ -1,0 +1,123 @@
+site_name: AroundLink — Documentation produit
+site_description: Le recensement des fonctionnalités d'AroundLink et de leur valeur métier.
+site_author: AroundLink
+copyright: © AroundLink
+
+# ⚠️  Publié via GitHub Pages. Ne jamais mettre de secrets ici ni dans les pages.
+# site_url est renseigné automatiquement par `mkdocs gh-deploy`.
+
+theme:
+  name: material
+  language: fr
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Plus Jakarta Sans
+    code: JetBrains Mono
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.tooltips
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Passer en thème sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en thème clair
+
+extra_css:
+  - assets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang:
+        - fr
+        - en
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: fr
+          default: true
+          name: Français
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            Accueil: Home
+            Espace établissement: Institution workspace
+            Espace étudiant: Student portal
+            Atlas — Annuaire mondial: Atlas — World directory
+            Réseau EWP: EWP network
+            Plateforme &amp; sécurité: Platform &amp; security
+            Annexes: Appendix
+            Tableaux de bord: Dashboards
+            Partenaires &amp; accords: Partners &amp; agreements
+            Distribution des places: Place distribution
+            Campagnes de mobilité: Mobility campaigns
+            Documents &amp; validation: Documents &amp; validation
+            Bourse de mobilité: Mobility grants
+            Communications: Communications
+            Mon établissement: My institution
+            Paramètres &amp; équipe: Settings &amp; team
+            Découverte &amp; candidature: Discover &amp; apply
+            Pendant &amp; après la mobilité: During &amp; after mobility
+            Glossaire: Glossary
+
+nav:
+  - Accueil: index.md
+  - Espace établissement:
+      - Tableaux de bord: etablissement/dashboards.md
+      - Partenaires &amp; accords: etablissement/partenaires.md
+      - Distribution des places: etablissement/accords.md
+      - Campagnes de mobilité: etablissement/campagnes.md
+      - Documents &amp; validation: etablissement/documents.md
+      - Bourse de mobilité: etablissement/bourse.md
+      - Communications: etablissement/communications.md
+      - Mon établissement: etablissement/mon-etablissement.md
+      - Paramètres &amp; équipe: etablissement/parametres.md
+  - Espace étudiant:
+      - Découverte &amp; candidature: etudiant/decouverte-candidature.md
+      - Pendant &amp; après la mobilité: etudiant/pendant-apres-mobilite.md
+  - Atlas — Annuaire mondial: atlas/atlas.md
+  - Réseau EWP: ewp/ewp.md
+  - Plateforme &amp; sécurité: plateforme/plateforme.md
+  - Annexes:
+      - Glossaire: annexes/glossaire.md

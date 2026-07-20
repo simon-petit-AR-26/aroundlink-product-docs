@@ -1,0 +1,5 @@
+A-CONFIRMER.md
+/site/
+/.venv/
+__pycache__/
+.DS_Store
