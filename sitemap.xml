@@ -113,11 +113,25 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/ewp/reference-api/"/>
     </url>
     <url>
+        <loc>Noneplateforme/architecture/</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplateforme/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plateforme/architecture/"/>
+    </url>
+    <url>
         <loc>Noneplateforme/plateforme/</loc>
         <lastmod>2026-07-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Noneplateforme/plateforme/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/plateforme/plateforme/"/>
+    </url>
+    <url>
+        <loc>Noneplateforme/securite/</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplateforme/securite/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plateforme/securite/"/>
     </url>
     <url>
         <loc>Noneen/</loc>
@@ -232,10 +246,24 @@
         <xhtml:link rel="alternate" hreflang="fr" href="Noneewp/reference-api/"/>
     </url>
     <url>
+        <loc>Noneen/plateforme/architecture/</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plateforme/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplateforme/architecture/"/>
+    </url>
+    <url>
         <loc>Noneen/plateforme/plateforme/</loc>
         <lastmod>2026-07-21</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/plateforme/plateforme/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Noneplateforme/plateforme/"/>
+    </url>
+    <url>
+        <loc>Noneen/plateforme/securite/</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/plateforme/securite/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneplateforme/securite/"/>
     </url>
 </urlset>
