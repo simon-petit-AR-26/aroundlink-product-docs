@@ -88,6 +88,8 @@ plugins:
             Réseau EWP: EWP network
             Vue d'ensemble: Overview
             Référence des API (DSI): API reference (IT)
+            Architecture &amp; technologies: Architecture &amp; technology
+            Sécurité &amp; données: Security &amp; data
             Plateforme &amp; sécurité: Platform &amp; security
             Annexes: Appendix
             Tableaux de bord: Dashboards
@@ -122,6 +124,9 @@ nav:
   - Réseau EWP:
       - Vue d'ensemble: ewp/ewp.md
       - Référence des API (DSI): ewp/reference-api.md
-  - Plateforme &amp; sécurité: plateforme/plateforme.md
+  - Plateforme &amp; sécurité:
+      - Vue d'ensemble: plateforme/plateforme.md
+      - Architecture &amp; technologies: plateforme/architecture.md
+      - Sécurité &amp; données: plateforme/securite.md
   - Annexes:
       - Glossaire: annexes/glossaire.md
