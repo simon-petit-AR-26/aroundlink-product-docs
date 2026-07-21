@@ -86,6 +86,8 @@ plugins:
             Espace étudiant: Student portal
             Atlas — Annuaire mondial: Atlas — World directory
             Réseau EWP: EWP network
+            Vue d'ensemble: Overview
+            Référence des API (DSI): API reference (IT)
             Plateforme &amp; sécurité: Platform &amp; security
             Annexes: Appendix
             Tableaux de bord: Dashboards
@@ -117,7 +119,9 @@ nav:
       - Découverte &amp; candidature: etudiant/decouverte-candidature.md
       - Pendant &amp; après la mobilité: etudiant/pendant-apres-mobilite.md
   - Atlas — Annuaire mondial: atlas/atlas.md
-  - Réseau EWP: ewp/ewp.md
+  - Réseau EWP:
+      - Vue d'ensemble: ewp/ewp.md
+      - Référence des API (DSI): ewp/reference-api.md
   - Plateforme &amp; sécurité: plateforme/plateforme.md
   - Annexes:
       - Glossaire: annexes/glossaire.md
