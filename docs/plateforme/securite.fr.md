@@ -64,9 +64,8 @@
 
 - AroundLink s'inscrit dans le cadre **Erasmus+ / EWP**, le standard européen
   d'interopérabilité de la mobilité.
-- L'application est **déployable sur une infrastructure au choix** ; la cible de
-  production vise un **hébergement en Europe**, cohérent avec le **RGPD** pour les
-  données personnelles des étudiants.
+- La **production est hébergée chez OVHcloud, en Europe**, cohérent avec le **RGPD**
+  pour les données personnelles des étudiants.
 
 !!! note
     Cette page est un aperçu. Pour un questionnaire de sécurité, un audit ou des

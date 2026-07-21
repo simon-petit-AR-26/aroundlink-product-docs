@@ -59,8 +59,8 @@
 
 - AroundLink operates within the **Erasmus+ / EWP** framework, the European mobility
   interoperability standard.
-- The application is **deployable on any infrastructure**; the production target aims
-  for **hosting in Europe**, consistent with **GDPR** for students' personal data.
+- **Production is hosted on OVHcloud, in Europe**, consistent with **GDPR** for
+  students' personal data.
 
 !!! note
     This page is an overview. For a security questionnaire, an audit or contractual

@@ -67,8 +67,8 @@ Stimulus**, avec :
   Symfony reste chargé entre les requêtes, pour de meilleures performances.
 - Image **Docker** multi-étapes (build reproductible), démarrage qui attend la base
   puis applique les migrations.
-- Déployable sur une infrastructure conteneurisée au choix (l'instance de démo
-  tourne sur Railway ; la cible de production vise un hébergement en Europe).
+- Déployable sur une infrastructure conteneurisée ; la **production est hébergée
+  chez OVHcloud (Europe)**.
 - Fonctionne **derrière un proxy HTTPS** (proxies de confiance configurés).
 
 ## Traitements asynchrones
