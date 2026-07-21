@@ -105,7 +105,9 @@ universities on the [EWP](../ewp/ewp.md) network.
 **How it works.** Each institution has a regenerable API key (managed in
 [Settings](../etablissement/parametres.md)) for its integrations, plus dedicated
 authentication for the EWP network. These machine accesses are deliberately distinct
-from browser sign-in.
+from browser sign-in. The REST API has interactive documentation (resources, schemas,
+operations) — see the [API documentation (demo)](https://demo.aroundlink.com/api/docs)
+and, for the EWP network, the [EWP API reference](../ewp/reference-api.md).
 
 ??? note "Internal details (AroundLink team)"
     Stateless `/api/*` surface (JWT / API key) separate from the app's internal

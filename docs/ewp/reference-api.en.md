@@ -115,3 +115,32 @@ are signed with our credentials.
     1. Add the institution (its HEI ID) on the partner side. 2. Read the
     `manifest.xml` to discover services and keys. 3. Validate the link with a
     **signed** `echo`. 4. Move on to the real exchanges (IIA, OLA, ToR, nominations).
+
+## External references
+
+### AroundLink REST API
+
+Beyond EWP, AroundLink exposes its own **REST API** (API Platform / Hydra) for its
+business resources (agreements, students, learning agreements, transcripts…). Its
+**interactive** documentation — contract, resources and schemas, always up to date —
+is generated automatically:
+
+- :material-api: [AroundLink API documentation (demo instance)](https://demo.aroundlink.com/api/docs)
+
+### Official EWP specifications
+
+The EWP network's general documentation and specifications are **public** and
+maintained by the consortium — useful for an IT team that wants the schema detail:
+
+- :octicons-book-24: [EWP Developers Guide](https://developers.erasmuswithoutpaper.eu/)
+- :octicons-mark-github-16: [GitHub organisation — all specifications](https://github.com/erasmus-without-paper)
+- :octicons-shield-24: [Architecture & security](https://github.com/erasmus-without-paper/ewp-specs-architecture)
+- :octicons-git-branch-24: [The mobility process explained](https://github.com/erasmus-without-paper/ewp-specs-mobility-flowcharts)
+- Each API's specification lives in an `ewp-specs-api-<name>` repository, e.g.
+  [IIAs](https://github.com/erasmus-without-paper/ewp-specs-api-iias) ·
+  [Institutions](https://github.com/erasmus-without-paper/ewp-specs-api-institutions) ·
+  [Outgoing Mobilities](https://github.com/erasmus-without-paper/ewp-specs-api-omobilities)
+
+!!! note
+    The API versions listed above match AroundLink's current implementation; if in
+    doubt about a schema, **the official specifications prevail**.

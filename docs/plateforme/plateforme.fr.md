@@ -111,7 +111,10 @@ d'authentifier les échanges avec les universités partenaires du réseau
 **Comment ça marche.** Chaque établissement dispose d'une clé API régénérable
 (gérée dans [Paramètres](../etablissement/parametres.md)) pour ses intégrations, et
 d'une authentification dédiée pour le réseau EWP. Ces accès machine sont
-volontairement distincts de la connexion via le navigateur.
+volontairement distincts de la connexion via le navigateur. L'API REST est
+documentée de façon interactive (ressources, schémas, opérations) — voir la
+[documentation de l'API (démo)](https://demo.aroundlink.com/api/docs) et, pour le
+réseau EWP, la [référence des API EWP](../ewp/reference-api.md).
 
 ??? note "Détails internes (équipe AroundLink)"
     Surface `/api/*` sans état (JWT / clé API) séparée des API internes de

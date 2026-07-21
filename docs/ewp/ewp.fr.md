@@ -9,6 +9,11 @@ logiciel avec vos universités partenaires. Concrètement, un accord signé chez
 apparaît chez le partenaire, une note saisie ici part vers l'université d'origine de
 l'étudiant, et chaque changement notifie l'autre côté automatiquement.
 
+!!! info "Vous êtes DSI / intégrateur ?"
+    Cette page décrit la **valeur** de chaque brique. Pour la liste des endpoints,
+    méthodes, versions d'API et les liens vers les spécifications officielles EWP,
+    voir la [Référence des API EWP](reference-api.md).
+
 ## Découverte / Manifest
 
 **À quoi ça sert.** Le manifest est la carte de visite numérique de votre

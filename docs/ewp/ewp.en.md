@@ -9,6 +9,11 @@ Concretely, an agreement signed on your side appears at the partner's, a grade
 entered here travels to the student's home university, and every change notifies the
 other side automatically.
 
+!!! info "Are you on the IT / integration team?"
+    This page describes the **value** of each building block. For the list of
+    endpoints, methods, API versions and links to the official EWP specifications,
+    see the [EWP API reference](reference-api.md).
+
 ## Discovery / Manifest
 
 **What it's for.** The manifest is your institution's digital business card on the
