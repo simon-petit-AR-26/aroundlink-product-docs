@@ -66,8 +66,8 @@ Stimulus**, with:
   kernel stays loaded between requests for better performance.
 - Multi-stage **Docker** image (reproducible build), boot that waits for the database
   then applies migrations.
-- Deployable on containerised infrastructure; **production is hosted on OVHcloud
-  (Europe)**.
+- Deployable on containerised infrastructure; **production is hosted in France, on
+  OVHcloud**.
 - Runs **behind an HTTPS proxy** (trusted proxies configured).
 
 ## Asynchronous processing

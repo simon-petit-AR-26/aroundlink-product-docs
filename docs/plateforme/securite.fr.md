@@ -65,8 +65,9 @@
 
 - AroundLink s'inscrit dans le cadre **Erasmus+ / EWP**, le standard européen
   d'interopérabilité de la mobilité.
-- La **production est hébergée chez OVHcloud, en Europe**, cohérent avec le **RGPD**
-  pour les données personnelles des étudiants.
+- La **production est hébergée en France, chez OVHcloud** — hébergeur français,
+  soumis au droit français et européen. Les données personnelles des étudiants ne
+  quittent pas l'Union européenne, conformément au **RGPD**.
 
 !!! note
     Cette page est un aperçu. Pour un questionnaire de sécurité, un audit ou des

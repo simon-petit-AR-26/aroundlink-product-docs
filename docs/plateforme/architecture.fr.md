@@ -68,7 +68,7 @@ Stimulus**, avec :
 - Image **Docker** multi-étapes (build reproductible), démarrage qui attend la base
   puis applique les migrations.
 - Déployable sur une infrastructure conteneurisée ; la **production est hébergée
-  chez OVHcloud (Europe)**.
+  en France, chez OVHcloud**.
 - Fonctionne **derrière un proxy HTTPS** (proxies de confiance configurés).
 
 ## Traitements asynchrones

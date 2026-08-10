@@ -60,7 +60,9 @@
 
 - AroundLink operates within the **Erasmus+ / EWP** framework, the European mobility
   interoperability standard.
-- **Production is hosted on OVHcloud, in Europe**, consistent with **GDPR** for
+- **Production is hosted in France, on OVHcloud** — a French provider, subject to
+  French and European law. Students' personal data never leaves the European
+  Union, in line with **GDPR** for
   students' personal data.
 
 !!! note
