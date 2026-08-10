@@ -127,7 +127,9 @@ nav:
       - Référence des API (DSI): ewp/reference-api.md
   - Plateforme &amp; sécurité:
       - Vue d'ensemble: plateforme/plateforme.md
-      - Authentification unique (DSI): plateforme/sso.md
+      - Authentification unique (DSI):
+          - Vue d'ensemble: plateforme/sso.md
+          - Microsoft Entra ID: plateforme/sso-microsoft.md
       - Architecture &amp; technologies: plateforme/architecture.md
       - Sécurité &amp; données: plateforme/securite.md
   - Annexes:
