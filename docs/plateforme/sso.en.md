@@ -18,17 +18,18 @@ transition.
 | Provider | Status | Guide |
 | --- | --- | --- |
 | **Microsoft Entra ID** (Azure AD) | ✅ Available | [Onboarding guide](sso-microsoft.md) |
-| **Shibboleth / SAML 2.0** (RENATER, eduGAIN, SWITCHaai…) | ⛔ Not available | — |
-| **Google Workspace** | ⛔ Not available | — |
+| **Shibboleth / SAML 2.0** (RENATER, eduGAIN, SWITCHaai…) | 🗺️ On the roadmap | — |
+| **Google Workspace** | 🗺️ On the roadmap | — |
 
-!!! warning "What is not supported today"
-    Only **Microsoft Entra ID** is available at present. If your institution
-    authenticates through academic identity federation (Shibboleth, SAML,
-    RENATER, eduGAIN) or through Google Workspace, those routes are **not** open.
-    Do tell us: these requests shape our priorities.
+!!! note "Roadmap"
+    **Microsoft Entra ID** is the provider you can connect today. Academic
+    identity federation (Shibboleth / SAML, RENATER, eduGAIN) and Google
+    Workspace are on our roadmap, with no announced date at this stage.
 
-    In the meantime, password sign-in remains available to every institution,
-    with single-use reset links — see [Security &amp; data](securite.md).
+    If your institution authenticates through one of those, do tell us: what
+    institutions ask for decides the order in which we open them. In the
+    meantime, password sign-in remains available, with single-use reset links —
+    see [Security &amp; data](securite.md).
 
 ## What holds for every provider
 

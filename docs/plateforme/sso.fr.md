@@ -19,17 +19,19 @@ parallèle le temps de la transition.
 | Fournisseur | État | Guide |
 | --- | --- | --- |
 | **Microsoft Entra ID** (Azure AD) | ✅ Disponible | [Guide de raccordement](sso-microsoft.md) |
-| **Shibboleth / SAML 2.0** (RENATER, eduGAIN, SWITCHaai…) | ⛔ Non disponible | — |
-| **Google Workspace** | ⛔ Non disponible | — |
+| **Shibboleth / SAML 2.0** (RENATER, eduGAIN, SWITCHaai…) | 🗺️ Feuille de route | — |
+| **Google Workspace** | 🗺️ Feuille de route | — |
 
-!!! warning "Ce qui n'est pas pris en charge aujourd'hui"
-    Seul **Microsoft Entra ID** est disponible à ce jour. Si votre établissement
-    s'authentifie par la fédération d'identité universitaire (Shibboleth, SAML,
-    RENATER, eduGAIN) ou par Google Workspace, ces voies ne sont **pas**
-    ouvertes. Dites-le-nous : ces demandes orientent nos priorités.
+!!! note "Feuille de route"
+    **Microsoft Entra ID** est le fournisseur raccordable aujourd'hui. La
+    fédération d'identité universitaire (Shibboleth / SAML, RENATER, eduGAIN) et
+    Google Workspace figurent sur notre feuille de route, sans date annoncée à ce
+    stade.
 
-    En attendant, la connexion par mot de passe reste disponible pour tous les
-    établissements, avec réinitialisation par lien à usage unique — voir
+    Si votre établissement s'authentifie par l'une de ces voies, dites-le-nous :
+    les demandes des établissements décident de l'ordre dans lequel nous les
+    ouvrons. En attendant, la connexion par mot de passe reste disponible, avec
+    réinitialisation par lien à usage unique — voir
     [Sécurité &amp; données](securite.md).
 
 ## Ce qui vaut pour tous les fournisseurs
