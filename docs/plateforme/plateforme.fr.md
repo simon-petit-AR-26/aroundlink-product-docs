@@ -93,6 +93,11 @@ réinitialisation classique.
 > son e-mail professionnel, et est automatiquement dirigé vers l'authentification
 > Microsoft.
 
+!!! info "Vous êtes DSI ?"
+    Protocole, permissions demandées, procédure de raccordement pas à pas,
+    contrôles de sécurité et limites connues :
+    **[Authentification unique Microsoft (DSI)](sso.md)**.
+
 ??? note "Détails internes (équipe AroundLink)"
     Configuration SSO par établissement (identifiant de tenant, activation,
     imposition, domaines e-mail autorisés). Flux Microsoft/Azure OpenID Connect.

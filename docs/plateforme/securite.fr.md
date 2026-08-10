@@ -11,7 +11,8 @@
 - **SSO Microsoft / Azure (OpenID Connect)** — les établissements peuvent laisser
   leurs utilisateurs se connecter avec leur compte institutionnel existant ;
   l'authentification unique peut être **imposée** par établissement, avec des
-  **domaines e-mail autorisés**. Voir la [Vue d'ensemble](plateforme.md).
+  **domaines e-mail autorisés**. Procédure de raccordement, permissions demandées
+  et contrôles effectués : [Authentification unique Microsoft (DSI)](sso.md).
 - **Connexion par mot de passe** (lorsque le SSO n'est pas imposé) — mots de passe
   **hachés** (jamais stockés en clair), **contrôle de robustesse** à la création, et
   **réinitialisation** par lien à usage unique et durée limitée.

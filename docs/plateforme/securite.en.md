@@ -10,7 +10,8 @@
 
 - **Microsoft / Azure SSO (OpenID Connect)** — institutions can let their users sign
   in with their existing institutional account; single sign-on can be **enforced**
-  per institution, with **allowed email domains**. See the [Overview](plateforme.md).
+  per institution, with **allowed email domains**. Onboarding procedure, requested
+  permissions and checks performed: [Microsoft single sign-on (IT)](sso.md).
 - **Password sign-in** (when SSO is not enforced) — passwords are **hashed** (never
   stored in clear text), with a **strength check** at creation and **reset** via a
   single-use, time-limited link.

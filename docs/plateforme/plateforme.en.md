@@ -88,6 +88,10 @@ also offers standard password reset.
 > A coordinator at an Azure university clicks "Sign in", enters their work email, and
 > is automatically routed to Microsoft authentication.
 
+!!! info "Are you an IT department?"
+    Protocol, requested permissions, step-by-step onboarding, security checks and
+    known limitations: **[Microsoft single sign-on (IT)](sso.md)**.
+
 ??? note "Internal details (AroundLink team)"
     Per-institution SSO configuration (tenant id, enable, enforce, allowed email
     domains). Microsoft/Azure OpenID Connect flow. Configuration and testing happen
