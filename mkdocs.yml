@@ -105,6 +105,14 @@ plugins:
             Découverte &amp; candidature: Discover &amp; apply
             Pendant &amp; après la mobilité: During &amp; after mobility
             Glossaire: Glossary
+  # Shows when each page was last updated, from the git history.
+  # Must stay AFTER the i18n plugin, which provides the `locale` variable.
+  # Needs the full git history at build time — never build from a shallow clone.
+  - git-revision-date-localized:
+      type: date
+      timezone: Europe/Paris
+      enable_creation_date: false
+      fallback_to_build_date: true
 
 nav:
   - Accueil: index.md
