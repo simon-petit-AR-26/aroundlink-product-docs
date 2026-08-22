@@ -2001,24 +2001,34 @@ page étudiante.</p>
 <p><code>linksUniversity()</code>. Champs de liens portés par l'entité <code>University</code>.</p>
 </details>
 <h2 id="moderation-des-avis-etudiants">Modération des avis étudiants<a class="headerlink" href="#moderation-des-avis-etudiants" title="Permanent link">&para;</a></h2>
-<p><strong>À quoi ça sert.</strong> Examiner, accepter (et publier) ou refuser les avis que les
-étudiants laissent sur un partenaire, en maîtrisant ce que les futurs étudiants
-voient tout en gardant une trace de chaque décision.</p>
+<p><strong>À quoi ça sert.</strong> Examiner, accepter (et publier) ou refuser les avis que vos
+étudiants laissent sur leur établissement d'accueil, en maîtrisant ce que les
+futurs étudiants voient tout en gardant une trace de chaque décision.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">gestionnaire RI / coordinateur</span></p>
 <p><strong>Comment ça marche.</strong> Une vue par statut (en attente / accepté / refusé) avec
 compteurs. L'acceptation peut publier l'avis (visible des étudiants) ou le garder
 masqué ; le refus le masque et consigne un motif. Chaque décision enregistre une
-entrée d'historique avec l'auteur.</p>
+entrée d'historique avec l'auteur. Les avis se consultent à deux endroits : sur la
+fiche du partenaire concerné, et dans un onglet dédié de la fiche de l'étudiant qui
+les a rédigés.</p>
+<p><strong>Ce que vous voyez.</strong> Uniquement les avis rédigés par <strong>vos</strong> étudiants. Un avis
+écrit par l'étudiant d'un autre établissement, même sur un partenaire que vous
+suivez également, ne vous est jamais présenté — quel que soit son statut.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
 <p>Un coordinateur lit un avis en attente, publie les avis positifs et refuse un
 avis inapproprié en indiquant un motif.</p>
 </blockquote>
+<div class="admonition info">
+<p class="admonition-title">Réservé à l'offre payante</p>
+<p>La consultation et la modération des avis font partie de l'offre payante. Un
+établissement en accès gratuit n'y a pas accès.</p>
+</div>
 <details class="note">
 <summary>Détails internes (équipe AroundLink)</summary>
 <p><code>feedbackUniversity()</code> + actions accepter / refuser. Statuts en attente /
 accepté / refusé, indicateur de publication, historique de modération. La
-modération n'est possible que sur un partenaire que vous suivez.</p>
+règle de propriété est le compte de l'étudiant <strong>auteur</strong>, et lui seul.</p>
 </details>
 <h2 id="apercu-cote-etudiant">Aperçu côté étudiant<a class="headerlink" href="#apercu-cote-etudiant" title="Permanent link">&para;</a></h2>
 <p><strong>À quoi ça sert.</strong> Montrer au bureau exactement ce qu'un étudiant voit sur la page
@@ -2101,7 +2111,7 @@ confirmation.</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="20 juillet 2026 21:54:35 CEST">20 juillet 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="22 août 2026 11:35:18 CEST">22 août 2026</span>
   </span>
 
     
