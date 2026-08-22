@@ -122,14 +122,15 @@ activé la marketplace.
 **Pour qui.** <span class="al-audience">étudiant</span>
 
 **Comment ça marche.** L'accès est conditionné à l'activation de la marketplace
-par l'établissement. Les offres sont présentées à titre informatif, avec des liens
-d'affiliation (et, selon les cas, des codes promo) vers le prestataire. Aucun
-paiement n'a lieu dans AroundLink : pour souscrire, l'étudiant est redirigé vers le
-site du partenaire.
+par l'établissement. Les offres sont présentées à titre informatif, classées par
+catégorie, avec un lien vers le prestataire et, selon les cas, un code promo et
+l'avantage associé. L'étudiant peut mettre une offre en favori pour la retrouver
+plus tard. Aucun paiement n'a lieu dans AroundLink : pour souscrire, l'étudiant est
+redirigé vers le site du partenaire.
 
 **Cas d'usage.**
-> Un étudiant repère une offre d'assurance avec un code promo, clique et finalise sa
-> souscription directement sur le site du prestataire.
+> Un étudiant met deux offres d'assurance en favori, compare, puis finalise sa
+> souscription directement sur le site du prestataire avec le code promo indiqué.
 
 ??? note "Détails internes (équipe AroundLink)"
     Affichage + affiliation (liens et codes promo vers le prestataire) ; aucun

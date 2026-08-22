@@ -314,25 +314,35 @@ cas d'erreur.
 
 ## Modération des avis étudiants
 
-**À quoi ça sert.** Examiner, accepter (et publier) ou refuser les avis que les
-étudiants laissent sur un partenaire, en maîtrisant ce que les futurs étudiants
-voient tout en gardant une trace de chaque décision.
+**À quoi ça sert.** Examiner, accepter (et publier) ou refuser les avis que vos
+étudiants laissent sur leur établissement d'accueil, en maîtrisant ce que les
+futurs étudiants voient tout en gardant une trace de chaque décision.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
 **Comment ça marche.** Une vue par statut (en attente / accepté / refusé) avec
 compteurs. L'acceptation peut publier l'avis (visible des étudiants) ou le garder
 masqué ; le refus le masque et consigne un motif. Chaque décision enregistre une
-entrée d'historique avec l'auteur.
+entrée d'historique avec l'auteur. Les avis se consultent à deux endroits : sur la
+fiche du partenaire concerné, et dans un onglet dédié de la fiche de l'étudiant qui
+les a rédigés.
+
+**Ce que vous voyez.** Uniquement les avis rédigés par **vos** étudiants. Un avis
+écrit par l'étudiant d'un autre établissement, même sur un partenaire que vous
+suivez également, ne vous est jamais présenté — quel que soit son statut.
 
 **Cas d'usage.**
 > Un coordinateur lit un avis en attente, publie les avis positifs et refuse un
 > avis inapproprié en indiquant un motif.
 
+!!! info "Réservé à l'offre payante"
+    La consultation et la modération des avis font partie de l'offre payante. Un
+    établissement en accès gratuit n'y a pas accès.
+
 ??? note "Détails internes (équipe AroundLink)"
     `feedbackUniversity()` + actions accepter / refuser. Statuts en attente /
     accepté / refusé, indicateur de publication, historique de modération. La
-    modération n'est possible que sur un partenaire que vous suivez.
+    règle de propriété est le compte de l'étudiant **auteur**, et lui seul.
 
 ## Aperçu côté étudiant
 

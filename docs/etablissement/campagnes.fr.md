@@ -83,9 +83,16 @@ processus traçable et exploitable.
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
 **Comment ça marche.** La page de suivi agrège les participants, leurs vœux par rang, les
-propositions et affectations, avec des graphiques et un compteur de dossiers complets. Des
-pages dédiées présentent les résultats et les acceptés, et deux exports produisent la liste
-de tous les vœux et celle des affectations finales.
+propositions et affectations, avec des graphiques et un compteur de dossiers complets. Les
+vœux sont également regroupés par **zone géographique** — Europe, Amérique du Nord, Amérique
+latine, Asie-Océanie, Afrique, Moyen-Orient — pour lire d'un coup d'œil où se porte la
+demande. Des pages dédiées présentent les résultats et les acceptés, et deux exports
+produisent la liste de tous les vœux et celle des affectations finales.
+
+**Fiabilité des compteurs.** Les décomptes de destinations et d'établissements ne retiennent
+que ce qui est réellement ouvert aux étudiants : les partenaires masqués ou archivés en sont
+exclus, tout comme les destinations sans place disponible. Les chiffres affichés
+correspondent donc à ce que l'étudiant verra.
 
 **Cas d'usage.**
 > À mi-parcours, le coordinateur constate que 60 % des étudiants ont soumis leurs vœux et

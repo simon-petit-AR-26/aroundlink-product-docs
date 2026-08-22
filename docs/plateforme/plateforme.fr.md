@@ -160,9 +160,11 @@ Un espace de valeur ajoutée, affiché uniquement là où il est activé.
 **Comment ça marche.** Le catalogue de prestataires et d'offres est tenu à jour par
 AroundLink ; un interrupteur par établissement décide si la marketplace apparaît
 aux étudiants de cet établissement. Quand elle est active, les étudiants voient les
-offres dans leur [espace Services](../etudiant/pendant-apres-mobilite.md). Il s'agit
-d'affichage + affiliation (liens et codes promo vers le prestataire) : aucun paiement
-ne transite par AroundLink, l'étudiant souscrit sur le site du partenaire.
+offres dans leur [espace Services](../etudiant/pendant-apres-mobilite.md), classées
+par catégorie et qu'ils peuvent mettre en favori. Un établissement peut écarter
+individuellement une offre qu'il ne souhaite pas voir proposée à ses étudiants. Il
+s'agit d'affichage + affiliation (liens et codes promo vers le prestataire) : aucun
+paiement ne transite par AroundLink, l'étudiant souscrit sur le site du partenaire.
 
 **Cas d'usage.**
 > AroundLink ajoute une offre « Assurance santé étudiante — dès 9 €/mois » ; elle

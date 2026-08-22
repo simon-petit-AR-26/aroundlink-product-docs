@@ -123,11 +123,12 @@ aider les futurs étudiants. Il suit ses propres avis au fil de la modération
 
 **Pour qui.** <span class="al-audience">étudiant</span>
 
-**Comment ça marche.** L'espace identifie automatiquement l'établissement
-d'accueil de l'étudiant ; sans affectation, le formulaire reste masqué derrière
-un état vide. Au dépôt, un même thème ne peut être noté qu'une fois. L'avis part
-en modération avant toute publication, et des onglets récapitulent les avis de
-l'étudiant par statut.
+**Comment ça marche.** L'étudiant ne note que l'établissement de **sa** mobilité :
+l'espace l'identifie automatiquement à partir de son affectation, et sans
+affectation validée le formulaire reste masqué derrière un état vide. Le thème se
+choisit dans une liste détaillée — logement, cours, vie sur le campus, démarches
+administratives… L'avis part en modération avant toute publication, et des onglets
+récapitulent les avis de l'étudiant par statut.
 
 **Cas d'usage.**
 > Un étudiant de retour rédige un avis « Logement » avec deux photos de la

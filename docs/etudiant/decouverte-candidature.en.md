@@ -115,11 +115,12 @@ Refused).
 
 **Who it's for.** <span class="al-audience">student</span>
 
-**How it works.** The portal automatically identifies the student's host
-university; without an affectation, the form stays hidden behind an empty state.
-On submission, the same topic can only be rated once. The review goes to
-moderation before any publication, and tabs summarise the student's reviews by
-status.
+**How it works.** Students only review the institution of **their own** mobility:
+the portal identifies it automatically from their placement, and without a
+confirmed placement the form stays hidden behind an empty state. The topic is
+picked from a detailed list — housing, courses, campus life, administrative
+formalities… The review goes to moderation before any publication, and tabs
+summarise the student's reviews by status.
 
 **Use case.**
 > A returning student writes a "Housing" review with two photos of the

@@ -149,9 +149,11 @@ space, shown only where it is enabled.
 **How it works.** The catalog of providers and offers is maintained by AroundLink; a
 per-institution switch decides whether the marketplace appears to that institution's
 students. When on, students see the offers in their
-[Services space](../etudiant/pendant-apres-mobilite.md). This is display + affiliation
-(links and promo codes to the provider): no payment goes through AroundLink — the student
-subscribes on the partner's site.
+[Services space](../etudiant/pendant-apres-mobilite.md), sorted by category and saveable
+to their favourites. An institution can individually set aside an offer it does not want
+shown to its students. This is display + affiliation (links and promo codes to the
+provider): no payment goes through AroundLink — the student subscribes on the partner's
+site.
 
 **Use case.**
 > AroundLink adds a "Student health insurance — from €9/month" offer; it appears to

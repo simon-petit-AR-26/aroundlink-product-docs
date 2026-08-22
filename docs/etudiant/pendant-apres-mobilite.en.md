@@ -117,13 +117,16 @@ marketplace.
 **Who it's for.** <span class="al-audience">student</span>
 
 **How it works.** Access is conditional on the institution enabling the
-marketplace. Offers are shown for information, with affiliate links (and, where
-applicable, promo codes) to the provider. No payment happens in AroundLink: to
-subscribe, the student is redirected to the partner's website.
+marketplace. Offers are shown for information, sorted by category, with a link to
+the provider and, where applicable, a promo code and the benefit it unlocks.
+Students can save an offer to their favourites to find it again later. No payment
+happens in AroundLink: to subscribe, the student is redirected to the partner's
+website.
 
 **Use case.**
-> A student spots an insurance offer with a promo code, clicks, and completes the
-> subscription directly on the provider's site.
+> A student saves two insurance offers to their favourites, compares them, then
+> completes the subscription directly on the provider's site with the promo code
+> shown.
 
 ??? note "Internal details (AroundLink team)"
     Display + affiliation (links and promo codes to the provider); no payment goes

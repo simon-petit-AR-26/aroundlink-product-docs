@@ -294,25 +294,34 @@ Facebook, with a save confirmation and a clear flag when something is wrong.
 
 ## Student-feedback moderation
 
-**What it's for.** Review, accept (and publish) or refuse the feedback students
-leave about a partner, controlling what future students see while keeping a record
-of each decision.
+**What it's for.** Review, accept (and publish) or refuse the feedback your students
+leave about their host institution, controlling what future students see while
+keeping a record of each decision.
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
 **How it works.** A view by status (pending / accepted / refused) with counters.
 Accepting can publish the review (visible to students) or keep it hidden; refusing
-hides it and records a reason. Each decision writes a history entry with the
-author.
+hides it and records a reason. Each decision writes a history entry with the author.
+Reviews appear in two places: on the partner's page, and in a dedicated tab on the
+profile of the student who wrote them.
+
+**What you see.** Only the reviews written by **your** students. A review written by
+another institution's student — even about a partner you also track — is never shown
+to you, whatever its status.
 
 **Use case.**
 > A coordinator reads a pending review, publishes the positive ones and refuses an
 > inappropriate one with a reason.
 
+!!! info "Paid plan only"
+    Reading and moderating reviews are part of the paid plan. An institution on free
+    access does not have this screen.
+
 ??? note "Internal details (AroundLink team)"
     `feedbackUniversity()` + accept / refuse actions. Statuses pending / accepted /
-    refused, publication flag, moderation history. Moderation is only possible on a
-    partner you track.
+    refused, publication flag, moderation history. Ownership is the **author**
+    student's account, and nothing else.
 
 ## Preview as student
 

@@ -78,9 +78,15 @@ exports for downstream processing. A campaign becomes a traceable, usable proces
 **Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
 **How it works.** The tracking page aggregates participants, their wishes by rank, proposals
-and placements, with charts and a completed-dossier counter. Dedicated pages present results
+and placements, with charts and a completed-dossier counter. Wishes are also grouped by
+**geographic zone** — Europe, North America, Latin America, Asia-Oceania, Africa, Middle
+East — so you can read at a glance where demand is going. Dedicated pages present results
 and accepted students, and two exports produce the all-wishes list and the final-assignments
 list.
+
+**Counter accuracy.** Destination and institution counts only include what is genuinely open
+to students: hidden or archived partners are excluded, as are destinations with no place
+available. The figures shown match what the student will see.
 
 **Use case.**
 > Mid-round, the coordinator sees 60% of students have submitted their wishes and 12 are
