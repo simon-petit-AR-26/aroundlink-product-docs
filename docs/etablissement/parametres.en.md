@@ -89,6 +89,53 @@ only with the people configuring your integrations.
     `ApiKeyController`. The key is created on first visit and renewable in one
     click. Attached to the user's account.
 
+## Protected deletions
+
+**What it's for.** Stop you from deleting a setting still in use somewhere, and
+tell you exactly where it is used.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** Your campuses, periods, study levels, document types and tags
+each show a usage counter. As long as it is not at zero, deletion is refused and
+the detail tells you what depends on it — an agreement, a campaign, a student
+file.
+
+You remain free to rename an item at any time: the change carries everywhere it
+appears, breaking nothing.
+
+**Use case.**
+> The coordinator wants to delete a period that is no longer needed; the counter
+> shows it is still used by three agreements, which they adjust before retrying.
+
+## Tags
+
+**What it's for.** Create your own labels to organise your students and partner
+institutions by your own criteria — a cohort, a programme, a group of
+destinations, a point to watch.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** Each tag carries a name and a colour, and applies to one of
+three scopes:
+
+- **General** — offered on both students and partners
+- **Student** — offered on students only
+- **Institution** — offered on partners only, and usable as a campaign filter
+
+Once your tags exist, you apply them from the student or partner lists. Select
+several rows to add or remove tags across the whole selection at once.
+
+**Use case.**
+> The coordinator creates a "Double degree exchange" tag scoped to Institution,
+> applies it to the twelve partners concerned, then uses it to narrow the
+> destinations of a campaign.
+
+!!! warning "Scope and campaign filters"
+    A tag whose scope changes after it has been used in a campaign stops being
+    taken into account there. Check your running campaigns before changing the
+    scope of an existing tag.
+
 ## Saved views
 
 **What it's for.** Save a table configuration (chosen columns, widths, filters,

@@ -16,8 +16,11 @@ audiences. No more manual mail-merge: you target, you send, and you keep a recor
 
 **How it works.** The composer lets you choose the audiences (outgoing students,
 incoming students, partners) and optional filters (country, campus, student access
-status), with a live recipient counter before sending. You select the channels you
-want, you can save a draft, and a sent message is locked. On send, a receipt shows
+status), with a live recipient counter before sending. You can also start from an
+**explicit selection**: tick the students you want in your list, or the contacts
+you want in your directory, and send to those alone — useful when the group you
+have in mind matches no filter. You select the channels you want, you can save a
+draft, and a sent message is locked. On send, a receipt shows
 the number of recipients, emails sent and pinned messages. A pinned message can
 later be removed from the dashboard.
 

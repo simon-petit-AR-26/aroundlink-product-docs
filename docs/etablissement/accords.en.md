@@ -166,6 +166,24 @@ before applying. An import with preview is available.
     `publish()` action (no submit/approve). Places in `PayingMobilityPeriodPlace`. Workflow
     `PayingMobilityWorkflow`. Module reserved for the paying plan.
 
+## Proof of an agreement's conditions
+
+**What it's for.** Keep, on the agreement itself, the documents evidencing its
+conditions: the signed convention, an amendment, an exchange of letters, a fee
+schedule.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** Each agreement — bilateral, double degree or paying mobility —
+has an upload area on its conditions screen. Documents stay attached to the
+agreement, separate from student files, and remain readable even once the
+agreement expires.
+
+**Use case.**
+> The coordinator uploads the signed convention to the double-degree agreement;
+> two years later their successor finds it without digging through the office
+> archives.
+
 ## Agreement CSV imports
 
 **What it's for.** Lets you load agreements in bulk from a spreadsheet rather than one by

@@ -149,6 +149,25 @@ direct pour un client gratuit. Cette offre est indépendante des frais de scolar
     `MobilityPlanEnum` (payant/gratuit), appliqué côté serveur par un contrôle
     d'accès dédié. Modèle réutilisable pour tout futur module premium.
 
+## Aide contextuelle
+
+**À quoi ça sert.** Donner à chaque écran son mode d'emploi, sans quitter la page
+ni chercher dans une documentation séparée.
+
+**Pour qui.** <span class="al-audience">tous les utilisateurs connectés</span>
+
+**Comment ça marche.** Un bouton « ? » est présent en haut à droite de chaque
+page. Il ouvre un panneau qui explique ce que vous pouvez faire ici, en français
+et en anglais, parfois accompagné d'une courte vidéo. Le panneau se ferme dès que
+vous changez de page : ce que vous lisez correspond toujours à l'écran devant vous.
+
+Chaque texte se termine par un lien de prise de rendez-vous : si l'explication ne
+suffit pas, vous réservez un créneau de quinze minutes avec l'équipe AroundLink.
+
+**Cas d'usage.**
+> Un nouveau membre de l'équipe ouvre l'écran de distribution des places, clique
+> sur « ? », comprend la logique de la grille, et saisit sans avoir à demander.
+
 ## Marketplace de services
 
 **À quoi ça sert.** Un catalogue de services tiers (assurance, logement, banque…)

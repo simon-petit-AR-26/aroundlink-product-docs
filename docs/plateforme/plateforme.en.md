@@ -138,6 +138,25 @@ client. This plan is independent of any tuition fees paid by the student.
     `MobilityPlanEnum` (paid/free), enforced server-side by a dedicated access
     check. Reusable pattern for any future premium module.
 
+## Contextual help
+
+**What it is for.** Give every screen its own instructions, without leaving the
+page or hunting through separate documentation.
+
+**Who it is for.** <span class="al-audience">every signed-in user</span>
+
+**How it works.** A "?" button sits at the top right of every page. It opens a
+panel explaining what you can do here, in French and in English, sometimes with a
+short video. The panel closes as soon as you change page: what you read always
+matches the screen in front of you.
+
+Each text ends with a booking link: if the explanation is not enough, you book a
+fifteen-minute slot with the AroundLink team.
+
+**Use case.**
+> A new team member opens the place-distribution screen, clicks "?", understands
+> how the grid works, and fills it in without having to ask.
+
 ## Service marketplace
 
 **What it is for.** A catalog of third-party services (insurance, housing,
