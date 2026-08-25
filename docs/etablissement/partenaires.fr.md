@@ -365,6 +365,33 @@ année, niveau et discipline. Sans profil étudiant, les filtres démarrent sur
     `studentPreview()`. Réutilise les mêmes constructeurs que la vue étudiante
     réelle (places, exigences, tableau d'accords, carte).
 
+## Masquer, archiver ou fusionner un partenaire
+
+**À quoi ça sert.** Retirer de la circulation un partenaire avec lequel vous ne
+travaillez plus, ou réunir deux fiches qui désignent le même établissement, sans
+jamais perdre l'historique des mobilités passées.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Trois gestes, du plus léger au plus définitif. **Masquer**
+retire le partenaire de la vue de vos étudiants tout en le gardant dans vos
+listes internes. **Archiver** le sort en plus de vos campagnes et de vos
+décomptes de destinations. **Fusionner** réunit deux fiches en une seule : les
+accords, contacts et mobilités de la fiche absorbée sont rattachés à celle que
+vous conservez.
+
+Dans les trois cas, rien n'est supprimé. Les mobilités déjà réalisées avec ce
+partenaire restent consultables dans les dossiers des étudiants concernés.
+
+**Cas d'usage.**
+> Après une fusion d'universités, le coordinateur réunit les deux fiches en une
+> seule ; les accords des deux se retrouvent au même endroit, sans ressaisie.
+
+!!! warning "Accès des contacts"
+    Archiver un partenaire révoque les accès que vous aviez ouverts à ses
+    contacts. Ils ne peuvent plus se connecter tant que le partenaire n'est pas
+    réactivé.
+
 ## Importer des établissements partenaires
 
 **À quoi ça sert.** Charger ou actualiser en masse de nombreux partenaires depuis

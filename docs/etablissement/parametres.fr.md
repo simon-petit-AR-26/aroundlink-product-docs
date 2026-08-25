@@ -96,6 +96,55 @@ vos intégrations.
     `ApiKeyController`. La clé est créée à la première visite et renouvelable en
     un clic. Rattachée au compte de l'utilisateur.
 
+## Suppressions protégées
+
+**À quoi ça sert.** Vous empêcher de supprimer un réglage encore utilisé quelque
+part, et vous dire précisément où il sert.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Vos campus, périodes, niveaux d'études, types de documents
+et tags affichent un compteur d'utilisation. Tant qu'il n'est pas à zéro, la
+suppression est refusée et le détail vous indique ce qui s'y rattache — un accord,
+une campagne, un dossier étudiant.
+
+Vous restez libre de renommer un élément à tout moment : le changement se propage
+partout où il apparaît, sans rien casser.
+
+**Cas d'usage.**
+> Le coordinateur veut supprimer une période devenue inutile ; le compteur lui
+> montre qu'elle sert encore dans trois accords, qu'il ajuste avant de recommencer.
+
+## Tags
+
+**À quoi ça sert.** Créer vos propres étiquettes pour organiser vos étudiants et
+vos établissements partenaires selon vos critères à vous — une promotion, un
+programme, un groupe de destinations, un point de vigilance.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Chaque tag porte un nom et une couleur, et s'applique à
+l'un des trois périmètres suivants :
+
+- **Général** — proposé à la fois sur les étudiants et sur les partenaires
+- **Étudiant** — proposé sur les étudiants uniquement
+- **Établissement** — proposé sur les partenaires uniquement, et utilisable comme
+  filtre de campagne
+
+Une fois vos tags créés, vous les posez depuis les listes d'étudiants ou de
+partenaires. Sélectionnez plusieurs lignes pour en ajouter ou en retirer à
+l'ensemble de la sélection en une seule fois.
+
+**Cas d'usage.**
+> Le coordinateur crée un tag « Échange double diplôme » sur le périmètre
+> Établissement, l'applique à ses douze partenaires concernés, puis s'en sert
+> pour restreindre les destinations d'une campagne.
+
+!!! warning "Périmètre et filtres de campagne"
+    Un tag change de périmètre après avoir été utilisé dans une campagne cesse
+    d'y être pris en compte. Vérifiez vos campagnes en cours avant de modifier le
+    périmètre d'un tag existant.
+
 ## Vues enregistrées
 
 **À quoi ça sert.** Enregistrer une configuration de tableau (colonnes choisies,

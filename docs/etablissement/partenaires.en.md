@@ -343,6 +343,31 @@ field. With no student profile, filters start on "All".
     `studentPreview()`. Reuses the same builders as the real student view (places,
     requirements, agreement table, map).
 
+## Hide, archive or merge a partner
+
+**What it's for.** Take a partner you no longer work with out of circulation, or
+bring together two records pointing at the same institution, without ever losing
+the history of past mobilities.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** Three moves, from the lightest to the most final. **Hiding**
+removes the partner from your students' view while keeping it in your internal
+lists. **Archiving** also takes it out of your campaigns and destination counts.
+**Merging** brings two records into one: the agreements, contacts and mobilities
+of the absorbed record are attached to the one you keep.
+
+In all three cases, nothing is deleted. Mobilities already completed with that
+partner remain visible in the files of the students concerned.
+
+**Use case.**
+> After a university merger, the coordinator brings the two records into one; the
+> agreements from both end up in the same place, with no re-entry.
+
+!!! warning "Contact access"
+    Archiving a partner revokes the access you had opened for its contacts. They
+    can no longer sign in until the partner is reactivated.
+
 ## Import partner institutions
 
 **What it's for.** Bulk-load or refresh many partners from an Excel file, with

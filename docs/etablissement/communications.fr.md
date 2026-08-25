@@ -18,7 +18,10 @@ vous ciblez, vous envoyez, et vous gardez une trace.
 **Comment ça marche.** Le compositeur vous laisse choisir les audiences (étudiants
 sortants, étudiants entrants, partenaires) et des filtres optionnels (pays, campus,
 statut d'accès de l'étudiant), avec un compteur de destinataires en direct avant
-l'envoi. Vous sélectionnez les canaux souhaités, vous pouvez enregistrer un
+l'envoi. Vous pouvez aussi partir d'une **sélection explicite** : cochez les
+étudiants voulus dans votre liste, ou les contacts voulus dans votre annuaire, et
+lancez la diffusion sur eux seuls — utile quand le groupe visé ne se décrit par
+aucun filtre. Vous sélectionnez les canaux souhaités, vous pouvez enregistrer un
 brouillon, et un message envoyé est verrouillé. À l'envoi, un récapitulatif indique
 le nombre de destinataires, d'e-mails partis et de messages épinglés. Un message
 épinglé peut ensuite être retiré du tableau de bord.

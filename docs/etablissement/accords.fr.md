@@ -178,6 +178,24 @@ que l'étudiant connaisse le coût avant de candidater. Un import avec aperçu e
     `PayingMobilityPeriodPlace`. Workflow `PayingMobilityWorkflow`. Module réservé au plan
     payant.
 
+## Justificatifs des conditions d'un accord
+
+**À quoi ça sert.** Conserver, au niveau de l'accord lui-même, les pièces qui en
+attestent les conditions : la convention signée, un avenant, un échange de
+courriers, un barème de frais.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Chaque accord — bilatéral, double diplôme ou mobilité
+payante — dispose d'un espace de dépôt sur son écran de conditions. Les documents
+y restent attachés à l'accord, indépendamment des dossiers étudiants, et restent
+consultables même lorsque l'accord arrive à échéance.
+
+**Cas d'usage.**
+> Le coordinateur dépose la convention signée sur l'accord de double diplôme ;
+> deux ans plus tard, son successeur retrouve la pièce sans avoir à fouiller dans
+> les archives du service.
+
 ## Imports CSV des accords
 
 **À quoi ça sert.** Permet de charger des accords en masse depuis un tableur plutôt qu'un
