@@ -682,6 +682,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#protected-deletions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protected deletions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#saved-views" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1412,6 +1434,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#protected-deletions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protected deletions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#saved-views" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1554,6 +1598,47 @@ regenerate it if you believe it may have been exposed.</p>
 <p><code>ApiKeyController</code>. The key is created on first visit and renewable in one
 click. Attached to the user's account.</p>
 </details>
+<h2 id="protected-deletions">Protected deletions<a class="headerlink" href="#protected-deletions" title="Permanent link">&para;</a></h2>
+<p><strong>What it's for.</strong> Stop you from deleting a setting still in use somewhere, and
+tell you exactly where it is used.</p>
+<p><strong>Who it's for.</strong> <span class="al-audience">RI manager / coordinator</span></p>
+<p><strong>How it works.</strong> Your campuses, periods, study levels, document types and tags
+each show a usage counter. As long as it is not at zero, deletion is refused and
+the detail tells you what depends on it — an agreement, a campaign, a student
+file.</p>
+<p>You remain free to rename an item at any time: the change carries everywhere it
+appears, breaking nothing.</p>
+<p><strong>Use case.</strong></p>
+<blockquote>
+<p>The coordinator wants to delete a period that is no longer needed; the counter
+shows it is still used by three agreements, which they adjust before retrying.</p>
+</blockquote>
+<h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
+<p><strong>What it's for.</strong> Create your own labels to organise your students and partner
+institutions by your own criteria — a cohort, a programme, a group of
+destinations, a point to watch.</p>
+<p><strong>Who it's for.</strong> <span class="al-audience">RI manager / coordinator</span></p>
+<p><strong>How it works.</strong> Each tag carries a name and a colour, and applies to one of
+three scopes:</p>
+<ul>
+<li><strong>General</strong> — offered on both students and partners</li>
+<li><strong>Student</strong> — offered on students only</li>
+<li><strong>Institution</strong> — offered on partners only, and usable as a campaign filter</li>
+</ul>
+<p>Once your tags exist, you apply them from the student or partner lists. Select
+several rows to add or remove tags across the whole selection at once.</p>
+<p><strong>Use case.</strong></p>
+<blockquote>
+<p>The coordinator creates a "Double degree exchange" tag scoped to Institution,
+applies it to the twelve partners concerned, then uses it to narrow the
+destinations of a campaign.</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Scope and campaign filters</p>
+<p>A tag whose scope changes after it has been used in a campaign stops being
+taken into account there. Check your running campaigns before changing the
+scope of an existing tag.</p>
+</div>
 <h2 id="saved-views">Saved views<a class="headerlink" href="#saved-views" title="Permanent link">&para;</a></h2>
 <p><strong>What it's for.</strong> Save a table configuration (chosen columns, widths, filters,
 sort order) on a given page, then reapply it in one click. Each coordinator
@@ -1642,7 +1727,7 @@ service, reserved for institutions on a paid plan.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 20, 2026 21:54:35 CEST">July 20, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 25, 2026 21:10:51 CEST">August 25, 2026</span>
   </span>
 
     
