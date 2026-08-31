@@ -1,0 +1,46 @@
+# Quelle capture montre quel écran.
+#
+# Sert à repérer les captures périmées : si la route a bougé dans le front
+# depuis la date de la capture, l'image ne montre plus le produit actuel.
+# Format : fichier.png <TAB> route du front <TAB> date de la capture
+# Ce fichier n'est pas publié (il est hors de docs/).
+
+tableau-de-bord.png	/dashboard	2026-08-31
+etudiants-sortants.png	/students/outgoing	2026-08-31
+etudiants-entrants.png	/students/incoming	2026-08-31
+etudiant-vue-ensemble.png	/students/:id	2026-08-31
+etudiant-documents.png	/students/:id/documents	2026-08-31
+validations-hub.png	/validations	2026-08-31
+campagnes-liste.png	/campaigns	2026-08-31
+campagne-nominations.png	/campaigns/:id	2026-08-31
+campagne-suivi-affectation.png	/campaigns/:id/track	2026-08-31
+campagne-suivi-statistiques.png	/campaigns/:id/track	2026-08-31
+partenaires-liste.png	/institutions	2026-08-31
+partenaires-contacts.png	/institutions/contacts	2026-08-31
+accords-liste.png	/institutions/agreements	2026-08-31
+partenaire-informations.png	/institutions/:id	2026-08-31
+partenaire-cours.png	/institutions/:id/student-info/courses	2026-08-31
+partenaire-bibliotheque.png	/institutions/:id/student-info/library	2026-08-31
+places-matrice.png	/institutions/:id/iia-agreements/:id/places	2026-08-31
+bourse-pipeline.png	/bourse	2026-08-31
+diffusion-nouveau-message.png	/diffusion	2026-08-31
+atlas-carte.png	/atlas	2026-08-31
+atlas-cartes.png	/atlas	2026-08-31
+mon-etablissement-fiche-ewp.png	/my-institution/iia-factsheet	2026-08-31
+mon-etablissement-avis.png	/my-institution/student-info/feedback	2026-08-31
+parametres-campus.png	/settings/institution/campuses	2026-08-31
+parametres-periodes.png	/settings/institution/periods	2026-08-31
+parametres-niveaux.png	/settings/institution/academic-levels	2026-08-31
+parametres-tags.png	/settings/institution/partner-tags	2026-08-31
+parametres-roles.png	/settings/roles	2026-08-31
+parametres-types-documents.png	/settings/documents/types	2026-08-31
+parametres-modeles-documents.png	/settings/documents/templates	2026-08-31
+parametres-imports.png	/settings/integrations	2026-08-31
+connexion.png	/login	2026-08-31
+etudiant-tableau-de-bord.png	/student/dashboard	2026-08-31
+etudiant-trouver-destination.png	/student/universities	2026-08-31
+etudiant-fiche-partenaire.png	/student/universities/:id	2026-08-31
+etudiant-fiche-partenaire-infos.png	/student/universities/:id	2026-08-31
+etudiant-voeux.png	/student/campaigns	2026-08-31
+etudiant-ma-mobilite.png	/student/my-exchange	2026-08-31
+etudiant-contrat-pedagogique.png	/student/ola	2026-08-31
