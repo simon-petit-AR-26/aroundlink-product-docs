@@ -22,6 +22,40 @@ clearly identified as such.
 > Two client universities use AroundLink on the same day; neither can see the
 > other's students, agreements or grants.
 
+## What you write about a partner is yours
+
+**What it is for.** Separating what describes a partner institution from what
+**you**, as a client, have recorded about them. Two institutions can work with the
+same partner without ever seeing each other's notes.
+
+**Who it is for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** The content you enter about a partner carries your institution's
+mark and never leaves your workspace:
+
+- the **information you publish to your students** about that partner (resources,
+  links, FAQ);
+- the **course catalogue** you maintain for them;
+- the **language scores** you declare as a requirement;
+- the **files** you upload to their record, which keep track of who added them.
+
+Another client working with the same partner keeps their own version of all this,
+with no interference.
+
+**Use case.**
+> Two French institutions send students to the same Spanish university. Each keeps
+> its own course catalogue and its own guidance there, never seeing the other's.
+
+!!! info "Identity belongs to the institution"
+    A partner's name, country, city, address, email address, website and
+    accreditations can only be edited **by that institution itself**, from its own
+    workspace. You cannot change them from their record: this identity is unique and
+    serves everyone — search, Atlas, ROR matching, EWP exchanges. What you control on
+    their record is your own layer: your internal code and your tags.
+
+    Official identifiers — ROR, Erasmus code, EWP id, SCHAC — cannot be edited by
+    anyone: they are the reference.
+
 ## Account types
 
 **What it is for.** Three user profiles coexist, each with its own space and
