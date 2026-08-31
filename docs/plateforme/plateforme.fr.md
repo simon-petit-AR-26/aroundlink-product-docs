@@ -48,12 +48,16 @@ contenus, sans interférence.
 > Chacune y maintient son catalogue de cours et ses consignes, sans jamais voir
 > ceux de l'autre.
 
-!!! warning "Identité descriptive du partenaire"
-    Les identifiants officiels d'un établissement — identifiant ROR, code Erasmus,
-    identifiant EWP, SCHAC — ne sont modifiables par personne : ils font foi.
-    En revanche, les champs descriptifs (nom, adresse, site web) restent portés par
-    la fiche commune de l'établissement : les modifier change la fiche pour tous les
-    clients qui travaillent avec ce partenaire.
+!!! info "L'identité appartient à l'établissement"
+    Le nom, le pays, la ville, l'adresse, l'adresse e-mail, le site web et les
+    accréditations d'un partenaire ne sont modifiables **que par cet établissement
+    lui-même**, depuis son propre espace. Vous ne pouvez pas les changer depuis sa
+    fiche : cette identité est unique et sert à tous — recherche, Atlas,
+    correspondance ROR, échanges EWP. Ce que vous maîtrisez sur sa fiche, c'est
+    votre propre couche : votre code interne et vos tags.
+
+    Les identifiants officiels — ROR, code Erasmus, identifiant EWP, SCHAC — ne
+    sont modifiables par personne : ils font foi.
 
 ## Types de comptes
 

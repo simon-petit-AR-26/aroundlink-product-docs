@@ -46,12 +46,15 @@ with no interference.
 > Two French institutions send students to the same Spanish university. Each keeps
 > its own course catalogue and its own guidance there, never seeing the other's.
 
-!!! warning "The partner's descriptive identity"
-    An institution's official identifiers — ROR id, Erasmus code, EWP id, SCHAC —
-    cannot be edited by anyone: they are the reference. Descriptive fields (name,
-    address, website), on the other hand, still live on the institution's shared
-    record: changing them changes the record for every client working with that
-    partner.
+!!! info "Identity belongs to the institution"
+    A partner's name, country, city, address, email address, website and
+    accreditations can only be edited **by that institution itself**, from its own
+    workspace. You cannot change them from their record: this identity is unique and
+    serves everyone — search, Atlas, ROR matching, EWP exchanges. What you control on
+    their record is your own layer: your internal code and your tags.
+
+    Official identifiers — ROR, Erasmus code, EWP id, SCHAC — cannot be edited by
+    anyone: they are the reference.
 
 ## Account types
 
