@@ -31,6 +31,10 @@ transition.
     meantime, password sign-in remains available, with single-use reset links —
     see [Security &amp; data](securite.md).
 
+![The sign-in screen with single sign-on](../assets/screenshots/connexion.png)
+
+*The sign-in screen as your users see it: password sign-in stays available, and the button at the bottom opens authentication through the university account. Once single sign-on is enforced, only that button remains.*
+
 ## What holds for every provider
 
 The following does not depend on the protocol. It holds for Microsoft today, and

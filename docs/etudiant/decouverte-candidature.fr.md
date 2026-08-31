@@ -197,6 +197,14 @@ une seule matrice, et affiche une ligne par type d'accord. Le niveau, le domaine
 et l'année restent ajustables, et le profil de l'étudiant les préremplit. Une
 sous-page liste tous les avis publiés.
 
+![Fiche d'un partenaire vue par l'étudiant](../assets/screenshots/etudiant-fiche-partenaire.png)
+
+*Ce que l'étudiant voit d'une destination : ses places ouvertes par période et par type d'accord, filtrées sur son propre niveau et sa discipline, les scores de langue acceptés, les domaines d'études, les liens et documents que vous avez publiés, et la localisation sur une carte.*
+
+![Informations pratiques et avis sur la fiche partenaire](../assets/screenshots/etudiant-fiche-partenaire-infos.png)
+
+*Plus bas sur la même fiche : les informations pratiques que vous avez rédigées — description, langues d'enseignement, coût de la vie, logement — et les avis laissés par les étudiants déjà partis là-bas.*
+
 **Cas d'usage.**
 > Un étudiant ouvre la fiche d'un partenaire, voit 3 places d'études pour
 > « Aéro 5 » sur la période de printemps sous l'accord d'échange, et lit

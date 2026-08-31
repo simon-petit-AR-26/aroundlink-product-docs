@@ -34,6 +34,10 @@ parallèle le temps de la transition.
     réinitialisation par lien à usage unique — voir
     [Sécurité &amp; données](securite.md).
 
+![Écran de connexion avec l'authentification unique](../assets/screenshots/connexion.png)
+
+*L'écran de connexion tel que vos utilisateurs le voient : le mot de passe reste disponible, et le bouton du bas ouvre l'authentification par le compte de l'université. Une fois l'authentification unique imposée, seul ce bouton subsiste.*
+
 ## Ce qui vaut pour tous les fournisseurs
 
 Les points suivants ne dépendent pas du protocole. Ils valent aujourd'hui pour

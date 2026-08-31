@@ -186,6 +186,14 @@ displays one row per agreement type. The level, field and year remain
 adjustable, and the student's profile pre-fills them. A sub-page lists all
 published reviews.
 
+![A partner's page as the student sees it](../assets/screenshots/etudiant-fiche-partenaire.png)
+
+*What a student sees of a destination: the places open by period and agreement type, filtered on their own level and field, the accepted language scores, the fields of study, the links and documents you published, and the location on a map.*
+
+![Practical information and reviews on a partner's page](../assets/screenshots/etudiant-fiche-partenaire-infos.png)
+
+*Further down the same page: the practical information you wrote — description, languages of instruction, cost of living, housing — and the reviews left by students who have already been there.*
+
 **Use case.**
 > A student opens a partner's page, sees 3 study places for "Aéro 5" in the
 > spring period under the exchange agreement, and reads 4 published reviews.
