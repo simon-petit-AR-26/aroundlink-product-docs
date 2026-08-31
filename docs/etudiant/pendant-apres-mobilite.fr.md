@@ -24,6 +24,10 @@ saisies, sinon sur des dates provisoires dérivées de l'année scolaire. Un bou
 génère l'attestation d'affectation en PDF, à partir du modèle de lettre de
 nomination configuré par l'établissement lorsqu'il existe.
 
+![Page « Ma mobilité » côté étudiant](../assets/screenshots/etudiant-ma-mobilite.png)
+
+*La page de sa mobilité : informations de l'échange, cours retenus, attestations d'arrivée et de départ, documents à télécharger et avis des étudiants précédents.*
+
 **Cas d'usage.**
 > À son arrivée à l'étranger, un étudiant dépose son attestation d'arrivée signée
 > et télécharge son attestation d'affectation officielle pour le guichet
@@ -56,6 +60,10 @@ enregistre la signature de l'étudiant et fait passer le statut à
 « Sélectionné par l'étudiant ». Modifier les cours réinitialise les signatures
 d'établissement déjà apposées, pour éviter toute validation sur une version
 obsolète. Le téléchargement n'est possible qu'une fois l'OLA entièrement validé.
+
+![Contrat pédagogique côté étudiant](../assets/screenshots/etudiant-contrat-pedagogique.png)
+
+*Le contrat pédagogique : l'avancement des signatures, la période de mobilité, la langue d'enseignement, la reconnaissance chez soi, et le catalogue de cours du partenaire avec leurs crédits.*
 
 **Cas d'usage.**
 > Un étudiant choisit 6 cours (30 ECTS) répartis sur deux domaines, soumet son

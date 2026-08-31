@@ -19,6 +19,10 @@ Agreements pending, transcripts of records pending — plus a student-pipeline
 chart. Each indicator is clickable and leads straight to the relevant queue. You
 can add, hide and resize blocks from a widget catalog.
 
+![The coordinator's dashboard](../assets/screenshots/tableau-de-bord.png)
+
+*The dashboard: your student pipeline step by step, your key figures, the place breakdown by period and level, and the files waiting on you. Click the image to enlarge it.*
+
 **Use case.**
 > Monday morning, a coordinator sees "12 documents pending validation" and clicks
 > to land directly on the queue to process.

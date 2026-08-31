@@ -24,6 +24,10 @@ d'approbation, l'historique, de synchroniser la factsheet EWP et de notifier le
 partenaire. L'éligibilité d'un étudiant (niveau, période, GPA, scores de langue) est
 vérifiée automatiquement au moment de la demande.
 
+![Liste consolidée des accords](../assets/screenshots/accords-liste.png)
+
+*Tous vos accords, tous partenaires confondus : type, statut, niveaux, langues, validité et places. Cliquez sur l'image pour l'agrandir.*
+
 **Cas d'usage.**
 > Le bureau RI enregistre un échange Erasmus+ avec TU Munich : 3 places de Master en
 > ingénierie, anglais B2 exigé, identifiant IIA synchronisé avec le partenaire via EWP.
@@ -54,6 +58,10 @@ coordinateur remplit une matrice (année × domaine × niveau × période). Le s
 contrôle le plafond annuel de chaque bloc de mobilité avant d'enregistrer, met à jour
 les cellules concernées et regroupe les niveaux par cadre EQF pour que les programmes
 apparentés restent ensemble. Le résultat est immédiatement visible côté étudiant.
+
+![Matrice de distribution des places d'un accord](../assets/screenshots/places-matrice.png)
+
+*La grille de répartition : en colonnes les années découpées par période, en lignes vos niveaux d'études groupés par cadre européen. Le bilan du bas signale en rouge un dépassement du plafond annuel négocié.*
 
 **Cas d'usage.**
 > Un partenaire accorde 4 places : le bureau en affecte 2 en Master / Semestre 1 et

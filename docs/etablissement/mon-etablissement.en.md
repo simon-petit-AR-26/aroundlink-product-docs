@@ -22,6 +22,10 @@ where each item carries its visibility audiences. **IIA factsheet**: your own EW
 factsheet (sync, calendar, coordinators…). Content is authored as blocks attached to
 categories and sub-categories.
 
+![Your EWP factsheet in My institution](../assets/screenshots/mon-etablissement-fiche-ewp.png)
+
+*Your factsheet as your partners read it: websites, nomination and application deadlines per term, incoming coordinators and the procedure to follow. The banner at the top says whether the data came from an EWP sync or from your own entry, and the padlock locks a section so a sync cannot overwrite it.*
+
 **Use case.**
 > A coordinator adds a "Cost of living in Lisbon" link visible only to incoming
 > students, then uploads a welcome PDF to the library.
@@ -68,6 +72,10 @@ students. It's a trusted, first-hand review layer to help with destination choic
 **How it works.** A review carries a rating, a topic, the author's name, the country
 type, content and optional photos. From the "feedback" sub-tab, you accept or refuse
 each contribution; accepted, public reviews then surface to students.
+
+![Moderating the reviews received about your institution](../assets/screenshots/mon-etablissement-avis.png)
+
+*The reviews left about your institution, split between pending, accepted and refused. Each carries its topic, rating and author, and you choose to accept it internally, accept and publish it, or refuse it.*
 
 **Use case.**
 > A student back from Antalya leaves a 4-star review with photos; the coordinator

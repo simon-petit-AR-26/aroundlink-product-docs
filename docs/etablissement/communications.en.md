@@ -24,6 +24,10 @@ draft, and a sent message is locked. On send, a receipt shows
 the number of recipients, emails sent and pinned messages. A pinned message can
 later be removed from the dashboard.
 
+![Broadcast composer window](../assets/screenshots/diffusion-nouveau-message.png)
+
+*Composing a broadcast: subject, message, target audience, optional filters and sending channels.*
+
 **Use case.**
 > A coordinator sends "Nomination deadline extended to March 15" to all outgoing
 > students in Spain, pinned to their dashboard and sent by email.

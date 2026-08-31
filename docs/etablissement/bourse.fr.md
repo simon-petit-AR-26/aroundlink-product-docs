@@ -22,6 +22,10 @@ bureau ait la situation financière Erasmus+ sous les yeux d'un seul coup d'œil
 affiche alors la dotation, les montants engagés et versés, le budget restant et
 l'avancement des dossiers de bourse.
 
+![Suivi des bourses de mobilité](../assets/screenshots/bourse-pipeline.png)
+
+*L'enveloppe de l'agence, ce qui est engagé et ce qui reste, puis le suivi de chaque bourse par étape : convention à signer, avance à verser, en mobilité, documents manquants, soldée.*
+
 **Cas d'usage.**
 > En début d'année, le coordinateur ouvre le tableau de bord et voit d'un coup d'œil
 > combien de sa dotation est déjà engagée et combien reste disponible.

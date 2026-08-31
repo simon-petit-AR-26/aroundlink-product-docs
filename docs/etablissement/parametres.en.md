@@ -16,6 +16,10 @@ main campus), to attach students to a campus and reflect your real structure.
 with the number of students attached to each. Deletion is blocked while students
 are still attached, to prevent any loss of link.
 
+![The campuses screen](../assets/screenshots/parametres-campus.png)
+
+*Your physical sites, with the number of students attached to each.*
+
 **Use case.**
 > A multi-site school declares its Paris and Lyon campuses, then assigns students
 > to each.
@@ -55,6 +59,10 @@ dropdowns are familiar to your team and EWP exchange stays standards-compliant.
 **How it works.** A management screen (Settings ▸ Institution) lets you create,
 edit and delete your level labels, each mapped to an EQF level. Each row shows how
 many places or agreements use that level. Duplicate labels are rejected.
+
+![Custom academic levels](../assets/screenshots/parametres-niveaux.png)
+
+*Your own level labels, each mapped to a European level, with how many students, institutions and places depend on them.*
 
 **Use case.**
 > An engineering school defines "Aéro 4" mapped to EQF 7, to filter campaigns and
@@ -126,6 +134,10 @@ three scopes:
 Once your tags exist, you apply them from the student or partner lists. Select
 several rows to add or remove tags across the whole selection at once.
 
+![The tags screen](../assets/screenshots/parametres-tags.png)
+
+*Your tags, their scope and colour, with how many institutions and students each is applied to.*
+
 **Use case.**
 > The coordinator creates a "Double degree exchange" tag scoped to Institution,
 > applies it to the twelve partners concerned, then uses it to narrow the
@@ -147,6 +159,10 @@ instantly recovers their working layout without rebuilding it every time.
 **How it works.** On a table page, you adjust the columns, filters and sort, then
 save that layout as a view. You can then switch between your views in one click.
 Views are private to your institution.
+
+![Mobility periods](../assets/screenshots/parametres-periodes.png)
+
+*Your periods, with how many institutions and places rely on each.*
 
 **Use case.**
 > A coordinator saves a "Spain partners — active agreements" view with its columns
@@ -186,6 +202,10 @@ organisation.
 application, an access level (for example read or read/write) in a matrix. Changes
 apply to all members holding the role.
 
+![The roles and permissions matrix](../assets/screenshots/parametres-roles.png)
+
+*The permissions matrix: your roles across the columns, the application's modules down the rows, and a level at each intersection — no access, read only, or write. The four supplied roles can be customised, and you can add your own.*
+
 **Use case.**
 > The admin creates a "Coordinator" role with write access to partners but
 > read-only access to settings.
@@ -205,6 +225,10 @@ and free-text search.
 
 **How it works.** A page gathers all the organisation's users and lets you filter
 them by category, status or name/email. It is reserved for paid mobility plans.
+
+![An import screen](../assets/screenshots/parametres-imports.png)
+
+*An import: the template to download, the required columns, and the row-by-row preview before you confirm.*
 
 **Use case.**
 > The admin searches a user by email to check their status and category.

@@ -24,6 +24,18 @@ son côté, dans n'importe quel ordre, et le contrat n'est validé qu'une fois l
 signatures posées ; pour un accord EWP, l'approbation transmet le contrat à
 l'établissement d'accueil selon le flux séquentiel du réseau.
 
+![Hub de validation](../assets/screenshots/validations-hub.png)
+
+*Tout ce qui attend votre décision, avec le nombre d'éléments en retard et les filtres par nature de pièce.*
+
+![Choix des types de documents demandés](../assets/screenshots/parametres-types-documents.png)
+
+*Les pièces que votre établissement demande, par famille. Désactiver un type le retire du profil de l'étudiant sans supprimer ce qui a déjà été déposé.*
+
+![Modèles de documents](../assets/screenshots/parametres-modeles-documents.png)
+
+*Vos modèles de documents générés — lettre d'acceptation, attestation de scolarité, contrat pédagogique, relevé — dans lesquels les informations de l'étudiant viennent se substituer aux variables.*
+
 **Cas d'usage.**
 > Le coordinateur relit l'OLA de départ de Marie (3 cours, 18 ECTS), lui demande de
 > remplacer un cours, puis signe au nom de l'établissement d'envoi ; dès que le

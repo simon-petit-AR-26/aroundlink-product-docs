@@ -22,6 +22,10 @@ et le vivier d'offres éligibles selon ces critères. La campagne passe de Broui
 Prête (ouverture aux étudiants), puis Ouverte et Terminée ; seule une campagne en
 brouillon reste modifiable.
 
+![Liste des campagnes, avec le nombre de campagnes en brouillon, ouvertes et terminées](../assets/screenshots/campagnes-liste.png)
+
+*Vos campagnes, tous statuts confondus. Les quatre compteurs du haut donnent l'état du parc en un coup d'œil. Cliquez sur l'image pour l'agrandir.*
+
 **Cas d'usage.**
 > Le bureau RI ouvre une campagne « 2026/2027 – Semestre 1 – Master », 5 vœux autorisés,
 > limitée aux partenaires Erasmus+ tagués « Ingénierie » ; tous les étudiants de Master
@@ -55,6 +59,10 @@ refusent (ce qui annule leurs autres vœux et libère la place). Quand une propo
 envoyée ou qu'un étudiant est affecté, celui-ci peut être prévenu — par e-mail et/ou dans
 l'application ; ces notifications sont paramétrables et peuvent être désactivées par
 l'établissement.
+
+![Écran d'affectation : les étudiants et leurs vœux à gauche, les destinations et leurs places à droite](../assets/screenshots/campagne-suivi-affectation.png)
+
+*L'écran d'affectation. À gauche les étudiants classés avec leurs vœux, à droite les destinations et les places restantes par niveau et par période. Le code couleur distingue la période demandée, une autre période, une place attribuée et un dépassement de capacité.*
 
 **Cas d'usage.**
 > Deux étudiants classent Berlin en vœu n°1 : le mieux classé (GPA) reçoit la proposition,
@@ -94,10 +102,36 @@ que ce qui est réellement ouvert aux étudiants : les partenaires masqués ou a
 exclus, tout comme les destinations sans place disponible. Les chiffres affichés
 correspondent donc à ce que l'étudiant verra.
 
+![Statistiques d'une campagne : taux d'affectation, satisfaction des vœux, entonnoir et répartitions](../assets/screenshots/campagne-suivi-statistiques.png)
+
+*Les statistiques d'une campagne : le rang de vœu obtenu par les étudiants placés, l'entonnoir de la campagne étape par étape, et les répartitions par pays, type d'accord et période.*
+
 **Cas d'usage.**
 > À mi-parcours, le coordinateur constate que 60 % des étudiants ont soumis leurs vœux et
 > que 12 sont placés ; après clôture, il exporte les affectations finales pour l'équipe
 > mobilité.
+
+## Nominations chez vos partenaires
+
+**À quoi ça sert.** Prévenir officiellement l'établissement d'accueil que vous lui envoyez
+un étudiant, puis consigner sa réponse.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Chaque ligne est un étudiant affecté à une destination. Vous le
+nominez, et le partenaire reçoit l'information. Quand il répond, vous enregistrez sa
+décision en précisant par quel canal elle vous est parvenue : la plateforme, le réseau EWP,
+un e-mail ou un appel. Un refus s'accompagne de son motif, et une nomination peut être
+annulée tant qu'elle n'est pas confirmée.
+
+![Écran des nominations d'une campagne, avec l'état de chaque nomination et le canal de confirmation](../assets/screenshots/campagne-nominations.png)
+
+*L'état de chaque nomination, et pour les confirmées, comment la réponse est arrivée.*
+
+**Cas d'usage.**
+> Le coordinateur nomine douze étudiants ; huit confirmations reviennent par la plateforme
+> ou par EWP, deux par téléphone qu'il saisit à la main, et une destination refuse faute de
+> place dans la spécialité demandée.
 
 ??? note "Détails internes (équipe AroundLink)"
     `trackCampaign()` : graphiques via `ChartBuilderInterface`, vœux regroupés par rang,

@@ -21,6 +21,10 @@ liste directement depuis la barre de recherche, puis cliquez sur une ligne pour
 ouvrir la fiche. Un bouton bascule le même tableau vers la vue consolidée des
 accords.
 
+![Liste des établissements partenaires](../assets/screenshots/partenaires-liste.png)
+
+*Vos partenaires, avec leur code interne, leurs accréditations, vos tags et les niveaux ouverts. Cliquez sur l'image pour l'agrandir.*
+
 **Cas d'usage.**
 > Un coordinateur filtre sur « Espagne + accords actifs », puis ouvre la fiche
 > d'une université pour vérifier ses contacts.
@@ -72,6 +76,10 @@ descriptifs sont modifiables ; les identifiants techniques officiels restent en
 lecture seule. L'enregistrement ne touche qu'à vos propres étiquettes et à votre
 code interne pour ce partenaire ; les données des autres établissements sur un
 partenaire partagé ne sont jamais modifiées.
+
+![Fiche d'un partenaire, onglet Informations](../assets/screenshots/partenaire-informations.png)
+
+*L'identité du partenaire, votre propre couche (code interne et tags), ses identifiants officiels et les scores de langue attendus.*
 
 **Cas d'usage.**
 > Le coordinateur étiquette Bologne comme « Prioritaire » et note la référence
@@ -161,6 +169,10 @@ alimentent les listes déroulantes des accords et des signataires.
 onglet « Relation » par partenaire. Chaque contact possède nom, e-mail,
 téléphone, fonction et un indicateur « principal ». À l'enregistrement, un contact
 est automatiquement relié à un compte existant qui lui correspond.
+
+![Liste des contacts partenaires](../assets/screenshots/partenaires-contacts.png)
+
+*Vos interlocuteurs chez vos partenaires. C'est d'ici que vous leur ouvrez un accès à la plateforme.*
 
 **Cas d'usage.**
 > Le coordinateur ajoute la responsable Erasmus d'un partenaire et la marque
@@ -268,6 +280,10 @@ endroit.
 **Comment ça marche.** Vous envoyez des documents nommés à un partenaire (les noms
 en double sont refusés), vous les listez et les supprimez individuellement.
 
+![Bibliothèque de documents d'un partenaire](../assets/screenshots/partenaire-bibliotheque.png)
+
+*Les documents que vous publiez à vos étudiants au sujet de ce partenaire.*
+
 **Cas d'usage.**
 > Le coordinateur téléverse le PDF de l'accord de coopération signé sur la fiche
 > du partenaire.
@@ -285,6 +301,10 @@ l'échange, afin que les étudiants et le bureau sachent ce qui peut y être ét
 
 **Comment ça marche.** Vous ajoutez des cours via un formulaire et vous les
 supprimez par partenaire ; ils sont listés par code.
+
+![Catalogue de cours d'un partenaire](../assets/screenshots/partenaire-cours.png)
+
+*Les cours dans lesquels vos étudiants pourront puiser pour construire leur contrat pédagogique, avec leurs crédits et leur classification.*
 
 **Cas d'usage.**
 > Le bureau enregistre les 12 cours de master enseignés en anglais qu'un

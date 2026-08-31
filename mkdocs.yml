@@ -94,6 +94,7 @@ plugins:
             Plateforme &amp; sécurité: Platform &amp; security
             Annexes: Appendix
             Tableaux de bord: Dashboards
+            Étudiants: Students
             Partenaires &amp; accords: Partners &amp; agreements
             Distribution des places: Place distribution
             Campagnes de mobilité: Mobility campaigns
@@ -105,6 +106,13 @@ plugins:
             Découverte &amp; candidature: Discover &amp; apply
             Pendant &amp; après la mobilité: During &amp; after mobility
             Glossaire: Glossary
+  # Screenshots open full size on click — an interface capture is unreadable
+  # at page width.
+  - glightbox:
+      touchNavigation: true
+      effect: fade
+      zoomable: true
+      draggable: false
   # Shows when each page was last updated, from the git history.
   # Must stay AFTER the i18n plugin, which provides the `locale` variable.
   # Needs the full git history at build time — never build from a shallow clone.
@@ -118,6 +126,7 @@ nav:
   - Accueil: index.md
   - Espace établissement:
       - Tableaux de bord: etablissement/dashboards.md
+      - Étudiants: etablissement/etudiants.md
       - Partenaires &amp; accords: etablissement/partenaires.md
       - Distribution des places: etablissement/accords.md
       - Campagnes de mobilité: etablissement/campagnes.md

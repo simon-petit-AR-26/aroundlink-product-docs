@@ -23,6 +23,18 @@ agreement is validated only once both signatures are in place; for an EWP agreem
 approval hands the agreement to the host institution following the network's sequential
 flow.
 
+![Validation hub](../assets/screenshots/validations-hub.png)
+
+*Everything waiting on your decision, with the number of overdue items and filters by document type.*
+
+![Choosing which document types are requested](../assets/screenshots/parametres-types-documents.png)
+
+*The documents your institution asks for, by family. Turning a type off removes it from the student's profile without deleting anything already uploaded.*
+
+![Document templates](../assets/screenshots/parametres-modeles-documents.png)
+
+*Your generated document templates — acceptance letter, enrolment certificate, learning agreement, transcript — where the student's details replace the variables.*
+
 **Use case.**
 > The coordinator reviews Marie's pre-departure OLA (3 courses, 18 ECTS), asks her to
 > swap one course, then signs on behalf of the sending institution; as soon as the

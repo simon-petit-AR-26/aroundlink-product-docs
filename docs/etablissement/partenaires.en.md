@@ -20,6 +20,10 @@ you have an agreement with or that you created). You filter the list straight fr
 the search bar, then click a row to open the file. A toggle switches the same
 table to the consolidated agreements view.
 
+![List of partner institutions](../assets/screenshots/partenaires-liste.png)
+
+*Your partners, with their internal code, accreditations, your tags and the levels open. Click the image to enlarge it.*
+
 **Use case.**
 > A coordinator filters on "Spain + active agreements", then opens a university's
 > file to check its contacts.
@@ -67,6 +71,10 @@ and the expected language-scores block. Descriptive fields are editable; the
 official technical identifiers stay read-only. Saving only affects your own tags
 and your internal code for that partner; other institutions' data on a shared
 partner is never modified.
+
+![A partner's file, Information tab](../assets/screenshots/partenaire-informations.png)
+
+*The partner's identity, your own layer (internal code and tags), their official identifiers and the expected language scores.*
 
 **Use case.**
 > The coordinator tags Bologna as "Priority" and records the office's internal
@@ -150,6 +158,10 @@ one designated as main. These contacts feed the agreement and signatory dropdown
 "Relationship" tab per partner. Each contact has name, email, phone, position and
 a "main" flag. On save, a contact is automatically linked to a matching existing
 account.
+
+![List of partner contacts](../assets/screenshots/partenaires-contacts.png)
+
+*Your contacts at partner institutions. This is where you open their access to the platform.*
 
 **Use case.**
 > The coordinator adds a partner's Erasmus officer and marks them as the main
@@ -250,6 +262,10 @@ brochures…), to gather all partner documents in one place.
 **How it works.** You upload named documents to a partner (duplicate names are
 rejected), list them, and delete them individually.
 
+![A partner's document library](../assets/screenshots/partenaire-bibliotheque.png)
+
+*The documents you publish to your students about this partner.*
+
 **Use case.**
 > The coordinator uploads the signed cooperation-agreement PDF to the partner
 > file.
@@ -267,6 +283,10 @@ exchange, so students and the office know what can be studied there.
 
 **How it works.** You add courses via a form and delete them per partner; they are
 listed by code.
+
+![A partner's course catalogue](../assets/screenshots/partenaire-cours.png)
+
+*The courses your students can pick from when building their learning agreement, with their credits and classification.*
 
 **Use case.**
 > The office records the 12 English-taught master's courses a partner offers to
