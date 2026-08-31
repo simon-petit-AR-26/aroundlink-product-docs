@@ -23,6 +23,38 @@ traitées séparément et clairement identifiées comme telles.
 > Deux universités clientes utilisent AroundLink le même jour ; aucune ne peut voir
 > les étudiants, accords ou bourses de l'autre.
 
+## Ce que vous écrivez sur un partenaire vous appartient
+
+**À quoi ça sert.** Distinguer ce qui décrit un établissement partenaire de ce que
+**vous**, en tant que client, avez consigné à son sujet. Deux écoles peuvent
+travailler avec le même partenaire sans jamais voir les notes de l'autre.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Les contenus que vous renseignez sur un partenaire portent
+la marque de votre établissement et ne sortent pas de chez vous :
+
+- les **informations destinées à vos étudiants** sur ce partenaire (ressources,
+  liens, foire aux questions) ;
+- le **catalogue de cours** que vous tenez à jour pour lui ;
+- les **scores de langue** que vous déclarez comme exigence ;
+- les **fichiers** que vous déposez sur sa fiche, qui gardent trace de leur auteur.
+
+Un autre client travaillant avec le même partenaire tient sa propre version de ces
+contenus, sans interférence.
+
+**Cas d'usage.**
+> Deux écoles françaises envoient des étudiants à la même université espagnole.
+> Chacune y maintient son catalogue de cours et ses consignes, sans jamais voir
+> ceux de l'autre.
+
+!!! warning "Identité descriptive du partenaire"
+    Les identifiants officiels d'un établissement — identifiant ROR, code Erasmus,
+    identifiant EWP, SCHAC — ne sont modifiables par personne : ils font foi.
+    En revanche, les champs descriptifs (nom, adresse, site web) restent portés par
+    la fiche commune de l'établissement : les modifier change la fiche pour tous les
+    clients qui travaillent avec ce partenaire.
+
 ## Types de comptes
 
 **À quoi ça sert.** Trois profils d'utilisateurs cohabitent, chacun avec son espace

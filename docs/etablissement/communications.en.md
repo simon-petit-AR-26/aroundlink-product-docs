@@ -108,3 +108,23 @@ out automatically as a background task.
     lines where `sentAt IS NULL`). Open/click/bounce tracking updated on the email
     provider side. Controller: `ReminderCampaignController`; created via
     `CreateReminderCampaign` from student-document tracking.
+
+## Feedback request reminders
+
+**What it's for.** Prompt students who have not yet left a review about their host
+institution, on the same principle as document reminders.
+
+**Who it's for.** <span class="al-audience">coordinator / IR manager</span>
+
+**How it works.** You target your audience by study level and campaign, or you name
+the students directly — naming students then takes precedence over the filters. A
+preview tells you how many people will be reached before sending, and that number
+matches exactly who receives the message.
+
+Students who have already answered drop out of the reminder on their own: no need
+to keep a list by hand.
+
+**Use case.**
+> At the end of the semester, the coordinator reminds returning Master's students
+> who have not left a review yet; the preview announces 12 recipients, and 12
+> messages go out.

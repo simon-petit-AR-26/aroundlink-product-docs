@@ -116,3 +116,24 @@ fond.
     lignes dont `sentAt IS NULL`). Suivi d'ouverture/clic/rejet mis à jour côté
     fournisseur d'e-mail. Contrôleur : `ReminderCampaignController` ; création via
     `CreateReminderCampaign` depuis le suivi des documents étudiants.
+
+## Relances de demande d'avis
+
+**À quoi ça sert.** Solliciter les étudiants qui n'ont pas encore déposé d'avis sur
+leur établissement d'accueil, sur le même principe que les relances de documents.
+
+**Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
+
+**Comment ça marche.** Vous ciblez votre audience par niveau d'études et par
+campagne, ou vous désignez directement les étudiants concernés — nommer des
+étudiants prend alors le pas sur les filtres. Un aperçu vous indique combien de
+personnes seront touchées avant l'envoi, et ce nombre correspond exactement à qui
+recevra le message.
+
+Les étudiants ayant déjà répondu sortent d'eux-mêmes de la relance : inutile de
+tenir une liste à la main.
+
+**Cas d'usage.**
+> En fin de semestre, le coordinateur relance les étudiants de Master rentrés de
+> mobilité qui n'ont pas encore laissé d'avis ; l'aperçu annonce 12 destinataires,
+> et 12 messages partent.
