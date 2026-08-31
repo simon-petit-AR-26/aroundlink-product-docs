@@ -24,6 +24,10 @@ visibilité. **Factsheet IIA** : votre propre factsheet EWP (synchronisation,
 calendrier, coordinateurs…). Les contenus se rédigent sous forme de blocs rattachés
 à des catégories et sous-catégories.
 
+![Votre fiche EWP dans Mon établissement](../assets/screenshots/mon-etablissement-fiche-ewp.png)
+
+*Votre fiche telle que vos partenaires la lisent : sites web, dates limites de nomination et de candidature par semestre, coordinateurs entrants et procédure à suivre. Le bandeau du haut indique si les données viennent d'une synchronisation EWP ou de votre saisie, et le cadenas verrouille une section pour qu'une synchronisation ne l'écrase pas.*
+
 **Cas d'usage.**
 > Un coordinateur ajoute un lien « Coût de la vie à Lisbonne » visible uniquement
 > par les étudiants entrants, puis dépose un PDF de bienvenue dans la bibliothèque.
@@ -75,6 +79,10 @@ choix de destination.
 de pays, un contenu et d'éventuelles photos. Depuis le sous-onglet « avis », vous
 acceptez ou refusez chaque contribution ; les avis acceptés et publics remontent
 ensuite vers les étudiants.
+
+![Modération des avis reçus sur votre établissement](../assets/screenshots/mon-etablissement-avis.png)
+
+*Les avis laissés sur votre établissement, répartis entre en attente, acceptés et refusés. Chaque avis porte son thème, sa note et son auteur, et vous choisissez de l'accepter en interne, de l'accepter et de le publier, ou de le refuser.*
 
 **Cas d'usage.**
 > Un étudiant de retour d'Antalya laisse un avis 4 étoiles avec photos ; le

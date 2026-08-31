@@ -20,6 +20,10 @@ participating students and the pool of eligible offers from those criteria. The 
 moves from Draft to Ready (opening it to students), then Opened and Finished; only a draft
 campaign remains editable.
 
+![Campaign list, showing how many campaigns are draft, open and finished](../assets/screenshots/campagnes-liste.png)
+
+*Your campaigns, whatever their status. The four counters at the top give you the state of play at a glance. Click the image to enlarge it.*
+
 **Use case.**
 > The IRO opens a "2026/2027 – Semester 1 – Master" campaign, 5 wishes allowed, restricted
 > to Erasmus+ partners tagged "Engineering"; every Master student with a Semester 1 period
@@ -51,6 +55,10 @@ rest — then send proposals to students, who accept (creating a nomination to t
 or refuse (which cancels their other wishes and frees the place). When a proposal is sent
 or a student is placed, they can be notified — by email and/or in the app; these
 notifications are configurable and can be turned off by the institution.
+
+![Placement screen: students and their wishes on the left, destinations and their places on the right](../assets/screenshots/campagne-suivi-affectation.png)
+
+*The placement screen. Ranked students with their wishes on the left, destinations and remaining places by level and period on the right. The colour code separates the term asked for, another term, a place given, and an over-capacity assignment.*
 
 **Use case.**
 > Two students rank Berlin as wish #1: the higher-ranked one (GPA) gets the proposal, the
@@ -88,6 +96,10 @@ list.
 to students: hidden or archived partners are excluded, as are destinations with no place
 available. The figures shown match what the student will see.
 
+![Campaign statistics: assignment rate, wish satisfaction, funnel and breakdowns](../assets/screenshots/campagne-suivi-statistiques.png)
+
+*A campaign's statistics: which wish rank placed students got, the campaign funnel step by step, and breakdowns by country, agreement type and period.*
+
 **Use case.**
 > Mid-round, the coordinator sees 60% of students have submitted their wishes and 12 are
 > placed; after closing, they export the final assignments for the mobility team.
@@ -97,6 +109,28 @@ available. The figures shown match what the student will see.
     completeness derived from existing proposals/placements. Exports via
     `CampaignExportService` (`exportAllWishes`, `exportFinalAssignments`). Live preview
     (`/preview`) for the create-form counters.
+
+
+## Nominating to your partners
+
+**What it's for.** Officially telling the host institution you are sending them a student,
+then recording their answer.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** Each row is a student assigned to a destination. You nominate them, and
+the partner is informed. When they reply, you record their decision, stating how it reached
+you: the platform, the EWP network, an email or a phone call. A refusal comes with its
+reason, and a nomination can be cancelled as long as it is not confirmed.
+
+![Campaign nominations screen, showing each nomination's state and confirmation channel](../assets/screenshots/campagne-nominations.png)
+
+*Each nomination's state and, for confirmed ones, how the answer came in.*
+
+**Use case.**
+> The coordinator nominates twelve students; eight confirmations come back through the
+> platform or EWP, two by phone which they record by hand, and one destination refuses for
+> lack of a place in the requested specialisation.
 
 !!! note "Document reminders"
     Automatic reminders to students with an incomplete dossier are covered by

@@ -22,6 +22,10 @@ is highlighted and links straight to the right page. Before any placement, the
 dashboard suggests a few partner universities to explore; once the student is
 placed, it shows the confirmed host university and a checklist of mobility steps.
 
+![The student's dashboard](../assets/screenshots/etudiant-tableau-de-bord.png)
+
+*The dashboard: their mobility timeline step by step, their confirmed destination and the list of actions still to complete.*
+
 **Use case.**
 > A student who has just submitted their wishes logs in and sees the
 > "Application in progress" step highlighted, with a direct link to the campaign.
@@ -149,6 +153,10 @@ are offered, covering Erasmus agreements (IIA) as well as bilateral, double-degr
 and paying agreements. A "Match my profile" button pre-selects the student's
 level and field. Filtering happens live, without a full page reload.
 
+![Student destination search](../assets/screenshots/etudiant-trouver-destination.png)
+
+*Destination search: cards, list or world map, filters by level, language, period and mobility type, and favouriting.*
+
 **Use case.**
 > A 4th-year aerospace student clicks "Match my profile" and immediately sees
 > only the partners offering their level and field for a winter semester.
@@ -225,6 +233,10 @@ Opening one shows their ranked wishes, a search of eligible exchanges and any
 missing required documents. Saving offers two modes: draft (no blocking) and
 definitive submission (which checks the exchange requirements and the presence of
 required documents before accepting).
+
+![Campaign and wishes on the student side](../assets/screenshots/etudiant-voeux.png)
+
+*The campaign as the student sees it: dates, how many wishes are allowed, their ranked wishes, requirements per destination and what is still missing from their file.*
 
 **Use case.**
 > A student ranks 5 choices, uploads the last required transcript, then submits

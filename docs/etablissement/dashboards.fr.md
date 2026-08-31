@@ -21,6 +21,10 @@ de suivi du pipeline étudiant. Chaque indicateur est cliquable et mène directe
 vers la file concernée. Vous pouvez ajouter, masquer et redimensionner les blocs
 depuis un catalogue de widgets.
 
+![Tableau de bord du coordinateur](../assets/screenshots/tableau-de-bord.png)
+
+*Le tableau de bord : le pipeline de vos étudiants étape par étape, vos chiffres clés, la répartition des places par période et niveau, et les dossiers qui vous attendent. Cliquez sur l'image pour l'agrandir.*
+
 **Cas d'usage.**
 > Lundi matin, un coordinateur voit « 12 documents en attente de validation » et
 > clique pour arriver directement sur la file à traiter.

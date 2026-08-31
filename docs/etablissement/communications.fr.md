@@ -26,6 +26,10 @@ brouillon, et un message envoyé est verrouillé. À l'envoi, un récapitulatif 
 le nombre de destinataires, d'e-mails partis et de messages épinglés. Un message
 épinglé peut ensuite être retiré du tableau de bord.
 
+![Fenêtre de composition d'une diffusion](../assets/screenshots/diffusion-nouveau-message.png)
+
+*La composition d'une diffusion : le sujet, le message, l'audience visée, les filtres facultatifs et les canaux d'envoi.*
+
 **Cas d'usage.**
 > Un coordinateur envoie « Date limite de nomination reportée au 15 mars » à tous
 > les étudiants sortants en Espagne, épinglé sur leur tableau de bord et envoyé

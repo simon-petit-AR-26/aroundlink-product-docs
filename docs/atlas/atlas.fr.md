@@ -22,10 +22,18 @@ statut réseau et signale d'un repère les établissements déjà partenaires de
 établissement. La page est en lecture seule : on y consulte, on n'y crée ni ne
 modifie de fiche.
 
+![Atlas mondial en vue carte du monde](../assets/screenshots/atlas-carte.png)
+
+*L'Atlas en vue carte : chaque point est un établissement du registre mondial. Les vues Tableau et Cartes offrent la même recherche.*
+
 **Cas d'usage.**
 > Un coordinateur cherche « Antalya », filtre sur la Turquie, voit sur la carte
 > quelles universités proches exposent déjà une factsheet EWP et repère que l'une
 > d'elles est déjà partenaire.
+
+![Atlas mondial en vue cartes](../assets/screenshots/atlas-cartes.png)
+
+*La même recherche en vue cartes : chaque établissement avec son pays, son type et son raccordement au réseau EWP.*
 
 ??? note "Détails internes (équipe AroundLink)"
     L'annuaire est construit à partir de registres ouverts (ROR / Wikidata) et

@@ -20,10 +20,18 @@ type and EWP factsheet status. Each row shows its network status and marks the
 institutions already partnered with your institution. The page is read-only: you
 consult it, you don't create or edit a record here.
 
+![World Atlas in map view](../assets/screenshots/atlas-carte.png)
+
+*Atlas in map view: each dot is an institution from the world registry. The Table and Cards views offer the same search.*
+
 **Use case.**
 > A coordinator searches "Antalya", filters to Turkey, sees on the map which nearby
 > universities already expose an EWP factsheet, and spots that one of them is already
 > a partner.
+
+![World Atlas in cards view](../assets/screenshots/atlas-cartes.png)
+
+*The same search in cards view: each institution with its country, its type and whether it is connected to the EWP network.*
 
 ??? note "Internal details (AroundLink team)"
     The directory is built from open registries (ROR / Wikidata) and enriched by

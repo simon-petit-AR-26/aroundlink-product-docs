@@ -21,6 +21,10 @@ view the information, conditions, approval status and history, sync the EWP fact
 and notify the partner. A student's eligibility (level, period, GPA, language scores)
 is checked automatically at application time.
 
+![Consolidated list of agreements](../assets/screenshots/accords-liste.png)
+
+*All your agreements across every partner: type, status, levels, languages, validity and places. Click the image to enlarge it.*
+
 **Use case.**
 > The IRO records an Erasmus+ exchange with TU Munich: 3 Master places in engineering,
 > English B2 required, IIA identifier synced with the partner over EWP.
@@ -48,6 +52,10 @@ enforces each agreement's annual cap.
 matrix (year × field × level × period). The system checks each mobility block's annual
 cap before saving, updates the affected cells and groups levels by EQF framework so
 related programmes stay together. The result is immediately visible to students.
+
+![An agreement's place distribution matrix](../assets/screenshots/places-matrice.png)
+
+*The allocation grid: academic years split by period across the columns, your study levels grouped by European framework down the rows. The summary at the bottom flags an overrun of the negotiated annual cap in red.*
 
 **Use case.**
 > A partner grants 4 places: the office assigns 2 to Master / Semester 1 and 2 to

@@ -24,6 +24,10 @@ Avant toute affectation, le tableau de bord suggère quelques établissements
 partenaires à explorer ; une fois l'étudiant placé, il affiche l'établissement
 d'accueil confirmé et une liste de contrôle des étapes de mobilité.
 
+![Tableau de bord de l'étudiant](../assets/screenshots/etudiant-tableau-de-bord.png)
+
+*Le tableau de bord : la frise de sa mobilité étape par étape, sa destination confirmée et la liste des actions qui lui restent à faire.*
+
 **Cas d'usage.**
 > Un étudiant qui vient de soumettre ses vœux se connecte et voit l'étape
 > « Candidature en cours » surlignée, avec un lien direct vers la campagne.
@@ -158,6 +162,10 @@ que les accords bilatéraux, doubles diplômes et payants. Un bouton « Correspo
 mon profil » présélectionne le niveau et le domaine de l'étudiant. Le filtrage se
 fait en direct, sans rechargement complet de la page.
 
+![Recherche de destination côté étudiant](../assets/screenshots/etudiant-trouver-destination.png)
+
+*La recherche de destinations : cartes, liste ou carte du monde, filtres par niveau, langue, période et type de mobilité, et mise en favori.*
+
 **Cas d'usage.**
 > Un étudiant de 4e année en aéronautique clique sur « Correspond à mon profil »
 > et voit aussitôt les seuls partenaires offrant son niveau et son domaine pour
@@ -240,6 +248,10 @@ d'exchanges éligibles et les éventuels documents requis manquants.
 L'enregistrement propose deux modes : brouillon (sans blocage) et soumission
 définitive (qui vérifie les exigences des exchanges et la présence des documents
 requis avant d'accepter).
+
+![Campagne et vœux côté étudiant](../assets/screenshots/etudiant-voeux.png)
+
+*La campagne vue par l'étudiant : les dates, le nombre de vœux autorisés, ses vœux classés par ordre de préférence, les exigences par destination et ce qui manque encore à son dossier.*
 
 **Cas d'usage.**
 > Un étudiant classe 5 choix, téléverse le dernier relevé requis, puis soumet

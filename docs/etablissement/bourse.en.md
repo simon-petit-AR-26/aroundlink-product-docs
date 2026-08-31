@@ -22,6 +22,10 @@ picture in front of them at a single glance.
 allocation, the amounts committed and paid, the remaining budget and the progress of the
 grant cases.
 
+![Mobility grant tracking](../assets/screenshots/bourse-pipeline.png)
+
+*The agency allocation, what is committed and what remains, then each grant tracked by stage: agreement to sign, advance to pay, in mobility, missing documents, closed.*
+
 **Use case.**
 > At the start of the year, the coordinator opens the dashboard and sees at a glance how
 > much of the allocation is already committed and how much remains available.

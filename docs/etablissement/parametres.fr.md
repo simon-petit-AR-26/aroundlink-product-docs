@@ -18,6 +18,10 @@ votre structure réelle.
 campus avec le nombre d'étudiants rattachés à chacun. La suppression est bloquée
 si des étudiants y sont encore rattachés, pour éviter toute perte de lien.
 
+![Écran des campus](../assets/screenshots/parametres-campus.png)
+
+*Vos sites physiques, avec le nombre d'étudiants rattachés à chacun.*
+
 **Cas d'usage.**
 > Une école multi-sites déclare les campus de Paris et de Lyon, puis y affecte
 > ses étudiants.
@@ -60,6 +64,10 @@ correspondance standard (EQF) — pour que les listes déroulantes soient famili
 créer, modifier et supprimer vos libellés de niveaux, chacun associé à un niveau
 EQF. Chaque ligne indique combien de places ou d'accords utilisent ce niveau. Les
 libellés en double sont refusés.
+
+![Niveaux d'études personnalisés](../assets/screenshots/parametres-niveaux.png)
+
+*Vos propres libellés de niveaux, chacun rattaché à un niveau européen, avec le nombre d'étudiants, d'établissements et de places qui en dépendent.*
 
 **Cas d'usage.**
 > Une école d'ingénieurs définit « Aéro 4 » associé à l'EQF 7, afin de filtrer
@@ -135,6 +143,10 @@ Une fois vos tags créés, vous les posez depuis les listes d'étudiants ou de
 partenaires. Sélectionnez plusieurs lignes pour en ajouter ou en retirer à
 l'ensemble de la sélection en une seule fois.
 
+![Écran des tags](../assets/screenshots/parametres-tags.png)
+
+*Vos tags, leur périmètre et leur couleur, avec le nombre d'établissements et d'étudiants sur lesquels chacun est posé.*
+
 **Cas d'usage.**
 > Le coordinateur crée un tag « Échange double diplôme » sur le périmètre
 > Établissement, l'applique à ses douze partenaires concernés, puis s'en sert
@@ -158,6 +170,10 @@ la reconstruire à chaque fois.
 filtres et le tri, puis vous enregistrez cette disposition comme une vue. Vous
 pouvez ensuite basculer d'un clic entre vos vues. Les vues sont propres à votre
 établissement.
+
+![Périodes de mobilité](../assets/screenshots/parametres-periodes.png)
+
+*Vos périodes, avec le nombre d'établissements et de places qui s'appuient sur chacune.*
 
 **Cas d'usage.**
 > Un coordinateur enregistre une vue « Partenaires Espagne — accords actifs » avec
@@ -199,6 +215,10 @@ chaque module de l'application, un niveau d'accès (par exemple lecture ou
 lecture/écriture) dans une matrice. Les modifications s'appliquent à tous les
 membres portant le rôle.
 
+![Matrice des rôles et permissions](../assets/screenshots/parametres-roles.png)
+
+*La matrice des droits : vos rôles en colonnes, les modules de l'application en lignes, et pour chaque croisement un niveau — aucun accès, lecture seule, ou écriture. Les quatre rôles fournis se personnalisent, et vous pouvez en créer d'autres.*
+
 **Cas d'usage.**
 > L'admin crée un rôle « Coordinateur » avec accès en écriture aux partenaires
 > mais en lecture seule aux paramètres.
@@ -219,6 +239,10 @@ utilisateurs partenaires invités — filtrable par type, statut et recherche li
 **Comment ça marche.** Une page regroupe l'ensemble des utilisateurs de
 l'organisation et permet de les filtrer par catégorie, par statut ou par
 nom/e-mail. Elle est réservée aux plans de mobilité payants.
+
+![Écran d'import](../assets/screenshots/parametres-imports.png)
+
+*Un import : le modèle à télécharger, les colonnes obligatoires, et l'aperçu ligne par ligne avant confirmation.*
 
 **Cas d'usage.**
 > L'admin recherche un utilisateur par e-mail pour vérifier son statut et sa

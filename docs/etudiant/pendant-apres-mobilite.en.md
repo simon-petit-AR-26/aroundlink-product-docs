@@ -23,6 +23,10 @@ provisional dates derived from the academic year. A button generates the
 assignment certificate as a PDF, from the nomination-letter template configured
 by the institution when one exists.
 
+![The student's "My exchange" page](../assets/screenshots/etudiant-ma-mobilite.png)
+
+*Their mobility page: exchange details, selected courses, arrival and departure certificates, downloadable documents and reviews from previous students.*
+
 **Use case.**
 > On arrival abroad, a student submits their signed arrival attestation and
 > downloads their official assignment certificate for the host institution's
@@ -52,6 +56,10 @@ status; submitting records the student's signature and moves the status to
 "Selected by student". Editing the courses resets any institution signatures
 already applied, to avoid validation on an outdated version. Download is only
 possible once the OLA is fully validated.
+
+![The learning agreement on the student side](../assets/screenshots/etudiant-contrat-pedagogique.png)
+
+*The learning agreement: signature progress, mobility period, language of instruction, recognition at home, and the partner's course catalogue with credits.*
 
 **Use case.**
 > A student chooses 6 courses (30 ECTS) across two fields, submits their OLA, then
