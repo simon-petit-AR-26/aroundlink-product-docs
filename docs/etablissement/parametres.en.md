@@ -148,6 +148,35 @@ several rows to add or remove tags across the whole selection at once.
     taken into account there. Check your running campaigns before changing the
     scope of an existing tag.
 
+## Student filters
+
+**What it's for.** Describe your students with your own criteria — and, when you
+choose to, make those criteria visible to your students as they search for a
+destination.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** A student filter carries a name and a colour, and applies to
+students or to institutions. You set it from a student's record, right beside
+their tags, and you find it again as a column in your lists: it sorts and filters
+like its neighbours.
+
+The difference with a tag fits in one sentence: **a tag stays with you, a student
+filter shows**. Tick "Visible to students" and the value appears in "Find your
+exchange", where your students pick it like a country or a language. "Match my
+profile" then pre-selects the values a student already carries.
+
+**Use case.**
+> The coordinator creates the "Double degree" filter, applies it to the students
+> concerned and makes it visible. A student carrying it opens their destination
+> search: the filter is already ticked, and they only see the destinations that
+> concern them.
+
+!!! tip "Tag or student filter?"
+    Ask yourself who needs to see the value. An internal point to watch, a note
+    for the team, an administrative follow-up: that's a tag. A characteristic the
+    student recognises and picks their destination on: that's a student filter.
+
 ## Saved views
 
 **What it's for.** Save a table configuration (chosen columns, widths, filters,
@@ -190,6 +219,30 @@ single failure does not interrupt the whole batch.
     invited…). Invitations go out via a dedicated email. Each new member is also
     linked to the existing partner contacts that concern them.
 
+## Creating your own account
+
+**What it's for.** Letting a colleague open their own account, with no invitation, and land
+straight with their team.
+
+**Who it's for.** <span class="al-audience">any international office staff</span>
+
+**How it works.** The person enters their first name, last name and **professional email
+address**. The domain of that address identifies their institution: they are never asked to
+type the name of their school, nor its country.
+
+That is deliberate. A hand-typed name would be useless for matching records — "University of
+Lille" and "University of Lille 1" would end up as two different institutions when there is
+only one.
+
+In the common case, a single record carries that domain and the attachment happens silently:
+the person lands directly with their colleagues. A choice is only offered when there really
+is one — several records on the same domain, a main entity and its campuses.
+
+**Use case.**
+> A new mobility officer joins the office. They create their account with their professional
+> address and immediately find their institution's partners and campaigns, without anyone
+> having had to invite them.
+
 ## Roles & permissions
 
 **What it's for.** Define precisely who can see and edit what, through custom roles
@@ -214,6 +267,18 @@ apply to all members holding the role.
     `SettingsController::roles()`. Roles per institution, permission matrix by
     module and access level. Permissions drive access to the various areas of the
     Mobility space.
+
+## A person's record
+
+**What it's for.** Bringing together on one screen everything you know about a person,
+whether they are a contact in your directory, a member of your team, or both.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** A directory contact and a login account used to be two separate records
+with no link between them. It is now **one person, one page**: your contact grids and your
+team list lead to the same place, and you see both their details and the state of their
+access.
 
 ## User directory
 

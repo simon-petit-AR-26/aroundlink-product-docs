@@ -79,6 +79,39 @@ classement de promotion lorsqu'ils ont été importés.
 > Avant de valider une nomination, le coordinateur ouvre la fiche pour vérifier le
 > niveau de langue et la moyenne de l'étudiant.
 
+## Complétude du profil étudiant
+
+**À quoi ça sert.** Savoir d'un coup d'œil quels étudiants n'ont pas fini de renseigner
+leur profil, et les relancer sans tenir de liste.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** La complétude se mesure sur les **neuf informations que l'étudiant
+est seul à pouvoir donner sur lui-même** : date, lieu et pays de naissance, nationalité,
+genre, e-mail personnel, téléphone, numéro d'urgence et photo de profil.
+
+Ce que vous renseignez vous-même — nom, prénom, numéro étudiant, e-mail institutionnel,
+niveau — n'entre pas dans le calcul : l'étudiant ne doit pas être mesuré sur le travail de
+quelqu'un d'autre.
+
+Vous retrouvez cette mesure dans la colonne **Profile** de votre liste d'étudiants, qui se
+trie et se filtre comme les autres. L'étudiant, lui, voit une jauge sur son profil et une
+fenêtre qui lui propose de compléter ce qui manque, champ par champ.
+
+Une fois la liste filtrée sur les profils incomplets, la relance part depuis la barre de
+sélection, comme n'importe quel autre rappel.
+
+**Cas d'usage.**
+> Trois semaines avant les départs, la coordinatrice trie sa liste sur la colonne Profile,
+> sélectionne les vingt-deux étudiants sous 100 %, et lance une relance. Chacun reçoit la
+> liste de ses propres champs manquants.
+
+!!! note "Le genre non renseigné"
+    « Non renseigné » est la valeur par défaut de la fiche, pas une réponse : la jauge ne le
+    compte donc pas. Un étudiant qui préfère ne pas répondre choisit « Ne souhaite pas
+    répondre », qui compte, lui, comme une réponse — sans quoi il resterait indéfiniment
+    sous les 100 %.
+
 ## Les documents d'un étudiant
 
 **À quoi ça sert.** Voir d'un coup d'œil ce que l'étudiant a fourni, ce qu'il lui

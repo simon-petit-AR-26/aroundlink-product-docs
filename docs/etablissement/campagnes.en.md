@@ -20,6 +20,14 @@ participating students and the pool of eligible offers from those criteria. The 
 moves from Draft to Ready (opening it to students), then Opened and Finished; only a draft
 campaign remains editable.
 
+**The end date closes the campaign on its own.** The morning after its last day, the
+campaign moves to Finished with nobody clicking: wishes still in draft become wishes, your
+students are notified and you receive the summary — exactly what the "Finish" button does.
+
+If that closing feels premature, the "Reopen" button gives your students back the right to
+change their wishes. Remember to push the end date back: without that, the campaign closes
+again the next morning.
+
 ![Campaign list, showing how many campaigns are draft, open and finished](../assets/screenshots/campagnes-liste.png)
 
 *Your campaigns, whatever their status. The four counters at the top give you the state of play at a glance. Click the image to enlarge it.*
@@ -77,6 +85,30 @@ notifications are configurable and can be turned off by the institution.
     `PENDING` and never downgrades an `APPROVED`. The `matchMakingCompleted` flag prevents
     re-running the global allocation.
 
+## What the matching round did
+
+**What it's for.** Knowing exactly what a matching round placed, what it could not place,
+and **who** it left aside.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** At the end of the round, a report tells you how many students were served
+and which ones were left out. Skipped students are **named**, with the reason — a bare total
+would send you through the whole cohort to find them.
+
+Four reasons can leave a student aside:
+
+- they have **no profile**;
+- their level has **no track** attached;
+- they have **no ranking**;
+- their **file is incomplete**.
+
+A round that places nobody now says so plainly, instead of reporting itself as completed.
+
+**Use case.**
+> The coordinator runs the round and reads the report: forty-two students placed, three left
+> out for want of a ranking. It names them; they import the ranks and run the round again.
+
 ## Tracking, results and exports
 
 **What it's for.** Gives the coordinator an operational dashboard of the running campaign
@@ -121,7 +153,18 @@ then recording their answer.
 **How it works.** Each row is a student assigned to a destination. You nominate them, and
 the partner is informed. When they reply, you record their decision, stating how it reached
 you: the platform, the EWP network, an email or a phone call. A refusal comes with its
-reason, and a nomination can be cancelled as long as it is not confirmed.
+reason.
+
+The tab appears as soon as a place is held in the campaign. You can nominate a whole
+selection in one go: the batch is processed in slices, its progress stays visible, and an
+interrupted batch resumes where it stopped instead of starting over.
+
+While the partner has not replied, two actions save you leaving the tool:
+
+- **Remind** — a reminder goes to the partner without going through your mailbox. One
+  reminder per twenty-four hours: the button greys out afterwards.
+- **Withdraw** — you cancel the nomination and say why. The partner is told no decision is
+  expected any more, and the student becomes available for another destination.
 
 ![Campaign nominations screen, showing each nomination's state and confirmation channel](../assets/screenshots/campagne-nominations.png)
 
