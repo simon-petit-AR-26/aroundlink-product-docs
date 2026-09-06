@@ -555,6 +555,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-the-matching-round-did" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the matching round did
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tracking-results-and-exports" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1381,6 +1392,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-the-matching-round-did" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the matching round did
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tracking-results-and-exports" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1435,6 +1457,12 @@ agreement types and an optional partner-tag filter. On save, the system builds t
 participating students and the pool of eligible offers from those criteria. The campaign
 moves from Draft to Ready (opening it to students), then Opened and Finished; only a draft
 campaign remains editable.</p>
+<p><strong>The end date closes the campaign on its own.</strong> The morning after its last day, the
+campaign moves to Finished with nobody clicking: wishes still in draft become wishes, your
+students are notified and you receive the summary — exactly what the "Finish" button does.</p>
+<p>If that closing feels premature, the "Reopen" button gives your students back the right to
+change their wishes. Remember to push the end date back: without that, the campaign closes
+again the next morning.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/campagnes-liste.png" data-desc-position="bottom"><img alt="Campaign list, showing how many campaigns are draft, open and finished" src="../../../assets/screenshots/campagnes-liste.png"></a></p>
 <p><em>Your campaigns, whatever their status. The four counters at the top give you the state of play at a glance. Click the image to enlarge it.</em></p>
 <p><strong>Use case.</strong></p>
@@ -1488,6 +1516,26 @@ affectation link is unique. A re-nomination after refusal/cancellation returns t
 <code>PENDING</code> and never downgrades an <code>APPROVED</code>. The <code>matchMakingCompleted</code> flag prevents
 re-running the global allocation.</p>
 </details>
+<h2 id="what-the-matching-round-did">What the matching round did<a class="headerlink" href="#what-the-matching-round-did" title="Permanent link">¶</a></h2>
+<p><strong>What it's for.</strong> Knowing exactly what a matching round placed, what it could not place,
+and <strong>who</strong> it left aside.</p>
+<p><strong>Who it's for.</strong> <span class="al-audience">IRO manager / coordinator</span></p>
+<p><strong>How it works.</strong> At the end of the round, a report tells you how many students were served
+and which ones were left out. Skipped students are <strong>named</strong>, with the reason — a bare total
+would send you through the whole cohort to find them.</p>
+<p>Four reasons can leave a student aside:</p>
+<ul>
+<li>they have <strong>no profile</strong>;</li>
+<li>their level has <strong>no track</strong> attached;</li>
+<li>they have <strong>no ranking</strong>;</li>
+<li>their <strong>file is incomplete</strong>.</li>
+</ul>
+<p>A round that places nobody now says so plainly, instead of reporting itself as completed.</p>
+<p><strong>Use case.</strong></p>
+<blockquote>
+<p>The coordinator runs the round and reads the report: forty-two students placed, three left
+out for want of a ranking. It names them; they import the ranks and run the round again.</p>
+</blockquote>
 <h2 id="tracking-results-and-exports">Tracking, results and exports<a class="headerlink" href="#tracking-results-and-exports" title="Permanent link">¶</a></h2>
 <p><strong>What it's for.</strong> Gives the coordinator an operational dashboard of the running campaign
 (who submitted, who's placed, dossier completeness), results and accepted views, plus CSV
@@ -1523,7 +1571,17 @@ then recording their answer.</p>
 <p><strong>How it works.</strong> Each row is a student assigned to a destination. You nominate them, and
 the partner is informed. When they reply, you record their decision, stating how it reached
 you: the platform, the EWP network, an email or a phone call. A refusal comes with its
-reason, and a nomination can be cancelled as long as it is not confirmed.</p>
+reason.</p>
+<p>The tab appears as soon as a place is held in the campaign. You can nominate a whole
+selection in one go: the batch is processed in slices, its progress stays visible, and an
+interrupted batch resumes where it stopped instead of starting over.</p>
+<p>While the partner has not replied, two actions save you leaving the tool:</p>
+<ul>
+<li><strong>Remind</strong> — a reminder goes to the partner without going through your mailbox. One
+  reminder per twenty-four hours: the button greys out afterwards.</li>
+<li><strong>Withdraw</strong> — you cancel the nomination and say why. The partner is told no decision is
+  expected any more, and the student becomes available for another destination.</li>
+</ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/campagne-nominations.png" data-desc-position="bottom"><img alt="Campaign nominations screen, showing each nomination's state and confirmation channel" src="../../../assets/screenshots/campagne-nominations.png"></a></p>
 <p><em>Each nomination's state and, for confirmed ones, how the answer came in.</em></p>
 <p><strong>Use case.</strong></p>
@@ -1557,7 +1615,7 @@ lack of a place in the requested specialisation.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 31, 2026 15:45:32 CEST">August 31, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2026 14:41:00 CEST">September 6, 2026</span>
   </span>
 
     
