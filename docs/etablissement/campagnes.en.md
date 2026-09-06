@@ -85,6 +85,30 @@ notifications are configurable and can be turned off by the institution.
     `PENDING` and never downgrades an `APPROVED`. The `matchMakingCompleted` flag prevents
     re-running the global allocation.
 
+## What the matching round did
+
+**What it's for.** Knowing exactly what a matching round placed, what it could not place,
+and **who** it left aside.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** At the end of the round, a report tells you how many students were served
+and which ones were left out. Skipped students are **named**, with the reason — a bare total
+would send you through the whole cohort to find them.
+
+Four reasons can leave a student aside:
+
+- they have **no profile**;
+- their level has **no track** attached;
+- they have **no ranking**;
+- their **file is incomplete**.
+
+A round that places nobody now says so plainly, instead of reporting itself as completed.
+
+**Use case.**
+> The coordinator runs the round and reads the report: forty-two students placed, three left
+> out for want of a ranking. It names them; they import the ranks and run the round again.
+
 ## Tracking, results and exports
 
 **What it's for.** Gives the coordinator an operational dashboard of the running campaign

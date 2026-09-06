@@ -90,6 +90,30 @@ l'établissement.
     repasse en `PENDING` sans jamais rétrograder un `APPROVED`. Le drapeau
     `matchMakingCompleted` empêche de relancer l'attribution globale.
 
+## Ce que le tour d'affectation a fait
+
+**À quoi ça sert.** Savoir précisément ce qu'un tour d'affectation a placé, ce qu'il n'a
+pas pu placer, et **qui** il a laissé de côté.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** À la fin du tour, un compte rendu vous dit combien d'étudiants ont
+été servis et lesquels ont été écartés. Les étudiants écartés sont **nommés**, avec la
+raison — un simple total vous obligerait à parcourir toute la promotion pour les retrouver.
+
+Quatre raisons peuvent écarter un étudiant :
+
+- il n'a **pas de profil** ;
+- son niveau n'a **aucun parcours** rattaché ;
+- il n'a **pas de classement** ;
+- son **dossier est incomplet**.
+
+Un tour qui ne place personne le dit maintenant clairement, au lieu de s'annoncer terminé.
+
+**Cas d'usage.**
+> Le coordinateur lance le tour et lit le compte rendu : quarante-deux étudiants placés,
+> trois écartés faute de classement. Il les nomme, importe leur rang, et relance le tour.
+
 ## Suivi, résultats et exports
 
 **À quoi ça sert.** Offre au coordinateur un tableau de bord opérationnel de la campagne

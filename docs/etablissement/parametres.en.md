@@ -219,6 +219,30 @@ single failure does not interrupt the whole batch.
     invited…). Invitations go out via a dedicated email. Each new member is also
     linked to the existing partner contacts that concern them.
 
+## Creating your own account
+
+**What it's for.** Letting a colleague open their own account, with no invitation, and land
+straight with their team.
+
+**Who it's for.** <span class="al-audience">any international office staff</span>
+
+**How it works.** The person enters their first name, last name and **professional email
+address**. The domain of that address identifies their institution: they are never asked to
+type the name of their school, nor its country.
+
+That is deliberate. A hand-typed name would be useless for matching records — "University of
+Lille" and "University of Lille 1" would end up as two different institutions when there is
+only one.
+
+In the common case, a single record carries that domain and the attachment happens silently:
+the person lands directly with their colleagues. A choice is only offered when there really
+is one — several records on the same domain, a main entity and its campuses.
+
+**Use case.**
+> A new mobility officer joins the office. They create their account with their professional
+> address and immediately find their institution's partners and campaigns, without anyone
+> having had to invite them.
+
 ## Roles & permissions
 
 **What it's for.** Define precisely who can see and edit what, through custom roles
@@ -243,6 +267,18 @@ apply to all members holding the role.
     `SettingsController::roles()`. Roles per institution, permission matrix by
     module and access level. Permissions drive access to the various areas of the
     Mobility space.
+
+## A person's record
+
+**What it's for.** Bringing together on one screen everything you know about a person,
+whether they are a contact in your directory, a member of your team, or both.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** A directory contact and a login account used to be two separate records
+with no link between them. It is now **one person, one page**: your contact grids and your
+team list lead to the same place, and you see both their details and the state of their
+access.
 
 ## User directory
 

@@ -233,6 +233,32 @@ pas l'ensemble.
     invité…). Les invitations partent via un e-mail dédié. Chaque nouveau membre
     est aussi relié aux contacts partenaires existants qui le concernent.
 
+## Créer son compte soi-même
+
+**À quoi ça sert.** Permettre à un collègue d'ouvrir son propre compte, sans invitation
+préalable, et d'arriver directement chez son équipe.
+
+**Pour qui.** <span class="al-audience">tout personnel d'un bureau des relations
+internationales</span>
+
+**Comment ça marche.** La personne renseigne son nom, son prénom et son **adresse e-mail
+professionnelle**. C'est le domaine de cette adresse qui désigne son établissement : on ne
+lui demande jamais de saisir le nom de son école, ni son pays.
+
+C'est volontaire. Un nom saisi à la main ne servirait à rien pour rapprocher deux fiches —
+« Université de Lille » et « Université de Lille 1 » finiraient par désigner deux
+établissements différents alors qu'il n'y en a qu'un.
+
+Dans le cas courant, une seule fiche porte ce domaine et le rattachement se fait
+silencieusement : la personne arrive directement auprès de ses collègues. Un choix ne lui
+est proposé que lorsqu'il en existe réellement un — plusieurs fiches sur le même domaine,
+une entité principale et ses campus.
+
+**Cas d'usage.**
+> Une nouvelle chargée de mobilité arrive au bureau. Elle crée son compte avec son adresse
+> professionnelle et retrouve aussitôt les partenaires et les campagnes de son
+> établissement, sans que personne ait eu à l'inviter.
+
 ## Rôles & permissions
 
 **À quoi ça sert.** Définir précisément qui peut voir et modifier quoi, grâce à des
@@ -258,6 +284,18 @@ membres portant le rôle.
     `SettingsController::roles()`. Rôles par établissement, matrice de permissions
     par module et niveau d'accès. Les droits pilotent l'accès aux différentes
     zones de l'espace Mobilité.
+
+## Fiche d'une personne
+
+**À quoi ça sert.** Réunir sur un seul écran tout ce que vous savez d'une personne, qu'elle
+soit un contact de votre annuaire, un membre de votre équipe, ou les deux.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Un contact d'annuaire et un compte de connexion désignaient
+auparavant deux fiches distinctes, sans lien entre elles. C'est désormais **une seule
+personne, une seule page** : vos grilles de contacts et la liste de votre équipe mènent au
+même endroit, et vous y voyez aussi bien ses coordonnées que l'état de son accès.
 
 ## Annuaire des utilisateurs
 
