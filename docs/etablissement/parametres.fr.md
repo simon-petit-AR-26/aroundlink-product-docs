@@ -157,6 +157,37 @@ l'ensemble de la sélection en une seule fois.
     d'y être pris en compte. Vérifiez vos campagnes en cours avant de modifier le
     périmètre d'un tag existant.
 
+## Filtres étudiants
+
+**À quoi ça sert.** Décrire vos étudiants avec vos propres critères — et, quand
+vous le décidez, rendre ces critères visibles à vos étudiants dans leur recherche
+de destination.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Un filtre étudiant porte un nom et une couleur, et
+s'applique aux étudiants ou aux établissements. Vous le posez depuis la fiche
+d'un étudiant, juste à côté de ses tags, et vous le retrouvez comme colonne dans
+vos listes : elle se trie et se filtre comme ses voisines.
+
+La différence avec un tag tient en une phrase : **un tag reste chez vous, un
+filtre étudiant se montre**. Cochez « Visible aux étudiants » et la valeur
+apparaît dans « Find your exchange », où vos étudiants la choisissent comme un
+pays ou une langue. « Match my profile » présélectionne alors les valeurs que
+l'étudiant porte déjà.
+
+**Cas d'usage.**
+> Le coordinateur crée le filtre « Double diplôme », le pose sur les étudiants
+> concernés et le rend visible. Un étudiant qui le porte ouvre sa recherche de
+> destination : le filtre est déjà coché, et il ne voit que les destinations qui
+> le concernent.
+
+!!! tip "Tag ou filtre étudiant ?"
+    Posez-vous la question de qui doit voir la valeur. Un point de vigilance
+    interne, un rappel d'équipe, un suivi administratif : c'est un tag. Une
+    caractéristique que l'étudiant reconnaît et sur laquelle il choisit sa
+    destination : c'est un filtre étudiant.
+
 ## Vues enregistrées
 
 **À quoi ça sert.** Enregistrer une configuration de tableau (colonnes choisies,

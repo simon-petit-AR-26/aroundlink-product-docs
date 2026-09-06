@@ -74,6 +74,37 @@ information, their GPA and their cohort ranking where those have been imported.
 > Before confirming a nomination, the coordinator opens the file to check the
 > student's language level and GPA.
 
+## Student profile completion
+
+**What it's for.** Seeing at a glance which students have not finished filling in their
+profile, and reminding them without keeping a list.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** Completion is measured on the **nine pieces of information only the
+student can give about themselves**: date, place and country of birth, nationality, gender,
+personal email, phone number, emergency number and profile photo.
+
+What you fill in yourself — first name, last name, student number, institutional email,
+level — does not count: a student should not be measured on someone else's work.
+
+You find this measure in the **Profile** column of your student list, which sorts and
+filters like the others. The student sees a gauge on their profile and a window offering to
+complete what is missing, field by field.
+
+Once the list is filtered on incomplete profiles, the reminder goes out from the selection
+bar, like any other reminder.
+
+**Use case.**
+> Three weeks before departures, the coordinator sorts their list on the Profile column,
+> selects the twenty-two students below 100%, and sends a reminder. Each one receives the
+> list of their own missing fields.
+
+!!! note "Gender left unanswered"
+    "Not answered" is the record's default value, not an answer: the gauge does not count
+    it. A student who would rather not answer picks "Prefer not to say", which does count as
+    an answer — otherwise they would stay below 100% forever.
+
 ## A student's documents
 
 **What it's for.** Seeing at a glance what the student has provided, what is still

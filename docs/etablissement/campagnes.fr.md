@@ -22,6 +22,15 @@ et le vivier d'offres éligibles selon ces critères. La campagne passe de Broui
 Prête (ouverture aux étudiants), puis Ouverte et Terminée ; seule une campagne en
 brouillon reste modifiable.
 
+**La date de fin clôt la campagne d'elle-même.** Le lendemain de son dernier jour, la
+campagne passe en Terminée sans que personne ait à cliquer : les vœux encore à l'état de
+brouillon deviennent des vœux, vos étudiants sont prévenus et vous recevez le bilan —
+exactement ce que fait le bouton « Terminer ».
+
+Si la clôture vous paraît prématurée, le bouton « Rouvrir » rend à vos étudiants le droit
+de modifier leurs vœux. Pensez alors à repousser la date de fin : sans cela, la campagne se
+refermera dès le lendemain matin.
+
 ![Liste des campagnes, avec le nombre de campagnes en brouillon, ouvertes et terminées](../assets/screenshots/campagnes-liste.png)
 
 *Vos campagnes, tous statuts confondus. Les quatre compteurs du haut donnent l'état du parc en un coup d'œil. Cliquez sur l'image pour l'agrandir.*
@@ -121,8 +130,19 @@ un étudiant, puis consigner sa réponse.
 **Comment ça marche.** Chaque ligne est un étudiant affecté à une destination. Vous le
 nominez, et le partenaire reçoit l'information. Quand il répond, vous enregistrez sa
 décision en précisant par quel canal elle vous est parvenue : la plateforme, le réseau EWP,
-un e-mail ou un appel. Un refus s'accompagne de son motif, et une nomination peut être
-annulée tant qu'elle n'est pas confirmée.
+un e-mail ou un appel. Un refus s'accompagne de son motif.
+
+L'onglet apparaît dès qu'une place est tenue dans la campagne. Vous pouvez nominer toute une
+sélection d'un seul geste : le lot se traite par tranches, son avancement reste visible, et
+un lot interrompu reprend là où il s'est arrêté au lieu de repartir de zéro.
+
+Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de l'outil :
+
+- **Relancer** — un rappel part chez le partenaire sans passer par votre boîte mail. Une
+  relance par vingt-quatre heures : le bouton se grise ensuite.
+- **Retirer** — vous annulez la nomination en expliquant pourquoi. Le partenaire est prévenu
+  qu'aucune décision n'est plus attendue, et l'étudiant redevient disponible pour une autre
+  destination.
 
 ![Écran des nominations d'une campagne, avec l'état de chaque nomination et le canal de confirmation](../assets/screenshots/campagne-nominations.png)
 

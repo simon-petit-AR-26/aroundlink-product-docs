@@ -148,6 +148,35 @@ several rows to add or remove tags across the whole selection at once.
     taken into account there. Check your running campaigns before changing the
     scope of an existing tag.
 
+## Student filters
+
+**What it's for.** Describe your students with your own criteria — and, when you
+choose to, make those criteria visible to your students as they search for a
+destination.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** A student filter carries a name and a colour, and applies to
+students or to institutions. You set it from a student's record, right beside
+their tags, and you find it again as a column in your lists: it sorts and filters
+like its neighbours.
+
+The difference with a tag fits in one sentence: **a tag stays with you, a student
+filter shows**. Tick "Visible to students" and the value appears in "Find your
+exchange", where your students pick it like a country or a language. "Match my
+profile" then pre-selects the values a student already carries.
+
+**Use case.**
+> The coordinator creates the "Double degree" filter, applies it to the students
+> concerned and makes it visible. A student carrying it opens their destination
+> search: the filter is already ticked, and they only see the destinations that
+> concern them.
+
+!!! tip "Tag or student filter?"
+    Ask yourself who needs to see the value. An internal point to watch, a note
+    for the team, an administrative follow-up: that's a tag. A characteristic the
+    student recognises and picks their destination on: that's a student filter.
+
 ## Saved views
 
 **What it's for.** Save a table configuration (chosen columns, widths, filters,

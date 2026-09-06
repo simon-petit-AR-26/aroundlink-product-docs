@@ -46,11 +46,26 @@ visible dans l'annuaire et disponible pour les accords.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Un formulaire pré-remplit une fiche contact principale
-(obligatoire). À l'enregistrement, le partenaire est automatiquement rattaché à
-votre établissement et ses contacts sont reliés aux comptes existants qui
-correspondent. Vous êtes ensuite redirigé vers la fiche complète pour poursuivre
-la saisie.
+**Comment ça marche.** **Le formulaire commence par le domaine** de l'établissement
+— celui de ses adresses e-mail professionnelles. C'est lui qui identifie un
+établissement de façon sûre, là où deux noms proches désignent souvent la même
+école.
+
+Avant de créer quoi que ce soit, la plateforme vérifie ce domaine et vous montre
+les fiches qu'elle connaît déjà. Trois issues :
+
+- **C'est bien lui** — vous rattachez la fiche existante à votre annuaire. Aucun
+  doublon n'est créé, et vous héritez de ce qui est déjà renseigné.
+- **Aucun de ceux-ci n'est mon partenaire** — votre demande part à notre équipe,
+  qui complète le référentiel commun.
+- **Il est inconnu** — vous le créez, avec au moins un contact principal.
+
+À l'enregistrement, le partenaire est rattaché à votre établissement et ses
+contacts sont reliés aux comptes existants qui correspondent. Vous êtes ensuite
+redirigé vers la fiche complète pour poursuivre la saisie.
+
+Seul le **nom** est obligatoire au-delà du domaine : le reste se complète au fur
+et à mesure que vous l'apprenez.
 
 **Cas d'usage.**
 > Le bureau signe un nouveau partenaire au Portugal ; le coordinateur l'ajoute
@@ -313,6 +328,29 @@ supprimez par partenaire ; ils sont listés par code.
 ??? note "Détails internes (équipe AroundLink)"
     `courses()` / `courseDelete()`. Entité `Course` rattachée à l'université,
     listée par code via le dépôt dédié.
+
+## FAQ du partenaire
+
+**À quoi ça sert.** Rassembler les questions que vos étudiants posent toujours sur une
+destination, et leurs réponses.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Ce que vous voyez dépend de la nature du partenaire, et c'est le
+même principe que pour sa factsheet, son catalogue de cours et sa bibliothèque :
+
+- **Le partenaire est lui-même client d'AroundLink** — il publie sa propre FAQ, que vous
+  lisez telle qu'il l'a écrite, signalée « Fournie par ce partenaire ». Elle se met à jour
+  quand il la modifie, vous n'avez rien à tenir.
+- **Le partenaire n'est pas client** — il ne diffuse rien, alors la FAQ est la vôtre. Vous
+  l'écrivez sur lui, pour vos étudiants, et **votre établissement est seul à la voir**.
+
+Chaque question porte sa catégorie et le public auquel elle s'adresse.
+
+**Cas d'usage.**
+> Les mêmes trois questions revenaient chaque année sur le logement à Lisbonne. La
+> coordinatrice les écrit une fois dans la FAQ de la fiche ; ses étudiants les trouvent
+> désormais avant de lui écrire.
 
 ## Liens web & réseaux sociaux du partenaire
 

@@ -43,10 +43,25 @@ partner immediately becomes visible in the directory and available for agreement
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** A form pre-fills a main contact card (mandatory). On save, the
-partner is automatically attached to your institution and its contacts are linked
+**How it works.** **The form starts with the institution's domain** — the one its
+professional email addresses use. That is what identifies an institution reliably,
+where two similar names often mean the same school.
+
+Before creating anything, the platform checks that domain and shows you the
+records it already knows. Three outcomes:
+
+- **That's the one** — you attach the existing record to your directory. No
+  duplicate is created, and you inherit what is already filled in.
+- **None of these is my partner** — your request goes to our team, who complete
+  the shared reference.
+- **It is unknown** — you create it, with at least one main contact.
+
+On save, the partner is attached to your institution and its contacts are linked
 to any matching existing accounts. You are then redirected to the full file to
 keep editing.
+
+Beyond the domain, only the **name** is required: the rest is filled in as you
+learn it.
 
 **Use case.**
 > The office signs a new partner in Portugal; the coordinator adds it with its
@@ -295,6 +310,28 @@ listed by code.
 ??? note "Internal details (AroundLink team)"
     `courses()` / `courseDelete()`. `Course` entity attached to the university,
     listed by code via the dedicated repository.
+
+## Partner FAQ
+
+**What it's for.** Gathering the questions your students always ask about a destination,
+and their answers.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** What you see depends on the nature of the partner, on the same principle
+as its factsheet, course catalogue and library:
+
+- **The partner is itself an AroundLink client** — it publishes its own FAQ, which you read
+  as written, marked "Provided by this partner". It updates when they change it; you have
+  nothing to maintain.
+- **The partner is not a client** — it broadcasts nothing, so the FAQ is yours. You write it
+  about them, for your students, and **your institution alone sees it**.
+
+Each question carries its category and the audience it addresses.
+
+**Use case.**
+> The same three questions came up every year about housing in Lisbon. The coordinator
+> writes them once in the record's FAQ; their students now find them before writing in.
 
 ## Partner web & social links
 

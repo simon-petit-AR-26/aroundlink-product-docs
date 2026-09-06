@@ -20,6 +20,14 @@ participating students and the pool of eligible offers from those criteria. The 
 moves from Draft to Ready (opening it to students), then Opened and Finished; only a draft
 campaign remains editable.
 
+**The end date closes the campaign on its own.** The morning after its last day, the
+campaign moves to Finished with nobody clicking: wishes still in draft become wishes, your
+students are notified and you receive the summary — exactly what the "Finish" button does.
+
+If that closing feels premature, the "Reopen" button gives your students back the right to
+change their wishes. Remember to push the end date back: without that, the campaign closes
+again the next morning.
+
 ![Campaign list, showing how many campaigns are draft, open and finished](../assets/screenshots/campagnes-liste.png)
 
 *Your campaigns, whatever their status. The four counters at the top give you the state of play at a glance. Click the image to enlarge it.*
@@ -121,7 +129,18 @@ then recording their answer.
 **How it works.** Each row is a student assigned to a destination. You nominate them, and
 the partner is informed. When they reply, you record their decision, stating how it reached
 you: the platform, the EWP network, an email or a phone call. A refusal comes with its
-reason, and a nomination can be cancelled as long as it is not confirmed.
+reason.
+
+The tab appears as soon as a place is held in the campaign. You can nominate a whole
+selection in one go: the batch is processed in slices, its progress stays visible, and an
+interrupted batch resumes where it stopped instead of starting over.
+
+While the partner has not replied, two actions save you leaving the tool:
+
+- **Remind** — a reminder goes to the partner without going through your mailbox. One
+  reminder per twenty-four hours: the button greys out afterwards.
+- **Withdraw** — you cancel the nomination and say why. The partner is told no decision is
+  expected any more, and the student becomes available for another destination.
 
 ![Campaign nominations screen, showing each nomination's state and confirmation channel](../assets/screenshots/campagne-nominations.png)
 
