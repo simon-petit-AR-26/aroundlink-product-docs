@@ -269,10 +269,6 @@ The useful boundary is this one: **"Prepare" moves a file forward inside your wa
 "Decide" sends it out**. The four levels sit side by side on each line, with no dropdown:
 seeing the neighbouring value is part of the information.
 
-![Roles and permissions matrix](../assets/screenshots/parametres-roles.png)
-
-*Your roles and, for each line of the rights tree, the level chosen.*
-
 **Comparing two roles.** A button shows the same tree with one column per role. That is how
 you answer "who can actually approve a grant?" without opening roles one by one — and how
 you find out in time that nobody can, because everyone assumed someone else did.

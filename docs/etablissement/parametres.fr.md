@@ -285,10 +285,6 @@ La frontière utile est celle-ci : **« Préparer » fait avancer un dossier che
 « Décider » le fait sortir**. Les quatre niveaux sont posés côte à côte sur chaque ligne,
 sans menu déroulant : voir la valeur voisine fait partie de l'information.
 
-![Matrice des rôles et permissions](../assets/screenshots/parametres-roles.png)
-
-*Vos rôles et, pour chaque ligne de l'arbre des droits, le niveau retenu.*
-
 **Comparer deux rôles.** Un bouton affiche le même arbre avec une colonne par rôle. C'est
 ainsi qu'on répond à « qui peut valider une bourse, au juste ? » sans ouvrir les rôles un
 par un — et qu'on découvre à temps que personne ne le peut, parce que chacun croyait que
