@@ -162,10 +162,28 @@ profile" then pre-selects the values a student already carries.
 > search: the filter is already ticked, and they only see the destinations that
 > concern them.
 
-!!! tip "Tag or student filter?"
-    Ask yourself who needs to see the value. An internal point to watch, a note
-    for the team, an administrative follow-up: that's a tag. A characteristic the
-    student recognises and picks their destination on: that's a student filter.
+### Tag or student filter?
+
+The two objects look alike — a name, a colour, applied to records — and that is exactly why
+they get confused. Yet they answer opposite questions.
+
+| | Tag | Student filter |
+|---|---|---|
+| **Who sees the value** | Your institution, and nobody else | Your students too, as soon as you tick "Visible to students" |
+| **What it is for** | Organising your work | Helping the student recognise themselves and choose |
+| **Where it appears** | Your lists, your campaign filters | Your lists **and** the student's destination search |
+| **"Match my profile"** | No effect | Pre-selects the values the student carries |
+| **Possible scopes** | General, Student, Institution | Students, Institutions |
+
+The deciding question is a single one: **who needs to see this value?**
+
+An internal point to watch, a note for the team, an administrative follow-up, something that
+belongs to you alone: that is a **tag**. A characteristic the student recognises as their own
+and will pick a destination on: that is a **student filter**.
+
+!!! note "The word \"tag\" never appears on this screen"
+    That is deliberate. Mixing the two vocabularies is exactly what leads to putting internal
+    information where students will read it.
 
 ## Saved views
 

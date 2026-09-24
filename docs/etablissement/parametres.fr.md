@@ -171,11 +171,29 @@ l'étudiant porte déjà.
 > destination : le filtre est déjà coché, et il ne voit que les destinations qui
 > le concernent.
 
-!!! tip "Tag ou filtre étudiant ?"
-    Posez-vous la question de qui doit voir la valeur. Un point de vigilance
-    interne, un rappel d'équipe, un suivi administratif : c'est un tag. Une
-    caractéristique que l'étudiant reconnaît et sur laquelle il choisit sa
-    destination : c'est un filtre étudiant.
+### Tag ou filtre étudiant ?
+
+Les deux objets se ressemblent — un nom, une couleur, posés sur des fiches — et c'est
+précisément ce qui fait qu'on les confond. Ils répondent pourtant à deux questions
+opposées.
+
+| | Tag | Filtre étudiant |
+|---|---|---|
+| **Qui voit la valeur** | Votre établissement, et lui seul | Vos étudiants aussi, dès que vous cochez « Visible aux étudiants » |
+| **À quoi elle sert** | Organiser votre travail | Aider l'étudiant à se reconnaître et à choisir |
+| **Où elle apparaît** | Vos listes, vos filtres de campagne | Vos listes **et** l'écran de recherche de destination de l'étudiant |
+| **« Match my profile »** | Sans effet | Présélectionne les valeurs que l'étudiant porte |
+| **Portées possibles** | Général, Étudiant, Établissement | Étudiants, Établissements |
+
+La règle de décision tient en une question : **qui doit voir cette valeur ?**
+
+Un point de vigilance interne, un rappel d'équipe, un suivi administratif, une note qui
+n'appartient qu'à vous : c'est un **tag**. Une caractéristique que l'étudiant reconnaît
+comme sienne et sur laquelle il choisira sa destination : c'est un **filtre étudiant**.
+
+!!! note "Le mot « tag » n'apparaît jamais sur cet écran"
+    C'est volontaire. Mélanger les deux vocabulaires est exactement ce qui conduit à poser
+    une information interne là où les étudiants la liront.
 
 ## Vues enregistrées
 

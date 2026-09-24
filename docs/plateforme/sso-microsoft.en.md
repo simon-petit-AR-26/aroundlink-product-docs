@@ -30,6 +30,35 @@ through AroundLink.
     **authorises** it inside its own directory, in one click, through a link we
     provide.
 
+## Who provides what
+
+Connecting takes six steps, described in detail below. Here is first who holds the pen at
+each moment — the question everyone asks when opening the project.
+
+| Step | Who acts | What changes hands |
+|---|---|---|
+| 1 | **You** | Your Microsoft tenant identifier (*Tenant ID*) |
+| 2 | **You** | The list of your email domains |
+| 3 | **AroundLink** | We record your configuration and send you back an **authorisation link** |
+| 4 | **You** | A global administrator of your directory opens that link and authorises AroundLink |
+| 5 | **You** | Your users' accounts, created or imported into AroundLink |
+| 6 | **AroundLink** | Activation, then the switch to strict mode when you ask for it |
+
+**What you need to ask us for**, concretely: the authorisation link at step 3, activation at
+step 6, and the switch to strict mode the day you want to close password sign-in.
+
+**What you do not have to do**: declare an application in your directory, open a network
+flow, install anything, or send us any password.
+
+!!! tip "How long it takes"
+    Allow half a day, most of which is waiting between exchanges. The actual work on your
+    side is counted in minutes: two pieces of information to send us, one link to open.
+
+!!! warning "Step 5 is the one people forget"
+    Single sign-on **does not create accounts**. It verifies who you are; it does not decide
+    that you are allowed in. A user who does not yet exist in AroundLink will be refused,
+    even with a perfectly valid Microsoft account.
+
 ## Setup procedure
 
 Allow half a day, most of which is waiting between exchanges.

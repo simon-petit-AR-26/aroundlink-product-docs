@@ -31,6 +31,37 @@ et aucun identifiant ne transite par AroundLink.
     établissement l'**autorise** dans son propre annuaire, en un clic, via un lien
     que nous vous fournissons.
 
+## Qui fournit quoi
+
+Le raccordement se fait en six étapes, décrites en détail plus bas. Voici d'abord qui a la
+main à chaque moment — c'est la question qu'on se pose en ouvrant le chantier.
+
+| Étape | Qui agit | Ce qui change de main |
+|---|---|---|
+| 1 | **Vous** | Votre identifiant de locataire Microsoft (*Tenant ID*) |
+| 2 | **Vous** | La liste de vos domaines e-mail |
+| 3 | **AroundLink** | Nous enregistrons votre configuration et vous renvoyons un **lien d'autorisation** |
+| 4 | **Vous** | Un administrateur général de votre annuaire ouvre ce lien et autorise AroundLink |
+| 5 | **Vous** | Les comptes de vos utilisateurs, créés ou importés dans AroundLink |
+| 6 | **AroundLink** | L'activation, puis le passage en mode strict quand vous le demandez |
+
+**Ce que vous avez à nous demander**, concrètement : le lien d'autorisation à l'étape 3,
+l'activation à l'étape 6, et le passage en mode strict le jour où vous voulez fermer la
+connexion par mot de passe.
+
+**Ce que vous n'avez pas à faire** : déclarer une application dans votre annuaire, ouvrir un
+flux réseau, installer quoi que ce soit, ou nous transmettre le moindre mot de passe.
+
+!!! tip "Combien de temps"
+    Comptez une demi-journée, dont l'essentiel est de l'attente entre deux échanges. Le
+    travail effectif de votre côté se compte en minutes : deux informations à nous envoyer,
+    un lien à ouvrir.
+
+!!! warning "L'étape 5 est celle qu'on oublie"
+    L'authentification unique **ne crée pas de comptes**. Elle vérifie qui vous êtes, elle
+    ne décide pas que vous avez le droit d'entrer. Un utilisateur qui n'existe pas encore
+    dans AroundLink sera refusé, même avec un compte Microsoft parfaitement valide.
+
 ## Procédure de mise en place
 
 Comptez une demi-journée, dont l'essentiel est de l'attente entre deux échanges.
