@@ -7,18 +7,17 @@ and data exchange with the European network into one place — replacing scatter
 spreadsheets and emails with a single, auditable, compliant process.
 
 This documentation lists **every feature** of the tool and, for each one, its
-**business value**. It serves two audiences:
+**business value**. It serves you:
 
-- **IRO managers and officers** (customers): understand what the tool does and the
-  value it brings, without technical jargon.
-- **AroundLink teams** (internal): a complete view of the product scope.
+- **International-office managers and officers**: understand what the tool does and
+  the value it brings, without technical jargon.
+- **IT departments**: the Platform pages answer questions on connection,
+  authentication and data exchange.
 
 !!! tip "How to read a feature card"
     Every feature follows the same format: **what it is for**, **who it is for**,
-    **how it works**, a concrete **use case**, and a collapsible _"Internal
-    details"_ block reserved for (non-sensitive) operational context. The default
-    tone is business-value first; technical detail stays collapsed.
-
+    **how it works**, and a concrete **use case**. Call-outs flag what you should
+    know before turning a setting on, and the traps you only see once you are in.
 ## The three spaces
 
 <div class="grid cards" markdown>
