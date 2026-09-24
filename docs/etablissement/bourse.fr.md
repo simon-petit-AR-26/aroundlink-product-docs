@@ -10,6 +10,49 @@ barèmes par pays) sont appliquées automatiquement, ce qui sécurise vos audits
     La Bourse de mobilité fait partie de l'offre payante d'AroundLink. Elle n'est
     accessible qu'aux établissements ayant souscrit à cette formule.
 
+## Programmes de bourse
+
+**À quoi ça sert.** Faire tourner plusieurs dispositifs de financement en parallèle —
+Erasmus+, une aide régionale, un fonds propre à l'établissement — chacun avec son budget,
+son barème et ses règles.
+
+**Pour qui.** <span class="al-audience">gestionnaire financier / coordinateur</span>
+
+**Comment ça marche.** Le module s'ouvre désormais sur **la liste de vos programmes**, et
+non sur une liste de bourses. Un établissement mène rarement un seul dispositif, et un même
+étudiant peut avoir un dossier dans plusieurs d'entre eux : chaque programme a donc sa
+propre enveloppe, et tout le reste vit à l'intérieur.
+
+Chaque programme porte ses **réglages** : les taux de séjour, le barème de distance de
+voyage, les compléments — voyage vert, inclusion, stage — le pourcentage d'avance, et le
+plafond de durée financée. Vous y définissez aussi vos **poches budgétaires**, qui suivent
+séparément ce qui est engagé et ce qui est prévu.
+
+**Peupler un programme.** « Ajouter des étudiants » reprend les mobilités déjà présentes
+dans l'outil : la destination, les dates et la catégorie viennent de l'affectation, rien
+n'est ressaisi. La sélection se fait **par mobilité et non par étudiant** — quelqu'un qui
+part deux fois dans l'année représente deux dossiers. Les mobilités déjà rattachées au
+programme restent visibles, grisées : un nom qu'on cherche et qu'on ne trouve pas doit
+s'expliquer.
+
+**Décider sur une sélection.** La barre de décision annonce ce que la sélection va coûter
+**pendant** que vous la composez, et non après : vous voyez la poche bouger avant de
+cliquer. Laisser le montant vide ne veut pas dire zéro, mais « laisser le barème décider,
+dossier par dossier » — la seule façon de respecter un barème qui varie selon le groupe de
+pays et la durée.
+
+**Le montant se lit ligne par ligne.** Séjour, voyage, compléments : le détail est celui
+**enregistré sur le dossier**, pas un calcul refait à l'affichage. Un changement de barème
+s'applique à ce qui vient ensuite et ne réécrit jamais un dossier déjà attribué. Les jours
+retenus diminuent la ligne de séjour et elle seule — un trajet ne coûte pas moins cher
+parce que le séjour a été écourté.
+
+**Cas d'usage.**
+> L'établissement mène Erasmus+ et une aide régionale. La gestionnaire crée les deux
+> programmes, règle leurs barèmes, peuple chacun depuis les affectations de l'année, puis
+> attribue en masse : pour Erasmus+ elle laisse le barème décider, pour l'aide régionale
+> elle pose un montant unique.
+
 ## Tableau de bord Finance
 
 **À quoi ça sert.** La page d'accueil du module : une vue par année académique qui réunit

@@ -219,64 +219,96 @@ single failure does not interrupt the whole batch.
     invited…). Invitations go out via a dedicated email. Each new member is also
     linked to the existing partner contacts that concern them.
 
-## Creating your own account
+## What your students see
 
-**What it's for.** Letting a colleague open their own account, with no invitation, and land
-straight with their team.
-
-**Who it's for.** <span class="al-audience">any international office staff</span>
-
-**How it works.** The person enters their first name, last name and **professional email
-address**. The domain of that address identifies their institution: they are never asked to
-type the name of their school, nor its country.
-
-That is deliberate. A hand-typed name would be useless for matching records — "University of
-Lille" and "University of Lille 1" would end up as two different institutions when there is
-only one.
-
-In the common case, a single record carries that domain and the attachment happens silently:
-the person lands directly with their colleagues. A choice is only offered when there really
-is one — several records on the same domain, a main entity and its campuses.
-
-**Use case.**
-> A new mobility officer joins the office. They create their account with their professional
-> address and immediately find their institution's partners and campaigns, without anyone
-> having had to invite them.
-
-## Roles & permissions
-
-**What it's for.** Define precisely who can see and edit what, through custom roles
-and a per-module permission matrix. Each institution tailors access to its
-organisation.
+**What it's for.** Setting two sensitive pieces of information your students see — or do
+not — without changing anything for your team.
 
 **Who it's for.** <span class="al-audience">admin</span>
 
-**How it works.** You create roles, then set, for each role and each module of the
-application, an access level (for example read or read/write) in a matrix. Changes
-apply to all members holding the role.
+**How it works.** Two switches, independent of each other.
 
-![The roles and permissions matrix](../assets/screenshots/parametres-roles.png)
+**Ranking.** By default a student sees their rank within their promotion on their own
+profile. You can hide it from them: you and your team still see it, they do not.
 
-*The permissions matrix: your roles across the columns, the application's modules down the rows, and a level at each intersection — no access, read only, or write. The four supplied roles can be customised, and you can add your own.*
+**Number of places.** By default your students see how many places you open on each partner
+and period. You can show only that a place is available, without the number.
 
 **Use case.**
-> The admin creates a "Coordinator" role with write access to partners but
-> read-only access to settings.
+> The institution would rather the ranking did not circulate among students before the
+> committee meets. The admin hides it for the duration of the campaign and restores it
+> afterwards — the coordinators saw it throughout.
 
-??? note "Internal details (AroundLink team)"
-    `SettingsController::roles()`. Roles per institution, permission matrix by
-    module and access level. Permissions drive access to the various areas of the
-    Mobility space.
+## Roles & permissions
 
-## A person's record
+**What it's for.** Defining who can do what, and **to whom** — fitting access to your
+organisation rather than to an imposed split.
 
-**What it's for.** Bringing together on one screen everything you know about a person,
-whether they are a contact in your directory, a member of your team, or both.
+**Who it's for.** <span class="al-audience">admin</span>
+
+**How it works.** A role is built in two steps.
+
+**First its perimeter**, meaning what it covers. Four questions, in this order: the
+**business domains** concerned, the **direction** (outgoing only, incoming only, or both),
+the **campuses**, the **promotions**. The lists offered are your own settings, never a
+generic list. Ticking nothing on campuses or promotions means "all of them".
+
+The domain comes first because it prunes what follows: setting rights and then finding half
+of them gone would be work thrown away.
+
+**Then its rights**, line by line, with four levels:
+
+| Level | What it allows |
+|---|---|
+| **None** | Nothing. Set on a category, it closes everything inside it. |
+| **View** | Consult and search. No change leaves the tool. |
+| **Prepare** | Create, edit, upload — the file moves forward, inside. |
+| **Decide** | Validate, refuse, send, delete, export — it leaves the tool. |
+
+The useful boundary is this one: **"Prepare" moves a file forward inside your walls,
+"Decide" sends it out**. The four levels sit side by side on each line, with no dropdown:
+seeing the neighbouring value is part of the information.
+
+![Roles and permissions matrix](../assets/screenshots/parametres-roles.png)
+
+*Your roles and, for each line of the rights tree, the level chosen.*
+
+**Comparing two roles.** A button shows the same tree with one column per role. That is how
+you answer "who can actually approve a grant?" without opening roles one by one — and how
+you find out in time that nobody can, because everyone assumed someone else did.
+
+**A safety net.** You cannot remove your institution's last administrator.
+
+**What others see.** When a right is missing, the screen says so instead of pretending: a
+banner announces read-only mode, and a note explains that a student is outside your
+perimeter.
+
+**Use case.**
+> The manager creates an "Incoming officer" role: perimeter limited to incoming students and
+> the Lyon campus, "Decide" on documents, "View" on agreements, "None" on grants.
+
+## My permissions
+
+**What it's for.** Seeing for yourself what you are allowed to do, and to whom.
+
+**Who it's for.** <span class="al-audience">any team member</span>
+
+**How it works.** The screen states your rights in plain words and recalls your perimeter.
+
+It is behind no permission of its own, and that is deliberate: the more restricted a role,
+the more the person needs to understand why a screen is closed to them. Without it, every
+restriction looks like a breakdown, and someone else has to go and read their configuration
+for them.
+
+## A contact's record
+
+**What it's for.** Bringing together on one screen everything you know about a contact,
+whether they are a person in your directory, a member of your team, or both.
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
 **How it works.** A directory contact and a login account used to be two separate records
-with no link between them. It is now **one person, one page**: your contact grids and your
+with no link between them. It is now **one contact, one page**: your contact grids and your
 team list lead to the same place, and you see both their details and the state of their
 access.
 

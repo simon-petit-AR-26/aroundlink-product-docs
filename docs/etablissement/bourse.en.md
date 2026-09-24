@@ -10,6 +10,44 @@ safeguards your audits.
     Mobility grants are part of AroundLink's paid offering. The module is only available
     to institutions that have subscribed to that plan.
 
+## Grant programmes
+
+**What it's for.** Running several funding schemes in parallel — Erasmus+, a regional
+grant, an institution's own fund — each with its budget, its scale and its rules.
+
+**Who it's for.** <span class="al-audience">finance officer / coordinator</span>
+
+**How it works.** The module now opens on **the list of your programmes**, not on a list of
+grants. An institution rarely runs a single scheme, and the same student may hold a file in
+several of them: each programme therefore has its own envelope, and everything else lives
+inside one.
+
+Each programme carries its **settings**: stay rates, the travel-distance scale, the top-ups
+— green travel, inclusion, traineeship — the advance percentage, and the funded-duration
+cap. You also define your **budget pockets** there, which track committed and planned
+amounts separately.
+
+**Populating a programme.** "Add students" draws on the mobilities already in the tool: the
+destination, the dates and the category come from the placement, nothing is retyped. You
+select **by mobility, not by student** — someone going twice in a year is two files.
+Mobilities already attached to the programme stay visible, greyed out: a name you look for
+and cannot find has to explain itself.
+
+**Deciding on a selection.** The decision bar announces what the selection will cost
+**while** you build it, not afterwards: you watch the pocket move before you click. Leaving
+the amount empty does not mean zero, but "let the scale decide, file by file" — the only way
+to honour a scale that varies by country group and duration.
+
+**Reading an amount line by line.** Stay, travel, top-ups: the detail is the one **stored on
+the file**, not a calculation redone at display time. A change to the scale applies to what
+comes next and never rewrites a file already awarded. Days withheld reduce the stay line and
+that line only — a journey is not cheaper because the stay was cut short.
+
+**Use case.**
+> The institution runs Erasmus+ and a regional grant. The officer creates both programmes,
+> sets their scales, populates each from the year's placements, then awards in bulk: for
+> Erasmus+ she lets the scale decide, for the regional grant she sets a single amount.
+
 ## Finance dashboard
 
 **What it does.** The module's landing page: a per-academic-year view combining the budget
