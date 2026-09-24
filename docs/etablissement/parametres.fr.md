@@ -176,6 +176,10 @@ apparaît dans « Find your exchange », où vos étudiants la choisissent comme
 pays ou une langue. « Match my profile » présélectionne alors les valeurs que
 l'étudiant porte déjà.
 
+![Filtres étudiants](../assets/screenshots/parametres-filtres-etudiants.png)
+
+*Vos filtres, leur couleur, et le nombre d'établissements et d'étudiants sur lesquels chacun est posé.*
+
 **Cas d'usage.**
 > Le coordinateur crée le filtre « Double diplôme », le pose sur les étudiants
 > concernés et le rend visible. Un étudiant qui le porte ouvre sa recherche de
@@ -249,6 +253,10 @@ profil. Vous pouvez le lui masquer : vous et votre équipe continuez de le voir,
 chaque partenaire et chaque période. Vous pouvez n'afficher que l'existence d'une place
 disponible, sans le nombre.
 
+![Réglages de la vue étudiante](../assets/screenshots/parametres-vue-etudiante.png)
+
+*Les deux interrupteurs, avec sous chacun la phrase qui dit ce que l'étudiant verra.*
+
 **Cas d'usage.**
 > L'établissement ne souhaite pas que le classement circule entre étudiants avant la
 > commission. L'admin le masque le temps de la campagne, et le rétablit ensuite — les
@@ -285,10 +293,26 @@ La frontière utile est celle-ci : **« Préparer » fait avancer un dossier che
 « Décider » le fait sortir**. Les quatre niveaux sont posés côte à côte sur chaque ligne,
 sans menu déroulant : voir la valeur voisine fait partie de l'information.
 
+![Le sélecteur de niveaux](../assets/screenshots/parametres-role-niveaux.png)
+
+*Une ligne de droits : les quatre niveaux alignés, celui qui s'applique en couleur, et la flèche qui rend la ligne à ce dont elle hérite.*
+
+![Le périmètre d'un rôle](../assets/screenshots/parametres-role-perimetre.png)
+
+*L'étape du périmètre : les domaines métier, la direction, les campus et les promotions. Ne rien cocher sur les campus ou les promotions revient à tous les couvrir.*
+
+![L'arbre des droits](../assets/screenshots/parametres-roles.png)
+
+*L'arbre complet : chaque section de l'application, et sous elle les actions qu'un rôle peut porter.*
+
 **Comparer deux rôles.** Un bouton affiche le même arbre avec une colonne par rôle. C'est
 ainsi qu'on répond à « qui peut valider une bourse, au juste ? » sans ouvrir les rôles un
 par un — et qu'on découvre à temps que personne ne le peut, parce que chacun croyait que
 c'était l'autre.
+
+![Comparaison de rôles](../assets/screenshots/parametres-roles-comparaison.png)
+
+*Le même arbre, une colonne par rôle : on lit d'un trait qui décide, qui prépare et qui ne voit rien.*
 
 **Un filet.** Vous ne pouvez pas retirer le dernier administrateur de votre établissement.
 
@@ -312,6 +336,10 @@ hors de votre périmètre.
 Il n'est protégé par aucune permission, et c'est volontaire : plus un rôle est restreint,
 plus la personne a besoin de comprendre pourquoi un écran lui est fermé. Sans lui, chaque
 restriction ressemble à une panne, et quelqu'un doit aller lire la configuration à sa place.
+
+![Mes permissions](../assets/screenshots/parametres-mes-permissions.png)
+
+*Vos droits énoncés en phrases — de qui vous voyez les dossiers, et ce que vous pouvez faire dans chaque section.*
 
 ## Fiche d'un contact
 

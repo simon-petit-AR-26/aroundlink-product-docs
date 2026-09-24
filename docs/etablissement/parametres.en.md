@@ -166,6 +166,10 @@ filter shows**. Tick "Visible to students" and the value appears in "Find your
 exchange", where your students pick it like a country or a language. "Match my
 profile" then pre-selects the values a student already carries.
 
+![Student filters](../assets/screenshots/parametres-filtres-etudiants.png)
+
+*Your filters, their colour, and how many institutions and students each is applied to.*
+
 **Use case.**
 > The coordinator creates the "Double degree" filter, applies it to the students
 > concerned and makes it visible. A student carrying it opens their destination
@@ -234,6 +238,10 @@ profile. You can hide it from them: you and your team still see it, they do not.
 **Number of places.** By default your students see how many places you open on each partner
 and period. You can show only that a place is available, without the number.
 
+![Student view settings](../assets/screenshots/parametres-vue-etudiante.png)
+
+*The two switches, each with the sentence saying what the student will see.*
+
 **Use case.**
 > The institution would rather the ranking did not circulate among students before the
 > committee meets. The admin hides it for the duration of the campaign and restores it
@@ -269,9 +277,25 @@ The useful boundary is this one: **"Prepare" moves a file forward inside your wa
 "Decide" sends it out**. The four levels sit side by side on each line, with no dropdown:
 seeing the neighbouring value is part of the information.
 
+![The level picker](../assets/screenshots/parametres-role-niveaux.png)
+
+*One line of rights: the four levels aligned, the one in force in colour, and the arrow that hands the line back to what it inherits.*
+
+![A role's perimeter](../assets/screenshots/parametres-role-perimetre.png)
+
+*The perimeter step: business domains, direction, campuses and promotions. Ticking nothing on campuses or promotions covers them all.*
+
+![The rights tree](../assets/screenshots/parametres-roles.png)
+
+*The full tree: each section of the application, and under it the actions a role can carry.*
+
 **Comparing two roles.** A button shows the same tree with one column per role. That is how
 you answer "who can actually approve a grant?" without opening roles one by one — and how
 you find out in time that nobody can, because everyone assumed someone else did.
+
+![Comparing roles](../assets/screenshots/parametres-roles-comparaison.png)
+
+*The same tree, one column per role: you read at a glance who decides, who prepares and who sees nothing.*
 
 **A safety net.** You cannot remove your institution's last administrator.
 
@@ -295,6 +319,10 @@ It is behind no permission of its own, and that is deliberate: the more restrict
 the more the person needs to understand why a screen is closed to them. Without it, every
 restriction looks like a breakdown, and someone else has to go and read their configuration
 for them.
+
+![My permissions](../assets/screenshots/parametres-mes-permissions.png)
+
+*Your rights stated as sentences — whose files you see, and what you can do in each section.*
 
 ## A contact's record
 

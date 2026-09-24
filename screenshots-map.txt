@@ -32,7 +32,6 @@ parametres-campus.png	/settings/institution/campuses	2026-08-31
 parametres-periodes.png	/settings/institution/periods	2026-08-31
 parametres-niveaux.png	/settings/institution/academic-levels	2026-08-31
 parametres-tags.png	/settings/institution/partner-tags	2026-08-31
-parametres-roles.png	/settings/roles	2026-08-31
 parametres-types-documents.png	/settings/documents/types	2026-08-31
 parametres-modeles-documents.png	/settings/documents/templates	2026-08-31
 parametres-imports.png	/settings/integrations	2026-08-31
@@ -44,3 +43,10 @@ etudiant-fiche-partenaire-infos.png	/student/universities/:id	2026-08-31
 etudiant-voeux.png	/student/campaigns	2026-08-31
 etudiant-ma-mobilite.png	/student/my-exchange	2026-08-31
 etudiant-contrat-pedagogique.png	/student/ola	2026-08-31
+parametres-roles.png	/settings/roles	2026-09-24
+parametres-role-niveaux.png	/settings/roles	2026-09-24
+parametres-role-perimetre.png	/settings/roles	2026-09-24
+parametres-roles-comparaison.png	/settings/roles	2026-09-24
+parametres-mes-permissions.png	/settings/my-permissions	2026-09-24
+parametres-vue-etudiante.png	/settings/institution/student-view	2026-09-24
+parametres-filtres-etudiants.png	/settings/institution/student-filters	2026-09-24
