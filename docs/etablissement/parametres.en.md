@@ -24,10 +24,6 @@ are still attached, to prevent any loss of link.
 > A multi-site school declares its Paris and Lyon campuses, then assigns students
 > to each.
 
-??? note "Internal details (AroundLink team)"
-    `CampusesController`. `Campus` entity (university, name, city, country, main
-    flag). Deletion checks the number of attached students. Ownership is checked on
-    edit and delete.
 
 ## Organizational units (OUnits)
 
@@ -44,9 +40,6 @@ optional description and an identifier. It works like the campuses screen.
 > The office declares the "Faculty of Engineering" as a unit with its EWP
 > identifier.
 
-??? note "Internal details (AroundLink team)"
-    `OunitsController`. `Ounit` entity (university, name, description, unit
-    identifier). Screen modelled on the campuses one.
 
 ## Custom academic levels
 
@@ -68,10 +61,6 @@ many places or agreements use that level. Duplicate labels are rejected.
 > An engineering school defines "Aéro 4" mapped to EQF 7, to filter campaigns and
 > agreements by its real level names.
 
-??? note "Internal details (AroundLink team)"
-    `AcademicLevelSettingsController`. `AcademicLevelCustom` entity (university,
-    label unique per institution, EQF level). Consuming entities store the standard
-    EQF value, not the label, to preserve EWP/OLA export compatibility.
 
 ## Key to connect external systems
 
@@ -93,9 +82,6 @@ only with the people configuring your integrations.
     A connection key is a sensitive credential. Never share it publicly, and
     regenerate it if you believe it may have been exposed.
 
-??? note "Internal details (AroundLink team)"
-    `ApiKeyController`. The key is created on first visit and renewable in one
-    click. Attached to the user's account.
 
 ## Protected deletions
 
@@ -218,10 +204,6 @@ single failure does not interrupt the whole batch.
 > During setup, the admin prepares 8 accounts (pending), then clicks "Send all
 > access" on launch day.
 
-??? note "Internal details (AroundLink team)"
-    `SettingsController::team()` and access sends. Access status (pending /
-    invited…). Invitations go out via a dedicated email. Each new member is also
-    linked to the existing partner contacts that concern them.
 
 ## What your students see
 
@@ -354,6 +336,3 @@ them by category, status or name/email. It is reserved for paid mobility plans.
 **Use case.**
 > The admin searches a user by email to check their status and category.
 
-??? note "Internal details (AroundLink team)"
-    `SettingsController::users()`. Read-only aggregated view built by a dedicated
-    service, reserved for institutions on a paid plan.

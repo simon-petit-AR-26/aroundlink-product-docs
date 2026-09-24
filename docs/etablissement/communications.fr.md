@@ -35,14 +35,6 @@ le nombre de destinataires, d'e-mails partis et de messages épinglés. Un messa
 > les étudiants sortants en Espagne, épinglé sur leur tableau de bord et envoyé
 > par e-mail.
 
-??? note "Détails internes (équipe AroundLink)"
-    Audiences : `outgoing_students` / `incoming_students` / `partners`. Canaux :
-    in_app / email / dashboard_pin / direct_message. La livraison e-mail est
-    suivie par destinataire (statut file d'attente / envoyé / ouvert / cliqué /
-    rejeté). Le compositeur avertit avant de remplacer un épinglage existant.
-    Propriété vérifiée avant édition / suppression / désépinglage ; un message
-    envoyé n'est plus modifiable. Contrôleur : `CommunicationController`,
-    entités `Communication` / `CommunicationEmailLog`. AROUNDLINK-509.
 
 ## Notifications dans l'application
 
@@ -61,11 +53,6 @@ lu d'un coup. Une notification peut renvoyer vers le message d'origine.
 > Un étudiant voit un « 3 » sur la cloche, l'ouvre et découvre que son Learning
 > Agreement vient d'être approuvé.
 
-??? note "Détails internes (équipe AroundLink)"
-    Fil d'historique + endpoint de comptage interrogé par la cloche + lecture à
-    l'ouverture + « tout marquer lu ». L'entité `Notification` peut être liée à une
-    `Communication`. Contrôleurs : `NotificationController` (mobilité) et
-    `StudentNotificationController` (étudiant). AROUNDLINK-509 / -511.
 
 ## Messagerie directe
 
@@ -84,10 +71,6 @@ la barre supérieure.
 > Un étudiant entrant écrit au bureau d'accueil pour poser une question sur le
 > logement ; le coordinateur répond dans le fil.
 
-??? note "Détails internes (équipe AroundLink)"
-    Entités partagées `Conversation` / `Message` et mêmes gabarits entre les trois
-    contrôleurs (`MessageController` côté mobilité, admin et étudiant). Identifiants
-    de fil au format UUID. AROUNDLINK-147.
 
 ## Campagnes de relance de documents
 
@@ -114,12 +97,6 @@ fond.
     [campagne](../etablissement/campagnes.md) : c'est la même mécanique de relance
     documentée ici.
 
-??? note "Détails internes (équipe AroundLink)"
-    Une `ReminderLine` par étudiant trace envoi / ouverture / clic / rejet. Envoi
-    asynchrone via la commande `reminder-campaigns:send-pending-emails` (traite les
-    lignes dont `sentAt IS NULL`). Suivi d'ouverture/clic/rejet mis à jour côté
-    fournisseur d'e-mail. Contrôleur : `ReminderCampaignController` ; création via
-    `CreateReminderCampaign` depuis le suivi des documents étudiants.
 
 ## Relances de demande d'avis
 

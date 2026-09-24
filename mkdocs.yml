@@ -98,6 +98,7 @@ plugins:
             Partenaires &amp; accords: Partners &amp; agreements
             Distribution des places: Place distribution
             Campagnes de mobilité: Mobility campaigns
+            Agenda: Agenda
             Documents &amp; validation: Documents &amp; validation
             Bourse de mobilité: Mobility grants
             Communications: Communications
@@ -130,6 +131,7 @@ nav:
       - Partenaires &amp; accords: etablissement/partenaires.md
       - Distribution des places: etablissement/accords.md
       - Campagnes de mobilité: etablissement/campagnes.md
+      - Agenda: etablissement/agenda.md
       - Documents &amp; validation: etablissement/documents.md
       - Bourse de mobilité: etablissement/bourse.md
       - Communications: etablissement/communications.md

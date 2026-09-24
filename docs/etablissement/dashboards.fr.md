@@ -29,13 +29,6 @@ depuis un catalogue de widgets.
 > Lundi matin, un coordinateur voit « 12 documents en attente de validation » et
 > clique pour arriver directement sur la file à traiter.
 
-??? note "Détails internes (équipe AroundLink)"
-    KPIs : sortants, entrants, partenaires, places disponibles, documents en
-    attente, OLA en attente, ToR en attente. Le jeu d'indicateurs est mis en cache
-    par coordinateur pendant 30 s (chaque KPI est une requête distincte).
-    `/mobility/` redirige vers le tableau de bord. Widgets fournis par
-    `DashboardWidgetRegistry` ; données cloisonnées à l'établissement du coordinateur.
-    Contrôleur : `DashboardController`.
 
 ## Tableau de bord Pilotage (DRI)
 
@@ -59,9 +52,3 @@ La page est en lecture seule et reste cloisonnée à votre établissement.
 > Un DRI consulte la liste « Accords sous-utilisés » pour décider quels
 > partenariats renégocier l'an prochain.
 
-??? note "Détails internes (équipe AroundLink)"
-    Catégories de blocs : Overview / Decision / Financial / Inclusion. Types de
-    widgets : tuile, graphique, jauge, liste, entonnoir, carte. Même
-    `DashboardWidgetRegistry` et `DashboardMetricsService` que le tableau de bord
-    opérationnel ; icônes Tabler (`ti-*`). Contrôleur : `DashboardPilotageController`
-    (route `/mobility/pilotage`, `ROLE_MOBILITY`).

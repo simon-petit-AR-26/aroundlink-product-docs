@@ -74,10 +74,6 @@ permissions, so every actor only sees what concerns them.
 > An institution invites a partner's Erasmus officer; they sign in to their own
 > space to approve an agreement, seeing nothing else.
 
-??? note "Internal details (AroundLink team)"
-    Distinct `AdminUser` (AroundLink team), `MobilityUser` (coordinators) and
-    `StudentUser` (students) accounts, all derived from a shared `User` base.
-    Partner accounts are `MobilityUser`s attached to the partner institution.
 
 ## Team roles & permissions (RBAC)
 
@@ -97,11 +93,6 @@ reach it via a direct address.
 > The head of the IRO gives the "Assistant" role read access everywhere, but write
 > access only on Documents.
 
-??? note "Internal details (AroundLink team)"
-    Roles + a per-institution permission matrix; 6 modules (`institution`,
-    `documents`, `forms`, `workflow`, `integrations`, `team_permissions`) × 3 levels
-    (none/read/write). Enforcement is server-side (the menu only hides). Ref.
-    AROUNDLINK-348.
 
 ## Sign-in & single sign-on (SSO)
 
@@ -126,11 +117,6 @@ also offers standard password reset.
     Protocol, requested permissions, step-by-step onboarding, security checks and
     known limitations: **[Microsoft single sign-on (IT)](sso.md)**.
 
-??? note "Internal details (AroundLink team)"
-    Per-institution SSO configuration (tenant id, enable, enforce, allowed email
-    domains). Microsoft/Azure OpenID Connect flow. Configuration and testing happen
-    from the AroundLink admin space. Authentication implementation details are not
-    exposed here.
 
 ## Application access (API key & EWP network)
 
@@ -147,9 +133,6 @@ from browser sign-in. The REST API has interactive documentation (resources, sch
 operations) — see the [API documentation (demo)](https://demo.aroundlink.com/api/docs)
 and, for the EWP network, the [EWP API reference](../ewp/reference-api.md).
 
-??? note "Internal details (AroundLink team)"
-    Stateless `/api/*` surface (JWT / API key) separate from the app's internal
-    APIs; EWP partner authentication via request signature. Never disclose a key.
 
 ## Plans: paid / free institution
 
@@ -168,9 +151,6 @@ client. This plan is independent of any tuition fees paid by the student.
 > A free-plan partner can review and approve a bilateral agreement a paying
 > institution submitted to it, but cannot open premium modules.
 
-??? note "Internal details (AroundLink team)"
-    `MobilityPlanEnum` (paid/free), enforced server-side by a dedicated access
-    check. Reusable pattern for any future premium module.
 
 ## Contextual help
 
@@ -212,6 +192,3 @@ site.
 > AroundLink adds a "Student health insurance — from €9/month" offer; it appears to
 > students of marketplace-enabled institutions.
 
-??? note "Internal details (AroundLink team)"
-    `University.marketplaceEnabled` switch. Offers/providers managed on the
-    AroundLink side (outside this site); student display gated on the flag.

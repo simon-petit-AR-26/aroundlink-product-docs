@@ -47,14 +47,6 @@ disponible, consolidés à l'échelle de l'établissement (tous campus confondus
 > Le coordinateur enregistre une dotation de 120 000 € ; à mesure que les bourses sont
 > créées, le tableau de bord affiche 80 000 € engagés, 45 000 € versés, 40 000 € restants.
 
-??? note "Détails internes (équipe AroundLink)"
-    Le résumé consolide : dotation (somme des lignes de tous les campus), montant engagé
-    (somme des montants attribués des bourses hors brouillon), montant versé
-    (acompte + solde), reste (dotation − engagé), nombre de dossiers en attente de
-    documents. La saisie est déterministe : elle met à jour la ligne existante de
-    l'établissement (rattachée au campus principal à la création) pour éviter tout
-    doublon. Format d'année BM : `YYYY-YYYY`. Verrouillage des lignes disponible pour les
-    contrôles concurrents.
 
 ## Gestion des bourses et cycle de vie
 
@@ -78,20 +70,6 @@ de la mobilité, et se clôture quand toutes les pièces finales sont reçues.
 > seule en « actif », puis se clôture d'elle-même une fois l'attestation de séjour, le
 > relevé de notes et le rapport final reçus.
 
-??? note "Détails internes (équipe AroundLink)"
-    Statuts (`GrantStatusEnum`) : draft, ga_pending, active, docs_pending, closed. Un
-    nouveau dossier démarre toujours en ga_pending (le statut envoyé est ignoré).
-    Transitions automatiques (`GrantDocumentSyncer`) enchaînées en une passe : ga_pending
-    → active (convention + LA signés + acompte versé) ; active → docs_pending (date de fin
-    dépassée) ; docs_pending → closed (toutes les pièces finales reçues, ToR et rapport
-    final adossés à un fichier validé) ; retour à docs_pending si une pièce disparaît.
-
-    Checklist en 7 jalons répartis par étape : avant (convention, LA, test de langue),
-    début (arrivée), fin (attestation de séjour, ToR, rapport final). Un seul dossier par
-    (étudiant, année). Suppression possible uniquement tant qu'aucun fonds n'est engagé
-    (statut ga_pending). Champs complémentaires Mobility Tool+ : niveau EQF et langue
-    d'enseignement (repris de l'accord), scores OLS, besoins spécifiques, moins
-    d'opportunités.
 
 ## Garde-fous budgétaires
 
@@ -111,11 +89,6 @@ corriger un montant à la baisse ou l'effacer reste toujours possible.
 > reste que 6 000 € : la première passe, la seconde est refusée avec « budget
 > insuffisant ».
 
-??? note "Détails internes (équipe AroundLink)"
-    Les bourses en brouillon ou sans montant ne touchent pas au budget. Deux messages
-    distincts : « aucune dotation configurée… » et « budget insuffisant… ». À la
-    modification, seul le supplément d'engagement (nouveau − ancien) est contrôlé. La
-    persistance se fait sous verrou budgétaire pour sérialiser les créations concurrentes.
 
 ## Conditions de versement
 
@@ -136,11 +109,6 @@ total versé ne dépasse pas le montant attribué.
 > « Versement de l'acompte bloqué — la convention et le contrat pédagogique doivent être
 > signés au préalable ».
 
-??? note "Détails internes (équipe AroundLink)"
-    Évalué après toutes les modifications de la fiche, ce qui permet de signer la
-    convention/le LA et de saisir l'acompte dans la même sauvegarde. Les verrous
-    documentaires ne s'appliquent qu'aux hausses de montant versé : une correction à la
-    baisse ou un effacement reste permis. Cohérence (acompte + solde) ≤ montant attribué.
 
 ## Calcul du montant de bourse
 
@@ -161,12 +129,6 @@ programme intensif mixte, un taux journalier à la durée en jours.
 > formulaire affiche instantanément le montant suggéré, calculé à partir du taux du groupe
 > de pays et de 4 mois.
 
-??? note "Détails internes (équipe AroundLink)"
-    SMS/SMP : taux mensuel × mois arrondis (mois calendaires + 1 si jours résiduels > 15).
-    BIP : taux journalier × jours inclusifs (fin − début + 1). Les taux sont lus dans la
-    table `bm_rates` (par pays et par année, format `YYYY-YYYY`), ce qui permet une mise à
-    jour annuelle sans redéploiement. Un montant ne peut être calculé que si un taux est
-    configuré pour le pays et l'année.
 
 ## Import CSV des bourses
 
@@ -185,13 +147,6 @@ ligne invalide n'empêche pas les autres d'être importées.
 > Le coordinateur importe 40 bourses depuis un tableur ; 3 lignes signalent un dépassement
 > de la dotation et sont écartées, 37 sont créées.
 
-??? note "Détails internes (équipe AroundLink)"
-    Le statut n'est pas pilotable à l'import : toute bourse importée démarre en ga_pending.
-    Détection automatique du séparateur (`, ; tab`), gestion du BOM UTF-8, montant vide →
-    suggestion calculée. Garde budgétaire cumulative : l'import suit la consommation ligne
-    à ligne et refuse une ligne qui ferait passer le reste sous zéro. Import stateless (le
-    fichier est ré-analysé à la confirmation) ; chaque ligne valide est persistée dans sa
-    propre transaction.
 
 ## Export (Beneficiary Module) et journal d'audit
 
@@ -211,12 +166,6 @@ retrace chaque modification avec son auteur et sa date.
 > Au moment du reporting, le coordinateur exporte les bourses de l'année pour les remonter
 > dans le Beneficiary Module, et sort le journal d'audit pour l'auditeur interne.
 
-??? note "Détails internes (équipe AroundLink)"
-    L'export réutilise la sérialisation des bourses et des résolveurs (identité officielle
-    via le registre ECHE, domaine ISCED, distance à vol d'oiseau → bande Erasmus+, codes
-    niveau d'études EQF→BM, type d'activité, indicateurs long terme/BIP/doctorat/
-    international). Réponses en flux, toujours cadrées sur une année. Neutralisation
-    anti-injection de formule sur les cellules texte.
 
 ## Sélection des étudiants éligibles
 
@@ -235,8 +184,3 @@ suggéré, l'établissement d'accueil, et une indication s'ils ont déjà une bo
 > Dans la fenêtre « nouvelle bourse », le coordinateur ne voit que les 22 étudiants
 > éligibles ; 3 ont déjà une bourse et sont signalés comme tels.
 
-??? note "Détails internes (équipe AroundLink)"
-    Filtre d'éligibilité (`GrantEligibilityResolver`) : exclut les étudiants sans
-    affectation active ou dont la destination n'est pas couverte par le barème. Chaque
-    entrée porte le type de mobilité suggéré, l'établissement d'accueil et l'indicateur
-    `has_grant`. Tri par nom, pas de pré-remplissage des dates (saisies manuellement).

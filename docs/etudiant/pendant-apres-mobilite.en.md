@@ -32,13 +32,6 @@ by the institution when one exists.
 > downloads their official assignment certificate for the host institution's
 > registration desk.
 
-??? note "Internal details (AroundLink team)"
-    The arrival (COA) and departure (COD) attestations are handled by their
-    dedicated managers; once validated, they are locked on the student side. The
-    assignment certificate checks that the document belongs to the logged-in
-    student before generation, and falls back to a built-in layout if no
-    nomination-letter template is configured. The main partner contact and up to
-    6 published reviews (accepted and public) complete the page.
 
 ## Learning agreement (OLA)
 
@@ -65,12 +58,6 @@ possible once the OLA is fully validated.
 > A student chooses 6 courses (30 ECTS) across two fields, submits their OLA, then
 > later downloads the PDF signed by all three parties.
 
-??? note "Internal details (AroundLink team)"
-    A shared resolution mechanism ensures that the page render and all
-    asynchronous writes target the latest OLA (protection against multiple
-    affectations). The download relies on the institution's Learning Agreement
-    document template and is only served once the OLA is fully validated. A
-    history feed traces the actions.
 
 ## Transcript of Records
 
@@ -92,11 +79,6 @@ transcript where applicable, then records the transcript with the status
 > A returning student enters the ECTS grades for their 6 courses, uploads the
 > host institution's official transcript, and submits for validation.
 
-??? note "Internal details (AroundLink team)"
-    Grade validation depends on the chosen grading system; the statistics are
-    computed by the transcript manager. The file is saved with the "Transcript of
-    Records" type. The PDF download of the validated transcript is served from
-    the learning-agreement module.
 
 ## Resources
 
@@ -113,8 +95,6 @@ student.
 **Use case.**
 > A student downloads their institution's Erasmus pre-departure guide.
 
-??? note "Internal details (AroundLink team)"
-    The audience filter targets the files visible to the outgoing audience.
 
 ## Services
 
@@ -136,10 +116,6 @@ website.
 > completes the subscription directly on the provider's site with the promo code
 > shown.
 
-??? note "Internal details (AroundLink team)"
-    Display + affiliation (links and promo codes to the provider); no payment goes
-    through the platform. Option enabled per institution; only active offers are
-    shown.
 
 ## Messaging with the international relations office
 
@@ -159,10 +135,6 @@ unread-messages badge.
 > A student writes to their coordinator about a missing document, and sees the
 > reply with an unread badge on their next login.
 
-??? note "Internal details (AroundLink team)"
-    Behaves the same as the office side. The student role is required at the
-    module level. Thread participation is checked on each open and each reply. A
-    counting endpoint feeds the badge.
 
 ## Notifications
 
@@ -180,6 +152,3 @@ previous page. A counter feeds the badge.
 > A student receives a notification that their OLA has been validated and clicks
 > through to see the details.
 
-??? note "Internal details (AroundLink team)"
-    Behaves the same as the mobility side. The student role is required at the
-    module level. An ownership check protects the opening of a notification.

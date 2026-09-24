@@ -32,16 +32,6 @@ d'accueil confirmé et une liste de contrôle des étapes de mobilité.
 > Un étudiant qui vient de soumettre ses vœux se connecte et voit l'étape
 > « Candidature en cours » surlignée, avec un lien direct vers la campagne.
 
-??? note "Détails internes (équipe AroundLink)"
-    Le statut n'est jamais stocké : il est recalculé à chaque affichage par le
-    résolveur de statut. La frise s'appuie sur les étapes de `StudentStatusEnum`
-    (Connected, Campaign, Proposition, Nomination, Partner acceptation,
-    Preparation, During/After mobility, Mobility finished). Les cartes
-    partenaires réutilisent le même chargement d'images (photo de profil
-    prioritaire sur le logo) et le même mécanisme de favoris que le moteur de
-    recherche. La liste de contrôle de mobilité affiche les sous-étapes (OLA
-    1/2/3, documents, attestation d'arrivée, feedback, relevé de notes, EU
-    Survey).
 
 ## Profil — Informations personnelles
 
@@ -63,13 +53,6 @@ proposé. Le domaine d'études repose sur la nomenclature ISCED.
 > Avant son départ, un étudiant met à jour son email personnel et son numéro
 > d'urgence, puis téléverse une photo d'identité.
 
-??? note "Détails internes (équipe AroundLink)"
-    Champs du formulaire : civilité, prénom/nom, numéro étudiant, INE, email,
-    email personnel, téléphone, numéro d'urgence, lieu/pays/date de naissance,
-    nationalité, niveau académique (avec prise en charge des programmes
-    personnalisés), campus, domaine détaillé (ISCED). La suppression de la photo
-    est protégée par jeton CSRF. Les variables de la page sont assemblées par le
-    gestionnaire de profil étudiant.
 
 ## Profil — Documents & scores de langue
 
@@ -92,12 +75,6 @@ dates correspondantes.
 > Un étudiant téléverse son certificat d'anglais B2 et saisit le score, puis
 > ajoute la copie de passeport demandée par la campagne.
 
-??? note "Détails internes (équipe AroundLink)"
-    Les types de fichiers requis proviennent du vérificateur de documents de
-    campagne. Un document validé est verrouillé côté étudiant : verrouillage
-    appliqué à la suppression et à la mise à jour des dates. Les saisies de dates
-    d'arrivée/départ refusent une date future. La suppression d'un score retire
-    aussi le PDF associé du stockage.
 
 ## Profil — Bourse de mobilité
 
@@ -114,9 +91,6 @@ montant et l'état de sa bourse ; il n'y a pas de saisie depuis cet écran.
 **Cas d'usage.**
 > Un étudiant consulte le montant et le statut de sa bourse Erasmus+.
 
-??? note "Détails internes (équipe AroundLink)"
-    Écran en consultation uniquement (aucune édition côté étudiant). Les données
-    proviennent des enregistrements de bourse de mobilité liés au profil.
 
 ## Profil — Avis sur l'établissement partenaire
 
@@ -138,12 +112,6 @@ récapitulent les avis de l'étudiant par statut.
 > Un étudiant de retour rédige un avis « Logement » avec deux photos de la
 > résidence ; il est transmis au coordinateur pour modération.
 
-??? note "Détails internes (équipe AroundLink)"
-    L'avis est créé au statut « En attente » ; seul le coordinateur peut
-    l'accepter ou le refuser. Une photo d'avis est visible par son auteur en
-    toutes circonstances, par le coordinateur modérateur, et par les autres
-    utilisateurs uniquement lorsque l'avis est accepté et publié. Un avis soumis
-    est définitif côté étudiant.
 
 ## Rechercher un exchange (moteur de recherche partenaires)
 
@@ -171,13 +139,6 @@ fait en direct, sans rechargement complet de la page.
 > et voit aussitôt les seuls partenaires offrant son niveau et son domaine pour
 > un semestre d'hiver.
 
-??? note "Détails internes (équipe AroundLink)"
-    La mobilité payante est stockée dans une table dédiée ; une puce et des prix
-    indicatifs apparaissent lorsque l'établissement en publie. Les facettes sont
-    fusionnées à partir des accords IIA et des accords bilatéraux/DD/payants. Les
-    puces de niveau utilisent les libellés personnalisés de l'établissement (Aéro
-    3…) mappés vers une valeur de niveau représentative. L'endpoint
-    d'autocomplétion renvoie la carte et les cartes de résultats déjà rendues.
 
 ## Fiche établissement partenaire
 
@@ -210,14 +171,6 @@ sous-page liste tous les avis publiés.
 > « Aéro 5 » sur la période de printemps sous l'accord d'échange, et lit
 > 4 avis publiés.
 
-??? note "Détails internes (équipe AroundLink)"
-    Les places proviennent des fournisseurs de distribution (socle, bilatéral,
-    double diplôme) assemblés par le constructeur de tableau d'accords. Seuls les
-    avis acceptés et publics sont affichés. Les exigences linguistiques sont
-    aussi exposées par une petite API JSON (`/api/student/.../requirements`) qui
-    alimente la carte d'exigences ; cet endpoint applique explicitement le rôle
-    étudiant car il vit hors du pare-feu `^/student`. Un état de repli protège
-    l'affichage lorsque l'étudiant n'a pas encore de profil.
 
 ## Favoris
 
@@ -235,10 +188,6 @@ tableau de bord, les résultats de recherche et les fiches partenaires.
 > Un étudiant met en favori trois établissements pendant sa navigation, puis
 > revoit sa présélection avant de construire ses vœux.
 
-??? note "Détails internes (équipe AroundLink)"
-    Les identifiants de favoris sont propagés dans le tableau de bord et le
-    moteur de recherche pour l'état des cartes. Le bouton renvoie un fragment de
-    liste de favoris déjà rendu.
 
 ## Vœux de campagne (candidature)
 
@@ -265,12 +214,6 @@ requis avant d'accepter).
 > Un étudiant classe 5 choix, téléverse le dernier relevé requis, puis soumet
 > définitivement et reçoit une confirmation « Vos vœux ont été soumis ».
 
-??? note "Détails internes (équipe AroundLink)"
-    L'éligibilité et la recherche s'appuient sur la recherche d'exchanges de
-    campagne. La barrière des documents requis n'est appliquée qu'en soumission
-    définitive. L'enregistrement remplace puis recrée les vœux, ordonnés par
-    position. Accéder à une campagne à laquelle l'étudiant n'est pas inscrit est
-    refusé.
 
 ## Proposition — Accepter ou refuser
 
@@ -289,7 +232,3 @@ déclenche un email de confirmation de décision.
 > Un étudiant reçoit une proposition pour son 2e choix, clique sur « Accepter »
 > dans la modale, et reçoit un email de confirmation.
 
-??? note "Détails internes (équipe AroundLink)"
-    Les deux actions sont protégées par jeton CSRF et irréversibles. L'email de
-    décision est envoyé après validation ; un échec d'envoi n'annule pas la
-    décision déjà enregistrée.

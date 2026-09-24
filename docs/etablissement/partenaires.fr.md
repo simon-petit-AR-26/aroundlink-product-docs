@@ -29,13 +29,6 @@ accords.
 > Un coordinateur filtre sur « Espagne + accords actifs », puis ouvre la fiche
 > d'une université pour vérifier ses contacts.
 
-??? note "Détails internes (équipe AroundLink)"
-    Contrôleur `UniversityController::universities()`. La visibilité repose sur la
-    relation « suivi » (`trackedBy`) ou l'existence d'un `Exchange` avec le client.
-    Les relations de la grille (factsheet, contacts, échanges) sont pré-chargées
-    en lot pour éviter les requêtes N+1. Les étiquettes affichées sont uniquement
-    celles de l'établissement courant. Un badge signale les mises à jour IIA en
-    attente.
 
 ## Créer un établissement partenaire
 
@@ -71,11 +64,6 @@ et à mesure que vous l'apprenez.
 > Le bureau signe un nouveau partenaire au Portugal ; le coordinateur l'ajoute
 > avec son code Erasmus et le coordinateur d'accueil comme contact principal.
 
-??? note "Détails internes (équipe AroundLink)"
-    `UniversityController::newUniversity()`. Le rattachement explicite au client
-    est nécessaire pour que l'établissement apparaisse dans l'annuaire. La liaison
-    contact–compte s'effectue après l'enregistrement. Les doublons (code,
-    identifiant EWP, e-mail de contact) sont signalés par un message.
 
 ## Fiche établissement (Informations)
 
@@ -100,13 +88,6 @@ partenaire partagé ne sont jamais modifiées.
 > Le coordinateur étiquette Bologne comme « Prioritaire » et note la référence
 > interne du bureau pour cet établissement.
 
-??? note "Détails internes (équipe AroundLink)"
-    `UniversityController::informationUniversity()`. Entité `University` : code,
-    nom, pays, ville, adresse, e-mail, type d'école (école de commerce /
-    d'ingénieurs / université), plan de mobilité (payant / gratuit),
-    accréditations (22 valeurs : AACSB, EQUIS, CTI, Qualiopi…), identifiants EWP
-    (HEI ID, SCHAC, code Erasmus, ROR). Logo et photo gérés via `UniversityFile`.
-    Un message d'erreur s'affiche systématiquement en cas d'échec de validation.
 
 ### Étiquettes partenaires
 
@@ -126,10 +107,6 @@ et en filtres dans l'annuaire.
 > Le bureau crée une étiquette rouge « Suspendu » et l'applique à deux partenaires
 > dont les accords ont expiré.
 
-??? note "Détails internes (équipe AroundLink)"
-    `PartnerTagsController`. Entité `PartnerTag` (propriétaire, nom, couleur,
-    relation N-N vers les universités). La propriété est vérifiée à la
-    modification et à la suppression.
 
 ### Code interne du partenaire
 
@@ -146,9 +123,6 @@ référence propre à votre établissement. Il apparaît en colonne dans l'annua
 **Cas d'usage.**
 > Le coordinateur enregistre la référence interne « IT-BOL-01 » pour Bologne.
 
-??? note "Détails internes (équipe AroundLink)"
-    Entité `PartnerInternalCode` (établissement, partenaire, code), unique par
-    couple établissement/partenaire. Géré en ligne dans la fiche Informations.
 
 ### Scores de langue attendus
 
@@ -168,9 +142,6 @@ niveau CECRL optionnel.
 > Le coordinateur note « Lund : IELTS 6.5 / B2 » ; un étudiant à IELTS 6.0 est
 > alors signalé sous le seuil.
 
-??? note "Détails internes (équipe AroundLink)"
-    `UniversityLanguageScoreController`. Entité `UniversityLanguageScore`,
-    structure identique à celle des scores étudiants, rattachée à l'université.
 
 ## Contacts partenaires
 
@@ -193,12 +164,6 @@ est automatiquement relié à un compte existant qui lui correspond.
 > Le coordinateur ajoute la responsable Erasmus d'un partenaire et la marque
 > comme contact principal.
 
-??? note "Détails internes (équipe AroundLink)"
-    `UniversityContactController` (global) et `UniversityController::contactsUniversity()`.
-    Entité `UniversityContact` (partenaire décrit, établissement propriétaire,
-    indicateur principal, compte lié éventuel). Filtrage automatique par
-    établissement. La suppression est protégée si le contact est référencé par un
-    accord.
 
 ### Ouvrir un accès au portail (invitations)
 
@@ -216,10 +181,6 @@ sont limitées en fréquence pour éviter les envois répétés.
 > Le coordinateur invite la responsable Erasmus du partenaire afin qu'elle
 > examine un accord dans son propre portail.
 
-??? note "Détails internes (équipe AroundLink)"
-    `invitePartnerContact()` / `resendPartnerContactInvite()`. Flux
-    créer-ou-relier-ou-inviter. Le même mécanisme se déclenche automatiquement à
-    la soumission d'un accord bilatéral à un partenaire.
 
 ## Vue consolidée des accords
 
@@ -239,10 +200,6 @@ et partenaire, et les années de validité.
 > Le bureau filtre « Tous les accords » sur « Expiré » pour planifier les
 > renouvellements.
 
-??? note "Détails internes (équipe AroundLink)"
-    `UniversityController::agreementsData()`. Les lignes IIA proviennent des
-    `Exchange`, les lignes bilatérales du dépôt bilatéral. Le détail des accords
-    est documenté sur la page dédiée aux [accords](accords.md).
 
 ## Recherche d'établissement (autocomplétion)
 
@@ -259,9 +216,6 @@ saisie ; l'autocomplétion est intégrée aux formulaires concernés.
 > En tapant « sorbon », la liste suggère « Sorbonne Université » avec ses
 > identifiants.
 
-??? note "Détails internes (équipe AroundLink)"
-    `UniversityLookupController` + `UniversityLookupService`. Point d'accès JSON
-    exposé aux formulaires.
 
 ## Contenus étudiants du partenaire
 
@@ -279,10 +233,6 @@ import groupé permet aussi de charger ces contenus depuis un fichier.
 > Le bureau renseigne les blocs « Logement » et « Visa » d'un partenaire pour
 > qu'ils apparaissent sur sa page étudiante.
 
-??? note "Détails internes (équipe AroundLink)"
-    `cmsUniversity()`, `deleteUniversityCmsBlock()`, `studentInfoImport()`. Blocs
-    `UniversityCms` (sous-catégorie, contenu, position). Les catégories dépendent
-    des données de référence CMS.
 
 ## Bibliothèque de documents du partenaire
 
@@ -303,9 +253,6 @@ en double sont refusés), vous les listez et les supprimez individuellement.
 > Le coordinateur téléverse le PDF de l'accord de coopération signé sur la fiche
 > du partenaire.
 
-??? note "Détails internes (équipe AroundLink)"
-    `documentsUniversity()` / `deleteDocument()`. Entité `UniversityFile` (type
-    document université), gérée via le gestionnaire de fichiers.
 
 ## Catalogue de cours du partenaire
 
@@ -325,9 +272,6 @@ supprimez par partenaire ; ils sont listés par code.
 > Le bureau enregistre les 12 cours de master enseignés en anglais qu'un
 > partenaire propose aux entrants.
 
-??? note "Détails internes (équipe AroundLink)"
-    `courses()` / `courseDelete()`. Entité `Course` rattachée à l'université,
-    listée par code via le dépôt dédié.
 
 ## FAQ du partenaire
 
@@ -367,8 +311,6 @@ cas d'erreur.
 > Le coordinateur ajoute l'Instagram d'un partenaire pour qu'il apparaisse sur la
 > page étudiante.
 
-??? note "Détails internes (équipe AroundLink)"
-    `linksUniversity()`. Champs de liens portés par l'entité `University`.
 
 ## Modération des avis étudiants
 
@@ -397,10 +339,6 @@ suivez également, ne vous est jamais présenté — quel que soit son statut.
     La consultation et la modération des avis font partie de l'offre payante. Un
     établissement en accès gratuit n'y a pas accès.
 
-??? note "Détails internes (équipe AroundLink)"
-    `feedbackUniversity()` + actions accepter / refuser. Statuts en attente /
-    accepté / refusé, indicateur de publication, historique de modération. La
-    règle de propriété est le compte de l'étudiant **auteur**, et lui seul.
 
 ## Aperçu côté étudiant
 
@@ -419,9 +357,6 @@ année, niveau et discipline. Sans profil étudiant, les filtres démarrent sur
 > Avant l'ouverture d'une campagne, le coordinateur prévisualise un partenaire
 > pour confirmer l'affichage des places et des exigences.
 
-??? note "Détails internes (équipe AroundLink)"
-    `studentPreview()`. Réutilise les mêmes constructeurs que la vue étudiante
-    réelle (places, exigences, tableau d'accords, carte).
 
 ## Masquer, archiver ou fusionner un partenaire
 
@@ -468,11 +403,6 @@ créations, mises à jour et lignes ignorées.
 > Le bureau téléverse 300 partenaires : 280 créés, 20 mis à jour, une faute de
 > frappe dans l'en-tête détectée avant tout enregistrement.
 
-??? note "Détails internes (équipe AroundLink)"
-    `universitiesImport()` + validation des en-têtes. `UniversityImporter`
-    (compteurs créés / mis à jour / reliés / traités). Une prévisualisation est
-    disponible avant confirmation. Les valeurs issues du fichier sont
-    échappées à l'affichage.
 
 ## Importer des contacts partenaires
 
@@ -491,7 +421,3 @@ domaines e-mail ne correspondant à aucun partenaire connu.
 > Le bureau téléverse une liste de contacts : chacun rejoint le bon partenaire, et
 > 3 domaines inconnus sont signalés.
 
-??? note "Détails internes (équipe AroundLink)"
-    `UniversityContactsImportController`. `UniversityContactsImporter` (domaines
-    introuvables, contacts créés / mis à jour). Prévisualisation avant
-    confirmation.

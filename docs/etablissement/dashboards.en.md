@@ -27,12 +27,6 @@ can add, hide and resize blocks from a widget catalog.
 > Monday morning, a coordinator sees "12 documents pending validation" and clicks
 > to land directly on the queue to process.
 
-??? note "Internal details (AroundLink team)"
-    KPIs: outgoing, incoming, partners, available places, pending documents,
-    pending OLAs, pending ToRs. The indicator set is cached per coordinator for
-    30 s (each KPI is a separate query). `/mobility/` redirects to the dashboard.
-    Widgets come from `DashboardWidgetRegistry`; data walled off to the
-    coordinator's institution. Controller: `DashboardController`.
 
 ## Pilotage (strategic) dashboard for the DRI
 
@@ -55,9 +49,3 @@ stays walled off to your institution.
 > A DRI reviews the "Underused agreements" list to decide which partnerships to
 > renegotiate next year.
 
-??? note "Internal details (AroundLink team)"
-    Block categories: Overview / Decision / Financial / Inclusion. Widget types:
-    tile, chart, gauge, list, funnel, map. Same `DashboardWidgetRegistry` and
-    `DashboardMetricsService` as the operational dashboard; Tabler icons (`ti-*`).
-    Controller: `DashboardPilotageController` (route `/mobility/pilotage`,
-    `ROLE_MOBILITY`).

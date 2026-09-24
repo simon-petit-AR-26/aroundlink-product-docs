@@ -40,14 +40,118 @@ refermera dès le lendemain matin.
 > limitée aux partenaires Erasmus+ tagués « Ingénierie » ; tous les étudiants de Master
 > avec une période Semestre 1 sont inscrits automatiquement.
 
-??? note "Détails internes (équipe AroundLink)"
-    Entité `Campaign` : `wishesNumber`, `academicLevels`, `periods` (M2M `MobilityPeriod`),
-    `agreementTypes` (`AgreementTypeEnum`), `requiredFileTypes` (documents à faire valider
-    avant de soumettre des vœux), `filterPartnerTags`. Statut `CampaignStatusEnum{DRAFT,
-    READY, OPENED, FINISHED}`. `CampaignManager::handleCampaign()` reconstruit les relations
-    à chaque création/édition. Sélection via
-    `AcademicLevelResolver::expandLevelsToEqfSiblingValues()` (un niveau tire ses voisins
-    EQF) ; un échange sans place sur les périodes de la campagne est écarté.
+
+## Paramétrer une campagne, réglage par réglage
+
+**À quoi ça sert.** Comprendre ce que change chaque réglage avant de l'activer — plusieurs
+d'entre eux ne se reviennent pas une fois que vos étudiants ont commencé à répondre.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+### L'identité
+
+**Nom**, **année scolaire**, **date de début** et **date de fin**. La fin ne peut pas
+précéder le début, et elle n'est pas décorative : le lendemain du dernier jour, la campagne
+se clôt d'elle-même.
+
+### Le vivier d'étudiants
+
+Qui participe. Vous combinez autant de critères que nécessaire :
+
+- **Niveau d'études** et **parcours** — le parcours est le libellé que vous avez donné à vos
+  promotions (« Aero 4 », « PGE 26-27 ») ;
+- **Campus** — ou tous ;
+- **Tags généraux** et **filtres étudiants** ;
+- des **ajouts manuels**, étudiant par étudiant, pour les cas particuliers.
+
+### Le vivier de destinations
+
+Où ils peuvent partir :
+
+- **Types d'accord** — échange, double diplôme, mobilité payante, stage ;
+- **Type de mobilité** — y compris les mobilités de personnel, enseignement et formation ;
+- **Périodes** ;
+- **Partenaires** — tous, ou restreints par vos tags et filtres d'établissement.
+
+Là aussi, vous pouvez ajouter ou retirer un accord à la main.
+
+### Les vœux
+
+**Minimum** et **maximum**, tous deux facultatifs. Le minimum bloque autant que le maximum :
+un étudiant qui n'a pas atteint le nombre demandé ne peut pas valider sa liste.
+
+### Le dossier de l'étudiant
+
+Vous désignez les **documents requis**, puis vous choisissez ce qui se passe quand il en
+manque un :
+
+- **Le montrer et affecter quand même** *(recommandé)* — le manque est signalé, la décision
+  reste la vôtre ;
+- **Bloquer l'affectation** tant que tout n'est pas là.
+
+### L'étudiant peut-il dire qu'il ne part pas ?
+
+- **Non** — une liste de vœux vide veut simplement dire « pas encore répondu » ;
+- **Oui** — il peut déclarer qu'il ne souhaite pas partir. Il répond une fois, **aucun motif
+  ne lui est demandé**, et il cesse aussitôt d'apparaître dans vos relances et dans le
+  matchmaking. Sa réponse reste réversible tant que la campagne est ouverte.
+
+!!! warning "Ce réglage ne se rattrape pas en cours de route"
+    Une campagne qui n'a jamais posé la question ne se met pas à la poser seule. Et une fois
+    que des réponses sont arrivées, il n'est plus possible de revenir en arrière — sans quoi
+    des décisions déjà prises par vos étudiants deviendraient illisibles.
+
+### Qui confirme la destination
+
+- **L'étudiant accepte ou refuse** la proposition ;
+- **Le coordinateur affecte directement** — l'étape d'acceptation disparaît, votre décision
+  crée l'affectation.
+
+### La note aux étudiants
+
+Un texte libre, facultatif, affiché à ceux qui participent.
+
+### L'aperçu avant d'enregistrer
+
+Avant de valider vos changements, un récapitulatif vous dit ce que la sauvegarde va
+**ajouter, conserver et retirer** — destinations comme étudiants. Retirer un partenaire
+emporte tous ses accords de la campagne, et les vœux déjà posés dessus : l'aperçu vous le
+dit avant, pas après.
+
+## Ce que le matchmaking exige
+
+**À quoi ça sert.** Savoir ce qu'il faut avoir préparé pour qu'un tour d'affectation puisse
+tourner — et pourquoi il refuse parfois de démarrer.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Le moteur place chaque étudiant sur la case de **son propre
+parcours** — « Aero 4 » n'est pas « Aero 5 » — et il ne devine jamais. Trois conditions sont
+donc exigées de chaque participant :
+
+| Condition | Pourquoi |
+|---|---|
+| **Un profil** | Sans dossier, il n'y a rien à placer. |
+| **Un parcours** | C'est lui qui désigne la case. Sans parcours, aucune case ne lui correspond. |
+| **Un classement importé** | Le tour est un **ordre** : il sert le premier classé, et ce qui reste va au suivant. Sans rang, l'étudiant n'a pas de place dans cet ordre. |
+
+Un participant à qui il manque l'une des trois est **écarté et nommé** dans le compte rendu,
+avec la raison. Le tour ne part pas en silence.
+
+!!! warning "Le parcours est exigé même si vous n'en utilisez pas"
+    Si votre établissement ne distingue pas de promotions, donnez-vous un parcours par
+    niveau utilisé — « Licence », « Master ». Un seul mécanisme porte alors tous les cas, et
+    rien n'est jamais déduit à votre place.
+
+!!! info "Le classement s'importe avant, jamais pendant"
+    Le tour ne fabrique pas de classement. Importez-le d'abord ; sinon les étudiants sans
+    rang seraient servis en dernier, ce qui serait une décision que personne n'a prise.
+
+**Rien de tout cela ne vous contraint à la main.** Vous restez libre d'affecter qui vous
+voulez, où vous voulez, classé ou non : c'est votre décision, et le moteur ne s'y oppose
+pas. Ces trois conditions ne valent que pour le tour automatique.
+
+Un tour peut être relancé autant de fois que nécessaire — ce n'est pas un geste unique.
 
 ## Vœux, propositions et affectations
 
@@ -78,17 +182,6 @@ l'établissement.
 > l'autre bascule automatiquement sur son vœu n°2. Le coordinateur pré-affecte ensuite un
 > cas particulier, et le système redistribue la place libérée.
 
-??? note "Détails internes (équipe AroundLink)"
-    `CampaignWish.status` = `WishStatusEnum{DRAFT_STUDENT, SUBMITTED_BY_STUDENT,
-    SYSTEM_PROPOSAL, SYSTEM_NOT_ENOUGH_PLACES, COORDINATOR_PROPOSAL,
-    COORDINATOR_PROPOSAL_SENT_TO_STUDENT, ACCEPTED_BY_STUDENT, REFUSED_BY_COORDINATOR,
-    REFUSED_BY_STUDENT, CANCELLED_AFTER_REFUSAL}`. Comptage des places via
-    `MobilitySpecPlaces` (compteur par période). `MatchmakingService` traite les étudiants
-    par rang. À l'acceptation, `CampaignWishesManager::acceptWish()` réutilise ou crée un
-    `ExchangeAffectation` au statut `PENDING` (nomination EWP vers le partenaire), dans une
-    transaction ; le lien vœu ↔ affectation est unique. Une re-nomination après refus/annulation
-    repasse en `PENDING` sans jamais rétrograder un `APPROVED`. Le drapeau
-    `matchMakingCompleted` empêche de relancer l'attribution globale.
 
 ## Ce que le tour d'affectation a fait
 
@@ -177,11 +270,6 @@ Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de
 > ou par EWP, deux par téléphone qu'il saisit à la main, et une destination refuse faute de
 > place dans la spécialité demandée.
 
-??? note "Détails internes (équipe AroundLink)"
-    `trackCampaign()` : graphiques via `ChartBuilderInterface`, vœux regroupés par rang,
-    complétude dérivée des propositions/affectations existantes. Exports via
-    `CampaignExportService` (`exportAllWishes`, `exportFinalAssignments`). Aperçu live
-    (`/preview`) pour les compteurs du formulaire de création.
 
 !!! note "Relances documentaires"
     Les rappels automatiques aux étudiants dont le dossier est incomplet sont couverts par

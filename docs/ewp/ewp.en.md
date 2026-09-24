@@ -33,16 +33,6 @@ publish by hand.
 > A Spanish university adds you as a partner; its software reads your manifest and
 > immediately discovers it can send you a digital agreement.
 
-??? note "Internal details (AroundLink team)"
-    Discovery API v6. The manifest is served at `/ewp/{ewpHeiId}/manifest.xml`,
-    identified by the client university's HEI ID. It declares 15 API entries:
-    discovery, echo, institutions, omobilities, omobility-cnr, omobility-las,
-    omobility-la-cnr, iias, iia-cnr, iias-approval, iia-approval-cnr, imobility-tors,
-    imobility-tor-stats, imobility-tor-cnr and factsheet, each with its version and
-    URL. The manifest is self-validated before publication (503 if invalid) and
-    cached for 1 h. Only AroundLink client universities expose a manifest;
-    partner-only institutions return 404. Institution provisioning (keys included)
-    is done through a dedicated console command.
 
 ## Echo
 
@@ -60,12 +50,6 @@ trust between the two institutions are working.
 > During partner onboarding, the team sends an Echo call; a successful response
 > confirms the trust handshake is operational.
 
-??? note "Internal details (AroundLink team)"
-    Echo API v2, exposed at `/ewp/{ewpHeiId}/echo`. The response returns the caller's
-    actually-authenticated identity (HEI ID), never a client-supplied value. EWP
-    responses are never compressed (integrity digests are computed on the
-    uncompressed body). Serves as a connectivity probe and as validation of the
-    authentication chain.
 
 ## Institutions
 
@@ -83,11 +67,6 @@ mobilities with a human-readable label.
 > A partner shows "Institut Polytechnique des Sciences Avancées" next to an incoming
 > agreement, rather than the institution's technical identifier.
 
-??? note "Internal details (AroundLink team)"
-    Institutions API v2 (declared 2.2.0), up to 10 HEI IDs per request
-    (`max-hei-ids=10`). The current response is minimal (hei-id + English name); the
-    rich information (addresses, contacts, calendars) is carried by the Factsheet API
-    rather than here.
 
 ## Factsheet (institution info sheet)
 
@@ -141,17 +120,6 @@ data is kept.
 > Before a campaign, the manager syncs a partner's factsheet to display its decision
 > turnaround directly in the agreement file.
 
-??? note "Internal details (AroundLink team)"
-    Factsheet API v1.2, `max-hei-ids=1`, anonymous client authentication allowed
-    (public data). Publishing (incoming) at `/ewp/{ewpHeiId}/factsheet`; empty
-    optional blocks fall back to the institution contact and then to fallback values
-    to stay schema-valid. Internal editing via `/mobility/ewp-factsheet`
-    (ROLE_MOBILITY + MODULE_WRITE:institution), one factsheet per university.
-    Fetching (outgoing) through a sync service that first queries the registry to
-    verify the partner exposes the API, then maps the response onto the `EwpFactsheet`
-    entity — locked fields and 6 EWP-out-of-schema local fields are never touched
-    (ticket AROUNDLINK-324). Triggerable from the agreement screen or via console
-    command.
 
 ## IIA — inter-institutional agreements
 
@@ -192,26 +160,6 @@ without touching their data.
 > A partner changes a language of instruction; the coordinator sees the difference,
 > accepts that single change and leaves the rest unchanged.
 
-??? note "Internal details (AroundLink team)"
-    IIAs API v7.0.1, `max-iia-ids=100`. Entities: `Exchange`. Incoming endpoints:
-    `iias/index` (partner, receiving academic year, modified_since filters),
-    `iias/get` (full content), `iias/approval` (iia-hash fingerprint), `iias/stats`
-    (counts by approval state). The v7 iia-hash covers only "strategic" fields
-    (mobilities, languages, ISCED, EQF) and excludes contacts, PDF, in-effect,
-    iia-code. Multi-tenant scoping: each endpoint returns only agreements where the
-    authenticated caller is the partner, so no volume or content is exposed toward a
-    third party.
-
-    Change notifications: iia-cnr v3, iia-approval-cnr v2. Incoming — an `iia-cnr`
-    notification triggers an agreement re-fetch, a diff, then an
-    `ExchangeIiaPendingUpdate` in PENDING_REVIEW status + coordinator email;
-    idempotence is based on the full payload fingerprint (not the iia-hash). If the
-    agreement is unknown, a minimal Exchange shell is created. Outgoing — editing an
-    agreement on our side emits an `iia-cnr` to the partner; an incoming
-    `iia-approval-cnr` re-fetches the partner's approval. Internal review via
-    `/mobility/iia-reviews`: granular field-level diff (including add/remove of
-    mobility-specs), selective apply that recomputes the iia-hash and resets approval
-    to DRAFT.
 
 ## OLA — learning agreements
 
@@ -233,17 +181,6 @@ on its side, AroundLink automatically fetches the up-to-date version.
 > The host university approves a student's learning agreement online; the status turns
 > to "validated" in AroundLink and recognition is set in motion.
 
-??? note "Internal details (AroundLink team)"
-    omobility-las API v1.2. Entity: `LearningAgreement` (AroundLink is the sending
-    institution). Incoming endpoints: `omobility-las/index`, `omobility-las/get` (full
-    content, Tables A/B, A2/B2 amendments, signatures, changes-proposal),
-    `omobility-las/update` (partner approve/comment), `omobility-las/stats`. Scoping:
-    only the authenticated host HEI can fetch an agreement, to protect the student's
-    personal data. Concurrent-edit guard: a stale proposal returns a conflict (409).
-    Change notification: omobility-la-cnr v1 — incoming, `fetchOla` retrieves the
-    fresh version and merges signatures + validation state (AROUNDLINK-519); outgoing,
-    `sendOlaCnr` notifies the host HEI when our agreement changes. Table B auto-filled
-    on validation.
 
 ## Transcript (ToR — transcript of records)
 
@@ -264,15 +201,6 @@ European format, ready to be imported and recognised automatically.
 > After exams, the partner's software fetches its student's transcript and
 > automatically recognises the credits earned.
 
-??? note "Internal details (AroundLink team)"
-    imobility-tors v1, imobility-tor-stats v1, imobility-tor-cnr v1. Entities:
-    `TranscriptOfRecord` + `ExchangeAffectation` (AroundLink is the host institution).
-    Incoming endpoints: `imobility-tors/index`, `imobility-tors/get` (transcript in
-    ELMO / EMREX format, learner identity via ESI, graded courses),
-    `imobility-tors/stats`. Data access requires authentication; scoping relies on the
-    calling HEI. Change notification imobility-tor-cnr on the incoming side (with
-    optional `fetchTor` re-fetch on the outgoing side). Only graded courses are
-    emitted; country codes are normalised to ISO.
 
 ## Nominations (outgoing mobilities)
 
@@ -293,15 +221,6 @@ student's status, with a record of the signer or the rejection reason.
 > You nominate a student to Milan; the Milan office approves via the network and the
 > student's status turns to "approved" in AroundLink, with the signer recorded.
 
-??? note "Internal details (AroundLink team)"
-    omobilities API v3, omobility-cnr v1. Entity: `ExchangeAffectation`. Incoming
-    endpoints: `omobilities/index`, `omobilities/get` (`student-mobility` content:
-    student, agreement + nominee ISCED-F, EQF level, sending/receiving HEI, IIA link,
-    activity type, status), `omobilities/update` (partner approve/reject, writes a
-    history row with signer or comment). Status follows `ExchangeAffectationStatus`
-    (values aligned 1:1 with the network; an undecided nomination = pending). Scoping:
-    `get` discloses only to authenticated host HEIs. Change notification omobility-cnr
-    on the incoming side.
 
 ## Technical foundations
 
@@ -319,15 +238,3 @@ possible to find each partner's address and identity before transmitting anythin
 > Before sending an agreement, AroundLink queries the directory to locate the partner
 > and signs the message so it is accepted as authentic.
 
-??? note "Internal details (AroundLink team)"
-    EWP HTTP signature (server and client authentication): every request and response
-    is signed, and the caller's identity is resolved to a HEI ID — the basis of the
-    multi-tenant scoping across all endpoints. EWP registry: a local mirror of the
-    network catalogue (institutions, APIs, versions, public keys) used to resolve a
-    partner endpoint's URL before an outgoing call and to identify the caller.
-    Outgoing hub `EwpClientService`: centralises signed calls (fetching agreements,
-    approvals, mobilities, learning agreements, transcripts, factsheets; sending
-    change notifications). ECHE: mirror of the public Erasmus Charter list (Erasmus
-    Charter for Higher Education) used as an institution-lookup source. Current model
-    of one keypair per institution (planned evolution: separate client and server
-    keys, ticket AROUNDLINK-537).

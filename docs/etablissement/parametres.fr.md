@@ -26,10 +26,6 @@ si des étudiants y sont encore rattachés, pour éviter toute perte de lien.
 > Une école multi-sites déclare les campus de Paris et de Lyon, puis y affecte
 > ses étudiants.
 
-??? note "Détails internes (équipe AroundLink)"
-    `CampusesController`. Entité `Campus` (université, nom, ville, pays,
-    indicateur principal). La suppression vérifie le nombre d'étudiants
-    rattachés. La propriété est contrôlée à la modification et à la suppression.
 
 ## Composantes (OUnits)
 
@@ -47,9 +43,6 @@ celui des campus.
 > Le bureau déclare la « Faculté d'ingénierie » comme composante avec son
 > identifiant EWP.
 
-??? note "Détails internes (équipe AroundLink)"
-    `OunitsController`. Entité `Ounit` (université, nom, description, identifiant
-    de composante). Écran calqué sur celui des campus.
 
 ## Niveaux d'études personnalisés
 
@@ -73,11 +66,6 @@ libellés en double sont refusés.
 > Une école d'ingénieurs définit « Aéro 4 » associé à l'EQF 7, afin de filtrer
 > campagnes et accords par ses véritables intitulés de niveau.
 
-??? note "Détails internes (équipe AroundLink)"
-    `AcademicLevelSettingsController`. Entité `AcademicLevelCustom` (université,
-    libellé unique par établissement, niveau EQF). Les entités consommatrices
-    enregistrent la valeur EQF standard, pas le libellé, afin de préserver la
-    compatibilité des exports EWP/OLA.
 
 ## Clé de connexion aux systèmes externes
 
@@ -100,9 +88,6 @@ vos intégrations.
     Une clé de connexion est un identifiant sensible. Ne la diffusez jamais
     publiquement et régénérez-la si vous pensez qu'elle a pu être exposée.
 
-??? note "Détails internes (équipe AroundLink)"
-    `ApiKeyController`. La clé est créée à la première visite et renouvelable en
-    un clic. Rattachée au compte de l'utilisateur.
 
 ## Suppressions protégées
 
@@ -232,10 +217,6 @@ pas l'ensemble.
 > Pendant la mise en route, l'admin prépare 8 comptes (en attente), puis clique
 > sur « Envoyer tous les accès » le jour du lancement.
 
-??? note "Détails internes (équipe AroundLink)"
-    `SettingsController::team()` et envois d'accès. Statut d'accès (en attente /
-    invité…). Les invitations partent via un e-mail dédié. Chaque nouveau membre
-    est aussi relié aux contacts partenaires existants qui le concernent.
 
 ## Ce que vos étudiants voient
 
@@ -373,6 +354,3 @@ nom/e-mail. Elle est réservée aux plans de mobilité payants.
 > L'admin recherche un utilisateur par e-mail pour vérifier son statut et sa
 > catégorie.
 
-??? note "Détails internes (équipe AroundLink)"
-    `SettingsController::users()`. Vue agrégée en lecture seule construite par un
-    service dédié, réservée aux établissements en plan payant.

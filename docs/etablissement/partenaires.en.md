@@ -28,12 +28,6 @@ table to the consolidated agreements view.
 > A coordinator filters on "Spain + active agreements", then opens a university's
 > file to check its contacts.
 
-??? note "Internal details (AroundLink team)"
-    `UniversityController::universities()`. Visibility relies on the "tracked"
-    relationship (`trackedBy`) or an existing `Exchange` with the client. Grid
-    relations (factsheet, contacts, exchanges) are batch-loaded to avoid N+1
-    queries. Only the current institution's tags are shown. A badge flags pending
-    IIA updates.
 
 ## Create a partner institution
 
@@ -67,11 +61,6 @@ learn it.
 > The office signs a new partner in Portugal; the coordinator adds it with its
 > Erasmus code and the receiving coordinator as main contact.
 
-??? note "Internal details (AroundLink team)"
-    `UniversityController::newUniversity()`. The explicit attachment to the client
-    is required for the institution to appear in the directory. Contact–account
-    linking happens after the save. Duplicates (code, EWP identifier, contact
-    email) are reported with a message.
 
 ## Institution file (Information)
 
@@ -95,13 +84,6 @@ partner is never modified.
 > The coordinator tags Bologna as "Priority" and records the office's internal
 > reference for that institution.
 
-??? note "Internal details (AroundLink team)"
-    `UniversityController::informationUniversity()`. `University` entity: code,
-    name, country, city, address, email, school type (business / engineering /
-    university), mobility plan (paid / free), accreditations (22 values: AACSB,
-    EQUIS, CTI, Qualiopi…), EWP identifiers (HEI ID, SCHAC, Erasmus code, ROR).
-    Logo and photo handled via `UniversityFile`. An error message is always shown
-    when validation fails.
 
 ### Partner tags
 
@@ -119,9 +101,6 @@ partner file and appear as badges and filters in the directory.
 > The office creates a red "Suspended" tag and applies it to two partners whose
 > agreements have expired.
 
-??? note "Internal details (AroundLink team)"
-    `PartnerTagsController`. `PartnerTag` entity (owner, name, colour, many-to-many
-    to universities). Ownership is checked on edit and delete.
 
 ### Partner internal code
 
@@ -138,9 +117,6 @@ private to your institution. It appears as a column in the directory.
 **Use case.**
 > The coordinator records the internal reference "IT-BOL-01" for Bologna.
 
-??? note "Internal details (AroundLink team)"
-    `PartnerInternalCode` entity (institution, partner, code), unique per
-    institution/partner pair. Managed inline on the Information file.
 
 ### Expected language scores
 
@@ -158,9 +134,6 @@ score, the four sub-scores and an optional CEFR level.
 > The coordinator records "Lund: IELTS 6.5 / B2"; a student at IELTS 6.0 is then
 > flagged below the threshold.
 
-??? note "Internal details (AroundLink team)"
-    `UniversityLanguageScoreController`. `UniversityLanguageScore` entity, same
-    structure as student scores, attached to the university.
 
 ## Partner contacts
 
@@ -182,11 +155,6 @@ account.
 > The coordinator adds a partner's Erasmus officer and marks them as the main
 > contact.
 
-??? note "Internal details (AroundLink team)"
-    `UniversityContactController` (global) and `UniversityController::contactsUniversity()`.
-    `UniversityContact` entity (described partner, owning institution, main flag,
-    optional linked account). Automatic per-institution scoping. Deletion is
-    protected when the contact is referenced by an agreement.
 
 ### Open portal access (invitations)
 
@@ -203,10 +171,6 @@ a "Resend" action re-issues it. Both are rate-limited to avoid repeated sends.
 > The coordinator invites the partner's Erasmus officer so she can review an
 > agreement in her own portal.
 
-??? note "Internal details (AroundLink team)"
-    `invitePartnerContact()` / `resendPartnerContactInvite()`. Create-or-link-or-invite
-    flow. The same mechanism fires automatically when a bilateral agreement is
-    submitted to a partner.
 
 ## Consolidated agreements view
 
@@ -224,10 +188,6 @@ the validity years.
 **Use case.**
 > The office filters "All agreements" on "Expired" to plan renewals.
 
-??? note "Internal details (AroundLink team)"
-    `UniversityController::agreementsData()`. IIA rows come from `Exchange`,
-    bilateral rows from the bilateral repository. Agreement detail is documented on
-    the dedicated [agreements](accords.md) page.
 
 ## Institution lookup (autocomplete)
 
@@ -242,9 +202,6 @@ autocomplete is built into the relevant forms.
 **Use case.**
 > Typing "sorbon" suggests "Sorbonne Université" with its identifiers.
 
-??? note "Internal details (AroundLink team)"
-    `UniversityLookupController` + `UniversityLookupService`. JSON endpoint exposed
-    to the forms.
 
 ## Partner student content
 
@@ -262,10 +219,6 @@ from a file.
 > The office fills in the "Housing" and "Visa" blocks of a partner so they appear
 > on its student page.
 
-??? note "Internal details (AroundLink team)"
-    `cmsUniversity()`, `deleteUniversityCmsBlock()`, `studentInfoImport()`.
-    `UniversityCms` blocks (sub-category, content, position). Categories depend on
-    the CMS reference data.
 
 ## Partner document library
 
@@ -285,9 +238,6 @@ rejected), list them, and delete them individually.
 > The coordinator uploads the signed cooperation-agreement PDF to the partner
 > file.
 
-??? note "Internal details (AroundLink team)"
-    `documentsUniversity()` / `deleteDocument()`. `UniversityFile` entity
-    (university document type), handled via the file manager.
 
 ## Partner course catalogue
 
@@ -307,9 +257,6 @@ listed by code.
 > The office records the 12 English-taught master's courses a partner offers to
 > incoming students.
 
-??? note "Internal details (AroundLink team)"
-    `courses()` / `courseDelete()`. `Course` entity attached to the university,
-    listed by code via the dedicated repository.
 
 ## Partner FAQ
 
@@ -346,8 +293,6 @@ Facebook, with a save confirmation and a clear flag when something is wrong.
 **Use case.**
 > The coordinator adds a partner's Instagram so it appears on the student page.
 
-??? note "Internal details (AroundLink team)"
-    `linksUniversity()`. Link fields carried by the `University` entity.
 
 ## Student-feedback moderation
 
@@ -375,10 +320,6 @@ to you, whatever its status.
     Reading and moderating reviews are part of the paid plan. An institution on free
     access does not have this screen.
 
-??? note "Internal details (AroundLink team)"
-    `feedbackUniversity()` + accept / refuse actions. Statuses pending / accepted /
-    refused, publication flag, moderation history. Ownership is the **author**
-    student's account, and nothing else.
 
 ## Preview as student
 
@@ -396,9 +337,6 @@ field. With no student profile, filters start on "All".
 > Before a campaign opens, the coordinator previews a partner to confirm the
 > display of places and requirements.
 
-??? note "Internal details (AroundLink team)"
-    `studentPreview()`. Reuses the same builders as the real student view (places,
-    requirements, agreement table, map).
 
 ## Hide, archive or merge a partner
 
@@ -442,10 +380,6 @@ fields. A summary reports creations, updates and skipped rows.
 > The office uploads 300 partners: 280 created, 20 updated, a header typo caught
 > before any save.
 
-??? note "Internal details (AroundLink team)"
-    `universitiesImport()` + header validation. `UniversityImporter` (created /
-    updated / linked / processed counters). A preview is available before
-    confirmation. Values from the file are escaped on display.
 
 ## Import partner contacts
 
@@ -463,6 +397,3 @@ partner.
 > The office uploads a contact list: each one joins the right partner, and 3
 > unknown domains are flagged.
 
-??? note "Internal details (AroundLink team)"
-    `UniversityContactsImportController`. `UniversityContactsImporter` (not-found
-    domains, created / updated contacts). Preview before confirmation.

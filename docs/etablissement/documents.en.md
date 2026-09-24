@@ -40,21 +40,6 @@ flow.
 > swap one course, then signs on behalf of the sending institution; as soon as the
 > partner signs in turn, the OLA becomes "Validated".
 
-??? note "Internal details (AroundLink team)"
-    Statuses (`LearningAgreementStatus`): Draft, Selected by student, Pending sending
-    school validation, Pending receiving school validation, Validated, Refused by
-    receiving school. Steps (`LearningAgreementStep`, official OLA wording): Before /
-    During / After the mobility (1/3, 2/3, 3/3).
-
-    Non-EWP agreement = parallel signing (`sendingSchoolSignedAt` /
-    `receivingSchoolSignedAt`), validated once `areBothSchoolsSigned()` ; EWP agreement =
-    sequential progression via the status. A refusal sends the OLA back to draft,
-    re-editable by the student. Amendment tables (A2/B2) trigger a fresh signature cycle
-    (`resetForAmendments()`).
-
-    On full validation, the LA signature date is carried over to the linked grant
-    (bridge to the Mobility grants module). Every mutating action checks that the student
-    belongs to the coordinator's scope.
 
 ## PDF generation: OLA & transcript of records
 
@@ -74,11 +59,6 @@ template with the courses (and the grades, for the transcript).
 > After both signatures, the coordinator downloads the Learning Agreement as a PDF, on
 > the institution's letterhead, for the student's file.
 
-??? note "Internal details (AroundLink team)"
-    The PDF reuses the institution's active template for the requested type (see
-    "Document templates"). The `{{COURSES_TABLE}}` / `{{COURSES_TABLE_WITH_GRADES}}`
-    tokens are resolved with the agreement's courses. If no active template of the type
-    exists, a message points to Settings → Document templates.
 
 ## Transcript of Records (ToR)
 
@@ -98,15 +78,6 @@ downloadable — or sends the file back to the student for correction.
 > coordinator checks, validates, and the transcript of records is ready to be sent to
 > the home university.
 
-??? note "Internal details (AroundLink team)"
-    Statuses (`TranscriptOfRecordStatus`): Pending student filling grades, Pending
-    validation by school, Validated by receiving/sending school, Refused by
-    receiving/sending school. Student submission requires a valid grade (per
-    `GradingSystemEnum`) for every course.
-
-    Business validation "makes faith": approving aligns the uploaded official file to the
-    validated state, which ticks the "transcript of records" item on the grant side and
-    satisfies the closure condition. A modification request un-ticks the grant.
 
 ## Validation Hub
 
@@ -128,15 +99,6 @@ required when refusing. A "History" tab lists past decisions with their reason.
 > two passports, sign one OLA on behalf of the sending institution, and refuse an
 > unreadable insurance certificate with a comment — all from the same queue.
 
-??? note "Internal details (AroundLink team)"
-    Four item types (StudentFile, non-EWP LearningAgreement awaiting signature,
-    TranscriptOfRecord, Feedback). Reason stored per type (`refusal_reason` for files,
-    a history row for LA/ToR/Feedback, ticket AROUNDLINK-548). Urgent = waiting ≥ 7 days.
-
-    Business guard: an arrival/departure certificate can only be validated if the student
-    has declared the matching date (it conditions the grant payment). Testimonial
-    moderation: validating can also publish; refusing always hides. Nominations do not go
-    through this queue.
 
 ## Students' administrative files
 
@@ -155,11 +117,6 @@ then triggers a reminder campaign in one click.
 > The coordinator filters on "Refused", selects 8 files, refuses them in bulk with a
 > comment, then sends a reminder to the students concerned.
 
-??? note "Internal details (AroundLink team)"
-    Statuses (`StudentFileStatusEnum`): Pending / Validated / Refused (with
-    `refusal_reason`). Bulk validations re-check that each file belongs to the
-    coordinator's scope. The arrival date rejects future dates and drives the grant
-    balance payment. Validating a file can feed the linked grant's checklist.
 
 ## Document templates
 
@@ -180,16 +137,6 @@ made available are visible read-only.
 > The coordinator creates an "Acceptance Letter" template with the institution's logo,
 > checks the preview, then generates it filled for an incoming student in one click.
 
-??? note "Internal details (AroundLink team)"
-    Types (`DocumentTemplateTypeEnum`, closed set, DB-enforced): nomination_letter,
-    learning_agreement, acceptance_letter, enrollment_certificate, transcript,
-    visa_certificate, housing_certificate. Fields: name, type, mobility type (default
-    "ALL"), content, active/inactive, owner, home university.
-
-    Each coordinator owns their own pool; institutional templates (no owner) are visible
-    to coordinators of the targeted university but editable only on the admin side.
-    Generation is restricted to students of the coordinator's own university. Variables
-    come from `DocumentVariableEnum`.
 
 ## Enable / disable document types
 
@@ -206,10 +153,6 @@ per institution.
 > An institution that never issues housing certificates disables that type: it
 > disappears from every student's checklist.
 
-??? note "Internal details (AroundLink team)"
-    Deactivation by the presence of a `DisabledDocumentType` row, unique per (university,
-    file type). No row = active type (default behaviour preserved). The list of disabled
-    types drives the display on the student side.
 
 ## Agreement update review (IIA)
 
@@ -228,8 +171,3 @@ stays unchanged.
 > The partner changes the agreement's ECTS and languages; the coordinator accepts the
 > language change but rejects the ECTS one — only the accepted field is written locally.
 
-??? note "Internal details (AroundLink team)"
-    Pending-update statuses (`ExchangeIiaPendingUpdateStatusEnum`): PENDING_REVIEW /
-    REJECTED. Applying is only possible while the update is under review. Author,
-    timestamp and review notes are kept. Returns to the agreements list after the
-    decision.

@@ -30,15 +30,6 @@ placed, it shows the confirmed host university and a checklist of mobility steps
 > A student who has just submitted their wishes logs in and sees the
 > "Application in progress" step highlighted, with a direct link to the campaign.
 
-??? note "Internal details (AroundLink team)"
-    Status is never stored: it is recomputed on each render by the status
-    resolver. The timeline is based on the steps of `StudentStatusEnum`
-    (Connected, Campaign, Proposition, Nomination, Partner acceptation,
-    Preparation, During/After mobility, Mobility finished). Partner cards reuse
-    the same image loading (profile photo taking priority over the logo) and the
-    same favourites mechanism as the search engine. The mobility checklist shows
-    the sub-steps (OLA 1/2/3, documents, arrival attestation, feedback,
-    transcript of records, EU Survey).
 
 ## Profile — Personal information
 
@@ -59,12 +50,6 @@ classification.
 > Before departure, a student updates their personal email and emergency number,
 > then uploads an ID photo.
 
-??? note "Internal details (AroundLink team)"
-    Form fields: title, first/last name, student number, INE, email, personal
-    email, phone, emergency number, place/country/date of birth, nationality,
-    academic level (with support for custom programmes), campus, detailed field
-    (ISCED). Photo deletion is protected by a CSRF token. The page variables are
-    assembled by the student profile manager.
 
 ## Profile — Documents & language scores
 
@@ -86,11 +71,6 @@ corresponding dates to be entered.
 > A student uploads their B2 English certificate and enters the score, then adds
 > the passport copy required by the campaign.
 
-??? note "Internal details (AroundLink team)"
-    The required file types come from the campaign required-documents checker. A
-    validated document is locked on the student side: the lock is enforced on
-    deletion and on date updates. Arrival/departure date entries reject a future
-    date. Deleting a score also removes the associated PDF from storage.
 
 ## Profile — Mobility grant
 
@@ -106,9 +86,6 @@ no data entry from this screen.
 **Use case.**
 > A student checks the amount and status of their Erasmus+ grant.
 
-??? note "Internal details (AroundLink team)"
-    View-only screen (no editing on the student side). The data comes from the
-    mobility-grant records linked to the profile.
 
 ## Profile — Partner university reviews
 
@@ -130,12 +107,6 @@ summarise the student's reviews by status.
 > A returning student writes a "Housing" review with two photos of the
 > residence; it is sent to the coordinator for moderation.
 
-??? note "Internal details (AroundLink team)"
-    The review is created with a "Pending" status; only the coordinator can
-    accept or refuse it. A review photo is visible to its author in all
-    circumstances, to the moderating coordinator, and to other users only when
-    the review is accepted and published. A submitted review is final on the
-    student side.
 
 ## Find an exchange (partner search engine)
 
@@ -161,12 +132,6 @@ level and field. Filtering happens live, without a full page reload.
 > A 4th-year aerospace student clicks "Match my profile" and immediately sees
 > only the partners offering their level and field for a winter semester.
 
-??? note "Internal details (AroundLink team)"
-    Paying mobility is stored in a dedicated table; a chip and indicative prices
-    appear when the institution publishes some. The facets are merged from IIA
-    agreements and bilateral/DD/paying agreements. The level chips use the
-    institution's custom labels (Aéro 3…) mapped to a representative level value.
-    The autocomplete endpoint returns the already-rendered map and result cards.
 
 ## Partner university page
 
@@ -198,14 +163,6 @@ published reviews.
 > A student opens a partner's page, sees 3 study places for "Aéro 5" in the
 > spring period under the exchange agreement, and reads 4 published reviews.
 
-??? note "Internal details (AroundLink team)"
-    The places come from the distribution providers (base, bilateral, double
-    degree) assembled by the agreement-table builder. Only accepted and public
-    reviews are shown. The language requirements are also exposed by a small JSON
-    API (`/api/student/.../requirements`) that feeds the requirements card; this
-    endpoint explicitly enforces the student role because it lives outside the
-    `^/student` firewall. A fallback state protects the display when the student
-    does not yet have a profile.
 
 ## Favourites
 
@@ -222,10 +179,6 @@ search results and the partner pages.
 > A student bookmarks three institutions while browsing, then reviews their
 > shortlist before building their wish list.
 
-??? note "Internal details (AroundLink team)"
-    Favourite identifiers are propagated through the dashboard and the search
-    engine for card state. The button returns an already-rendered favourites-list
-    fragment.
 
 ## Campaign wishes (application)
 
@@ -250,11 +203,6 @@ required documents before accepting).
 > A student ranks 5 choices, uploads the last required transcript, then submits
 > definitively and receives a "Your wishes have been submitted" confirmation.
 
-??? note "Internal details (AroundLink team)"
-    Eligibility and search rely on the campaign exchange search. The
-    required-documents gate is only enforced on definitive submission. Saving
-    replaces then recreates the wishes, ordered by position. Accessing a campaign
-    the student is not enrolled in is refused.
 
 ## Offer — Accept or decline
 
@@ -272,7 +220,3 @@ that the wish belongs to the student and triggers a decision confirmation email.
 > A student receives an offer for their 2nd choice, clicks "Accept" in the modal,
 > and receives a confirmation email.
 
-??? note "Internal details (AroundLink team)"
-    Both actions are protected by a CSRF token and are irreversible. The decision
-    email is sent after validation; a send failure does not undo the
-    already-recorded decision.

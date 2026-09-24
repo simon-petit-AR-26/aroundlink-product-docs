@@ -33,14 +33,6 @@ nomination configuré par l'établissement lorsqu'il existe.
 > et télécharge son attestation d'affectation officielle pour le guichet
 > d'inscription de l'établissement d'accueil.
 
-??? note "Détails internes (équipe AroundLink)"
-    Les attestations d'arrivée (COA) et de départ (COD) sont gérées par leurs
-    gestionnaires dédiés ; une fois validées, elles sont verrouillées côté
-    étudiant. L'attestation d'affectation vérifie que le document appartient bien
-    à l'étudiant connecté avant génération, et se replie sur une mise en page
-    intégrée si aucun modèle de lettre de nomination n'est configuré. Le contact
-    partenaire principal et jusqu'à 6 avis publiés (acceptés et publics)
-    complètent la page.
 
 ## Contrat pédagogique (OLA)
 
@@ -69,13 +61,6 @@ obsolète. Le téléchargement n'est possible qu'une fois l'OLA entièrement val
 > Un étudiant choisit 6 cours (30 ECTS) répartis sur deux domaines, soumet son
 > OLA, puis télécharge plus tard le PDF signé par les trois parties.
 
-??? note "Détails internes (équipe AroundLink)"
-    Un même mécanisme de résolution garantit que l'affichage de la page et toutes
-    les écritures asynchrones portent sur le dernier OLA (protection contre les
-    affectations multiples). Le téléchargement s'appuie sur le modèle de
-    document de type Learning Agreement de l'établissement et n'est servi que
-    lorsque l'OLA est entièrement validé. Un fil d'historique retrace les
-    actions.
 
 ## Relevé de notes (Transcript of Records)
 
@@ -97,11 +82,6 @@ enregistre le relevé au statut « En attente de validation par l'établissement
 > Un étudiant de retour saisit les notes ECTS de ses 6 cours, téléverse le relevé
 > officiel de l'établissement d'accueil, et soumet pour validation.
 
-??? note "Détails internes (équipe AroundLink)"
-    La validation des notes dépend du système de notation choisi ; les
-    statistiques sont calculées par le gestionnaire de relevés. Le fichier est
-    enregistré avec le type « Transcript of Records ». Le téléchargement PDF du
-    relevé validé est servi depuis le module de contrat pédagogique.
 
 ## Ressources
 
@@ -118,8 +98,6 @@ disponible pour l'étudiant.
 **Cas d'usage.**
 > Un étudiant télécharge le guide pré-départ Erasmus de son établissement.
 
-??? note "Détails internes (équipe AroundLink)"
-    Le filtre d'audience cible les fichiers visibles par le public sortant.
 
 ## Services
 
@@ -140,10 +118,6 @@ redirigé vers le site du partenaire.
 > Un étudiant met deux offres d'assurance en favori, compare, puis finalise sa
 > souscription directement sur le site du prestataire avec le code promo indiqué.
 
-??? note "Détails internes (équipe AroundLink)"
-    Affichage + affiliation (liens et codes promo vers le prestataire) ; aucun
-    paiement ne transite par la plateforme. Option activable par établissement ;
-    seules les offres actives sont affichées.
 
 ## Messagerie avec le bureau des relations internationales
 
@@ -163,10 +137,6 @@ compteur alimente le badge de messages non lus.
 > Un étudiant écrit à son coordinateur pour une question sur un document manquant,
 > et voit la réponse avec un badge de non-lu à sa prochaine connexion.
 
-??? note "Détails internes (équipe AroundLink)"
-    Fonctionnement identique au côté RI. Le rôle étudiant est exigé au niveau du
-    module. La participation au fil est vérifiée à chaque ouverture et chaque
-    réponse. Un endpoint de comptage alimente le badge.
 
 ## Notifications
 
@@ -185,7 +155,3 @@ et revient à la page précédente. Un compteur alimente le badge.
 > Un étudiant reçoit une notification lui indiquant que son OLA a été validé et
 > clique pour en voir le détail.
 
-??? note "Détails internes (équipe AroundLink)"
-    Fonctionnement identique au côté mobilité. Le rôle étudiant est exigé au
-    niveau du module. Une vérification d'appartenance protège l'ouverture d'une
-    notification.

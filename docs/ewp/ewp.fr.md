@@ -33,16 +33,6 @@ n'avez rien à publier manuellement.
 > Une université espagnole vous ajoute comme partenaire ; son logiciel lit votre
 > manifest et découvre aussitôt qu'il peut vous envoyer un accord numérique.
 
-??? note "Détails internes (équipe AroundLink)"
-    Discovery API v6. Le manifest est servi sur `/ewp/{ewpHeiId}/manifest.xml`,
-    identifié par le HEI ID de l'université cliente. Il déclare 15 entrées d'API :
-    discovery, echo, institutions, omobilities, omobility-cnr, omobility-las,
-    omobility-la-cnr, iias, iia-cnr, iias-approval, iia-approval-cnr, imobility-tors,
-    imobility-tor-stats, imobility-tor-cnr et factsheet, chacune avec sa version et
-    son URL. Le manifest est auto-validé avant publication (503 si invalide) et mis
-    en cache 1 h. Seules les universités clientes AroundLink exposent un manifest ;
-    les établissements partenaires seuls renvoient 404. Le provisioning d'un
-    établissement (clés incluses) se fait via une commande console dédiée.
 
 ## Echo
 
@@ -61,12 +51,6 @@ prouve que la liaison et la confiance entre les deux établissements fonctionnen
 > Lors de l'intégration d'un partenaire, l'équipe envoie un appel Echo ; une réponse
 > réussie confirme que la poignée de main de confiance est opérationnelle.
 
-??? note "Détails internes (équipe AroundLink)"
-    Echo API v2, exposé sur `/ewp/{ewpHeiId}/echo`. La réponse renvoie l'identité
-    (HEI ID) réellement authentifiée de l'appelant, jamais une valeur fournie par le
-    client. Les réponses EWP ne sont jamais compressées (les empreintes d'intégrité
-    se calculent sur le corps non compressé). Sert de sonde de connectivité et de
-    validation de la chaîne d'authentification.
 
 ## Institutions
 
@@ -84,11 +68,6 @@ alors présenter vos accords et mobilités avec un intitulé humain.
 > Un partenaire affiche « Institut Polytechnique des Sciences Avancées » à côté d'un
 > accord entrant, plutôt que l'identifiant technique de l'établissement.
 
-??? note "Détails internes (équipe AroundLink)"
-    Institutions API v2 (déclarée 2.2.0), jusqu'à 10 HEI IDs par requête
-    (`max-hei-ids=10`). La réponse actuelle est minimale (hei-id + nom en anglais) ;
-    les informations riches (adresses, contacts, calendriers) sont portées par
-    l'API Factsheet plutôt qu'ici.
 
 ## Factsheet (fiche établissement)
 
@@ -143,18 +122,6 @@ partenaire n'expose pas de fiche, vos données saisies à la main sont conservé
 > Avant une campagne, le gestionnaire synchronise la factsheet d'un partenaire pour
 > afficher ses délais de décision directement dans le dossier de l'accord.
 
-??? note "Détails internes (équipe AroundLink)"
-    Factsheet API v1.2, `max-hei-ids=1`, authentification client anonyme autorisée
-    (donnée publique). Publication (entrant) sur `/ewp/{ewpHeiId}/factsheet` ; les
-    blocs optionnels vides retombent sur le contact de l'établissement puis sur des
-    valeurs de repli pour rester conformes au schéma. Édition interne via
-    `/mobility/ewp-factsheet` (ROLE_MOBILITY + MODULE_WRITE:institution), une
-    factsheet par université. Récupération (sortant) via un service de
-    synchronisation qui interroge d'abord le registre pour vérifier que le partenaire
-    expose bien l'API, puis mappe la réponse sur l'entité `EwpFactsheet` — les
-    champs verrouillés et 6 champs locaux hors schéma EWP ne sont jamais touchés
-    (ticket AROUNDLINK-324). Déclenchable depuis l'écran accord ou en ligne de
-    commande.
 
 ## IIA — accords inter-établissements
 
@@ -197,26 +164,6 @@ brouillon pour une nouvelle approbation, ou rejette sans toucher à ses données
 > Un partenaire change une langue d'enseignement ; le coordinateur voit la
 > différence, accepte cette seule modification et laisse le reste inchangé.
 
-??? note "Détails internes (équipe AroundLink)"
-    IIAs API v7.0.1, `max-iia-ids=100`. Entités : `Exchange`. Endpoints entrants :
-    `iias/index` (filtres partenaire, année académique reçue, modified_since),
-    `iias/get` (contenu complet), `iias/approval` (empreinte iia-hash),
-    `iias/stats` (compteurs par état d'approbation). L'iia-hash v7 ne couvre que les
-    champs « stratégiques » (mobilités, langues, ISCED, EQF) et exclut contacts, PDF,
-    in-effect, iia-code. Cloisonnement multi-locataire : chaque endpoint ne renvoie
-    que les accords où l'appelant authentifié est le partenaire, pour ne pas exposer
-    de volume ou de contenu vis-à-vis d'un tiers.
-
-    Notifications de changement : iia-cnr v3, iia-approval-cnr v2. Entrant — une
-    notification `iia-cnr` déclenche une re-récupération de l'accord, un diff, puis un
-    `ExchangeIiaPendingUpdate` en statut PENDING_REVIEW + e-mail coordinateur ;
-    l'idempotence se base sur l'empreinte complète de la charge utile (pas sur
-    l'iia-hash). Si l'accord est inconnu, une coquille minimale d'Exchange est créée.
-    Sortant — l'édition d'un accord chez nous émet un `iia-cnr` vers le partenaire ;
-    une notification `iia-approval-cnr` entrante re-récupère l'approbation du
-    partenaire. Revue interne via `/mobility/iia-reviews` : diff granulaire au champ
-    (y compris ajout/retrait de mobility-specs), application sélective qui recalcule
-    l'iia-hash et remet l'approbation à DRAFT.
 
 ## OLA — contrats pédagogiques (Learning Agreements)
 
@@ -240,18 +187,6 @@ automatiquement la version à jour.
 > L'université d'accueil approuve le contrat pédagogique d'un étudiant en ligne ; le
 > statut passe à « validé » dans AroundLink et la reconnaissance est enclenchée.
 
-??? note "Détails internes (équipe AroundLink)"
-    omobility-las API v1.2. Entité : `LearningAgreement` (AroundLink est
-    l'établissement d'envoi). Endpoints entrants : `omobility-las/index`,
-    `omobility-las/get` (contenu complet, Tables A/B, avenants A2/B2, signatures,
-    changes-proposal), `omobility-las/update` (approve/comment du partenaire),
-    `omobility-las/stats`. Cloisonnement : seul le HEI d'accueil authentifié peut
-    récupérer un contrat, pour protéger les données personnelles de l'étudiant.
-    Garde d'édition concurrente : une proposition périmée renvoie un conflit (409).
-    Notification de changement : omobility-la-cnr v1 — entrant, `fetchOla` récupère la
-    version fraîche et fusionne signatures + état de validation (AROUNDLINK-519) ;
-    sortant, `sendOlaCnr` prévient le HEI d'accueil quand notre contrat change.
-    Table B complétée automatiquement à la validation.
 
 ## Transcript (ToR — relevé de notes)
 
@@ -272,15 +207,6 @@ européen normalisé, prêt à être importé et reconnu automatiquement.
 > À l'issue des examens, le logiciel du partenaire récupère le relevé de son étudiant
 > et reconnaît automatiquement les crédits obtenus.
 
-??? note "Détails internes (équipe AroundLink)"
-    imobility-tors v1, imobility-tor-stats v1, imobility-tor-cnr v1. Entités :
-    `TranscriptOfRecord` + `ExchangeAffectation` (AroundLink est l'établissement
-    d'accueil). Endpoints entrants : `imobility-tors/index`, `imobility-tors/get`
-    (relevé au format ELMO / EMREX, identité apprenant via ESI, cours notés),
-    `imobility-tors/stats`. L'accès aux données requiert une authentification ; le
-    cloisonnement s'appuie sur le HEI appelant. Notification de changement
-    imobility-tor-cnr côté entrant (avec re-récupération `fetchTor` possible côté
-    sortant). Seuls les cours notés sont émis ; les codes pays sont normalisés en ISO.
 
 ## Nominations (mobilités sortantes)
 
@@ -302,15 +228,6 @@ signataire ou du motif de refus.
 > Vous nommez une étudiante à Milan ; le bureau milanais approuve via le réseau et le
 > statut de l'étudiante passe à « approuvé » dans AroundLink, avec le signataire.
 
-??? note "Détails internes (équipe AroundLink)"
-    omobilities API v3, omobility-cnr v1. Entité : `ExchangeAffectation`. Endpoints
-    entrants : `omobilities/index`, `omobilities/get` (contenu `student-mobility` :
-    étudiant, ISCED-F accord + nominé, niveau EQF, HEI d'envoi/accueil, lien IIA, type
-    d'activité, statut), `omobilities/update` (approve/reject du partenaire, écrit une
-    ligne d'historique avec signataire ou commentaire). Le statut suit
-    `ExchangeAffectationStatus` (valeurs alignées 1:1 sur le réseau ; nomination non
-    décidée = pending). Cloisonnement : le `get` ne dévoile qu'aux HEI d'accueil
-    authentifiés. Notification de changement omobility-cnr côté entrant.
 
 ## Fondations techniques
 
@@ -329,16 +246,3 @@ transmettre quoi que ce soit.
 > Avant d'envoyer un accord, AroundLink consulte l'annuaire pour localiser le
 > partenaire et signe le message afin qu'il soit accepté comme authentique.
 
-??? note "Détails internes (équipe AroundLink)"
-    Signature HTTP EWP (authentification serveur et client) : chaque requête et
-    réponse est signée, et l'identité de l'appelant est résolue en HEI ID, base du
-    cloisonnement multi-locataire de tous les endpoints. Registre EWP : un miroir
-    local du catalogue du réseau (établissements, APIs, versions, clés publiques)
-    sert à résoudre l'URL d'un endpoint partenaire avant un appel sortant et à
-    identifier l'appelant. Hub sortant `EwpClientService` : centralise les appels
-    signés (récupération d'accords, d'approbations, de mobilités, de contrats
-    pédagogiques, de relevés, de factsheets ; envoi de notifications de changement).
-    ECHE : miroir de la liste publique de la Charte Erasmus (Erasmus Charter for
-    Higher Education) utilisé comme source de recherche d'établissements. Modèle
-    actuel d'une paire de clés par établissement (piste d'évolution : séparer clés
-    client et serveur, ticket AROUNDLINK-537).

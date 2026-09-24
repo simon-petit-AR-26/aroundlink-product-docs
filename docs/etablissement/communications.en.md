@@ -32,14 +32,6 @@ later be removed from the dashboard.
 > A coordinator sends "Nomination deadline extended to March 15" to all outgoing
 > students in Spain, pinned to their dashboard and sent by email.
 
-??? note "Internal details (AroundLink team)"
-    Audiences: `outgoing_students` / `incoming_students` / `partners`. Channels:
-    in_app / email / dashboard_pin / direct_message. Email delivery is tracked per
-    recipient (status queued / sent / opened / clicked / bounced). The composer
-    warns before replacing an existing pin. Ownership checked before edit / delete
-    / unpin; a sent message can no longer be edited. Controller:
-    `CommunicationController`, entities `Communication` / `CommunicationEmailLog`.
-    AROUNDLINK-509.
 
 ## In-app notifications
 
@@ -57,11 +49,6 @@ back to its source message.
 > A student sees a "3" on the bell, opens it and finds their Learning Agreement has
 > just been approved.
 
-??? note "Internal details (AroundLink team)"
-    History feed + a count endpoint polled by the bell + read-on-open + "mark all
-    read." The `Notification` entity can be linked to a `Communication`.
-    Controllers: `NotificationController` (mobility) and
-    `StudentNotificationController` (student). AROUNDLINK-509 / -511.
 
 ## Direct messaging
 
@@ -79,10 +66,6 @@ An unread counter shows in the top bar.
 > An incoming student writes to the host office with a housing question; the
 > coordinator replies in the thread.
 
-??? note "Internal details (AroundLink team)"
-    Shared `Conversation` / `Message` entities and the same templates across the
-    three controllers (`MessageController` on the mobility, admin and student
-    sides). Thread ids in UUID format. AROUNDLINK-147.
 
 ## Document reminder campaigns
 
@@ -106,12 +89,6 @@ out automatically as a background task.
     [campaign](../etablissement/campagnes.md): it's the same reminder mechanism
     documented here.
 
-??? note "Internal details (AroundLink team)"
-    One `ReminderLine` per student tracks send / open / click / bounce. Async
-    sending via the `reminder-campaigns:send-pending-emails` command (processes
-    lines where `sentAt IS NULL`). Open/click/bounce tracking updated on the email
-    provider side. Controller: `ReminderCampaignController`; created via
-    `CreateReminderCampaign` from student-document tracking.
 
 ## Feedback request reminders
 
