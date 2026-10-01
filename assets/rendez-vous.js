@@ -79,6 +79,33 @@
     fond.querySelector(".al-rdv-x").focus();
   }
 
+  /* ---------- le bouton de l'en-tête ---------- */
+
+  var LIBELLE = {
+    fr: "Prendre rendez-vous", en: "Book a meeting", es: "Reservar una cita",
+    it: "Prenota un incontro", de: "Termin buchen"
+  };
+
+  function poserBouton() {
+    var barre = document.querySelector(".md-header__inner");
+    if (!barre || document.querySelector(".al-rdv-entete")) { return; }
+    var a = document.createElement("a");
+    a.className = "al-rdv-entete";
+    a.href = LIEN;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.textContent = LIBELLE[langue()] || LIBELLE.fr;
+    // Juste avant la recherche, là où vivait la bascule de thème.
+    var recherche = barre.querySelector(".md-header__option, [data-md-component=search], .md-search");
+    if (recherche) { barre.insertBefore(a, recherche); } else { barre.appendChild(a); }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", poserBouton);
+  } else {
+    poserBouton();
+  }
+
   if (lire(CLE_VUE, "") === "1") { return; }
 
   var vues = parseInt(lire(CLE_PAGES, "0"), 10) || 0;
