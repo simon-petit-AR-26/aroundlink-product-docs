@@ -79,6 +79,9 @@ plugins:
       lang:
         - fr
         - en
+        - es
+        - it
+        - de
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
@@ -122,6 +125,105 @@ plugins:
             Une mobilité de bout en bout: A mobility from end to end
             Quand quelque chose ne passe pas: When something will not go through
             Glossaire: Glossary
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Accueil: Inicio
+            Espace établissement: Espacio institución
+            Espace étudiant: Portal del estudiante
+            Atlas — Annuaire mondial: Atlas — Directorio mundial
+            Réseau EWP: Red EWP
+            Vue d'ensemble: Visión general
+            Référence des API (DSI): Referencia de API (TI)
+            Authentification unique (DSI): Inicio de sesión único (TI)
+            Architecture &amp; technologies: Arquitectura y tecnología
+            Sécurité &amp; données: Seguridad y datos
+            Plateforme &amp; sécurité: Plataforma y seguridad
+            Annexes: Anexos
+            Tableaux de bord: Panel de control
+            Étudiants: Estudiantes
+            Partenaires &amp; accords: Socios y acuerdos
+            Distribution des places: Distribución de plazas
+            Campagnes de mobilité: Campañas de movilidad
+            Agenda: Agenda
+            Onboarding des entrants: Acogida de entrantes
+            Documents &amp; validation: Documentos y validación
+            Bourse de mobilité: Becas de movilidad
+            Communications: Comunicaciones
+            Mon établissement: Mi institución
+            Paramètres &amp; équipe: Ajustes y equipo
+            Découverte &amp; candidature: Descubrir y solicitar
+            Pendant &amp; après la mobilité: Durante y después
+            Une mobilité de bout en bout: Una movilidad de principio a fin
+            Quand quelque chose ne passe pas: Cuando algo no funciona
+            Glossaire: Glosario
+        - locale: it
+          name: Italiano
+          build: true
+          nav_translations:
+            Accueil: Home
+            Espace établissement: Spazio istituzione
+            Espace étudiant: Portale studente
+            Atlas — Annuaire mondial: Atlas — Directory mondiale
+            Réseau EWP: Rete EWP
+            Vue d'ensemble: Panoramica
+            Référence des API (DSI): Riferimento API (IT)
+            Authentification unique (DSI): Single sign-on (IT)
+            Architecture &amp; technologies: Architettura e tecnologie
+            Sécurité &amp; données: Sicurezza e dati
+            Plateforme &amp; sécurité: Piattaforma e sicurezza
+            Annexes: Appendici
+            Tableaux de bord: Cruscotto
+            Étudiants: Studenti
+            Partenaires &amp; accords: Partner e accordi
+            Distribution des places: Distribuzione dei posti
+            Campagnes de mobilité: Campagne di mobilità
+            Agenda: Agenda
+            Onboarding des entrants: Accoglienza in entrata
+            Documents &amp; validation: Documenti e validazione
+            Bourse de mobilité: Borse di mobilità
+            Communications: Comunicazioni
+            Mon établissement: La mia istituzione
+            Paramètres &amp; équipe: Impostazioni e team
+            Découverte &amp; candidature: Scoprire e candidarsi
+            Pendant &amp; après la mobilité: Durante e dopo
+            Une mobilité de bout en bout: Una mobilità dall'inizio alla fine
+            Quand quelque chose ne passe pas: Quando qualcosa non funziona
+            Glossaire: Glossario
+        - locale: de
+          name: Deutsch
+          build: true
+          nav_translations:
+            Accueil: Startseite
+            Espace établissement: Hochschulbereich
+            Espace étudiant: Studierendenportal
+            Atlas — Annuaire mondial: Atlas — Weltweites Verzeichnis
+            Réseau EWP: EWP-Netzwerk
+            Vue d'ensemble: Überblick
+            Référence des API (DSI): API-Referenz (IT)
+            Authentification unique (DSI): Single Sign-on (IT)
+            Architecture &amp; technologies: Architektur und Technik
+            Sécurité &amp; données: Sicherheit und Daten
+            Plateforme &amp; sécurité: Plattform und Sicherheit
+            Annexes: Anhang
+            Tableaux de bord: Dashboard
+            Étudiants: Studierende
+            Partenaires &amp; accords: Partner und Abkommen
+            Distribution des places: Platzverteilung
+            Campagnes de mobilité: Mobilitätskampagnen
+            Agenda: Kalender
+            Onboarding des entrants: Onboarding der Incomings
+            Documents &amp; validation: Dokumente und Freigabe
+            Bourse de mobilité: Mobilitätsstipendien
+            Communications: Kommunikation
+            Mon établissement: Meine Hochschule
+            Paramètres &amp; équipe: Einstellungen und Team
+            Découverte &amp; candidature: Entdecken und bewerben
+            Pendant &amp; après la mobilité: Während und danach
+            Une mobilité de bout en bout: Eine Mobilität von Anfang bis Ende
+            Quand quelque chose ne passe pas: Wenn etwas nicht funktioniert
+            Glossaire: Glossar
   # Screenshots open full size on click — an interface capture is unreadable
   # at page width.
   - glightbox:
