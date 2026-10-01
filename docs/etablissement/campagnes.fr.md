@@ -278,7 +278,9 @@ suivante au lieu d'être coupé.
 
 ![Le rapport de statistiques imprimé](../assets/screenshots/campagne-statistiques-rapport.png)
 
-*Le rapport tel qu'il sort : les réglages de la campagne en tête, les quatre chiffres, le rang de vœu obtenu, les raisons de non-placement, et les répartitions.*
+*Les deux pages du rapport tel qu'il sort : les réglages de la campagne en tête, les quatre chiffres, le rang de vœu obtenu et les raisons de non-placement ; puis la tension destination par destination.*
+
+[:material-file-pdf-box: **Télécharger un exemple de rapport**](../assets/exemples/aroundlink-statistiques-campagne.pdf){ .md-button } — PDF, 2 pages, données de démonstration.
 
 **L'export de données.** À côté du rapport, un classeur de trois feuilles :
 
