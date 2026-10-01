@@ -229,6 +229,46 @@ available. The figures shown match what the student will see.
 
 
 
+## A campaign's statistics
+
+**What it's for.** Knowing where a campaign stands, why some students are not placed, and
+producing a report you can take to a committee.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** Statistics have their **own address**: a tab in their own right, at the
+same level as wish management and nominations. You can send the link to a colleague, and
+they will land on the same figures.
+
+Everything shown comes from **the same source as the placement screen**. Tables and charts
+cannot contradict each other.
+
+**The headline figures.** The placement rate, the average wish obtained, and the breakdown of
+those still waiting: awaiting a decision, all wishes refused, mobility declined, cancelled.
+Each line is a different thing to do — reminding a student who is waiting is not the same
+gesture as handling one whose every wish was refused.
+
+**The breakdowns.** By agreement type, by country, by zone, by period.
+
+**Demand and tension per destination**: where the crowd is, and where room is left.
+
+!!! note "Two rules that stop the figures from flattering"
+    The **average wish obtained** is computed on **placed students only**. Saying "80% got
+    their first choice" while counting everyone would flatter a campaign that placed nobody.
+
+    A **breakdown of fewer than five students is not shown**. On a small cohort, a percentage
+    is one person: it reads as a trend when it is an anecdote.
+
+**The report prints.** The header recalls the campaign's settings — year, number of wishes
+allowed, whether an incomplete file blocks, who confirms the destination, whether opting out
+is allowed — and repeats at the top of every page, with your logo and the date. Charts
+survive printing, and a block that does not fit moves to the next page instead of being cut.
+
+**Use case.**
+> Before the committee meets, the coordinator opens the statistics, prints the report to PDF
+> and attaches it to the invitation. Members arrive having seen the same figures she has, and
+> the discussion is about the twelve unplaced students rather than about reading tables.
+
 ## Nominating to your partners
 
 **What it's for.** Officially telling the host institution you are sending them a student,

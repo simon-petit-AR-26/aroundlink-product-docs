@@ -27,6 +27,31 @@ si des étudiants y sont encore rattachés, pour éviter toute perte de lien.
 > ses étudiants.
 
 
+### Ouvrir un campus comme destination
+
+**À quoi ça sert.** Proposer l'un de vos propres campus comme destination de mobilité — à
+vos autres campus, ou à vos partenaires.
+
+**Pour qui.** <span class="al-audience">admin</span>
+
+**Comment ça marche.** Un interrupteur, dans la liste de campus que vous tenez déjà. Vous
+l'allumez, et le campus devient une destination.
+
+Sa fiche est créée **à partir de ce que vous avez déjà saisi** — nom, adresse, domaine. Il
+n'y a aucune double saisie, et rien de plus à remplir pour commencer.
+
+Vos campus peuvent alors **s'échanger des étudiants entre eux**. Un étudiant du campus de
+Lyon voit celui de Toulouse comme n'importe quelle autre destination — mais il ne voit pas
+le sien : son propre campus reste affiché, sans être demandable.
+
+Éteindre l'interrupteur retire le campus des destinations. Vous pouvez le rallumer : la
+fiche est conservée, elle n'est pas refaite.
+
+**Cas d'usage.**
+> L'école a trois campus. Elle les ouvre tous les trois, et ses étudiants de première année
+> peuvent passer un semestre sur un autre campus sans sortir du même processus de campagne
+> que pour une mobilité internationale.
+
 ## Composantes (OUnits)
 
 **À quoi ça sert.** Tenir à jour les composantes EWP de votre établissement

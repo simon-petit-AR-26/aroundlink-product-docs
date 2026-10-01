@@ -237,6 +237,50 @@ correspondent donc à ce que l'étudiant verra.
 > que 12 sont placés ; après clôture, il exporte les affectations finales pour l'équipe
 > mobilité.
 
+## Les statistiques d'une campagne
+
+**À quoi ça sert.** Savoir où en est une campagne, pourquoi des étudiants ne sont pas
+placés, et sortir un rapport présentable en commission.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Les statistiques ont leur **propre adresse** : un onglet à part
+entière, au même niveau que la gestion des vœux et les nominations. Vous pouvez donc
+envoyer le lien à un collègue, et il arrivera sur les mêmes chiffres.
+
+Tout ce qui s'affiche vient de **la même source que l'écran d'affectation**. Les tableaux
+et les graphiques ne peuvent pas se contredire.
+
+**Les chiffres de tête.** Le taux d'affectation, le vœu moyen obtenu, et la répartition de
+ceux qui restent : en attente d'une décision, tous vœux refusés, mobilité déclinée, annulé.
+Chaque ligne est une chose différente à faire — ce n'est pas le même geste de relancer un
+étudiant qui attend et un étudiant dont tous les vœux ont été refusés.
+
+**Les répartitions.** Par type d'accord, par pays, par zone, par période.
+
+**La demande et la tension par destination** : où l'on se bouscule, et où il reste de la
+place.
+
+!!! note "Deux règles qui évitent de se mentir"
+    Le **vœu moyen obtenu** se calcule sur les étudiants **affectés seulement**. Dire
+    « 80 % ont eu leur premier vœu » en comptant tout le monde flatterait une campagne qui
+    n'a placé personne.
+
+    Une **répartition de moins de cinq étudiants ne s'affiche pas**. Sur une petite
+    promotion, un pourcentage est une personne : il se lit comme une tendance alors que
+    c'est une anecdote.
+
+**Le rapport s'imprime.** L'en-tête rappelle les réglages de la campagne — année, nombre de
+vœux autorisés, dossier bloquant ou non, qui confirme la destination, désistement autorisé —
+et se répète en haut de chaque page, avec votre logo et la date. Les graphiques survivent à
+l'impression, et un bloc qui ne tient pas descend à la page suivante au lieu d'être coupé.
+
+**Cas d'usage.**
+> Avant la commission, la coordinatrice ouvre les statistiques, imprime le rapport en PDF et
+> le joint à sa convocation. Les membres arrivent en ayant vu les mêmes chiffres qu'elle, et
+> la discussion porte sur les douze étudiants non placés plutôt que sur la lecture des
+> tableaux.
+
 ## Nominations chez vos partenaires
 
 **À quoi ça sert.** Prévenir officiellement l'établissement d'accueil que vous lui envoyez
