@@ -37,14 +37,116 @@ again the next morning.
 > to Erasmus+ partners tagged "Engineering"; every Master student with a Semester 1 period
 > is enrolled automatically.
 
-??? note "Internal details (AroundLink team)"
-    `Campaign` entity: `wishesNumber`, `academicLevels`, `periods` (M2M `MobilityPeriod`),
-    `agreementTypes` (`AgreementTypeEnum`), `requiredFileTypes` (documents to have validated
-    before submitting wishes), `filterPartnerTags`. Status `CampaignStatusEnum{DRAFT, READY,
-    OPENED, FINISHED}`. `CampaignManager::handleCampaign()` rebuilds relations on every
-    create/edit. Selection via `AcademicLevelResolver::expandLevelsToEqfSiblingValues()` (a
-    level pulls its EQF siblings); an exchange with no places across the campaign's periods
-    is dropped.
+
+## Setting up a campaign, setting by setting
+
+**What it's for.** Understanding what each setting changes before you turn it on — several
+of them cannot be undone once your students have started answering.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+### Identity
+
+**Name**, **school year**, **start** and **end date**. The end cannot precede the start, and
+it is not decorative: the morning after the last day, the campaign closes by itself.
+
+### The student pool
+
+Who takes part. Combine as many criteria as you need:
+
+- **Academic level** and **track** — the track is the label you gave your cohorts
+  ("Aero 4", "MSc 26-27");
+- **Campus** — or all of them;
+- **General tags** and **student filters**;
+- **manual additions**, student by student, for the odd case.
+
+### The destination pool
+
+Where they can go:
+
+- **Agreement types** — exchange, double degree, paying mobility, traineeship;
+- **Mobility type** — including staff mobility, teaching and training;
+- **Periods**;
+- **Partners** — all of them, or narrowed by your institution tags and filters.
+
+Here too you can add or remove an agreement by hand.
+
+### Wishes
+
+**Minimum** and **maximum**, both optional. The minimum blocks just as the maximum does: a
+student who has not reached the required number cannot submit their list.
+
+### The student's file
+
+You choose the **required documents**, then what happens when one is missing:
+
+- **Show it and assign anyway** *(recommended)* — the gap is flagged, the decision stays
+  yours;
+- **Block the assignment** until everything is in hand.
+
+### Can a student say they are not going?
+
+- **No** — an empty wish list simply means "no answer yet";
+- **Yes** — they can declare they do not wish to go. They answer once, **no reason is
+  asked**, and they immediately stop appearing in your reminders and in the matching. Their
+  answer stays reversible while the campaign is open.
+
+!!! warning "This setting cannot be caught up mid-course"
+    A campaign that never asked the question does not start asking on its own. And once
+    answers have come in, there is no going back — otherwise decisions your students already
+    made would become unreadable.
+
+### Who confirms the destination
+
+- **The student accepts or declines** the proposal;
+- **The coordinator assigns directly** — the acceptance step disappears, your decision
+  creates the placement.
+
+### The note to students
+
+Free text, optional, shown to everyone taking part.
+
+### The preview before saving
+
+Before you confirm your changes, a summary tells you what the save will **add, keep and
+remove** — destinations as well as students. Removing a partner takes all of its agreements
+out of the campaign, along with the wishes already placed on them: the preview says so
+beforehand, not after.
+
+## What matching requires
+
+**What it's for.** Knowing what must be ready for a matching round to run — and why it
+sometimes refuses to start.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** The engine seats each student on the cell of **their own track** — "Aero
+4" is not "Aero 5" — and it never guesses. Three conditions are therefore required of every
+participant:
+
+| Condition | Why |
+|---|---|
+| **A profile** | With no file, there is nothing to place. |
+| **A track** | It is what designates the cell. With no track, no cell matches them. |
+| **An imported ranking** | The round is an **order**: it serves the first-ranked, and what is left goes to the next. With no rank, a student has no position in that order. |
+
+A participant missing any of the three is **set aside and named** in the report, with the
+reason. The round does not run in silence.
+
+!!! warning "A track is required even if you do not use them"
+    If your institution does not distinguish cohorts, give yourself one track per level you
+    use — "Bachelor", "Master". A single mechanism then carries every case, and nothing is
+    ever inferred on your behalf.
+
+!!! info "Rankings are imported beforehand, never during"
+    The round does not produce a ranking. Import it first; otherwise unranked students would
+    be served last, which would be a decision nobody took.
+
+**None of this constrains you by hand.** You remain free to place whoever you want, wherever
+you want, ranked or not: that is your call, and the engine does not stand in the way. These
+three conditions apply to the automatic round only.
+
+A round can be re-run as often as needed — it is not a one-shot.
 
 ## Wishes, proposals and placements
 
@@ -73,17 +175,6 @@ notifications are configurable and can be turned off by the institution.
 > other automatically rolls to their wish #2. The coordinator then pre-assigns a special
 > case, and the system redistributes the freed place.
 
-??? note "Internal details (AroundLink team)"
-    `CampaignWish.status` = `WishStatusEnum{DRAFT_STUDENT, SUBMITTED_BY_STUDENT,
-    SYSTEM_PROPOSAL, SYSTEM_NOT_ENOUGH_PLACES, COORDINATOR_PROPOSAL,
-    COORDINATOR_PROPOSAL_SENT_TO_STUDENT, ACCEPTED_BY_STUDENT, REFUSED_BY_COORDINATOR,
-    REFUSED_BY_STUDENT, CANCELLED_AFTER_REFUSAL}`. Place accounting via `MobilitySpecPlaces`
-    (per-period counter). `MatchmakingService` processes students by rank. On accept,
-    `CampaignWishesManager::acceptWish()` reuses or creates an `ExchangeAffectation` at
-    status `PENDING` (EWP nomination to the partner), within a transaction; the wish ↔
-    affectation link is unique. A re-nomination after refusal/cancellation returns to
-    `PENDING` and never downgrades an `APPROVED`. The `matchMakingCompleted` flag prevents
-    re-running the global allocation.
 
 ## What the matching round did
 
@@ -136,12 +227,47 @@ available. The figures shown match what the student will see.
 > Mid-round, the coordinator sees 60% of students have submitted their wishes and 12 are
 > placed; after closing, they export the final assignments for the mobility team.
 
-??? note "Internal details (AroundLink team)"
-    `trackCampaign()`: charts via `ChartBuilderInterface`, wishes grouped by rank,
-    completeness derived from existing proposals/placements. Exports via
-    `CampaignExportService` (`exportAllWishes`, `exportFinalAssignments`). Live preview
-    (`/preview`) for the create-form counters.
 
+
+## A campaign's statistics
+
+**What it's for.** Knowing where a campaign stands, why some students are not placed, and
+producing a report you can take to a committee.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** Statistics have their **own address**: a tab in their own right, at the
+same level as wish management and nominations. You can send the link to a colleague, and
+they will land on the same figures.
+
+Everything shown comes from **the same source as the placement screen**. Tables and charts
+cannot contradict each other.
+
+**The headline figures.** The placement rate, the average wish obtained, and the breakdown of
+those still waiting: awaiting a decision, all wishes refused, mobility declined, cancelled.
+Each line is a different thing to do — reminding a student who is waiting is not the same
+gesture as handling one whose every wish was refused.
+
+**The breakdowns.** By agreement type, by country, by zone, by period.
+
+**Demand and tension per destination**: where the crowd is, and where room is left.
+
+!!! note "Two rules that stop the figures from flattering"
+    The **average wish obtained** is computed on **placed students only**. Saying "80% got
+    their first choice" while counting everyone would flatter a campaign that placed nobody.
+
+    A **breakdown of fewer than five students is not shown**. On a small cohort, a percentage
+    is one person: it reads as a trend when it is an anecdote.
+
+**The report prints.** The header recalls the campaign's settings — year, number of wishes
+allowed, whether an incomplete file blocks, who confirms the destination, whether opting out
+is allowed — and repeats at the top of every page, with your logo and the date. Charts
+survive printing, and a block that does not fit moves to the next page instead of being cut.
+
+**Use case.**
+> Before the committee meets, the coordinator opens the statistics, prints the report to PDF
+> and attaches it to the invitation. Members arrive having seen the same figures she has, and
+> the discussion is about the twelve unplaced students rather than about reading tables.
 
 ## Nominating to your partners
 

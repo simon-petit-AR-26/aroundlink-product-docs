@@ -29,15 +29,6 @@ is checked automatically at application time.
 > The IRO records an Erasmus+ exchange with TU Munich: 3 Master places in engineering,
 > English B2 required, IIA identifier synced with the partner over EWP.
 
-??? note "Internal details (AroundLink team)"
-    `Exchange` entity (implements `DistributesPlaces`). Its `agreementType`
-    (`AgreementTypeEnum`, Erasmus+ or bilateral variants of exchange/DD/traineeship) maps
-    to a `MobilityCategoryEnum` for the student view. EWP/IIA fields: iiaId, iiaCode, HEI
-    ids, local/partner approval statuses, signatories, signing dates, hash, in-effect,
-    terminated. `MobilitySpec` blocks (type, sending/receiving parties + ounit, contacts,
-    `mobilitiesPerYear` cap, months/days, blended) with `MobilitySpecLanguage`,
-    `MobilitySpecSubjectArea` (ISCED via DetailedLabel + clarification) and
-    `MobilitySpecRequirement`. Eligibility computed by `Exchange::getRequirementsErrors()`.
 
 ## Place distribution (allocation matrix)
 
@@ -62,14 +53,6 @@ related programmes stay together. The result is immediately visible to students.
 > Master / Semester 2 for 2026/2027; the student sees exactly that breakdown on the
 > partner's page.
 
-??? note "Internal details (AroundLink team)"
-    Matrix storage: `MobilitySpecPeriodPlace` (year, level, period, places) and
-    `MobilitySpecPool` (per-level aggregate, keeps `hasSlotManagementConfigured()`
-    accurate). A per-period counter `MobilitySpecPlaces` (with remaining places) is also
-    maintained and drives campaign placement. Saving posts
-    `period[year][isced][level][period]`; each `MobilitySpec`'s `mobilitiesPerYear` cap is
-    checked before any write. Student view built by `Exchange::getStudentPlacesMatrix()`
-    and `getPlaceDistributionEntries()`. Grouping by `AcademicLevel::getEqfLevel()`.
 
 ## A unified places engine
 
@@ -88,13 +71,6 @@ preview, which therefore always stay in sync.
 > A partner offers both an Erasmus exchange and a double degree: the student sees two
 > category tabs, each with its own places grid.
 
-??? note "Internal details (AroundLink team)"
-    `App\Places` socle: `DistributesPlaces` interface, `PlaceDistributionEntry` DTO,
-    `AgreementPlaceDistribution` adapter. Per-type providers (`BilateralPlacesProvider`,
-    `DoubleDegreePlacesProvider`, `PayingPlacesProvider`) aggregated by
-    `StudentPlacesViewBuilder`. Student category = `MobilityCategoryEnum` (EXCHANGE,
-    DOUBLE_DEGREE, INTERNSHIP, PAID_MOBILITY), distinct from the contract type
-    `AgreementTypeEnum`.
 
 ## Bilateral agreements
 
@@ -114,13 +90,6 @@ matrix is filled in for student mobilities. An import with preview is available.
 > both coordinators approve in the tool, then the French side distributes 2 Master
 > places in Semester 1.
 
-??? note "Internal details (AroundLink team)"
-    `BilateralAgreement` (keyed by `agreementId`, forward/reverse rows per direction),
-    status `BilateralAgreementStatusEnum{DRAFT, PENDING_PARTNER, IN_NEGOTIATION,
-    PENDING_INTERNAL, ACTIVE, EXPIRED, RENEWAL, OPEN_ENDED}`. Places in
-    `BilateralAgreementPeriodPlace` (agreementId, subjectArea/ISCED, year, level, period,
-    places). Submit/approve workflow in `BilateralAgreementWorkflow`, CSRF-guarded.
-    Submission mirrors contacts into the partner's Relationship section.
 
 ## Double degrees
 
@@ -140,13 +109,6 @@ import with preview is available.
 > A Master double degree with Georgia Tech over 2 years: the student goes abroad in year
 > 2; the office tracks each phase and distributes the yearly places.
 
-??? note "Internal details (AroundLink team)"
-    `DoubleDegreeAgreement` (keyed by `agreementId`), status `DoubleDegreeStatusEnum`
-    (same 8 states as bilateral), fields: durationYears, yearlyPlaces, partnerDegreeName,
-    jointCurriculum, sender/receiver graduation conditions, commonJury, eqfLevel,
-    `fundingProgram`. Phases `DoubleDegreePhase{YEAR_1, YEAR_2}`. Transcripts (ToR) are
-    collected the classic way, via the student's document upload. Places in
-    `DoubleDegreePeriodPlace`. Workflow `DoubleDegreeWorkflow`.
 
 ## Paying mobility (study abroad)
 
@@ -167,12 +129,6 @@ before applying. An import with preview is available.
 > A partner in the US where the student pays $12,000 in tuition: the office records it as
 > a "study abroad" paying agreement and publishes 5 places for the year.
 
-??? note "Internal details (AroundLink team)"
-    `PayingMobilityAgreement` (keyed by `agreementId`), status `PayingMobilityStatusEnum{DRAFT,
-    ACTIVE, EXPIRED, OPEN_ENDED, MODIFIED}` (no negotiation states — single-sided). Fields:
-    `agreementSubtype` (STUDY_ABROAD, HIGH_VOLUME), totalFeeAmount, currency, mobilityType.
-    `publish()` action (no submit/approve). Places in `PayingMobilityPeriodPlace`. Workflow
-    `PayingMobilityWorkflow`. Module reserved for the paying plan.
 
 ## Proof of an agreement's conditions
 
@@ -209,7 +165,3 @@ templates are downloadable.
 > An office pastes 80 exchanges from a legacy spreadsheet, fixes 3 flagged rows in the
 > preview, then validates.
 
-??? note "Internal details (AroundLink team)"
-    Importers: `ExchangesImporter`, `IiaAgreementImporter`, `BilateralAgreementImporter`,
-    `DoubleDegreeImporter`, `PayingMobilityImporter`. Common three-step flow: preview
-    (parse + validation), single-row correction, confirm (persistence).

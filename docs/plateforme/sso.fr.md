@@ -60,28 +60,40 @@ dans AroundLink.
 
 ### Le parcours de connexion
 
-1. L'utilisateur saisit son adresse e-mail professionnelle.
-2. AroundLink reconnaît le domaine et détermine le mode de connexion de
-   l'établissement.
-3. Selon la configuration, il est envoyé chez son fournisseur d'identité — où
-   s'appliquent **vos** règles (mot de passe, MFA, accès conditionnel) — ou il
-   saisit son mot de passe AroundLink.
+Le bouton **« Se connecter avec Microsoft »** est présent sur la page d'accueil, pour tout
+le monde et en permanence. Il n'y a rien à chercher ni à déclarer au préalable.
 
-Il n'y a pas de bouton d'authentification unique à chercher : l'adresse e-mail
-suffit à orienter l'utilisateur.
+Ce qui se passe ensuite dépend d'une seule chose : **le compte Microsoft est-il relié à un
+compte AroundLink ?**
+
+1. **Oui** — l'utilisateur entre. Les règles de votre annuaire s'appliquent au passage
+   (mot de passe, double facteur, accès conditionnel) : elles sont à vous, pas à nous.
+2. **Non** — l'entrée est refusée, avec l'explication : se connecter d'abord par mot de
+   passe, puis relier son compte depuis son profil.
+
+La reconnaissance porte sur **le compte relié**, jamais sur l'adresse e-mail seule. C'est ce
+qui permet d'ouvrir la connexion Microsoft à tous sans vérification préalable.
 
 ### Les réglages, par établissement
 
+Dans le cas courant, **il n'y a aucun réglage** : chacun relie son compte lui-même. Les
+réglages ci-dessous ne concernent que les établissements qui veulent **imposer**
+l'authentification unique.
+
 | Réglage | Effet |
 | --- | --- |
-| **Activation** | Ouvre l'authentification unique pour l'établissement. |
-| **Mode strict** | Supprime la connexion par mot de passe : le fournisseur d'identité devient la seule voie d'entrée. |
-| **Domaines e-mail autorisés** | Liste blanche des domaines admis, en complément du contrôle d'appartenance. Obligatoire dès l'activation. |
+| **Activation** | Vos utilisateurs sont reliés automatiquement à leur première connexion, d'après leur adresse. |
+| **Mode strict** | Supprime la connexion par mot de passe : votre annuaire devient la seule voie d'entrée. |
+| **Domaines e-mail autorisés** | Les domaines dont les adresses déclenchent cette liaison automatique. Obligatoire dès l'activation. |
+
+!!! danger "Pourquoi les domaines sont obligatoires"
+    Sans domaine déclaré, personne n'est relié à sa première connexion. Combiné au mode
+    strict, qui retire le mot de passe, vos utilisateurs se retrouveraient enfermés dehors.
+    La plateforme refuse donc une activation sans domaine.
 
 !!! warning "Ne pas activer le mode strict en premier"
-    Le mode strict retire le repli par mot de passe. Activez-le seulement après
-    avoir vérifié qu'au moins un compte se connecte réellement par
-    l'authentification unique.
+    Le mode strict retire le repli par mot de passe. Activez-le seulement après avoir
+    vérifié qu'au moins un compte entre réellement par l'authentification unique.
 
 ### Départs et arrivées
 

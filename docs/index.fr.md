@@ -8,18 +8,18 @@ données avec le réseau européen — pour remplacer les tableurs et les e-mail
 dispersés par un processus unique, traçable et conforme.
 
 Cette documentation recense **toutes les fonctionnalités** de l'outil et, pour
-chacune, sa **valeur métier**. Elle s'adresse à deux publics :
+chacune, sa **valeur métier**. Elle s'adresse à vous :
 
-- **Responsables et gestionnaires RI** (clients) : comprendre ce que l'outil fait
-  et ce qu'il apporte, sans jargon technique.
-- **Équipes AroundLink** (interne) : disposer d'une vue complète du périmètre
-  produit.
+- **Responsables et gestionnaires des relations internationales** : comprendre ce
+  que l'outil fait et ce qu'il apporte, sans jargon technique.
+- **Directions des systèmes d'information** : les pages Plateforme répondent aux
+  questions de raccordement, d'authentification et d'échange de données.
 
 !!! tip "Comment lire une fiche"
     Chaque fonctionnalité suit le même format : **à quoi ça sert**, **pour qui**,
-    **comment ça marche**, un **cas d'usage** concret, et un bloc repliable
-    _« Détails internes »_ réservé au contexte opérationnel (non sensible). Le ton
-    par défaut est orienté valeur métier ; les détails techniques restent repliés.
+    **comment ça marche**, et un **cas d'usage** concret. Les encadrés signalent
+    ce qu'il faut savoir avant d'activer un réglage, et les pièges que l'on ne
+    voit qu'une fois dedans.
 
 ## Les trois espaces
 

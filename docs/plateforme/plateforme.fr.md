@@ -78,10 +78,6 @@ et ses droits, pour que chaque acteur ne voie que ce qui le concerne.
 > Un établissement invite le responsable Erasmus d'un partenaire ; celui-ci se
 > connecte à son propre espace pour approuver un accord, sans rien voir d'autre.
 
-??? note "Détails internes (équipe AroundLink)"
-    Comptes distincts `AdminUser` (équipe AroundLink), `MobilityUser` (coordinateurs)
-    et `StudentUser` (étudiants), tous dérivés d'un socle `User` commun. Les comptes
-    partenaires sont des `MobilityUser` rattachés à l'établissement partenaire.
 
 ## Rôles & permissions de l'équipe (RBAC)
 
@@ -102,11 +98,6 @@ plus y accéder par une adresse directe.
 > Le responsable RI donne au rôle « Assistant » la lecture partout, mais l'écriture
 > uniquement sur les Documents.
 
-??? note "Détails internes (équipe AroundLink)"
-    Rôles + matrice de permissions par établissement ; 6 modules
-    (`institution`, `documents`, `forms`, `workflow`, `integrations`,
-    `team_permissions`) × 3 niveaux (aucun/lecture/écriture). L'application est
-    faite côté serveur (le menu ne fait que masquer). Réf. AROUNDLINK-348.
 
 ## Connexion & authentification unique (SSO)
 
@@ -134,11 +125,6 @@ réinitialisation classique.
     contrôles de sécurité et limites connues :
     **[Authentification unique Microsoft (DSI)](sso.md)**.
 
-??? note "Détails internes (équipe AroundLink)"
-    Configuration SSO par établissement (identifiant de tenant, activation,
-    imposition, domaines e-mail autorisés). Flux Microsoft/Azure OpenID Connect.
-    La configuration et le test se font depuis l'espace d'administration AroundLink.
-    Les détails d'implémentation de l'authentification ne sont pas exposés ici.
 
 ## Accès applicatif (clé API & réseau EWP)
 
@@ -157,10 +143,6 @@ documentée de façon interactive (ressources, schémas, opérations) — voir l
 [documentation de l'API (démo)](https://demo.aroundlink.com/api/docs) et, pour le
 réseau EWP, la [référence des API EWP](../ewp/reference-api.md).
 
-??? note "Détails internes (équipe AroundLink)"
-    Surface `/api/*` sans état (JWT / clé API) séparée des API internes de
-    l'application ; authentification partenaire EWP par signature de requête. Ne
-    jamais divulguer une clé.
 
 ## Offres : établissement payant / gratuit
 
@@ -181,9 +163,6 @@ direct pour un client gratuit. Cette offre est indépendante des frais de scolar
 > Un partenaire en offre gratuite peut relire et approuver un accord bilatéral qu'un
 > établissement payant lui a soumis, mais ne peut pas ouvrir les modules premium.
 
-??? note "Détails internes (équipe AroundLink)"
-    `MobilityPlanEnum` (payant/gratuit), appliqué côté serveur par un contrôle
-    d'accès dédié. Modèle réutilisable pour tout futur module premium.
 
 ## Aide contextuelle
 
@@ -225,6 +204,3 @@ paiement ne transite par AroundLink, l'étudiant souscrit sur le site du partena
 > AroundLink ajoute une offre « Assurance santé étudiante — dès 9 €/mois » ; elle
 > apparaît aux étudiants des établissements ayant activé la marketplace.
 
-??? note "Détails internes (équipe AroundLink)"
-    Interrupteur `University.marketplaceEnabled`. Offres/​prestataires gérés côté
-    AroundLink (hors du présent site) ; affichage étudiant conditionné au drapeau.

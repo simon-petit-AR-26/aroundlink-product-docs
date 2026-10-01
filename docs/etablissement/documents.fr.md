@@ -41,21 +41,6 @@ l'établissement d'accueil selon le flux séquentiel du réseau.
 > remplacer un cours, puis signe au nom de l'établissement d'envoi ; dès que le
 > partenaire signe à son tour, l'OLA passe « Validé ».
 
-??? note "Détails internes (équipe AroundLink)"
-    Statuts (`LearningAgreementStatus`) : Draft, Selected by student, Pending sending
-    school validation, Pending receiving school validation, Validated, Refused by
-    receiving school. Étapes (`LearningAgreementStep`, formulation officielle OLA) :
-    Before / During / After the mobility (1/3, 2/3, 3/3).
-
-    Accord non-EWP = signature parallèle (`sendingSchoolSignedAt` /
-    `receivingSchoolSignedAt`), validation dès `areBothSchoolsSigned()` ; accord EWP =
-    progression séquentielle via le statut. Un refus renvoie l'OLA en brouillon,
-    ré-éditable par l'étudiant. Les tables d'avenants (A2/B2) déclenchent un nouveau
-    cycle de signature (`resetForAmendments()`).
-
-    À la validation complète, la date de signature du LA est reportée sur la bourse
-    liée (pont vers le module Bourse de mobilité). Chaque action de mutation vérifie
-    l'appartenance de l'étudiant au périmètre du coordinateur.
 
 ## Génération PDF : OLA & relevé de notes
 
@@ -75,12 +60,6 @@ remplit le modèle avec les cours (et les notes, pour le relevé).
 > Après la double signature, le coordinateur télécharge le Learning Agreement en PDF,
 > à l'en-tête de l'établissement, pour le dossier de l'étudiant.
 
-??? note "Détails internes (équipe AroundLink)"
-    Le PDF réutilise le modèle actif de l'établissement pour le type demandé (voir
-    « Modèles de documents »). Les jetons `{{COURSES_TABLE}}` /
-    `{{COURSES_TABLE_WITH_GRADES}}` sont résolus avec les cours de l'accord. Si aucun
-    modèle actif du type n'existe, un message renvoie vers Paramètres → Modèles de
-    documents.
 
 ## Relevé de notes (Transcript of Records)
 
@@ -100,15 +79,6 @@ téléchargeable — ou renvoie le dossier à l'étudiant pour correction.
 > vérifie, valide, et le relevé de notes est prêt à être transmis à l'université
 > d'origine.
 
-??? note "Détails internes (équipe AroundLink)"
-    Statuts (`TranscriptOfRecordStatus`) : Pending student filling grades, Pending
-    validation by school, Validated by receiving/sending school, Refused by
-    receiving/sending school. La soumission étudiante exige une note valide (selon
-    `GradingSystemEnum`) pour chaque cours.
-
-    La validation métier « fait foi » : approuver aligne le fichier officiel déposé sur
-    l'état validé, ce qui coche la pièce « relevé de notes » côté Bourse et satisfait la
-    condition de clôture. Une demande de modification décoche la Bourse.
 
 ## File de validation (Validation Hub)
 
@@ -131,16 +101,6 @@ onglet « Historique » liste les décisions passées avec leur motif.
 > deux passeports, signe un OLA au nom de l'établissement d'envoi et refuse une
 > attestation d'assurance illisible avec un commentaire — le tout depuis la même file.
 
-??? note "Détails internes (équipe AroundLink)"
-    Quatre types d'éléments (StudentFile, LearningAgreement non-EWP en attente de
-    signature, TranscriptOfRecord, Feedback). Motif conservé selon le type
-    (`refusal_reason` pour les pièces, ligne d'historique pour LA/ToR/Feedback, ticket
-    AROUNDLINK-548). Urgent = en attente ≥ 7 jours.
-
-    Garde métier : une attestation d'arrivée/de départ ne peut être validée que si
-    l'étudiant a déclaré la date correspondante (elle conditionne le versement de la
-    bourse). Modération des témoignages : valider peut aussi publier ; refuser masque
-    toujours. Les nominations ne passent pas par cette file.
 
 ## Pièces administratives des étudiants
 
@@ -160,12 +120,6 @@ d'étudiants qui seraient relancés, puis déclenche une campagne de relance en 
 > Le coordinateur filtre sur « Refusé », sélectionne 8 pièces, les refuse en lot avec un
 > commentaire, puis envoie une relance aux étudiants concernés.
 
-??? note "Détails internes (équipe AroundLink)"
-    Statuts (`StudentFileStatusEnum`) : Pending / Validated / Refused (avec
-    `refusal_reason`). Les validations en lot re-vérifient l'appartenance de chaque
-    fichier au périmètre du coordinateur. La date d'arrivée refuse les dates futures et
-    pilote le versement du solde de bourse. La validation d'une pièce peut alimenter la
-    checklist de la bourse liée.
 
 ## Modèles de documents
 
@@ -188,17 +142,6 @@ modèles institutionnels mis à disposition sont visibles en lecture seule.
 > l'établissement, vérifie l'aperçu, puis le génère rempli pour un étudiant entrant en
 > un clic.
 
-??? note "Détails internes (équipe AroundLink)"
-    Types (`DocumentTemplateTypeEnum`, ensemble fermé, contrôlé en base) :
-    nomination_letter, learning_agreement, acceptance_letter, enrollment_certificate,
-    transcript, visa_certificate, housing_certificate. Champs : nom, type, type de
-    mobilité (défaut « ALL »), contenu, actif/inactif, propriétaire, université de
-    rattachement.
-
-    Chaque coordinateur possède son propre pool ; les modèles institutionnels
-    (propriétaire vide) sont visibles pour les coordinateurs de l'université ciblée mais
-    modifiables uniquement côté administration. La génération est restreinte aux
-    étudiants de l'université du coordinateur. Variables issues de `DocumentVariableEnum`.
 
 ## Activer / désactiver des types de documents
 
@@ -215,10 +158,6 @@ interrupteur ON/OFF enregistré par établissement.
 > Un établissement qui n'émet jamais d'attestation de logement désactive ce type : il
 > disparaît de la checklist de tous ses étudiants.
 
-??? note "Détails internes (équipe AroundLink)"
-    Désactivation par présence d'une ligne `DisabledDocumentType`, unique par (université,
-    type de fichier). Aucune ligne = type actif (comportement par défaut préservé). La
-    liste des types désactivés pilote l'affichage côté étudiant.
 
 ## Revue des mises à jour d'accord (IIA)
 
@@ -239,8 +178,3 @@ jour, auquel cas ses données restent inchangées.
 > changement de langue mais rejette celui des ECTS — seul le champ accepté est écrit
 > localement.
 
-??? note "Détails internes (équipe AroundLink)"
-    Statuts de la mise à jour en attente (`ExchangeIiaPendingUpdateStatusEnum`) :
-    PENDING_REVIEW / REJECTED. L'application n'est possible que tant que la mise à jour
-    est en revue. Auteur, horodatage et notes de revue sont conservés. Retour à la liste
-    des accords après décision.

@@ -36,13 +36,6 @@ calendrier, coordinateurs…). Les contenus se rédigent sous forme de blocs rat
     Les documents et ressources que vous rendez visibles apparaissent dans l'espace
     « Ressources » du portail étudiant — voir la documentation du portail étudiant.
 
-??? note "Détails internes (équipe AroundLink)"
-    Préfixe d'URL conservé à `/mobility/resource-hub` (compatibilité ascendante).
-    Les blocs de contenu (`UniversityCms`) sont rattachés à une `CmsSubCategory`
-    puis à une `CmsCategory` (catégories semées par migration, pas par fixtures —
-    un rechargement de fixtures les purge). `Faq` et `UniversityLink` portent des
-    `visibilityAudiences` (incoming / outgoing / mobility_free). Contrôleur :
-    `MyInstitutionController`. AROUNDLINK-380 / -402.
 
 ### Fiche pratique, cours, liens, bibliothèque et FAQ
 
@@ -89,7 +82,3 @@ ensuite vers les étudiants.
 > coordinateur l'approuve, et il s'affiche sur la page Antalya pour les candidats
 > de l'année suivante.
 
-??? note "Détails internes (équipe AroundLink)"
-    Entité `Feedback` (+ `FeedbackHistory`, `FeedbackPhoto`) avec `FeedbackStatusEnum`
-    et un indicateur `isPublic`. Actions accept / refuse dans `MyInstitutionController`
-    (sous-onglet avis). AROUNDLINK-548.

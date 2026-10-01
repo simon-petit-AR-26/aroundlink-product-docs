@@ -35,3 +35,74 @@ The acronyms and terms you meet across AroundLink and international mobility.
 | **Beneficiary Module** | The official Erasmus+ tool where an institution reports its mobilities. |
 | **SSO** | *Single Sign-On* — signing in with an existing account (e.g. Microsoft/Azure). |
 | **Multi-tenant (SaaS)** | The architecture where each client institution is isolated from others on a shared platform. |
+
+## Words that get confused
+
+Eight pairs of terms that look alike and do not mean the same thing. They are by far the
+first source of misunderstanding between a team and its tool.
+
+### Wish, proposal, placement, nomination
+
+Four words for four distinct moments of the same file, in this order:
+
+| Term | Who issues it | What it is |
+|---|---|---|
+| **Wish** | The student | A destination they ask for, ranked by preference |
+| **Proposal** | The tool or the coordinator | A destination offered to them, which they can still decline |
+| **Placement** | The coordinator, or the student's acceptance | The destination retained — the file has a seat |
+| **Nomination** | The coordinator, towards the partner | The official announcement to the host institution |
+
+A student may have five wishes, one proposal, one placement and one nomination. It is not the
+same thing in four places: it is four steps.
+
+### Academic level and track
+
+The **academic level** is a shared European scale — bachelor, master, doctorate. It lets you
+compare two students from two countries.
+
+The **track** is the label *you* give your cohorts: "Aero 4", "MSc 26-27". It only means
+something at home, and it is what designates the cell in the place matrix.
+
+That is why the matching round requires a track and not just a level: "Aero 4" and "Aero 5"
+are both master's, and do not open the same places.
+
+### Tag and student filter
+
+A **tag** stays with you. A **student filter** can be shown to your students, who use it to
+search for a destination. See
+[Tag or student filter?](../etablissement/parametres.md).
+
+### Agreement, exchange, place
+
+The **agreement** is the contract binding you to a partner — it has a type, dates, signatories.
+
+The **exchange** is a line of that agreement: a direction, a level, a field.
+
+The **place** is an available seat, for a given period and track. It is what the student
+occupies. An agreement can exist without opening a single place.
+
+### Outgoing and incoming
+
+**Outgoing**: your students leaving. **Incoming**: the students you host.
+
+Since September 2026, **every place counter covers outgoing only**. An agreement often opens
+places both ways; only those you send count towards your totals.
+
+### Ready and Opened
+
+A **Ready** campaign is visible to your team, and to them alone. An **Opened** campaign is
+where your students place their wishes. This confusion explains most of the "my students see
+nothing".
+
+### Access opened and account connected
+
+**Access opened**: you sent their invitation. **Connected**: they used it. Two separate
+columns, because they call for two different reminders.
+
+### Client partner and non-client partner
+
+A partner that uses AroundLink itself **publishes** its information: its factsheet, course
+catalogue, library, FAQ. You read them as they write them, and they update by themselves.
+
+A partner that does not use it publishes nothing. What you write about them is then **yours**,
+and your institution alone sees it.

@@ -26,10 +26,31 @@ si des étudiants y sont encore rattachés, pour éviter toute perte de lien.
 > Une école multi-sites déclare les campus de Paris et de Lyon, puis y affecte
 > ses étudiants.
 
-??? note "Détails internes (équipe AroundLink)"
-    `CampusesController`. Entité `Campus` (université, nom, ville, pays,
-    indicateur principal). La suppression vérifie le nombre d'étudiants
-    rattachés. La propriété est contrôlée à la modification et à la suppression.
+
+### Ouvrir un campus comme destination
+
+**À quoi ça sert.** Proposer l'un de vos propres campus comme destination de mobilité — à
+vos autres campus, ou à vos partenaires.
+
+**Pour qui.** <span class="al-audience">admin</span>
+
+**Comment ça marche.** Un interrupteur, dans la liste de campus que vous tenez déjà. Vous
+l'allumez, et le campus devient une destination.
+
+Sa fiche est créée **à partir de ce que vous avez déjà saisi** — nom, adresse, domaine. Il
+n'y a aucune double saisie, et rien de plus à remplir pour commencer.
+
+Vos campus peuvent alors **s'échanger des étudiants entre eux**. Un étudiant du campus de
+Lyon voit celui de Toulouse comme n'importe quelle autre destination — mais il ne voit pas
+le sien : son propre campus reste affiché, sans être demandable.
+
+Éteindre l'interrupteur retire le campus des destinations. Vous pouvez le rallumer : la
+fiche est conservée, elle n'est pas refaite.
+
+**Cas d'usage.**
+> L'école a trois campus. Elle les ouvre tous les trois, et ses étudiants de première année
+> peuvent passer un semestre sur un autre campus sans sortir du même processus de campagne
+> que pour une mobilité internationale.
 
 ## Composantes (OUnits)
 
@@ -47,9 +68,6 @@ celui des campus.
 > Le bureau déclare la « Faculté d'ingénierie » comme composante avec son
 > identifiant EWP.
 
-??? note "Détails internes (équipe AroundLink)"
-    `OunitsController`. Entité `Ounit` (université, nom, description, identifiant
-    de composante). Écran calqué sur celui des campus.
 
 ## Niveaux d'études personnalisés
 
@@ -73,11 +91,6 @@ libellés en double sont refusés.
 > Une école d'ingénieurs définit « Aéro 4 » associé à l'EQF 7, afin de filtrer
 > campagnes et accords par ses véritables intitulés de niveau.
 
-??? note "Détails internes (équipe AroundLink)"
-    `AcademicLevelSettingsController`. Entité `AcademicLevelCustom` (université,
-    libellé unique par établissement, niveau EQF). Les entités consommatrices
-    enregistrent la valeur EQF standard, pas le libellé, afin de préserver la
-    compatibilité des exports EWP/OLA.
 
 ## Clé de connexion aux systèmes externes
 
@@ -100,9 +113,6 @@ vos intégrations.
     Une clé de connexion est un identifiant sensible. Ne la diffusez jamais
     publiquement et régénérez-la si vous pensez qu'elle a pu être exposée.
 
-??? note "Détails internes (équipe AroundLink)"
-    `ApiKeyController`. La clé est créée à la première visite et renouvelable en
-    un clic. Rattachée au compte de l'utilisateur.
 
 ## Suppressions protégées
 
@@ -176,17 +186,39 @@ apparaît dans « Find your exchange », où vos étudiants la choisissent comme
 pays ou une langue. « Match my profile » présélectionne alors les valeurs que
 l'étudiant porte déjà.
 
+![Filtres étudiants](../assets/screenshots/parametres-filtres-etudiants.png)
+
+*Vos filtres, leur couleur, et le nombre d'établissements et d'étudiants sur lesquels chacun est posé.*
+
 **Cas d'usage.**
 > Le coordinateur crée le filtre « Double diplôme », le pose sur les étudiants
 > concernés et le rend visible. Un étudiant qui le porte ouvre sa recherche de
 > destination : le filtre est déjà coché, et il ne voit que les destinations qui
 > le concernent.
 
-!!! tip "Tag ou filtre étudiant ?"
-    Posez-vous la question de qui doit voir la valeur. Un point de vigilance
-    interne, un rappel d'équipe, un suivi administratif : c'est un tag. Une
-    caractéristique que l'étudiant reconnaît et sur laquelle il choisit sa
-    destination : c'est un filtre étudiant.
+### Tag ou filtre étudiant ?
+
+Les deux objets se ressemblent — un nom, une couleur, posés sur des fiches — et c'est
+précisément ce qui fait qu'on les confond. Ils répondent pourtant à deux questions
+opposées.
+
+| | Tag | Filtre étudiant |
+|---|---|---|
+| **Qui voit la valeur** | Votre établissement, et lui seul | Vos étudiants aussi, dès que vous cochez « Visible aux étudiants » |
+| **À quoi elle sert** | Organiser votre travail | Aider l'étudiant à se reconnaître et à choisir |
+| **Où elle apparaît** | Vos listes, vos filtres de campagne | Vos listes **et** l'écran de recherche de destination de l'étudiant |
+| **« Match my profile »** | Sans effet | Présélectionne les valeurs que l'étudiant porte |
+| **Portées possibles** | Général, Étudiant, Établissement | Étudiants, Établissements |
+
+La règle de décision tient en une question : **qui doit voir cette valeur ?**
+
+Un point de vigilance interne, un rappel d'équipe, un suivi administratif, une note qui
+n'appartient qu'à vous : c'est un **tag**. Une caractéristique que l'étudiant reconnaît
+comme sienne et sur laquelle il choisira sa destination : c'est un **filtre étudiant**.
+
+!!! note "Le mot « tag » n'apparaît jamais sur cet écran"
+    C'est volontaire. Mélanger les deux vocabulaires est exactement ce qui conduit à poser
+    une information interne là où les étudiants la liront.
 
 ## Vues enregistrées
 
@@ -228,73 +260,121 @@ pas l'ensemble.
 > Pendant la mise en route, l'admin prépare 8 comptes (en attente), puis clique
 > sur « Envoyer tous les accès » le jour du lancement.
 
-??? note "Détails internes (équipe AroundLink)"
-    `SettingsController::team()` et envois d'accès. Statut d'accès (en attente /
-    invité…). Les invitations partent via un e-mail dédié. Chaque nouveau membre
-    est aussi relié aux contacts partenaires existants qui le concernent.
 
-## Créer son compte soi-même
+## Ce que vos étudiants voient
 
-**À quoi ça sert.** Permettre à un collègue d'ouvrir son propre compte, sans invitation
-préalable, et d'arriver directement chez son équipe.
-
-**Pour qui.** <span class="al-audience">tout personnel d'un bureau des relations
-internationales</span>
-
-**Comment ça marche.** La personne renseigne son nom, son prénom et son **adresse e-mail
-professionnelle**. C'est le domaine de cette adresse qui désigne son établissement : on ne
-lui demande jamais de saisir le nom de son école, ni son pays.
-
-C'est volontaire. Un nom saisi à la main ne servirait à rien pour rapprocher deux fiches —
-« Université de Lille » et « Université de Lille 1 » finiraient par désigner deux
-établissements différents alors qu'il n'y en a qu'un.
-
-Dans le cas courant, une seule fiche porte ce domaine et le rattachement se fait
-silencieusement : la personne arrive directement auprès de ses collègues. Un choix ne lui
-est proposé que lorsqu'il en existe réellement un — plusieurs fiches sur le même domaine,
-une entité principale et ses campus.
-
-**Cas d'usage.**
-> Une nouvelle chargée de mobilité arrive au bureau. Elle crée son compte avec son adresse
-> professionnelle et retrouve aussitôt les partenaires et les campagnes de son
-> établissement, sans que personne ait eu à l'inviter.
-
-## Rôles & permissions
-
-**À quoi ça sert.** Définir précisément qui peut voir et modifier quoi, grâce à des
-rôles personnalisés et une matrice de droits par module. Chaque établissement
-adapte les accès à son organisation.
+**À quoi ça sert.** Régler deux informations sensibles que vos étudiants voient — ou ne
+voient pas — sans que cela change quoi que ce soit pour votre équipe.
 
 **Pour qui.** <span class="al-audience">admin</span>
 
-**Comment ça marche.** Vous créez des rôles, puis vous réglez, pour chaque rôle et
-chaque module de l'application, un niveau d'accès (par exemple lecture ou
-lecture/écriture) dans une matrice. Les modifications s'appliquent à tous les
-membres portant le rôle.
+**Comment ça marche.** Deux interrupteurs, indépendants l'un de l'autre.
 
-![Matrice des rôles et permissions](../assets/screenshots/parametres-roles.png)
+**Le classement.** Par défaut, un étudiant voit son rang dans sa promotion sur son propre
+profil. Vous pouvez le lui masquer : vous et votre équipe continuez de le voir, lui non.
 
-*La matrice des droits : vos rôles en colonnes, les modules de l'application en lignes, et pour chaque croisement un niveau — aucun accès, lecture seule, ou écriture. Les quatre rôles fournis se personnalisent, et vous pouvez en créer d'autres.*
+**Le nombre de places.** Par défaut, vos étudiants voient combien de places vous ouvrez sur
+chaque partenaire et chaque période. Vous pouvez n'afficher que l'existence d'une place
+disponible, sans le nombre.
+
+![Réglages de la vue étudiante](../assets/screenshots/parametres-vue-etudiante.png)
+
+*Les deux interrupteurs, avec sous chacun la phrase qui dit ce que l'étudiant verra.*
 
 **Cas d'usage.**
-> L'admin crée un rôle « Coordinateur » avec accès en écriture aux partenaires
-> mais en lecture seule aux paramètres.
+> L'établissement ne souhaite pas que le classement circule entre étudiants avant la
+> commission. L'admin le masque le temps de la campagne, et le rétablit ensuite — les
+> coordinateurs, eux, l'ont vu tout du long.
 
-??? note "Détails internes (équipe AroundLink)"
-    `SettingsController::roles()`. Rôles par établissement, matrice de permissions
-    par module et niveau d'accès. Les droits pilotent l'accès aux différentes
-    zones de l'espace Mobilité.
+## Rôles & permissions
 
-## Fiche d'une personne
+**À quoi ça sert.** Définir qui peut faire quoi, et **sur qui** — en adaptant les accès à
+votre organisation plutôt qu'à un découpage imposé.
 
-**À quoi ça sert.** Réunir sur un seul écran tout ce que vous savez d'une personne, qu'elle
-soit un contact de votre annuaire, un membre de votre équipe, ou les deux.
+**Pour qui.** <span class="al-audience">admin</span>
+
+**Comment ça marche.** Un rôle se construit en deux temps.
+
+**D'abord son périmètre**, c'est-à-dire ce sur quoi il porte. Quatre questions, dans cet
+ordre : les **domaines métier** concernés, la **direction** (sortants seulement, entrants
+seulement, ou les deux), les **campus**, les **promotions**. Les listes proposées sont
+celles de vos propres réglages, jamais une liste générique. Ne rien cocher sur les campus ou
+les promotions signifie « tous ».
+
+Le métier se choisit en premier parce qu'il élague la suite : régler des droits puis
+découvrir que la moitié disparaît serait du travail jeté.
+
+**Ensuite ses droits**, ligne par ligne, avec quatre niveaux :
+
+| Niveau | Ce qu'il permet |
+|---|---|
+| **Aucun** | Rien. Posé sur une catégorie, il ferme tout ce qu'elle contient. |
+| **Consulter** | Consulter et chercher. Aucune modification ne sort de l'outil. |
+| **Préparer** | Créer, modifier, déposer — le dossier avance, à l'intérieur. |
+| **Décider** | Valider, refuser, envoyer, supprimer, exporter — cela sort de l'outil. |
+
+La frontière utile est celle-ci : **« Préparer » fait avancer un dossier chez vous,
+« Décider » le fait sortir**. Les quatre niveaux sont posés côte à côte sur chaque ligne,
+sans menu déroulant : voir la valeur voisine fait partie de l'information.
+
+![Le sélecteur de niveaux](../assets/screenshots/parametres-role-niveaux.png)
+
+*Une ligne de droits : les quatre niveaux alignés, celui qui s'applique en couleur, et la flèche qui rend la ligne à ce dont elle hérite.*
+
+![Le périmètre d'un rôle](../assets/screenshots/parametres-role-perimetre.png)
+
+*L'étape du périmètre : les domaines métier, la direction, les campus et les promotions. Ne rien cocher sur les campus ou les promotions revient à tous les couvrir.*
+
+![L'arbre des droits](../assets/screenshots/parametres-roles.png)
+
+*L'arbre complet : chaque section de l'application, et sous elle les actions qu'un rôle peut porter.*
+
+**Comparer deux rôles.** Un bouton affiche le même arbre avec une colonne par rôle. C'est
+ainsi qu'on répond à « qui peut valider une bourse, au juste ? » sans ouvrir les rôles un
+par un — et qu'on découvre à temps que personne ne le peut, parce que chacun croyait que
+c'était l'autre.
+
+![Comparaison de rôles](../assets/screenshots/parametres-roles-comparaison.png)
+
+*Le même arbre, une colonne par rôle : on lit d'un trait qui décide, qui prépare et qui ne voit rien.*
+
+**Un filet.** Vous ne pouvez pas retirer le dernier administrateur de votre établissement.
+
+**Ce que voient les autres.** Quand un droit manque, l'écran le dit au lieu de faire
+semblant : un bandeau annonce la lecture seule, et une mention explique qu'un étudiant est
+hors de votre périmètre.
+
+**Cas d'usage.**
+> La responsable crée un rôle « Chargé des entrants » : périmètre limité aux entrants et au
+> campus de Lyon, « Décider » sur les documents, « Consulter » sur les accords, « Aucun »
+> sur la bourse.
+
+## Mes permissions
+
+**À quoi ça sert.** Voir soi-même ce qu'on a le droit de faire, et sur qui.
+
+**Pour qui.** <span class="al-audience">tout membre de l'équipe</span>
+
+**Comment ça marche.** L'écran énonce vos droits en clair et rappelle votre périmètre.
+
+Il n'est protégé par aucune permission, et c'est volontaire : plus un rôle est restreint,
+plus la personne a besoin de comprendre pourquoi un écran lui est fermé. Sans lui, chaque
+restriction ressemble à une panne, et quelqu'un doit aller lire la configuration à sa place.
+
+![Mes permissions](../assets/screenshots/parametres-mes-permissions.png)
+
+*Vos droits énoncés en phrases — de qui vous voyez les dossiers, et ce que vous pouvez faire dans chaque section.*
+
+## Fiche d'un contact
+
+**À quoi ça sert.** Réunir sur un seul écran tout ce que vous savez d'un contact, qu'il
+soit une personne de votre annuaire, un membre de votre équipe, ou les deux.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
 **Comment ça marche.** Un contact d'annuaire et un compte de connexion désignaient
-auparavant deux fiches distinctes, sans lien entre elles. C'est désormais **une seule
-personne, une seule page** : vos grilles de contacts et la liste de votre équipe mènent au
+auparavant deux fiches distinctes, sans lien entre elles. C'est désormais **un seul
+contact, une seule page** : vos grilles de contacts et la liste de votre équipe mènent au
 même endroit, et vous y voyez aussi bien ses coordonnées que l'état de son accès.
 
 ## Annuaire des utilisateurs
@@ -317,6 +397,3 @@ nom/e-mail. Elle est réservée aux plans de mobilité payants.
 > L'admin recherche un utilisateur par e-mail pour vérifier son statut et sa
 > catégorie.
 
-??? note "Détails internes (équipe AroundLink)"
-    `SettingsController::users()`. Vue agrégée en lecture seule construite par un
-    service dédié, réservée aux établissements en plan payant.

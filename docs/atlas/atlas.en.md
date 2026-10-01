@@ -33,14 +33,6 @@ consult it, you don't create or edit a record here.
 
 *The same search in cards view: each institution with its country, its type and whether it is connected to the EWP network.*
 
-??? note "Internal details (AroundLink team)"
-    The directory is built from open registries (ROR / Wikidata) and enriched by
-    AroundLink. Data served client-side from the JSON API `/mobility/api/atlas/*`
-    (read, `ROLE_MOBILITY`). Per-row network status: partner / synced / declared /
-    none. The map view is capped (with viewport-bbox filtering: zoom to see more);
-    country/type browse pages are cached 1h; the "partner" flag is computed per
-    request. Controllers: `AtlasController` (page), `AtlasApiController` (API).
-    AROUNDLINK-324 / -492 / -493.
 
 ## Live factsheet on demand
 
@@ -59,8 +51,3 @@ summary, so the directory fills in as it is used.
 > Before nominating their students, a coordinator opens a partner's factsheet to
 > confirm the spring nomination deadline.
 
-??? note "Internal details (AroundLink team)"
-    Complements the bulk `ewp:atlas:sync` sync. Requires your institution to have an
-    EWP HEI id. A successful lookup stamps `factsheetSyncedAt`; the record is not
-    persisted beyond that summary. Route: `/mobility/atlas/hei/{heiId}`
-    (`AtlasController`).

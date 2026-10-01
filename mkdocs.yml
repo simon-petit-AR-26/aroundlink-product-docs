@@ -98,6 +98,7 @@ plugins:
             Partenaires &amp; accords: Partners &amp; agreements
             Distribution des places: Place distribution
             Campagnes de mobilité: Mobility campaigns
+            Agenda: Agenda
             Documents &amp; validation: Documents &amp; validation
             Bourse de mobilité: Mobility grants
             Communications: Communications
@@ -105,6 +106,8 @@ plugins:
             Paramètres &amp; équipe: Settings &amp; team
             Découverte &amp; candidature: Discover &amp; apply
             Pendant &amp; après la mobilité: During &amp; after mobility
+            Une mobilité de bout en bout: A mobility from end to end
+            Quand quelque chose ne passe pas: When something will not go through
             Glossaire: Glossary
   # Screenshots open full size on click — an interface capture is unreadable
   # at page width.
@@ -124,12 +127,14 @@ plugins:
 
 nav:
   - Accueil: index.md
+  - Une mobilité de bout en bout: parcours-complet.md
   - Espace établissement:
       - Tableaux de bord: etablissement/dashboards.md
       - Étudiants: etablissement/etudiants.md
       - Partenaires &amp; accords: etablissement/partenaires.md
       - Distribution des places: etablissement/accords.md
       - Campagnes de mobilité: etablissement/campagnes.md
+      - Agenda: etablissement/agenda.md
       - Documents &amp; validation: etablissement/documents.md
       - Bourse de mobilité: etablissement/bourse.md
       - Communications: etablissement/communications.md
@@ -150,4 +155,5 @@ nav:
       - Architecture &amp; technologies: plateforme/architecture.md
       - Sécurité &amp; données: plateforme/securite.md
   - Annexes:
+      - Quand quelque chose ne passe pas: blocages.md
       - Glossaire: annexes/glossaire.md

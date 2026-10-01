@@ -46,13 +46,6 @@ balance, consolidated at the institution level (all campuses combined).
 > The coordinator records a €120,000 allocation; as grants are created, the dashboard
 > shows €80,000 committed, €45,000 paid, €40,000 remaining.
 
-??? note "Internal details (AroundLink team)"
-    The summary consolidates: allocation (sum of the lines of all campuses), committed
-    amount (sum of attributed amounts of non-draft grants), paid amount (advance +
-    balance), remaining (allocation − committed), number of cases awaiting documents.
-    Entry is deterministic: it updates the institution's existing line (attached to the
-    main campus at creation) to avoid any duplicate. BM year format: `YYYY-YYYY`. Line
-    locking is available for concurrent checks.
 
 ## Grant management and lifecycle
 
@@ -75,19 +68,6 @@ closes once all final documents are received.
 > to "active", then closes itself once the certificate of attendance, the transcript and
 > the final report are received.
 
-??? note "Internal details (AroundLink team)"
-    Statuses (`GrantStatusEnum`): draft, ga_pending, active, docs_pending, closed. A new
-    case always starts in ga_pending (any status sent is ignored). Automatic transitions
-    (`GrantDocumentSyncer`) chained in one pass: ga_pending → active (grant agreement + LA
-    signed + advance paid); active → docs_pending (end date passed); docs_pending → closed
-    (all final documents received, ToR and final report backed by a validated file); back
-    to docs_pending if a document disappears.
-
-    Checklist of 7 milestones split by stage: before (grant agreement, LA, language test),
-    start (arrival), end (certificate of attendance, ToR, final report). One record per
-    (student, year). Deletion is only possible while no funds are committed (ga_pending
-    status). Additional Mobility Tool+ fields: EQF level and teaching language (carried
-    from the agreement), OLS scores, special needs, fewer opportunities.
 
 ## Budget safeguards
 
@@ -106,11 +86,6 @@ or clearing it always remains possible.
 > Two coordinators try at the same time to add €5,000 grants when only €6,000 remain: the
 > first goes through, the second is rejected with "insufficient budget".
 
-??? note "Internal details (AroundLink team)"
-    Draft or amount-less grants do not touch the budget. Two distinct messages: "no
-    allocation configured…" and "insufficient budget…". On edit, only the additional
-    commitment (new − old) is checked. Persistence happens under a budget lock to
-    serialize concurrent creations.
 
 ## Payment conditions
 
@@ -131,11 +106,6 @@ total paid does not exceed the attributed amount.
 > "Advance payment blocked — the grant agreement and the learning agreement must be signed
 > first".
 
-??? note "Internal details (AroundLink team)"
-    Evaluated after all changes to the record, which allows signing the grant
-    agreement/LA and entering the advance in the same save. Document locks apply only to
-    increases in the paid amount: a downward correction or a clearing remains permitted.
-    Coherence (advance + balance) ≤ attributed amount.
 
 ## Grant amount calculation
 
@@ -155,12 +125,6 @@ intensive programme, a daily rate to the duration in days.
 > The coordinator enters a study mobility to Germany from 01/09 to 31/12; the form
 > instantly shows the suggested amount, computed from the country-group rate and 4 months.
 
-??? note "Internal details (AroundLink team)"
-    SMS/SMP: monthly rate × rounded months (calendar months + 1 if residual days > 15).
-    BIP: daily rate × inclusive days (end − start + 1). Rates are read from the `bm_rates`
-    table (per country and year, `YYYY-YYYY` format), which allows an annual update without
-    redeployment. An amount can only be calculated if a rate is configured for the country
-    and the year.
 
 ## Grant CSV import
 
@@ -179,13 +143,6 @@ others from being imported.
 > The coordinator imports 40 grants from a spreadsheet; 3 lines flag a breach of the
 > allocation and are set aside, 37 are created.
 
-??? note "Internal details (AroundLink team)"
-    Status is not controllable on import: every imported grant starts in ga_pending.
-    Automatic delimiter detection (`, ; tab`), UTF-8 BOM handling, empty amount →
-    calculated suggestion. Cumulative budget safeguard: the import tracks consumption line
-    by line and refuses a line that would push the remaining balance below zero. Stateless
-    import (the file is re-parsed at confirmation); each valid line is persisted in its own
-    transaction.
 
 ## Export (Beneficiary Module) and audit log
 
@@ -204,11 +161,6 @@ with its author and date.
 > At reporting time, the coordinator exports the year's grants to report them into the
 > Beneficiary Module, and pulls the audit log for the internal auditor.
 
-??? note "Internal details (AroundLink team)"
-    The export reuses the grant serialization and resolvers (official identity via the ECHE
-    registry, ISCED subject area, great-circle distance → Erasmus+ band, EQF→BM study-level
-    codes, activity type, long-term/BIP/doctoral/international indicators). Streamed
-    responses, always scoped to one year. Formula-injection neutralisation on text cells.
 
 ## Eligible-student picker
 
@@ -226,8 +178,3 @@ institution, and an indication of whether they already have a grant.
 > In the "new grant" window, the coordinator sees only the 22 eligible students; 3 already
 > have a grant and are flagged as such.
 
-??? note "Internal details (AroundLink team)"
-    Eligibility filter (`GrantEligibilityResolver`): excludes students without an active
-    affectation or whose destination is not covered by the scale. Each entry carries the
-    suggested mobility type, the host institution and the `has_grant` indicator. Sorted by
-    name, no date pre-fill (entered manually).

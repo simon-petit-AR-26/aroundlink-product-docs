@@ -34,12 +34,6 @@ categories and sub-categories.
     The documents and resources you make visible appear in the "Resources" area of
     the student portal — see the student-portal documentation.
 
-??? note "Internal details (AroundLink team)"
-    URL prefix kept at `/mobility/resource-hub` (backward compatibility). Content
-    blocks (`UniversityCms`) attach to a `CmsSubCategory` and then a `CmsCategory`
-    (categories seeded by migration, not fixtures — a fixtures reload purges them).
-    `Faq` and `UniversityLink` carry `visibilityAudiences` (incoming / outgoing /
-    mobility_free). Controller: `MyInstitutionController`. AROUNDLINK-380 / -402.
 
 ### Factsheet, courses, links, library and FAQ
 
@@ -81,7 +75,3 @@ each contribution; accepted, public reviews then surface to students.
 > A student back from Antalya leaves a 4-star review with photos; the coordinator
 > approves it, and it shows on the Antalya page for next year's applicants.
 
-??? note "Internal details (AroundLink team)"
-    `Feedback` entity (+ `FeedbackHistory`, `FeedbackPhoto`) with `FeedbackStatusEnum`
-    and an `isPublic` flag. Accept / refuse actions in `MyInstitutionController`
-    (feedback sub-tab). AROUNDLINK-548.

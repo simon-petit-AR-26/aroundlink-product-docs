@@ -56,27 +56,39 @@ synchronisation**: AroundLink permissions are granted inside AroundLink.
 
 ### The sign-in journey
 
-1. The user types their work email address.
-2. AroundLink recognises the domain and determines the institution's sign-in
-   mode.
-3. Depending on the configuration, they are sent to their identity provider —
-   where **your** rules apply (password, MFA, conditional access) — or they type
-   their AroundLink password.
+The **"Sign in with Microsoft"** button sits on the home page, for everyone, permanently.
+There is nothing to look for and nothing to declare upfront.
 
-There is no single sign-on button to hunt for: the email address alone routes
-the user.
+What happens next depends on one thing only: **is the Microsoft account linked to an
+AroundLink account?**
+
+1. **Yes** — the user gets in. Your directory's rules apply along the way (password,
+   multi-factor, conditional access): they are yours, not ours.
+2. **No** — entry is refused, with the explanation: sign in with a password first, then link
+   the account from your profile.
+
+Recognition is on **the linked account**, never on the email address alone. That is what
+makes it safe to open Microsoft sign-in to everyone with no upfront check.
 
 ### Settings, per institution
 
+In the common case there are **no settings**: each person links their own account. The
+settings below concern only institutions that want to **mandate** single sign-on.
+
 | Setting | Effect |
 | --- | --- |
-| **Enabled** | Opens single sign-on for the institution. |
-| **Strict mode** | Removes password sign-in: the identity provider becomes the only way in. |
-| **Allowed email domains** | Whitelist of accepted domains, on top of the membership check. Mandatory once enabled. |
+| **Enable** | Your users are linked automatically at first sign-in, from their address. |
+| **Strict mode** | Removes password sign-in: your directory becomes the only way in. |
+| **Allowed email domains** | The domains whose addresses trigger that automatic linking. Required as soon as you enable. |
 
-!!! warning "Do not start with strict mode"
-    Strict mode removes the password fallback. Turn it on only after checking
-    that at least one account really signs in through single sign-on.
+!!! danger "Why domains are required"
+    With no domain declared, nobody is linked at first sign-in. Combined with strict mode,
+    which removes the password, your users would be locked out. The platform therefore
+    refuses an enabled configuration with no domain.
+
+!!! warning "Do not turn on strict mode first"
+    Strict mode removes the password fallback. Turn it on only after checking that at least
+    one account really gets in through single sign-on.
 
 ### Leavers and joiners
 

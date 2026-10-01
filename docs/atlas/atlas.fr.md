@@ -35,15 +35,6 @@ modifie de fiche.
 
 *La même recherche en vue cartes : chaque établissement avec son pays, son type et son raccordement au réseau EWP.*
 
-??? note "Détails internes (équipe AroundLink)"
-    L'annuaire est construit à partir de registres ouverts (ROR / Wikidata) et
-    enrichi par AroundLink. Données servies côté client depuis l'API JSON
-    `/mobility/api/atlas/*` (lecture, `ROLE_MOBILITY`). Statut réseau par ligne :
-    partenaire / synced / declared / none. La vue carte est plafonnée (avec filtrage
-    par cadre de vue : zoomer pour voir davantage) ; les pages de navigation par
-    pays/type sont mises en cache 1 h ; le repérage « partenaire » est calculé à
-    chaque requête. Contrôleurs : `AtlasController` (page), `AtlasApiController`
-    (API). AROUNDLINK-324 / -492 / -493.
 
 ## Factsheet en direct à la demande
 
@@ -63,8 +54,3 @@ se remplit au fur et à mesure.
 > Avant de nominer ses étudiants, un coordinateur ouvre la factsheet d'un partenaire
 > pour confirmer la date limite de nomination du printemps.
 
-??? note "Détails internes (équipe AroundLink)"
-    Complète la synchronisation groupée `ewp:atlas:sync`. Nécessite que votre
-    établissement dispose d'un identifiant HEI EWP. Une consultation réussie estampille
-    `factsheetSyncedAt` ; la fiche n'est pas persistée au-delà de ce résumé.
-    Route : `/mobility/atlas/hei/{heiId}` (`AtlasController`).
