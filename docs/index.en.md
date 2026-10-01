@@ -25,6 +25,9 @@ This documentation lists **every feature** of the tool and, for each one, its
     **The AroundLink website**: [aroundlink.com](https://aroundlink.com) — the product
     presentation, and how to reach us.
 
+    **A meeting**: [thirty minutes with our team](https://cal.com/simon-petit-aroundlink/30minds) — to talk about your own
+    institution rather than hunting for the answer page by page.
+
     **This documentation** describes what the tool does; it does not replace the application.
 
 ## The three spaces

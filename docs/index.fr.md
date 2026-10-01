@@ -28,6 +28,9 @@ chacune, sa **valeur métier**. Elle s'adresse à vous :
     **Le site AroundLink** : [aroundlink.com](https://aroundlink.com) — la présentation du
     produit, et le moyen de nous joindre.
 
+    **Un rendez-vous** : [trente minutes avec notre équipe](https://cal.com/simon-petit-aroundlink/30minds) — pour parler de votre
+    établissement plutôt que de chercher la réponse page par page.
+
     **Cette documentation** décrit ce que fait l'outil ; elle ne remplace pas l'application.
 
 ## Les trois espaces

@@ -100,7 +100,12 @@
     if (recherche) { barre.insertBefore(a, recherche); } else { barre.appendChild(a); }
   }
 
-  if (document.readyState === "loading") {
+  // Le thème reconstruit son en-tête après le chargement — un bouton posé trop tôt
+  // disparaît avec. `document$` est le signal que Material émet une fois la page prête,
+  // et à chaque changement de page : on s'y accroche plutôt que de deviner le moment.
+  if (window.document$ && typeof window.document$.subscribe === "function") {
+    window.document$.subscribe(poserBouton);
+  } else if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", poserBouton);
   } else {
     poserBouton();

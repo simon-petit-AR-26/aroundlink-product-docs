@@ -28,6 +28,9 @@ una, su **valor para su trabajo**. Está dirigida a usted:
     **El sitio AroundLink**: [aroundlink.com](https://aroundlink.com) — la presentación
     del producto, y la forma de contactarnos.
 
+    **Una cita**: [treinta minutos con nuestro equipo](https://cal.com/simon-petit-aroundlink/30minds) — para hablar de su propia
+    institución en lugar de buscar la respuesta página por página.
+
     **Esta documentación** describe lo que hace la herramienta; no sustituye a la
     aplicación.
 
