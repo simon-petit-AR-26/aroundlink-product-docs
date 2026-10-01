@@ -12,7 +12,6 @@ etudiant-vue-ensemble.png	/students/:id	2026-08-31
 etudiant-documents.png	/students/:id/documents	2026-08-31
 validations-hub.png	/validations	2026-08-31
 campagnes-liste.png	/campaigns	2026-08-31
-campagne-suivi-statistiques.png	/campaigns/:id/track	2026-08-31
 partenaires-contacts.png	/institutions/contacts	2026-08-31
 accords-liste.png	/institutions/agreements	2026-08-31
 partenaire-informations.png	/institutions/:id	2026-08-31
