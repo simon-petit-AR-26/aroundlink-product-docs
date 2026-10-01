@@ -267,7 +267,9 @@ being cut.
 
 ![The printed statistics report](../assets/screenshots/campagne-statistiques-rapport.png)
 
-*The report as it comes out: the campaign's settings at the top, the four figures, the rank of wish obtained, the reasons for not being placed, and the breakdowns.*
+*Both pages of the report as it comes out: the campaign's settings at the top, the four figures, the rank of wish obtained and the reasons for not being placed; then tension destination by destination.*
+
+[:material-file-pdf-box: **Download a sample report**](../assets/exemples/aroundlink-statistiques-campagne.pdf){ .md-button } — PDF, 2 pages, demonstration data.
 
 **The data export.** Alongside the report, a three-sheet workbook:
 
