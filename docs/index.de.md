@@ -28,6 +28,9 @@ Diese Dokumentation erfasst **alle Funktionen** des Werkzeugs und zu jeder ihren
     **Die AroundLink-Website**: [aroundlink.com](https://aroundlink.com) — die
     Produktvorstellung und der Weg, uns zu erreichen.
 
+    **Ein Termin**: [dreißig Minuten mit unserem Team](https://cal.com/simon-petit-aroundlink/30minds) — um über Ihre eigene
+    Hochschule zu sprechen, statt die Antwort Seite für Seite zu suchen.
+
     **Diese Dokumentation** beschreibt, was das Werkzeug tut; sie ersetzt die Anwendung
     nicht.
 
