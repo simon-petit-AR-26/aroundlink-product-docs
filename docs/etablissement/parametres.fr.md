@@ -47,6 +47,10 @@ le sien : son propre campus reste affiché, sans être demandable.
 Éteindre l'interrupteur retire le campus des destinations. Vous pouvez le rallumer : la
 fiche est conservée, elle n'est pas refaite.
 
+![Vos campus et leurs interrupteurs](../assets/screenshots/mon-etablissement-campus.png)
+
+*Vos campus, chacun avec son interrupteur. Celui qui est allumé porte la pastille « Destination » : il est devenu une destination comme une autre.*
+
 **Cas d'usage.**
 > L'école a trois campus. Elle les ouvre tous les trois, et ses étudiants de première année
 > peuvent passer un semestre sur un autre campus sans sortir du même processus de campagne
@@ -209,6 +213,14 @@ opposées.
 | **Où elle apparaît** | Vos listes, vos filtres de campagne | Vos listes **et** l'écran de recherche de destination de l'étudiant |
 | **« Match my profile »** | Sans effet | Présélectionne les valeurs que l'étudiant porte |
 | **Portées possibles** | Général, Étudiant, Établissement | Étudiants, Établissements |
+
+![Poser des filtres étudiants sur une sélection](../assets/screenshots/partenaires-filtres-etudiants.png)
+
+*Les filtres étudiants posés sur une sélection d'établissements — ce sont eux que vos étudiants retrouveront dans leur recherche.*
+
+![Poser des tags sur la même sélection](../assets/screenshots/partenaires-tags.png)
+
+*Les tags, au même endroit et sur la même sélection — mais eux ne sortent pas de votre établissement.*
 
 La règle de décision tient en une question : **qui doit voir cette valeur ?**
 

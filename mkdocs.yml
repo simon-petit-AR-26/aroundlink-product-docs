@@ -1,7 +1,10 @@
 site_name: AroundLink — Documentation produit
 site_description: Le recensement des fonctionnalités d'AroundLink et de leur valeur métier.
 site_author: AroundLink
-copyright: © AroundLink
+copyright: >
+  © AroundLink —
+  <a href="https://aroundlink.com">aroundlink.com</a> ·
+  <a href="https://app.aroundlink.com">Accéder à l'application</a>
 
 # ⚠️  Publié via GitHub Pages. Ne jamais mettre de secrets ici ni dans les pages.
 # site_url est renseigné automatiquement par `mkdocs gh-deploy`.
@@ -41,6 +44,15 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Passer en thème clair
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://aroundlink.com
+      name: Site AroundLink
+    - icon: fontawesome/solid/arrow-right-to-bracket
+      link: https://app.aroundlink.com
+      name: Accéder à l'application
 
 extra_css:
   - assets/extra.css

@@ -21,6 +21,15 @@ chacune, sa **valeur métier**. Elle s'adresse à vous :
     ce qu'il faut savoir avant d'activer un réglage, et les pièges que l'on ne
     voit qu'une fois dedans.
 
+!!! tip "Les adresses utiles"
+    **L'application** : [app.aroundlink.com](https://app.aroundlink.com) — c'est là que vous
+    travaillez au quotidien.
+
+    **Le site AroundLink** : [aroundlink.com](https://aroundlink.com) — la présentation du
+    produit, et le moyen de nous joindre.
+
+    **Cette documentation** décrit ce que fait l'outil ; elle ne remplace pas l'application.
+
 ## Les trois espaces
 
 <div class="grid cards" markdown>

@@ -33,7 +33,7 @@ transition.
 
 ![The sign-in screen with single sign-on](../assets/screenshots/connexion.png)
 
-*The sign-in screen as your users see it: password sign-in stays available, and the button at the bottom opens authentication through the university account. Once single sign-on is enforced, only that button remains.*
+*The sign-in screen: the password, and "Sign in with Microsoft", offered to everyone at all times. There is no account creation — access is opened by the international office.*
 
 ## What holds for every provider
 

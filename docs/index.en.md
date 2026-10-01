@@ -18,6 +18,15 @@ This documentation lists **every feature** of the tool and, for each one, its
     Every feature follows the same format: **what it is for**, **who it is for**,
     **how it works**, and a concrete **use case**. Call-outs flag what you should
     know before turning a setting on, and the traps you only see once you are in.
+!!! tip "Useful addresses"
+    **The application**: [app.aroundlink.com](https://app.aroundlink.com) — where you work
+    day to day.
+
+    **The AroundLink website**: [aroundlink.com](https://aroundlink.com) — the product
+    presentation, and how to reach us.
+
+    **This documentation** describes what the tool does; it does not replace the application.
+
 ## The three spaces
 
 <div class="grid cards" markdown>

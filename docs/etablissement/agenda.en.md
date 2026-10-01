@@ -31,6 +31,10 @@ Filters stack, and the filter bar stays in view as the list scrolls.
 You can also **add a date** by hand, for what exists nowhere else: a committee meeting, an
 internal deadline.
 
+![The agenda in month view](../assets/screenshots/agenda-mois.png)
+
+*The current month, each date carrying its family's colour. At the top, the filters that stack and the button to subscribe from your own calendar.*
+
 ## Finding your dates in Outlook
 
 **What it's for.** Reading AroundLink's dates from the calendar you already use, without
