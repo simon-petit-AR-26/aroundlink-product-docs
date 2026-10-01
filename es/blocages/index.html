@@ -1,0 +1,2339 @@
+<!DOCTYPE html><html lang="es" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Le recensement des fonctionnalités d'AroundLink et de leur valeur métier.">
+      
+      
+        <meta name="author" content="AroundLink">
+      
+      
+      
+        <link rel="prev" href="../plateforme/securite/">
+      
+      
+        <link rel="next" href="../annexes/glossaire/">
+      
+      
+        
+          <link rel="alternate" href="../../blocages/" hreflang="fr">
+        
+          <link rel="alternate" href="../../en/blocages/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="es">
+        
+          <link rel="alternate" href="../../it/blocages/" hreflang="it">
+        
+          <link rel="alternate" href="../../de/blocages/" hreflang="de">
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Cuando algo no funciona - AroundLink — Documentation produit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Plus Jakarta Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quand-quelque-chose-ne-passe-pas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../" title="AroundLink — Documentation produit" class="md-header__button md-logo" aria-label="AroundLink — Documentation produit" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AroundLink — Documentation produit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cuando algo no funciona
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Passer en thème sombre" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer en thème sombre" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Passer en thème clair" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer en thème clair" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../blocages/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/blocages/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../it/blocages/" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../de/blocages/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard="" data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="AroundLink — Documentation produit" class="md-nav__button md-logo" aria-label="AroundLink — Documentation produit" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    AroundLink — Documentation produit
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parcours-complet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Una movilidad de principio a fin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Espacio institución
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Espacio institución
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Panel de control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/etudiants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estudiantes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/partenaires/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Socios y acuerdos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/accords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Distribución de plazas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/campagnes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Campañas de movilidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/agenda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agenda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acogida de entrantes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentos y validación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/bourse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Becas de movilidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/communications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comunicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/mon-etablissement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mi institución
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etablissement/parametres/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ajustes y equipo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portal del estudiante
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Portal del estudiante
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etudiant/decouverte-candidature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Descubrir y solicitar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etudiant/pendant-apres-mobilite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Durante y después
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atlas/atlas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atlas — Directorio mundial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Red EWP
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Red EWP
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ewp/ewp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visión general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ewp/reference-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencia de API (TI)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plataforma y seguridad
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plataforma y seguridad
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plateforme/plateforme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visión general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2">
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio de sesión único (TI)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Inicio de sesión único (TI)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plateforme/sso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visión general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plateforme/sso-microsoft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Entra ID
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plateforme/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitectura y tecnología
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plateforme/securite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Seguridad y datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cuando algo no funciona
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cuando algo no funciona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#cote-etudiant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté étudiant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté étudiant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-vois-aucune-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne vois aucune campagne »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-valider-mes-vux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas valider mes vœux »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-trouve-aucune-destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne trouve aucune destination »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-vois-plus-mon-classement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne vois plus mon classement »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-nai-pas-recu-mes-acces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je n'ai pas reçu mes accès »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cote-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté campagne
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté campagne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-tour-daffectation-refuse-de-demarrer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Le tour d'affectation refuse de démarrer »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-supprimer-cette-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas supprimer cette campagne »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-rouvrir-cette-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas rouvrir cette campagne »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ma-campagne-sest-fermee-toute-seule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Ma campagne s'est fermée toute seule »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mes-compteurs-de-places-ne-disent-pas-la-meme-chose-que-mon-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Mes compteurs de places ne disent pas la même chose que mon export »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cote-partenaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté partenaire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté partenaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-relancer-ce-partenaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas relancer ce partenaire »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-nominer-cet-etudiant-sur-cet-accord" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas nominer cet étudiant sur cet accord »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ce-partenaire-napparait-pas-dans-ma-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Ce partenaire n'apparaît pas dans ma campagne »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-refuser-cette-nomination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas refuser cette nomination »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cote-acces-et-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté accès et permissions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté accès et permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cet-ecran-est-en-lecture-seule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Cet écran est en lecture seule »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cet-etudiant-est-hors-de-mon-perimetre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Cet étudiant est hors de mon périmètre »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#une-partie-de-ma-selection-na-pas-ete-traitee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Une partie de ma sélection n'a pas été traitée »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-me-connecter-avec-mon-compte-de-letablissement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas me connecter avec mon compte de l'établissement »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cote-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté documents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté documents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-enregistrer-ce-score-de-langue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas enregistrer ce score de langue »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-me-demande-un-motif-pour-modifier-le-contrat-pedagogique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « On me demande un motif pour modifier le contrat pédagogique »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../annexes/glossaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#cote-etudiant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté étudiant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté étudiant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-vois-aucune-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne vois aucune campagne »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-valider-mes-vux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas valider mes vœux »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-trouve-aucune-destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne trouve aucune destination »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-vois-plus-mon-classement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne vois plus mon classement »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-nai-pas-recu-mes-acces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je n'ai pas reçu mes accès »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cote-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté campagne
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté campagne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-tour-daffectation-refuse-de-demarrer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Le tour d'affectation refuse de démarrer »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-supprimer-cette-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas supprimer cette campagne »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-rouvrir-cette-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas rouvrir cette campagne »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ma-campagne-sest-fermee-toute-seule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Ma campagne s'est fermée toute seule »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mes-compteurs-de-places-ne-disent-pas-la-meme-chose-que-mon-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Mes compteurs de places ne disent pas la même chose que mon export »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cote-partenaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté partenaire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté partenaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-relancer-ce-partenaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas relancer ce partenaire »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-nominer-cet-etudiant-sur-cet-accord" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas nominer cet étudiant sur cet accord »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ce-partenaire-napparait-pas-dans-ma-campagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Ce partenaire n'apparaît pas dans ma campagne »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-refuser-cette-nomination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas refuser cette nomination »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cote-acces-et-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté accès et permissions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté accès et permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cet-ecran-est-en-lecture-seule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Cet écran est en lecture seule »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cet-etudiant-est-hors-de-mon-perimetre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Cet étudiant est hors de mon périmètre »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#une-partie-de-ma-selection-na-pas-ete-traitee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Une partie de ma sélection n'a pas été traitée »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-me-connecter-avec-mon-compte-de-letablissement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas me connecter avec mon compte de l'établissement »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cote-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Côté documents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Côté documents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#je-ne-peux-pas-enregistrer-ce-score-de-langue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « Je ne peux pas enregistrer ce score de langue »
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-me-demande-un-motif-pour-modifier-le-contrat-pedagogique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        « On me demande un motif pour modifier le contrat pédagogique »
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="quand-quelque-chose-ne-passe-pas">Quand quelque chose ne passe pas<a class="headerlink" href="#quand-quelque-chose-ne-passe-pas" title="Permanent link">¶</a></h1>
+<p>Les situations qu'on rencontre vraiment, avec leur cause et ce qu'il faut faire. Elles ont
+presque toutes la même origine : <strong>une condition posée en amont n'est pas remplie</strong>, et
+l'écran refuse plutôt que de deviner.</p>
+<h2 id="cote-etudiant">Côté étudiant<a class="headerlink" href="#cote-etudiant" title="Permanent link">¶</a></h2>
+<h3 id="je-ne-vois-aucune-campagne">« Je ne vois aucune campagne »<a class="headerlink" href="#je-ne-vois-aucune-campagne" title="Permanent link">¶</a></h3>
+<p>Trois causes possibles, dans cet ordre de fréquence.</p>
+<p><strong>La campagne n'est pas ouverte.</strong> Seul l'état <strong>Ouverte</strong> accepte des vœux. Une campagne
+« Prête » est visible de vous, pas de vos étudiants.</p>
+<p><strong>L'étudiant ne fait pas partie du vivier.</strong> Les critères de la campagne — niveau, parcours,
+campus, tags, filtres — ne le retiennent pas. Ouvrez la campagne, regardez la liste des
+participants : s'il n'y est pas, ajoutez-le à la main.</p>
+<p><strong>L'étudiant n'a pas de profil.</strong> Sans dossier, il n'existe pour aucune campagne.</p>
+<h3 id="je-ne-peux-pas-valider-mes-vux">« Je ne peux pas valider mes vœux »<a class="headerlink" href="#je-ne-peux-pas-valider-mes-vux" title="Permanent link">¶</a></h3>
+<p>Vous avez posé un <strong>minimum de vœux</strong> et il ne l'a pas atteint. Le minimum bloque autant que
+le maximum.</p>
+<h3 id="je-ne-trouve-aucune-destination">« Je ne trouve aucune destination »<a class="headerlink" href="#je-ne-trouve-aucune-destination" title="Permanent link">¶</a></h3>
+<p>Le vivier de destinations de la campagne est vide, ou aucune place n'est posée sur les
+accords qu'il retient. Vérifiez la matrice des places avant de chercher ailleurs : une
+destination sans place ne s'affiche pas.</p>
+<p>Vérifiez aussi la <strong>période</strong> : une place existe toujours pour une période donnée.</p>
+<h3 id="je-ne-vois-plus-mon-classement">« Je ne vois plus mon classement »<a class="headerlink" href="#je-ne-vois-plus-mon-classement" title="Permanent link">¶</a></h3>
+<p>C'est volontaire, si votre établissement a masqué le classement aux étudiants. Le réglage
+est dans <a href="../etablissement/parametres/">Ce que vos étudiants voient</a> — vous et votre équipe
+continuez de le voir.</p>
+<h3 id="je-nai-pas-recu-mes-acces">« Je n'ai pas reçu mes accès »<a class="headerlink" href="#je-nai-pas-recu-mes-acces" title="Permanent link">¶</a></h3>
+<p>Un accès ouvert n'est pas un accès reçu. Regardez la colonne d'état de l'accès sur votre
+liste d'étudiants : elle dit s'il est parti et quand. Et la colonne <strong>Connected</strong> dit s'il
+s'est déjà connecté — ce sont deux questions différentes.</p>
+<h2 id="cote-campagne">Côté campagne<a class="headerlink" href="#cote-campagne" title="Permanent link">¶</a></h2>
+<h3 id="le-tour-daffectation-refuse-de-demarrer">« Le tour d'affectation refuse de démarrer »<a class="headerlink" href="#le-tour-daffectation-refuse-de-demarrer" title="Permanent link">¶</a></h3>
+<p>C'est le blocage le plus fréquent, et il est toujours expliqué : le compte rendu <strong>nomme</strong>
+les étudiants qui bloquent et la raison.</p>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Ce qu'il faut faire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L'étudiant n'a <strong>pas de parcours</strong></td>
+<td>Rattachez-le à un parcours. Si votre établissement n'en utilise pas, créez-en un par niveau.</td>
+</tr>
+<tr>
+<td>L'étudiant n'a <strong>pas de classement</strong></td>
+<td>Importez le classement avant de relancer. Le tour ne le fabrique pas.</td>
+</tr>
+<tr>
+<td>L'étudiant n'a <strong>pas de profil</strong></td>
+<td>Il n'a rien à placer.</td>
+</tr>
+<tr>
+<td>Son <strong>dossier est incomplet</strong></td>
+<td>Complétez-le, ou réglez la campagne sur « signaler » plutôt que « bloquer ».</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Le tour n'est pas un geste unique</p>
+<p>Corrigez ce qui bloque et relancez-le autant de fois que nécessaire.</p>
+</div>
+<h3 id="je-ne-peux-pas-supprimer-cette-campagne">« Je ne peux pas supprimer cette campagne »<a class="headerlink" href="#je-ne-peux-pas-supprimer-cette-campagne" title="Permanent link">¶</a></h3>
+<p>Seule une campagne en <strong>brouillon</strong> se supprime. Une campagne ouverte porte déjà des vœux.</p>
+<h3 id="je-ne-peux-pas-rouvrir-cette-campagne">« Je ne peux pas rouvrir cette campagne »<a class="headerlink" href="#je-ne-peux-pas-rouvrir-cette-campagne" title="Permanent link">¶</a></h3>
+<p>Seule une campagne <strong>terminée</strong> se rouvre. Et si vous la rouvrez sans repousser sa date de
+fin, elle se refermera dès le lendemain matin.</p>
+<h3 id="ma-campagne-sest-fermee-toute-seule">« Ma campagne s'est fermée toute seule »<a class="headerlink" href="#ma-campagne-sest-fermee-toute-seule" title="Permanent link">¶</a></h3>
+<p>Sa date de fin est passée. C'est le fonctionnement normal depuis septembre 2026 : le
+lendemain du dernier jour, la campagne se clôt, les vœux en brouillon deviennent des vœux et
+vous recevez le bilan. Rouvrez-la et repoussez la date si c'était prématuré.</p>
+<h3 id="mes-compteurs-de-places-ne-disent-pas-la-meme-chose-que-mon-export">« Mes compteurs de places ne disent pas la même chose que mon export »<a class="headerlink" href="#mes-compteurs-de-places-ne-disent-pas-la-meme-chose-que-mon-export" title="Permanent link">¶</a></h3>
+<p>Depuis septembre 2026, tous les compteurs de places ne portent plus que sur les mobilités
+<strong>sortantes</strong> — celles que vous envoyez. Les places que vos partenaires ouvrent chez eux ne
+gonflent plus vos totaux. Si un chiffre vous surprend, c'est probablement qu'il était faux
+avant.</p>
+<h2 id="cote-partenaire">Côté partenaire<a class="headerlink" href="#cote-partenaire" title="Permanent link">¶</a></h2>
+<h3 id="je-ne-peux-pas-relancer-ce-partenaire">« Je ne peux pas relancer ce partenaire »<a class="headerlink" href="#je-ne-peux-pas-relancer-ce-partenaire" title="Permanent link">¶</a></h3>
+<p>Une relance par vingt-quatre heures. Le bouton se grise ensuite, et il vous dira quand.</p>
+<h3 id="je-ne-peux-pas-nominer-cet-etudiant-sur-cet-accord">« Je ne peux pas nominer cet étudiant sur cet accord »<a class="headerlink" href="#je-ne-peux-pas-nominer-cet-etudiant-sur-cet-accord" title="Permanent link">¶</a></h3>
+<p>Une nomination est déjà en cours sur cet accord pour lui. Retirez-la d'abord si vous voulez
+la refaire.</p>
+<h3 id="ce-partenaire-napparait-pas-dans-ma-campagne">« Ce partenaire n'apparaît pas dans ma campagne »<a class="headerlink" href="#ce-partenaire-napparait-pas-dans-ma-campagne" title="Permanent link">¶</a></h3>
+<p>Le vivier de destinations ne le retient pas : vérifiez les types d'accord, les périodes et
+les filtres d'établissement de la campagne. Vérifiez aussi qu'il n'est pas archivé ou masqué.</p>
+<h3 id="je-ne-peux-pas-refuser-cette-nomination">« Je ne peux pas refuser cette nomination »<a class="headerlink" href="#je-ne-peux-pas-refuser-cette-nomination" title="Permanent link">¶</a></h3>
+<p>Un refus demande un motif. Il sera transmis à l'établissement qui vous a nommé l'étudiant.</p>
+<h2 id="cote-acces-et-permissions">Côté accès et permissions<a class="headerlink" href="#cote-acces-et-permissions" title="Permanent link">¶</a></h2>
+<h3 id="cet-ecran-est-en-lecture-seule">« Cet écran est en lecture seule »<a class="headerlink" href="#cet-ecran-est-en-lecture-seule" title="Permanent link">¶</a></h3>
+<p>Votre rôle vous donne le niveau <strong>Consulter</strong> sur cette section. Un bandeau le dit en haut de
+l'écran. Votre écran <a href="../etablissement/parametres/">Mes permissions</a> vous dit exactement ce
+que vous pouvez faire et sur qui.</p>
+<h3 id="cet-etudiant-est-hors-de-mon-perimetre">« Cet étudiant est hors de mon périmètre »<a class="headerlink" href="#cet-etudiant-est-hors-de-mon-perimetre" title="Permanent link">¶</a></h3>
+<p>Votre rôle est limité à une direction, un campus ou des promotions qui ne le couvrent pas.
+Ce n'est pas une panne : c'est le périmètre défini par votre administrateur.</p>
+<h3 id="une-partie-de-ma-selection-na-pas-ete-traitee">« Une partie de ma sélection n'a pas été traitée »<a class="headerlink" href="#une-partie-de-ma-selection-na-pas-ete-traitee" title="Permanent link">¶</a></h3>
+<p>Votre action portait sur des lignes hors de votre périmètre. Elles sont écartées, et
+l'écran vous dit lesquelles.</p>
+<h3 id="je-ne-peux-pas-me-connecter-avec-mon-compte-de-letablissement">« Je ne peux pas me connecter avec mon compte de l'établissement »<a class="headerlink" href="#je-ne-peux-pas-me-connecter-avec-mon-compte-de-letablissement" title="Permanent link">¶</a></h3>
+<p>L'authentification unique vérifie <strong>qui vous êtes</strong>, elle ne décide pas que vous avez le
+droit d'entrer. Votre compte doit exister dans AroundLink au préalable. Voir
+<a href="../plateforme/sso-microsoft/">Qui fournit quoi</a>.</p>
+<h2 id="cote-documents">Côté documents<a class="headerlink" href="#cote-documents" title="Permanent link">¶</a></h2>
+<h3 id="je-ne-peux-pas-enregistrer-ce-score-de-langue">« Je ne peux pas enregistrer ce score de langue »<a class="headerlink" href="#je-ne-peux-pas-enregistrer-ce-score-de-langue" title="Permanent link">¶</a></h3>
+<p>Un score demande toujours une pièce justificative. Le fichier et la date sont obligatoires.</p>
+<h3 id="on-me-demande-un-motif-pour-modifier-le-contrat-pedagogique">« On me demande un motif pour modifier le contrat pédagogique »<a class="headerlink" href="#on-me-demande-un-motif-pour-modifier-le-contrat-pedagogique" title="Permanent link">¶</a></h3>
+<p>Tout composant ajouté ou retiré après validation demande une justification. C'est une
+exigence du contrat, pas un réglage.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Última actualización">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="24 septembre 2026 15:58:31 CEST">24 septembre 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie">
+        
+          
+          <a href="../plateforme/securite/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Seguridad y datos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Seguridad y datos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../annexes/glossaire/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Glosario">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Glosario
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © AroundLink — <a href="https://aroundlink.com">aroundlink.com</a> · <a href="https://app.aroundlink.com">Accéder à l'application</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://aroundlink.com" target="_blank" rel="noopener" title="Site AroundLink" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://app.aroundlink.com" target="_blank" rel="noopener" title="Accéder à l'application" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M352 96h64c17.7 0 32 14.3 32 32v256c0 17.7-14.3 32-32 32h-64c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c53 0 96-43 96-96V128c0-53-43-96-96-96h-64c-17.7 0-32 14.3-32 32s14.3 32 32 32m-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l73.4 73.4H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h210.7l-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "search.highlight", "search.suggest", "search.share", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
