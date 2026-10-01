@@ -99,6 +99,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/etablissement/mon-etablissement/"/>
     </url>
     <url>
+        <loc>Noneetablissement/onboarding/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneetablissement/onboarding/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/etablissement/onboarding/"/>
+    </url>
+    <url>
         <loc>Noneetablissement/parametres/</loc>
         <lastmod>2026-10-01</lastmod>
         <changefreq>daily</changefreq>
@@ -272,6 +279,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/etablissement/mon-etablissement/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Noneetablissement/mon-etablissement/"/>
+    </url>
+    <url>
+        <loc>Noneen/etablissement/onboarding/</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/etablissement/onboarding/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Noneetablissement/onboarding/"/>
     </url>
     <url>
         <loc>Noneen/etablissement/parametres/</loc>
