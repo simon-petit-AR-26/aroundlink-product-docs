@@ -203,7 +203,12 @@ body, .md-typeset {
 }
 .al-rdv-entete:hover { background: rgb(255 255 255 / .14); border-color: rgb(255 255 255 / .7); }
 
-/* Sur un écran étroit, le libellé prendrait la place du titre. */
-@media screen and (max-width: 59.9em) {
+/* Entre les deux, le libellé se resserre plutôt que de disparaître : la fenêtre d'un
+   panneau latéral fait souvent moins de 960 px, et le bouton y a toute sa place. */
+@media screen and (max-width: 76.1em) {
+  .al-rdv-entete { padding: .3rem .5rem; font-size: .64rem; margin: 0 .2rem; }
+}
+/* Sur un vrai téléphone, il mangerait le titre : le lien reste en pied de page. */
+@media screen and (max-width: 44.9em) {
   .al-rdv-entete { display: none; }
 }
