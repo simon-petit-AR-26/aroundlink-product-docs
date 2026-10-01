@@ -25,35 +25,6 @@ are still attached, to prevent any loss of link.
 > to each.
 
 
-### Opening a campus as a destination
-
-**What it's for.** Offering one of your own campuses as a mobility destination — to your
-other campuses, or to your partners.
-
-**Who it's for.** <span class="al-audience">admin</span>
-
-**How it works.** A switch, in the campus list you already maintain. You turn it on, and the
-campus becomes a destination.
-
-Its record is created **from what you have already entered** — name, address, domain. There
-is no double entry, and nothing more to fill in to get started.
-
-Your campuses can then **exchange students with each other**. A student from the Lyon campus
-sees the Toulouse one like any other destination — but not their own: their campus stays
-visible without being selectable.
-
-Turning the switch off removes the campus from destinations. You can turn it back on: the
-record is kept, not rebuilt.
-
-![Your campuses and their switches](../assets/screenshots/mon-etablissement-campus.png)
-
-*Your campuses, each with its switch. The one turned on carries the "Destination" badge: it has become a destination like any other.*
-
-**Use case.**
-> The school has three campuses. It opens all three, and its first-year students can spend a
-> semester on another campus without leaving the same campaign process they would use for an
-> international mobility.
-
 ## Organizational units (OUnits)
 
 **What it's for.** Maintain your institution's EWP organizational units (faculties,

@@ -228,10 +228,6 @@ que ce qui est réellement ouvert aux étudiants : les partenaires masqués ou a
 exclus, tout comme les destinations sans place disponible. Les chiffres affichés
 correspondent donc à ce que l'étudiant verra.
 
-![Statistiques d'une campagne : taux d'affectation, satisfaction des vœux, entonnoir et répartitions](../assets/screenshots/campagne-suivi-statistiques.png)
-
-*Les statistiques d'une campagne : le rang de vœu obtenu par les étudiants placés, l'entonnoir de la campagne étape par étape, et les répartitions par pays, type d'accord et période.*
-
 **Cas d'usage.**
 > À mi-parcours, le coordinateur constate que 60 % des étudiants ont soumis leurs vœux et
 > que 12 sont placés ; après clôture, il exporte les affectations finales pour l'équipe

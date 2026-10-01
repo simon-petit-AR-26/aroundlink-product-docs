@@ -219,10 +219,6 @@ list.
 to students: hidden or archived partners are excluded, as are destinations with no place
 available. The figures shown match what the student will see.
 
-![Campaign statistics: assignment rate, wish satisfaction, funnel and breakdowns](../assets/screenshots/campagne-suivi-statistiques.png)
-
-*A campaign's statistics: which wish rank placed students got, the campaign funnel step by step, and breakdowns by country, agreement type and period.*
-
 **Use case.**
 > Mid-round, the coordinator sees 60% of students have submitted their wishes and 12 are
 > placed; after closing, they export the final assignments for the mobility team.
