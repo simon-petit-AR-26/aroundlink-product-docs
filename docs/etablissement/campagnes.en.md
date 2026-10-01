@@ -315,6 +315,8 @@ being cut.
 | **By university** | The same campaign seen by destination |
 | **Final assignments** | The placements retained |
 
+[:material-microsoft-excel: **Download a sample workbook**](../assets/exemples/aroundlink-statistiques-campagne.xlsx){ .md-button } — Excel, 3 sheets, identities replaced with sample values.
+
 The report is for showing, the workbook for working on: one goes to the committee, the other
 into a spreadsheet.
 

@@ -111,6 +111,7 @@ plugins:
             Distribution des places: Place distribution
             Campagnes de mobilité: Mobility campaigns
             Agenda: Agenda
+            Onboarding des entrants: Onboarding incoming students
             Documents &amp; validation: Documents &amp; validation
             Bourse de mobilité: Mobility grants
             Communications: Communications
@@ -147,6 +148,7 @@ nav:
       - Distribution des places: etablissement/accords.md
       - Campagnes de mobilité: etablissement/campagnes.md
       - Agenda: etablissement/agenda.md
+      - Onboarding des entrants: etablissement/onboarding.md
       - Documents &amp; validation: etablissement/documents.md
       - Bourse de mobilité: etablissement/bourse.md
       - Communications: etablissement/communications.md
