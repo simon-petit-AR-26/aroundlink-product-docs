@@ -1,189 +1,94 @@
-# Microsoft Entra ID — onboarding (IT departments)
+# Microsoft sign-in
 
-!!! info "Who this page is for"
-    This page is **technical**: it addresses **IT departments and infrastructure
-    teams** connecting their Microsoft directory to AroundLink. The principles
-    shared by every identity provider — account prerequisites, settings, leavers
-    and joiners — are on the [Single sign-on](sso.md) page.
+Your users — staff and students alike — can sign in to AroundLink with their **Microsoft
+account**, work or personal, with no extra password to remember.
 
-AroundLink supports **single sign-on through Microsoft Entra ID** (formerly Azure
-AD), over **OpenID Connect**. Your users sign in with their institutional
-account; no additional password is created, and no credential ever passes
-through AroundLink.
+Since September 2026, **there is nothing to configure in the common case**. Each person links
+their own account, in two clicks, from their profile.
 
-## At a glance
+## The common case: everyone links their own account
+
+**What it's for.** Signing in with one click, no password, no request to your IT department
+or to us.
+
+**Who it's for.** <span class="al-audience">every AroundLink user</span>
+
+**How it works.** In three steps.
+
+1. The user signs in to AroundLink **with their password**, as usual.
+2. From their profile, they link their Microsoft account — work or personal.
+3. From then on, the **"Sign in with Microsoft"** button on the home page lets them straight
+   in.
+
+They can unlink it whenever they want and go back to signing in with their password.
+
+!!! warning "A matching email address is never enough"
+    Sign-in recognises **the linked Microsoft account**, not the address it carries. Someone
+    turning up with a Microsoft account bearing the same email as one of your users would not
+    get in: they would see *"This Microsoft account is not linked to any AroundLink account.
+    Sign in with your password, then link it from your profile."*
+
+    That is what makes it safe to open Microsoft sign-in to everyone without checking
+    anything upfront.
+
+**The messages your users may see:**
+
+| Message | What it means |
+|---|---|
+| *This Microsoft account is not linked to any AroundLink account* | They must sign in with their password first and link their account |
+| *This Microsoft account is already linked to another AroundLink account* | A Microsoft account can serve only one AroundLink identity |
+| *This account signs in with Microsoft — there is no password to set* | The account was created under forced SSO, with no password |
+
+**Use case.**
+> A coordinator has had enough of remembering one more password. She signs in, opens her
+> profile, links her school account, and signs in with one click from that day on — without
+> having had to ask anyone for anything.
+
+## The forced-SSO case
+
+**What it's for.** Making Microsoft sign-in **the only way in** for your institution — no
+passwords to manage, and leavers handled in your directory, not with us.
+
+**Who it's for.** <span class="al-audience">IT department</span>
+
+**How it works.** This is the only case that calls for an exchange with our team. Your users
+then have nothing to link: linking happens **at their first sign-in**, automatically, from
+their email address.
+
+### What we need from you
+
+| | What | Where to find it |
+|---|---|---|
+| **1** | Your Microsoft **tenant identifier** | Microsoft Entra portal ▸ Overview ▸ Tenant ID |
+| **2** | The list of your allowed **email domains** | Only you know it |
+
+### What we do next
+
+We record your configuration and enable it. From then on, anyone from your institution
+arriving with an address on an allowed domain is linked to their AroundLink account at first
+sign-in.
+
+!!! danger "Allowed domains are not optional"
+    An enabled configuration **must** declare at least one domain. With no domain, nobody is
+    linked at first sign-in — and since forced SSO removes the password, your users would be
+    locked out. The platform therefore refuses an enabled configuration with no domain.
+
+!!! warning "Accounts must exist beforehand"
+    Single sign-on verifies **who you are**. It does not decide that you are allowed in. A
+    user who does not yet exist in AroundLink will be refused, even with a perfectly valid
+    Microsoft account. Create or import your accounts before enabling.
+
+**Use case.**
+> The university mandates its directory for every tool. Its IT department sends us the tenant
+> identifier and two domains. We enable it. The two hundred accounts already in AroundLink
+> link themselves over the first few sign-ins, with nobody having to do anything.
+
+## What we read from your directory
 
 | | |
 | --- | --- |
-| **Protocol** | OpenID Connect (Authorization Code, `response_mode=query`) |
-| **Identity provider** | Microsoft Entra ID / Azure AD, v2.0 endpoint |
-| **Scopes requested** | `openid`, `profile`, `email` — **and nothing else** |
-| **Data read** | name, email address, Microsoft object identifier (`oid`) |
-| **Data never requested** | mail, files, calendar, directory, groups, memberships |
-| **App registration to create on your side** | **none** — see below |
+| **Data read** | name, email address, Microsoft account identifier |
+| **Data not requested** | mail, files, calendar, directory, groups, memberships |
 | **Passwords** | never pass through AroundLink |
-| **Covers** | institution staff **and** students |
-
-!!! tip "The part that usually surprises people"
-    You have **no application to register** in your directory. AroundLink is
-    registered once, as a multi-tenant application. Your institution simply
-    **authorises** it inside its own directory, in one click, through a link we
-    provide.
-
-## Who provides what
-
-Connecting takes six steps, described in detail below. Here is first who holds the pen at
-each moment — the question everyone asks when opening the project.
-
-| Step | Who acts | What changes hands |
-|---|---|---|
-| 1 | **You** | Your Microsoft tenant identifier (*Tenant ID*) |
-| 2 | **You** | The list of your email domains |
-| 3 | **AroundLink** | We record your configuration and send you back an **authorisation link** |
-| 4 | **You** | A global administrator of your directory opens that link and authorises AroundLink |
-| 5 | **You** | Your users' accounts, created or imported into AroundLink |
-| 6 | **AroundLink** | Activation, then the switch to strict mode when you ask for it |
-
-**What you need to ask us for**, concretely: the authorisation link at step 3, activation at
-step 6, and the switch to strict mode the day you want to close password sign-in.
-
-**What you do not have to do**: declare an application in your directory, open a network
-flow, install anything, or send us any password.
-
-!!! tip "How long it takes"
-    Allow half a day, most of which is waiting between exchanges. The actual work on your
-    side is counted in minutes: two pieces of information to send us, one link to open.
-
-!!! warning "Step 5 is the one people forget"
-    Single sign-on **does not create accounts**. It verifies who you are; it does not decide
-    that you are allowed in. A user who does not yet exist in AroundLink will be refused,
-    even with a perfectly valid Microsoft account.
-
-## Setup procedure
-
-Allow half a day, most of which is waiting between exchanges.
-
-### Step 1 — You send us your tenant ID
-
-The *Tenant ID* of your Microsoft directory: either a GUID
-(`11111111-2222-3333-4444-555555555555`) or your verified domain
-(`your-university.edu`).
-
-Where to find it: **Microsoft Entra portal ▸ Overview ▸ Tenant ID**.
-
-!!! warning "Rejected values"
-    The generic values `common`, `organizations` and `consumers` are **refused**
-    by the platform. A specific tenant is required — that is what guarantees only
-    your users can sign in.
-
-### Step 2 — You tell us your email domains
-
-The list of domains allowed to sign in (`your-university.edu`,
-`students.your-university.edu`…). It is **mandatory**: an enabled configuration
-with no domain is refused at save time.
-
-This list is a **second line of defence**, independent of the tenant check: even
-an account from the right directory is refused if its address does not belong to
-a declared domain.
-
-### Step 3 — We record the configuration
-
-The AroundLink team enters the tenant and the domains in the admin console, then
-runs a **configuration test**: the platform queries your tenant's OpenID Connect
-discovery document and confirms it is reachable and complete. Immediate result,
-before anything is enabled.
-
-### Step 4 — Your administrator authorises AroundLink
-
-We send you an **admin consent** link prepared for your tenant. A global
-administrator of your directory opens it, reads the requested permissions
-(`openid`, `profile`, `email`) and accepts.
-
-That is the only action required on your side, and it happens **once**.
-
-Two redirect URLs are used by the flow. Their exact values are shown in the
-AroundLink admin console and are given to you at this step:
-
-| Purpose | Path |
-| --- | --- |
-| Authentication callback | `/sso/check` |
-| Admin consent callback | `/sso/consent-callback` |
-
-### Step 5 — Accounts must exist in AroundLink
-
-!!! danger "Prerequisite not to miss"
-    Single sign-on **connects** accounts, it does not **create** them. A user
-    whose account does not yet exist in AroundLink is told "your Microsoft
-    account is not provisioned" and cannot get in. Detail and consequences:
-    [Single sign-on](sso.md).
-
-On the **first** sign-in, AroundLink matches the Microsoft account to the
-existing one **by email address**, then stores the Microsoft object identifier,
-which is immutable. Later sign-ins rely on that identifier: an address change on
-your side does not break the link.
-
-### Step 6 — Enable, then optionally switch to strict mode
-
-We enable single sign-on. At this point both routes coexist: password **and**
-Microsoft.
-
-Once you have confirmed that sign-in works for your users, you can ask for
-**strict mode**, which removes password sign-in for every account of the
-institution.
-
-!!! warning "Do not start with strict mode"
-    Strict mode removes the password fallback. Turn it on only after checking
-    that at least one account really signs in through Microsoft.
-
-## Checks performed on every sign-in
-
-Each authentication goes through the following checks; failing any one of them
-stops the sign-in.
-
-- **`state` parameter** verified — protects against request forgery.
-- **Single-use `nonce`**, compared with the value issued on the way out —
-  protects against token replay.
-- **Token tenant** (`tid`) compared with the configured tenant — a token issued
-  by another directory is rejected.
-- **Object identifier** (`oid`) required — it is the stable matching key.
-- **Account membership** of the configured institution.
-- **Email domain** present in the allowed list.
-- **Initial matching refused** when no domain list is defined — the email address
-  is a value a tenant administrator can change, so it cannot bind an account on
-  its own.
-
-A link to a Microsoft account is stored **only after** every one of these checks
-has passed: a rejected user leaves nothing behind. One Microsoft account can be
-attached to a single AroundLink account, a constraint enforced in the database.
-
-## Frequently asked questions
-
-**Do we need to create an app registration?**
-No. You authorise ours, in one click.
-
-**Exactly which permissions are we granting?**
-`openid`, `profile`, `email`. No access to mail, files, calendar or directory.
-
-**Does AroundLink see our passwords?**
-Never. Authentication happens at Microsoft; we only receive a signed identity
-token.
-
-**Do our MFA and conditional access policies apply?**
-Yes, in full. Sign-in takes place on your Microsoft pages, under your rules.
-
-**Can an account from another institution get in?**
-No. Two independent barriers: the tenant that issued the token, and the allowed
-email domain list.
-
-**Can we roll back?**
-Yes. Disabling restores password sign-in.
-
-**Can we test before opening it to everyone?**
-Yes. The configuration test validates the connection without enabling anything,
-and enabling without strict mode keeps the password fallback while you check.
-
----
-
-See also: [Single sign-on — shared principles](sso.md) ·
-[Security &amp; data](securite.md) ·
-[Platform overview](plateforme.md)
+| **Application to declare on your side** | none |
+| **Scope** | institution staff **and** students |
