@@ -168,7 +168,7 @@ notifications are configurable and can be turned off by the institution.
 
 ![Placement screen: students and their wishes on the left, destinations and their places on the right](../assets/screenshots/campagne-suivi-affectation.png)
 
-*The placement screen. Ranked students with their wishes on the left, destinations and remaining places by level and period on the right. The colour code separates the term asked for, another term, a place given, and an over-capacity assignment.*
+*A campaign's tracking: at the top, what it holds, what is placed and how wishes were met; below, your students in ranking order, with their wishes as they ranked them.*
 
 **Use case.**
 > Two students rank Berlin as wish #1: the higher-ranked one (GPA) gets the proposal, the
@@ -259,10 +259,30 @@ gesture as handling one whose every wish was refused.
     A **breakdown of fewer than five students is not shown**. On a small cohort, a percentage
     is one person: it reads as a trend when it is an anecdote.
 
-**The report prints.** The header recalls the campaign's settings — year, number of wishes
-allowed, whether an incomplete file blocks, who confirms the destination, whether opting out
-is allowed — and repeats at the top of every page, with your logo and the date. Charts
-survive printing, and a block that does not fit moves to the next page instead of being cut.
+![A campaign's statistics](../assets/screenshots/campagne-statistiques.png)
+
+*The four headline figures, the wish obtained by rank, "why they are not placed", then the breakdowns by country, zone, agreement type and period — and tension destination by destination.*
+
+**The report prints.** The header recalls the campaign's settings — school year, opening
+dates, mobility type, number of wishes allowed, who confirms the destination, whether an
+incomplete file blocks — and repeats at the top of every page, with your logo and the date.
+Charts survive printing, and a block that does not fit moves to the next page instead of
+being cut.
+
+![The printed statistics report](../assets/screenshots/campagne-statistiques-rapport.png)
+
+*The report as it comes out: the campaign's settings at the top, the four figures, the rank of wish obtained, the reasons for not being placed, and the breakdowns.*
+
+**The data export.** Alongside the report, a three-sheet workbook:
+
+| Sheet | What it holds |
+|---|---|
+| **Students** | One row per student: class rank, identity, level, track, year, language scores, then **each wish** with its code, university, city, country, place type and period |
+| **By university** | The same campaign seen by destination |
+| **Final assignments** | The placements retained |
+
+The report is for showing, the workbook for working on: one goes to the committee, the other
+into a spreadsheet.
 
 **Use case.**
 > Before the committee meets, the coordinator opens the statistics, prints the report to PDF

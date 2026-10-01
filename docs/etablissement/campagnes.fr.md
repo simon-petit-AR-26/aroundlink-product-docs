@@ -175,7 +175,7 @@ l'établissement.
 
 ![Écran d'affectation : les étudiants et leurs vœux à gauche, les destinations et leurs places à droite](../assets/screenshots/campagne-suivi-affectation.png)
 
-*L'écran d'affectation. À gauche les étudiants classés avec leurs vœux, à droite les destinations et les places restantes par niveau et par période. Le code couleur distingue la période demandée, une autre période, une place attribuée et un dépassement de capacité.*
+*Le suivi d'une campagne : en tête, ce qu'elle contient, ce qui est placé et la satisfaction des vœux ; en dessous, vos étudiants dans l'ordre du classement, avec leurs vœux tels qu'ils les ont rangés.*
 
 **Cas d'usage.**
 > Deux étudiants classent Berlin en vœu n°1 : le mieux classé (GPA) reçoit la proposition,
@@ -270,10 +270,30 @@ place.
     promotion, un pourcentage est une personne : il se lit comme une tendance alors que
     c'est une anecdote.
 
-**Le rapport s'imprime.** L'en-tête rappelle les réglages de la campagne — année, nombre de
-vœux autorisés, dossier bloquant ou non, qui confirme la destination, désistement autorisé —
-et se répète en haut de chaque page, avec votre logo et la date. Les graphiques survivent à
-l'impression, et un bloc qui ne tient pas descend à la page suivante au lieu d'être coupé.
+![Les statistiques d'une campagne](../assets/screenshots/campagne-statistiques.png)
+
+*Les quatre chiffres de tête, le vœu obtenu par rang, « pourquoi ils ne sont pas placés », puis les répartitions par pays, zone, type d'accord et période — et la tension destination par destination.*
+
+**Le rapport s'imprime.** L'en-tête rappelle les réglages de la campagne — année scolaire,
+dates d'ouverture, type de mobilité, nombre de vœux autorisés, qui confirme la destination,
+dossier bloquant ou non — et se répète en haut de chaque page, avec votre logo et la date.
+Les graphiques survivent à l'impression, et un bloc qui ne tient pas descend à la page
+suivante au lieu d'être coupé.
+
+![Le rapport de statistiques imprimé](../assets/screenshots/campagne-statistiques-rapport.png)
+
+*Le rapport tel qu'il sort : les réglages de la campagne en tête, les quatre chiffres, le rang de vœu obtenu, les raisons de non-placement, et les répartitions.*
+
+**L'export de données.** À côté du rapport, un classeur de trois feuilles :
+
+| Feuille | Ce qu'elle contient |
+|---|---|
+| **Students** | Une ligne par étudiant : rang de classement, identité, niveau, parcours, année, scores de langue, puis **chaque vœu** avec son code, son université, sa ville, son pays, son type de place et sa période |
+| **By university** | La même campagne vue par destination |
+| **Final assignments** | Les affectations retenues |
+
+Le rapport sert à montrer, le classeur à retravailler : l'un part en commission, l'autre
+dans un tableur.
 
 **Cas d'usage.**
 > Avant la commission, la coordinatrice ouvre les statistiques, imprime le rapport en PDF et

@@ -45,6 +45,10 @@ visible without being selectable.
 Turning the switch off removes the campus from destinations. You can turn it back on: the
 record is kept, not rebuilt.
 
+![Your campuses and their switches](../assets/screenshots/mon-etablissement-campus.png)
+
+*Your campuses, each with its switch. The one turned on carries the "Destination" badge: it has become a destination like any other.*
+
 **Use case.**
 > The school has three campuses. It opens all three, and its first-year students can spend a
 > semester on another campus without leaving the same campaign process they would use for an
@@ -199,6 +203,14 @@ they get confused. Yet they answer opposite questions.
 | **Where it appears** | Your lists, your campaign filters | Your lists **and** the student's destination search |
 | **"Match my profile"** | No effect | Pre-selects the values the student carries |
 | **Possible scopes** | General, Student, Institution | Students, Institutions |
+
+![Applying student filters to a selection](../assets/screenshots/partenaires-filtres-etudiants.png)
+
+*Student filters applied to a selection of institutions — these are what your students will find in their search.*
+
+![Applying tags to the same selection](../assets/screenshots/partenaires-tags.png)
+
+*Tags, in the same place and on the same selection — but these never leave your institution.*
 
 The deciding question is a single one: **who needs to see this value?**
 

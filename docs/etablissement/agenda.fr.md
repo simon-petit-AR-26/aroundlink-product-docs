@@ -31,6 +31,10 @@ Les filtres se cumulent, et la barre de filtres reste sous vos yeux quand la lis
 Vous pouvez aussi **ajouter une date** à la main, pour ce qui n'existe nulle part ailleurs :
 une réunion de commission, une date limite interne.
 
+![L'agenda en vue mois](../assets/screenshots/agenda-mois.png)
+
+*Le mois en cours, chaque date portant la couleur de sa famille. En haut, les filtres qui se cumulent et le bouton d'abonnement à votre calendrier.*
+
 ## Retrouver vos dates dans Outlook
 
 **À quoi ça sert.** Consulter les dates d'AroundLink depuis le calendrier que vous utilisez

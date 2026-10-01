@@ -12,10 +12,7 @@ etudiant-vue-ensemble.png	/students/:id	2026-08-31
 etudiant-documents.png	/students/:id/documents	2026-08-31
 validations-hub.png	/validations	2026-08-31
 campagnes-liste.png	/campaigns	2026-08-31
-campagne-nominations.png	/campaigns/:id	2026-08-31
-campagne-suivi-affectation.png	/campaigns/:id/track	2026-08-31
 campagne-suivi-statistiques.png	/campaigns/:id/track	2026-08-31
-partenaires-liste.png	/institutions	2026-08-31
 partenaires-contacts.png	/institutions/contacts	2026-08-31
 accords-liste.png	/institutions/agreements	2026-08-31
 partenaire-informations.png	/institutions/:id	2026-08-31
@@ -34,8 +31,6 @@ parametres-niveaux.png	/settings/institution/academic-levels	2026-08-31
 parametres-tags.png	/settings/institution/partner-tags	2026-08-31
 parametres-types-documents.png	/settings/documents/types	2026-08-31
 parametres-modeles-documents.png	/settings/documents/templates	2026-08-31
-parametres-imports.png	/settings/integrations	2026-08-31
-connexion.png	/login	2026-08-31
 etudiant-tableau-de-bord.png	/student/dashboard	2026-08-31
 etudiant-trouver-destination.png	/student/universities	2026-08-31
 etudiant-fiche-partenaire.png	/student/universities/:id	2026-08-31
@@ -50,3 +45,14 @@ parametres-roles-comparaison.png	/settings/roles	2026-09-24
 parametres-mes-permissions.png	/settings/my-permissions	2026-09-24
 parametres-vue-etudiante.png	/settings/institution/student-view	2026-09-24
 parametres-filtres-etudiants.png	/settings/institution/student-filters	2026-09-24
+campagne-suivi-affectation.png	/campaigns/:id/track	2026-10-01
+campagne-nominations.png	/campaigns/:id	2026-10-01
+campagne-statistiques.png	/campaigns/:id/statistics	2026-10-01
+campagne-statistiques-rapport.png	/campaigns/:id/statistics	2026-10-01
+parametres-imports.png	/settings/integrations	2026-10-01
+connexion.png	/login	2026-10-01
+agenda-mois.png	/agenda	2026-10-01
+mon-etablissement-campus.png	/my-institution	2026-10-01
+partenaires-liste.png	/institutions	2026-10-01
+partenaires-filtres-etudiants.png	/institutions	2026-10-01
+partenaires-tags.png	/institutions	2026-10-01

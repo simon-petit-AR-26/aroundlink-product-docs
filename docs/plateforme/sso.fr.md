@@ -36,7 +36,7 @@ parallèle le temps de la transition.
 
 ![Écran de connexion avec l'authentification unique](../assets/screenshots/connexion.png)
 
-*L'écran de connexion tel que vos utilisateurs le voient : le mot de passe reste disponible, et le bouton du bas ouvre l'authentification par le compte de l'université. Une fois l'authentification unique imposée, seul ce bouton subsiste.*
+*L'écran de connexion : le mot de passe, et « Se connecter avec Microsoft », proposé à tout le monde en permanence. Il n'y a pas de création de compte — les accès sont ouverts par le bureau des relations internationales.*
 
 ## Ce qui vaut pour tous les fournisseurs
 
