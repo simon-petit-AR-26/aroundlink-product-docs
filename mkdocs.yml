@@ -4,7 +4,8 @@ site_author: AroundLink
 copyright: >
   © AroundLink —
   <a href="https://aroundlink.com">aroundlink.com</a> ·
-  <a href="https://app.aroundlink.com">Accéder à l'application</a>
+  <a href="https://app.aroundlink.com">Accéder à l'application</a> ·
+  <a href="https://cal.com/simon-petit-aroundlink/30minds">Prendre rendez-vous</a>
 
 # ⚠️  Publié via GitHub Pages. Ne jamais mettre de secrets ici ni dans les pages.
 # site_url est renseigné automatiquement par `mkdocs gh-deploy`.
@@ -56,6 +57,9 @@ extra:
 
 extra_css:
   - assets/extra.css
+
+extra_javascript:
+  - assets/rendez-vous.js
 
 markdown_extensions:
   - abbr
