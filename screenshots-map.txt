@@ -55,3 +55,7 @@ mon-etablissement-campus.png	/my-institution	2026-10-01
 partenaires-liste.png	/institutions	2026-10-01
 partenaires-filtres-etudiants.png	/institutions	2026-10-01
 partenaires-tags.png	/institutions	2026-10-01
+onboarding-kanban.png	/onboarding	2026-10-01
+onboarding-tableau.png	/onboarding	2026-10-01
+onboarding-sequence.png	/onboarding	2026-10-01
+onboarding-types-etape.png	/onboarding	2026-10-01

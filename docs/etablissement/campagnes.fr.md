@@ -328,6 +328,8 @@ suivante au lieu d'être coupé.
 | **By university** | La même campagne vue par destination |
 | **Final assignments** | Les affectations retenues |
 
+[:material-microsoft-excel: **Télécharger un exemple de classeur**](../assets/exemples/aroundlink-statistiques-campagne.xlsx){ .md-button } — Excel, 3 feuilles, identités remplacées par des valeurs d'exemple.
+
 Le rapport sert à montrer, le classeur à retravailler : l'un part en commission, l'autre
 dans un tableur.
 
