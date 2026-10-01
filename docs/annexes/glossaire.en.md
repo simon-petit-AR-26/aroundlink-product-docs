@@ -4,6 +4,7 @@ The acronyms and terms you meet across AroundLink and international mobility.
 
 | Term | Definition |
 | --- | --- |
+| **IR office** | The international relations office of a school or university — the team this documentation is written for. |
 | **IRO** | *International Relations Office* — the team that manages mobility at an institution. |
 | **DRI / Head of IR** | The strategic steering of international mobility. |
 | **Erasmus+** | The European Union's mobility programme, which funds student exchanges among other things. |
