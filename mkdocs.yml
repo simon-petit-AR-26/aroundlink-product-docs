@@ -30,21 +30,12 @@ theme:
     - search.suggest
     - search.share
     - content.tooltips
+  # Une seule palette, sans bascule : la place qu'occupait le thème sombre
+  # sert maintenant au bouton de prise de rendez-vous (voir rendez-vous.js).
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-night
-        name: Passer en thème sombre
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-sunny
-        name: Passer en thème clair
+    scheme: default
+    primary: custom
+    accent: custom
 
 extra:
   social:

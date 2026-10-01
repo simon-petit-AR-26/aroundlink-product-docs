@@ -49,15 +49,6 @@
 }
 
 /* ------- Palette Material : mode sombre ------- */
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        var(--al-brand);
-  --md-primary-fg-color--light: var(--al-brand-light);
-  --md-primary-fg-color--dark:  var(--al-brand-dark);
-  --md-accent-fg-color:         #7d9bea;
-  --md-typeset-a-color:         #a9bef5;   /* --color-primary-disabled */
-  --md-default-bg-color:        #0f141d;
-  --md-footer-bg-color:         #0c1017;
-}
 
 /* ------- Typographie (Plus Jakarta Sans) ------- */
 body, .md-typeset {
@@ -73,8 +64,6 @@ body, .md-typeset {
 .md-typeset h1 { font-weight: 800; color: var(--al-ink); }
 .md-typeset h2 { font-weight: 700; color: var(--al-ink); }
 .md-typeset h3 { font-weight: 700; }
-[data-md-color-scheme="slate"] .md-typeset h1,
-[data-md-color-scheme="slate"] .md-typeset h2 { color: inherit; }
 
 /* ------- En-tête ------- */
 .md-header { box-shadow: var(--al-shadow-sm); }
@@ -96,10 +85,6 @@ body, .md-typeset {
   color: var(--al-brand);
   vertical-align: baseline;
 }
-[data-md-color-scheme="slate"] .al-audience {
-  background: rgb(255 255 255 / .10);
-  color: #a9bef5;
-}
 
 /* ------- Admonitions ------- */
 .md-typeset .admonition,
@@ -117,10 +102,6 @@ body, .md-typeset {
   background: var(--al-primary-light-3);
   color: var(--al-ink-1);
 }
-[data-md-color-scheme="slate"] .md-typeset blockquote {
-  background: rgb(255 255 255 / .04);
-  color: inherit;
-}
 
 /* ------- Code ------- */
 .md-typeset code { border-radius: var(--al-radius-sm); }
@@ -137,9 +118,6 @@ body, .md-typeset {
   color: var(--al-ink);
   font-weight: 700;
 }
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
-  background: rgb(255 255 255 / .05); color: inherit;
-}
 
 /* ------- Cartes de la page d'accueil (grid cards) ------- */
 .md-typeset .grid.cards > ul > li,
@@ -153,9 +131,6 @@ body, .md-typeset {
   transform: translateY(-2px);
   box-shadow: var(--al-shadow-md);
   border-color: var(--al-accent);
-}
-[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
-  border-color: rgb(255 255 255 / .10);
 }
 
 /* ------- Boutons/CTA générés par Material ------- */
@@ -217,5 +192,18 @@ body, .md-typeset {
   .al-rdv-fond, .al-rdv { animation: none; }
 }
 
-[data-md-color-scheme="slate"] .al-rdv { background: #16202c; }
-[data-md-color-scheme="slate"] .al-rdv h2 { color: #a9bef5; }
+/* Le bouton de prise de rendez-vous, à la place qu'occupait la bascule de thème. */
+.al-rdv-entete {
+  flex-shrink: 0;
+  margin: 0 .3rem 0 .4rem; padding: .34rem .72rem;
+  border: 1px solid rgb(255 255 255 / .38); border-radius: 6px;
+  color: #fff !important; font-size: .68rem; font-weight: 700;
+  letter-spacing: .01em; white-space: nowrap; text-decoration: none;
+  transition: background .15s, border-color .15s;
+}
+.al-rdv-entete:hover { background: rgb(255 255 255 / .14); border-color: rgb(255 255 255 / .7); }
+
+/* Sur un écran étroit, le libellé prendrait la place du titre. */
+@media screen and (max-width: 59.9em) {
+  .al-rdv-entete { display: none; }
+}
