@@ -225,6 +225,42 @@ available. The figures shown match what the student will see.
 
 
 
+## Nominating to your partners
+
+**What it's for.** Officially telling the host institution you are sending them a student,
+then recording their answer.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** Each row is a student assigned to a destination. You nominate them, and
+the partner is informed. When they reply, you record their decision, stating how it reached
+you: the platform, the EWP network, an email or a phone call. A refusal comes with its
+reason.
+
+The tab appears as soon as a place is held in the campaign. You can nominate a whole
+selection in one go: the batch is processed in slices, its progress stays visible, and an
+interrupted batch resumes where it stopped instead of starting over.
+
+While the partner has not replied, two actions save you leaving the tool:
+
+- **Remind** — a reminder goes to the partner without going through your mailbox. One
+  reminder per twenty-four hours: the button greys out afterwards.
+- **Withdraw** — you cancel the nomination and say why. The partner is told no decision is
+  expected any more, and the student becomes available for another destination.
+
+![Campaign nominations screen, showing each nomination's state and confirmation channel](../assets/screenshots/campagne-nominations.png)
+
+*Each nomination's state and, for confirmed ones, how the answer came in.*
+
+**Use case.**
+> The coordinator nominates twelve students; eight confirmations come back through the
+> platform or EWP, two by phone which they record by hand, and one destination refuses for
+> lack of a place in the requested specialisation.
+
+!!! note "Document reminders"
+    Automatic reminders to students with an incomplete dossier are covered by
+    [document reminders](communications.md).
+
 ## A campaign's statistics
 
 **What it's for.** Knowing where a campaign stands, why some students are not placed, and
@@ -286,39 +322,3 @@ into a spreadsheet.
 > Before the committee meets, the coordinator opens the statistics, prints the report to PDF
 > and attaches it to the invitation. Members arrive having seen the same figures she has, and
 > the discussion is about the twelve unplaced students rather than about reading tables.
-
-## Nominating to your partners
-
-**What it's for.** Officially telling the host institution you are sending them a student,
-then recording their answer.
-
-**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
-
-**How it works.** Each row is a student assigned to a destination. You nominate them, and
-the partner is informed. When they reply, you record their decision, stating how it reached
-you: the platform, the EWP network, an email or a phone call. A refusal comes with its
-reason.
-
-The tab appears as soon as a place is held in the campaign. You can nominate a whole
-selection in one go: the batch is processed in slices, its progress stays visible, and an
-interrupted batch resumes where it stopped instead of starting over.
-
-While the partner has not replied, two actions save you leaving the tool:
-
-- **Remind** — a reminder goes to the partner without going through your mailbox. One
-  reminder per twenty-four hours: the button greys out afterwards.
-- **Withdraw** — you cancel the nomination and say why. The partner is told no decision is
-  expected any more, and the student becomes available for another destination.
-
-![Campaign nominations screen, showing each nomination's state and confirmation channel](../assets/screenshots/campagne-nominations.png)
-
-*Each nomination's state and, for confirmed ones, how the answer came in.*
-
-**Use case.**
-> The coordinator nominates twelve students; eight confirmations come back through the
-> platform or EWP, two by phone which they record by hand, and one destination refuses for
-> lack of a place in the requested specialisation.
-
-!!! note "Document reminders"
-    Automatic reminders to students with an incomplete dossier are covered by
-    [document reminders](communications.md).

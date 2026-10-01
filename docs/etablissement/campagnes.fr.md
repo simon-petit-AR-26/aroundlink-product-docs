@@ -233,6 +233,44 @@ correspondent donc à ce que l'étudiant verra.
 > que 12 sont placés ; après clôture, il exporte les affectations finales pour l'équipe
 > mobilité.
 
+## Nominations chez vos partenaires
+
+**À quoi ça sert.** Prévenir officiellement l'établissement d'accueil que vous lui envoyez
+un étudiant, puis consigner sa réponse.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Chaque ligne est un étudiant affecté à une destination. Vous le
+nominez, et le partenaire reçoit l'information. Quand il répond, vous enregistrez sa
+décision en précisant par quel canal elle vous est parvenue : la plateforme, le réseau EWP,
+un e-mail ou un appel. Un refus s'accompagne de son motif.
+
+L'onglet apparaît dès qu'une place est tenue dans la campagne. Vous pouvez nominer toute une
+sélection d'un seul geste : le lot se traite par tranches, son avancement reste visible, et
+un lot interrompu reprend là où il s'est arrêté au lieu de repartir de zéro.
+
+Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de l'outil :
+
+- **Relancer** — un rappel part chez le partenaire sans passer par votre boîte mail. Une
+  relance par vingt-quatre heures : le bouton se grise ensuite.
+- **Retirer** — vous annulez la nomination en expliquant pourquoi. Le partenaire est prévenu
+  qu'aucune décision n'est plus attendue, et l'étudiant redevient disponible pour une autre
+  destination.
+
+![Écran des nominations d'une campagne, avec l'état de chaque nomination et le canal de confirmation](../assets/screenshots/campagne-nominations.png)
+
+*L'état de chaque nomination, et pour les confirmées, comment la réponse est arrivée.*
+
+**Cas d'usage.**
+> Le coordinateur nomine douze étudiants ; huit confirmations reviennent par la plateforme
+> ou par EWP, deux par téléphone qu'il saisit à la main, et une destination refuse faute de
+> place dans la spécialité demandée.
+
+
+!!! note "Relances documentaires"
+    Les rappels automatiques aux étudiants dont le dossier est incomplet sont couverts par
+    les [relances documentaires](communications.md).
+
 ## Les statistiques d'une campagne
 
 **À quoi ça sert.** Savoir où en est une campagne, pourquoi des étudiants ne sont pas
@@ -298,41 +336,3 @@ dans un tableur.
 > le joint à sa convocation. Les membres arrivent en ayant vu les mêmes chiffres qu'elle, et
 > la discussion porte sur les douze étudiants non placés plutôt que sur la lecture des
 > tableaux.
-
-## Nominations chez vos partenaires
-
-**À quoi ça sert.** Prévenir officiellement l'établissement d'accueil que vous lui envoyez
-un étudiant, puis consigner sa réponse.
-
-**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
-
-**Comment ça marche.** Chaque ligne est un étudiant affecté à une destination. Vous le
-nominez, et le partenaire reçoit l'information. Quand il répond, vous enregistrez sa
-décision en précisant par quel canal elle vous est parvenue : la plateforme, le réseau EWP,
-un e-mail ou un appel. Un refus s'accompagne de son motif.
-
-L'onglet apparaît dès qu'une place est tenue dans la campagne. Vous pouvez nominer toute une
-sélection d'un seul geste : le lot se traite par tranches, son avancement reste visible, et
-un lot interrompu reprend là où il s'est arrêté au lieu de repartir de zéro.
-
-Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de l'outil :
-
-- **Relancer** — un rappel part chez le partenaire sans passer par votre boîte mail. Une
-  relance par vingt-quatre heures : le bouton se grise ensuite.
-- **Retirer** — vous annulez la nomination en expliquant pourquoi. Le partenaire est prévenu
-  qu'aucune décision n'est plus attendue, et l'étudiant redevient disponible pour une autre
-  destination.
-
-![Écran des nominations d'une campagne, avec l'état de chaque nomination et le canal de confirmation](../assets/screenshots/campagne-nominations.png)
-
-*L'état de chaque nomination, et pour les confirmées, comment la réponse est arrivée.*
-
-**Cas d'usage.**
-> Le coordinateur nomine douze étudiants ; huit confirmations reviennent par la plateforme
-> ou par EWP, deux par téléphone qu'il saisit à la main, et une destination refuse faute de
-> place dans la spécialité demandée.
-
-
-!!! note "Relances documentaires"
-    Les rappels automatiques aux étudiants dont le dossier est incomplet sont couverts par
-    les [relances documentaires](communications.md).
