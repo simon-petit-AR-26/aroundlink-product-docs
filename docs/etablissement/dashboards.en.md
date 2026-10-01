@@ -1,51 +1,90 @@
-# Dashboards
+# Dashboard
 
-The dashboards give the International Relations Office an immediate view of its
-mobility: what needs action today on one side, the big steering trends on the
-other. Two complementary pages, each walled off to your institution.
+The dashboard is your team's home page: **what needs acting on today**, and where your
+mobility stands as a whole.
 
-## Operational dashboard
+## Your student pipeline
 
-**What it's for.** This is the coordinator's landing page: at a glance you see
-what is waiting to be handled (documents, learning agreements, transcripts)
-without scrolling through long lists. It turns "where do we stand?" into a single
-look.
+**What it's for.** Seeing where your students sit along their path, and spotting where it
+gets stuck.
 
-**Who it's for.** <span class="al-audience">coordinator / IR manager</span>
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
-**How it works.** The page shows seven key indicators — outgoing and incoming
-students, partners, available places, documents pending validation, Learning
-Agreements pending, transcripts of records pending — plus a student-pipeline
-chart. Each indicator is clickable and leads straight to the relevant queue. You
-can add, hide and resize blocks from a widget catalog.
+**How it works.** A nineteen-bar histogram, spread over the **five stages of a mobility** —
+access, campaign, preparation, mobility, after — each with its own colour.
 
-![The coordinator's dashboard](../assets/screenshots/tableau-de-bord.png)
+You switch between your **outgoing** and **incoming** students, then pick the view: each
+button on the second row is a campaign, and the histogram shows only its students.
 
-*The dashboard: your student pipeline step by step, your key figures, the place breakdown by period and level, and the files waiting on you. Click the image to enlarge it.*
+!!! warning "The bars do not add up — and that is deliberate"
+    The first nine, those of access and campaign, are **mutually exclusive**: a student is
+    either "no access" or "connected", never both.
 
-**Use case.**
-> Monday morning, a coordinator sees "12 documents pending validation" and clicks
-> to land directly on the queue to process.
-
-
-## Pilotage (strategic) dashboard for the DRI
-
-**What it's for.** This is the strategic cockpit for the Director of International
-Relations. It groups metrics into blocks — Overview, Decision, Financial,
-Inclusion — to inform structural decisions rather than day-to-day work: growth
-trends, destinations under pressure, underused agreements, budget consumption,
-inclusion.
-
-**Who it's for.** <span class="al-audience">IR manager (director)</span>
-
-**How it works.** Pilotage is a modular dashboard: you choose which blocks are
-shown from tiles, charts, gauges, lists, a funnel and a map. It offers, for
-example, mobility growth, breakdown by type, study level, destinations under
-pressure, underused agreements, place occupancy rate, campaign funnel, top
-partners, an Erasmus budget-used gauge and inclusion. The page is read-only and
-stays walled off to your institution.
+    From preparation onwards they are **checklist items**: one student in mobility can raise
+    five bars at once — agreement validated, documents complete, arrival certificate. That is
+    why no total is shown: it would mean nothing.
 
 **Use case.**
-> A DRI reviews the "Underused agreements" list to decide which partnerships to
-> renegotiate next year.
+> The coordinator switches to her spring campaign and sees "awaiting proposal" climb to
+> forty-eight while "proposal" stays at zero. The matching round has not been run yet.
 
+![The dashboard](../assets/screenshots/tableau-de-bord.png)
+
+*A coordinator's dashboard: the pipeline and its five colours, the four counters for today, places distributed by period and track, where the agreements come from, and at the bottom the tiles of what awaits validation.*
+
+## Today's figures
+
+**How it works.** Four counters at the top of the page: your **outgoing students**, with how
+many are abroad today; your **incoming** ones, with those on campus; your **active
+partners**; your **contacts**.
+
+These are figures for right now, not year totals.
+
+## Places distributed
+
+**How it works.** A cross-table: your **periods** as rows — autumn, spring, full year, summer
+— and your **tracks** as columns, with the total for the chosen school year at the top. You
+change year from a menu.
+
+It is the overview of what you have opened, before going into one agreement's matrix.
+
+## Where your agreements come from
+
+**How it works.** A ring splits your agreements by family — Erasmus+, bilateral, double
+degree, paying mobility — with each one's share.
+
+**Use case.**
+> The manager sees that 56% of their agreements are Erasmus+ and 7% paying mobility, and
+> decides to balance the network next year.
+
+## What is waiting on you
+
+**What it's for.** Starting your day with what is blocking somebody else.
+
+**How it works.** A row of tiles mirrors the **validation queue's own buckets**: learning
+agreements, nominations, transcripts, language scores, feedback, grant documents, other
+documents.
+
+Each tile opens the queue **already filtered on its bucket**. Clicking a precise number only
+to land on an unfiltered three-hundred-row list would be a click you then have to undo.
+
+!!! note "Three families of documents, not one"
+    Documents are split the way the queue splits them: a grant certificate blocking a payment
+    is not a CV. Grouping them would bury the urgent one in the pile.
+
+**Use case.**
+> Monday morning, the "learning agreements" tile reads twelve. One click, and the queue opens
+> on those twelve, ready to validate.
+
+## Steering indicators
+
+**What it's for.** The underlying trends, for decisions from one year to the next rather than
+for this week.
+
+**Who it's for.** <span class="al-audience">international office management</span>
+
+**How it works.** Below the operational blocks, a set of steering indicators: mobility
+growth, the most requested destinations, place occupancy, inclusion and fewer-opportunities
+groups.
+
+They are read-only and cover your institution alone.
