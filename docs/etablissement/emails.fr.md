@@ -44,8 +44,8 @@ Microsoft. Chaque étape délicate porte sa capture d'écran.
 **À quoi ça sert.** Voir l'historique d'une relation à l'endroit où l'on travaille.
 
 **Comment ça marche.** Les messages classés apparaissent **à l'identique sur trois écrans** :
-la fiche d'un partenaire (l'agrégat des emails de ses contacts), la fiche d'un contact, et la
-fiche d'un étudiant.
+la fiche d'un partenaire, onglet **Relationship ▸ All emails** (l'agrégat des emails de ses
+contacts), la fiche d'un contact, et la fiche d'un étudiant, onglet **Emails**.
 
 - une **carte par message**, une seule ouverte à la fois ;
 - le sens de l'échange est marqué — reçu ou envoyé ;

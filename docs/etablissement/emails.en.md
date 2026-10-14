@@ -41,8 +41,9 @@ step carries its screenshot.
 
 **What it is for.** Seeing the history of a relationship where you actually work.
 
-**How it works.** Filed messages appear **identically on three screens**: a partner's fiche
-(the aggregate of its contacts' emails), a contact's fiche, and a student's fiche.
+**How it works.** Filed messages appear **identically on three screens**: a partner's fiche,
+under **Relationship ▸ All emails** (the aggregate of its contacts' emails), a contact's
+fiche, and a student's fiche, under **Emails**.
 
 - **one card per message**, only one open at a time;
 - the direction of the exchange is marked — received or sent;
