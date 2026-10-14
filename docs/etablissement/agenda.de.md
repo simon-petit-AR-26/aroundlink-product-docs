@@ -19,7 +19,8 @@ zusammen, was anderswo bereits besteht. Jeder Eintrag verweist auf das Objekt, a
 stammt, und dort wird der Termin geändert — sonst würden zwei Fassungen derselben Frist
 einander widersprechen.
 
-Sie wechseln zwischen **Listenansicht** und **Monatsansicht** und filtern nach:
+Der Kalender **öffnet sich in der Monatsraster-Ansicht**. In die **Listenansicht** wechseln
+Sie, wenn Sie alles hintereinander lesen möchten, und Sie filtern nach:
 
 - **der Familie** — Semester, Kampagnen, Partner, Nominierung, Onboarding, Anwendung,
   Sonstiges;
@@ -30,6 +31,12 @@ Die Filter wirken zusammen, und die Filterleiste bleibt im Blick, während die L
 
 Sie können auch **einen Termin von Hand hinzufügen**, für das, was nirgends sonst besteht:
 eine Kommissionssitzung, eine interne Frist.
+
+**Auf Studierendenseite ist der Kalender der Zeitstrahl der Mobilität.** Die Termine der
+Kampagne und die des [Verlaufs](parcours.md) treffen dort zusammen, geordnet in
+**überfällig**, **bevorstehend** und **vergangen**. Der heutige Tag zählt nicht als
+vergangen, und ein Kampagnentermin erscheint auch dann, wenn die Studentin oder der Student
+keinen Wunsch eingereicht hat.
 
 ![Der Kalender in der Monatsansicht](../assets/screenshots/agenda-mois.png)
 
@@ -49,6 +56,9 @@ in Outlook ein, und Ihre Termine erscheinen — und aktualisieren sich danach vo
 Das ist keine Microsoft-Integration, sondern ein offenes Format. **Outlook, Google Kalender,
 Apple Kalender und die übrigen werden gleich bedient**, und Ihre IT muss nichts freigeben und
 nichts einrichten.
+
+Die Abonnementadresse finden Sie unter **Einstellungen ▸ Connectors ▸ Calendar**, neben den
+zwei anderen Anbindungen — siehe [E-Mails & Konnektoren](emails.md).
 
 !!! info "Die Synchronisierung geht nur in eine Richtung"
     Ihr Kalender **liest** die Termine von AroundLink. Er ändert sie nicht: eine

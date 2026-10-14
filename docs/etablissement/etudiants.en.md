@@ -74,6 +74,34 @@ information, their GPA and their cohort ranking where those have been imported.
 > Before confirming a nomination, the coordinator opens the file to check the
 > student's language level and GPA.
 
+### The Mobility tab
+
+**What it's for.** Answering, when you open a file, the question you actually ask:
+**where does this student stand, and do I have anything to do?**
+
+**How it works.** The Mobility tab carries **one block per mobility** — a student who
+left twice has two files, each with its dates and its progress. You read the phase, the
+tasks sorted by phase, and the dated timeline of the stay. It is the same screen as
+[mobility tracking](suivi-mobilites.md), seen at the scale of one student.
+
+### Email exchanges
+
+**What it's for.** Reading, on the fiche, what has been written to the student, without
+leaving their file.
+
+**How it works.** An **Emails** tab matches filed messages to the student's addresses —
+the school one and the personal one. The list is **read-only**: a message is managed from
+the fiche of the contact that carries it. See [Emails & connectors](emails.md).
+
+In the grids, a **Last contact** column gives the date of the latest exchange, and a
+student's name always leads to their fiche.
+
+### Removing a language test
+
+**How it works.** A **cross** lets the coordinator remove a language test from a student's
+fiche — a document uploaded by mistake, an expired certificate. It is one of the actions
+the coordinator can take **on the student's behalf** when they cannot manage.
+
 ## Student profile completion
 
 **What it's for.** Seeing at a glance which students have not finished filling in their

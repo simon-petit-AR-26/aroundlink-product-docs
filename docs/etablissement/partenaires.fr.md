@@ -136,12 +136,76 @@ lors de la sélection.
 **Comment ça marche.** Un bloc de gestion (ajout, modification, suppression via
 une fenêtre) sur la fiche partenaire. Chaque entrée reprend la structure des
 scores étudiants : type de test, note globale, les quatre sous-scores et un
-niveau CECRL optionnel.
+niveau CECRL optionnel. Le référentiel des tests dit désormais **quelle langue
+chaque test mesure**, ce qui permet de rapprocher une exigence et un certificat
+sans interprétation.
+
+**D'où vient une exigence.** Une même fiche peut porter deux origines, et la
+différence compte — l'une s'applique à tout le monde, l'autre à vous seul. Une
+mention en tête du bloc le dit :
+
+| Mention | Ce que ça veut dire |
+|---|---|
+| **Published by this partner** | le partenaire publie lui-même son exigence depuis sa propre fiche ; elle s'applique à tous ses clients |
+| **Provided by this partner** | la fiche est tenue par le partenaire : vous consultez, vous ne modifiez pas |
+| **Only your institution sees this** | c'est **votre** relevé pour ce partenaire — cloisonné, personne d'autre ne le voit |
+
+Quand le partenaire publie son exigence, c'est elle qui décide : votre ligne reste
+affichée mais ne s'applique plus, et le compteur ne compte que ce qui agit. Vous
+pouvez **reprendre la main chez vous** — votre valeur redevient celle qui
+s'applique, pour votre établissement seulement.
+
+Une colonne de **provenance** donne la même information ligne par ligne, et la
+fiche indique qui a rempli.
+
+!!! info "Ce que votre établissement publie"
+    Le pendant, vu de chez vous : les scores que **vous** exigez de vos entrants se
+    saisissent dans [Mon établissement](mon-etablissement.md), et vos partenaires les
+    lisent sur votre fiche. Un établissement sur une offre gratuite diffuse ses
+    exigences de langue — et rien d'autre.
 
 **Cas d'usage.**
 > Le coordinateur note « Lund : IELTS 6.5 / B2 » ; un étudiant à IELTS 6.0 est
-> alors signalé sous le seuil.
+> alors signalé sous le seuil. Six mois plus tard, Lund publie sa propre exigence à
+> 7.0 : elle prend le dessus, la ligne du coordinateur reste visible mais marquée
+> comme ne s'appliquant plus.
 
+
+### Les villes d'un partenaire
+
+**À quoi ça sert.** Beaucoup de partenaires ont plusieurs sites — Berlin, Düsseldorf,
+Francfort. Ces villes ne vivaient que dans un champ de texte libre : impossible d'y
+envoyer un étudiant, ni d'y poser des places.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Vous **déclarez vous-même les villes d'un partenaire** depuis sa
+fiche : un nom, un pays. Elles s'affichent sous son nom, repliables, et
+l'**établissement lui-même compte parmi ses lieux** — en tête, étiqueté **Main**.
+
+Un interrupteur par ville l'**allume comme destination** : elle devient alors une
+destination de campagne à part entière, sur laquelle un étudiant peut poser un vœu, et
+l'étudiant la voit comme n'importe quelle autre destination.
+
+!!! warning "Ces villes sont cloisonnées"
+    Les villes que vous déclarez pour un partenaire **n'appartiennent qu'à vous**. Un
+    autre établissement travaillant avec le même partenaire ne les voit pas. Le cadenas
+    sur la liste le dit.
+
+!!! note "Un partenaire qui tient sa propre fiche garde la main"
+    Si le partenaire gère lui-même ses campus, les siens font foi : vous les consultez,
+    vous n'en posez pas par-dessus. Deux séries de villes pour un seul établissement
+    n'auraient aucun sens. Et une ville ne contient pas de villes — l'écran ne le propose
+    pas.
+
+**Les places suivent le lieu.** Une place appartient à son accord et porte **le lieu
+auquel elle est destinée** : les matrices des villes s'empilent dans la page des places,
+chacune annonçant ce qu'elle porte déjà. Trois campus n'ajoutent donc pas trois accords.
+
+!!! warning "Éteindre avant de supprimer"
+    Une ville allumée comme destination ne se supprime pas : des étudiants ont pu la
+    choisir, et ses places partiraient avec elle. Éteignez-la d'abord — l'écran le dit et
+    refuse clairement. La suppression se confirme ensuite, et elle est définitive.
 
 ## Contacts partenaires
 

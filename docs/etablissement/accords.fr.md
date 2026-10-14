@@ -58,6 +58,45 @@ apparentés restent ensemble. Le résultat est immédiatement visible côté ét
 > 2 en Master / Semestre 2 pour 2026/2027 ; l'étudiant voit exactement cette
 > répartition sur la fiche du partenaire.
 
+### Les places du personnel ne se répartissent pas
+
+**Pourquoi.** La matrice est une grille **niveau d'études × période**. Un enseignant
+n'appartient à aucune promotion : aucune case ne peut l'accueillir. La grille était
+donc remplie par défaut, faute de dire qu'elle ne servait à rien.
+
+**Comment ça marche.** Un accord qui ne porte **que** de la mobilité de personnel
+n'affiche plus de matrice, et l'écran l'explique. Un accord sans aucune condition
+garde la sienne : la borne est « il y a des conditions, mais aucune pour les
+étudiants ».
+
+**L'enveloppe négociée reste lisible.** Elle est une vraie donnée d'accord, négociée
+par public, et les grilles **Agreements** et **Institutions** la montrent désormais en
+**trois colonnes** là où une seule les additionnait :
+
+| Colonne | Ce qu'elle compte |
+|---|---|
+| **étudiants** | études et stage réunis — un seul public du point de vue du coordinateur |
+| **enseignants** | mobilité d'enseignement |
+| **personnel** | formation du personnel |
+
+Un tiret, et non un zéro, quand il n'y a pas d'accord pour ce public : un zéro se
+lirait comme une enveloppe négociée à zéro.
+
+!!! warning "Deux chiffres voisins, deux sens"
+    Ces trois colonnes disent ce qui a été **signé**. La colonne **Places / year**, juste
+    à côté, compte ce qui a été **réparti** dans les matrices. Un accord pouvait afficher
+    28 places dont 24 de formation du personnel sans que rien ne le dise.
+
+### Une place porte le lieu auquel elle est destinée
+
+**Comment ça marche.** Une place appartient à son accord et désigne **le lieu** où
+l'étudiant est attendu. Quand un partenaire a plusieurs
+[villes](partenaires.md#les-villes-dun-partenaire), les matrices de ces villes
+**s'empilent dans la même page**, chacune annonçant ce qu'elle porte déjà —
+l'établissement lui-même compte parmi les lieux, étiqueté **Main**.
+
+Trois campus n'ajoutent donc pas trois accords, et un accord résilié cesse de
+distribuer ses places, quelle que soit sa famille.
 
 ## Un moteur de places unifié
 

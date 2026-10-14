@@ -19,7 +19,8 @@ assemble ce qui existe déjà ailleurs. Chaque entrée renvoie à l'objet dont e
 c'est là que la date se modifie — sinon deux versions de la même échéance finiraient par se
 contredire.
 
-Vous basculez entre une **vue liste** et une **vue mois**, et vous filtrez sur :
+L'agenda **s'ouvre sur la grille du mois**. Vous basculez vers une **vue liste** quand
+vous préférez tout lire d'affilée, et vous filtrez sur :
 
 - **la famille** — Semestres, Campagnes, Partenaires, Nomination, Onboarding, Application,
   Autre ;
@@ -30,6 +31,11 @@ Les filtres se cumulent, et la barre de filtres reste sous vos yeux quand la lis
 
 Vous pouvez aussi **ajouter une date** à la main, pour ce qui n'existe nulle part ailleurs :
 une réunion de commission, une date limite interne.
+
+**Côté étudiant, l'agenda est la frise de sa mobilité.** Les dates de sa campagne et celles
+de son [parcours](parcours.md) s'y rejoignent, rangées en **en retard**, **à venir** et
+**passé**. Le jour même n'est pas compté comme passé, et une date de campagne y figure même
+si l'étudiant n'a déposé aucun vœu.
 
 ![L'agenda en vue mois](../assets/screenshots/agenda-mois.png)
 
@@ -49,6 +55,9 @@ collez dans Outlook, et vos dates apparaissent — mises à jour toutes seules e
 Ce n'est pas une intégration Microsoft : c'est un format ouvert. **Outlook, Google Agenda,
 Apple Calendrier et les autres sont servis de la même façon**, et votre DSI n'a rien à
 autoriser ni à configurer.
+
+L'adresse d'abonnement se récupère dans **Paramètres ▸ Connectors ▸ Calendar**, aux côtés
+des deux autres branchements — voir [Emails & connecteurs](emails.md).
 
 !!! info "La synchronisation ne va que dans un sens"
     Votre calendrier vient **lire** les dates d'AroundLink. Il ne les modifie pas : une

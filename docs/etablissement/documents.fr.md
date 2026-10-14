@@ -41,6 +41,39 @@ l'établissement d'accueil selon le flux séquentiel du réseau.
 > remplacer un cours, puis signe au nom de l'établissement d'envoi ; dès que le
 > partenaire signe à son tour, l'OLA passe « Validé ».
 
+### Le coordinateur corrige, il ne fait plus que juger
+
+**À quoi ça sert.** Un contrat refusé pour une virgule faisait un aller-retour complet :
+commentaire, attente, nouvelle soumission, nouvelle relecture. Quand la correction est
+évidente, autant la faire.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Un **crayon** sur l'onglet OLA ouvre la correction. Le
+coordinateur peut :
+
+- corriger la **période** et la **langue** du contrat ;
+- **corriger la liste des cours**, en puisant dans le catalogue du partenaire ;
+- **ajouter un cours libre**, quand le cours n'est pas au catalogue.
+
+L'onglet OLA ouvre désormais le contrat directement, au lieu de demander un clic de
+plus.
+
+!!! warning "L'étudiant qui avait signé est prévenu"
+    Si le contrat portait déjà sa signature, il apprend qu'il doit **resoumettre** : une
+    signature ne vaut que pour le texte signé. Le contrat ne passe pas validé dans son dos.
+
+!!! info "Sur un accord EWP, l'avenant reste fermé"
+    Pour un contrat qui circule sur le réseau européen, la correction par le coordinateur
+    n'est pas ouverte : le réseau impose son propre circuit d'avenants, et deux chemins
+    pour une même modification donneraient deux versions du contrat.
+
+### Les documents d'un entrant accueilli sur un campus
+
+**Comment ça marche.** Quand vous accueillez un étudiant sur l'un de vos campus, ses
+documents — contrat d'études et relevé de notes — portent **« École — Campus »** et non
+le seul nom de l'établissement. L'étudiant et son école d'origine savent ainsi où le
+séjour a réellement eu lieu.
 
 ## Génération PDF : OLA & relevé de notes
 

@@ -19,7 +19,8 @@ ciò che esiste già altrove. Ogni voce rimanda all'oggetto da cui proviene, ed 
 data si modifica — altrimenti due versioni della stessa scadenza finirebbero per
 contraddirsi.
 
-Passate da una **vista elenco** a una **vista mese**, e filtrate per:
+L'agenda **si apre sulla griglia del mese**. Passate a una **vista elenco** quando preferite
+leggere tutto di seguito, e filtrate per:
 
 - **la famiglia** — Semestri, Campagne, Partner, Nomina, Accoglienza, Applicazione, Altro;
 - **la direzione** — in uscita o in entrata;
@@ -29,6 +30,11 @@ I filtri si cumulano, e la barra dei filtri resta sotto gli occhi mentre l'elenc
 
 Potete anche **aggiungere una data** a mano, per ciò che non esiste altrove: una riunione di
 commissione, una scadenza interna.
+
+**Dal lato dello studente, l'agenda è la cronologia della sua mobilità.** Le date della sua
+campagna e quelle del suo [percorso](parcours.md) si ritrovano qui, ordinate in **in ritardo**,
+**in arrivo** e **passato**. Il giorno stesso non conta come passato, e una data di campagna
+compare anche se lo studente non ha presentato alcuna preferenza.
 
 ![L'agenda in vista mese](../assets/screenshots/agenda-mois.png)
 
@@ -48,6 +54,9 @@ Outlook, e le vostre date compaiono — aggiornandosi da sole in seguito.
 Non è un'integrazione Microsoft: è un formato aperto. **Outlook, Google Calendar, Calendario
 Apple e gli altri sono serviti allo stesso modo**, e il vostro servizio informatico non deve
 autorizzare né configurare nulla.
+
+L'indirizzo di iscrizione si recupera in **Impostazioni ▸ Connectors ▸ Calendar**, accanto
+agli altri due collegamenti — vedi [Email e connettori](emails.md).
 
 !!! info "La sincronizzazione va in un solo senso"
     Il vostro calendario viene a **leggere** le date di AroundLink. Non le modifica: una

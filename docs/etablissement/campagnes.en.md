@@ -102,6 +102,14 @@ You choose the **required documents**, then what happens when one is missing:
 - **The coordinator assigns directly** — the acceptance step disappears, your decision
   creates the placement.
 
+### The mobility path
+
+The **Mobility workflow** field plugs into the campaign the [path](parcours.md) its students
+will follow, from the partner's yes to their return. Only **outgoing** paths are offered.
+
+It is **optional**: you can plug it in later from the campaign's **Mobility** tab. Without a
+path the campaign works — it simply gives its students no task after assignment.
+
 ### The note to students
 
 Free text, optional, shown to everyone taking part.
@@ -223,7 +231,24 @@ available. The figures shown match what the student will see.
 > Mid-round, the coordinator sees 60% of students have submitted their wishes and 12 are
 > placed; after closing, they export the final assignments for the mobility team.
 
+## The Mobility tab: after the assignment
 
+**What it's for.** Tracking stopped at the assignment. The **Mobility** tab takes over: it
+shows what placed students are doing, from the partner's answer to their return.
+
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+
+**How it works.** The tab opens like the three others and carries
+[mobility tracking](suivi-mobilites.md): table or kanban, the three phases, the search that
+suggests filters, the export of what is on screen.
+
+If no path is plugged in, the tab **says what is missing and where to set it** — and lets you
+plug it in without leaving the screen. Changing the path of a campaign in service asks for
+confirmation: students under way switch to the new one.
+
+!!! tip "Removing a wish, even one the student added"
+    The coordinator can remove any wish, including those the student added themselves.
+    Removing a student-added wish asks for an explicit confirmation.
 
 ## Nominating to your partners
 
@@ -260,6 +285,25 @@ While the partner has not replied, two actions save you leaving the tool:
 !!! note "Document reminders"
     Automatic reminders to students with an incomplete dossier are covered by
     [document reminders](communications.md).
+
+### Exporting nominations for the EWP Dashboard
+
+**What it's for.** Avoiding double entry. Fifty students nominated in AroundLink, and fifty
+entries typed by hand into the Dashboard: the export produces the file in the expected
+format.
+
+**How it works.** The **Export** button on the tracking page gathers every export and then
+asks which one. The nominations export opens a **preview before download**, which says:
+
+- how many rows will go;
+- **who stays behind, and why** — a student left out is named, never lost in silence;
+- how many already went in a previous file — they do not go twice;
+- and if the export is empty, the reason: students hold a place but are not nominated yet.
+
+!!! info "What goes, and what does not"
+    The export only takes nominations **awaiting an answer**: a nomination already confirmed
+    has no business in the Dashboard. Traineeships stay out, and subject areas are checked
+    before the file is written.
 
 ## A campaign's statistics
 

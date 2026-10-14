@@ -32,6 +32,37 @@ by the institution when one exists.
 > downloads their official assignment certificate for the host institution's
 > registration desk.
 
+### A single task list
+
+**What it's for.** The student used to have two task lists on the same page, depending on
+which screen they arrived from. Now there is only one.
+
+**How it works.** The page carries **the to-do of their mobility**: the steps of the
+[path](../etablissement/parcours.md) their institution plugged in, in order, sorted by
+phase — before, during, after. Each step says what is expected of them.
+
+Steps that **mirror an act done elsewhere** tick without them doing anything: a learning
+agreement signed by all three parties, a validated document, a grant payment. They untick
+too if the act goes back — a withdrawn signature reopens the step.
+
+The submit button is only active **when there is something to submit**, and their profile
+completion gauge disappears once they reach 100%.
+
+**The destination's services** sit under the to-do: housing, insurance and support offered
+where they are going.
+
+### What they receive, and when
+
+**How it works.** The block of documents to receive only shows **what has actually been
+handed to them**: a transcript or a certificate still being produced is not shown
+half-made, and a document only opens once validated.
+
+Their [agenda](../etablissement/agenda.md) is the **dated timeline** of their mobility,
+from the first wish to the closing, sorted into overdue, upcoming and past.
+
+!!! info "The type of their place, in their own words"
+    The student reads the type of their place in plain language — a bilateral agreement
+    reads as "Exchange" — rather than in the vocabulary of agreements.
 
 ## Learning agreement (OLA)
 

@@ -19,7 +19,8 @@ exists elsewhere. Each entry links back to the object it comes from, and that is
 date is edited — otherwise two versions of the same deadline would end up contradicting
 each other.
 
-You switch between a **list view** and a **month view**, and you filter on:
+The agenda **opens on the month grid**. You switch to a **list view** when you would
+rather read everything in a row, and you filter on:
 
 - **the family** — Semesters, Campaigns, Partners, Nomination, Onboarding, Application,
   Other;
@@ -30,6 +31,11 @@ Filters stack, and the filter bar stays in view as the list scrolls.
 
 You can also **add a date** by hand, for what exists nowhere else: a committee meeting, an
 internal deadline.
+
+**On the student side, the agenda is the timeline of their mobility.** Their campaign dates
+and their [path](parcours.md) dates come together there, sorted into **overdue**,
+**upcoming** and **past**. The current day does not count as past, and a campaign date
+appears even if the student has submitted no wish.
 
 ![The agenda in month view](../assets/screenshots/agenda-mois.png)
 
@@ -49,6 +55,9 @@ Outlook, and your dates appear — updating by themselves from then on.
 This is not a Microsoft integration: it is an open format. **Outlook, Google Calendar, Apple
 Calendar and the rest are served the same way**, and your IT department has nothing to
 authorise or configure.
+
+The subscription address is picked up under **Settings ▸ Connectors ▸ Calendar**, alongside
+the two other connections — see [Emails & connectors](emails.md).
 
 !!! info "Synchronisation only goes one way"
     Your calendar comes to **read** AroundLink's dates. It does not change them: a

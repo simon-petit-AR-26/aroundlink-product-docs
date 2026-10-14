@@ -79,6 +79,36 @@ classement de promotion lorsqu'ils ont été importés.
 > Avant de valider une nomination, le coordinateur ouvre la fiche pour vérifier le
 > niveau de langue et la moyenne de l'étudiant.
 
+### L'onglet Mobility
+
+**À quoi ça sert.** Répondre, en ouvrant un dossier, à la question qu'on se pose
+vraiment : **où en est-il, et ai-je quelque chose à faire ?**
+
+**Comment ça marche.** L'onglet Mobility porte **un bloc par mobilité** — un étudiant
+parti deux fois a deux dossiers, chacun avec ses dates et son avancement. On y lit la
+phase, les tâches rangées par phase, et la frise datée du séjour. C'est le même écran
+que le [suivi des mobilités](suivi-mobilites.md), vu à l'échelle d'un étudiant.
+
+### Les échanges par e-mail
+
+**À quoi ça sert.** Lire sur la fiche ce qui a été écrit à l'étudiant, sans sortir de
+son dossier.
+
+**Comment ça marche.** Un onglet **Emails** rapproche les messages classés des adresses
+de l'étudiant — celle de l'école et la personnelle. La liste est **en lecture seule** :
+un message se gère depuis la fiche du contact qui le porte. Voir
+[Emails & connecteurs](emails.md).
+
+Dans les grilles, une colonne **Last contact** donne la date du dernier échange, et le
+nom d'un étudiant mène toujours à sa fiche.
+
+### Retirer un test de langue
+
+**Comment ça marche.** Une **croix** permet au coordinateur de retirer un test de langue
+d'une fiche étudiant — une pièce déposée par erreur, un certificat périmé. C'est l'une
+des actions que le coordinateur peut faire **à la place de l'étudiant** quand celui-ci ne
+s'en sort pas.
+
 ## Complétude du profil étudiant
 
 **À quoi ça sert.** Savoir d'un coup d'œil quels étudiants n'ont pas fini de renseigner
