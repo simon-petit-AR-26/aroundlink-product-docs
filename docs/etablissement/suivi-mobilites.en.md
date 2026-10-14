@@ -68,10 +68,6 @@ A mobility header always reads the same way: **where**, **what**, **when** — t
 its logo, the agreement family, the period. And the breadcrumb goes all the way down to the
 open session.
 
-![A campaign's tracking in kanban view](../assets/screenshots/onboarding-kanban.png)
-
-*One column per phase, one card per student. The gauge at the top of a column counts those who have passed the step.*
-
 ## The mobility timeline
 
 **What it is for.** Reading a mobility in time rather than as a list: from the first wish to

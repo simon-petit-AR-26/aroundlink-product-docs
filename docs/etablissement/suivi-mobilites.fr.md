@@ -69,10 +69,6 @@ L'en-tête d'une mobilité se lit toujours de la même façon : **où**, **quoi*
 partenaire avec son logo, la famille d'accord, la période. Et le fil d'Ariane descend jusqu'à
 la session ouverte.
 
-![Le suivi d'une campagne en vue kanban](../assets/screenshots/onboarding-kanban.png)
-
-*Une colonne par phase, une carte par étudiant. La jauge en tête de colonne compte ceux qui ont franchi l'étape.*
-
 ## La frise de la mobilité
 
 **À quoi ça sert.** Lire une mobilité dans le temps, pas en liste : du premier vœu à la

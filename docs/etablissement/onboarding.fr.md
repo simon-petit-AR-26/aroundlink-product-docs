@@ -61,10 +61,6 @@ Le tableau d'une session ajoute ce qui n'a de sens que pour un entrant : son **�
 d'origine**, son **pays**, son **niveau**, son **domaine d'études** et sa **ville d'origine**,
 en plus de l'avancement, de l'étape en cours et de l'état de son accès.
 
-![L'accueil en vue tableau](../assets/screenshots/onboarding-tableau.png)
-
-*La promotion en tableau : l'avancement, l'étape en cours, qui est attendu, et l'état de l'accès de chacun.*
-
 ## Ce que l'étudiant accueilli voit
 
 **Comment ça marche.** L'étudiant retrouve son parcours sur **My onboarding** : une seule

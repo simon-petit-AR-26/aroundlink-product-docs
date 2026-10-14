@@ -59,10 +59,6 @@ A session's table adds what only makes sense for an incoming student: their **ho
 institution**, **country**, **level**, **field of study** and **home city**, alongside
 progress, current step and the state of their access.
 
-![Onboarding in table view](../assets/screenshots/onboarding-tableau.png)
-
-*The intake as a table: progress, current step, who is expected, and the state of each access.*
-
 ## What the hosted student sees
 
 **How it works.** The student finds their path on **My onboarding**: a single task list, in
