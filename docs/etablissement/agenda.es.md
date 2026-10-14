@@ -19,7 +19,8 @@ ya existe en otra parte. Cada entrada remite al objeto del que procede, y es ah�
 fecha se modifica — de lo contrario dos versiones del mismo vencimiento acabarían por
 contradecirse.
 
-Alterna entre una **vista de lista** y una **vista de mes**, y filtra por:
+La agenda **se abre en la cuadrícula del mes**. Alterna a una **vista de lista** cuando
+prefiere leerlo todo seguido, y filtra por:
 
 - **la familia** — Semestres, Campañas, Socios, Nominación, Acogida, Aplicación, Otros;
 - **la dirección** — salientes o entrantes;
@@ -30,6 +31,11 @@ desplaza.
 
 También puede **añadir una fecha** a mano, para lo que no existe en ningún otro sitio: una
 reunión de comisión, un plazo interno.
+
+**Del lado del estudiante, la agenda es la cronología de su movilidad.** Las fechas de su
+campaña y las de su [itinerario](parcours.md) se reúnen ahí, ordenadas en **retrasado**,
+**próximo** y **pasado**. El día en curso no cuenta como pasado, y una fecha de campaña
+aparece aunque el estudiante no haya presentado ninguna preferencia.
 
 ![La agenda en vista de mes](../assets/screenshots/agenda-mois.png)
 
@@ -49,6 +55,9 @@ Outlook, y sus fechas aparecen — actualizándose solas a partir de ahí.
 No es una integración con Microsoft: es un formato abierto. **Outlook, Google Calendar, Apple
 Calendario y los demás se sirven igual**, y su departamento de informática no tiene nada que
 autorizar ni configurar.
+
+La dirección de suscripción se obtiene en **Ajustes ▸ Connectors ▸ Calendar**, junto a las
+otras dos conexiones — véase [Correos y conectores](emails.md).
 
 !!! info "La sincronización va en un solo sentido"
     Su calendario viene a **leer** las fechas de AroundLink. No las modifica: un vencimiento

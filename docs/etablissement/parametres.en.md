@@ -62,25 +62,42 @@ many places or agreements use that level. Duplicate labels are rejected.
 > agreements by its real level names.
 
 
-## Key to connect external systems
+## Mobility paths
 
-**What it's for.** Give your institution a key to connect AroundLink to your
-external systems (data exchange, integrations), with the ability to renew it when
-needed.
+**What it's for.** Building, under **Settings ▸ Workflows**, the list of what a student
+has to do during a mobility — for the students you send as well as the ones you host.
 
-**Who it's for.** <span class="al-audience">admin</span>
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** A page shows your connection key and offers a "Regenerate" action
-that replaces the existing key with a new one. Keep this key confidential: share it
-only with the people configuring your integrations.
+**How it works.** This is the workshop: you build a path here, duplicate it, archive it.
+Plugging it in happens elsewhere — on a campaign or on a welcome session. Everything is
+detailed on the [Mobility paths](parcours.md) page, and a **guide** sits next to the
+workshop in the tool.
+
+## Connectors: email, calendar, API
+
+**What it's for.** Bringing together in one place the three ways of linking AroundLink to
+what you already use.
+
+**Who it's for.** <span class="al-audience">the whole mobility team, and your IT for the API</span>
+
+**How it works.** **Settings ▸ Connectors** carries three sections:
+
+| Connection | What it does |
+|---|---|
+| **Email** | the Outlook add-in files your exchanges on the contact's fiche — see [Emails & connectors](emails.md) |
+| **Calendar** | your [agenda](agenda.md) read from Outlook, Google Calendar or Apple Calendar, read-only |
+| **API** | your own systems read and write AroundLink data |
+
+!!! warning "The API key is personal, not your institution's"
+    Each user has their own. Regenerating it **leaves a colleague's working** — and revokes
+    yours only. It is a sensitive credential: never share it publicly, and regenerate it if
+    you believe it may have been exposed.
 
 **Use case.**
-> After a change in the technical team, the admin regenerates the key to revoke the
-> old one.
-
-!!! warning "Confidentiality"
-    A connection key is a sensitive credential. Never share it publicly, and
-    regenerate it if you believe it may have been exposed.
+> The school's IT team plugs its student registry into the API with the key of the developer
+> who looks after it. When they leave the institution, that key is regenerated: the other
+> integrations keep running.
 
 
 ## Protected deletions

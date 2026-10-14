@@ -14,8 +14,10 @@
   **domaines e-mail autorisés**. Procédure de raccordement, permissions demandées
   et contrôles effectués : [Authentification unique Microsoft (DSI)](sso.md).
 - **Connexion par mot de passe** (lorsque le SSO n'est pas imposé) — mots de passe
-  **hachés** (jamais stockés en clair), **contrôle de robustesse** à la création, et
-  **réinitialisation** par lien à usage unique et durée limitée.
+  **hachés** (jamais stockés en clair), **minimum de 12 caractères**, **contrôle de
+  robustesse** à la création, et **réinitialisation** par lien à usage unique et durée
+  limitée. Un changement de mot de passe **prévient le titulaire du compte**, afin qu'une
+  modification qu'il n'a pas demandée ne passe pas inaperçue.
 - **Limitation de débit** (*rate limiting*) sur les tentatives de connexion et de
   réinitialisation, pour freiner les attaques par force brute.
 

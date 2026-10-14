@@ -33,6 +33,38 @@ nomination configuré par l'établissement lorsqu'il existe.
 > et télécharge son attestation d'affectation officielle pour le guichet
 > d'inscription de l'établissement d'accueil.
 
+### Une seule liste de tâches
+
+**À quoi ça sert.** L'étudiant avait deux listes de tâches sur la même page, selon
+l'écran par lequel il arrivait. Il n'en a plus qu'une.
+
+**Comment ça marche.** La page porte **la to-do de sa mobilité** : les étapes du
+[parcours](../etablissement/parcours.md) que son établissement a branché, dans l'ordre,
+rangées par phase — avant, pendant, après. Chaque étape dit ce qui est attendu de lui.
+
+Les étapes qui **reflètent un acte fait ailleurs** se cochent sans qu'il intervienne :
+un contrat d'études signé par les trois parties, un document validé, un versement de
+bourse. Elles se décochent aussi si l'acte revient en arrière — une signature retirée
+rouvre l'étape.
+
+Le bouton de soumission n'est actif **que s'il y a quelque chose à soumettre**, et la
+jauge de complétude de son profil disparaît quand il atteint 100 %.
+
+**Les services de la destination** figurent sous la to-do : logement, assurance et
+accompagnement proposés sur le lieu où il part.
+
+### Ce qu'il reçoit, et quand
+
+**Comment ça marche.** Le bloc des documents à recevoir ne montre que **ce qui lui a
+réellement été remis** : un relevé ou une attestation en cours de production ne lui est
+pas présenté à moitié fait, et un document ne s'ouvre qu'une fois validé.
+
+Son [agenda](../etablissement/agenda.md) est la **frise datée** de sa mobilité, du
+premier vœu à la clôture, rangée en en retard, à venir et passé.
+
+!!! info "Le type de sa place, dans ses mots"
+    L'étudiant lit le type de sa place en langage courant — un accord bilatéral se lit
+    « Exchange » — plutôt que dans le vocabulaire des accords.
 
 ## Contrat pédagogique (OLA)
 

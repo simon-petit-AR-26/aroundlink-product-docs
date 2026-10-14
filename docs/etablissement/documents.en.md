@@ -40,6 +40,37 @@ flow.
 > swap one course, then signs on behalf of the sending institution; as soon as the
 > partner signs in turn, the OLA becomes "Validated".
 
+### The coordinator corrects, instead of only judging
+
+**What it does.** A contract refused over a comma meant a full round trip: comment, wait,
+new submission, new review. When the correction is obvious, it may as well be made.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** A **pencil** on the OLA tab opens the correction. The coordinator can:
+
+- correct the contract's **period** and **language**;
+- **correct the course list**, drawing from the partner's catalogue;
+- **add a free course**, when the course is not in the catalogue.
+
+The OLA tab now opens the contract directly, instead of asking for one more click.
+
+!!! warning "A student who had signed is told"
+    If the contract already carried their signature, they are told they must
+    **resubmit**: a signature only covers the text signed. The contract does not become
+    validated behind their back.
+
+!!! info "On an EWP agreement, the amendment stays closed"
+    For a contract travelling on the European network, correction by the coordinator is not
+    open: the network imposes its own amendment circuit, and two paths for the same change
+    would produce two versions of the contract.
+
+### The documents of an incoming student hosted on a campus
+
+**How it works.** When you host a student on one of your campuses, their documents —
+learning agreement and transcript — carry **"School — Campus"** rather than the
+institution's name alone. The student and their home school therefore know where the stay
+actually took place.
 
 ## PDF generation: OLA & transcript of records
 

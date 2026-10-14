@@ -128,12 +128,72 @@ students declare — so the two can be compared directly during selection.
 
 **How it works.** A management block (add, edit, delete via a dialog) on the
 partner file. Each entry reuses the student-score structure: test type, overall
-score, the four sub-scores and an optional CEFR level.
+score, the four sub-scores and an optional CEFR level. The test reference now
+states **which language each test measures**, so a requirement and a certificate
+can be matched without interpretation.
+
+**Where a requirement comes from.** The same fiche can carry two origins, and the
+difference matters — one applies to everyone, the other to you alone. A note at the
+top of the block says which:
+
+| Note | What it means |
+|---|---|
+| **Published by this partner** | the partner publishes its own requirement from its own fiche; it applies to all its clients |
+| **Provided by this partner** | the fiche is kept by the partner: you view, you do not change |
+| **Only your institution sees this** | this is **your** record for this partner — ring-fenced, nobody else sees it |
+
+When the partner publishes its requirement, that one decides: your line stays
+visible but no longer applies, and the counter only counts what acts. You can
+**take it back at home** — your value applies again, for your institution only.
+
+A **source** column gives the same information row by row, and the fiche says who
+filled it in.
+
+!!! info "What your institution publishes"
+    The counterpart, seen from your side: the scores **you** require of your incoming
+    students are entered under [My institution](mon-etablissement.md), and your partners
+    read them on your fiche. An institution on a free plan publishes its language
+    requirements — and nothing else.
 
 **Use case.**
 > The coordinator records "Lund: IELTS 6.5 / B2"; a student at IELTS 6.0 is then
-> flagged below the threshold.
+> flagged below the threshold. Six months later Lund publishes its own requirement at
+> 7.0: it takes over, and the coordinator's line stays visible but marked as no longer
+> applying.
 
+### A partner's cities
+
+**What it's for.** Many partners have several sites — Berlin, Düsseldorf, Frankfurt.
+Those cities only lived in a free-text field: you could not send a student there, nor
+put places on them.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** You **declare a partner's cities yourself** from its fiche: a name, a
+country. They appear under its name, collapsible, and the **institution itself counts
+among its places** — at the top, labelled **Main**.
+
+A switch on each city **turns it on as a destination**: it then becomes a full campaign
+destination that a student can wish for, and the student sees it like any other
+destination.
+
+!!! warning "These cities are ring-fenced"
+    The cities you declare for a partner **belong to you alone**. Another institution
+    working with the same partner does not see them. The padlock on the list says so.
+
+!!! note "A partner who keeps its own fiche keeps control"
+    If the partner manages its own campuses, those are the ones that count: you view
+    them, you do not add on top. Two sets of cities for a single institution would make
+    no sense. And a city does not contain cities — the screen does not offer it.
+
+**Places follow the place.** A place belongs to its agreement and carries **the location
+it is meant for**: the cities' matrices stack up in the places page, each announcing what
+it already carries. Three campuses therefore do not add three agreements.
+
+!!! warning "Switch off before deleting"
+    A city turned on as a destination cannot be deleted: students may already have chosen
+    it, and its places would go with it. Switch it off first — the screen says so and
+    refuses clearly. The deletion is then confirmed, and it is definitive.
 
 ## Partner contacts
 

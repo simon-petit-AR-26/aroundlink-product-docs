@@ -108,6 +108,9 @@ plugins:
             Partenaires &amp; accords: Partners &amp; agreements
             Distribution des places: Place distribution
             Campagnes de mobilité: Mobility campaigns
+            Parcours de mobilité: Mobility paths
+            Suivi des mobilités: Mobility tracking
+            Emails &amp; connecteurs: Emails &amp; connectors
             Agenda: Agenda
             Onboarding des entrants: Onboarding incoming students
             Documents &amp; validation: Documents &amp; validation
@@ -141,6 +144,9 @@ plugins:
             Partenaires &amp; accords: Socios y acuerdos
             Distribution des places: Distribución de plazas
             Campagnes de mobilité: Campañas de movilidad
+            Parcours de mobilité: Itinerarios de movilidad
+            Suivi des mobilités: Seguimiento de movilidades
+            Emails &amp; connecteurs: Correos y conectores
             Agenda: Agenda
             Onboarding des entrants: Acogida de entrantes
             Documents &amp; validation: Documentos y validación
@@ -174,6 +180,9 @@ plugins:
             Partenaires &amp; accords: Partner e accordi
             Distribution des places: Distribuzione dei posti
             Campagnes de mobilité: Campagne di mobilità
+            Parcours de mobilité: Percorsi di mobilità
+            Suivi des mobilités: Monitoraggio delle mobilità
+            Emails &amp; connecteurs: Email e connettori
             Agenda: Agenda
             Onboarding des entrants: Accoglienza in entrata
             Documents &amp; validation: Documenti e validazione
@@ -207,6 +216,9 @@ plugins:
             Partenaires &amp; accords: Partner und Abkommen
             Distribution des places: Platzverteilung
             Campagnes de mobilité: Mobilitätskampagnen
+            Parcours de mobilité: Mobilitätsverläufe
+            Suivi des mobilités: Mobilitätsverfolgung
+            Emails &amp; connecteurs: E-Mails &amp; Konnektoren
             Agenda: Kalender
             Onboarding des entrants: Onboarding der Incomings
             Documents &amp; validation: Dokumente und Freigabe
@@ -244,8 +256,11 @@ nav:
       - Partenaires &amp; accords: etablissement/partenaires.md
       - Distribution des places: etablissement/accords.md
       - Campagnes de mobilité: etablissement/campagnes.md
+      - Parcours de mobilité: etablissement/parcours.md
+      - Suivi des mobilités: etablissement/suivi-mobilites.md
       - Agenda: etablissement/agenda.md
       - Onboarding des entrants: etablissement/onboarding.md
+      - Emails &amp; connecteurs: etablissement/emails.md
       - Documents &amp; validation: etablissement/documents.md
       - Bourse de mobilité: etablissement/bourse.md
       - Communications: etablissement/communications.md

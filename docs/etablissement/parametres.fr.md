@@ -67,26 +67,44 @@ libellés en double sont refusés.
 > campagnes et accords par ses véritables intitulés de niveau.
 
 
-## Clé de connexion aux systèmes externes
+## Les parcours de mobilité
 
-**À quoi ça sert.** Fournir à votre établissement une clé permettant de connecter
-AroundLink à vos systèmes externes (échanges de données, intégrations), avec la
-possibilité de la renouveler si nécessaire.
+**À quoi ça sert.** Composer, dans **Paramètres ▸ Workflows**, la liste de ce qu'un
+étudiant a à faire pendant sa mobilité — pour ceux que vous envoyez comme pour ceux
+que vous accueillez.
 
-**Pour qui.** <span class="al-audience">admin</span>
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Une page présente votre clé de connexion et propose une
-action « Régénérer » qui remplace la clé existante par une nouvelle. Conservez
-cette clé confidentielle : ne la partagez qu'avec les personnes qui configurent
-vos intégrations.
+**Comment ça marche.** C'est l'atelier : on y fabrique un parcours, on le duplique, on
+l'archive. Le branchement, lui, se fait ailleurs — sur une campagne ou sur une session
+d'accueil. Tout est détaillé sur la page [Parcours de mobilité](parcours.md), et un
+**guide** est posé à côté de l'atelier dans l'outil.
+
+## Connectors : e-mail, calendrier, API
+
+**À quoi ça sert.** Réunir au même endroit les trois façons de relier AroundLink à ce
+que vous utilisez déjà.
+
+**Pour qui.** <span class="al-audience">toute l'équipe mobilité, et votre DSI pour l'API</span>
+
+**Comment ça marche.** **Paramètres ▸ Connectors** porte trois sections :
+
+| Branchement | Ce qu'il fait |
+|---|---|
+| **Email** | l'add-in Outlook classe vos échanges sur la fiche du contact — voir [Emails & connecteurs](emails.md) |
+| **Calendar** | votre [agenda](agenda.md) lu depuis Outlook, Google Agenda ou Apple Calendrier, en lecture seule |
+| **API** | vos propres systèmes lisent et écrivent des données AroundLink |
+
+!!! warning "La clé d'API est personnelle, pas celle de l'établissement"
+    Chaque utilisateur a la sienne. La régénérer **laisse celle d'un collègue
+    fonctionner** — et révoque la vôtre seulement. C'est un identifiant sensible : ne la
+    diffusez jamais publiquement, et régénérez-la si vous pensez qu'elle a pu être
+    exposée.
 
 **Cas d'usage.**
-> Après un changement d'équipe technique, l'admin régénère la clé pour révoquer
-> l'ancienne.
-
-!!! warning "Confidentialité"
-    Une clé de connexion est un identifiant sensible. Ne la diffusez jamais
-    publiquement et régénérez-la si vous pensez qu'elle a pu être exposée.
+> La DSI de l'école branche son référentiel étudiants sur l'API avec la clé du
+> développeur qui s'en occupe. Quand il quitte l'établissement, sa clé est régénérée : les
+> autres intégrations continuent de tourner.
 
 
 ## Suppressions protégées

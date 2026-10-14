@@ -107,6 +107,16 @@ manque un :
 - **Le coordinateur affecte directement** — l'étape d'acceptation disparaît, votre décision
   crée l'affectation.
 
+### Le parcours de la mobilité
+
+Le champ **Mobility workflow** branche sur la campagne le [parcours](parcours.md) que
+suivront les étudiants, du oui du partenaire jusqu'à leur retour. Seuls les parcours
+**sortants** sont proposés.
+
+Il est **facultatif** : vous pouvez le brancher plus tard depuis l'onglet **Mobility** de la
+campagne. Sans parcours, la campagne fonctionne — elle ne donne simplement aucune tâche à
+ses étudiants après l'affectation.
+
 ### La note aux étudiants
 
 Un texte libre, facultatif, affiché à ceux qui participent.
@@ -233,6 +243,26 @@ correspondent donc à ce que l'étudiant verra.
 > que 12 sont placés ; après clôture, il exporte les affectations finales pour l'équipe
 > mobilité.
 
+## L'onglet Mobility : après l'affectation
+
+**À quoi ça sert.** Le suivi s'arrêtait à l'affectation. L'onglet **Mobility** prend la
+suite : il montre ce que font les étudiants placés, de la réponse du partenaire à leur
+retour.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** L'onglet s'ouvre comme les trois autres et porte le
+[suivi des mobilités](suivi-mobilites.md) : tableau ou kanban, les trois phases, la recherche
+qui propose des filtres, l'export de ce qui est à l'écran.
+
+Si aucun parcours n'est branché, l'onglet **dit ce qui manque et où le régler** — et vous
+permet de le brancher sans quitter l'écran. Changer le parcours d'une campagne en service
+demande une confirmation : les étudiants en cours basculent sur le nouveau.
+
+!!! tip "Retirer un vœu, même déposé par l'étudiant"
+    Le coordinateur peut retirer n'importe quel vœu, y compris ceux que l'étudiant a ajoutés
+    lui-même. Le retrait d'un vœu ajouté par l'étudiant demande une confirmation explicite.
+
 ## Nominations chez vos partenaires
 
 **À quoi ça sert.** Prévenir officiellement l'établissement d'accueil que vous lui envoyez
@@ -270,6 +300,27 @@ Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de
 !!! note "Relances documentaires"
     Les rappels automatiques aux étudiants dont le dossier est incomplet sont couverts par
     les [relances documentaires](communications.md).
+
+### Exporter les nominations pour le Dashboard EWP
+
+**À quoi ça sert.** Éviter la double saisie. Cinquante étudiants nominés dans AroundLink, et
+cinquante saisies à la main dans le Dashboard : l'export produit le fichier au format
+attendu.
+
+**Comment ça marche.** Le bouton **Export** de la page de suivi réunit tous les exports et
+vous demande ensuite lequel. Celui des nominations ouvre un **aperçu avant téléchargement**,
+qui dit :
+
+- combien de lignes partiront ;
+- **qui reste à quai, et pourquoi** — un étudiant écarté est nommé, jamais perdu en silence ;
+- combien sont déjà parties dans un fichier précédent — elles ne repartent pas deux fois ;
+- et si l'export est vide, la raison : des étudiants ont une place mais ne sont pas encore
+  nominés.
+
+!!! info "Ce qui part, et ce qui ne part pas"
+    L'export ne retient que les nominations **en attente de réponse** : une nomination déjà
+    confirmée n'a plus rien à faire dans le Dashboard. Les stages restent dehors, et les
+    disciplines sont vérifiées avant l'écriture du fichier.
 
 ## Les statistiques d'une campagne
 

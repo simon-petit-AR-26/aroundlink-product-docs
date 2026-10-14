@@ -13,8 +13,9 @@
   per institution, with **allowed email domains**. Onboarding procedure, requested
   permissions and checks performed: [Microsoft single sign-on (IT)](sso.md).
 - **Password sign-in** (when SSO is not enforced) — passwords are **hashed** (never
-  stored in clear text), with a **strength check** at creation and **reset** via a
-  single-use, time-limited link.
+  stored in clear text), a **minimum of 12 characters**, a **strength check** at creation
+  and **reset** via a single-use, time-limited link. A password change **notifies the
+  account holder**, so a change they did not ask for does not go unnoticed.
 - **Rate limiting** on sign-in and reset attempts, to slow down brute-force attacks.
 
 ## Authorisation & isolation

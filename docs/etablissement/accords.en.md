@@ -53,6 +53,44 @@ related programmes stay together. The result is immediately visible to students.
 > Master / Semester 2 for 2026/2027; the student sees exactly that breakdown on the
 > partner's page.
 
+### Staff places are not distributed
+
+**Why.** The matrix is a **study level × period** grid. A teacher belongs to no
+intake: no cell can hold them. The grid was therefore filled in by default, for want
+of saying it served no purpose.
+
+**How it works.** An agreement carrying **only** staff mobility no longer shows a
+matrix, and the screen explains why. An agreement with no conditions at all keeps
+its own: the boundary is "there are conditions, but none for students".
+
+**The negotiated envelope stays readable.** It is genuine agreement data, negotiated
+per audience, and the **Agreements** and **Institutions** grids now show it in
+**three columns** where a single one used to add them up:
+
+| Column | What it counts |
+|---|---|
+| **students** | studies and traineeship together — one audience from the coordinator's point of view |
+| **teachers** | teaching mobility |
+| **staff** | staff training |
+
+A dash, not a zero, when there is no agreement for that audience: a zero would read
+as an envelope negotiated down to zero.
+
+!!! warning "Two neighbouring figures, two meanings"
+    These three columns say what was **signed**. The **Places / year** column next to
+    them counts what was **distributed** in the matrices. An agreement could show 28
+    places, 24 of them staff training, with nothing saying so.
+
+### A place carries the location it is meant for
+
+**How it works.** A place belongs to its agreement and names **the location** where the
+student is expected. When a partner has several
+[cities](partenaires.md#a-partners-cities), those cities' matrices **stack up in the
+same page**, each announcing what it already carries — the institution itself counts
+among the locations, labelled **Main**.
+
+Three campuses therefore do not add three agreements, and a terminated agreement stops
+distributing its places, whatever its family.
 
 ## A unified places engine
 
