@@ -547,6 +547,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Distribution des places (matrice de répartition)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-places-du-personnel-ne-se-repartissent-pas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les places du personnel ne se répartissent pas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#une-place-porte-le-lieu-auquel-elle-est-destinee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Une place porte le lieu auquel elle est destinée
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -659,6 +687,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../parcours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parcours de mobilité
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../suivi-mobilites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suivi des mobilités
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../agenda/" class="md-nav__link">
         
   
@@ -695,6 +779,34 @@
     
   
     Onboarding des entrants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emails &amp; connecteurs
   
 
     
@@ -1529,6 +1641,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Distribution des places (matrice de répartition)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-places-du-personnel-ne-se-repartissent-pas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les places du personnel ne se répartissent pas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#une-place-porte-le-lieu-auquel-elle-est-destinee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Une place porte le lieu auquel elle est destinée
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1661,6 +1801,55 @@ apparentés restent ensemble. Le résultat est immédiatement visible côté ét
 2 en Master / Semestre 2 pour 2026/2027 ; l'étudiant voit exactement cette
 répartition sur la fiche du partenaire.</p>
 </blockquote>
+<h3 id="les-places-du-personnel-ne-se-repartissent-pas">Les places du personnel ne se répartissent pas<a class="headerlink" href="#les-places-du-personnel-ne-se-repartissent-pas" title="Permanent link">¶</a></h3>
+<p><strong>Pourquoi.</strong> La matrice est une grille <strong>niveau d'études × période</strong>. Un enseignant
+n'appartient à aucune promotion : aucune case ne peut l'accueillir. La grille était
+donc remplie par défaut, faute de dire qu'elle ne servait à rien.</p>
+<p><strong>Comment ça marche.</strong> Un accord qui ne porte <strong>que</strong> de la mobilité de personnel
+n'affiche plus de matrice, et l'écran l'explique. Un accord sans aucune condition
+garde la sienne : la borne est « il y a des conditions, mais aucune pour les
+étudiants ».</p>
+<p><strong>L'enveloppe négociée reste lisible.</strong> Elle est une vraie donnée d'accord, négociée
+par public, et les grilles <strong>Agreements</strong> et <strong>Institutions</strong> la montrent désormais en
+<strong>trois colonnes</strong> là où une seule les additionnait :</p>
+<table>
+<thead>
+<tr>
+<th>Colonne</th>
+<th>Ce qu'elle compte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>étudiants</strong></td>
+<td>études et stage réunis — un seul public du point de vue du coordinateur</td>
+</tr>
+<tr>
+<td><strong>enseignants</strong></td>
+<td>mobilité d'enseignement</td>
+</tr>
+<tr>
+<td><strong>personnel</strong></td>
+<td>formation du personnel</td>
+</tr>
+</tbody>
+</table>
+<p>Un tiret, et non un zéro, quand il n'y a pas d'accord pour ce public : un zéro se
+lirait comme une enveloppe négociée à zéro.</p>
+<div class="admonition warning">
+<p class="admonition-title">Deux chiffres voisins, deux sens</p>
+<p>Ces trois colonnes disent ce qui a été <strong>signé</strong>. La colonne <strong>Places / year</strong>, juste
+à côté, compte ce qui a été <strong>réparti</strong> dans les matrices. Un accord pouvait afficher
+28 places dont 24 de formation du personnel sans que rien ne le dise.</p>
+</div>
+<h3 id="une-place-porte-le-lieu-auquel-elle-est-destinee">Une place porte le lieu auquel elle est destinée<a class="headerlink" href="#une-place-porte-le-lieu-auquel-elle-est-destinee" title="Permanent link">¶</a></h3>
+<p><strong>Comment ça marche.</strong> Une place appartient à son accord et désigne <strong>le lieu</strong> où
+l'étudiant est attendu. Quand un partenaire a plusieurs
+<a href="../partenaires/#les-villes-dun-partenaire">villes</a>, les matrices de ces villes
+<strong>s'empilent dans la même page</strong>, chacune annonçant ce qu'elle porte déjà —
+l'établissement lui-même compte parmi les lieux, étiqueté <strong>Main</strong>.</p>
+<p>Trois campus n'ajoutent donc pas trois accords, et un accord résilié cesse de
+distribuer ses places, quelle que soit sa famille.</p>
 <h2 id="un-moteur-de-places-unifie">Un moteur de places unifié<a class="headerlink" href="#un-moteur-de-places-unifie" title="Permanent link">¶</a></h2>
 <p><strong>À quoi ça sert.</strong> Tous les types d'accords — échange, bilatéral, double diplôme,
 mobilité payante — présentent leurs places à l'étudiant et à l'administration de la
@@ -1774,7 +1963,7 @@ l'aperçu, puis valide.</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="24 septembre 2026 15:37:08 CEST">24 septembre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="14 octobre 2026 09:25:33 CEST">14 octobre 2026</span>
   </span>
 
     

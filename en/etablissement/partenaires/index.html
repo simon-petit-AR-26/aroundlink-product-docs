@@ -566,6 +566,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#a-partners-cities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A partner's cities
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -803,6 +814,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../parcours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobility paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../suivi-mobilites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobility tracking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../agenda/" class="md-nav__link">
         
   
@@ -839,6 +906,34 @@
     
   
     Onboarding incoming students
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emails &amp; connectors
   
 
     
@@ -1720,6 +1815,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#a-partners-cities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A partner's cities
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2001,12 +2107,84 @@ students declare — so the two can be compared directly during selection.</p>
 <p><strong>Who it's for.</strong> <span class="al-audience">RI manager / coordinator</span></p>
 <p><strong>How it works.</strong> A management block (add, edit, delete via a dialog) on the
 partner file. Each entry reuses the student-score structure: test type, overall
-score, the four sub-scores and an optional CEFR level.</p>
+score, the four sub-scores and an optional CEFR level. The test reference now
+states <strong>which language each test measures</strong>, so a requirement and a certificate
+can be matched without interpretation.</p>
+<p><strong>Where a requirement comes from.</strong> The same fiche can carry two origins, and the
+difference matters — one applies to everyone, the other to you alone. A note at the
+top of the block says which:</p>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Published by this partner</strong></td>
+<td>the partner publishes its own requirement from its own fiche; it applies to all its clients</td>
+</tr>
+<tr>
+<td><strong>Provided by this partner</strong></td>
+<td>the fiche is kept by the partner: you view, you do not change</td>
+</tr>
+<tr>
+<td><strong>Only your institution sees this</strong></td>
+<td>this is <strong>your</strong> record for this partner — ring-fenced, nobody else sees it</td>
+</tr>
+</tbody>
+</table>
+<p>When the partner publishes its requirement, that one decides: your line stays
+visible but no longer applies, and the counter only counts what acts. You can
+<strong>take it back at home</strong> — your value applies again, for your institution only.</p>
+<p>A <strong>source</strong> column gives the same information row by row, and the fiche says who
+filled it in.</p>
+<div class="admonition info">
+<p class="admonition-title">What your institution publishes</p>
+<p>The counterpart, seen from your side: the scores <strong>you</strong> require of your incoming
+students are entered under <a href="../mon-etablissement/">My institution</a>, and your partners
+read them on your fiche. An institution on a free plan publishes its language
+requirements — and nothing else.</p>
+</div>
 <p><strong>Use case.</strong></p>
 <blockquote>
 <p>The coordinator records "Lund: IELTS 6.5 / B2"; a student at IELTS 6.0 is then
-flagged below the threshold.</p>
+flagged below the threshold. Six months later Lund publishes its own requirement at
+7.0: it takes over, and the coordinator's line stays visible but marked as no longer
+applying.</p>
 </blockquote>
+<h3 id="a-partners-cities">A partner's cities<a class="headerlink" href="#a-partners-cities" title="Permanent link">¶</a></h3>
+<p><strong>What it's for.</strong> Many partners have several sites — Berlin, Düsseldorf, Frankfurt.
+Those cities only lived in a free-text field: you could not send a student there, nor
+put places on them.</p>
+<p><strong>Who it's for.</strong> <span class="al-audience">RI manager / coordinator</span></p>
+<p><strong>How it works.</strong> You <strong>declare a partner's cities yourself</strong> from its fiche: a name, a
+country. They appear under its name, collapsible, and the <strong>institution itself counts
+among its places</strong> — at the top, labelled <strong>Main</strong>.</p>
+<p>A switch on each city <strong>turns it on as a destination</strong>: it then becomes a full campaign
+destination that a student can wish for, and the student sees it like any other
+destination.</p>
+<div class="admonition warning">
+<p class="admonition-title">These cities are ring-fenced</p>
+<p>The cities you declare for a partner <strong>belong to you alone</strong>. Another institution
+working with the same partner does not see them. The padlock on the list says so.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">A partner who keeps its own fiche keeps control</p>
+<p>If the partner manages its own campuses, those are the ones that count: you view
+them, you do not add on top. Two sets of cities for a single institution would make
+no sense. And a city does not contain cities — the screen does not offer it.</p>
+</div>
+<p><strong>Places follow the place.</strong> A place belongs to its agreement and carries <strong>the location
+it is meant for</strong>: the cities' matrices stack up in the places page, each announcing what
+it already carries. Three campuses therefore do not add three agreements.</p>
+<div class="admonition warning">
+<p class="admonition-title">Switch off before deleting</p>
+<p>A city turned on as a destination cannot be deleted: students may already have chosen
+it, and its places would go with it. Switch it off first — the screen says so and
+refuses clearly. The deletion is then confirmed, and it is definitive.</p>
+</div>
 <h2 id="partner-contacts">Partner contacts<a class="headerlink" href="#partner-contacts" title="Permanent link">¶</a></h2>
 <p><strong>What it's for.</strong> A directory of the people the office deals with at each partner,
 one designated as main. These contacts feed the agreement and signatory dropdowns.</p>
@@ -2230,7 +2408,7 @@ unknown domains are flagged.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 24, 2026 15:37:08 CEST">September 24, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 09:25:33 CEST">October 14, 2026</span>
   </span>
 
     
