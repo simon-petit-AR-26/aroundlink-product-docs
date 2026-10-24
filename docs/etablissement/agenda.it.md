@@ -76,6 +76,10 @@ Spuntate ciò che volete chiedere: inutile reclamare sei date quando ve ne basta
     accostano in lettura, tramite le loro coordinate europee — Vienna risponde una volta e
     tutte le scuole che hanno un autunno la vedono.
 
+![La richiesta di date ai vostri partner](../assets/screenshots/agenda-demande-dates.png)
+
+*Una mail per istituto, al suo contatto principale. La colonna «Dates filled» dice a che punto è ciascuno, e l'avviso arancione nomina chi non ha un contatto principale: quelli non riceveranno nulla.*
+
 **Caso d'uso.**
 > Ad aprile la coordinatrice chiede ai suoi 62 partner le scadenze di nomina per entrambe
 > le sessioni. Tre settimane dopo 48 hanno risposto; sollecita gli altri quattordici dalla

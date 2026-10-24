@@ -79,6 +79,10 @@ zwei genügen.
     werden beim Lesen zusammengeführt, über ihre europäischen Kenndaten — Wien antwortet
     einmal, und jede Schule mit einem Herbst sieht es.
 
+![Die Terminanfrage an Ihre Partner](../assets/screenshots/agenda-demande-dates.png)
+
+*Eine E-Mail pro Hochschule, an ihren Hauptkontakt. Die Spalte „Dates filled" sagt, wie weit jede ist, und der orange Hinweis nennt diejenigen ohne Hauptkontakt — sie erhalten nichts.*
+
 **Anwendungsfall.**
 > Im April fragt die Koordinatorin ihre 62 Partner nach den Nominierungsfristen für beide
 > Starttermine. Drei Wochen später haben 48 geantwortet; die übrigen vierzehn mahnt sie vom

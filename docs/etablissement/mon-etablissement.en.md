@@ -73,6 +73,10 @@ than waiting for each partner to ask, you announce them in one gesture.
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
+![Your language requirements, joined by "and" or "or"](../assets/screenshots/mon-etablissement-exigences-langue.png)
+
+*Two numbered requirements, each with its language. The word between them is clickable, to switch from "and" to "or". Under each, the accepted tests — "any one of these is enough".*
+
 **How it works.** Sending happens **in two steps**, like publishing your dates: you
 **look first** at what would go out and to how many partners, then you **send**. A message
 to fifty universities cannot be taken back; the number of recipients is in front of you
@@ -85,6 +89,10 @@ The screen also reminds you **when you last announced**.
     that needs **no account**. They fill in their prerequisites, language by language, and
     these appear on their fiche. The form carries **your logo**, so they know who is
     asking.
+
+![The preview before announcing your requirements](../assets/screenshots/mon-etablissement-annonce-langues.png)
+
+*Before sending: what your partners will read, how many will receive the email, and — named one by one — **those left out for want of a main contact**.*
 
 **Use case.**
 > In June, the office raises its English requirement from B2 to C1. It opens the preview,

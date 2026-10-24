@@ -96,6 +96,10 @@ nothing apart between eleven namesakes:
 
 Results are ranked by relevance, and a counter says how many there are in total.
 
+![The search bar unfolded](../assets/screenshots/recherche-globale.png)
+
+*Three letters are enough. Results are grouped by family with their counter — students, contacts — and each carries the fact that places it.*
+
 !!! tip "A useful side effect"
     Because both spellings now meet, a single word typed without accents surfaces the
     duplicates nobody could see — "Bahçeşehir Üniversitesi" and "Bahcesehir University" come

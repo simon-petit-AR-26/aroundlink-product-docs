@@ -24,6 +24,10 @@ panneau latéral propose ce qui n'est pas encore posé, rangé par catégorie et
 L'aperçu **est** la fiche : il n'existe pas de mode « édition » qui donnerait un rendu
 différent de la réalité.
 
+![L'écran de composition de la fiche publique](../assets/screenshots/fiche-publique-composition.png)
+
+*À gauche, vos rubriques avec un interrupteur et un compteur chacune ; au centre, la page telle que le public la verra ; en haut à gauche de la page, le sélecteur de campus.*
+
 !!! note "L'ordre des rubriques n'est pas réglable"
     C'est voulu : la page de tous les établissements se lit dans le même ordre, ce qui la
     rend comparable d'un partenaire à l'autre. Vous décidez de **ce qui se publie**, pas
@@ -46,6 +50,10 @@ il n'est pas un bloc à cocher. Le reste se choisit.
     Les contacts de l'équipe n'exposent que **la fonction et l'adresse e-mail** — jamais un
     numéro personnel. Les avis d'étudiants sont publiés **sans le nom de leur auteur**. Et
     aucun contenu d'un autre établissement n'apparaît sur votre page.
+
+![La fiche publique telle qu'on la voit de l'extérieur](../assets/screenshots/fiche-publique-publiee.png)
+
+*La même page, vue sans compte : vos couleurs et votre logo en bandeau, le sommaire à gauche, et le volet qui porte vos prochaines échéances, votre adresse, les avis de vos étudiants et vos liens.*
 
 ## Vos couleurs
 

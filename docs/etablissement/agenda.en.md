@@ -77,6 +77,10 @@ You tick what you want to ask for: no need to claim six dates when two are enoug
     read time, through their European coordinates — Vienna answers once, and every school
     with an autumn sees it.
 
+![Asking your partners for their dates](../assets/screenshots/agenda-demande-dates.png)
+
+*One email per institution, to its main contact. The "Dates filled" column says where each one stands, and the orange warning names those with no main contact — they will receive nothing.*
+
 **Use case.**
 > In April, the coordinator asks her 62 partners for their nomination deadlines for both
 > intakes. Three weeks later 48 have answered; she chases the other fourteen from the same

@@ -140,20 +140,25 @@ niveau CECRL optionnel. Le référentiel des tests dit désormais **quelle langu
 chaque test mesure**, ce qui permet de rapprocher une exigence et un certificat
 sans interprétation.
 
-**Exiger deux langues : ET entre les blocs, OU dedans.** Une exigence n'est plus
-une liste plate d'alternatives. Chaque attente appartient à un **bloc**, et un bloc
-est **une preuve à apporter** :
+**Exiger deux langues.** Une exigence n'est plus une liste plate d'alternatives.
+L'écran empile des **exigences numérotées**, chacune portant sa langue, et **vous
+reliez deux exigences d'un clic** sur le mot qui les sépare :
 
-- à l'intérieur d'un bloc, les attentes sont des **alternatives** — « IELTS 6.5 **ou**
-  TOEFL 84 » ;
-- entre deux blocs, elles **s'additionnent** — « anglais **et** portugais ».
+| Le séparateur dit | Ce que l'étudiant doit faire |
+|---|---|
+| **and** | satisfaire les deux — « anglais **et** allemand » |
+| **or** | satisfaire l'une des deux |
 
-Un seul bloc en échec suffit à refuser le vœu. C'est ce qui permet enfin d'exprimer
-ce qu'une université demande vraiment quand elle exige une LV2 en plus de l'anglais :
-avant, l'étudiant restait considéré comme éligible dès qu'il satisfaisait l'anglais.
+À l'intérieur d'une exigence, les tests listés sont toujours des **alternatives** :
+l'en-tête l'annonce — *any one of these is enough* quand il y en a plusieurs, *this
+proof is required* quand il n'y en a qu'un.
 
-La **moyenne générale** tient son exigence à part : elle n'entre dans aucun bloc de
-langue.
+C'est ce qui permet enfin d'exprimer ce qu'une université demande vraiment lorsqu'elle
+exige une LV2 en plus de l'anglais : avant, l'étudiant restait considéré comme éligible
+dès qu'il satisfaisait l'anglais.
+
+La **moyenne générale** tient son exigence à part — l'écran la marque *Not a language* :
+c'est un prérequis, pas une langue.
 
 **D'où vient une exigence.** Une même fiche peut porter deux origines, et la
 différence compte — l'une s'applique à tout le monde, l'autre à vous seul. Une

@@ -103,6 +103,10 @@ rien entre onze homonymes :
 
 Les résultats sont classés par pertinence, et un compteur dit combien il y en a au total.
 
+![La barre de recherche déroulée](../assets/screenshots/recherche-globale.png)
+
+*Trois lettres suffisent. Les résultats se rangent par famille avec leur compteur — étudiants, contacts — et chacun porte le fait qui le situe.*
+
 !!! tip "Un effet de bord utile"
     Parce que les deux écritures se rencontrent désormais, un seul mot tapé sans accents fait
     apparaître les doublons qu'on ne voyait pas — « Bahçeşehir Üniversitesi » et « Bahcesehir

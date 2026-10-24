@@ -132,19 +132,25 @@ score, the four sub-scores and an optional CEFR level. The test reference now
 states **which language each test measures**, so a requirement and a certificate
 can be matched without interpretation.
 
-**Requiring two languages: AND between blocks, OR inside.** A requirement is no
-longer a flat list of alternatives. Each expectation belongs to a **block**, and a
-block is **one proof to provide**:
+**Requiring two languages.** A requirement is no longer a flat list of alternatives.
+The screen stacks **numbered requirements**, each carrying its language, and **you join
+two of them with one click** on the word that separates them:
 
-- inside a block, expectations are **alternatives** — "IELTS 6.5 **or** TOEFL 84";
-- between two blocks, they **add up** — "English **and** Portuguese".
+| The separator says | What the student must do |
+|---|---|
+| **and** | satisfy both — "English **and** German" |
+| **or** | satisfy either one |
 
-A single failed block is enough to refuse the wish. This is what finally expresses what
-a university really asks when it requires a second language on top of English: before,
-the student stayed eligible as soon as English was satisfied.
+Inside a requirement, the tests listed are always **alternatives**: the header says so —
+*any one of these is enough* when there are several, *this proof is required* when there
+is only one.
 
-The **grade point average** holds its own requirement apart: it belongs to no language
-block.
+This is what finally expresses what a university really asks when it requires a second
+language on top of English: before, the student stayed eligible as soon as English was
+satisfied.
+
+The **grade point average** holds its own requirement apart — the screen marks it *Not a
+language*: it is a prerequisite, not a language.
 
 **Where a requirement comes from.** The same fiche can carry two origins, and the
 difference matters — one applies to everyone, the other to you alone. A note at the

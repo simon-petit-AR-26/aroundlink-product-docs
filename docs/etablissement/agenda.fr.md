@@ -78,6 +78,10 @@ suffisent.
     rapprochent à la lecture, par leurs coordonnées européennes — Vienne répond une fois, et
     toutes les écoles qui ont un automne la voient.
 
+![La demande de dates à vos partenaires](../assets/screenshots/agenda-demande-dates.png)
+
+*Un e-mail par établissement, vers son contact principal. La colonne « Dates filled » dit où en est chacun, et l'avertissement orange nomme ceux qui n'ont pas de contact principal — ceux-là ne recevront rien.*
+
 **Cas d'usage.**
 > En avril, la coordinatrice demande à ses 62 partenaires leurs échéances de nomination
 > pour les deux rentrées. Trois semaines plus tard, 48 ont répondu ; elle relance les

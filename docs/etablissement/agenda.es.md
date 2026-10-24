@@ -76,6 +76,10 @@ Marca lo que quiere pedir: no hace falta reclamar seis fechas cuando le bastan d
     leerlos, por sus coordenadas europeas — Viena responde una vez y todas las escuelas que
     tienen un otoño la ven.
 
+![La solicitud de fechas a sus socios](../assets/screenshots/agenda-demande-dates.png)
+
+*Un correo por institución, a su contacto principal. La columna «Dates filled» indica en qué punto está cada uno, y el aviso naranja nombra a quienes no tienen contacto principal: esos no recibirán nada.*
+
 **Caso de uso.**
 > En abril, la coordinadora pide a sus 62 socios sus plazos de nominación para las dos
 > entradas. Tres semanas después han respondido 48; reclama a los otros catorce desde la

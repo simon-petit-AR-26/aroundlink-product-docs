@@ -76,6 +76,10 @@ d'attendre que chaque partenaire vous les demande, vous les annoncez d'un geste.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
+![Vos exigences de langue, reliées par « and » ou « or »](../assets/screenshots/mon-etablissement-exigences-langue.png)
+
+*Deux exigences numérotées, chacune avec sa langue. Le mot qui les sépare se clique pour passer de « and » à « or ». Sous chacune, les tests acceptés — « any one of these is enough ».*
+
 **Comment ça marche.** L'envoi se fait **en deux temps**, comme la publication de vos
 dates : vous **regardez d'abord** ce qui partirait et à combien de partenaires, puis vous
 **envoyez**. Un message vers cinquante universités ne se rattrape pas ; le nombre de
@@ -88,6 +92,10 @@ L'écran rappelle aussi **quand vous avez annoncé pour la dernière fois**.
     par un lien qui ne réclame **aucun compte**. Il saisit ses prérequis, langue par
     langue, et ils remontent sur sa fiche. Le formulaire porte **votre logo**, pour qu'il
     sache qui demande.
+
+![L'aperçu avant d'annoncer ses exigences](../assets/screenshots/mon-etablissement-annonce-langues.png)
+
+*Avant d'envoyer : ce que vos partenaires liront, combien en recevront l'e-mail, et — nommés un par un — **ceux qui seront écartés faute de contact principal**.*
 
 **Cas d'usage.**
 > En juin, le bureau relève ses exigences d'anglais de B2 à C1. Il ouvre l'aperçu, voit

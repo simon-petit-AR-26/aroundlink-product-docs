@@ -24,6 +24,10 @@ is not yet placed, sorted by category and collapsible.
 The preview **is** the page: there is no "edit mode" that would render differently from
 reality.
 
+![The public page composer](../assets/screenshots/fiche-publique-composition.png)
+
+*On the left, your sections each with a switch and a counter; in the middle, the page as the public will see it; at the top left of the page, the campus selector.*
+
 !!! note "The order of sections cannot be changed"
     That is deliberate: every institution's page reads in the same order, which makes it
     comparable from one partner to the next. You decide **what gets published**, not the
@@ -46,6 +50,10 @@ is not a block to tick. The rest is your choice.
     Team contacts only expose **the role and the email address** — never a personal number.
     Student reviews are published **without their author's name**. And no content belonging
     to another institution appears on your page.
+
+![The public page as seen from outside](../assets/screenshots/fiche-publique-publiee.png)
+
+*The same page, seen without an account: your colours and logo in the banner, the table of contents on the left, and the panel carrying your next deadlines, your address, your students' reviews and your links.*
 
 ## Your colours
 
