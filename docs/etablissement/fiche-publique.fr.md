@@ -55,6 +55,11 @@ il n'est pas un bloc à cocher. Le reste se choisit.
 
 *La même page, vue sans compte : vos couleurs et votre logo en bandeau, le sommaire à gauche, et le volet qui porte vos prochaines échéances, votre adresse, les avis de vos étudiants et vos liens.*
 
+!!! tip "Un exemple complet, à faire défiler"
+    [Ouvrir une fiche publique d'exemple](../assets/exemples/fiche-publique-exemple.html){ target=_blank } —
+    la page entière d'un établissement de démonstration, de l'introduction à la FAQ.
+    C'est une copie figée : les liens n'y mènent nulle part.
+
 ## Vos couleurs
 
 **Comment ça marche.** Vous posez **deux couleurs** — une couleur d'accent et une couleur

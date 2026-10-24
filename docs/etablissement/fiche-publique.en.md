@@ -55,6 +55,11 @@ is not a block to tick. The rest is your choice.
 
 *The same page, seen without an account: your colours and logo in the banner, the table of contents on the left, and the panel carrying your next deadlines, your address, your students' reviews and your links.*
 
+!!! tip "A full example, to scroll through"
+    [Open a sample public page](../assets/exemples/fiche-publique-exemple.html){ target=_blank } —
+    the whole page of a demonstration institution, from the introduction to the FAQ.
+    It is a frozen copy: the links in it lead nowhere.
+
 ## Your colours
 
 **How it works.** You set **two colours** — an accent colour and a dark one — and the page
