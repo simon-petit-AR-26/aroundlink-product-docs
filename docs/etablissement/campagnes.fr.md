@@ -279,6 +279,18 @@ L'onglet apparaît dès qu'une place est tenue dans la campagne. Vous pouvez nom
 sélection d'un seul geste : le lot se traite par tranches, son avancement reste visible, et
 un lot interrompu reprend là où il s'est arrêté au lieu de repartir de zéro.
 
+**Ce que reçoit le partenaire.** Un message **à vos couleurs** — votre logo, votre nom, la
+signature de la personne qui suit le dossier — qui liste les étudiants nommés avec leur
+niveau, et rien d'autre. Une nomination de huit étudiants part en **un seul message**, pas
+en huit. Le destinataire y reçoit un **accès à son propre espace**, créé sans invitation
+séparée : il y retrouve les dossiers que vous lui envoyez et votre fiche, jamais le reste
+de votre espace.
+
+!!! warning "Sans contact joignable, la nomination ne part pas"
+    Le message va au **contact principal** du partenaire ; à défaut, au signataire de
+    l'accord, puis au contact de l'accord. Si aucun des trois n'est renseigné, l'étudiant
+    reste en attente et l'écran vous renvoie vers l'onglet Contacts du partenaire.
+
 Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de l'outil :
 
 - **Relancer** — un rappel part chez le partenaire sans passer par votre boîte mail. Une
@@ -286,6 +298,13 @@ Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de
 - **Retirer** — vous annulez la nomination en expliquant pourquoi. Le partenaire est prévenu
   qu'aucune décision n'est plus attendue, et l'étudiant redevient disponible pour une autre
   destination.
+
+!!! tip "La relance automatique"
+    Une nomination restée sans réponse au-delà du délai que vous fixez — **six jours par
+    défaut**, réglable de 1 à 60 — est relancée **une fois, automatiquement**. Elle a son
+    propre compteur : elle ne consomme pas votre relance manuelle, vous pouvez donc toujours
+    relancer à la main le même jour. Une nomination acceptée, refusée ou retirée n'est jamais
+    relancée.
 
 ![Écran des nominations d'une campagne, avec l'état de chaque nomination et le canal de confirmation](../assets/screenshots/campagne-nominations.png)
 

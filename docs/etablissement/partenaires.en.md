@@ -132,6 +132,20 @@ score, the four sub-scores and an optional CEFR level. The test reference now
 states **which language each test measures**, so a requirement and a certificate
 can be matched without interpretation.
 
+**Requiring two languages: AND between blocks, OR inside.** A requirement is no
+longer a flat list of alternatives. Each expectation belongs to a **block**, and a
+block is **one proof to provide**:
+
+- inside a block, expectations are **alternatives** — "IELTS 6.5 **or** TOEFL 84";
+- between two blocks, they **add up** — "English **and** Portuguese".
+
+A single failed block is enough to refuse the wish. This is what finally expresses what
+a university really asks when it requires a second language on top of English: before,
+the student stayed eligible as soon as English was satisfied.
+
+The **grade point average** holds its own requirement apart: it belongs to no language
+block.
+
 **Where a requirement comes from.** The same fiche can carry two origins, and the
 difference matters — one applies to everyone, the other to you alone. A note at the
 top of the block says which:
@@ -308,6 +322,21 @@ exchange, so students and the office know what can be studied there.
 
 **How it works.** You add courses via a form and delete them per partner; they are
 listed by code.
+
+Each course now declares **where and when it is taught**, and **to whom**:
+
+- the **campuses** it is taught on — a campus page only shows its own;
+- the **incoming periods** it is open to;
+- the **incoming promotions** that can take it.
+
+Two columns summarise this in the list: **Open to** — the promotions — and
+**Available in** — the periods. The catalogue can then be filtered by period.
+
+!!! warning "A label is incoming OR outgoing, never both"
+    Your mobility periods and your custom academic levels now carry a **direction**.
+    Everything that existed was switched to **outgoing**. A consequence worth knowing:
+    **levels and periods only appear on your pages once your incoming labels are
+    declared**. If a page looks empty on that side, that is where to look.
 
 ![A partner's course catalogue](../assets/screenshots/partenaire-cours.png)
 

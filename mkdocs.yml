@@ -117,6 +117,7 @@ plugins:
             Bourse de mobilité: Mobility grants
             Communications: Communications
             Mon établissement: My institution
+            Votre fiche publique: Your public page
             Paramètres &amp; équipe: Settings &amp; team
             Découverte &amp; candidature: Discover &amp; apply
             Pendant &amp; après la mobilité: During &amp; after mobility
@@ -153,6 +154,7 @@ plugins:
             Bourse de mobilité: Becas de movilidad
             Communications: Comunicaciones
             Mon établissement: Mi institución
+            Votre fiche publique: Su página pública
             Paramètres &amp; équipe: Ajustes y equipo
             Découverte &amp; candidature: Descubrir y solicitar
             Pendant &amp; après la mobilité: Durante y después
@@ -189,6 +191,7 @@ plugins:
             Bourse de mobilité: Borse di mobilità
             Communications: Comunicazioni
             Mon établissement: La mia istituzione
+            Votre fiche publique: La vostra pagina pubblica
             Paramètres &amp; équipe: Impostazioni e team
             Découverte &amp; candidature: Scoprire e candidarsi
             Pendant &amp; après la mobilité: Durante e dopo
@@ -225,6 +228,7 @@ plugins:
             Bourse de mobilité: Mobilitätsstipendien
             Communications: Kommunikation
             Mon établissement: Meine Hochschule
+            Votre fiche publique: Ihre öffentliche Seite
             Paramètres &amp; équipe: Einstellungen und Team
             Découverte &amp; candidature: Entdecken und bewerben
             Pendant &amp; après la mobilité: Während und danach
@@ -265,6 +269,7 @@ nav:
       - Bourse de mobilité: etablissement/bourse.md
       - Communications: etablissement/communications.md
       - Mon établissement: etablissement/mon-etablissement.md
+      - Votre fiche publique: etablissement/fiche-publique.md
       - Paramètres &amp; équipe: etablissement/parametres.md
   - Espace étudiant:
       - Découverte &amp; candidature: etudiant/decouverte-candidature.md

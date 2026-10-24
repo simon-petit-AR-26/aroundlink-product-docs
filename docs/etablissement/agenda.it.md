@@ -40,6 +40,47 @@ compare anche se lo studente non ha presentato alcuna preferenza.
 
 *Il mese in corso, ogni data con il colore della sua famiglia. In alto, i filtri che si cumulano e il pulsante di iscrizione al vostro calendario.*
 
+## Raccogliere le date dei vostri partner
+
+**A cosa serve.** Non potete tenere aggiornato il calendario di sessanta università. Loro
+sì — ciascuna il proprio. L'agenda vi permette di chiederlo.
+
+**Per chi.** <span class="al-audience">responsabile RI / coordinatore</span>
+
+**Come funziona.** Chiedete le scadenze **a un partner**, oppure **a tutti in un solo
+gesto**. Riceve un link che non richiede **alcun account**: inserisce le sue date, che
+tornano nella vostra agenda, collegate a lui. Il modulo porta **il vostro logo**, perché
+sappia chi sta chiedendo.
+
+Si raccolgono sei tipi di data:
+
+| Ciò che chiedete | Per quale sessione |
+|---|---|
+| Scadenza di nomina | autunno |
+| Scadenza di nomina | primavera |
+| Scadenza di candidatura | autunno |
+| Scadenza di candidatura | primavera |
+| Inizio del periodo | il periodo in questione |
+| Fine del periodo | il periodo in questione |
+
+Spuntate ciò che volete chiedere: inutile reclamare sei date quando ve ne bastano due.
+
+!!! note "Dichiarata o dedotta"
+    Una data di semestre si collega a una **sessione**. L'agenda vi dice se quella sessione
+    è stata **dichiarata** dal partner o **dedotta** dalla data stessa. La sfumatura conta
+    quando ci costruite sopra una campagna.
+
+!!! tip "Il vostro partner compila una sola volta"
+    Una risposta viene **pubblicata**, non indirizzata a voi soli: l'istituto parla del
+    proprio calendario, e la sua data raggiunge **tutti i suoi partner**. I periodi si
+    accostano in lettura, tramite le loro coordinate europee — Vienna risponde una volta e
+    tutte le scuole che hanno un autunno la vedono.
+
+**Caso d'uso.**
+> Ad aprile la coordinatrice chiede ai suoi 62 partner le scadenze di nomina per entrambe
+> le sessioni. Tre settimane dopo 48 hanno risposto; sollecita gli altri quattordici dalla
+> stessa schermata, senza scrivere una mail.
+
 ## Ritrovare le vostre date in Outlook
 
 **A cosa serve.** Consultare le date di AroundLink dal calendario che già usate, senza aprire

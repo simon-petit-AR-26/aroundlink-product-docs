@@ -266,12 +266,30 @@ The tab appears as soon as a place is held in the campaign. You can nominate a w
 selection in one go: the batch is processed in slices, its progress stays visible, and an
 interrupted batch resumes where it stopped instead of starting over.
 
+**What the partner receives.** A message **in your colours** — your logo, your name, the
+signature of the person following the file — listing the nominated students with their
+level, and nothing else. A nomination of eight students goes out as **one message**, not
+eight. The recipient receives an **access to their own space**, created without a separate
+invitation: they find there the files you send them and your fiche, never the rest of your
+space.
+
+!!! warning "With no reachable contact, the nomination does not go out"
+    The message goes to the partner's **main contact**; failing that, to the agreement's
+    signatory, then to the agreement's contact. If none of the three is filled in, the
+    student stays pending and the screen points you to the partner's Contacts tab.
+
 While the partner has not replied, two actions save you leaving the tool:
 
 - **Remind** — a reminder goes to the partner without going through your mailbox. One
   reminder per twenty-four hours: the button greys out afterwards.
 - **Withdraw** — you cancel the nomination and say why. The partner is told no decision is
   expected any more, and the student becomes available for another destination.
+
+!!! tip "The automatic reminder"
+    A nomination left unanswered beyond the delay you set — **six days by default**,
+    adjustable from 1 to 60 — is reminded **once, automatically**. It has its own counter:
+    it does not consume your manual reminder, so you can still remind by hand the same day.
+    An accepted, refused or withdrawn nomination is never reminded.
 
 ![Campaign nominations screen, showing each nomination's state and confirmation channel](../assets/screenshots/campagne-nominations.png)
 

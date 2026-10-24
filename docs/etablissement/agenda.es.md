@@ -41,6 +41,46 @@ aparece aunque el estudiante no haya presentado ninguna preferencia.
 
 *El mes en curso, cada fecha con el color de su familia. Arriba, los filtros que se acumulan y el botón de suscripción a su calendario.*
 
+## Recopilar las fechas de sus socios
+
+**Para qué sirve.** No puede mantener al día el calendario de sesenta universidades. Ellas
+sí — cada una el suyo. La agenda le permite pedírselo.
+
+**Para quién.** <span class="al-audience">responsable de RI / coordinador</span>
+
+**Cómo funciona.** Pide sus plazos **a un socio**, o **a todos de una sola vez**. Recibe un
+enlace que no exige **ninguna cuenta**: introduce sus fechas y estas vuelven a su agenda,
+vinculadas a él. El formulario lleva **su logotipo**, para que sepa quién pregunta.
+
+Se recopilan seis tipos de fecha:
+
+| Lo que pide | Para qué entrada |
+|---|---|
+| Plazo de nominación | otoño |
+| Plazo de nominación | primavera |
+| Plazo de solicitud | otoño |
+| Plazo de solicitud | primavera |
+| Inicio de periodo | el periodo en cuestión |
+| Fin de periodo | el periodo en cuestión |
+
+Marca lo que quiere pedir: no hace falta reclamar seis fechas cuando le bastan dos.
+
+!!! note "Declarada o deducida"
+    Una fecha de semestre se vincula a una **entrada**. La agenda le indica si esa entrada
+    fue **declarada** por el socio o **deducida** a partir de la propia fecha. El matiz
+    importa cuando construye una campaña sobre ella.
+
+!!! tip "Su socio rellena una sola vez"
+    Una respuesta se **publica**, no se dirige solo a usted: la institución habla de su
+    propio calendario, y su fecha llega a **todos sus socios**. Los periodos se emparejan al
+    leerlos, por sus coordenadas europeas — Viena responde una vez y todas las escuelas que
+    tienen un otoño la ven.
+
+**Caso de uso.**
+> En abril, la coordinadora pide a sus 62 socios sus plazos de nominación para las dos
+> entradas. Tres semanas después han respondido 48; reclama a los otros catorce desde la
+> misma pantalla, sin escribir un correo.
+
 ## Recuperar sus fechas en Outlook
 
 **Para qué sirve.** Consultar las fechas de AroundLink desde el calendario que ya utiliza, sin

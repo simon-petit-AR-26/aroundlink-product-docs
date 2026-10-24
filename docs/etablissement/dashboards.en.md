@@ -76,6 +76,31 @@ to land on an unfiltered three-hundred-row list would be a click you then have t
 > Monday morning, the "learning agreements" tile reads twelve. One click, and the queue opens
 > on those twelve, ready to validate.
 
+## The search bar
+
+**What it's for.** Finding a person or an institution from any screen, without going through
+the right list first.
+
+**Who it's for.** <span class="al-audience">the whole mobility team</span>
+
+**How it works.** The search **ignores accents, both ways**: "Bergstrom" finds "Bergström",
+and the other way round too. A name starting with É, À, Ü, Ö or Ç is found like any other.
+
+Each result carries **the fact that places it**, rather than an email address that tells
+nothing apart between eleven namesakes:
+
+- a **student** — their school when you have several, otherwise their address, then their
+  number;
+- an **institution** — its country spelled out and the agreement family that links you;
+- a **contact** — the institution they belong to.
+
+Results are ranked by relevance, and a counter says how many there are in total.
+
+!!! tip "A useful side effect"
+    Because both spellings now meet, a single word typed without accents surfaces the
+    duplicates nobody could see — "Bahçeşehir Üniversitesi" and "Bahcesehir University" come
+    out together.
+
 ## Steering indicators
 
 **What it's for.** The underlying trends, for decisions from one year to the next rather than

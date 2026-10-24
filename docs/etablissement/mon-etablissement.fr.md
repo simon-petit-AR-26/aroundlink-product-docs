@@ -59,6 +59,30 @@ depuis cet écran.
 associées (synchronisation, calendrier, coordinateurs). C'est la contrepartie, côté
 « nous », de la fiche que vous consultez chez un partenaire.
 
+## Annoncer vos exigences de langue à tout votre réseau
+
+**À quoi ça sert.** Vos prérequis de langue changent d'une année sur l'autre. Plutôt que
+d'attendre que chaque partenaire vous les demande, vous les annoncez d'un geste.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** L'envoi se fait **en deux temps**, comme la publication de vos
+dates : vous **regardez d'abord** ce qui partirait et à combien de partenaires, puis vous
+**envoyez**. Un message vers cinquante universités ne se rattrape pas ; le nombre de
+destinataires est sous vos yeux avant le clic, pas dans le compte rendu d'après.
+
+L'écran rappelle aussi **quand vous avez annoncé pour la dernière fois**.
+
+!!! tip "Le pendant : demander les siennes à un partenaire"
+    Depuis la fiche d'un partenaire, vous pouvez lui **demander ses exigences de langue**
+    par un lien qui ne réclame **aucun compte**. Il saisit ses prérequis, langue par
+    langue, et ils remontent sur sa fiche. Le formulaire porte **votre logo**, pour qu'il
+    sache qui demande.
+
+**Cas d'usage.**
+> En juin, le bureau relève ses exigences d'anglais de B2 à C1. Il ouvre l'aperçu, voit
+> que l'annonce partira à 47 partenaires, et l'envoie. Aucun mail à rédiger.
+
 ## Modération des avis étudiants
 
 **À quoi ça sert.** Vous collectez les avis d'étudiants de retour de mobilité (note,
