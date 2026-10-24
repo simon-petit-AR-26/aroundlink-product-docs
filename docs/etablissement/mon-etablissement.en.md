@@ -55,6 +55,30 @@ coordinators, contact information. You keep it synchronized from this screen.
 (sync, calendar, coordinators). It's the "our side" counterpart of the factsheet you
 consult at a partner.
 
+## Announcing your language requirements to your whole network
+
+**What it's for.** Your language prerequisites change from one year to the next. Rather
+than waiting for each partner to ask, you announce them in one gesture.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** Sending happens **in two steps**, like publishing your dates: you
+**look first** at what would go out and to how many partners, then you **send**. A message
+to fifty universities cannot be taken back; the number of recipients is in front of you
+before the click, not in the report afterwards.
+
+The screen also reminds you **when you last announced**.
+
+!!! tip "The counterpart: asking a partner for theirs"
+    From a partner's fiche, you can **ask for their language requirements** through a link
+    that needs **no account**. They fill in their prerequisites, language by language, and
+    these appear on their fiche. The form carries **your logo**, so they know who is
+    asking.
+
+**Use case.**
+> In June, the office raises its English requirement from B2 to C1. It opens the preview,
+> sees the announcement would go to 47 partners, and sends it. No email to write.
+
 ## Student-review moderation
 
 **What it's for.** You collect reviews from students returning from mobility

@@ -42,6 +42,48 @@ keinen Wunsch eingereicht hat.
 
 *Der laufende Monat, jeder Termin in der Farbe seiner Familie. Oben die Filter, die zusammenwirken, und die Schaltfläche zum Abonnieren in Ihrem Kalender.*
 
+## Die Termine Ihrer Partner einsammeln
+
+**Wozu es dient.** Sie können den Kalender von sechzig Hochschulen nicht aktuell halten.
+Diese schon — jede ihren eigenen. Der Kalender erlaubt Ihnen, danach zu fragen.
+
+**Für wen.** <span class="al-audience">IO-Verantwortliche / Koordination</span>
+
+**Wie es funktioniert.** Sie fragen **einen Partner** nach seinen Fristen, oder **alle auf
+einmal**. Er erhält einen Link, der **kein Konto** verlangt: er trägt seine Termine ein,
+und diese erscheinen in Ihrem Kalender, ihm zugeordnet. Das Formular trägt **Ihr Logo**,
+damit er weiß, wer fragt.
+
+Sechs Terminarten werden so eingesammelt:
+
+| Wonach Sie fragen | Für welchen Beginn |
+|---|---|
+| Nominierungsfrist | Herbst |
+| Nominierungsfrist | Frühjahr |
+| Bewerbungsfrist | Herbst |
+| Bewerbungsfrist | Frühjahr |
+| Beginn des Zeitraums | der betreffende Zeitraum |
+| Ende des Zeitraums | der betreffende Zeitraum |
+
+Sie haken an, wonach Sie fragen möchten: sechs Termine zu verlangen lohnt nicht, wenn Ihnen
+zwei genügen.
+
+!!! note "Angegeben oder erschlossen"
+    Ein Semestertermin hängt an einem **Beginn**. Der Kalender sagt Ihnen, ob dieser Beginn
+    vom Partner **angegeben** oder aus dem Termin selbst **erschlossen** wurde. Der
+    Unterschied zählt, wenn Sie darauf eine Kampagne aufbauen.
+
+!!! tip "Ihr Partner trägt nur einmal ein"
+    Eine Antwort wird **veröffentlicht**, nicht nur an Sie gerichtet: die Hochschule spricht
+    über ihren eigenen Kalender, und ihr Termin erreicht **alle ihre Partner**. Zeiträume
+    werden beim Lesen zusammengeführt, über ihre europäischen Kenndaten — Wien antwortet
+    einmal, und jede Schule mit einem Herbst sieht es.
+
+**Anwendungsfall.**
+> Im April fragt die Koordinatorin ihre 62 Partner nach den Nominierungsfristen für beide
+> Starttermine. Drei Wochen später haben 48 geantwortet; die übrigen vierzehn mahnt sie vom
+> selben Bildschirm an, ohne eine Mail zu schreiben.
+
 ## Ihre Termine in Outlook wiederfinden
 
 **Wofür es da ist.** Die Termine von AroundLink in dem Kalender lesen, den Sie ohnehin nutzen,

@@ -41,6 +41,47 @@ appears even if the student has submitted no wish.
 
 *The current month, each date carrying its family's colour. At the top, the filters that stack and the button to subscribe from your own calendar.*
 
+## Collecting your partners' dates
+
+**What it is for.** You cannot keep sixty universities' calendars up to date. They can —
+each their own. The agenda lets you ask them.
+
+**Who it is for.** <span class="al-audience">IO officer / coordinator</span>
+
+**How it works.** You ask for the deadlines of **one partner**, or of **all of them in one
+gesture**. They receive a link that needs **no account**: they fill in their dates, which
+come back into your agenda, attached to them. The form carries **your logo**, so they know
+who is asking.
+
+Six kinds of date are collected this way:
+
+| What you ask for | For which intake |
+|---|---|
+| Nomination deadline | autumn |
+| Nomination deadline | spring |
+| Application deadline | autumn |
+| Application deadline | spring |
+| Period start | the period concerned |
+| Period end | the period concerned |
+
+You tick what you want to ask for: no need to claim six dates when two are enough.
+
+!!! note "Declared or guessed"
+    A semester date attaches to an **intake**. The agenda tells you whether that intake was
+    **declared** by the partner, or **guessed** from the date itself. The distinction
+    matters when you build a campaign on it.
+
+!!! tip "Your partner fills it in once"
+    A reply is **published**, not addressed to you alone: the institution is talking about
+    its own calendar, and its date reaches **all of its partners**. Periods are matched at
+    read time, through their European coordinates — Vienna answers once, and every school
+    with an autumn sees it.
+
+**Use case.**
+> In April, the coordinator asks her 62 partners for their nomination deadlines for both
+> intakes. Three weeks later 48 have answered; she chases the other fourteen from the same
+> screen, without writing an email.
+
 ## Finding your dates in Outlook
 
 **What it's for.** Reading AroundLink's dates from the calendar you already use, without

@@ -82,6 +82,32 @@ pour atterrir sur une liste de trois cents lignes à retrier serait un clic à d
 > Lundi matin, la tuile « contrats pédagogiques » affiche douze. Un clic, et la file s'ouvre
 > sur ces douze-là, prêts à être validés.
 
+## La barre de recherche
+
+**À quoi ça sert.** Retrouver une personne ou un établissement depuis n'importe quel écran,
+sans passer par la bonne liste.
+
+**Pour qui.** <span class="al-audience">toute l'équipe mobilité</span>
+
+**Comment ça marche.** La recherche **ignore les accents, dans les deux sens** : « Bergstrom »
+trouve « Bergström », et l'inverse aussi. Un nom qui commence par É, À, Ü, Ö ou Ç se trouve
+comme les autres.
+
+Chaque résultat porte **le fait qui le situe**, et non une adresse e-mail qui ne distingue
+rien entre onze homonymes :
+
+- un **étudiant** — son école quand vous en avez plusieurs, sinon son adresse, puis son
+  numéro ;
+- un **établissement** — son pays en toutes lettres et la famille d'accord qui vous lie ;
+- un **contact** — l'établissement auquel il appartient.
+
+Les résultats sont classés par pertinence, et un compteur dit combien il y en a au total.
+
+!!! tip "Un effet de bord utile"
+    Parce que les deux écritures se rencontrent désormais, un seul mot tapé sans accents fait
+    apparaître les doublons qu'on ne voyait pas — « Bahçeşehir Üniversitesi » et « Bahcesehir
+    University » sortent ensemble.
+
 ## Les indicateurs de pilotage
 
 **À quoi ça sert.** Les tendances de fond, pour les arbitrages d'une année sur l'autre

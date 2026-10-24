@@ -140,6 +140,21 @@ niveau CECRL optionnel. Le référentiel des tests dit désormais **quelle langu
 chaque test mesure**, ce qui permet de rapprocher une exigence et un certificat
 sans interprétation.
 
+**Exiger deux langues : ET entre les blocs, OU dedans.** Une exigence n'est plus
+une liste plate d'alternatives. Chaque attente appartient à un **bloc**, et un bloc
+est **une preuve à apporter** :
+
+- à l'intérieur d'un bloc, les attentes sont des **alternatives** — « IELTS 6.5 **ou**
+  TOEFL 84 » ;
+- entre deux blocs, elles **s'additionnent** — « anglais **et** portugais ».
+
+Un seul bloc en échec suffit à refuser le vœu. C'est ce qui permet enfin d'exprimer
+ce qu'une université demande vraiment quand elle exige une LV2 en plus de l'anglais :
+avant, l'étudiant restait considéré comme éligible dès qu'il satisfaisait l'anglais.
+
+La **moyenne générale** tient son exigence à part : elle n'entre dans aucun bloc de
+langue.
+
 **D'où vient une exigence.** Une même fiche peut porter deux origines, et la
 différence compte — l'une s'applique à tout le monde, l'autre à vous seul. Une
 mention en tête du bloc le dit :
@@ -327,6 +342,23 @@ l'échange, afin que les étudiants et le bureau sachent ce qui peut y être ét
 
 **Comment ça marche.** Vous ajoutez des cours via un formulaire et vous les
 supprimez par partenaire ; ils sont listés par code.
+
+Chaque cours déclare désormais **où et quand il se donne**, et **à qui** :
+
+- les **campus** sur lesquels il est enseigné — la fiche d'un campus ne montre que
+  les siens ;
+- les **périodes d'accueil** auxquelles il est ouvert ;
+- les **promotions d'accueil** qui peuvent le suivre.
+
+Deux colonnes le résument dans la liste : **Open to** — les promotions — et
+**Available in** — les périodes. Le catalogue se filtre ensuite par période.
+
+!!! warning "Un libellé est entrant OU sortant, jamais les deux"
+    Vos périodes de mobilité et vos niveaux d'études personnalisés portent désormais
+    une **direction**. L'existant a été basculé en **sortant**. Conséquence à connaître :
+    **les niveaux et les périodes n'apparaissent sur vos fiches qu'une fois vos libellés
+    d'accueil déclarés**. Si une fiche vous paraît vide de ce côté, c'est là qu'il faut
+    regarder.
 
 ![Catalogue de cours d'un partenaire](../assets/screenshots/partenaire-cours.png)
 

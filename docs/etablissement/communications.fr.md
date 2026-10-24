@@ -36,6 +36,23 @@ le nombre de destinataires, d'e-mails partis et de messages épinglés. Un messa
 > par e-mail.
 
 
+## L'identité de vos e-mails
+
+**À quoi ça sert.** Beaucoup des messages qui partent d'AroundLink arrivent chez des gens
+qui ne sont pas vos utilisateurs : un partenaire, un contact, un étudiant qui ne s'est pas
+encore connecté. Ils reconnaissent **l'école avec qui ils travaillent**, pas un outil dont
+ils n'ont jamais entendu parler.
+
+**Comment ça marche.** Chaque message porte donc **votre logo et votre nom en tête**, la
+signature de la personne qui l'envoie au bas de la carte, et une mention discrète *powered
+by AroundLink* à droite. Un e-mail est écrit par **une personne à une personne**, pas par un
+système.
+
+!!! note "Quatre exceptions"
+    Les messages que personne n'envoie — réinitialisation de mot de passe, message
+    générique — gardent notre seule marque. La mention « powered by » n'a de sens que
+    derrière le nom de quelqu'un d'autre.
+
 ## Notifications dans l'application
 
 **À quoi ça sert.** Chaque utilisateur dispose d'un fil de notifications avec un

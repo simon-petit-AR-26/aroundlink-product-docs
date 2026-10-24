@@ -41,6 +41,48 @@ si l'étudiant n'a déposé aucun vœu.
 
 *Le mois en cours, chaque date portant la couleur de sa famille. En haut, les filtres qui se cumulent et le bouton d'abonnement à votre calendrier.*
 
+## Collecter les dates de vos partenaires
+
+**À quoi ça sert.** Vous ne pouvez pas tenir à jour le calendrier de soixante universités.
+Elles, oui — chacune le sien. L'agenda vous permet de le leur demander.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Vous demandez ses échéances **à un partenaire**, ou **à tous d'un
+seul geste**. Il reçoit un lien qui ne réclame **aucun compte** : il saisit ses dates, elles
+remontent dans votre agenda, rattachées à lui. Le formulaire porte **votre logo**, pour
+qu'il sache qui demande.
+
+Six types de dates se collectent ainsi :
+
+| Ce que vous demandez | Pour quelle rentrée |
+|---|---|
+| Échéance de nomination | automne |
+| Échéance de nomination | printemps |
+| Échéance de candidature | automne |
+| Échéance de candidature | printemps |
+| Début de période | la période concernée |
+| Fin de période | la période concernée |
+
+Vous cochez ce que vous voulez demander : inutile de réclamer six dates quand deux vous
+suffisent.
+
+!!! note "Déclarée ou devinée"
+    Une date de semestre se raccroche à une **rentrée**. L'agenda vous dit si cette rentrée
+    a été **déclarée** par le partenaire, ou **devinée** à partir de la date elle-même. La
+    nuance compte quand vous construisez une campagne dessus.
+
+!!! tip "Votre partenaire ne remplit qu'une fois"
+    Une réponse est **publiée**, pas adressée à vous seul : l'établissement parle de son
+    propre calendrier, et sa date part chez **tous ses partenaires**. Les périodes se
+    rapprochent à la lecture, par leurs coordonnées européennes — Vienne répond une fois, et
+    toutes les écoles qui ont un automne la voient.
+
+**Cas d'usage.**
+> En avril, la coordinatrice demande à ses 62 partenaires leurs échéances de nomination
+> pour les deux rentrées. Trois semaines plus tard, 48 ont répondu ; elle relance les
+> quatorze autres depuis le même écran, sans écrire un mail.
+
 ## Retrouver vos dates dans Outlook
 
 **À quoi ça sert.** Consulter les dates d'AroundLink depuis le calendrier que vous utilisez

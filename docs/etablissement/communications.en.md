@@ -33,6 +33,21 @@ later be removed from the dashboard.
 > students in Spain, pinned to their dashboard and sent by email.
 
 
+## The identity of your emails
+
+**What it's for.** Many of the messages leaving AroundLink reach people who are not your
+users: a partner, a contact, a student who has not signed in yet. They recognise **the
+school they work with**, not a tool they have never heard of.
+
+**How it works.** Every message therefore carries **your logo and your name at the top**,
+the signature of the person sending it at the bottom of the card, and a discreet *powered by
+AroundLink* on the right. An email is written by **one person to one person**, not by a
+system.
+
+!!! note "Four exceptions"
+    Messages nobody sends — password reset, generic message — keep our mark alone. A
+    "powered by" line only makes sense behind someone else's name.
+
 ## In-app notifications
 
 **What it's for.** Every user has a notification feed with a live unread counter in
