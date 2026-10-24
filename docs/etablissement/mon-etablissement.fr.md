@@ -16,13 +16,23 @@ reste juste et à jour.
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** La page est organisée en trois onglets. **Information** :
-les champs d'identité (code, nom, pays…), le logo et les accréditations.
-**Informations étudiants** : un conteneur de six sous-onglets — fiche pratique,
-cours, liens, avis, bibliothèque et FAQ — où chaque élément porte ses audiences de
-visibilité. **Factsheet IIA** : votre propre factsheet EWP (synchronisation,
-calendrier, coordinateurs…). Les contenus se rédigent sous forme de blocs rattachés
-à des catégories et sous-catégories.
+**Comment ça marche.** La page est organisée en quatre onglets. **Information** :
+les champs d'identité (code, nom, pays…), le logo, les accréditations, vos exigences
+de langue et votre agenda. **Student Info** : vos contenus pour les étudiants — fiche
+pratique, cours et programmes, liens, bibliothèque, avis et FAQ — où chaque élément
+porte ses audiences de visibilité. **Contacts** : votre équipe et vos interlocuteurs.
+**Public page** : la composition de [votre fiche publique](fiche-publique.md).
+
+Un **index vertical** liste les rubriques avec, en face de chacune, **ce qu'il reste à
+remplir** — 17/17 quand tout y est. Les contenus se rédigent sous forme de blocs
+rattachés à des catégories et sous-catégories.
+
+![Mon établissement, onglet Student Info](../assets/screenshots/mon-etablissement-student-info.png)
+
+*Vos contenus étudiants : l'index des rubriques et leurs compteurs à gauche, les blocs rédigés à droite. Le crayon modifie, la corbeille retire.*
+
+Votre **factsheet EWP** reste à part, sous son propre écran : c'est elle que le réseau
+européen publie.
 
 ![Votre fiche EWP dans Mon établissement](../assets/screenshots/mon-etablissement-fiche-ewp.png)
 

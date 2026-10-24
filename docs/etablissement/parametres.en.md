@@ -55,7 +55,7 @@ many places or agreements use that level. Duplicate labels are rejected.
 
 ![Custom academic levels](../assets/screenshots/parametres-niveaux.png)
 
-*Your own level labels, each mapped to a European level, with how many students, institutions and places depend on them.*
+*Your own level labels, each mapped to a European level and carrying its direction, with how many students, institutions and places depend on them.*
 
 **Use case.**
 > An engineering school defines "Aéro 4" mapped to EQF 7, to filter campaigns and
@@ -224,7 +224,7 @@ Views are private to your institution.
 
 ![Mobility periods](../assets/screenshots/parametres-periodes.png)
 
-*Your periods, with how many institutions and places rely on each.*
+*Your periods, each with its direction and its rank in the year — "the 1st of 2". The banner at the top flags those still to classify: without that rank, your nominations cannot be exported to the EWP Dashboard.*
 
 **Use case.**
 > A coordinator saves a "Spain partners — active agreements" view with its columns

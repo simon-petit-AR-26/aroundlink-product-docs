@@ -78,7 +78,7 @@ partner is never modified.
 
 ![A partner's file, Information tab](../assets/screenshots/partenaire-informations.png)
 
-*The partner's identity, your own layer (internal code and tags), their official identifiers and the expected language scores.*
+*A partner's fiche: on the left their identity card, which stays on screen — including your tags and student filters; in the middle the index of sections with what is left to fill in; on the right what you keep to yourself. At the bottom, their agenda and the button that asks them for their dates.*
 
 **Use case.**
 > The coordinator tags Bologna as "Priority" and records the office's internal
@@ -223,7 +223,7 @@ account.
 
 ![List of partner contacts](../assets/screenshots/partenaires-contacts.png)
 
-*Your contacts at partner institutions. This is where you open their access to the platform.*
+*Your contacts at partner institutions, the "Main" badge marking the one who receives requests and nominations. This is where you open their access.*
 
 **Use case.**
 > The coordinator adds a partner's Erasmus officer and marks them as the main
@@ -340,7 +340,7 @@ Two columns summarise this in the list: **Open to** — the promotions — and
 
 ![A partner's course catalogue](../assets/screenshots/partenaire-cours.png)
 
-*The courses your students can pick from when building their learning agreement, with their credits and classification.*
+*The course catalogue — here your own institution's. Each course says which campuses it is taught on and in which term. The "Open to" and "Available in" columns appear as well once you have declared your incoming labels.*
 
 **Use case.**
 > The office records the 12 English-taught master's courses a partner offers to

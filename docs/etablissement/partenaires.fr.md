@@ -82,7 +82,7 @@ partenaire partagé ne sont jamais modifiées.
 
 ![Fiche d'un partenaire, onglet Informations](../assets/screenshots/partenaire-informations.png)
 
-*L'identité du partenaire, votre propre couche (code interne et tags), ses identifiants officiels et les scores de langue attendus.*
+*La fiche d'un partenaire : à gauche sa carte d'identité, qui reste à l'écran — vos tags et vos filtres étudiants compris ; au centre l'index des rubriques avec ce qu'il reste à remplir ; à droite ce que vous gardez pour vous. En bas, son agenda et le bouton qui lui demande ses dates.*
 
 **Cas d'usage.**
 > Le coordinateur étiquette Bologne comme « Prioritaire » et note la référence
@@ -237,7 +237,7 @@ est automatiquement relié à un compte existant qui lui correspond.
 
 ![Liste des contacts partenaires](../assets/screenshots/partenaires-contacts.png)
 
-*Vos interlocuteurs chez vos partenaires. C'est d'ici que vous leur ouvrez un accès à la plateforme.*
+*Vos interlocuteurs chez vos partenaires, l'étiquette « Main » marquant celui à qui partent les demandes et les nominations. C'est d'ici que vous leur ouvrez un accès.*
 
 **Cas d'usage.**
 > Le coordinateur ajoute la responsable Erasmus d'un partenaire et la marque
@@ -362,7 +362,7 @@ Deux colonnes le résument dans la liste : **Open to** — les promotions — et
 
 ![Catalogue de cours d'un partenaire](../assets/screenshots/partenaire-cours.png)
 
-*Les cours dans lesquels vos étudiants pourront puiser pour construire leur contrat pédagogique, avec leurs crédits et leur classification.*
+*Le catalogue de cours — ici celui de votre propre établissement. Chaque cours dit sur quels campus il est donné et à quelle période. Les colonnes « Open to » et « Available in » apparaissent en plus dès que vous avez déclaré vos libellés d'accueil.*
 
 **Cas d'usage.**
 > Le bureau enregistre les 12 cours de master enseignés en anglais qu'un

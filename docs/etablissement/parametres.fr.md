@@ -60,7 +60,7 @@ libellés en double sont refusés.
 
 ![Niveaux d'études personnalisés](../assets/screenshots/parametres-niveaux.png)
 
-*Vos propres libellés de niveaux, chacun rattaché à un niveau européen, avec le nombre d'étudiants, d'établissements et de places qui en dépendent.*
+*Vos propres libellés de niveaux, chacun rattaché à un niveau européen et portant sa direction, avec le nombre d'étudiants, d'établissements et de places qui en dépendent.*
 
 **Cas d'usage.**
 > Une école d'ingénieurs définit « Aéro 4 » associé à l'EQF 7, afin de filtrer
@@ -237,7 +237,7 @@ pouvez ensuite basculer d'un clic entre vos vues. Les vues sont propres à votre
 
 ![Périodes de mobilité](../assets/screenshots/parametres-periodes.png)
 
-*Vos périodes, avec le nombre d'établissements et de places qui s'appuient sur chacune.*
+*Vos périodes, chacune avec sa direction et son rang dans l'année — « le 1er sur 2 ». Le bandeau du haut signale celles qui restent à classer : sans ce rang, vos nominations ne peuvent pas partir vers le Dashboard EWP.*
 
 **Cas d'usage.**
 > Un coordinateur enregistre une vue « Partenaires Espagne — accords actifs » avec

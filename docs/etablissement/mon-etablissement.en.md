@@ -15,12 +15,23 @@ place to keep the information students see accurate and up to date.
 
 **Who it's for.** <span class="al-audience">coordinator / IR manager</span>
 
-**How it works.** The page is organized into three tabs. **Information**: identity
-fields (code, name, country…), the logo and accreditations. **Student info**: a
-container of six sub-tabs — factsheet, courses, links, feedback, library and FAQ —
-where each item carries its visibility audiences. **IIA factsheet**: your own EWP
-factsheet (sync, calendar, coordinators…). Content is authored as blocks attached to
-categories and sub-categories.
+**How it works.** The page is organized into four tabs. **Information**: identity
+fields (code, name, country…), the logo, accreditations, your language requirements and
+your agenda. **Student Info**: your content for students — factsheet, courses and
+programmes, links, library, reviews and FAQ — where each item carries its visibility
+audiences. **Contacts**: your team and your counterparts. **Public page**: composing
+[your public page](fiche-publique.md).
+
+A **vertical index** lists the sections with, next to each, **what is left to fill in** —
+17/17 when everything is there. Content is written as blocks attached to categories and
+sub-categories.
+
+![My institution, Student Info tab](../assets/screenshots/mon-etablissement-student-info.png)
+
+*Your student content: the index of sections and their counters on the left, the written blocks on the right. The pencil edits, the bin removes.*
+
+Your **EWP factsheet** stays apart, under its own screen: that is the one the European
+network publishes.
 
 ![Your EWP factsheet in My institution](../assets/screenshots/mon-etablissement-fiche-ewp.png)
 
