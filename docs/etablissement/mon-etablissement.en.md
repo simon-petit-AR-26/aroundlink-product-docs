@@ -106,9 +106,14 @@ months without its website filled in: one field, one click, and nothing ever tol
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** A **"things to do"** pill appears at the bottom right of your screens,
-with the number of things left. It opens a list where each line says **what to do** and,
-above all, **what it changes**:
+**How it works.** A pill appears at the bottom right of your screens, with the number of
+things left:
+
+![The "things to do" pill](../assets/screenshots/things-to-do-pastille.png)
+
+*At the bottom right, discreet and always there as long as something remains.*
+
+It opens a list where each line says **what to do** and, above all, **what it changes**:
 
 | What is missing | What it costs |
 |---|---|

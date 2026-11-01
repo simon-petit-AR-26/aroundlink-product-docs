@@ -64,3 +64,4 @@ agenda-demande-dates.png	/agenda	2026-10-24
 recherche-globale.png	/dashboard	2026-10-24
 import-cours.png	/settings/integrations/courses	2026-11-01
 things-to-do.png	/my-institution	2026-11-01
+things-to-do-pastille.png	/my-institution	2026-11-01
