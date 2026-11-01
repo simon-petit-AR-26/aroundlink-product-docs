@@ -354,7 +354,16 @@ Two columns summarise this in the list: **Open to** — the promotions — and
 from learning agreements signed years ago, typing is not viable — and that is precisely
 where the material most useful to your students sits.
 
-**How it works.** You import a course file on a partner's fiche.
+**How it works.** **Settings ▸ Integrations ▸ Import Courses**, in three steps: you
+download the template, you upload your file to **preview every row** and fix errors inline,
+then you confirm — only valid rows are written. Excel or CSV.
+
+Each row needs the **course name** and **one way to name the partner**: your own internal
+code, its domain, or its ROR id — checked in that order.
+
+![The course import screen](../assets/screenshots/import-cours.png)
+
+*The screen states what it requires before you even open the file: the mandatory columns, the eight columns it accepts, and the formats.*
 
 !!! info "The template is deliberately tolerant"
     **Credits** and the **ISCED code** are **optional**: an agreement signed five years ago
@@ -362,7 +371,14 @@ where the material most useful to your students sits.
     for a value nobody will ever recover.
 
     However, **a row must carry at least one of the three identifiers** — otherwise it is
-    refused: we would not know which course it is about.
+    refused: we would not know which partner it is about.
+
+    A column the template does not list is simply ignored: you can keep your own notes in
+    the file. But a **renamed** column is read as a missing one.
+
+!!! tip "Re-importing updates, it does not duplicate"
+    The same file passed a second time **updates** the courses instead of creating doubles.
+    You can therefore fix your file and pass it again without any cleaning up.
 
 !!! warning "A course without credits is not a zero-credit course"
     The screen shows a **dash**, not a zero, and the value stays empty rather than wrong.
