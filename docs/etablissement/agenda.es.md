@@ -52,6 +52,9 @@ sí — cada una el suyo. La agenda le permite pedírselo.
 enlace que no exige **ninguna cuenta**: introduce sus fechas y estas vuelven a su agenda,
 vinculadas a él. El formulario lleva **su logotipo**, para que sepa quién pregunta.
 
+**Se le avisa en cuanto un socio ha respondido**: llega una notificación a la
+herramienta, no tiene nada que vigilar.
+
 Se recopilan seis tipos de fecha:
 
 | Lo que pide | Para qué entrada |

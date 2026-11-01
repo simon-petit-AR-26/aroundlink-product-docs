@@ -369,9 +369,32 @@ Deux colonnes le résument dans la liste : **Open to** — les promotions — et
 
 *Le catalogue de cours — ici celui de votre propre établissement. Chaque cours dit sur quels campus il est donné et à quelle période. Les colonnes « Open to » et « Available in » apparaissent en plus dès que vous avez déclaré vos libellés d'accueil.*
 
+### Importer un catalogue au lieu de le saisir
+
+**À quoi ça sert.** Un catalogue se saisit cours par cours quand il est neuf. Mais quand
+vous repartez de contrats pédagogiques signés il y a des années, la saisie manuelle n'est
+pas tenable — et c'est pourtant là que se trouve la matière la plus utile à vos étudiants.
+
+**Comment ça marche.** Vous importez un fichier de cours sur la fiche d'un partenaire.
+
+!!! info "Le gabarit est volontairement tolérant"
+    Les **crédits** et le **code ISCED** sont **facultatifs** : un contrat signé il y a cinq
+    ans ne les porte presque jamais. Refuser ces lignes reviendrait à jeter l'essentiel du
+    fichier pour une donnée que personne ne retrouvera.
+
+    En revanche, **une ligne doit porter au moins un des trois identifiants** — sans quoi
+    elle est refusée : on ne saurait pas de quel cours elle parle.
+
+!!! warning "Un cours sans crédits n'est pas un cours à zéro crédit"
+    L'écran affiche un **tiret**, pas un zéro, et la donnée reste vide plutôt que fausse.
+    Un tel cours traverse tout de même le contrat d'études, le relevé de notes et les
+    totaux — il n'y bloque rien, il n'y compte simplement pas de crédits.
+
 **Cas d'usage.**
 > Le bureau enregistre les 12 cours de master enseignés en anglais qu'un
-> partenaire propose aux entrants.
+> partenaire propose aux entrants. Pour les 270 contrats des années précédentes, il importe
+> le fichier : les cours sans ISCED passent, les lignes sans aucun identifiant sont
+> signalées.
 
 
 ## FAQ du partenaire

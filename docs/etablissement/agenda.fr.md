@@ -53,6 +53,9 @@ seul geste**. Il reçoit un lien qui ne réclame **aucun compte** : il saisit se
 remontent dans votre agenda, rattachées à lui. Le formulaire porte **votre logo**, pour
 qu'il sache qui demande.
 
+**Vous êtes prévenu dès qu'un partenaire a répondu** : une notification arrive dans
+l'outil, vous n'avez rien à surveiller.
+
 Six types de dates se collectent ainsi :
 
 | Ce que vous demandez | Pour quelle rentrée |

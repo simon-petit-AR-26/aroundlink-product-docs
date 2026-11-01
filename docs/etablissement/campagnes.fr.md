@@ -50,9 +50,21 @@ d'entre eux ne se reviennent pas une fois que vos étudiants ont commencé à r�
 
 ### L'identité
 
-**Nom**, **année scolaire**, **date de début** et **date de fin**. La fin ne peut pas
-précéder le début, et elle n'est pas décorative : le lendemain du dernier jour, la campagne
-se clôt d'elle-même.
+**Nom**, **année scolaire**, **ouverture** et **fermeture**. La fin ne peut pas précéder
+le début, et elle n'est pas décorative.
+
+**Vous choisissez l'heure, pas seulement le jour.** Une campagne s'ouvre et se ferme **à la
+minute** : fermez à 18:00 et un vœu déposé à 18:01 est refusé. C'est ce qui permet d'aligner
+une clôture sur une réunion de commission plutôt que sur un minuit arbitraire.
+
+Les écrans affichent l'heure **de votre établissement** et nomment son fuseau — le vôtre et
+celui de vos étudiants, pas celui d'un serveur.
+
+!!! tip "Votre geste l'emporte sur l'heure"
+    Si vous rouvrez une campagne après son heure de fermeture, elle **reste ouverte** :
+    l'outil ne la refermera pas dans la minute qui suit. Repoussez la fermeture et elle se
+    fermera à la nouvelle heure. Autrement dit, la fermeture automatique ne se déclenche
+    qu'au moment où l'heure est franchie — jamais a posteriori contre votre décision.
 
 ### Le vivier d'étudiants
 
@@ -127,6 +139,15 @@ Avant de valider vos changements, un récapitulatif vous dit ce que la sauvegard
 **ajouter, conserver et retirer** — destinations comme étudiants. Retirer un partenaire
 emporte tous ses accords de la campagne, et les vœux déjà posés dessus : l'aperçu vous le
 dit avant, pas après.
+
+!!! note "L'étudiant ne voit que ce qui lui est réellement ouvert"
+    Une destination n'apparaît dans sa liste, et ne peut être demandée, que si **sa ligne de
+    la matrice** — son année, son niveau, son parcours, son semestre — déclare des places.
+    Une destination déclarée mais **pleine** reste demandable ; une destination jamais
+    ouverte à sa promotion ne l'est pas.
+
+    Vous, coordinateur, gardez toute votre liberté : ajouter un vœu, pré-affecter, nominer —
+    rien ne change de votre côté.
 
 ## Ce que le matchmaking exige
 

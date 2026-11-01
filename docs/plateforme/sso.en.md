@@ -19,12 +19,25 @@ transition.
 | --- | --- | --- |
 | **Microsoft Entra ID** (Azure AD) | ✅ Available | [Onboarding guide](sso-microsoft.md) |
 | **Shibboleth / SAML 2.0** (RENATER, eduGAIN, SWITCHaai…) | 🗺️ On the roadmap | — |
-| **Google Workspace** | 🗺️ On the roadmap | — |
+| **Google** (Workspace or personal account) | ✅ Available | see below |
+
+### Signing in with Google
+
+**What IT has to do: nothing.** Each user **links their own** Google account — Workspace or
+personal — from their profile, then signs in with it. There is no tenant id to provide and
+no admin consent to grant.
+
+**Sign-in matches the linked identity**, never the address alone: an address that looks like
+one of your accounts opens nothing until the person has linked it themselves.
+
+!!! warning "With single sign-on enforced"
+    If your institution enforces single sign-on, linking happens automatically on first
+    sign-in — **but only if the account's Workspace domain is among your allowed domains**.
+    A **personal** Google account created on one of your institution's addresses is refused.
 
 !!! note "Roadmap"
-    **Microsoft Entra ID** is the provider you can connect today. Academic
-    identity federation (Shibboleth / SAML, RENATER, eduGAIN) and Google
-    Workspace are on our roadmap, with no announced date at this stage.
+    Academic identity federation (Shibboleth / SAML, RENATER, eduGAIN) is on our roadmap,
+    with no announced date at this stage.
 
     If your institution authenticates through one of those, do tell us: what
     institutions ask for decides the order in which we open them. In the
@@ -33,7 +46,7 @@ transition.
 
 ![The sign-in screen with single sign-on](../assets/screenshots/connexion.png)
 
-*The sign-in screen: the password, and "Sign in with Microsoft", offered to everyone at all times. There is no account creation — access is opened by the international office.*
+*The sign-in screen: the password, and sign-in with a Microsoft or Google account, offered to everyone at all times. There is no account creation — access is opened by the international office.*
 
 ## What holds for every provider
 
@@ -56,7 +69,7 @@ synchronisation**: AroundLink permissions are granted inside AroundLink.
 
 ### The sign-in journey
 
-The **"Sign in with Microsoft"** button sits on the home page, for everyone, permanently.
+The **"Sign in with Microsoft"** and **"Sign in with Google"** buttons sit on the home page, for everyone, permanently.
 There is nothing to look for and nothing to declare upfront.
 
 What happens next depends on one thing only: **is the Microsoft account linked to an

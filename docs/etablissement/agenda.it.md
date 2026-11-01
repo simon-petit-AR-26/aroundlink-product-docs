@@ -52,6 +52,9 @@ gesto**. Riceve un link che non richiede **alcun account**: inserisce le sue dat
 tornano nella vostra agenda, collegate a lui. Il modulo porta **il vostro logo**, perché
 sappia chi sta chiedendo.
 
+**Siete avvisati non appena un partner ha risposto**: arriva una notifica nello
+strumento, non dovete sorvegliare nulla.
+
 Si raccolgono sei tipi di data:
 
 | Ciò che chiedete | Per quale sessione |

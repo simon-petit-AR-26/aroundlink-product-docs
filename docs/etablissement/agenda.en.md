@@ -53,6 +53,9 @@ gesture**. They receive a link that needs **no account**: they fill in their dat
 come back into your agenda, attached to them. The form carries **your logo**, so they know
 who is asking.
 
+**You are told as soon as a partner has answered**: a notification arrives in the tool,
+you have nothing to watch.
+
 Six kinds of date are collected this way:
 
 | What you ask for | For which intake |

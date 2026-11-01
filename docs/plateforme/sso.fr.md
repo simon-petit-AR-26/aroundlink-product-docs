@@ -20,13 +20,27 @@ parallèle le temps de la transition.
 | --- | --- | --- |
 | **Microsoft Entra ID** (Azure AD) | ✅ Disponible | [Guide de raccordement](sso-microsoft.md) |
 | **Shibboleth / SAML 2.0** (RENATER, eduGAIN, SWITCHaai…) | 🗺️ Feuille de route | — |
-| **Google Workspace** | 🗺️ Feuille de route | — |
+| **Google** (Workspace ou compte personnel) | ✅ Disponible | voir ci-dessous |
+
+### Se connecter avec Google
+
+**Ce qu'il y a à faire : rien, côté DSI.** Chaque utilisateur **rattache lui-même** son
+compte Google — Workspace ou personnel — depuis son profil, puis se connecte avec. Il n'y a
+ni identifiant de locataire à fournir, ni consentement administrateur à donner.
+
+**La connexion se fait sur l'identité rattachée**, jamais sur l'adresse seule : une adresse
+qui ressemble à celle d'un de vos comptes n'ouvre rien tant que le rattachement n'a pas été
+fait par la personne elle-même.
+
+!!! warning "Avec l'authentification unique imposée"
+    Si votre établissement impose l'authentification unique, le rattachement se fait
+    automatiquement à la première connexion — **mais seulement si le domaine Workspace du
+    compte figure parmi vos domaines autorisés**. Un compte Google **personnel** créé sur une
+    adresse de votre établissement est refusé.
 
 !!! note "Feuille de route"
-    **Microsoft Entra ID** est le fournisseur raccordable aujourd'hui. La
-    fédération d'identité universitaire (Shibboleth / SAML, RENATER, eduGAIN) et
-    Google Workspace figurent sur notre feuille de route, sans date annoncée à ce
-    stade.
+    La fédération d'identité universitaire (Shibboleth / SAML, RENATER, eduGAIN) figure sur
+    notre feuille de route, sans date annoncée à ce stade.
 
     Si votre établissement s'authentifie par l'une de ces voies, dites-le-nous :
     les demandes des établissements décident de l'ordre dans lequel nous les
@@ -36,12 +50,12 @@ parallèle le temps de la transition.
 
 ![Écran de connexion avec l'authentification unique](../assets/screenshots/connexion.png)
 
-*L'écran de connexion : le mot de passe, et « Se connecter avec Microsoft », proposé à tout le monde en permanence. Il n'y a pas de création de compte — les accès sont ouverts par le bureau des relations internationales.*
+*L'écran de connexion : le mot de passe, et la connexion par compte Microsoft ou Google, proposée à tout le monde en permanence. Il n'y a pas de création de compte — les accès sont ouverts par le bureau des relations internationales.*
 
 ## Ce qui vaut pour tous les fournisseurs
 
-Les points suivants ne dépendent pas du protocole. Ils valent aujourd'hui pour
-Microsoft, et vaudront pour les fournisseurs que nous ajouterons.
+Les points suivants ne dépendent pas du protocole. Ils valent pour Microsoft comme pour
+Google, et vaudront pour les fournisseurs que nous ajouterons.
 
 ### Les comptes doivent exister au préalable
 
@@ -60,7 +74,7 @@ dans AroundLink.
 
 ### Le parcours de connexion
 
-Le bouton **« Se connecter avec Microsoft »** est présent sur la page d'accueil, pour tout
+Les boutons **« Se connecter avec Microsoft »** et **« Se connecter avec Google »** sont présents sur la page d'accueil, pour tout
 le monde et en permanence. Il n'y a rien à chercher ni à déclarer au préalable.
 
 Ce qui se passe ensuite dépend d'une seule chose : **le compte Microsoft est-il relié à un
