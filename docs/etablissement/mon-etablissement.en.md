@@ -98,6 +98,39 @@ The screen also reminds you **when you last announced**.
 > In June, the office raises its English requirement from B2 to C1. It opens the preview,
 > sees the announcement would go to 47 partners, and sends it. No email to write.
 
+## What you still have to fill in
+
+**What it's for.** An empty fiche does not announce itself. The index counters say what each
+section **contains** — never what is **missing**, nor what it costs. An institution can go
+months without its website filled in: one field, one click, and nothing ever told them.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** A **"things to do"** pill appears at the bottom right of your screens,
+with the number of things left. It opens a list where each line says **what to do** and,
+above all, **what it changes**:
+
+| What is missing | What it costs |
+|---|---|
+| Your contact details | *students and partners have no way to reach you* |
+| Your semester dates | *partners email you to ask* |
+| Your language levels | *students apply without knowing if they qualify* |
+| Photos of your campus | *your page opens on an empty banner* |
+| Your course catalogue | *students can't build a learning agreement* |
+
+![The list of what is left to fill in](../assets/screenshots/things-to-do.png)
+
+*What is left and what is done. Each line names the consequence, not a percentage.*
+
+!!! note "No gauge, no percentage"
+    "You are at 36%" does not say what to do. A line that states the consequence does — that
+    is what makes you act, never the figure.
+
+!!! tip "It disappears when nothing is left"
+    There is no "all done" state: when the list is empty, the pill leaves the screen. A
+    reminder you cannot silence becomes furniture, and you stop seeing it — including the
+    day it has something to say.
+
 ## Student-review moderation
 
 **What it's for.** You collect reviews from students returning from mobility

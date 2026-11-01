@@ -49,7 +49,7 @@ campagne-nominations.png	/campaigns/:id	2026-10-01
 campagne-statistiques.png	/campaigns/:id/statistics	2026-10-01
 campagne-statistiques-rapport.png	/campaigns/:id/statistics	2026-10-01
 parametres-imports.png	/settings/integrations	2026-10-01
-connexion.png	/login	2026-10-01
+connexion.png	/login	2026-11-01
 agenda-mois.png	/agenda	2026-10-24
 mon-etablissement-campus.png	/my-institution	2026-10-01
 mon-etablissement-student-info.png	/my-institution/student-info	2026-10-24
@@ -62,3 +62,5 @@ mon-etablissement-exigences-langue.png	/my-institution	2026-10-24
 mon-etablissement-annonce-langues.png	/my-institution	2026-10-24
 agenda-demande-dates.png	/agenda	2026-10-24
 recherche-globale.png	/dashboard	2026-10-24
+import-cours.png	/settings/integrations/courses	2026-11-01
+things-to-do.png	/my-institution	2026-11-01

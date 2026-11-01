@@ -101,6 +101,40 @@ L'écran rappelle aussi **quand vous avez annoncé pour la dernière fois**.
 > En juin, le bureau relève ses exigences d'anglais de B2 à C1. Il ouvre l'aperçu, voit
 > que l'annonce partira à 47 partenaires, et l'envoie. Aucun mail à rédiger.
 
+## Ce qu'il vous reste à remplir
+
+**À quoi ça sert.** Une fiche vide ne se signale pas toute seule. Les compteurs de l'index
+disent ce que chaque rubrique **contient** — jamais ce qui **manque**, ni ce que ça coûte.
+Un établissement peut passer des mois sans son site web renseigné : un champ, un clic, et
+rien ne le lui avait jamais dit.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Une pastille **« things to do »** apparaît en bas à droite de vos
+écrans, avec le nombre de choses qui restent. Elle ouvre une liste où chaque ligne dit
+**quoi faire** et surtout **ce que ça change** :
+
+| Ce qu'il manque | Ce que ça coûte |
+|---|---|
+| Vos coordonnées | *vos étudiants et vos partenaires n'ont aucun moyen de vous joindre* |
+| Vos dates de semestre | *vos partenaires vous écrivent pour les demander* |
+| Vos niveaux de langue | *vos étudiants candidatent sans savoir s'ils sont éligibles* |
+| Les photos de votre campus | *votre page s'ouvre sur un bandeau vide* |
+| Votre catalogue de cours | *vos étudiants ne peuvent pas composer leur contrat d'études* |
+
+![La liste de ce qu'il reste à remplir](../assets/screenshots/things-to-do.png)
+
+*Ce qui reste et ce qui est fait. Chaque ligne nomme la conséquence, pas un pourcentage.*
+
+!!! note "Pas de jauge, pas de pourcentage"
+    « Vous êtes à 36 % » ne dit pas quoi faire. Une ligne qui annonce la conséquence le
+    dit — c'est elle qui fait agir, pas le chiffre.
+
+!!! tip "Elle disparaît quand il n'y a plus rien"
+    Il n'existe pas d'état « tout est fait » : quand la liste est vide, la pastille quitte
+    l'écran. Un rappel qu'on ne peut pas faire taire devient un meuble, et on cesse de le
+    voir — y compris le jour où il a quelque chose à dire.
+
 ## Modération des avis étudiants
 
 **À quoi ça sert.** Vous collectez les avis d'étudiants de retour de mobilité (note,

@@ -375,7 +375,17 @@ Deux colonnes le résument dans la liste : **Open to** — les promotions — et
 vous repartez de contrats pédagogiques signés il y a des années, la saisie manuelle n'est
 pas tenable — et c'est pourtant là que se trouve la matière la plus utile à vos étudiants.
 
-**Comment ça marche.** Vous importez un fichier de cours sur la fiche d'un partenaire.
+**Comment ça marche.** **Paramètres ▸ Integrations ▸ Import Courses**, en trois temps :
+vous téléchargez le gabarit, vous téléversez votre fichier pour **prévisualiser chaque
+ligne** et corriger les erreurs sur place, puis vous confirmez — seules les lignes valides
+sont écrites. Excel ou CSV.
+
+Chaque ligne a besoin du **nom du cours** et d'**une façon de désigner le partenaire** :
+votre code interne, son domaine, ou son identifiant ROR — vérifiés dans cet ordre.
+
+![L'écran d'import des cours](../assets/screenshots/import-cours.png)
+
+*L'écran annonce ce qu'il exige avant que vous ouvriez le fichier : les colonnes obligatoires, les huit colonnes acceptées, et les formats.*
 
 !!! info "Le gabarit est volontairement tolérant"
     Les **crédits** et le **code ISCED** sont **facultatifs** : un contrat signé il y a cinq
@@ -383,7 +393,14 @@ pas tenable — et c'est pourtant là que se trouve la matière la plus utile à
     fichier pour une donnée que personne ne retrouvera.
 
     En revanche, **une ligne doit porter au moins un des trois identifiants** — sans quoi
-    elle est refusée : on ne saurait pas de quel cours elle parle.
+    elle est refusée : on ne saurait pas de quel partenaire elle parle.
+
+    Une colonne que le gabarit ne liste pas est simplement ignorée : vous pouvez laisser vos
+    propres notes dans le fichier. Mais une colonne **renommée** est lue comme manquante.
+
+!!! tip "Réimporter met à jour, ne duplique pas"
+    Le même fichier passé une seconde fois **met à jour** les cours au lieu d'en créer des
+    doubles. Vous pouvez donc corriger votre fichier et le repasser sans faire de ménage.
 
 !!! warning "Un cours sans crédits n'est pas un cours à zéro crédit"
     L'écran affiche un **tiret**, pas un zéro, et la donnée reste vide plutôt que fausse.
