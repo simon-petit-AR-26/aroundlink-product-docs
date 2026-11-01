@@ -54,6 +54,9 @@ einmal**. Er erhält einen Link, der **kein Konto** verlangt: er trägt seine Te
 und diese erscheinen in Ihrem Kalender, ihm zugeordnet. Das Formular trägt **Ihr Logo**,
 damit er weiß, wer fragt.
 
+**Sie werden benachrichtigt, sobald ein Partner geantwortet hat**: eine Mitteilung
+erscheint im Werkzeug, Sie müssen nichts beobachten.
+
 Sechs Terminarten werden so eingesammelt:
 
 | Wonach Sie fragen | Für welchen Beginn |

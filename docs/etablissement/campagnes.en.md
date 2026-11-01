@@ -47,8 +47,21 @@ of them cannot be undone once your students have started answering.
 
 ### Identity
 
-**Name**, **school year**, **start** and **end date**. The end cannot precede the start, and
-it is not decorative: the morning after the last day, the campaign closes by itself.
+**Name**, **school year**, **opening** and **closing**. The end cannot precede the start,
+and it is not decorative.
+
+**You choose the hour, not only the day.** A campaign opens and closes **to the minute**:
+close at 18:00 and a wish submitted at 18:01 is refused. That is what lets you align a
+closing with a committee meeting rather than with an arbitrary midnight.
+
+Screens show **your institution's** hour and name its timezone — yours and your students',
+not a server's.
+
+!!! tip "Your gesture wins over the hour"
+    If you reopen a campaign after its closing time, it **stays open**: the tool will not
+    close it again a minute later. Push the closing back and it will close at the new time.
+    In other words, automatic closing only fires at the moment the hour is crossed — never
+    afterwards against your decision.
 
 ### The student pool
 
@@ -120,6 +133,15 @@ Before you confirm your changes, a summary tells you what the save will **add, k
 remove** — destinations as well as students. Removing a partner takes all of its agreements
 out of the campaign, along with the wishes already placed on them: the preview says so
 beforehand, not after.
+
+!!! note "A student only sees what is genuinely open to them"
+    A destination appears in their list, and can be wished for, only if **their row of the
+    matrix** — their year, their level, their track, their semester — declares places. A
+    destination that is declared but **full** can still be wished for; one never opened to
+    their promotion cannot.
+
+    You, the coordinator, keep all your freedom: adding a wish, pre-assigning, nominating —
+    nothing changes on your side.
 
 ## What matching requires
 

@@ -348,9 +348,31 @@ Two columns summarise this in the list: **Open to** — the promotions — and
 
 *The course catalogue — here your own institution's. Each course says which campuses it is taught on and in which term. The "Open to" and "Available in" columns appear as well once you have declared your incoming labels.*
 
+### Importing a catalogue instead of typing it
+
+**What it's for.** A catalogue is typed course by course when it is new. But when you start
+from learning agreements signed years ago, typing is not viable — and that is precisely
+where the material most useful to your students sits.
+
+**How it works.** You import a course file on a partner's fiche.
+
+!!! info "The template is deliberately tolerant"
+    **Credits** and the **ISCED code** are **optional**: an agreement signed five years ago
+    almost never carries them. Refusing those rows would mean throwing away most of the file
+    for a value nobody will ever recover.
+
+    However, **a row must carry at least one of the three identifiers** — otherwise it is
+    refused: we would not know which course it is about.
+
+!!! warning "A course without credits is not a zero-credit course"
+    The screen shows a **dash**, not a zero, and the value stays empty rather than wrong.
+    Such a course still travels through the learning agreement, the transcript and the
+    totals — it blocks nothing there, it simply counts no credits.
+
 **Use case.**
 > The office records the 12 English-taught master's courses a partner offers to
-> incoming students.
+> incoming students. For the 270 agreements of previous years, it imports the file: courses
+> with no ISCED go through, rows with no identifier at all are flagged.
 
 
 ## Partner FAQ

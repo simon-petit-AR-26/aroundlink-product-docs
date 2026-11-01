@@ -18,19 +18,24 @@ mobilité, vos exigences de langue, votre catalogue de cours, votre FAQ. Rien à
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
 **Comment ça marche.** L'écran de composition **montre la page elle-même**, exactement
-comme le public la verra. Chaque bloc s'attrape et se déplace, se retire d'une croix ; un
-panneau latéral propose ce qui n'est pas encore posé, rangé par catégorie et repliable.
+comme le public la verra. L'aperçu **est** la fiche : il n'existe pas de mode « édition »
+qui donnerait un rendu différent de la réalité.
 
-L'aperçu **est** la fiche : il n'existe pas de mode « édition » qui donnerait un rendu
-différent de la réalité.
+**Tout est publié d'office.** Vous n'avez aucune case à cocher pour démarrer : dès que
+vous allumez votre page, toutes vos rubriques y sont. Le volet de gauche sert à **retirer**
+ce que vous ne voulez pas montrer, rubrique par rubrique ou catégorie entière — pas à
+construire la page élément par élément.
+
+C'est le sens de lecture qui compte : l'outil publie ce que vous entretenez déjà, et vous
+gardez la main pour en cacher une partie.
 
 ![L'écran de composition de la fiche publique](../assets/screenshots/fiche-publique-composition.png)
 
-*À gauche, vos rubriques avec un interrupteur et un compteur chacune ; au centre, la page telle que le public la verra ; en haut à gauche de la page, le sélecteur de campus.*
+*À gauche, vos rubriques : un interrupteur et un compteur chacune, allumés d'office. Au centre, la page telle que le public la verra ; en haut à gauche, le sélecteur de campus.*
 
 !!! note "L'ordre des rubriques n'est pas réglable"
     C'est voulu : la page de tous les établissements se lit dans le même ordre, ce qui la
-    rend comparable d'un partenaire à l'autre. Vous décidez de **ce qui se publie**, pas
+    rend comparable d'un partenaire à l'autre. Vous décidez de **ce que vous cachez**, pas
     de l'ordre.
 
 ## Ce que vous pouvez y poser

@@ -91,7 +91,7 @@ L'écran rappelle aussi **quand vous avez annoncé pour la dernière fois**.
     Depuis la fiche d'un partenaire, vous pouvez lui **demander ses exigences de langue**
     par un lien qui ne réclame **aucun compte**. Il saisit ses prérequis, langue par
     langue, et ils remontent sur sa fiche. Le formulaire porte **votre logo**, pour qu'il
-    sache qui demande.
+    sache qui demande. **Une notification vous prévient dès qu'il a répondu.**
 
 ![L'aperçu avant d'annoncer ses exigences](../assets/screenshots/mon-etablissement-annonce-langues.png)
 

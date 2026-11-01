@@ -18,20 +18,24 @@ language requirements, your course catalogue, your FAQ. Nothing to retype.
 **Who it is for.** <span class="al-audience">IO officer / coordinator</span>
 
 **How it works.** The composer **shows the page itself**, exactly as the public will see
-it. Each block can be grabbed and moved, or removed with a cross; a side panel offers what
-is not yet placed, sorted by category and collapsible.
-
-The preview **is** the page: there is no "edit mode" that would render differently from
+it. The preview **is** the page: there is no "edit mode" that would render differently from
 reality.
+
+**Everything is published by default.** There is nothing to tick to get started: the moment
+you switch your page on, all your sections are there. The left panel is there to **remove**
+what you do not want to show, section by section or whole category — not to build the page
+item by item.
+
+The direction of travel is the point: the tool publishes what you already maintain, and you
+keep the hand to hide part of it.
 
 ![The public page composer](../assets/screenshots/fiche-publique-composition.png)
 
-*On the left, your sections each with a switch and a counter; in the middle, the page as the public will see it; at the top left of the page, the campus selector.*
+*On the left, your sections: a switch and a counter each, on by default. In the middle, the page as the public will see it; at the top left, the campus selector.*
 
 !!! note "The order of sections cannot be changed"
     That is deliberate: every institution's page reads in the same order, which makes it
-    comparable from one partner to the next. You decide **what gets published**, not the
-    order.
+    comparable from one partner to the next. You decide **what you hide**, not the order.
 
 ## What you can put on it
 

@@ -88,7 +88,7 @@ The screen also reminds you **when you last announced**.
     From a partner's fiche, you can **ask for their language requirements** through a link
     that needs **no account**. They fill in their prerequisites, language by language, and
     these appear on their fiche. The form carries **your logo**, so they know who is
-    asking.
+    asking. **A notification tells you as soon as they have answered.**
 
 ![The preview before announcing your requirements](../assets/screenshots/mon-etablissement-annonce-langues.png)
 
