@@ -1295,6 +1295,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Fournisseurs d'identité">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#se-connecter-avec-google" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Se connecter avec Google
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1627,6 +1644,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Fournisseurs d'identité">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#se-connecter-avec-google" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Se connecter avec Google
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1753,18 +1787,30 @@ parallèle le temps de la transition.</p>
 <td>—</td>
 </tr>
 <tr>
-<td><strong>Google Workspace</strong></td>
-<td>🗺️ Feuille de route</td>
-<td>—</td>
+<td><strong>Google</strong> (Workspace ou compte personnel)</td>
+<td>✅ Disponible</td>
+<td>voir ci-dessous</td>
 </tr>
 </tbody>
 </table>
+<h3 id="se-connecter-avec-google">Se connecter avec Google<a class="headerlink" href="#se-connecter-avec-google" title="Permanent link">¶</a></h3>
+<p><strong>Ce qu'il y a à faire : rien, côté DSI.</strong> Chaque utilisateur <strong>rattache lui-même</strong> son
+compte Google — Workspace ou personnel — depuis son profil, puis se connecte avec. Il n'y a
+ni identifiant de locataire à fournir, ni consentement administrateur à donner.</p>
+<p><strong>La connexion se fait sur l'identité rattachée</strong>, jamais sur l'adresse seule : une adresse
+qui ressemble à celle d'un de vos comptes n'ouvre rien tant que le rattachement n'a pas été
+fait par la personne elle-même.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avec l'authentification unique imposée</p>
+<p>Si votre établissement impose l'authentification unique, le rattachement se fait
+automatiquement à la première connexion — <strong>mais seulement si le domaine Workspace du
+compte figure parmi vos domaines autorisés</strong>. Un compte Google <strong>personnel</strong> créé sur une
+adresse de votre établissement est refusé.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Feuille de route</p>
-<p><strong>Microsoft Entra ID</strong> est le fournisseur raccordable aujourd'hui. La
-fédération d'identité universitaire (Shibboleth / SAML, RENATER, eduGAIN) et
-Google Workspace figurent sur notre feuille de route, sans date annoncée à ce
-stade.</p>
+<p>La fédération d'identité universitaire (Shibboleth / SAML, RENATER, eduGAIN) figure sur
+notre feuille de route, sans date annoncée à ce stade.</p>
 <p>Si votre établissement s'authentifie par l'une de ces voies, dites-le-nous :
 les demandes des établissements décident de l'ordre dans lequel nous les
 ouvrons. En attendant, la connexion par mot de passe reste disponible, avec
@@ -1772,10 +1818,10 @@ réinitialisation par lien à usage unique — voir
 <a href="../securite/">Sécurité &amp; données</a>.</p>
 </div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/connexion.png" data-desc-position="bottom"><img alt="Écran de connexion avec l'authentification unique" src="../../../assets/screenshots/connexion.png"></a></p>
-<p><em>L'écran de connexion : le mot de passe, et « Se connecter avec Microsoft », proposé à tout le monde en permanence. Il n'y a pas de création de compte — les accès sont ouverts par le bureau des relations internationales.</em></p>
+<p><em>L'écran de connexion : le mot de passe, et la connexion par compte Microsoft ou Google, proposée à tout le monde en permanence. Il n'y a pas de création de compte — les accès sont ouverts par le bureau des relations internationales.</em></p>
 <h2 id="ce-qui-vaut-pour-tous-les-fournisseurs">Ce qui vaut pour tous les fournisseurs<a class="headerlink" href="#ce-qui-vaut-pour-tous-les-fournisseurs" title="Permanent link">¶</a></h2>
-<p>Les points suivants ne dépendent pas du protocole. Ils valent aujourd'hui pour
-Microsoft, et vaudront pour les fournisseurs que nous ajouterons.</p>
+<p>Les points suivants ne dépendent pas du protocole. Ils valent pour Microsoft comme pour
+Google, et vaudront pour les fournisseurs que nous ajouterons.</p>
 <h3 id="les-comptes-doivent-exister-au-prealable">Les comptes doivent exister au préalable<a class="headerlink" href="#les-comptes-doivent-exister-au-prealable" title="Permanent link">¶</a></h3>
 <div class="admonition danger">
 <p class="admonition-title">Le prérequis le plus souvent découvert trop tard</p>
@@ -1790,7 +1836,7 @@ compte institutionnel parfaitement valide.</p>
 synchronisation des groupes ni des rôles</strong> : les droits AroundLink s'attribuent
 dans AroundLink.</p>
 <h3 id="le-parcours-de-connexion">Le parcours de connexion<a class="headerlink" href="#le-parcours-de-connexion" title="Permanent link">¶</a></h3>
-<p>Le bouton <strong>« Se connecter avec Microsoft »</strong> est présent sur la page d'accueil, pour tout
+<p>Les boutons <strong>« Se connecter avec Microsoft »</strong> et <strong>« Se connecter avec Google »</strong> sont présents sur la page d'accueil, pour tout
 le monde et en permanence. Il n'y a rien à chercher ni à déclarer au préalable.</p>
 <p>Ce qui se passe ensuite dépend d'une seule chose : <strong>le compte Microsoft est-il relié à un
 compte AroundLink ?</strong></p>
@@ -1889,7 +1935,7 @@ unique d'un client, par construction.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="1 octobre 2026 14:26:24 CEST">1 octobre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="1 novembre 2026 17:04:10 CET">1 novembre 2026</span>
   </span>
 
     
