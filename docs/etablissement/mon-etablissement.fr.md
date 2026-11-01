@@ -110,9 +110,14 @@ rien ne le lui avait jamais dit.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Une pastille **« things to do »** apparaît en bas à droite de vos
-écrans, avec le nombre de choses qui restent. Elle ouvre une liste où chaque ligne dit
-**quoi faire** et surtout **ce que ça change** :
+**Comment ça marche.** Une pastille apparaît en bas à droite de vos écrans, avec le nombre
+de choses qui restent :
+
+![La pastille « things to do »](../assets/screenshots/things-to-do-pastille.png)
+
+*En bas à droite, discrète et toujours là tant qu'il reste quelque chose.*
+
+Elle ouvre une liste où chaque ligne dit **quoi faire** et surtout **ce que ça change** :
 
 | Ce qu'il manque | Ce que ça coûte |
 |---|---|
