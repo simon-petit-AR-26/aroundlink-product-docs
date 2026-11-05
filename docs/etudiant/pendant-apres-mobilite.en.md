@@ -8,45 +8,50 @@ student autonomy and peace of mind for the international office.
 
 ## My exchange
 
-**What it's for.** Once placed, this is the student's operational page for the
-mobility: it shows the host university, the mobility dates, the partner contact
-and the published reviews, and lets them submit their arrival and departure
-attestations. The student can also download an official assignment certificate.
+**What it's for.** The page of their mobility, once a destination is in sight: what is
+settled, what is left to do, and whom to write to.
 
 **Who it's for.** <span class="al-audience">student</span>
 
-**How it works.** The page loads the student's approved affectation and presents
-the forms for submitting the arrival and departure attestations; saving is
-blocked once the document is validated by the coordinator. The mobility duration
-relies on the real attestation dates when they are entered, otherwise on
-provisional dates derived from the academic year. A button generates the
-assignment certificate as a PDF, from the nomination-letter template configured
-by the institution when one exists.
+**How it works.** As long as the place is not confirmed, the page says so plainly — a
+**reserved** place is not a **confirmed** one:
 
-![The student's "My exchange" page](../assets/screenshots/etudiant-ma-mobilite.png)
+| Situation | What the student reads |
+|---|---|
+| Place reserved | "A place is held for you" — the host institution still has to confirm |
+| Nomination sent | "Nomination sent — awaiting confirmation", with the date it was sent |
+| Application declined | "Application declined" — no reason: it stays between the two offices |
 
-*Their mobility page: exchange details, selected courses, arrival and departure certificates, downloadable documents and reviews from previous students.*
+Once the mobility is confirmed, the page uses **the same header as the file you read on your
+side** — city, country, agreement framework, period, actual dates, tasks done — then their
+to-do. On the right: the **partner contact** to write to, and **reviews** from students who
+went before.
+
+Documents are neither uploaded nor downloaded here: arrival and departure certificates are
+uploaded in **My profile ▸ Documents**, and what you hand them arrives in **What I receive**.
+The to-do tasks take them there.
+
+![The "My exchange" page on the student side](../assets/screenshots/etudiant-ma-mobilite.png)
+
+*The page of their mobility: the header, the to-do by phase, the partner contact and reviews from previous students.*
 
 **Use case.**
-> On arrival abroad, a student submits their signed arrival attestation and
-> downloads their official assignment certificate for the host institution's
-> registration desk.
+> A nominated student reads "Nomination sent — awaiting confirmation"; three weeks later
+> the host confirms and their to-do appears, with the contact to write to about housing.
 
-### A single task list
-
-**What it's for.** The student used to have two task lists on the same page, depending on
-which screen they arrived from. Now there is only one.
+### Their task list
 
 **How it works.** The page carries **the to-do of their mobility**: the steps of the
-[path](../etablissement/parcours.md) their institution plugged in, in order, sorted by
-phase — before, during, after. Each step says what is expected of them.
+[path](../etablissement/parcours.md) their institution has plugged in, in order, sorted by
+phase — before, during, after. Each step says what is expected of them. It is the only task
+list in their space.
 
-Steps that **mirror an act done elsewhere** tick without them doing anything: a learning
-agreement signed by all three parties, a validated document, a grant payment. They untick
-too if the act goes back — a withdrawn signature reopens the step.
+Steps that **reflect something done elsewhere** tick themselves without them stepping in:
+a learning agreement signed by all three parties, a validated document, a grant payment.
+They also untick if the act is reversed — a withdrawn signature reopens the step.
 
-The submit button is only active **when there is something to submit**, and their profile
-completion gauge disappears once they reach 100%.
+The submit button is only active **when there is something to submit**, and their
+profile-completion gauge disappears once it reaches 100%.
 
 **The destination's services** sit under the to-do: housing, insurance and support offered
 where they are going.
@@ -54,8 +59,8 @@ where they are going.
 ### What they receive, and when
 
 **How it works.** The block of documents to receive only shows **what has actually been
-handed to them**: a transcript or a certificate still being produced is not shown
-half-made, and a document only opens once validated.
+handed to them**: a transcript or certificate still being produced is not shown half-made,
+and a document only opens once validated.
 
 Their [agenda](../etablissement/agenda.md) is the **dated timeline** of their mobility,
 from the first wish to the closing, sorted into overdue, upcoming and past.
@@ -64,30 +69,41 @@ from the first wish to the closing, sorted into overdue, upcoming and past.
     The student reads the type of their place in plain language — a bilateral agreement
     reads as "Exchange" — rather than in the vocabulary of agreements.
 
+
 ## Learning agreement (OLA)
 
-**What it's for.** The student builds their Learning Agreement (online learning
-agreement, OLA) by choosing their courses at the host university, grouped by
-field. They see the total ECTS, save drafts, then submit — which counts as their
-signature. The validated agreement is downloadable as a PDF.
+**What it's for.** The student builds their online learning agreement (OLA) by choosing
+courses from the host institution's catalogue, submits it, then updates it during their
+mobility if their courses change.
 
 **Who it's for.** <span class="al-audience">student</span>
 
-**How it works.** The portal loads the approved affectation and the latest OLA
-(creating a draft if needed). The courses offered by the partner are presented by
-field; the student can also add a new course. Saving as a draft keeps the draft
-status; submitting records the student's signature and moves the status to
-"Selected by student". Editing the courses resets any institution signatures
-already applied, to avoid validation on an outdated version. Download is only
-possible once the OLA is fully validated.
+**How it works.**
 
-![The learning agreement on the student side](../assets/screenshots/etudiant-contrat-pedagogique.png)
+- **Building it.** They tick courses in the partner's catalogue, grouped by field, and see
+  the ECTS total. A course missing from the catalogue can be **added**, then ticked. They
+  also enter their mobility dates and the language of instruction with its level.
+- **Saving or submitting.** The draft can be saved at any time. Submitting requires at least
+  one course, valid dates and the language of instruction — the screen says what is missing
+  before sending — and counts as their signature: the agreement moves to "Selected by
+  student" and can no longer be edited until their coordinator responds.
+- **Changing it during the mobility.** A validated agreement reopens through an **amendment
+  request**, which goes back for validation by both institutions. Changing courses resets
+  the signatures already given: nobody validates an outdated version.
+- **Documents signed off-platform.** A **Signed documents** block collects signed versions
+  exchanged outside the [EWP](../ewp/ewp.md) network; the student and both institutions can
+  deposit and open them.
+- **Downloading.** The PDF can be downloaded at any time: a **draft** until all three
+  signatures are in, the validated version after that.
 
-*The learning agreement: signature progress, mobility period, language of instruction, recognition at home, and the partner's course catalogue with credits.*
+![Learning agreement on the student side](../assets/screenshots/etudiant-contrat-pedagogique.png)
+
+*The learning agreement: signature progress, the mobility period, the language of instruction, recognition at home, and the partner's course catalogue with credits.*
 
 **Use case.**
-> A student chooses 6 courses (30 ECTS) across two fields, submits their OLA, then
-> later downloads the PDF signed by all three parties.
+> A student picks 6 courses (30 ECTS) and submits their OLA. Once there, a course is
+> cancelled: they tick another one and send an amendment request, which both institutions
+> validate again.
 
 
 ## Transcript of Records
@@ -176,8 +192,8 @@ events in their journey (offers, validations, messages), with read-on-open, a
 **Who it's for.** <span class="al-audience">student</span>
 
 **How it works.** The page lists the most recent notifications; opening one marks
-it as read; "mark all as read" processes the whole set and returns to the
-previous page. A counter feeds the badge.
+it as read and takes the student to the screen concerned; "Mark all as read" processes
+the whole set. A counter feeds the badge.
 
 **Use case.**
 > A student receives a notification that their OLA has been validated and clicks

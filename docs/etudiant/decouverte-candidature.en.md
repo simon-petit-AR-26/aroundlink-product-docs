@@ -1,34 +1,44 @@
 # Student portal — Discover & apply
 
-The student portal supports every student from their first login through to
-submitting their application. It brings together a journey dashboard, profile
-management, a partner-university search engine and the entire campaign wish-list
-flow. The goal: give students a clear, self-service experience while lightening
-the international office's workload.
+The student portal supports every student from their first login through to their
+application. Its menu has four headings:
+
+| Heading | What is there |
+|---|---|
+| **Overview** | the dashboard, and messages if your institution has turned them on |
+| **My exchange** | **Find exchange** and **Campaigns & wishes** for an outgoing student; **My exchange** as soon as they have a destination |
+| **My institution** | the resources you publish, and services if the marketplace is on |
+| **My profile** | their file: identity, documents, grant, learning agreement, transcript, reviews |
+
+The menu promises nothing it cannot keep: **My exchange** only appears once a destination is
+in sight, and an **incoming** student sees neither the search nor the campaigns — their
+destination is you.
 
 ## Mobility dashboard
 
-**What it's for.** This is the student's home page. It shows where they stand in
-their whole mobility journey as a visual timeline, and highlights the next action
-to take. Students keep an overview without needing to understand the
-administrative machinery.
+**What it's for.** The student's home page. At a glance it says which mobility we are
+talking about, where they stand and what is left to do.
 
 **Who it's for.** <span class="al-audience">student</span>
 
-**How it works.** On each login, the portal automatically determines the
-student's status and displays it on an eleven-step timeline, from "Connected" to
-"Mobility completed". Each step passed is marked as completed, the current step
-is highlighted and links straight to the right page. Before any placement, the
-dashboard suggests a few partner universities to explore; once the student is
-placed, it shows the confirmed host university and a checklist of mobility steps.
+**How it works.** Two thirds of the screen are for **their mobility**, the last third for
+your institution's **announcements**.
 
-![The student's dashboard](../assets/screenshots/etudiant-tableau-de-bord.png)
+- **Before any destination**, the card presents partners to explore, with the same
+  information as the search — languages, periods, places — and a link to it.
+- **Once placed**, the header names the mobility: city, country, agreement framework, period
+  and actual dates. On the right, two figures: how many tasks are done, and where they are
+  in their stay ("Returned · D+1" says they are back, and since when).
+- Under the header, **three phase panels** — before, during, after — carry their tasks.
+- Further down, their **agenda**: the dates of their mobility.
 
-*The dashboard: their mobility timeline step by step, their confirmed destination and the list of actions still to complete.*
+![Student dashboard](../assets/screenshots/etudiant-tableau-de-bord.png)
+
+*The dashboard: their mobility and tasks by phase on the left, the institution's announcements on the right.*
 
 **Use case.**
-> A student who has just submitted their wishes logs in and sees the
-> "Application in progress" step highlighted, with a direct link to the campaign.
+> A student placed in Bologna logs in: the header shows "Bologna, Italy", her dates and
+> "4 / 9 tasks done", and the "Before departure" panel shows what is left.
 
 
 ## Profile — Personal information
@@ -53,23 +63,29 @@ classification.
 
 ## Profile — Documents & language scores
 
-**What it's for.** This is the student's document vault. They upload the
-requested administrative documents and additional files, and record their
-language-test scores (with the associated certificate) required by partner
-universities. Once validated by the institution, a document is locked and can no
-longer be modified.
+**What it's for.** The student's document vault: what they upload, what you hand them, and
+their language scores.
 
 **Who it's for.** <span class="al-audience">student</span>
 
-**How it works.** The page lists the document types required by the institution
-and by the current campaign, indicates which are already uploaded and offers the
-addition of extra documents. A dedicated form records a language score along with
-its supporting file. The arrival and departure attestation cards also allow the
-corresponding dates to be entered.
+**How it works.** The profile has six tabs, in the same order as the file you read on your
+side: **Overview**, **Bourse**, **Documents**, **OLA**, **ToR**, **Feedback**. On the left, a
+rail always shows who they are and how complete their profile is.
+
+The **Documents** tab reads in three views:
+
+| View | What it holds |
+|---|---|
+| **What I upload** | the documents your institution and the campaign ask for, plus additional ones; a validated document is locked |
+| **What I receive** | the documents you have issued to them — a document only appears once validated |
+| **Language scores** | their language tests, each with its certificate |
+
+When you hand them a document they have not opened yet, a **badge** on "My profile", in the
+menu, tells them and takes them straight there.
 
 **Use case.**
-> A student uploads their B2 English certificate and enters the score, then adds
-> the passport copy required by the campaign.
+> A student sees a "1" badge on My profile: their assignment certificate has arrived in
+> "What I receive". They open it, then record their English score under "Language scores".
 
 
 ## Profile — Mobility grant
@@ -182,26 +198,33 @@ search results and the partner pages.
 
 ## Campaign wishes (application)
 
-**What it's for.** This is the heart of the application. During an open campaign,
-the student searches the eligible exchanges, builds a ranked wish list, saves it
-as a draft while gathering their documents, then submits it definitively. This
-is how they formally apply for their mobility places.
+**What it's for.** The heart of the application. During an open campaign, the student ranks
+destinations in order of preference — or says they do not wish to go.
 
 **Who it's for.** <span class="al-audience">student</span>
 
-**How it works.** The page lists the campaigns the student is enrolled in.
-Opening one shows their ranked wishes, a search of eligible exchanges and any
-missing required documents. Saving offers two modes: draft (no blocking) and
-definitive submission (which checks the exchange requirements and the presence of
-required documents before accepting).
+**How it works.** The page lists the campaigns they are enrolled in. Opening one shows its
+dates, how many wishes are allowed, their ranked wishes and what is missing from their file.
+
+- **What they can ask for.** The list only offers destinations where a place is **planned
+  for them** — their year, level, cohort, term. A full destination can still be requested; a
+  destination never opened to their cohort does not appear.
+- **Building the list.** They add destinations, rank them, and can pour in their
+  **favourites** that are open in the campaign in one click.
+- **Saving.** Each save checks the destinations' requirements — language level, documents —
+  and says exactly what is blocking. While the campaign is open, they can change their wishes.
+- **Not going.** If your campaign allows it, they can answer **"I don't wish to go"**. The
+  answer is exclusive: their wishes are removed, and they can change their mind while the
+  campaign is open. Your team can also record it for them — the screen tells them so. The
+  setting is described in [Campaigns](../etablissement/campagnes.md).
 
 ![Campaign and wishes on the student side](../assets/screenshots/etudiant-voeux.png)
 
 *The campaign as the student sees it: dates, how many wishes are allowed, their ranked wishes, requirements per destination and what is still missing from their file.*
 
 **Use case.**
-> A student ranks 5 choices, uploads the last required transcript, then submits
-> definitively and receives a "Your wishes have been submitted" confirmation.
+> A student pours their three favourites into the campaign, adds two more, ranks them, then
+> saves: a message points out the language score missing for their 2nd choice.
 
 
 ## Offer — Accept or decline
