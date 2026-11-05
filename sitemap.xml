@@ -131,6 +131,16 @@
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/emails/"/>
     </url>
     <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants-entrants/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants-entrants/"/>
+    </url>
+    <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants/</loc>
         <lastmod>2026-11-05</lastmod>
         <changefreq>daily</changefreq>
@@ -139,6 +149,16 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/fiche-etudiant/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/fiche-etudiant/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/fiche-publique/</loc>
@@ -209,6 +229,16 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/suivi-mobilites/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/validations/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/validations/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/etudiant/decouverte-candidature/</loc>
@@ -431,6 +461,16 @@
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/emails/"/>
     </url>
     <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants-entrants/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants-entrants/"/>
+    </url>
+    <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants/</loc>
         <lastmod>2026-11-05</lastmod>
         <changefreq>daily</changefreq>
@@ -439,6 +479,16 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/fiche-etudiant/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/fiche-etudiant/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/fiche-publique/</loc>
@@ -509,6 +559,16 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/suivi-mobilites/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/validations/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/validations/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etudiant/decouverte-candidature/</loc>
@@ -731,6 +791,16 @@
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/emails/"/>
     </url>
     <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants-entrants/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants-entrants/"/>
+    </url>
+    <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants/</loc>
         <lastmod>2026-11-05</lastmod>
         <changefreq>daily</changefreq>
@@ -739,6 +809,16 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/fiche-etudiant/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/fiche-etudiant/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/fiche-publique/</loc>
@@ -809,6 +889,16 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/suivi-mobilites/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/validations/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/validations/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etudiant/decouverte-candidature/</loc>
@@ -1031,6 +1121,16 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/emails/"/>
     </url>
     <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants-entrants/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants-entrants/"/>
+    </url>
+    <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants/</loc>
         <lastmod>2026-11-05</lastmod>
         <changefreq>daily</changefreq>
@@ -1039,6 +1139,16 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/fiche-etudiant/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/fiche-etudiant/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/fiche-publique/</loc>
@@ -1109,6 +1219,16 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/suivi-mobilites/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/validations/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/validations/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etudiant/decouverte-candidature/</loc>
@@ -1331,6 +1451,16 @@
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/emails/"/>
     </url>
     <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/etudiants-entrants/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants-entrants/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants-entrants/"/>
+    </url>
+    <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/etudiants/</loc>
         <lastmod>2026-11-05</lastmod>
         <changefreq>daily</changefreq>
@@ -1339,6 +1469,16 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/etudiants/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/etudiants/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/fiche-etudiant/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/fiche-etudiant/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/fiche-etudiant/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/fiche-publique/</loc>
@@ -1409,6 +1549,16 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/suivi-mobilites/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/suivi-mobilites/"/>
+    </url>
+    <url>
+        <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/validations/</loc>
+        <lastmod>2026-11-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/en/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/etablissement/validations/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/etablissement/validations/"/>
     </url>
     <url>
         <loc>https://simon-petit-ar-26.github.io/aroundlink-product-docs/de/etudiant/decouverte-candidature/</loc>
