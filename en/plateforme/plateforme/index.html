@@ -2437,67 +2437,91 @@ anyone: they are the reference.</p>
 </div>
 <h2 id="account-types">Account types<a class="headerlink" href="#account-types" title="Permanent link">¶</a></h2>
 <p><strong>What it is for.</strong> Three user profiles coexist, each with its own space and
-permissions, so every actor only sees what concerns them.</p>
-<p><strong>Who it is for.</strong> <span class="al-audience">IRO coordinator · student · invited partner</span></p>
+rights, so that each party only sees what concerns them.</p>
+<p><strong>Who it is for.</strong> <span class="al-audience">IRO coordinator · student · partner</span></p>
 <p><strong>How it works.</strong> There are:</p>
 <ul>
-<li>the <strong>IRO coordinator</strong> (mobility officer) who runs the institution workspace;</li>
+<li>the <strong>IRO coordinator</strong> (mobility officer) who works in the institution workspace;</li>
 <li>the <strong>student</strong> who accesses their <a href="../../etudiant/decouverte-candidature/">personal space</a>;</li>
-<li>the <strong>invited partner</strong> — a contact at a partner institution granted access to
-  collaborate (for example, to approve a bilateral agreement).</li>
+<li>the <strong>partner</strong> — a contact at a partner institution. They receive their access when you
+  nominate a student to them: they land in <strong>their own space</strong>, where they only find the
+  students you send them and your fiche, never the rest of yours.</li>
 </ul>
 <p><strong>Use case.</strong></p>
 <blockquote>
-<p>An institution invites a partner's Erasmus officer; they sign in to their own
-space to approve an agreement, seeing nothing else.</p>
+<p>A school nominates three students to a partner. Its Erasmus officer receives the message,
+opens their access, and reviews the three files — seeing nothing else.</p>
 </blockquote>
 <h2 id="team-roles-permissions-rbac">Team roles &amp; permissions (RBAC)<a class="headerlink" href="#team-roles-permissions-rbac" title="Permanent link">¶</a></h2>
-<p><strong>What it is for.</strong> Within an institution, you can define custom team roles and set,
-module by module, whether each role has no access, read, or write. This lets a large
-IRO delegate safely.</p>
+<p><strong>What it is for.</strong> Within an institution, you define custom team roles and set, section
+by section, what each role can do. A large IRO can delegate without opening everything to
+everyone.</p>
 <p><strong>Who it is for.</strong> <span class="al-audience">IRO coordinator (institution administrator)</span></p>
-<p><strong>How it works.</strong> A matrix editor crosses the institution's roles (rows) with the
-main functional modules (columns) — Institution, Documents, Forms, Workflow,
-Integrations, Team permissions — each cell being None / Read / Write. Permissions
-are enforced everywhere: a user without a right neither sees the menu entry nor can
-reach it via a direct address.</p>
+<p><strong>How it works.</strong> A role says <strong>who it covers</strong> — business domains, outgoing or incoming,
+campuses, promotions — then <strong>what it can do</strong>, section by section of the menu, with four
+levels: <strong>None</strong>, <strong>View</strong>, <strong>Prepare</strong> (the file moves forward inside your institution),
+<strong>Decide</strong> (it leaves the tool: validate, send, export). Setting a category is enough,
+everything inside follows; refine section by section if needed. A user without rights does
+not see the menu entry and cannot reach it through a direct address either. Details in
+<a href="../../etablissement/parametres/#roles-permissions">Settings &amp; team</a>.</p>
 <p><strong>Use case.</strong></p>
 <blockquote>
-<p>The head of the IRO gives the "Assistant" role read access everywhere, but write
-access only on Documents.</p>
+<p>The head of office creates an "Incoming officer" role: incoming only, Lyon campus,
+"Decide" on documents, "View" on agreements, "None" on grants.</p>
 </blockquote>
 <h2 id="sign-in-single-sign-on-sso">Sign-in &amp; single sign-on (SSO)<a class="headerlink" href="#sign-in-single-sign-on-sso" title="Permanent link">¶</a></h2>
-<p><strong>What it is for.</strong> Institutions can let their staff (and students) sign in with
-their existing Microsoft/Azure institutional account instead of a separate password
-— and can enforce it. Fewer passwords to manage and compliance with IT
-requirements.</p>
-<p><strong>Who it is for.</strong> Configured by the AroundLink team per institution; used by the
-institution's staff and students</p>
-<p><strong>How it works.</strong> At sign-in, the platform recognises the institution from the email
-address entered; if single sign-on is enabled (or enforced), the user is redirected
-to the Microsoft sign-in page, otherwise they can use a password. Password sign-in
-also offers standard password reset.</p>
+<p><strong>What it is for.</strong> Your staff and students sign in with the account they already have —
+Microsoft or Google — rather than with one more password. Your institution can also enforce
+it.</p>
+<p><strong>Who it is for.</strong> <span class="al-audience">The institution's staff and students</span></p>
+<p><strong>How it works.</strong> The sign-in screen offers everyone, at all times, the password and the
+<strong>Sign in with Microsoft</strong> and <strong>Sign in with Google</strong> buttons. Each user <strong>links their own</strong>
+account from their profile, once, then signs in with it. Password sign-in offers a reset by
+link.</p>
 <p><strong>Use case.</strong></p>
 <blockquote>
-<p>A coordinator at an Azure university clicks "Sign in", enters their work email, and
-is automatically routed to Microsoft authentication.</p>
+<p>A coordinator links her work Microsoft account from her profile. The next day she clicks
+"Sign in with Microsoft" and gets in without a password.</p>
 </blockquote>
 <div class="admonition info">
-<p class="admonition-title">Are you an IT department?</p>
-<p>Protocol, requested permissions, step-by-step onboarding, security checks and
-known limitations: <strong><a href="../sso/">Microsoft single sign-on (IT)</a></strong>.</p>
+<p class="admonition-title">Are you in IT?</p>
+<p>Protocol, requested permissions, enforced sign-in, security checks:
+<strong><a href="../sso/">Single sign-on (IT)</a></strong>.</p>
 </div>
 <h2 id="application-access-api-key-ewp-network">Application access (API key &amp; EWP network)<a class="headerlink" href="#application-access-api-key-ewp-network" title="Permanent link">¶</a></h2>
-<p><strong>What it is for.</strong> Machine-access channels, separate from the user session, let you
-connect AroundLink to external systems and authenticate exchanges with partner
-universities on the <a href="../../ewp/ewp/">EWP</a> network.</p>
-<p><strong>Who it is for.</strong> <span class="al-audience">IT / integrations · partner university systems</span></p>
-<p><strong>How it works.</strong> Each institution has a regenerable API key (managed in
-<a href="../../etablissement/parametres/">Settings</a>) for its integrations, plus dedicated
-authentication for the EWP network. These machine accesses are deliberately distinct
-from browser sign-in. The REST API has interactive documentation (resources, schemas,
-operations) — see the <a href="https://demo.aroundlink.com/api/docs">API documentation (demo)</a>
-and, for the EWP network, the <a href="../../ewp/reference-api/">EWP API reference</a>.</p>
+<p><strong>What it is for.</strong> Machine access, separate from a user's sign-in, links AroundLink to
+your own systems and authenticates exchanges with universities of the
+<a href="../../ewp/ewp/">EWP</a> network.</p>
+<p><strong>Who it is for.</strong> <span class="al-audience">IT / integrations · partner universities' systems</span></p>
+<p><strong>How it works.</strong> Two kinds of keys, under <strong>Settings ▸ Connectors ▸ API</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Who owns it</th>
+<th>What for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Integration key</strong></td>
+<td>the <strong>institution</strong>, not a person — it survives the departure of whoever created it</td>
+<td>a system that runs on its own, such as your student information system; it only has its role's rights</td>
+</tr>
+<tr>
+<td><strong>Personal key</strong></td>
+<td><strong>one person</strong></td>
+<td>occasional use; it acts with all of that person's rights</td>
+</tr>
+</tbody>
+</table>
+<p>A key is shown <strong>only once</strong>, when it is created: copy it straight away. Each row shows
+the date of last use — an old date means an integration that has stopped. Replacing or
+revoking a key cuts the old one off at once. The EWP network has its own, separate
+authentication.</p>
+<p>The API is documented in OpenAPI format:
+<a href="https://api.aroundlink.com/apis/docs">api.aroundlink.com/apis/docs</a>; for the EWP network,
+see the <a href="../../ewp/reference-api/">API reference</a>.</p>
 <h2 id="contextual-help">Contextual help<a class="headerlink" href="#contextual-help" title="Permanent link">¶</a></h2>
 <p><strong>What it is for.</strong> Give every screen its own instructions, without leaving the
 page or hunting through separate documentation.</p>
@@ -2551,7 +2575,7 @@ students of marketplace-enabled institutions.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 5, 2026 12:59:36 CET">November 5, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 5, 2026 13:07:52 CET">November 5, 2026</span>
   </span>
 
     
