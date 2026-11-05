@@ -2437,31 +2437,58 @@
 
 
 <h1 id="espace-etudiant-decouverte-candidature">Espace étudiant — Découverte &amp; candidature<a class="headerlink" href="#espace-etudiant-decouverte-candidature" title="Permanent link">¶</a></h1>
-<p>L'espace étudiant accompagne chaque étudiant depuis sa première connexion
-jusqu'au dépôt de sa candidature. Il réunit un tableau de bord de suivi, la
-gestion du profil, un moteur de recherche des établissements partenaires et
-tout le parcours de vœux d'une campagne de mobilité. Objectif : donner à
-l'étudiant une expérience claire et autonome, et alléger le travail du
-gestionnaire RI.</p>
+<p>L'espace étudiant accompagne chaque étudiant de sa première connexion jusqu'à sa
+candidature. Son menu tient en quatre rubriques :</p>
+<table>
+<thead>
+<tr>
+<th>Rubrique</th>
+<th>Ce qu'on y trouve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Overview</strong></td>
+<td>le tableau de bord, et la messagerie si votre établissement l'a ouverte</td>
+</tr>
+<tr>
+<td><strong>My exchange</strong></td>
+<td><strong>Find exchange</strong> et <strong>Campaigns &amp; wishes</strong> pour un sortant ; <strong>My exchange</strong> dès qu'il a une destination</td>
+</tr>
+<tr>
+<td><strong>My institution</strong></td>
+<td>les ressources que vous publiez, et les services si la marketplace est activée</td>
+</tr>
+<tr>
+<td><strong>My profile</strong></td>
+<td>son dossier : identité, documents, bourse, contrat pédagogique, relevé, avis</td>
+</tr>
+</tbody>
+</table>
+<p>Un menu ne promet rien qu'il ne tienne : <strong>My exchange</strong> n'apparaît qu'une fois une
+destination en vue, et un étudiant <strong>entrant</strong> ne voit ni la recherche ni les campagnes —
+sa destination, c'est vous.</p>
 <h2 id="tableau-de-bord-de-mobilite">Tableau de bord de mobilité<a class="headerlink" href="#tableau-de-bord-de-mobilite" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> C'est la page d'accueil de l'étudiant. Elle montre où il en
-est dans l'ensemble de son parcours de mobilité, sous forme de frise visuelle,
-et met en avant la prochaine action à réaliser. L'étudiant garde une vision
-d'ensemble sans avoir à comprendre les rouages administratifs.</p>
+<p><strong>À quoi ça sert.</strong> La page d'accueil de l'étudiant. Elle dit, d'un coup d'œil, de quelle
+mobilité on parle, où il en est et ce qui lui reste à faire.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">étudiant</span></p>
-<p><strong>Comment ça marche.</strong> À chaque connexion, l'espace détermine automatiquement le
-statut de l'étudiant et l'affiche sur une frise de onze étapes, de « Connecté »
-jusqu'à « Mobilité terminée ». Chaque étape franchie est marquée comme complétée,
-l'étape en cours est mise en avant et renvoie directement vers la bonne page.
-Avant toute affectation, le tableau de bord suggère quelques établissements
-partenaires à explorer ; une fois l'étudiant placé, il affiche l'établissement
-d'accueil confirmé et une liste de contrôle des étapes de mobilité.</p>
+<p><strong>Comment ça marche.</strong> Deux tiers de l'écran sont à <strong>sa mobilité</strong>, le dernier tiers aux
+<strong>annonces</strong> de votre établissement.</p>
+<ul>
+<li><strong>Avant toute destination</strong>, la carte présente les partenaires à explorer, avec les mêmes
+  informations que la recherche — langues, périodes, places — et un lien vers celle-ci.</li>
+<li><strong>Une fois placé</strong>, l'en-tête nomme la mobilité : ville, pays, cadre de l'accord, période
+  et dates réelles. À droite, deux chiffres : combien de tâches sont faites, et où il en est
+  de son séjour (« Returned · D+1 » dit qu'il est rentré, et depuis quand).</li>
+<li>Sous l'en-tête, <strong>trois encarts de phase</strong> — avant, pendant, après — portent ses tâches.</li>
+<li>Plus bas, son <strong>agenda</strong> : les dates de sa mobilité.</li>
+</ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/etudiant-tableau-de-bord.png" data-desc-position="bottom"><img alt="Tableau de bord de l'étudiant" src="../../../assets/screenshots/etudiant-tableau-de-bord.png"></a></p>
-<p><em>Le tableau de bord : la frise de sa mobilité étape par étape, sa destination confirmée et la liste des actions qui lui restent à faire.</em></p>
+<p><em>Le tableau de bord : sa mobilité et ses tâches par phase à gauche, les annonces de l'établissement à droite.</em></p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>Un étudiant qui vient de soumettre ses vœux se connecte et voit l'étape
-« Candidature en cours » surlignée, avec un lien direct vers la campagne.</p>
+<p>Une étudiante placée à Bologne se connecte : l'en-tête affiche « Bologna, Italy »,
+ses dates et « 4 / 9 tasks done », et l'encart « Avant le départ » lui montre ce qu'il reste.</p>
 </blockquote>
 <h2 id="profil-informations-personnelles">Profil — Informations personnelles<a class="headerlink" href="#profil-informations-personnelles" title="Permanent link">¶</a></h2>
 <p><strong>À quoi ça sert.</strong> L'étudiant y gère son identité et ses informations
@@ -2481,22 +2508,43 @@ proposé. Le domaine d'études repose sur la nomenclature ISCED.</p>
 d'urgence, puis téléverse une photo d'identité.</p>
 </blockquote>
 <h2 id="profil-documents-scores-de-langue">Profil — Documents &amp; scores de langue<a class="headerlink" href="#profil-documents-scores-de-langue" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> C'est le coffre-fort documentaire de l'étudiant. Il y
-téléverse les documents administratifs demandés et des pièces complémentaires,
-et y enregistre ses scores de tests de langue (avec le certificat associé)
-exigés par les établissements partenaires. Une fois validé par l'établissement,
-un document est verrouillé et ne peut plus être modifié.</p>
+<p><strong>À quoi ça sert.</strong> Le coffre-fort documentaire de l'étudiant : ce qu'il dépose, ce que
+vous lui remettez, et ses scores de langue.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">étudiant</span></p>
-<p><strong>Comment ça marche.</strong> La page liste les types de documents requis par
-l'établissement et par la campagne en cours, indique ceux qui sont déjà
-téléversés et propose l'ajout de documents complémentaires. Un formulaire dédié
-permet d'enregistrer un score de langue accompagné de sa pièce justificative.
-Les cartes d'attestation d'arrivée et de départ permettent aussi de saisir les
-dates correspondantes.</p>
+<p><strong>Comment ça marche.</strong> Le profil porte six onglets, dans le même ordre que le dossier que
+vous lisez de votre côté : <strong>Overview</strong>, <strong>Bourse</strong>, <strong>Documents</strong>, <strong>OLA</strong>, <strong>ToR</strong>,
+<strong>Feedback</strong>. À gauche, un rail rappelle en permanence qui il est et la complétude de son
+profil.</p>
+<p>L'onglet <strong>Documents</strong> se lit en trois vues :</p>
+<table>
+<thead>
+<tr>
+<th>Vue</th>
+<th>Ce qu'elle contient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>What I upload</strong></td>
+<td>les pièces demandées par votre établissement et par la campagne, et les pièces complémentaires ; un document validé est verrouillé</td>
+</tr>
+<tr>
+<td><strong>What I receive</strong></td>
+<td>les documents que vous lui avez émis — un document n'y figure qu'une fois validé</td>
+</tr>
+<tr>
+<td><strong>Language scores</strong></td>
+<td>ses tests de langue, chacun avec son certificat</td>
+</tr>
+</tbody>
+</table>
+<p>Quand vous lui remettez un document qu'il n'a pas encore ouvert, une <strong>pastille</strong> sur
+« My profile », dans le menu, le lui signale et l'y conduit directement.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>Un étudiant téléverse son certificat d'anglais B2 et saisit le score, puis
-ajoute la copie de passeport demandée par la campagne.</p>
+<p>Un étudiant voit une pastille « 1 » sur My profile : son attestation d'affectation est
+arrivée dans « What I receive ». Il l'ouvre, puis enregistre son score d'anglais dans
+« Language scores ».</p>
 </blockquote>
 <h2 id="profil-bourse-de-mobilite">Profil — Bourse de mobilité<a class="headerlink" href="#profil-bourse-de-mobilite" title="Permanent link">¶</a></h2>
 <p><strong>À quoi ça sert.</strong> Vue en lecture seule des bourses de mobilité rattachées à
@@ -2586,24 +2634,32 @@ tableau de bord, les résultats de recherche et les fiches partenaires.</p>
 revoit sa présélection avant de construire ses vœux.</p>
 </blockquote>
 <h2 id="vux-de-campagne-candidature">Vœux de campagne (candidature)<a class="headerlink" href="#vux-de-campagne-candidature" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> C'est le cœur de la candidature. Pendant une campagne
-ouverte, l'étudiant recherche les exchanges éligibles, construit une liste de
-vœux ordonnée, l'enregistre en brouillon pendant qu'il rassemble ses documents,
-puis la soumet définitivement. C'est ainsi qu'il postule officiellement à ses
-places de mobilité.</p>
+<p><strong>À quoi ça sert.</strong> Le cœur de la candidature. Pendant une campagne ouverte, l'étudiant
+classe ses destinations par ordre de préférence — ou dit qu'il ne souhaite pas partir.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">étudiant</span></p>
-<p><strong>Comment ça marche.</strong> La page liste les campagnes auxquelles l'étudiant est
-inscrit. En ouvrant l'une d'elles, il voit ses vœux ordonnés, une recherche
-d'exchanges éligibles et les éventuels documents requis manquants.
-L'enregistrement propose deux modes : brouillon (sans blocage) et soumission
-définitive (qui vérifie les exigences des exchanges et la présence des documents
-requis avant d'accepter).</p>
+<p><strong>Comment ça marche.</strong> La page liste les campagnes auxquelles il est inscrit. En ouvrir une
+montre ses dates, le nombre de vœux autorisés, ses vœux classés et ce qui manque à son
+dossier.</p>
+<ul>
+<li><strong>Ce qu'il peut demander.</strong> La liste ne propose que les destinations où une place est
+  <strong>planifiée pour lui</strong> — son année, son niveau, sa promotion, le semestre. Une destination
+  pleine reste demandable ; une destination jamais ouverte à sa promotion n'apparaît pas.</li>
+<li><strong>Composer.</strong> Il ajoute des destinations, les range, et peut verser d'un clic ses
+  <strong>favoris</strong> ouverts dans la campagne.</li>
+<li><strong>Enregistrer.</strong> Chaque enregistrement vérifie les exigences des destinations — niveau de
+  langue, documents — et dit précisément ce qui bloque. Tant que la campagne est ouverte, il
+  peut revenir sur ses vœux.</li>
+<li><strong>Ne pas partir.</strong> Si votre campagne le permet, il peut répondre <strong>« I don't wish to
+  go »</strong>. La réponse est exclusive : ses vœux sont retirés, et il peut changer d'avis tant
+  que la campagne est ouverte. Votre équipe peut aussi l'enregistrer pour lui — l'écran le
+  lui dit. Le réglage est décrit dans <a href="../../etablissement/campagnes/">Campagnes</a>.</li>
+</ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/etudiant-voeux.png" data-desc-position="bottom"><img alt="Campagne et vœux côté étudiant" src="../../../assets/screenshots/etudiant-voeux.png"></a></p>
 <p><em>La campagne vue par l'étudiant : les dates, le nombre de vœux autorisés, ses vœux classés par ordre de préférence, les exigences par destination et ce qui manque encore à son dossier.</em></p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>Un étudiant classe 5 choix, téléverse le dernier relevé requis, puis soumet
-définitivement et reçoit une confirmation « Vos vœux ont été soumis ».</p>
+<p>Un étudiant verse ses trois favoris dans la campagne, en ajoute deux, les classe, puis
+enregistre : un message lui signale le score de langue qui manque pour son 2e choix.</p>
 </blockquote>
 <h2 id="proposition-accepter-ou-refuser">Proposition — Accepter ou refuser<a class="headerlink" href="#proposition-accepter-ou-refuser" title="Permanent link">¶</a></h2>
 <p><strong>À quoi ça sert.</strong> Lorsque l'établissement propose une place à l'étudiant
@@ -2639,7 +2695,7 @@ dans la modale, et reçoit un email de confirmation.</p>
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="24 septembre 2026 15:37:08 CEST">24 septembre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 13:15:10 CET">5 novembre 2026</span>
   </span>
 
     
