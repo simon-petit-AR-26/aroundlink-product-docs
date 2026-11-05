@@ -38,11 +38,11 @@ This documentation lists **every feature** of the tool and, for each one, its
 
     ---
 
-    The IRO team's workspace: partners and agreements, mobility campaigns,
-    documents (Learning Agreement, transcripts), Erasmus+ grants, communications
-    and steering.
+    The IRO team's workspace: agenda, partners and agreements, campaigns,
+    mobility paths and tracking, incoming students, documents, grants,
+    communications and steering.
 
-    [:octicons-arrow-right-24: Dashboards](etablissement/dashboards.md)
+    [:octicons-arrow-right-24: Dashboard](etablissement/dashboards.md)
 
 -   :material-school: __Student portal__
 
@@ -76,13 +76,18 @@ and **invited partner** — each with its own space and permissions. See
 
 ## Contents
 
-- **[Institution workspace](etablissement/dashboards.md)** — partners, agreements,
-  campaigns, documents, grants, communications, settings.
-- **[Student portal](etudiant/decouverte-candidature.md)** — profile, search,
-  application, mobility, learning agreement, transcript of records.
-- **[Atlas — World directory](atlas/atlas.md)** — the directory of institutions
-  worldwide.
-- **[EWP network](ewp/ewp.md)** — data exchange with partner universities.
-- **[Platform &amp; security](plateforme/plateforme.md)** — accounts, roles, SSO,
-  plans.
-- **[Glossary](annexes/glossaire.md)** — EWP, IIA, OLA, ToR, EQF, ISCED…
+This documentation follows the application's menu: each section matches an entry of the sidebar, in the same place.
+
+- **Management** — [Dashboard](etablissement/dashboards.md) · [Validations](etablissement/validations.md)
+- **Mobility** — [Agenda](etablissement/agenda.md) · [Partners](etablissement/partenaires.md) · [Agreements &amp; places](etablissement/accords.md) · [Atlas](atlas/atlas.md)
+    - **Outgoing** — [Outgoing students](etablissement/etudiants.md) · [Campaigns](etablissement/campagnes.md)
+    - **Incoming** — [Incoming students](etablissement/etudiants-entrants.md) · [Onboarding](etablissement/onboarding.md)
+    - [A student's record](etablissement/fiche-etudiant.md)
+    - **Workflows** — [Mobility paths](etablissement/parcours.md) · [Mobility tracking](etablissement/suivi-mobilites.md)
+- **Institution** — [My institution](etablissement/mon-etablissement.md) · [Your public page](etablissement/fiche-publique.md) · [Grants &amp; payments](etablissement/bourse.md)
+- **Communication** — [Broadcasts &amp; messages](etablissement/communications.md)
+- **Settings** — [Settings &amp; team](etablissement/parametres.md) · [Documents &amp; templates](etablissement/documents.md) · [Emails &amp; connectors](etablissement/emails.md)
+- **Student portal** — [Discover &amp; apply](etudiant/decouverte-candidature.md) · [During &amp; after mobility](etudiant/pendant-apres-mobilite.md)
+- **EWP network** — [Overview](ewp/ewp.md) · [API reference](ewp/reference-api.md)
+- **Platform &amp; security** — [Overview](plateforme/plateforme.md) · [Single sign-on](plateforme/sso.md) · [Security &amp; data](plateforme/securite.md)
+- **Appendix** — [When something will not go through](blocages.md) · [Glossary](annexes/glossaire.md)

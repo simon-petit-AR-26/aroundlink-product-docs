@@ -28,3 +28,25 @@
 </script>
 {{ super() }}
 {% endblock %}
+
+{#
+  UNE PAGE EN REPLI LE DIT. Quand une page n'existe pas encore dans la langue du lecteur,
+  i18n sert la version française sous un menu traduit : un lecteur allemand tombait sur du
+  français sans un mot d'explication — 26 pages sur 30 en espagnol, italien et allemand.
+  `i18n_file_locale` est la langue du fichier lu, `i18n_page_locale` celle de la page
+  construite : quand elles diffèrent, c'est un repli.
+#}
+{% block content %}
+  {% if i18n_file_locale and i18n_page_locale and i18n_file_locale != i18n_page_locale %}
+    {% set repli = {
+      "en": "This page is not yet available in English. It is shown in French in the meantime.",
+      "es": "Esta página aún no está disponible en español. Mientras tanto, se muestra en francés.",
+      "it": "Questa pagina non è ancora disponibile in italiano. Nel frattempo è mostrata in francese.",
+      "de": "Diese Seite ist noch nicht auf Deutsch verfügbar. Sie wird vorerst auf Französisch angezeigt."
+    } %}
+    <div class="admonition info al-repli-langue">
+      <p>{{ repli.get(i18n_page_locale, repli["en"]) }}</p>
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}

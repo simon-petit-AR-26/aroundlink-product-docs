@@ -80,12 +80,18 @@ permisos. Véase [Plataforma y seguridad](plateforme/plateforme.md).
 
 ## Índice
 
-- **[Espacio institución](etablissement/dashboards.md)** — socios, acuerdos, campañas,
-  documentos, becas, comunicaciones, ajustes.
-- **[Portal del estudiante](etudiant/decouverte-candidature.md)** — perfil, búsqueda,
-  candidatura, movilidad, contrato de estudios, expediente de notas.
-- **[Atlas — Directorio mundial](atlas/atlas.md)** — el directorio de instituciones de
-  todo el mundo.
-- **[Red EWP](ewp/ewp.md)** — el intercambio de datos con las universidades socias.
-- **[Plataforma y seguridad](plateforme/plateforme.md)** — cuentas, roles, SSO, planes.
-- **[Glosario](annexes/glossaire.md)** — EWP, IIA, OLA, ToR, EQF, ISCED…
+Esta documentación sigue el menú de la aplicación: cada sección corresponde a una entrada de la barra lateral, en el mismo lugar.
+
+- **Management** — [Panel de control](etablissement/dashboards.md) · [Validaciones](etablissement/validations.md)
+- **Mobility** — [Agenda](etablissement/agenda.md) · [Socios](etablissement/partenaires.md) · [Acuerdos y plazas](etablissement/accords.md) · [Atlas](atlas/atlas.md)
+    - **Outgoing** — [Estudiantes salientes](etablissement/etudiants.md) · [Campañas](etablissement/campagnes.md)
+    - **Incoming** — [Estudiantes entrantes](etablissement/etudiants-entrants.md) · [Acogida](etablissement/onboarding.md)
+    - [El expediente de un estudiante](etablissement/fiche-etudiant.md)
+    - **Workflows** — [Itinerarios de movilidad](etablissement/parcours.md) · [Seguimiento de movilidades](etablissement/suivi-mobilites.md)
+- **Institution** — [Mi institución](etablissement/mon-etablissement.md) · [Su página pública](etablissement/fiche-publique.md) · [Becas y pagos](etablissement/bourse.md)
+- **Communication** — [Difusión y mensajes](etablissement/communications.md)
+- **Settings** — [Ajustes y equipo](etablissement/parametres.md) · [Documentos y plantillas](etablissement/documents.md) · [Correos y conectores](etablissement/emails.md)
+- **Portal del estudiante** — [Descubrir y solicitar](etudiant/decouverte-candidature.md) · [Durante y después](etudiant/pendant-apres-mobilite.md)
+- **Red EWP** — [Visión general](ewp/ewp.md) · [Referencia de API](ewp/reference-api.md)
+- **Plataforma y seguridad** — [Visión general](plateforme/plateforme.md) · [Inicio de sesión único](plateforme/sso.md) · [Seguridad y datos](plateforme/securite.md)
+- **Anexos** — [Cuando algo no funciona](blocages.md) · [Glosario](annexes/glossaire.md)

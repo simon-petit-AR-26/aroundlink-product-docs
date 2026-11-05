@@ -168,7 +168,7 @@ brouillon pour une nouvelle approbation, ou rejette sans toucher à ses données
 ## OLA — contrats pédagogiques (Learning Agreements)
 
 Échange et co-signature numériques des contrats pédagogiques (OLA) des étudiants que
-vous envoyez en mobilité. Voir aussi la page [Learning Agreement](../etablissement/documents.md).
+vous envoyez en mobilité. Voir aussi la page [Learning Agreement](../etablissement/fiche-etudiant.md#contrat-pedagogique-learning-agreement-ola).
 
 **À quoi ça sert.** Vous publiez les contrats pédagogiques de vos étudiants sortants
 — cours suivis, cours reconnus au retour, signatures — pour que l'université
@@ -191,7 +191,7 @@ automatiquement la version à jour.
 ## Transcript (ToR — relevé de notes)
 
 Envoi numérique des relevés de notes des étudiants que vous **accueillez**, vers leur
-université d'origine. Voir aussi [Transcript of Records](../etablissement/documents.md).
+université d'origine. Voir aussi [Transcript of Records](../etablissement/fiche-etudiant.md#releve-de-notes-transcript-of-records).
 
 **À quoi ça sert.** Vous transmettez le relevé officiel (cours, notes, crédits ECTS,
 réussite / échec) de vos étudiants entrants, pour que leur établissement d'origine

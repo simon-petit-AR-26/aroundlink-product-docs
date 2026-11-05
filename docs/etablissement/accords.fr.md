@@ -213,3 +213,21 @@ enregistre l'ensemble. Des modèles de fichier sont téléchargeables.
 > Un bureau colle 80 échanges depuis un ancien tableur, corrige 3 lignes signalées dans
 > l'aperçu, puis valide.
 
+## Revue des mises à jour d'accord (IIA)
+
+**À quoi ça sert.** Lorsqu'un établissement partenaire pousse des modifications sur un
+accord inter-établissements (IIA) via le réseau EWP, cette revue affiche un comparatif
+champ par champ et permet d'accepter ou de rejeter sélectivement les changements avant
+qu'ils ne modifient les données locales.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Le coordinateur ouvre la mise à jour en attente et voit le
+comparatif entre sa version et celle du partenaire. Il coche les champs à accepter et
+applique — un décompte des champs appliqués/ignorés est affiché — ou rejette la mise à
+jour, auquel cas ses données restent inchangées.
+
+**Cas d'usage.**
+> Le partenaire modifie les ECTS et les langues de l'accord ; le coordinateur accepte le
+> changement de langue mais rejette celui des ECTS — seul le champ accepté est écrit
+> localement.

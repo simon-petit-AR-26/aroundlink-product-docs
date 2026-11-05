@@ -41,11 +41,11 @@ chacune, sa **valeur métier**. Elle s'adresse à vous :
 
     ---
 
-    L'espace de travail du service RI : partenaires et accords, campagnes de
-    mobilité, documents (Learning Agreement, relevés de notes), bourses Erasmus+,
+    L'espace de travail du service RI : agenda, partenaires et accords, campagnes,
+    parcours et suivi des mobilités, accueil des entrants, documents, bourses,
     communications et pilotage.
 
-    [:octicons-arrow-right-24: Tableaux de bord](etablissement/dashboards.md)
+    [:octicons-arrow-right-24: Tableau de bord](etablissement/dashboards.md)
 
 -   :material-school: __Espace étudiant__
 
@@ -79,14 +79,18 @@ isolées de celles des autres. Trois types de comptes coexistent — **coordinat
 
 ## Sommaire
 
-- **[Espace établissement](etablissement/dashboards.md)** — partenaires, accords,
-  campagnes, documents, bourses, communications, paramètres.
-- **[Espace étudiant](etudiant/decouverte-candidature.md)** — profil, recherche,
-  candidature, mobilité, contrat pédagogique, relevé de notes.
-- **[Atlas — Annuaire mondial](atlas/atlas.md)** — l'annuaire des établissements du
-  monde entier.
-- **[Réseau EWP](ewp/ewp.md)** — l'échange de données avec les universités
-  partenaires.
-- **[Plateforme &amp; sécurité](plateforme/plateforme.md)** — comptes, rôles, SSO,
-  offres.
-- **[Glossaire](annexes/glossaire.md)** — EWP, IIA, OLA, ToR, EQF, ISCED…
+La documentation suit le menu de l'application : chaque rubrique correspond à une entrée de la barre latérale, au même endroit.
+
+- **Management** — [Tableau de bord](etablissement/dashboards.md) · [Validations](etablissement/validations.md)
+- **Mobility** — [Agenda](etablissement/agenda.md) · [Partenaires](etablissement/partenaires.md) · [Accords &amp; places](etablissement/accords.md) · [Atlas](atlas/atlas.md)
+    - **Outgoing** — [Étudiants sortants](etablissement/etudiants.md) · [Campagnes](etablissement/campagnes.md)
+    - **Incoming** — [Étudiants entrants](etablissement/etudiants-entrants.md) · [Onboarding](etablissement/onboarding.md)
+    - [Le dossier d'un étudiant](etablissement/fiche-etudiant.md)
+    - **Workflows** — [Parcours de mobilité](etablissement/parcours.md) · [Suivi des mobilités](etablissement/suivi-mobilites.md)
+- **Institution** — [Mon établissement](etablissement/mon-etablissement.md) · [Votre fiche publique](etablissement/fiche-publique.md) · [Bourse &amp; paiements](etablissement/bourse.md)
+- **Communication** — [Diffusion &amp; messages](etablissement/communications.md)
+- **Settings** — [Paramètres &amp; équipe](etablissement/parametres.md) · [Documents &amp; modèles](etablissement/documents.md) · [Emails &amp; connecteurs](etablissement/emails.md)
+- **Espace étudiant** — [Découverte &amp; candidature](etudiant/decouverte-candidature.md) · [Pendant &amp; après la mobilité](etudiant/pendant-apres-mobilite.md)
+- **Réseau EWP** — [Vue d'ensemble](ewp/ewp.md) · [Référence des API](ewp/reference-api.md)
+- **Plateforme &amp; sécurité** — [Vue d'ensemble](plateforme/plateforme.md) · [Authentification unique](plateforme/sso.md) · [Sécurité &amp; données](plateforme/securite.md)
+- **Annexes** — [Quand quelque chose ne passe pas](blocages.md) · [Glossaire](annexes/glossaire.md)

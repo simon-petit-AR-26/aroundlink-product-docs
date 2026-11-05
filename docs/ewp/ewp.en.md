@@ -164,7 +164,7 @@ without touching their data.
 ## OLA — learning agreements
 
 Digital exchange and co-signing of the learning agreements (OLA) for the students you
-send on mobility. See also the [Learning Agreement](../etablissement/documents.md) page.
+send on mobility. See also the [Learning Agreement](../etablissement/fiche-etudiant.md#learning-agreement-ola) page.
 
 **What it's for.** You publish your outgoing students' learning agreements — courses
 studied, courses recognised on return, signatures — so the host university reviews
@@ -185,7 +185,7 @@ on its side, AroundLink automatically fetches the up-to-date version.
 ## Transcript (ToR — transcript of records)
 
 Digital sending of transcripts for the students you **host**, back to their home
-university. See also [Transcript of Records](../etablissement/documents.md).
+university. See also [Transcript of Records](../etablissement/fiche-etudiant.md#transcript-of-records-tor).
 
 **What it's for.** You transmit the official transcript (courses, grades, ECTS
 credits, pass / fail) of your incoming students, so their home institution imports
