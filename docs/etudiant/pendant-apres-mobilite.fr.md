@@ -8,39 +8,43 @@ l'étudiant et sérénité pour le gestionnaire RI.
 
 ## Mon exchange
 
-**À quoi ça sert.** Une fois placé, c'est la page opérationnelle de l'étudiant
-pour la mobilité : elle affiche l'établissement d'accueil, les dates de
-mobilité, le contact partenaire et les avis publiés, et permet de déposer les
-attestations d'arrivée et de départ. L'étudiant peut aussi télécharger une
-attestation d'affectation officielle.
+**À quoi ça sert.** La page de sa mobilité, une fois une destination en vue : ce qui est
+acquis, ce qui reste à faire, et à qui écrire.
 
 **Pour qui.** <span class="al-audience">étudiant</span>
 
-**Comment ça marche.** La page charge l'affectation approuvée de l'étudiant et
-présente les formulaires de dépôt des attestations d'arrivée et de départ ;
-l'enregistrement est bloqué une fois le document validé par le coordinateur. La
-durée de mobilité s'appuie sur les vraies dates d'attestation lorsqu'elles sont
-saisies, sinon sur des dates provisoires dérivées de l'année scolaire. Un bouton
-génère l'attestation d'affectation en PDF, à partir du modèle de lettre de
-nomination configuré par l'établissement lorsqu'il existe.
+**Comment ça marche.** Tant que la place n'est pas confirmée, la page le dit sans détour —
+une place **réservée** n'est pas une place **confirmée** :
 
-![Page « Ma mobilité » côté étudiant](../assets/screenshots/etudiant-ma-mobilite.png)
+| Situation | Ce que lit l'étudiant |
+|---|---|
+| Place réservée | « A place is held for you » — l'établissement d'accueil doit encore confirmer |
+| Nomination envoyée | « Nomination sent — awaiting confirmation », avec la date d'envoi |
+| Candidature déclinée | « Application declined » — sans motif : il reste entre les deux bureaux |
 
-*La page de sa mobilité : informations de l'échange, cours retenus, attestations d'arrivée et de départ, documents à télécharger et avis des étudiants précédents.*
+Une fois la mobilité confirmée, la page reprend **le même en-tête que la fiche que vous
+lisez de votre côté** — ville, pays, cadre de l'accord, période, dates réelles, tâches
+faites — puis sa to-do. À droite : le **contact du partenaire**, à qui écrire, et les
+**avis** des étudiants partis avant lui.
+
+Les documents ne se déposent ni ne se téléchargent ici : ses attestations d'arrivée et de
+départ se déposent dans **My profile ▸ Documents**, et ce que vous lui remettez arrive dans
+**What I receive**. Les tâches de la to-do l'y conduisent.
+
+![Page « My exchange » côté étudiant](../assets/screenshots/etudiant-ma-mobilite.png)
+
+*La page de sa mobilité : l'en-tête, la to-do par phase, le contact du partenaire et les avis des étudiants précédents.*
 
 **Cas d'usage.**
-> À son arrivée à l'étranger, un étudiant dépose son attestation d'arrivée signée
-> et télécharge son attestation d'affectation officielle pour le guichet
-> d'inscription de l'établissement d'accueil.
+> Un étudiant nominé lit « Nomination sent — awaiting confirmation » ; trois semaines plus
+> tard, l'accueil confirme et sa to-do apparaît, avec le contact à qui écrire pour le logement.
 
-### Une seule liste de tâches
-
-**À quoi ça sert.** L'étudiant avait deux listes de tâches sur la même page, selon
-l'écran par lequel il arrivait. Il n'en a plus qu'une.
+### Sa liste de tâches
 
 **Comment ça marche.** La page porte **la to-do de sa mobilité** : les étapes du
 [parcours](../etablissement/parcours.md) que son établissement a branché, dans l'ordre,
 rangées par phase — avant, pendant, après. Chaque étape dit ce qui est attendu de lui.
+C'est la seule liste de tâches de son espace.
 
 Les étapes qui **reflètent un acte fait ailleurs** se cochent sans qu'il intervienne :
 un contrat pédagogique signé par les trois parties, un document validé, un versement de
@@ -66,32 +70,41 @@ premier vœu à la clôture, rangée en en retard, à venir et passé.
     L'étudiant lit le type de sa place en langage courant — un accord bilatéral se lit
     « Exchange » — plutôt que dans le vocabulaire des accords.
 
+
 ## Contrat pédagogique (OLA)
 
-**À quoi ça sert.** L'étudiant construit son Learning Agreement (contrat
-pédagogique en ligne, OLA) en choisissant ses cours dans l'établissement
-d'accueil, regroupés par domaine. Il voit le total d'ECTS, enregistre des
-brouillons, puis soumet — ce qui vaut sa signature. Le contrat validé est
-téléchargeable en PDF.
+**À quoi ça sert.** L'étudiant construit son contrat pédagogique en ligne (Learning
+Agreement, OLA) en choisissant ses cours dans le catalogue de l'établissement d'accueil,
+le soumet, puis le fait évoluer pendant sa mobilité si ses cours changent.
 
 **Pour qui.** <span class="al-audience">étudiant</span>
 
-**Comment ça marche.** L'espace charge l'affectation approuvée et le dernier OLA
-(en crée un brouillon si nécessaire). Les cours proposés par le partenaire sont
-présentés par domaine ; l'étudiant peut aussi ajouter un nouveau cours.
-L'enregistrement en brouillon conserve le statut brouillon ; la soumission
-enregistre la signature de l'étudiant et fait passer le statut à
-« Sélectionné par l'étudiant ». Modifier les cours réinitialise les signatures
-d'établissement déjà apposées, pour éviter toute validation sur une version
-obsolète. Le téléchargement n'est possible qu'une fois l'OLA entièrement validé.
+**Comment ça marche.**
+
+- **Composer.** Il coche ses cours dans le catalogue du partenaire, regroupés par domaine,
+  et voit le total d'ECTS. Un cours absent du catalogue peut être **ajouté**, puis coché.
+  Il renseigne aussi ses dates de mobilité et la langue d'enseignement avec son niveau.
+- **Enregistrer ou soumettre.** Le brouillon s'enregistre à tout moment. La soumission
+  demande au moins un cours, des dates valides et la langue d'enseignement — l'écran dit ce
+  qui manque avant d'envoyer — et vaut sa signature : le contrat passe à « Sélectionné par
+  l'étudiant » et n'est plus modifiable tant que son coordinateur n'a pas répondu.
+- **Modifier pendant la mobilité.** Un contrat validé se rouvre par une **demande de
+  modification**, qui repart en validation auprès des deux établissements. Modifier les
+  cours remet à zéro les signatures déjà apposées : personne ne valide une version périmée.
+- **Les pièces signées hors plateforme.** Un bloc **Signed documents** recueille les
+  versions signées échangées en dehors du réseau [EWP](../ewp/ewp.md) ; l'étudiant et les
+  deux établissements peuvent y déposer et ouvrir.
+- **Télécharger.** Le PDF se télécharge à tout moment : **brouillon** tant que les trois
+  signatures ne sont pas réunies, version validée ensuite.
 
 ![Contrat pédagogique côté étudiant](../assets/screenshots/etudiant-contrat-pedagogique.png)
 
 *Le contrat pédagogique : l'avancement des signatures, la période de mobilité, la langue d'enseignement, la reconnaissance chez soi, et le catalogue de cours du partenaire avec leurs crédits.*
 
 **Cas d'usage.**
-> Un étudiant choisit 6 cours (30 ECTS) répartis sur deux domaines, soumet son
-> OLA, puis télécharge plus tard le PDF signé par les trois parties.
+> Un étudiant choisit 6 cours (30 ECTS) et soumet son OLA. Arrivé sur place, un cours est
+> supprimé : il en coche un autre et envoie une demande de modification, que les deux
+> établissements revalident.
 
 
 ## Relevé de notes (Transcript of Records)
@@ -180,8 +193,8 @@ direct.
 **Pour qui.** <span class="al-audience">étudiant</span>
 
 **Comment ça marche.** La page liste les notifications les plus récentes ; ouvrir
-l'une d'elles la marque comme lue ; « tout marquer comme lu » traite l'ensemble
-et revient à la page précédente. Un compteur alimente le badge.
+l'une d'elles la marque comme lue et conduit à l'écran concerné ; « Mark all as read »
+traite l'ensemble. Un compteur alimente le badge.
 
 **Cas d'usage.**
 > Un étudiant reçoit une notification lui indiquant que son OLA a été validé et

@@ -1,36 +1,44 @@
 # Espace étudiant — Découverte & candidature
 
-L'espace étudiant accompagne chaque étudiant depuis sa première connexion
-jusqu'au dépôt de sa candidature. Il réunit un tableau de bord de suivi, la
-gestion du profil, un moteur de recherche des établissements partenaires et
-tout le parcours de vœux d'une campagne de mobilité. Objectif : donner à
-l'étudiant une expérience claire et autonome, et alléger le travail du
-gestionnaire RI.
+L'espace étudiant accompagne chaque étudiant de sa première connexion jusqu'à sa
+candidature. Son menu tient en quatre rubriques :
+
+| Rubrique | Ce qu'on y trouve |
+|---|---|
+| **Overview** | le tableau de bord, et la messagerie si votre établissement l'a ouverte |
+| **My exchange** | **Find exchange** et **Campaigns & wishes** pour un sortant ; **My exchange** dès qu'il a une destination |
+| **My institution** | les ressources que vous publiez, et les services si la marketplace est activée |
+| **My profile** | son dossier : identité, documents, bourse, contrat pédagogique, relevé, avis |
+
+Un menu ne promet rien qu'il ne tienne : **My exchange** n'apparaît qu'une fois une
+destination en vue, et un étudiant **entrant** ne voit ni la recherche ni les campagnes —
+sa destination, c'est vous.
 
 ## Tableau de bord de mobilité
 
-**À quoi ça sert.** C'est la page d'accueil de l'étudiant. Elle montre où il en
-est dans l'ensemble de son parcours de mobilité, sous forme de frise visuelle,
-et met en avant la prochaine action à réaliser. L'étudiant garde une vision
-d'ensemble sans avoir à comprendre les rouages administratifs.
+**À quoi ça sert.** La page d'accueil de l'étudiant. Elle dit, d'un coup d'œil, de quelle
+mobilité on parle, où il en est et ce qui lui reste à faire.
 
 **Pour qui.** <span class="al-audience">étudiant</span>
 
-**Comment ça marche.** À chaque connexion, l'espace détermine automatiquement le
-statut de l'étudiant et l'affiche sur une frise de onze étapes, de « Connecté »
-jusqu'à « Mobilité terminée ». Chaque étape franchie est marquée comme complétée,
-l'étape en cours est mise en avant et renvoie directement vers la bonne page.
-Avant toute affectation, le tableau de bord suggère quelques établissements
-partenaires à explorer ; une fois l'étudiant placé, il affiche l'établissement
-d'accueil confirmé et une liste de contrôle des étapes de mobilité.
+**Comment ça marche.** Deux tiers de l'écran sont à **sa mobilité**, le dernier tiers aux
+**annonces** de votre établissement.
+
+- **Avant toute destination**, la carte présente les partenaires à explorer, avec les mêmes
+  informations que la recherche — langues, périodes, places — et un lien vers celle-ci.
+- **Une fois placé**, l'en-tête nomme la mobilité : ville, pays, cadre de l'accord, période
+  et dates réelles. À droite, deux chiffres : combien de tâches sont faites, et où il en est
+  de son séjour (« Returned · D+1 » dit qu'il est rentré, et depuis quand).
+- Sous l'en-tête, **trois encarts de phase** — avant, pendant, après — portent ses tâches.
+- Plus bas, son **agenda** : les dates de sa mobilité.
 
 ![Tableau de bord de l'étudiant](../assets/screenshots/etudiant-tableau-de-bord.png)
 
-*Le tableau de bord : la frise de sa mobilité étape par étape, sa destination confirmée et la liste des actions qui lui restent à faire.*
+*Le tableau de bord : sa mobilité et ses tâches par phase à gauche, les annonces de l'établissement à droite.*
 
 **Cas d'usage.**
-> Un étudiant qui vient de soumettre ses vœux se connecte et voit l'étape
-> « Candidature en cours » surlignée, avec un lien direct vers la campagne.
+> Une étudiante placée à Bologne se connecte : l'en-tête affiche « Bologna, Italy »,
+> ses dates et « 4 / 9 tasks done », et l'encart « Avant le départ » lui montre ce qu'il reste.
 
 
 ## Profil — Informations personnelles
@@ -56,24 +64,31 @@ proposé. Le domaine d'études repose sur la nomenclature ISCED.
 
 ## Profil — Documents & scores de langue
 
-**À quoi ça sert.** C'est le coffre-fort documentaire de l'étudiant. Il y
-téléverse les documents administratifs demandés et des pièces complémentaires,
-et y enregistre ses scores de tests de langue (avec le certificat associé)
-exigés par les établissements partenaires. Une fois validé par l'établissement,
-un document est verrouillé et ne peut plus être modifié.
+**À quoi ça sert.** Le coffre-fort documentaire de l'étudiant : ce qu'il dépose, ce que
+vous lui remettez, et ses scores de langue.
 
 **Pour qui.** <span class="al-audience">étudiant</span>
 
-**Comment ça marche.** La page liste les types de documents requis par
-l'établissement et par la campagne en cours, indique ceux qui sont déjà
-téléversés et propose l'ajout de documents complémentaires. Un formulaire dédié
-permet d'enregistrer un score de langue accompagné de sa pièce justificative.
-Les cartes d'attestation d'arrivée et de départ permettent aussi de saisir les
-dates correspondantes.
+**Comment ça marche.** Le profil porte six onglets, dans le même ordre que le dossier que
+vous lisez de votre côté : **Overview**, **Bourse**, **Documents**, **OLA**, **ToR**,
+**Feedback**. À gauche, un rail rappelle en permanence qui il est et la complétude de son
+profil.
+
+L'onglet **Documents** se lit en trois vues :
+
+| Vue | Ce qu'elle contient |
+|---|---|
+| **What I upload** | les pièces demandées par votre établissement et par la campagne, et les pièces complémentaires ; un document validé est verrouillé |
+| **What I receive** | les documents que vous lui avez émis — un document n'y figure qu'une fois validé |
+| **Language scores** | ses tests de langue, chacun avec son certificat |
+
+Quand vous lui remettez un document qu'il n'a pas encore ouvert, une **pastille** sur
+« My profile », dans le menu, le lui signale et l'y conduit directement.
 
 **Cas d'usage.**
-> Un étudiant téléverse son certificat d'anglais B2 et saisit le score, puis
-> ajoute la copie de passeport demandée par la campagne.
+> Un étudiant voit une pastille « 1 » sur My profile : son attestation d'affectation est
+> arrivée dans « What I receive ». Il l'ouvre, puis enregistre son score d'anglais dans
+> « Language scores ».
 
 
 ## Profil — Bourse de mobilité
@@ -191,28 +206,35 @@ tableau de bord, les résultats de recherche et les fiches partenaires.
 
 ## Vœux de campagne (candidature)
 
-**À quoi ça sert.** C'est le cœur de la candidature. Pendant une campagne
-ouverte, l'étudiant recherche les exchanges éligibles, construit une liste de
-vœux ordonnée, l'enregistre en brouillon pendant qu'il rassemble ses documents,
-puis la soumet définitivement. C'est ainsi qu'il postule officiellement à ses
-places de mobilité.
+**À quoi ça sert.** Le cœur de la candidature. Pendant une campagne ouverte, l'étudiant
+classe ses destinations par ordre de préférence — ou dit qu'il ne souhaite pas partir.
 
 **Pour qui.** <span class="al-audience">étudiant</span>
 
-**Comment ça marche.** La page liste les campagnes auxquelles l'étudiant est
-inscrit. En ouvrant l'une d'elles, il voit ses vœux ordonnés, une recherche
-d'exchanges éligibles et les éventuels documents requis manquants.
-L'enregistrement propose deux modes : brouillon (sans blocage) et soumission
-définitive (qui vérifie les exigences des exchanges et la présence des documents
-requis avant d'accepter).
+**Comment ça marche.** La page liste les campagnes auxquelles il est inscrit. En ouvrir une
+montre ses dates, le nombre de vœux autorisés, ses vœux classés et ce qui manque à son
+dossier.
+
+- **Ce qu'il peut demander.** La liste ne propose que les destinations où une place est
+  **planifiée pour lui** — son année, son niveau, sa promotion, le semestre. Une destination
+  pleine reste demandable ; une destination jamais ouverte à sa promotion n'apparaît pas.
+- **Composer.** Il ajoute des destinations, les range, et peut verser d'un clic ses
+  **favoris** ouverts dans la campagne.
+- **Enregistrer.** Chaque enregistrement vérifie les exigences des destinations — niveau de
+  langue, documents — et dit précisément ce qui bloque. Tant que la campagne est ouverte, il
+  peut revenir sur ses vœux.
+- **Ne pas partir.** Si votre campagne le permet, il peut répondre **« I don't wish to
+  go »**. La réponse est exclusive : ses vœux sont retirés, et il peut changer d'avis tant
+  que la campagne est ouverte. Votre équipe peut aussi l'enregistrer pour lui — l'écran le
+  lui dit. Le réglage est décrit dans [Campagnes](../etablissement/campagnes.md).
 
 ![Campagne et vœux côté étudiant](../assets/screenshots/etudiant-voeux.png)
 
 *La campagne vue par l'étudiant : les dates, le nombre de vœux autorisés, ses vœux classés par ordre de préférence, les exigences par destination et ce qui manque encore à son dossier.*
 
 **Cas d'usage.**
-> Un étudiant classe 5 choix, téléverse le dernier relevé requis, puis soumet
-> définitivement et reçoit une confirmation « Vos vœux ont été soumis ».
+> Un étudiant verse ses trois favoris dans la campagne, en ajoute deux, les classe, puis
+> enregistre : un message lui signale le score de langue qui manque pour son 2e choix.
 
 
 ## Proposition — Accepter ou refuser
