@@ -22,7 +22,7 @@ Les sigles et termes que l'on croise dans AroundLink et la mobilité internation
 | **Affectation** | Le placement confirmé d'un étudiant sur une destination, au sein d'une campagne. |
 | **Vœu** | Un choix de destination classé par l'étudiant lors d'une campagne. |
 | **Campagne** | Une session de candidature encadrée (dates, niveaux, nombre de vœux) organisée par le service RI. |
-| **Distribution des places** | La répartition des places d'un accord par année, niveau, période et discipline. |
+| **Distribution des places** | La répartition des places d'un accord par année, niveau, libellé de niveau, période, discipline et campus (écran *Place Distribution*). |
 | **CNR** | *Change Notification Receiver* — la notification EWP qui prévient un partenaire qu'une donnée a changé. |
 | **HEI** | *Higher Education Institution* — un établissement d'enseignement supérieur ; le *HEI ID* est son identifiant EWP. |
 | **SCHAC** | Un identifiant standard d'établissement (basé sur son domaine). |
@@ -34,7 +34,14 @@ Les sigles et termes que l'on croise dans AroundLink et la mobilité internation
 | **OUnit** | *Organizational Unit* — une composante/faculté/département d'un établissement, au sens EWP. |
 | **Bourse de mobilité (BM)** | L'aide financière Erasmus+ versée à l'étudiant. Voir [Bourse de mobilité](../etablissement/bourse.md). |
 | **Beneficiary Module** | L'outil officiel Erasmus+ où l'établissement déclare ses mobilités. |
-| **SSO** | *Single Sign-On* — la connexion via un compte existant (ex. Microsoft/Azure). |
+| **SSO** | *Single Sign-On* — la connexion via un compte existant, Microsoft ou Google. |
+| **Parcours de mobilité** | L'enchaînement d'étapes qu'un étudiant suit avant, pendant et après sa mobilité (*Workflow*). Il se compose dans **Settings ▸ Workflows** et se branche sur une campagne (*Mobility workflow*) ou une session d'accueil. Voir [Parcours de mobilité](../etablissement/parcours.md). |
+| **Phase** | Le temps de la mobilité où se trouve un étudiant : avant, pendant, après, clôturée. |
+| **Session d'accueil** | Le groupe d'étudiants entrants qui suivent un même parcours (*Welcome session*). Voir [Onboarding](../etablissement/onboarding.md). |
+| **Fiche publique** | Ce que vos partenaires et leurs étudiants lisent de votre établissement (*Public page*). Voir [Votre fiche publique](../etablissement/fiche-publique.md). |
+| **Exigence** | Une condition posée par une destination — niveau de langue, document — que l'étudiant doit remplir pour la demander (*Requirements per destination*). |
+| **Affectation directe** | Un réglage de campagne où la décision du coordinateur crée l'affectation, sans acceptation de l'étudiant. |
+| **Classement** | Le rang importé de chaque étudiant dans sa promotion, dont le tour d'affectation se sert pour servir les étudiants dans l'ordre. |
 | **Multi-établissement (SaaS)** | L'architecture où chaque établissement client est isolé des autres sur une plateforme commune. |
 
 ## Les mots qu'on confond
@@ -49,29 +56,34 @@ Quatre mots pour quatre moments distincts d'un même dossier, dans cet ordre :
 | Terme | Qui l'émet | Ce que c'est |
 |---|---|---|
 | **Vœu** | L'étudiant | Une destination qu'il demande, classée par préférence |
-| **Proposition** | L'outil ou le coordinateur | Une destination qu'on lui offre, qu'il peut encore refuser |
+| **Proposition** | L'outil la suggère, le coordinateur la confirme et l'envoie | Une destination qu'on lui offre, qu'il peut encore refuser |
 | **Affectation** | Le coordinateur, ou l'acceptation de l'étudiant | La destination retenue — le dossier a un siège |
 | **Nomination** | Le coordinateur, vers le partenaire | L'annonce officielle à l'établissement d'accueil |
 
 Un étudiant peut avoir cinq vœux, une proposition, une affectation et une nomination. Ce
 n'est pas la même chose à quatre endroits : c'est quatre étapes.
 
-### Niveau d'études et parcours
+### Niveau d'études et libellé de niveau
 
 Le **niveau d'études** est une échelle européenne commune — licence, master, doctorat. Il
 permet de comparer deux étudiants de deux pays.
 
-Le **parcours** est le libellé que *vous* donnez à vos promotions : « Aero 4 », « PGE 26-27 ».
-Il n'a de sens que chez vous, et c'est lui qui désigne la case dans la matrice des places.
+Le **libellé de niveau** (*Custom label*) est le nom que *vous* donnez à vos promotions :
+« Aero 4 », « PGE 26-27 ». Il n'a de sens que chez vous, il se règle dans **Paramètres ▸
+Academic levels**, chaque étudiant porte le sien, et c'est lui qui désigne la case dans la
+matrice des places.
 
-C'est pourquoi le tour d'affectation exige un parcours et pas seulement un niveau : « Aero
-4 » et « Aero 5 » sont tous deux du master, et n'ouvrent pas les mêmes places.
+C'est pourquoi le tour d'affectation exige un libellé de niveau et pas seulement un niveau :
+« Aero 4 » et « Aero 5 » sont tous deux du master, et n'ouvrent pas les mêmes places.
+
+À ne pas confondre avec le **parcours de mobilité**, qui est une suite d'étapes.
 
 ### Tag et filtre étudiant
 
 Un **tag** reste chez vous. Un **filtre étudiant** peut être montré à vos étudiants, qui
-s'en servent pour chercher une destination. Voir
-[Tag ou filtre étudiant ?](../etablissement/parametres.md).
+s'en servent pour chercher une destination — et il **restreint** aussi ce qu'ils peuvent
+demander : quand un étudiant et un partenaire portent des filtres, ils doivent en partager
+au moins un. Voir [Tag ou filtre étudiant ?](../etablissement/parametres.md).
 
 ### Accord, échange, place
 
@@ -80,22 +92,23 @@ signataires.
 
 L'**échange** est une ligne de cet accord : une direction, un niveau, un domaine.
 
-La **place** est un siège disponible, pour une période et un parcours donnés. C'est ce que
+La **place** est un siège disponible, pour une période et un libellé de niveau donnés. C'est ce que
 l'étudiant occupe. Un accord peut exister sans ouvrir la moindre place.
 
 ### Sortant et entrant
 
 **Sortant** : vos étudiants qui partent. **Entrant** : les étudiants que vous accueillez.
 
-Depuis septembre 2026, **tous les compteurs de places ne portent que sur le sortant**. Un
-accord ouvre souvent des places dans les deux sens ; seules celles que vous envoyez comptent
-dans vos totaux.
+Les **compteurs de places portent sur le sortant**. Un accord ouvre souvent des places dans
+les deux sens ; seules celles que vous envoyez comptent dans vos totaux, et l'accord montre
+à part une jauge des entrants.
 
-### Prête et Ouverte
+### Brouillon, Prête et Ouverte
 
-Une campagne **Prête** est visible de votre équipe, et d'elle seule. Une campagne
-**Ouverte** est celle où vos étudiants déposent leurs vœux. C'est la confusion qui explique
-la plupart des « mes étudiants ne voient rien ».
+Une campagne en **Brouillon** n'est visible que de votre équipe. Une campagne **Prête** est
+déjà visible de vos étudiants, et s'ouvre d'elle-même à son heure d'ouverture. Seule une
+campagne **Ouverte** accepte leurs vœux. C'est la confusion qui explique la plupart des
+« mes étudiants ne voient rien » : la campagne est restée en Brouillon.
 
 ### Accès ouvert et compte connecté
 

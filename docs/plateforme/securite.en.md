@@ -8,30 +8,34 @@
 
 ## Authentication
 
-- **Microsoft / Azure SSO (OpenID Connect)** — institutions can let their users sign
-  in with their existing institutional account; single sign-on can be **enforced**
-  per institution, with **allowed email domains**. Onboarding procedure, requested
-  permissions and checks performed: [Microsoft single sign-on (IT)](sso.md).
+- **Microsoft and Google single sign-on (OpenID Connect)** — users sign in with their
+  existing institutional account; single sign-on can be **enforced** per institution,
+  with **allowed email domains**. Onboarding procedure, requested permissions and checks
+  performed: [Single sign-on (IT)](sso.md).
 - **Password sign-in** (when SSO is not enforced) — passwords are **hashed** (never
   stored in clear text), a **minimum of 12 characters**, a **strength check** at creation
   and **reset** via a single-use, time-limited link. A password change **notifies the
-  account holder**, so a change they did not ask for does not go unnoticed.
+  account holder** and **signs them out on every device**.
+- **Session length** — a session lasts at most six hours and never carries over from one
+  day to the next; it does not end on inactivity, so work in progress is not lost. A
+  deactivated account is blocked at the very next request.
 - **Rate limiting** on sign-in and reset attempts, to slow down brute-force attacks.
 
 ## Authorisation & isolation
 
 - **Multi-tenant isolation** — every query is automatically restricted to the data of
   the signed-in user's institution; one institution never sees another's data.
-- **Roles & permissions (RBAC)** — per-module rights (none / read / write),
-  **enforced server-side** (hiding a menu is not enough: direct access is blocked
+- **Roles & permissions (RBAC)** — four levels (none / view / prepare / decide) on each
+  section and function, and a perimeter per role, **enforced server-side** (hiding a menu is not enough: direct access is blocked
   too). See the [Overview](plateforme.md).
 - **Ownership checks** on objects accessed by identifier, on top of tenant isolation,
   to prevent access to someone else's resource.
 
 ## API & network
 
-- **Application API** — authentication via **JWT token** (RSA-key signed) and
-  regenerable **API keys**, on a channel **separate from the browser session**.
+- **Application API** — **API keys** exchanged for a short-lived signed **JWT**. An
+  **integration key** belongs to the institution and only has its role's rights; a
+  revoked key gets no new token, and the one it held expires within the hour.
 - **EWP network** — every incoming and outgoing exchange is **signed and verified**
   (RSA HTTP signatures, the EWP standard); the caller is identified by its public key
   declared in the EWP Registry, which governs data access.
@@ -55,7 +59,8 @@
 - **Database backups** on demand, with **retention** and download, from the admin
   console.
 - **Logging & history** — key decisions (document validations, agreement changes,
-  nomination decisions) keep a timestamped history with the author.
+  nomination decisions) keep a timestamped history with the author, kept for five years
+  and available to the institution in **Settings ▸ History**.
 
 ## Compliance & hosting
 

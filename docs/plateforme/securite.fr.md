@@ -8,16 +8,19 @@
 
 ## Authentification
 
-- **SSO Microsoft / Azure (OpenID Connect)** — les établissements peuvent laisser
-  leurs utilisateurs se connecter avec leur compte institutionnel existant ;
-  l'authentification unique peut être **imposée** par établissement, avec des
-  **domaines e-mail autorisés**. Procédure de raccordement, permissions demandées
-  et contrôles effectués : [Authentification unique Microsoft (DSI)](sso.md).
+- **Authentification unique Microsoft et Google (OpenID Connect)** — les utilisateurs
+  se connectent avec leur compte institutionnel existant ; l'authentification unique
+  peut être **imposée** par établissement, avec des **domaines e-mail autorisés**.
+  Procédure de raccordement, permissions demandées et contrôles effectués :
+  [Authentification unique (DSI)](sso.md).
 - **Connexion par mot de passe** (lorsque le SSO n'est pas imposé) — mots de passe
   **hachés** (jamais stockés en clair), **minimum de 12 caractères**, **contrôle de
   robustesse** à la création, et **réinitialisation** par lien à usage unique et durée
-  limitée. Un changement de mot de passe **prévient le titulaire du compte**, afin qu'une
-  modification qu'il n'a pas demandée ne passe pas inaperçue.
+  limitée. Un changement de mot de passe **prévient le titulaire du compte** et **ferme ses
+  sessions sur tous ses appareils**.
+- **Durée de session** — une session dure au plus six heures et ne passe jamais d'un
+  jour sur l'autre ; elle ne s'interrompt pas pour inactivité, pour ne pas perdre une
+  saisie en cours. Un compte désactivé est bloqué dès la requête suivante.
 - **Limitation de débit** (*rate limiting*) sur les tentatives de connexion et de
   réinitialisation, pour freiner les attaques par force brute.
 
@@ -26,7 +29,8 @@
 - **Isolation multi-établissement** — chaque requête est automatiquement restreinte
   aux données de l'établissement de l'utilisateur connecté ; un établissement ne voit
   jamais les données d'un autre.
-- **Rôles & permissions (RBAC)** — droits par module (aucun / lecture / écriture),
+- **Rôles & permissions (RBAC)** — quatre niveaux (aucun / consulter / préparer /
+  décider) sur chaque rubrique et chaque fonction, et un périmètre par rôle,
   **appliqués côté serveur** (le masquage de menu ne suffit pas : l'accès direct est
   également bloqué). Voir la [Vue d'ensemble](plateforme.md).
 - **Contrôles d'appartenance** sur les objets accessibles par identifiant, en
@@ -34,8 +38,10 @@
 
 ## API & réseau
 
-- **API applicative** — authentification par **jeton JWT** (signé par clés RSA) et
-  **clés API** régénérables, sur un canal **distinct de la session navigateur**.
+- **API applicative** — **clés d'API** échangées contre un **jeton JWT** signé, de
+  courte durée. Une **clé d'intégration** appartient à l'établissement et n'a que les
+  droits de son rôle ; une clé révoquée n'obtient plus de jeton, et celui qu'elle détenait
+  expire dans l'heure.
 - **Réseau EWP** — chaque échange entrant et sortant est **signé et vérifié**
   (signatures HTTP RSA, standard EWP) ; l'appelant est identifié par sa clé publique
   déclarée au Registre EWP, ce qui conditionne l'accès aux données.
@@ -61,7 +67,8 @@
   téléchargement, depuis la console d'administration.
 - **Journalisation & historique** — les décisions clés (validations de documents,
   changements d'accords, décisions de nomination) conservent un historique horodaté
-  avec l'auteur.
+  avec l'auteur, gardé cinq ans et consultable par l'établissement dans **Settings ▸
+  History**.
 
 ## Conformité & hébergement
 
