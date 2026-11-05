@@ -20,7 +20,7 @@ participating students and the pool of eligible offers from those criteria. The 
 moves from Draft to Ready (opening it to students), then Opened and Finished; only a draft
 campaign remains editable.
 
-**The end date closes the campaign on its own.** The morning after its last day, the
+**The closing time closes the campaign on its own.** At the minute you set, the
 campaign moves to Finished with nobody clicking: wishes still in draft become wishes, your
 students are notified and you receive the summary — exactly what the "Finish" button does.
 

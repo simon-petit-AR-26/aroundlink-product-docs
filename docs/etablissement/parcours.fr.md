@@ -4,8 +4,7 @@ Un **parcours** est la liste de ce qu'un étudiant doit faire pendant sa mobilit
 composez une fois, puis vous l'appliquez à un groupe d'étudiants : chacun le suit à son
 rythme, et vous voyez où en est tout le monde.
 
-Il remplace la notion de séquence d'onboarding : un même atelier sert désormais aux
-étudiants que vous envoyez **et** à ceux que vous accueillez.
+Un même atelier sert aux étudiants que vous envoyez **et** à ceux que vous accueillez.
 
 !!! info "Où ça se passe"
     **Paramètres ▸ Workflows** pour fabriquer un parcours. On le **branche** ailleurs : sur
@@ -24,7 +23,7 @@ servir.
 
 | Sens | Pour qui | Ce qu'on y met d'habitude |
 |---|---|---|
-| **Outgoing** | les étudiants que vous envoyez | du oui du partenaire au retour : pièce d'identité, assurance, contrat d'études, attestations d'arrivée et de départ, relevé de notes |
+| **Outgoing** | les étudiants que vous envoyez | du oui du partenaire au retour : pièce d'identité, assurance, contrat pédagogique, attestations d'arrivée et de départ, relevé de notes |
 | **Incoming** | les étudiants que vous accueillez | de l'arrivée au relevé : vérification des informations, pièces, charte, choix du campus et des cours, avis |
 
 Deux mécaniques ne valent que pour un sens, et l'écran le dit avant que vous ne l'appreniez
@@ -33,7 +32,7 @@ en vous faisant refuser l'étape :
 - **Choisir son campus** n'existe qu'en accueil — c'est l'établissement d'accueil qui a
   plusieurs sites ;
 - **Choisir ses cours** aussi — il lit le catalogue de l'hôte et alimente le relevé de
-  l'entrant. Pour un étudiant que vous envoyez, l'équivalent est le contrat d'études, qui
+  l'entrant. Pour un étudiant que vous envoyez, l'équivalent est le contrat pédagogique, qui
   vit dans son propre module.
 
 !!! tip "Partez d'un parcours existant"
@@ -104,13 +103,13 @@ parcours **ordonne des fonctions existantes** et les rend obligatoires au bon mo
 
 **À quoi ça sert.** La plupart des étapes d'un parcours ne sont pas des choses que l'on fait
 *dans* le parcours. Elles **surveillent un objet qui existe déjà ailleurs** dans AroundLink
-— un contrat d'études signé, un document validé, un versement de bourse — et se cochent
+— un contrat pédagogique signé, un document validé, un versement de bourse — et se cochent
 d'elles-mêmes quand il change. Elles se décochent aussi, si l'objet revient en arrière.
 
 **Comment ça marche.** C'est pour cela qu'on ne peut pas les cocher à la main, et qu'elles
 n'apparaissent pas dans la liste des types quand vous ajoutez une étape : **c'est la
 plateforme qui les pose**, avec l'objet qu'elles observent. Les parcours livrés avec
-AroundLink en contiennent déjà — « contrat d'études signé par les trois parties »,
+AroundLink en contiennent déjà — « contrat pédagogique signé par les trois parties »,
 « confirmation d'arrivée », « relevé validé ».
 
 !!! info "Un reflet ne recopie rien"
@@ -130,6 +129,6 @@ archives — **Archive**, puis **View archived workflows** pour le retrouver et 
 **Cas d'usage.**
 > L'école compose deux parcours : un sortant en neuf étapes, un entrant en sept. Le sortant
 > est branché sur la campagne de l'année ; l'entrant sur la session « Autumn 2026 intake ».
-> Les quatre étapes de contrat d'études et de relevé sont des reflets : personne ne les
+> Les quatre étapes de contrat pédagogique et de relevé sont des reflets : personne ne les
 > coche, elles suivent les documents. La coordinatrice ne surveille donc que les cinq étapes
 > qui demandent vraiment quelque chose.

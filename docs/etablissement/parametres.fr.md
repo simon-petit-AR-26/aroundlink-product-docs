@@ -388,7 +388,7 @@ utilisateurs partenaires invités — filtrable par type, statut et recherche li
 
 **Comment ça marche.** Une page regroupe l'ensemble des utilisateurs de
 l'organisation et permet de les filtrer par catégorie, par statut ou par
-nom/e-mail. Elle est réservée aux plans de mobilité payants.
+nom/e-mail.
 
 ![Écran d'import](../assets/screenshots/parametres-imports.png)
 

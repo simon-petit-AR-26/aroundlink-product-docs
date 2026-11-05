@@ -134,23 +134,6 @@ operations) — see the [API documentation (demo)](https://demo.aroundlink.com/a
 and, for the EWP network, the [EWP API reference](../ewp/reference-api.md).
 
 
-## Plans: paid / free institution
-
-**What it is for.** Each institution is either a paying or a free client; some
-premium modules (for example [mobility grants](../etablissement/bourse.md) or
-creating [bilateral agreements](../etablissement/accords.md)) are reserved to paying
-clients. This is the platform's commercial gating.
-
-**Who it is for.** <span class="al-audience">Client institution (set by AroundLink)</span>
-
-**How it works.** The institution's plan (paid by default, or free) governs access
-to premium modules — hidden in the menu and blocked on direct access for a free
-client. This plan is independent of any tuition fees paid by the student.
-
-**Use case.**
-> A free-plan partner can review and approve a bilateral agreement a paying
-> institution submitted to it, but cannot open premium modules.
-
 
 ## Contextual help
 

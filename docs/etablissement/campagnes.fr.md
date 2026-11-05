@@ -22,8 +22,8 @@ et le vivier d'offres éligibles selon ces critères. La campagne passe de Broui
 Prête (ouverture aux étudiants), puis Ouverte et Terminée ; seule une campagne en
 brouillon reste modifiable.
 
-**La date de fin clôt la campagne d'elle-même.** Le lendemain de son dernier jour, la
-campagne passe en Terminée sans que personne ait à cliquer : les vœux encore à l'état de
+**L'heure de fin clôt la campagne d'elle-même.** À la minute fixée, la campagne passe
+en Terminée sans que personne ait à cliquer : les vœux encore à l'état de
 brouillon deviennent des vœux, vos étudiants sont prévenus et vous recevez le bilan —
 exactement ce que fait le bouton « Terminer ».
 

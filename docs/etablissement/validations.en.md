@@ -4,43 +4,56 @@ Everything waiting for a decision from you, in one place: documents uploaded by 
 learning agreements to sign, transcripts to issue. It is the screen you open in the morning to
 see what is blocked.
 
-## Validation Hub
+## The validation queue
 
-**What it does.** A single queue where the coordinator validates everything the student
-submits during their mobility — administrative files, learning agreements, transcripts
-and testimonials about partners — without having to browse several screens. Items that
-have been waiting a long time are flagged as urgent, and every decision is archived with
-its author, its outcome and the refusal reason.
+**What it's for.** A single queue for everything your students submit, instead of one screen
+per kind of document. What has been waiting too long is flagged, and every decision is archived
+with its author, its outcome and its reason.
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** The queue gathers pending documents, OLAs awaiting the institution's
-signature, transcripts and testimonials, with counters (pending / students concerned /
-urgent). The coordinator opens each item and decides to validate or refuse; a comment is
-required when refusing. A "History" tab lists past decisions with their reason.
+**How it works.** The queue is sorted by the kind of item submitted:
+
+| Section | What you decide there |
+|---|---|
+| **Documents** | the documents requested from your students |
+| **Learning Agreements** | the learning agreements waiting for your signature |
+| **Transcripts** | transcripts of records |
+| **Language scores** | language certificates and scores |
+| **Course choices** · **Campus choices** | your incoming students' course and campus choices |
+| **Feedback** | your students' reviews of their host institution |
+| **Grant documents** | the documents of the grant file |
+
+Two tabs: **To Do** for what is waiting, **History** for what was validated or refused. You
+filter by direction — **Outgoing** or **Incoming** —, isolate what is **overdue**, and a search
+finds a student or a partner.
+
+You open each item and **validate** or **refuse** it. A refusal asks for a **reason**: it goes
+to the student, who knows what to fix.
 
 ![Validation hub](../assets/screenshots/validations-hub.png)
 
-*Everything waiting on your decision, with the number of overdue items and filters by document type.*
+*Everything waiting for your decision, with the number of overdue items and the filters by kind of document.*
 
 **Use case.**
-> Monday morning, the coordinator sees 12 pending items, 3 of them urgent: they validate
-> two passports, sign one OLA on behalf of the sending institution, and refuse an
-> unreadable insurance certificate with a comment — all from the same queue.
+> On Monday morning the coordinator sees 12 pending items, 3 of them overdue. They validate two
+> passports, sign a learning agreement and refuse an unreadable insurance certificate, saying
+> why — all from the same queue.
 
-## Students' administrative files
+## Chasing from the queue
 
-**What it does.** A central page listing all files uploaded by students (passport,
-insurance, language tests, arrival/departure certificates, etc.) with their status. The
-office validates or refuses files one by one or in bulk, records arrival dates and
-launches reminder campaigns to students whose documents are missing or were refused.
+**What it's for.** What has not been sent to you cannot be validated. The **Reminders** tab
+chases students right where you see what is missing.
 
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+**How it works.** You choose what you want to chase:
 
-**How it works.** The coordinator filters the file list, validates or refuses several at
-once, enters a student's arrival date, estimates how many students would be reminded,
-then triggers a reminder campaign in one click.
+- **Documents** — students who have not uploaded a requested document, or whose document was
+  refused;
+- **Profile completion** — those whose profile is not complete; those already at 100% are left
+  alone;
+- **Feedback** — a group of students to ask for a review on one theme; they land on the form
+  with that theme already chosen.
 
-**Use case.**
-> The coordinator filters on "Refused", selects 8 files, refuses them in bulk with a
-> comment, then sends a reminder to the students concerned.
+Each reminder keeps its history: how many messages went out out of how many, when the first and
+the last were sent. The detail of each kind of reminder is in
+[Broadcasts & messages](communications.md).

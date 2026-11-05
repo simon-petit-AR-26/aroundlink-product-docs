@@ -116,25 +116,24 @@ puis par domaine, année, niveau et période. La même construction alimente la 
 > voit deux onglets de catégorie, chacun avec sa propre grille de places.
 
 
-## Agreements bilatéraux
+## Accords bilatéraux
 
 **À quoi ça sert.** Gère les partenariats hors Erasmus reposant sur une véritable
-négociation entre deux établissements — l'un porteur (offre payante), l'autre partenaire
-(offre gratuite) — avec leur propre distribution des places. Couvre les coopérations
+négociation entre deux établissements, avec leur propre distribution des places. Couvre les coopérations
 en dehors du réseau EWP/Erasmus.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / partenaire</span>
 
-**Comment ça marche.** L'établissement porteur rédige un accord, puis le soumet ; le
-partenaire l'examine, l'approuve ou le modifie. Toute modification par l'un des deux
-côtés relance le cycle jusqu'à ce que les deux approbations coïncident : l'accord
-devient alors actif. Une matrice de distribution des places est renseignée pour les
-mobilités étudiantes. Un import avec aperçu est disponible.
+**Comment ça marche.** Vous rédigez l'accord, puis vous le **publiez** : il est actif
+aussitôt. Il n'attend pas l'approbation du partenaire — un accord bloqué parce que l'autre
+côté ne se connecte pas serait un accord qui n'existe pas. Une matrice de distribution des
+places est renseignée pour les mobilités étudiantes. Un import avec aperçu est disponible.
+
+Un accord se **désactive** quand il ne doit plus servir, et se réactive : c'est réversible.
 
 **Cas d'usage.**
 > Une école française signe un échange bilatéral avec un partenaire brésilien hors
-> Erasmus ; les deux coordinateurs approuvent dans l'outil, puis le côté français
-> répartit 2 places de Master en Semestre 1.
+> Erasmus ; le côté français le publie, puis répartit 2 places de Master en Semestre 1.
 
 
 ## Doubles diplômes
@@ -146,9 +145,8 @@ commun, conditions de diplomation et jury commun. Un cadre différent d'un simpl
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / partenaire</span>
 
-**Comment ça marche.** Même négociation bilatérale que les accords bilatéraux (rédaction,
-soumission, approbation), avec une invitation adressée au signataire partenaire lors de
-la soumission. L'accord porte les informations de cursus, de diplomation, de jury, de
+**Comment ça marche.** Comme un accord bilatéral, il est **actif dès sa publication**,
+avec une invitation adressée au signataire partenaire. L'accord porte les informations de cursus, de diplomation, de jury, de
 niveau EQF et de durée, ainsi que des phases annuelles (Année 1 / Année 2). Les places
 sont réparties via une matrice dédiée. Un import avec aperçu est disponible.
 

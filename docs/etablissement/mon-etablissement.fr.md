@@ -125,7 +125,7 @@ Elle ouvre une liste où chaque ligne dit **quoi faire** et surtout **ce que ça
 | Vos dates de semestre | *vos partenaires vous écrivent pour les demander* |
 | Vos niveaux de langue | *vos étudiants candidatent sans savoir s'ils sont éligibles* |
 | Les photos de votre campus | *votre page s'ouvre sur un bandeau vide* |
-| Votre catalogue de cours | *vos étudiants ne peuvent pas composer leur contrat d'études* |
+| Votre catalogue de cours | *vos étudiants ne peuvent pas composer leur contrat pédagogique* |
 
 ![La liste de ce qu'il reste à remplir](../assets/screenshots/things-to-do.png)
 

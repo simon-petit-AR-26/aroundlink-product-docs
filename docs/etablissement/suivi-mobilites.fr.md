@@ -20,7 +20,7 @@ du travail réellement fait.
 
 | Phase | Lu sur un dossier | Ce qu'elle couvre |
 |---|---|---|
-| **Before the mobility** | *Not departed* | tout ce qui précède le départ : pièces, contrat d'études, assurance |
+| **Before the mobility** | *Not departed* | tout ce qui précède le départ : pièces, contrat pédagogique, assurance |
 | **During the mobility** | *On site* | le séjour : arrivée confirmée, cours, suivi sur place |
 | **After the mobility** | *Returned* | le retour : attestation de départ, relevé de notes, avis |
 | **Closed** | *Closed* | le dossier est clos |
@@ -94,5 +94,5 @@ nom d'un parcours ouvre son atelier, la pastille d'un relevé ouvre l'écran de 
 **Cas d'usage.**
 > Fin septembre, la coordinatrice ouvre l'onglet Mobility de la campagne. Le kanban montre
 > quatre dossiers encore *Not departed* alors que les cours ont commencé. Elle filtre sur
-> **Waiting on : vous**, voit trois contrats d'études qui attendent sa signature, les traite,
+> **Waiting on : vous**, voit trois contrats pédagogiques qui attendent sa signature, les traite,
 > et les trois cartes passent d'elles-mêmes en *On site*.
