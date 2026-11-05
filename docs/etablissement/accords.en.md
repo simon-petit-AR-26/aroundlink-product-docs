@@ -1,33 +1,69 @@
 # Agreements & place distribution
 
-The Agreements module brings together everything an institution can offer its
-students: Erasmus+/IIA exchanges, non-network bilateral agreements, double degrees
-and paying mobilities. Every agreement carries its places, finely distributed by
-year, level, period and field, feeding directly into the catalogue students see.
+**Mobility ▸ Institutions ▸ Agreements**: everything your institution can offer its students,
+in four families of agreement — **IIA** (Erasmus+), **Bilateral**, **Double Degree** and
+**Paying** (paying mobility). Each agreement carries its places, distributed by year, level,
+period and field: they are what your students see and request.
 
-## Exchange offers (inter-institutional agreements / IIA)
+## Your agreement list
 
-**What it's for.** This is the reference catalogue of the mobilities a student can
-apply to: an exchange signed with a partner institution, describing academic levels,
-languages, subject areas (ISCED), requirements and the number of places. The same
-record doubles as the Erasmus+/IIA file, so the information is never managed twice.
+**What it's for.** All your agreements, across partners, in one table.
 
-**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** The coordinator creates or imports an exchange, then attaches one or
-more mobility blocks (studies, traineeship, staff), each specifying the expected
-languages, subject areas, requirements and a place allotment. Dedicated pages let you
-view the information, conditions, approval status and history, sync the EWP factsheet
-and notify the partner. A student's eligibility (level, period, GPA, language scores)
-is checked automatically at application time.
+**How it works.** Under the title, the count: how many agreements, and how many per family. One
+row per agreement: partner, family (**Source**), status, start of validity, signed document, and
+**Places** — the row's total places, pinned on the right, summed at the bottom of the table.
+About twenty more columns show on demand: end of validity, signed or not, country, region,
+level, required language, accepted tests, student / teaching / staff places, and the four
+dimensions of the distribution — specialisation, level label, period, year. Every column sorts
+and filters, and the table's footer counts what you see.
 
-![Consolidated list of agreements](../assets/screenshots/accords-liste.png)
+- **Opening a row** unfolds the agreement's cooperation conditions, with a link to the
+  agreement itself.
+- The **Document** column uploads the signed agreement.
+- A distribution value — a period, a level label — leads to that agreement's place
+  distribution.
 
-*All your agreements across every partner: type, status, levels, languages, validity and places. Click the image to enlarge it.*
+![Consolidated agreements list](../assets/screenshots/accords-liste.png)
+
+*Your 85 agreements, with the count per family under the title and the total places at the bottom.*
+
+**Acting on several agreements.** Tick rows: **Change status** deactivates them — they stop
+offering places and leave the students' search, nothing is deleted — or reactivates them.
+**Delete** sends them to the trash, with their files and conditions; an agreement whose places
+are still distributed is refused, and the screen says which. The trash opens from the "…" menu.
+
+An **IIA** cannot be changed from here: it is negotiated in the EWP network. Nor can an
+agreement your partner wrote: only they can change it. The screen tells you before you confirm.
 
 **Use case.**
-> The IRO records an Erasmus+ exchange with TU Munich: 3 Master places in engineering,
-> English B2 required, IIA identifier synced with the partner over EWP.
+> At the end of the year, the office filters the end of validity on 2026, ticks the bilateral
+> agreements that will not be renewed and deactivates them in one go.
+
+
+## Creating an agreement
+
+**How it works.** The toolbar's **+** first asks which partner, then which family — **IIA**,
+**Bilateral**, **Double Degree** or **Paying mobility** — and opens the matching form. The same
+button sits on a partner's file, which already knows the institution.
+
+
+## Erasmus+ agreements (IIA)
+
+**What it's for.** The Erasmus+ inter-institutional agreement, exchanged with your partner
+through the [EWP](../ewp/ewp.md) network.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** An IIA is created or imported, then carries one or more mobility blocks —
+studies, traineeship, staff — each with its expected languages, fields, prerequisites and
+quota of places. Its screens show its conditions, its approval state at both institutions,
+the history of its exchanges with the network, and its places.
+
+**Use case.**
+> The office records an Erasmus+ exchange with TU Munich: 3 Master's places in engineering,
+> English B2 required, exchanged with the partner through EWP.
 
 
 ## Place distribution (allocation matrix)
@@ -91,24 +127,6 @@ among the locations, labelled **Main**.
 
 Three campuses therefore do not add three agreements, and a terminated agreement stops
 distributing its places, whatever its family.
-
-## A unified places engine
-
-**What it's for.** Every agreement type — exchange, bilateral, double degree, paying
-mobility — presents its places to students and to the administration in the same way.
-The catalogue stays consistent whatever the underlying contract type.
-
-**Who it's for.** <span class="al-audience">admin</span>
-
-**How it works.** Each agreement type exposes its places in a common form, grouped by
-mobility category (Exchange, Double Degree, Internship, Paying mobility) then by field,
-year, level and period. The same construction feeds the student page and the coordinator
-preview, which therefore always stay in sync.
-
-**Use case.**
-> A partner offers both an Erasmus exchange and a double degree: the student sees two
-> category tabs, each with its own places grid.
-
 
 ## Bilateral agreements
 
@@ -190,20 +208,19 @@ agreement expires.
 
 ## Agreement CSV imports
 
-**What it's for.** Lets you load agreements in bulk from a spreadsheet rather than one by
-one, with a preview-and-correct step before validation to catch bad rows. Speeds up
-onboarding of large partner portfolios.
+**What it's for.** Load agreements in bulk from a spreadsheet rather than one by one, with a
+preview before anything is written.
 
-**Who it's for.** <span class="al-audience">IRO manager</span>
+**Who it's for.** <span class="al-audience">RI manager</span>
 
-**How it works.** Each agreement family (exchanges, IIA, bilateral, double degree, paying)
-has its own import page. The file is first parsed and checked row by row in a preview,
-where each row can be corrected, before a final validation that saves everything. File
-templates are downloadable.
+**How it works.** **Settings ▸ Integrations** offers one import per family: IIA, bilateral,
+double degree and paying mobility, each with its file template. The file is checked row by row
+in a preview, where each row can be fixed, before the validation that saves it all.
 
 **Use case.**
-> An office pastes 80 exchanges from a legacy spreadsheet, fixes 3 flagged rows in the
+> An office loads 80 bilateral agreements from an old spreadsheet, fixes 3 rows flagged in the
 > preview, then validates.
+
 
 ## Agreement update review (IIA)
 

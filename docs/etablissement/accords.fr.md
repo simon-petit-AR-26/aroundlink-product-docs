@@ -1,36 +1,72 @@
 # Accords & distribution des places
 
-Le module Accords rassemble tout ce qu'un établissement peut proposer à ses
-étudiants : échanges Erasmus+/IIA, agreements bilatéraux hors réseau, doubles
-diplômes et mobilités payantes. Chaque accord porte ses places, réparties finement
-par année, niveau, période et domaine, pour alimenter directement le catalogue vu
-par l'étudiant.
+**Mobility ▸ Institutions ▸ Agreements** : tout ce que votre établissement peut proposer à ses
+étudiants, en quatre familles d'accords — **IIA** (Erasmus+), **Bilateral**, **Double Degree**
+et **Paying** (mobilité payante). Chaque accord porte ses places, réparties par année, niveau,
+période et domaine : ce sont elles que vos étudiants voient et demandent.
 
-## Offres d'échange (accords inter-établissements / IIA)
+## La liste de vos accords
 
-**À quoi ça sert.** C'est le catalogue de référence des mobilités qu'un étudiant peut
-demander : un échange signé avec un établissement partenaire, décrivant les niveaux
-d'études, les langues, les domaines (ISCED), les prérequis et le nombre de places.
-La même fiche sert de dossier Erasmus+/IIA, ce qui évite de gérer deux fois la même
-information.
+**À quoi ça sert.** Tous vos accords, tous partenaires confondus, dans un seul tableau.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Le coordinateur crée ou importe un échange, puis lui rattache
-un ou plusieurs blocs de mobilité (études, stage, personnel), chacun précisant les
-langues attendues, les domaines, les prérequis et un contingent de places. Des pages
-dédiées permettent de consulter les informations, les conditions, l'état
-d'approbation, l'historique, de synchroniser la factsheet EWP et de notifier le
-partenaire. L'éligibilité d'un étudiant (niveau, période, GPA, scores de langue) est
-vérifiée automatiquement au moment de la demande.
+**Comment ça marche.** Sous le titre, le compte : combien d'accords, et combien par famille.
+Une ligne par accord : partenaire, famille (**Source**), statut, début de validité, document
+signé, et **Places** — la somme des places de la ligne, épinglée à droite, totalisée en bas
+du tableau. Une vingtaine de colonnes s'ajoutent à la demande : fin de validité, signé ou non,
+pays, région, niveau, langue exigée, tests acceptés, places étudiants / enseignants /
+personnel, et les quatre dimensions de la répartition — spécialité, libellé de niveau, période,
+année. Chaque colonne se trie et se filtre, et le bas du tableau compte ce que vous voyez.
+
+- **Ouvrir une ligne** déroule les conditions de coopération de l'accord, avec un lien vers
+  l'accord lui-même.
+- La colonne **Document** dépose la convention signée.
+- Une valeur de répartition — une période, un libellé de niveau — mène à la répartition des
+  places de cet accord.
 
 ![Liste consolidée des accords](../assets/screenshots/accords-liste.png)
 
-*Tous vos accords, tous partenaires confondus : type, statut, niveaux, langues, validité et places. Cliquez sur l'image pour l'agrandir.*
+*Vos 85 accords, avec le compte par famille sous le titre et le total des places en bas.*
+
+**Agir sur plusieurs accords.** Cochez des lignes : **Change status** les désactive — ils
+n'offrent plus de places et quittent la recherche des étudiants, rien n'est supprimé — ou les
+réactive. **Delete** les envoie à la corbeille, avec leurs fichiers et leurs conditions ; un
+accord dont les places sont encore réparties est refusé, et l'écran dit lequel. La corbeille
+s'ouvre depuis le menu « … ».
+
+Un **IIA** ne se modifie pas d'ici : il se négocie dans le réseau EWP. Un accord rédigé par
+votre partenaire non plus : lui seul peut le changer. L'écran vous le dit avant de confirmer.
 
 **Cas d'usage.**
-> Le bureau RI enregistre un échange Erasmus+ avec TU Munich : 3 places de Master en
-> ingénierie, anglais B2 exigé, identifiant IIA synchronisé avec le partenaire via EWP.
+> En fin d'année, le bureau filtre la fin de validité sur 2026, coche les accords bilatéraux
+> qui ne seront pas renouvelés et les désactive en une fois.
+
+
+## Créer un accord
+
+**Comment ça marche.** Le **+** de la barre d'outils demande d'abord avec quel partenaire, puis
+la famille d'accord — **IIA**, **Bilateral**, **Double Degree** ou **Paying mobility** — et
+ouvre le formulaire qui lui correspond. Le même bouton existe sur la fiche d'un partenaire,
+qui connaît déjà l'établissement.
+
+
+## Accords Erasmus+ (IIA)
+
+**À quoi ça sert.** L'accord inter-institutionnel Erasmus+, échangé avec votre partenaire par
+le réseau [EWP](../ewp/ewp.md).
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Un IIA se crée ou s'importe, puis porte un ou plusieurs blocs de
+mobilité — études, stage, personnel — chacun avec ses langues attendues, ses domaines, ses
+prérequis et son contingent de places. Ses écrans montrent ses conditions, son état
+d'approbation chez les deux établissements, l'historique de ses échanges avec le réseau, et
+ses places.
+
+**Cas d'usage.**
+> Le bureau enregistre un échange Erasmus+ avec TU Munich : 3 places de Master en ingénierie,
+> anglais B2 exigé, échangé avec le partenaire par EWP.
 
 
 ## Distribution des places (matrice de répartition)
@@ -97,24 +133,6 @@ l'établissement lui-même compte parmi les lieux, étiqueté **Main**.
 
 Trois campus n'ajoutent donc pas trois accords, et un accord résilié cesse de
 distribuer ses places, quelle que soit sa famille.
-
-## Un moteur de places unifié
-
-**À quoi ça sert.** Tous les types d'accords — échange, bilatéral, double diplôme,
-mobilité payante — présentent leurs places à l'étudiant et à l'administration de la
-même façon. Le catalogue reste cohérent quel que soit le type de contrat sous-jacent.
-
-**Pour qui.** <span class="al-audience">admin</span>
-
-**Comment ça marche.** Chaque type d'accord expose ses places sous une forme commune,
-regroupée par catégorie de mobilité (Échange, Double diplôme, Stage, Mobilité payante)
-puis par domaine, année, niveau et période. La même construction alimente la page
-étudiant et l'aperçu coordinateur, qui restent ainsi toujours synchronisés.
-
-**Cas d'usage.**
-> Un partenaire propose à la fois un échange Erasmus et un double diplôme : l'étudiant
-> voit deux onglets de catégorie, chacun avec sa propre grille de places.
-
 
 ## Accords bilatéraux
 
@@ -196,20 +214,20 @@ consultables même lorsque l'accord arrive à échéance.
 
 ## Imports CSV des accords
 
-**À quoi ça sert.** Permet de charger des accords en masse depuis un tableur plutôt qu'un
-par un, avec une étape d'aperçu et de correction avant validation pour intercepter les
-lignes erronées. Accélère l'intégration de grands portefeuilles de partenaires.
+**À quoi ça sert.** Charger des accords en masse depuis un tableur plutôt qu'un par un, avec un
+aperçu avant écriture.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI</span>
 
-**Comment ça marche.** Chaque famille d'accords (échanges, IIA, bilatéral, double diplôme,
-payant) dispose d'une page d'import. Le fichier est d'abord analysé et contrôlé ligne par
-ligne dans un aperçu, où chaque ligne peut être corrigée, avant une validation finale qui
-enregistre l'ensemble. Des modèles de fichier sont téléchargeables.
+**Comment ça marche.** **Paramètres ▸ Integrations** propose un import par famille : IIA,
+bilatéral, double diplôme et mobilité payante, chacun avec son modèle de fichier. Le fichier
+est contrôlé ligne par ligne dans un aperçu, où chaque ligne se corrige, avant la validation
+qui enregistre l'ensemble.
 
 **Cas d'usage.**
-> Un bureau colle 80 échanges depuis un ancien tableur, corrige 3 lignes signalées dans
-> l'aperçu, puis valide.
+> Un bureau charge 80 accords bilatéraux depuis un ancien tableur, corrige 3 lignes signalées
+> dans l'aperçu, puis valide.
+
 
 ## Revue des mises à jour d'accord (IIA)
 

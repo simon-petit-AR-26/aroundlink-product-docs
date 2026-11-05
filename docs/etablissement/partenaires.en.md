@@ -1,32 +1,44 @@
-# Partners & institution files
+# Institutions
 
-The **Partners** module brings together, in one place, every institution your
-international relations office works with: where they are, what agreements bind
-you, how many places remain open, and the state of their official data. Each
-partner has a complete file that your students and your team consult throughout
-the year.
+**Mobility ▸ Institutions** gathers the institutions your office works with. The screen has
+three tabs, and this documentation follows them:
+
+| Tab | What is there |
+|---|---|
+| **Institutions** | your partners, and each one's file — this page |
+| **Agreements** | all your agreements, across partners — [Agreements & places](accords.md) |
+| **Contacts** | your contacts at your partners — [Contacts](contacts.md) |
+
+Each partner has a full file, which your team and your students consult all year round.
 
 ## Partner directory
 
-**What it's for.** A single, filterable table of all your partner institutions.
-It gives an immediate overview — country, city, accreditations, tags, languages,
-levels, remaining places, number and type of agreements — and acts as the entry
-point into each partner file.
+**What it's for.** One table of all your partners, and the way into each file.
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** The directory lists the partners your institution tracks (those
-you have an agreement with or that you created). You filter the list straight from
-the search bar, then click a row to open the file. A toggle switches the same
-table to the consolidated agreements view.
+**How it works.** One row per partner: internal code, country, region, city, date of last
+contact, accreditations, and many more columns to show or hide — tags, languages, levels,
+places… Every column sorts and filters; the search covers the whole row. The table's
+footer counts what you see: rows, countries, cities.
+
+The toolbar, to the right of the search:
+
+- **+** creates a partner;
+- the export takes what you see — your filters, your columns, your selection;
+- the **columns** chooser, and saved **views**, shared with your team;
+- the "…" menu opens archived partners and the trash.
+
+Ticking rows brings up a bulk-action bar: **Tags**, **Student filters**, **Hide for your
+students**, **Archive**, **Delete**.
 
 ![List of partner institutions](../assets/screenshots/partenaires-liste.png)
 
-*Your partners, with their internal code, accreditations, your tags and the levels open. Click the image to enlarge it.*
+*Your partners, two of them ticked: the bottom bar holds what applies to the whole selection.*
 
 **Use case.**
-> A coordinator filters on "Spain + active agreements", then opens a university's
-> file to check its contacts.
+> A coordinator filters the region on "Asia & Oceania", ticks the eight partners it holds and
+> tags them "Asia 2027" in one go.
 
 
 ## Create a partner institution
@@ -213,60 +225,6 @@ it already carries. Three campuses therefore do not add three agreements.
     A city turned on as a destination cannot be deleted: students may already have chosen
     it, and its places would go with it. Switch it off first — the screen says so and
     refuses clearly. The deletion is then confirmed, and it is definitive.
-
-## Partner contacts
-
-**What it's for.** A directory of the people the office deals with at each partner,
-one designated as main. These contacts feed the agreement and signatory dropdowns.
-
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
-
-**How it works.** Two entry points: a global list of your contacts and a
-"Relationship" tab per partner. Each contact has name, email, phone, position and
-a "main" flag. On save, a contact is automatically linked to a matching existing
-account.
-
-![List of partner contacts](../assets/screenshots/partenaires-contacts.png)
-
-*Your contacts at partner institutions, the "Main" badge marking the one who receives requests and nominations. This is where you open their access.*
-
-**Use case.**
-> The coordinator adds a partner's Erasmus officer and marks them as the main
-> contact.
-
-
-### Open portal access (invitations)
-
-**What it's for.** Open partner-side access for a contact so they collaborate
-directly (for example to approve an agreement). In one click, the system invites
-the contact, links them to an existing account, or reports a conflict.
-
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
-
-**How it works.** From a partner contact, "Open access" sends an email invitation;
-a "Resend" action re-issues it. Both are rate-limited to avoid repeated sends.
-
-**Use case.**
-> The coordinator invites the partner's Erasmus officer so she can review an
-> agreement in her own portal.
-
-
-## Consolidated agreements view
-
-**What it's for.** A unified view merging Erasmus (IIA) and bilateral agreements
-across all your partners, to see and filter in one place each agreement's status,
-validity years, signing date and approval state.
-
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
-
-**How it works.** A toggle switches the directory to this normalised view, one row
-per agreement. Each row shows the partner, the source (IIA or bilateral), the
-type, the status (active / inactive / terminated), local and partner approval, and
-the validity years.
-
-**Use case.**
-> The office filters "All agreements" on "Expired" to plan renewals.
-
 
 ## Institution lookup (autocomplete)
 
@@ -525,22 +483,3 @@ an unknown tag or accreditation. Running the import again is safe.
 > announces 280 new and 20 updates, two rows to fix, then the import runs.
 
 
-## Import partner contacts
-
-**What it's for.** Load your partners' contacts in bulk from a file, with a preview before
-anything is written.
-
-**Who it's for.** <span class="al-audience">IRO manager / admin</span>
-
-**How it works.** **Settings ▸ Integrations ▸ Import Contacts**. Two columns are required:
-**institution_domain** — the SCHAC domain or EWP identifier of the contact's institution —
-and **email**. Optional: first name, last name, phone, position, main contact.
-
-The preview flags every row whose institution cannot be found, without writing anything;
-you then confirm. Re-importing the same email for the same partner updates the contact, and
-naming a new main contact removes that role from the previous one. A notification confirms
-when the import is done.
-
-**Use case.**
-> The office loads 60 contacts: the preview flags two mistyped domains, fixed before the
-> import; each contact joins their partner.
