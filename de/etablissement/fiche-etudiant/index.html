@@ -2484,7 +2484,7 @@
 
 <h1 id="le-dossier-dun-etudiant">Le dossier d'un étudiant<a class="headerlink" href="#le-dossier-dun-etudiant" title="Permanent link">¶</a></h1>
 <p>Qu'il parte ou qu'il arrive, chaque étudiant a une fiche qui rassemble tout son dossier : son
-identité, ses pièces, son contrat d'études, son relevé de notes, son suivi de mobilité. On y
+identité, ses pièces, son contrat pédagogique, son relevé de notes, son suivi de mobilité. On y
 arrive depuis la liste des <a href="../etudiants/">sortants</a> ou des <a href="../etudiants-entrants/">entrants</a>.</p>
 <h2 id="la-fiche-dun-etudiant">La fiche d'un étudiant<a class="headerlink" href="#la-fiche-dun-etudiant" title="Permanent link">¶</a></h2>
 <p><strong>À quoi ça sert.</strong> Réunir en un seul endroit tout ce qui concerne un étudiant :
@@ -2576,23 +2576,50 @@ dépose lui-même sur sa fiche, et la pièce apparaît aussitôt comme validée.
 <a href="../validations/">validations</a> plutôt que fiche par fiche.</p>
 </div>
 <h2 id="contrat-pedagogique-learning-agreement-ola">Contrat pédagogique (Learning Agreement / OLA)<a class="headerlink" href="#contrat-pedagogique-learning-agreement-ola" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> Le Learning Agreement décrit le programme de cours qu'un étudiant
-suivra à l'étranger. Cette vue permet au bureau de suivre chaque contrat, de voir en un
-coup d'œil ceux qui sont en attente, validés ou à corriger, et de faire respecter la
-signature des deux établissements avant qu'un contrat ne devienne définitif.</p>
+<p><strong>À quoi ça sert.</strong> Le contrat pédagogique décrit le programme de cours qu'un étudiant
+suivra à l'étranger. C'est un document <strong>à trois</strong> : il se signe par l'étudiant, par
+l'établissement qui l'envoie et par celui qui l'accueille — et chacun des trois le lit.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">gestionnaire RI / coordinateur</span></p>
-<p><strong>Comment ça marche.</strong> Le coordinateur ouvre la liste des OLA, filtre par statut et
-consulte chaque contrat dans une fenêtre qui affiche son historique. Il peut demander
-des modifications — le contrat repart alors en brouillon avec un commentaire pour
-l'étudiant — ou l'approuver. Pour un accord classique, chaque établissement signe de
-son côté, dans n'importe quel ordre, et le contrat n'est validé qu'une fois les deux
-signatures posées ; pour un accord EWP, l'approbation transmet le contrat à
-l'établissement d'accueil selon le flux séquentiel du réseau.</p>
+<p><strong>Comment ça marche.</strong> Le contrat avance d'une signature à l'autre, et son statut dit où il
+en est :</p>
+<table>
+<thead>
+<tr>
+<th>Statut</th>
+<th>Ce qui s'est passé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Draft</strong></td>
+<td>l'étudiant compose son programme</td>
+</tr>
+<tr>
+<td><strong>Selected by student</strong></td>
+<td>l'étudiant a choisi ses cours et signé</td>
+</tr>
+<tr>
+<td><strong>Pending sending school validation</strong></td>
+<td>il attend la signature de l'établissement d'envoi</td>
+</tr>
+<tr>
+<td><strong>Pending receiving school validation</strong></td>
+<td>il attend celle de l'établissement d'accueil</td>
+</tr>
+<tr>
+<td><strong>Validated</strong></td>
+<td>les trois ont signé : le contrat fait foi</td>
+</tr>
+</tbody>
+</table>
+<p>L'établissement d'accueil peut aussi le <strong>refuser</strong>. Vous pouvez demander une modification —
+le contrat repart vers l'étudiant avec votre commentaire —, ou la faire vous-même : voir
+ci-dessous. Pour un accord EWP, la validation suit le circuit du réseau européen.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>Le coordinateur relit l'OLA de départ de Marie (3 cours, 18 ECTS), lui demande de
-remplacer un cours, puis signe au nom de l'établissement d'envoi ; dès que le
-partenaire signe à son tour, l'OLA passe « Validé ».</p>
+<p>Le coordinateur relit le contrat pédagogique de Marie (3 cours, 18 ECTS), lui demande de
+remplacer un cours, puis signe au nom de l'établissement d'envoi ; dès que le partenaire
+signe à son tour, le contrat passe « Validated ».</p>
 </blockquote>
 <h3 id="le-coordinateur-corrige-il-ne-fait-plus-que-juger">Le coordinateur corrige, il ne fait plus que juger<a class="headerlink" href="#le-coordinateur-corrige-il-ne-fait-plus-que-juger" title="Permanent link">¶</a></h3>
 <p><strong>À quoi ça sert.</strong> Un contrat refusé pour une virgule faisait un aller-retour complet :
@@ -2621,7 +2648,7 @@ pour une même modification donneraient deux versions du contrat.</p>
 </div>
 <h3 id="les-documents-dun-entrant-accueilli-sur-un-campus">Les documents d'un entrant accueilli sur un campus<a class="headerlink" href="#les-documents-dun-entrant-accueilli-sur-un-campus" title="Permanent link">¶</a></h3>
 <p><strong>Comment ça marche.</strong> Quand vous accueillez un étudiant sur l'un de vos campus, ses
-documents — contrat d'études et relevé de notes — portent <strong>« École — Campus »</strong> et non
+documents — contrat pédagogique et relevé de notes — portent <strong>« École — Campus »</strong> et non
 le seul nom de l'établissement. L'étudiant et son école d'origine savent ainsi où le
 séjour a réellement eu lieu.</p>
 <h2 id="generation-pdf-ola-releve-de-notes">Génération PDF : OLA &amp; relevé de notes<a class="headerlink" href="#generation-pdf-ola-releve-de-notes" title="Permanent link">¶</a></h2>
@@ -2674,7 +2701,7 @@ d'origine.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 12:52:35 CET">5 novembre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 12:59:36 CET">5 novembre 2026</span>
   </span>
 
     

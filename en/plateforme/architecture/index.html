@@ -2017,10 +2017,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-core-backend" class="md-nav__link">
+  <a href="#the-interface-front-end" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Application core (backend)
+        The interface (front end)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-application-core-back-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The application core (back end)
       
     </span>
   </a>
@@ -2039,10 +2050,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#interface-front-end-components" class="md-nav__link">
+  <a href="#documents-and-emails" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Interface &amp; front-end components
+        Documents and emails
       
     </span>
   </a>
@@ -2290,10 +2301,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-core-backend" class="md-nav__link">
+  <a href="#the-interface-front-end" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Application core (backend)
+        The interface (front end)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-application-core-back-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The application core (back end)
       
     </span>
   </a>
@@ -2312,10 +2334,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#interface-front-end-components" class="md-nav__link">
+  <a href="#documents-and-emails" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Interface &amp; front-end components
+        Documents and emails
       
     </span>
   </a>
@@ -2388,142 +2410,145 @@
 <h1 id="architecture-technology">Architecture &amp; technology<a class="headerlink" href="#architecture-technology" title="Permanent link">¶</a></h1>
 <div class="admonition info">
 <p class="admonition-title">Who this page is for</p>
-<p>A <strong>technical</strong> page for <strong>IT teams / CIOs</strong> (integration, due diligence,
-operations). It describes the technologies AroundLink is built on, at a product
-level — with no configuration or secrets.</p>
+<p>A <strong>technical</strong> page for <strong>IT teams</strong> (integration, due diligence, operations). It
+describes the technologies AroundLink is made of, at product level — no
+configuration, no secret.</p>
 </div>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
-<p>AroundLink is a <strong>multi-tenant web application (SaaS)</strong>, built around a <strong>Symfony
-(PHP)</strong> core and a <strong>PostgreSQL</strong> database. The application is <strong>API-first</strong>: the
-same business data is exposed through a REST API (see the <a href="../../ewp/reference-api/">EWP API
-reference</a> and the AroundLink REST API), enabling the
-integrated web interface, decoupled front-ends (React/Next.js) and the
-machine-to-machine exchanges of the EWP network alike.</p>
-<h2 id="application-core-backend">Application core (backend)<a class="headerlink" href="#application-core-backend" title="Permanent link">¶</a></h2>
+<p>AroundLink is a <strong>multi-tenant web application (SaaS)</strong> in two <strong>separate</strong> parts:</p>
+<ul>
+<li>a web <strong>interface</strong> — what your users see at <code>app.aroundlink.com</code>;</li>
+<li>a <strong>JSON API</strong> — the application core, carrying every business rule, which the
+  interface queries for each screen.</li>
+</ul>
+<p>The interface only reaches the database through the API. Exchanges with the European
+<em>Erasmus Without Paper</em> network go through the same API, and your own systems can use it
+— see <a href="../../etablissement/emails/">Emails &amp; connectors</a>.</p>
+<h2 id="the-interface-front-end">The interface (front end)<a class="headerlink" href="#the-interface-front-end" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
 <th>Technology</th>
-<th>Version</th>
 <th>Role</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>PHP</td>
-<td>≥ 8.3</td>
-<td>Backend language.</td>
+<td><strong>Next.js 16</strong> / <strong>React 19</strong></td>
+<td>Web application, in <strong>TypeScript</strong>.</td>
 </tr>
 <tr>
-<td>Symfony</td>
-<td>7.2</td>
-<td>Application framework (HTTP, security, forms, validation…).</td>
+<td><strong>Tailwind CSS</strong></td>
+<td>Styling, in-house design system.</td>
 </tr>
 <tr>
-<td>API Platform</td>
-<td>4.1</td>
-<td>REST API exposure (Hydra / JSON-LD contract, CRUD operations).</td>
+<td><strong>TanStack Query</strong></td>
+<td>Exchanges with the API, caching of displayed data.</td>
 </tr>
 <tr>
-<td>Doctrine ORM / DBAL</td>
-<td>3.x</td>
-<td>Data access, schema migrations, data sets.</td>
+<td><strong>Recharts</strong></td>
+<td>Dashboard and statistics charts.</td>
 </tr>
 <tr>
-<td>Symfony Messenger</td>
-<td>7.2</td>
+<td><strong>Leaflet</strong></td>
+<td>Partner maps and the <a href="../../atlas/atlas/">Atlas</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Tables, filters and saved views are built in-house, with no third-party grid library.</p>
+<h2 id="the-application-core-back-end">The application core (back end)<a class="headerlink" href="#the-application-core-back-end" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PHP 8.3+</strong> / <strong>Symfony 7</strong></td>
+<td>Application core: security, business rules, validation.</td>
+</tr>
+<tr>
+<td><strong>API Platform</strong></td>
+<td>Exposing and documenting the API.</td>
+</tr>
+<tr>
+<td><strong>Doctrine ORM</strong></td>
+<td>Data access and schema migrations.</td>
+</tr>
+<tr>
+<td><strong>Symfony Messenger</strong></td>
 <td><strong>Asynchronous</strong> processing (emails, notifications, EWP syncs).</td>
 </tr>
 <tr>
-<td>Symfony UX (Stimulus)</td>
-<td>2.x</td>
-<td>Browser interactivity without a heavy build (AssetMapper / importmap).</td>
-</tr>
-<tr>
-<td>Twig</td>
-<td>3.x</td>
-<td>Templates for the integrated interface pages.</td>
+<td><strong>JWT</strong></td>
+<td>Authentication of the interface against the API: stateless, no server-side session.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="database">Database<a class="headerlink" href="#database" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>PostgreSQL 16</strong>. The schema is versioned with <strong>Doctrine migrations</strong>
-  (reproducible across environments).</li>
-<li>Public identifiers of sensitive objects use <strong>UUIDs</strong> (non-guessable /
-  non-enumerable) rather than sequential integers.</li>
+<li><strong>PostgreSQL 16</strong>. The schema is versioned through <strong>migrations</strong>, reproducible from
+  one environment to another.</li>
+<li>Public identifiers of sensitive objects are <strong>UUIDs</strong> — non-guessable,
+  non-enumerable — rather than sequential integers.</li>
 </ul>
-<h2 id="interface-front-end-components">Interface &amp; front-end components<a class="headerlink" href="#interface-front-end-components" title="Permanent link">¶</a></h2>
-<p>The integrated interface (institution and student spaces) is rendered with <strong>Twig +
-Stimulus</strong>, with:</p>
-<ul>
-<li><strong>ag-Grid</strong> — data grids (sorting, columns, filters, saved views);</li>
-<li><strong>Chart.js</strong> — dashboard charts;</li>
-<li><strong>Leaflet</strong> (+ MarkerCluster, MapTiler basemap) — partner and <a href="../../atlas/atlas/">Atlas</a> directory maps;</li>
-<li><strong>CKEditor</strong> — rich content editing (CMS editor, document templates);</li>
-<li>autocompletion and live components via <strong>Symfony UX</strong>.</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Front / back separation</p>
-<p>The API-first architecture enables a <strong>decoupled front-end</strong> (a React/Next.js app
-consuming the API) alongside the existing Twig interface. Both coexist during the
-transition.</p>
-</div>
+<h2 id="documents-and-emails">Documents and emails<a class="headerlink" href="#documents-and-emails" title="Permanent link">¶</a></h2>
+<p><strong>Emails</strong> and <strong>PDF documents</strong> (certificates, learning agreements, transcripts,
+templates) are produced on the server, from templates. That is where, and only where,
+the <strong>Twig</strong> template engine is still used: the former interface it rendered is
+switched off in production.</p>
 <h2 id="integrations-services">Integrations &amp; services<a class="headerlink" href="#integrations-services" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
 <th>Service</th>
-<th>Use</th>
+<th>Usage</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Mailjet</strong></td>
-<td>Email delivery + tracking (opens, clicks, bounces) for communications and reminders.</td>
+<td>Sending emails.</td>
 </tr>
 <tr>
 <td><strong>Gotenberg</strong> / <strong>mPDF</strong></td>
-<td>PDF document generation (certificates, agreements, templates).</td>
-</tr>
-<tr>
-<td><strong>MapTiler</strong> (via Leaflet)</td>
-<td>Basemaps for the Atlas directory.</td>
+<td>PDF document generation.</td>
 </tr>
 <tr>
 <td><strong>Sentry</strong></td>
-<td>Application error monitoring.</td>
+<td>Error monitoring, on the interface as on the API.</td>
 </tr>
 <tr>
-<td><strong>EWP Registry</strong></td>
+<td><strong>EWP registry</strong></td>
 <td>Mirror of the EWP network catalogue (institutions, keys, API versions).</td>
 </tr>
 <tr>
-<td><strong>spatie/simple-excel</strong></td>
-<td>Reading CSV / Excel imports (partners, agreements, grants…).</td>
+<td><strong>ROR registry</strong></td>
+<td>Reference identity of the institutions in the <a href="../../atlas/atlas/">Atlas</a>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="runtime-deployment">Runtime &amp; deployment<a class="headerlink" href="#runtime-deployment" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>FrankenPHP</strong> (a Caddy-based application server) in <strong>worker mode</strong>: the Symfony
-  kernel stays loaded between requests for better performance.</li>
-<li>Multi-stage <strong>Docker</strong> image (reproducible build), boot that waits for the database
-  then applies migrations.</li>
-<li>Deployable on containerised infrastructure; <strong>production is hosted in France, on
-  OVHcloud</strong>.</li>
-<li>Runs <strong>behind an HTTPS proxy</strong> (trusted proxies configured).</li>
+<li><strong>FrankenPHP</strong> (Caddy-based application server) in <strong>worker mode</strong>: the core stays
+  loaded in memory between requests.</li>
+<li><strong>Docker</strong> images; at start-up, the application waits for the database then applies
+  the migrations.</li>
+<li><strong>Production is hosted in France, at OVHcloud</strong>.</li>
+<li>Runs <strong>behind an HTTPS proxy</strong>.</li>
 </ul>
 <h2 id="asynchronous-processing">Asynchronous processing<a class="headerlink" href="#asynchronous-processing" title="Permanent link">¶</a></h2>
-<p>Tasks that must not block the user (sending emails, notifications, EWP
-fetches/notifications, grant status updates) go through <strong>Symfony Messenger</strong> and are
-processed in the background.</p>
+<p>What must not keep the user waiting — sending emails, notifications, EWP
+synchronisations, scheduled reminders, closing campaigns at the set time — goes through
+<strong>Symfony Messenger</strong> and scheduled tasks, processed in the background.</p>
 <h2 id="api">API<a class="headerlink" href="#api" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>REST API</strong> (API Platform, Hydra / JSON-LD contract) — see the interactive
-  documentation linked from the <a href="../../ewp/reference-api/">EWP API reference</a>.</li>
-<li><strong>EWP API</strong> (<em>Erasmus Without Paper</em> network) — endpoints, direction and versions
-  in the same reference.</li>
+<li><strong>The AroundLink API</strong> is documented in <strong>OpenAPI</strong> format, available online:
+  <a href="https://api.aroundlink.com/apis/docs">api.aroundlink.com/apis/docs</a>.</li>
+<li><strong>The EWP API</strong> (<em>Erasmus Without Paper</em> network) — endpoints, directions and versions
+  in the <a href="../../ewp/reference-api/">API reference</a>.</li>
 </ul>
 
 
@@ -2545,7 +2570,7 @@ processed in the background.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 10, 2026 22:53:47 CEST">August 10, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 5, 2026 12:59:36 CET">November 5, 2026</span>
   </span>
 
     
