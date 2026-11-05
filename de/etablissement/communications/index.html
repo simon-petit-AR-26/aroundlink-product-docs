@@ -2350,26 +2350,32 @@
 
 <h1 id="communications-notifications">Communications &amp; notifications<a class="headerlink" href="#communications-notifications" title="Permanent link">¶</a></h1>
 <p>Ce module regroupe tout ce qui touche à la communication du bureau des relations
-internationales : diffuser un message à une audience ciblée, notifier en temps
-réel, échanger en direct avec un étudiant ou un partenaire, et relancer
-automatiquement les documents manquants. L'objectif : remplacer les envois manuels
+internationales : diffuser un message à une audience ciblée, notifier,
+échanger en direct avec un étudiant ou un partenaire, et relancer les documents
+manquants. L'objectif : remplacer les envois manuels
 dispersés par des outils intégrés et suivis.</p>
 <h2 id="diffusion-de-messages">Diffusion de messages<a class="headerlink" href="#diffusion-de-messages" title="Permanent link">¶</a></h2>
 <p><strong>À quoi ça sert.</strong> Vous rédigez un message une seule fois et le diffusez sur
-plusieurs canaux — notification dans l'application, e-mail, épinglage au tableau de
-bord, message direct — vers des audiences ciblées. Fini le publipostage manuel :
-vous ciblez, vous envoyez, et vous gardez une trace.</p>
+plusieurs canaux vers des audiences ciblées. Fini le publipostage manuel : vous ciblez,
+vous envoyez, et vous gardez une trace.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">coordinateur / gestionnaire RI</span></p>
-<p><strong>Comment ça marche.</strong> Le compositeur vous laisse choisir les audiences (étudiants
-sortants, étudiants entrants, partenaires) et des filtres optionnels (pays, campus,
-statut d'accès de l'étudiant), avec un compteur de destinataires en direct avant
-l'envoi. Vous pouvez aussi partir d'une <strong>sélection explicite</strong> : cochez les
-étudiants voulus dans votre liste, ou les contacts voulus dans votre annuaire, et
-lancez la diffusion sur eux seuls — utile quand le groupe visé ne se décrit par
-aucun filtre. Vous sélectionnez les canaux souhaités, vous pouvez enregistrer un
-brouillon, et un message envoyé est verrouillé. À l'envoi, un récapitulatif indique
-le nombre de destinataires, d'e-mails partis et de messages épinglés. Un message
-épinglé peut ensuite être retiré du tableau de bord.</p>
+<p><strong>Comment ça marche.</strong> <strong>Communication ▸ Diffusion</strong>. Le compositeur vous laisse choisir :</p>
+<ul>
+<li>les <strong>audiences</strong> — <strong>Outgoing students (active)</strong>, <strong>Incoming students (active)</strong>,
+  <strong>Partners (IROs of partner universities)</strong> — et des filtres facultatifs : <strong>Campus</strong>,
+  <strong>Student status</strong>, <strong>Country</strong>, avec un compteur de destinataires avant l'envoi ;</li>
+<li>les <strong>canaux</strong> — <strong>In-app notification</strong>, <strong>Email</strong>, <strong>Dashboard pin</strong>, <strong>Direct
+  message</strong>.</li>
+</ul>
+<p>Vous pouvez aussi partir d'une <strong>sélection explicite</strong> : cochez les étudiants voulus dans
+votre liste, ou les contacts voulus dans votre annuaire — pour des contacts, seul l'e-mail
+est proposé. Une diffusion se lance aussi depuis le dossier d'un étudiant ou la fiche d'un
+partenaire.</p>
+<p>Un brouillon s'enregistre ; <strong>Send this diffusion now?</strong> confirme l'envoi, et un message
+envoyé est verrouillé. La liste montre pour chaque diffusion son statut, ses audiences, ses
+canaux et ses destinataires ; <strong>Delivery history</strong> donne les ouvertures, clics et rejets.
+<strong>Pin on the students' dashboard</strong> épingle ou retire un message du tableau de bord des
+étudiants.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/diffusion-nouveau-message.png" data-desc-position="bottom"><img alt="Fenêtre de composition d'une diffusion" src="../../../assets/screenshots/diffusion-nouveau-message.png"></a></p>
 <p><em>La composition d'une diffusion : le sujet, le message, l'audience visée, les filtres facultatifs et les canaux d'envoi.</em></p>
 <p><strong>Cas d'usage.</strong></p>
@@ -2383,83 +2389,96 @@ par e-mail.</p>
 qui ne sont pas vos utilisateurs : un partenaire, un contact, un étudiant qui ne s'est pas
 encore connecté. Ils reconnaissent <strong>l'école avec qui ils travaillent</strong>, pas un outil dont
 ils n'ont jamais entendu parler.</p>
-<p><strong>Comment ça marche.</strong> Chaque message porte donc <strong>votre logo et votre nom en tête</strong>, la
-signature de la personne qui l'envoie au bas de la carte, et une mention discrète <em>powered
-by AroundLink</em> à droite. Un e-mail est écrit par <strong>une personne à une personne</strong>, pas par un
-système.</p>
-<div class="admonition note">
-<p class="admonition-title">Quatre exceptions</p>
-<p>Les messages que personne n'envoie — réinitialisation de mot de passe, message
-générique — gardent notre seule marque. La mention « powered by » n'a de sens que
-derrière le nom de quelqu'un d'autre.</p>
-</div>
+<p><strong>Comment ça marche.</strong> Les e-mails adressés en votre nom — nominations et leurs relances,
+retrait d'une nomination, invitations, demandes de dates et d'exigences de langue, relances
+de documents — portent <strong>votre logo et votre nom en tête</strong>, la signature de la personne qui
+l'envoie au bas de la carte, et une mention discrète <em>powered by AroundLink</em>.</p>
+<p>Une <strong>diffusion</strong> se présente autrement : elle part au nom de « IRO <em>votre établissement</em> via
+AroundLink », s'ouvre sur « Message from <em>votre établissement</em> », et une réponse arrive
+directement à la personne qui l'a envoyée.</p>
+<p>Les messages automatiques que personne n'écrit — notifications, récapitulatif quotidien —
+gardent la marque AroundLink.</p>
 <h2 id="notifications-dans-lapplication">Notifications dans l'application<a class="headerlink" href="#notifications-dans-lapplication" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> Chaque utilisateur dispose d'un fil de notifications avec un
-compteur de non-lus en direct dans la barre supérieure. Coordinateurs, partenaires
-et étudiants restent informés des nouveaux messages et événements sans dépendre de
-l'e-mail.</p>
+<p><strong>À quoi ça sert.</strong> Chaque utilisateur dispose d'un fil de notifications, signalé par une
+cloche dans la barre supérieure. Coordinateurs, partenaires et étudiants restent informés
+des nouveaux messages et événements sans dépendre de l'e-mail.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">coordinateur / partenaire / étudiant</span></p>
-<p><strong>Comment ça marche.</strong> La cloche affiche le nombre de notifications non lues ;
-ouvrir une notification la marque comme lue, et un bouton permet de tout marquer
-lu d'un coup. Une notification peut renvoyer vers le message d'origine.</p>
+<p><strong>Comment ça marche.</strong> La cloche affiche le nombre de notifications non lues ; il se met à
+jour au chargement des pages et après vos propres actions. Ouvrir une notification la marque
+comme lue et mène à l'écran concerné ; un message long se déplie dans la cloche même. Une
+page <strong>Notifications</strong> les reprend toutes, avec <strong>Mark all as read</strong>.</p>
+<p>Les coordinateurs reçoivent aussi, chaque jour, un e-mail qui récapitule leurs nouvelles
+alertes, avec un bouton <strong>Open my alerts</strong>.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
 <p>Un étudiant voit un « 3 » sur la cloche, l'ouvre et découvre que son Learning
 Agreement vient d'être approuvé.</p>
 </blockquote>
 <h2 id="messagerie-directe">Messagerie directe<a class="headerlink" href="#messagerie-directe" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> Une messagerie privée en fil de discussion entre les trois
-types d'acteurs — équipe RI, étudiants, équipe AroundLink. Les questions se
-règlent dans la plateforme plutôt que par e-mails éparpillés.</p>
-<p><strong>Pour qui.</strong> <span class="al-audience">coordinateur / étudiant / partenaire</span></p>
-<p><strong>Comment ça marche.</strong> Chaque profil a sa propre boîte de réception : liste des
-conversations, fil un-à-un avec lecture à l'ouverture, réponse, et un sélecteur
-« nouveau message » pour démarrer un échange. Un compteur de non-lus s'affiche dans
-la barre supérieure.</p>
+<p><strong>À quoi ça sert.</strong> Une messagerie privée, en fil de discussion. Les questions se règlent
+dans la plateforme plutôt que par e-mails éparpillés.</p>
+<p><strong>Pour qui.</strong> <span class="al-audience">coordinateur / étudiant</span></p>
+<p><strong>Comment ça marche.</strong> Chaque profil a sa boîte de réception : liste des conversations, fil
+un-à-un, réponse, et <strong>New message</strong> pour démarrer un échange. On n'écrit qu'aux personnes
+que son rôle permet de joindre :</p>
+<table>
+<thead>
+<tr>
+<th>Qui écrit</th>
+<th>À qui</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Un coordinateur</td>
+<td>son équipe, ses partenaires, ses propres étudiants, et l'équipe AroundLink</td>
+</tr>
+<tr>
+<td>Un étudiant</td>
+<td>l'équipe de son propre établissement, et le support AroundLink</td>
+</tr>
+</tbody>
+</table>
+<p>Côté coordinateur, le nombre de messages non lus s'affiche sur l'entrée <strong>Messages</strong> du
+menu. Votre établissement peut désactiver la messagerie.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>Un étudiant entrant écrit au bureau d'accueil pour poser une question sur le
-logement ; le coordinateur répond dans le fil.</p>
+<p>Un étudiant sortant écrit à son coordinateur pour une question sur son contrat
+pédagogique ; le coordinateur répond dans le fil.</p>
 </blockquote>
 <h2 id="campagnes-de-relance-de-documents">Campagnes de relance de documents<a class="headerlink" href="#campagnes-de-relance-de-documents" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> Des campagnes d'e-mails de relance automatisées et suivies
-poussent les étudiants à déposer leurs documents manquants, avec des statistiques
-d'ouverture, de clic et de rejet par campagne. La chasse aux documents devient une
-opération mesurable en un clic.</p>
+<p><strong>À quoi ça sert.</strong> Des relances par e-mail, suivies, qui poussent les étudiants à déposer
+ce qui manque — avec les ouvertures, les clics et la délivrabilité. La chasse aux documents
+devient une opération mesurable.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">coordinateur / gestionnaire RI</span></p>
-<p><strong>Comment ça marche.</strong> Une campagne cible les étudiants par type de document,
-niveau d'études et campagnes associées. La liste des campagnes et une fenêtre de
-statistiques affichent le nombre d'envois, le taux d'ouverture, le taux de clic et
-le taux de délivrabilité. Les e-mails partent ensuite automatiquement en tâche de
-fond.</p>
+<p><strong>Comment ça marche.</strong> <strong>Reminder</strong> demande d'abord ce que vous relancez : <strong>Documents</strong>,
+<strong>Feedback</strong> ou <strong>Profile completion</strong>. Une relance de documents cible les étudiants par
+type de document, niveau d'études et campagne ; un même étudiant n'en reçoit qu'une toutes
+les 48 heures, et les e-mails partent en tâche de fond.</p>
+<p>La liste des relances montre, pour chacune, le premier et le dernier envoi, les envois sur
+le total, les ouvertures, les clics et la délivrabilité, et se filtre sur ce qui n'est pas
+encore envoyé, en partie ou entièrement.</p>
+<p>On lance une relance depuis l'onglet <strong>Reminders</strong> des <a href="../validations/">validations</a>, depuis
+une sélection dans la liste des étudiants, ou depuis le dossier d'un étudiant.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>Un coordinateur lance une relance pour tous les étudiants de Master à qui il
-manque le Learning Agreement, puis vérifie un taux d'ouverture de 62 % dans la
-fenêtre de statistiques.</p>
+<p>Un coordinateur relance tous les étudiants de Master à qui il manque le Learning
+Agreement, puis suit les ouvertures dans la liste des relances.</p>
 </blockquote>
-<div class="admonition tip">
-<p class="admonition-title">Depuis les campagnes</p>
-<p>Les relances se déclenchent aussi depuis le suivi des documents d'une
-<a href="../campagnes/">campagne</a> : c'est la même mécanique de relance
-documentée ici.</p>
-</div>
 <h2 id="relances-de-demande-davis">Relances de demande d'avis<a class="headerlink" href="#relances-de-demande-davis" title="Permanent link">¶</a></h2>
 <p><strong>À quoi ça sert.</strong> Solliciter les étudiants qui n'ont pas encore déposé d'avis sur
 leur établissement d'accueil, sur le même principe que les relances de documents.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">coordinateur / gestionnaire RI</span></p>
-<p><strong>Comment ça marche.</strong> Vous ciblez votre audience par niveau d'études et par
-campagne, ou vous désignez directement les étudiants concernés — nommer des
-étudiants prend alors le pas sur les filtres. Un aperçu vous indique combien de
-personnes seront touchées avant l'envoi, et ce nombre correspond exactement à qui
-recevra le message.</p>
-<p>Les étudiants ayant déjà répondu sortent d'eux-mêmes de la relance : inutile de
-tenir une liste à la main.</p>
+<p><strong>Comment ça marche.</strong> Vous ciblez votre audience par niveau d'études et par campagne, ou
+vous désignez directement les étudiants concernés — nommer des étudiants prend alors le pas
+sur les filtres. Vous choisissez un ou plusieurs <strong>thèmes</strong> — chacun part comme une demande
+distincte — et pouvez ajouter un message. Un aperçu indique combien de personnes seront
+touchées avant l'envoi, et ce nombre correspond exactement à qui recevra le message.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>En fin de semestre, le coordinateur relance les étudiants de Master rentrés de
-mobilité qui n'ont pas encore laissé d'avis ; l'aperçu annonce 12 destinataires,
-et 12 messages partent.</p>
+<p>En fin de semestre, le coordinateur demande un avis « Logement » et « Cours » aux
+étudiants de Master rentrés de mobilité ; l'aperçu annonce 12 destinataires, et 12
+étudiants reçoivent les deux demandes.</p>
 </blockquote>
 
 
@@ -2481,7 +2500,7 @@ et 12 messages partent.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="24 octobre 2026 13:52:46 CEST">24 octobre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 13:47:31 CET">5 novembre 2026</span>
   </span>
 
     
