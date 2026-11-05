@@ -144,25 +144,6 @@ documentée de façon interactive (ressources, schémas, opérations) — voir l
 réseau EWP, la [référence des API EWP](../ewp/reference-api.md).
 
 
-## Offres : établissement payant / gratuit
-
-**À quoi ça sert.** Chaque établissement est soit un client payant, soit un client
-gratuit ; certains modules premium (par exemple la [bourse de
-mobilité](../etablissement/bourse.md) ou la création d'[accords
-bilatéraux](../etablissement/accords.md)) sont réservés aux clients payants. C'est
-le mécanisme commercial de la plateforme.
-
-**Pour qui.** <span class="al-audience">Établissement client (défini par AroundLink)</span>
-
-**Comment ça marche.** L'offre de l'établissement (payante par défaut, ou gratuite)
-conditionne l'accès aux modules premium — masqués dans le menu et bloqués à l'accès
-direct pour un client gratuit. Cette offre est indépendante des frais de scolarité
-éventuels payés par l'étudiant.
-
-**Cas d'usage.**
-> Un partenaire en offre gratuite peut relire et approuver un accord bilatéral qu'un
-> établissement payant lui a soumis, mais ne peut pas ouvrir les modules premium.
-
 
 ## Aide contextuelle
 

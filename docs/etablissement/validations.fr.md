@@ -1,48 +1,59 @@
 # Validations
 
 Tout ce qui attend une décision de votre part, au même endroit : les pièces déposées par vos
-étudiants, les contrats d'études à signer, les relevés à émettre. C'est l'écran qu'on ouvre le
+étudiants, les contrats pédagogiques à signer, les relevés à émettre. C'est l'écran qu'on ouvre le
 matin pour savoir ce qui bloque.
 
-## File de validation (Validation Hub)
+## La file de validation
 
-**À quoi ça sert.** Une file d'attente unique où le coordinateur valide tout ce que
-l'étudiant soumet pendant sa mobilité — pièces administratives, contrats pédagogiques,
-relevés de notes et témoignages sur les partenaires — sans avoir à parcourir plusieurs
-écrans. Les éléments en attente depuis longtemps sont signalés comme urgents, et chaque
-décision est archivée avec son auteur, son issue et le motif de refus.
+**À quoi ça sert.** Une file unique pour tout ce que vos étudiants soumettent, au lieu d'un
+écran par nature de pièce. Ce qui attend depuis trop longtemps est signalé, et chaque décision
+est archivée avec son auteur, son issue et son motif.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** La file regroupe les documents en attente, les OLA qui attendent
-la signature de l'établissement, les relevés de notes et les témoignages, avec des
-compteurs (en attente / étudiants concernés / urgents). Le coordinateur ouvre chaque
-élément et décide de valider ou refuser ; un commentaire est requis en cas de refus. Un
-onglet « Historique » liste les décisions passées avec leur motif.
+**Comment ça marche.** La file se range par nature de ce qui est soumis :
+
+| Rubrique | Ce qu'on y décide |
+|---|---|
+| **Documents** | les pièces demandées à vos étudiants |
+| **Learning Agreements** | les contrats pédagogiques qui attendent votre signature |
+| **Transcripts** | les relevés de notes |
+| **Language scores** | les certificats et scores de langue |
+| **Course choices** · **Campus choices** | les choix de cours et de campus de vos entrants |
+| **Feedback** | les avis de vos étudiants sur leur établissement d'accueil |
+| **Grant documents** | les pièces du dossier de bourse |
+
+Deux onglets : **To Do** pour ce qui attend, **History** pour ce qui a été validé ou refusé. Vous
+filtrez par sens — **Outgoing** ou **Incoming** —, vous isolez ce qui est **en retard**, et une
+recherche retrouve un étudiant ou un partenaire.
+
+Vous ouvrez chaque élément et vous le **validez** ou le **refusez**. Un refus demande un
+**motif** : il part chez l'étudiant, qui sait ce qu'il doit corriger.
 
 ![Hub de validation](../assets/screenshots/validations-hub.png)
 
 *Tout ce qui attend votre décision, avec le nombre d'éléments en retard et les filtres par nature de pièce.*
 
 **Cas d'usage.**
-> Lundi matin, le coordinateur voit 12 éléments en attente dont 3 urgents : il valide
-> deux passeports, signe un OLA au nom de l'établissement d'envoi et refuse une
-> attestation d'assurance illisible avec un commentaire — le tout depuis la même file.
+> Lundi matin, le coordinateur voit 12 éléments en attente dont 3 en retard. Il valide deux
+> passeports, signe un contrat pédagogique et refuse une attestation d'assurance illisible en
+> indiquant pourquoi — le tout depuis la même file.
 
-## Pièces administratives des étudiants
+## Relancer depuis la file
 
-**À quoi ça sert.** Page centrale listant toutes les pièces déposées par les étudiants
-(passeport, assurance, tests de langue, attestations d'arrivée/de départ, etc.) avec
-leur statut. Le bureau valide ou refuse les pièces une par une ou en lot, enregistre les
-dates d'arrivée et lance des campagnes de relance vers les étudiants dont les documents
-manquent ou ont été refusés.
+**À quoi ça sert.** Ce qui ne vous a pas été envoyé ne peut pas être validé. L'onglet
+**Reminders** relance les étudiants à l'endroit même où vous constatez ce qui manque.
 
-**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+**Comment ça marche.** Vous choisissez ce que vous voulez relancer :
 
-**Comment ça marche.** Le coordinateur filtre la liste des pièces, en valide ou refuse
-plusieurs d'un coup, renseigne la date d'arrivée d'un étudiant, estime le nombre
-d'étudiants qui seraient relancés, puis déclenche une campagne de relance en un clic.
+- **Documents** — les étudiants qui n'ont pas déposé une pièce demandée, ou dont la pièce a été
+  refusée ;
+- **Profile completion** — ceux dont le profil n'est pas complet ; ceux déjà à 100 % sont laissés
+  tranquilles ;
+- **Feedback** — un groupe d'étudiants à qui demander un avis sur un thème ; ils arrivent sur le
+  formulaire, le thème déjà choisi.
 
-**Cas d'usage.**
-> Le coordinateur filtre sur « Refusé », sélectionne 8 pièces, les refuse en lot avec un
-> commentaire, puis envoie une relance aux étudiants concernés.
+Chaque relance garde son historique : combien de messages sont partis sur combien, quand est
+parti le premier et le dernier. Le détail de chaque type de relance est dans
+[Diffusion & messages](communications.md).

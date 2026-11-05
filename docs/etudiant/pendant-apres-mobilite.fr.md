@@ -43,7 +43,7 @@ l'écran par lequel il arrivait. Il n'en a plus qu'une.
 rangées par phase — avant, pendant, après. Chaque étape dit ce qui est attendu de lui.
 
 Les étapes qui **reflètent un acte fait ailleurs** se cochent sans qu'il intervienne :
-un contrat d'études signé par les trois parties, un document validé, un versement de
+un contrat pédagogique signé par les trois parties, un document validé, un versement de
 bourse. Elles se décochent aussi si l'acte revient en arrière — une signature retirée
 rouvre l'étape.
 

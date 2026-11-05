@@ -113,19 +113,21 @@ preview, which therefore always stay in sync.
 ## Bilateral agreements
 
 **What it's for.** Manages non-Erasmus partnerships built on a genuine negotiation
-between two institutions — one owner (paying offer), one partner (free offer) — with
-their own place distribution. Covers cooperation outside the EWP/Erasmus network.
+between two institutions, with their own place distribution. Covers cooperation outside the EWP/Erasmus network.
 
 **Who it's for.** <span class="al-audience">IRO manager / partner</span>
 
-**How it works.** The owning institution drafts an agreement, then submits it; the
-partner reviews, approves or modifies it. Any edit by either side restarts the cycle
-until both approvals line up: the agreement then becomes active. A place-distribution
-matrix is filled in for student mobilities. An import with preview is available.
+**How it works.** You draft the agreement, then you **publish** it: it is active at once.
+It does not wait for the partner's approval — an agreement stuck because the other side does
+not sign in would be an agreement that does not exist. A place-distribution matrix is filled
+in for student mobilities. An import with preview is available.
+
+An agreement is **deactivated** when it should no longer be used, and can be reactivated: it
+is reversible.
 
 **Use case.**
 > A French school signs a bilateral exchange with a Brazilian partner outside Erasmus;
-> both coordinators approve in the tool, then the French side distributes 2 Master
+> the French side publishes it, then distributes 2 Master
 > places in Semester 1.
 
 
@@ -137,8 +139,8 @@ conditions and common jury. A different framework from a simple exchange.
 
 **Who it's for.** <span class="al-audience">IRO manager / partner</span>
 
-**How it works.** Same two-sided negotiation as bilateral agreements (drafting,
-submission, approval), with an invitation sent to the partner signatory at submission.
+**How it works.** Like a bilateral agreement, it is **active as soon as it is published**,
+with an invitation sent to the partner signatory.
 The agreement carries curriculum, graduation, jury, EQF level and duration information,
 plus yearly phases (Year 1 / Year 2). Places are distributed via a dedicated matrix. An
 import with preview is available.

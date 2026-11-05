@@ -1,84 +1,86 @@
 # Architecture & technology
 
 !!! info "Who this page is for"
-    A **technical** page for **IT teams / CIOs** (integration, due diligence,
-    operations). It describes the technologies AroundLink is built on, at a product
-    level — with no configuration or secrets.
+    A **technical** page for **IT teams** (integration, due diligence, operations). It
+    describes the technologies AroundLink is made of, at product level — no
+    configuration, no secret.
 
 ## Overview
 
-AroundLink is a **multi-tenant web application (SaaS)**, built around a **Symfony
-(PHP)** core and a **PostgreSQL** database. The application is **API-first**: the
-same business data is exposed through a REST API (see the [EWP API
-reference](../ewp/reference-api.md) and the AroundLink REST API), enabling the
-integrated web interface, decoupled front-ends (React/Next.js) and the
-machine-to-machine exchanges of the EWP network alike.
+AroundLink is a **multi-tenant web application (SaaS)** in two **separate** parts:
 
-## Application core (backend)
+- a web **interface** — what your users see at `app.aroundlink.com`;
+- a **JSON API** — the application core, carrying every business rule, which the
+  interface queries for each screen.
 
-| Technology | Version | Role |
-| --- | --- | --- |
-| PHP | ≥ 8.3 | Backend language. |
-| Symfony | 7.2 | Application framework (HTTP, security, forms, validation…). |
-| API Platform | 4.1 | REST API exposure (Hydra / JSON-LD contract, CRUD operations). |
-| Doctrine ORM / DBAL | 3.x | Data access, schema migrations, data sets. |
-| Symfony Messenger | 7.2 | **Asynchronous** processing (emails, notifications, EWP syncs). |
-| Symfony UX (Stimulus) | 2.x | Browser interactivity without a heavy build (AssetMapper / importmap). |
-| Twig | 3.x | Templates for the integrated interface pages. |
+The interface only reaches the database through the API. Exchanges with the European
+*Erasmus Without Paper* network go through the same API, and your own systems can use it
+— see [Emails & connectors](../etablissement/emails.md).
+
+## The interface (front end)
+
+| Technology | Role |
+| --- | --- |
+| **Next.js 16** / **React 19** | Web application, in **TypeScript**. |
+| **Tailwind CSS** | Styling, in-house design system. |
+| **TanStack Query** | Exchanges with the API, caching of displayed data. |
+| **Recharts** | Dashboard and statistics charts. |
+| **Leaflet** | Partner maps and the [Atlas](../atlas/atlas.md). |
+
+Tables, filters and saved views are built in-house, with no third-party grid library.
+
+## The application core (back end)
+
+| Technology | Role |
+| --- | --- |
+| **PHP 8.3+** / **Symfony 7** | Application core: security, business rules, validation. |
+| **API Platform** | Exposing and documenting the API. |
+| **Doctrine ORM** | Data access and schema migrations. |
+| **Symfony Messenger** | **Asynchronous** processing (emails, notifications, EWP syncs). |
+| **JWT** | Authentication of the interface against the API: stateless, no server-side session. |
 
 ## Database
 
-- **PostgreSQL 16**. The schema is versioned with **Doctrine migrations**
-  (reproducible across environments).
-- Public identifiers of sensitive objects use **UUIDs** (non-guessable /
-  non-enumerable) rather than sequential integers.
+- **PostgreSQL 16**. The schema is versioned through **migrations**, reproducible from
+  one environment to another.
+- Public identifiers of sensitive objects are **UUIDs** — non-guessable,
+  non-enumerable — rather than sequential integers.
 
-## Interface & front-end components
+## Documents and emails
 
-The integrated interface (institution and student spaces) is rendered with **Twig +
-Stimulus**, with:
-
-- **ag-Grid** — data grids (sorting, columns, filters, saved views);
-- **Chart.js** — dashboard charts;
-- **Leaflet** (+ MarkerCluster, MapTiler basemap) — partner and [Atlas](../atlas/atlas.md) directory maps;
-- **CKEditor** — rich content editing (CMS editor, document templates);
-- autocompletion and live components via **Symfony UX**.
-
-!!! note "Front / back separation"
-    The API-first architecture enables a **decoupled front-end** (a React/Next.js app
-    consuming the API) alongside the existing Twig interface. Both coexist during the
-    transition.
+**Emails** and **PDF documents** (certificates, learning agreements, transcripts,
+templates) are produced on the server, from templates. That is where, and only where,
+the **Twig** template engine is still used: the former interface it rendered is
+switched off in production.
 
 ## Integrations & services
 
-| Service | Use |
+| Service | Usage |
 | --- | --- |
-| **Mailjet** | Email delivery + tracking (opens, clicks, bounces) for communications and reminders. |
-| **Gotenberg** / **mPDF** | PDF document generation (certificates, agreements, templates). |
-| **MapTiler** (via Leaflet) | Basemaps for the Atlas directory. |
-| **Sentry** | Application error monitoring. |
-| **EWP Registry** | Mirror of the EWP network catalogue (institutions, keys, API versions). |
-| **spatie/simple-excel** | Reading CSV / Excel imports (partners, agreements, grants…). |
+| **Mailjet** | Sending emails. |
+| **Gotenberg** / **mPDF** | PDF document generation. |
+| **Sentry** | Error monitoring, on the interface as on the API. |
+| **EWP registry** | Mirror of the EWP network catalogue (institutions, keys, API versions). |
+| **ROR registry** | Reference identity of the institutions in the [Atlas](../atlas/atlas.md). |
 
 ## Runtime & deployment
 
-- **FrankenPHP** (a Caddy-based application server) in **worker mode**: the Symfony
-  kernel stays loaded between requests for better performance.
-- Multi-stage **Docker** image (reproducible build), boot that waits for the database
-  then applies migrations.
-- Deployable on containerised infrastructure; **production is hosted in France, on
-  OVHcloud**.
-- Runs **behind an HTTPS proxy** (trusted proxies configured).
+- **FrankenPHP** (Caddy-based application server) in **worker mode**: the core stays
+  loaded in memory between requests.
+- **Docker** images; at start-up, the application waits for the database then applies
+  the migrations.
+- **Production is hosted in France, at OVHcloud**.
+- Runs **behind an HTTPS proxy**.
 
 ## Asynchronous processing
 
-Tasks that must not block the user (sending emails, notifications, EWP
-fetches/notifications, grant status updates) go through **Symfony Messenger** and are
-processed in the background.
+What must not keep the user waiting — sending emails, notifications, EWP
+synchronisations, scheduled reminders, closing campaigns at the set time — goes through
+**Symfony Messenger** and scheduled tasks, processed in the background.
 
 ## API
 
-- **REST API** (API Platform, Hydra / JSON-LD contract) — see the interactive
-  documentation linked from the [EWP API reference](../ewp/reference-api.md).
-- **EWP API** (*Erasmus Without Paper* network) — endpoints, direction and versions
-  in the same reference.
+- **The AroundLink API** is documented in **OpenAPI** format, available online:
+  [api.aroundlink.com/apis/docs](https://api.aroundlink.com/apis/docs).
+- **The EWP API** (*Erasmus Without Paper* network) — endpoints, directions and versions
+  in the [API reference](../ewp/reference-api.md).

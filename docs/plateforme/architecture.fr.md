@@ -7,79 +7,82 @@
 
 ## Vue d'ensemble
 
-AroundLink est une application **web multi-établissement (SaaS)**, construite autour
-d'un cœur **Symfony (PHP)** et d'une base **PostgreSQL**. L'application est
-**API-first** : les mêmes données métier sont exposées via une API REST (voir la
-[Référence des API EWP](../ewp/reference-api.md) et l'API REST AroundLink), ce qui
-permet aussi bien l'interface web intégrée que des interfaces découplées (front
-React/Next.js) et les échanges machine-à-machine du réseau EWP.
+AroundLink est une application **web multi-établissement (SaaS)** en deux parties
+**séparées** :
 
-## Cœur applicatif (backend)
+- une **interface** web — ce que vos utilisateurs voient à `app.aroundlink.com` ;
+- une **API JSON** — le cœur applicatif, qui porte toutes les règles métier et que
+  l'interface interroge pour chaque écran.
 
-| Technologie | Version | Rôle |
-| --- | --- | --- |
-| PHP | ≥ 8.3 | Langage du backend. |
-| Symfony | 7.2 | Framework applicatif (HTTP, sécurité, formulaires, validation…). |
-| API Platform | 4.1 | Exposition de l'API REST (contrat Hydra / JSON-LD, opérations CRUD). |
-| Doctrine ORM / DBAL | 3.x | Accès aux données, migrations de schéma, jeux de données. |
-| Symfony Messenger | 7.2 | Traitements **asynchrones** (e-mails, notifications, synchronisations EWP). |
-| Symfony UX (Stimulus) | 2.x | Interactivité côté navigateur sans build lourd (AssetMapper / importmap). |
-| Twig | 3.x | Gabarits des pages de l'interface intégrée. |
+L'interface ne parle à la base de données qu'à travers l'API. Les échanges du réseau
+européen *Erasmus Without Paper* passent par la même API, et vos propres systèmes
+peuvent l'utiliser — voir [Emails & connecteurs](../etablissement/emails.md).
+
+## L'interface (front)
+
+| Technologie | Rôle |
+| --- | --- |
+| **Next.js 16** / **React 19** | Application web, en **TypeScript**. |
+| **Tailwind CSS** | Mise en forme, système de design maison. |
+| **TanStack Query** | Échanges avec l'API, mise en cache des données affichées. |
+| **Recharts** | Graphiques des tableaux de bord et des statistiques. |
+| **Leaflet** | Cartes des partenaires et de l'[Atlas](../atlas/atlas.md). |
+
+Les tableaux, filtres et vues enregistrées sont développés en interne, sans
+bibliothèque de grille tierce.
+
+## Le cœur applicatif (back)
+
+| Technologie | Rôle |
+| --- | --- |
+| **PHP 8.3+** / **Symfony 7** | Cœur applicatif : sécurité, règles métier, validation. |
+| **API Platform** | Exposition et documentation de l'API. |
+| **Doctrine ORM** | Accès aux données et migrations de schéma. |
+| **Symfony Messenger** | Traitements **asynchrones** (e-mails, notifications, synchronisations EWP). |
+| **JWT** | Authentification de l'interface auprès de l'API : sans état, sans session côté serveur. |
 
 ## Base de données
 
-- **PostgreSQL 16**. Le schéma est versionné par des **migrations Doctrine**
-  (reproductibles d'un environnement à l'autre).
-- Les identifiants publics des objets sensibles utilisent des **UUID** (non
-  devinables / non énumérables) plutôt que des entiers séquentiels.
+- **PostgreSQL 16**. Le schéma est versionné par des **migrations**, reproductibles
+  d'un environnement à l'autre.
+- Les identifiants publics des objets sensibles sont des **UUID** — non devinables,
+  non énumérables — plutôt que des entiers séquentiels.
 
-## Interface & composants front
+## Documents et e-mails
 
-L'interface intégrée (espaces établissement et étudiant) est rendue en **Twig +
-Stimulus**, avec :
-
-- **ag-Grid** — grilles de données (tri, colonnes, filtres, vues enregistrées) ;
-- **Chart.js** — graphiques des tableaux de bord ;
-- **Leaflet** (+ MarkerCluster, fond de carte MapTiler) — cartes des partenaires et
-  de l'annuaire [Atlas](../atlas/atlas.md) ;
-- **CKEditor** — édition de contenu riche (éditeur CMS, modèles de documents) ;
-- autocomplétions et composants temps réel via **Symfony UX**.
-
-!!! note "Séparation front / back"
-    L'architecture API-first permet un **front découplé** (application React/Next.js
-    consommant l'API) en parallèle de l'interface Twig existante. Les deux
-    coexistent pendant la transition.
+Les **e-mails** et les **documents PDF** (attestations, contrats pédagogiques, relevés,
+modèles) sont produits côté serveur, à partir de gabarits. C'est là, et seulement là,
+que le moteur de gabarits **Twig** sert encore : l'ancienne interface qu'il rendait
+est éteinte en production.
 
 ## Intégrations & services
 
 | Service | Usage |
 | --- | --- |
-| **Mailjet** | Envoi des e-mails + suivi (ouvertures, clics, rebonds) des communications et relances. |
-| **Gotenberg** / **mPDF** | Génération des documents PDF (attestations, contrats, modèles). |
-| **MapTiler** (via Leaflet) | Fonds de carte de l'annuaire Atlas. |
-| **Sentry** | Supervision des erreurs applicatives. |
+| **Mailjet** | Envoi des e-mails. |
+| **Gotenberg** / **mPDF** | Génération des documents PDF. |
+| **Sentry** | Supervision des erreurs, côté interface comme côté API. |
 | **Registre EWP** | Miroir du catalogue du réseau EWP (établissements, clés, versions d'API). |
-| **spatie/simple-excel** | Lecture des imports CSV / Excel (partenaires, accords, bourses…). |
+| **Registre ROR** | Identité de référence des établissements de l'[Atlas](../atlas/atlas.md). |
 
 ## Exécution & déploiement
 
-- **FrankenPHP** (serveur applicatif basé sur Caddy) en **mode worker** : le noyau
-  Symfony reste chargé entre les requêtes, pour de meilleures performances.
-- Image **Docker** multi-étapes (build reproductible), démarrage qui attend la base
-  puis applique les migrations.
-- Déployable sur une infrastructure conteneurisée ; la **production est hébergée
-  en France, chez OVHcloud**.
-- Fonctionne **derrière un proxy HTTPS** (proxies de confiance configurés).
+- **FrankenPHP** (serveur applicatif basé sur Caddy) en **mode worker** : le cœur
+  reste chargé en mémoire entre les requêtes.
+- Images **Docker** ; au démarrage, l'application attend la base puis applique les
+  migrations.
+- La **production est hébergée en France, chez OVHcloud**.
+- Fonctionne **derrière un proxy HTTPS**.
 
 ## Traitements asynchrones
 
-Les tâches qui ne doivent pas bloquer l'utilisateur (envoi d'e-mails, notifications,
-récupérations / notifications EWP, mises à jour de statut de bourse) passent par
-**Symfony Messenger** et sont traitées en arrière-plan.
+Ce qui ne doit pas faire attendre l'utilisateur — envoi d'e-mails, notifications,
+synchronisations EWP, relances programmées, fermeture des campagnes à l'heure dite —
+passe par **Symfony Messenger** et des tâches planifiées, traitées en arrière-plan.
 
 ## API
 
-- **API REST** (API Platform, contrat Hydra / JSON-LD) — voir la documentation
-  interactive liée depuis la [Référence des API EWP](../ewp/reference-api.md).
-- **API EWP** (réseau *Erasmus Without Paper*) — endpoints, sens et versions dans la
-  même référence.
+- **L'API AroundLink** est documentée au format **OpenAPI**, consultable en ligne :
+  [api.aroundlink.com/apis/docs](https://api.aroundlink.com/apis/docs).
+- **L'API EWP** (réseau *Erasmus Without Paper*) — points d'accès, sens et versions
+  dans la [Référence des API](../ewp/reference-api.md).

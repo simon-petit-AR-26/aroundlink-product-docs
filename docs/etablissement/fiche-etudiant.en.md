@@ -114,25 +114,31 @@ validated, and the file keeps track of who uploaded it.
 
 ## Learning Agreement (OLA)
 
-**What it does.** The Learning Agreement describes the programme of courses a student
-will follow abroad. This view lets the office track every agreement, see at a glance
-which ones are pending, validated or need corrections, and enforce the signature of both
-institutions before an agreement becomes final.
+**What it's for.** The learning agreement describes the programme of courses a student
+will follow abroad. It is a **three-party** document: it is signed by the student, by the
+sending institution and by the receiving one — and each of the three can read it.
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** The coordinator opens the OLA list, filters by status and reviews each
-agreement in a window that shows its history. They can request modifications — the
-agreement then returns to draft with a comment for the student — or approve it. For a
-standard agreement, each institution signs on its own side, in any order, and the
-agreement is validated only once both signatures are in place; for an EWP agreement,
-approval hands the agreement to the host institution following the network's sequential
-flow.
+**How it works.** The agreement moves from one signature to the next, and its status says
+where it stands:
+
+| Status | What has happened |
+|---|---|
+| **Draft** | the student is putting their programme together |
+| **Selected by student** | the student has chosen their courses and signed |
+| **Pending sending school validation** | waiting for the sending institution's signature |
+| **Pending receiving school validation** | waiting for the receiving institution's |
+| **Validated** | all three have signed: the agreement is binding |
+
+The receiving institution can also **refuse** it. You can ask for a change — the agreement
+goes back to the student with your comment —, or make it yourself: see below. For an EWP
+agreement, validation follows the European network's circuit.
 
 **Use case.**
-> The coordinator reviews Marie's pre-departure OLA (3 courses, 18 ECTS), asks her to
-> swap one course, then signs on behalf of the sending institution; as soon as the
-> partner signs in turn, the OLA becomes "Validated".
+> The coordinator reviews Marie's learning agreement (3 courses, 18 ECTS), asks her to swap
+> one course, then signs on behalf of the sending institution; as soon as the partner signs
+> in turn, the agreement becomes "Validated".
 
 ### The coordinator corrects, instead of only judging
 

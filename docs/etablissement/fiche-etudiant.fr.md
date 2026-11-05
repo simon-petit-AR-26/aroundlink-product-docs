@@ -1,7 +1,7 @@
 # Le dossier d'un étudiant
 
 Qu'il parte ou qu'il arrive, chaque étudiant a une fiche qui rassemble tout son dossier : son
-identité, ses pièces, son contrat d'études, son relevé de notes, son suivi de mobilité. On y
+identité, ses pièces, son contrat pédagogique, son relevé de notes, son suivi de mobilité. On y
 arrive depuis la liste des [sortants](etudiants.md) ou des [entrants](etudiants-entrants.md).
 
 ## La fiche d'un étudiant
@@ -119,25 +119,31 @@ enregistrée comme validée, et la fiche garde la trace de qui l'a déposée.
 
 ## Contrat pédagogique (Learning Agreement / OLA)
 
-**À quoi ça sert.** Le Learning Agreement décrit le programme de cours qu'un étudiant
-suivra à l'étranger. Cette vue permet au bureau de suivre chaque contrat, de voir en un
-coup d'œil ceux qui sont en attente, validés ou à corriger, et de faire respecter la
-signature des deux établissements avant qu'un contrat ne devienne définitif.
+**À quoi ça sert.** Le contrat pédagogique décrit le programme de cours qu'un étudiant
+suivra à l'étranger. C'est un document **à trois** : il se signe par l'étudiant, par
+l'établissement qui l'envoie et par celui qui l'accueille — et chacun des trois le lit.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Le coordinateur ouvre la liste des OLA, filtre par statut et
-consulte chaque contrat dans une fenêtre qui affiche son historique. Il peut demander
-des modifications — le contrat repart alors en brouillon avec un commentaire pour
-l'étudiant — ou l'approuver. Pour un accord classique, chaque établissement signe de
-son côté, dans n'importe quel ordre, et le contrat n'est validé qu'une fois les deux
-signatures posées ; pour un accord EWP, l'approbation transmet le contrat à
-l'établissement d'accueil selon le flux séquentiel du réseau.
+**Comment ça marche.** Le contrat avance d'une signature à l'autre, et son statut dit où il
+en est :
+
+| Statut | Ce qui s'est passé |
+|---|---|
+| **Draft** | l'étudiant compose son programme |
+| **Selected by student** | l'étudiant a choisi ses cours et signé |
+| **Pending sending school validation** | il attend la signature de l'établissement d'envoi |
+| **Pending receiving school validation** | il attend celle de l'établissement d'accueil |
+| **Validated** | les trois ont signé : le contrat fait foi |
+
+L'établissement d'accueil peut aussi le **refuser**. Vous pouvez demander une modification —
+le contrat repart vers l'étudiant avec votre commentaire —, ou la faire vous-même : voir
+ci-dessous. Pour un accord EWP, la validation suit le circuit du réseau européen.
 
 **Cas d'usage.**
-> Le coordinateur relit l'OLA de départ de Marie (3 cours, 18 ECTS), lui demande de
-> remplacer un cours, puis signe au nom de l'établissement d'envoi ; dès que le
-> partenaire signe à son tour, l'OLA passe « Validé ».
+> Le coordinateur relit le contrat pédagogique de Marie (3 cours, 18 ECTS), lui demande de
+> remplacer un cours, puis signe au nom de l'établissement d'envoi ; dès que le partenaire
+> signe à son tour, le contrat passe « Validated ».
 
 ### Le coordinateur corrige, il ne fait plus que juger
 
@@ -169,7 +175,7 @@ plus.
 ### Les documents d'un entrant accueilli sur un campus
 
 **Comment ça marche.** Quand vous accueillez un étudiant sur l'un de vos campus, ses
-documents — contrat d'études et relevé de notes — portent **« École — Campus »** et non
+documents — contrat pédagogique et relevé de notes — portent **« École — Campus »** et non
 le seul nom de l'établissement. L'étudiant et son école d'origine savent ainsi où le
 séjour a réellement eu lieu.
 

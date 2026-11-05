@@ -370,7 +370,7 @@ and free-text search.
 **Who it's for.** <span class="al-audience">RI manager / admin</span>
 
 **How it works.** A page gathers all the organisation's users and lets you filter
-them by category, status or name/email. It is reserved for paid mobility plans.
+them by category, status or name/email.
 
 ![An import screen](../assets/screenshots/parametres-imports.png)
 
