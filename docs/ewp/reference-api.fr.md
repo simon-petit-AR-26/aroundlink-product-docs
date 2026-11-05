@@ -95,7 +95,7 @@ EWP, et sont signés avec nos identifiants.
 
 | Action | Déclenchement | Effet |
 | --- | --- | --- |
-| Récupérer un accord (IIA) | CNN reçue / synchronisation | Récupère la version du partenaire et prépare une revue. |
+| Récupérer un accord (IIA) | CNR reçue / synchronisation | Récupère la version du partenaire et prépare une revue. |
 | Récupérer une approbation IIA | CNR d'approbation reçue | Met à jour l'état d'approbation du partenaire. |
 | Notifier un changement d'IIA | Édition d'un accord chez nous | Envoie une `iia-cnr` au partenaire. |
 | Récupérer / notifier un OLA | Édition / CNR | Synchronise le contrat pédagogique. |
@@ -128,7 +128,7 @@ ses ressources métier (accords, étudiants, contrats pédagogiques, relevés…
 documentation **interactive** — contrat, ressources et schémas, toujours à jour —
 est générée automatiquement :
 
-- :material-api: [Documentation de l'API AroundLink (instance de démo)](https://demo.aroundlink.com/api/docs)
+- :material-api: [Documentation de l'API AroundLink](https://api.aroundlink.com/apis/docs)
 
 ### Spécifications officielles EWP
 

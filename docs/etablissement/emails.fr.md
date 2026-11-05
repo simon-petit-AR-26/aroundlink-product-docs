@@ -73,9 +73,9 @@ Dans les grilles de contacts, une colonne **Last contact** donne la date du dern
   Apple Calendrier. Le lien porte tout votre agenda et ne va **que dans un sens** : votre
   calendrier vient lire, il ne modifie rien.
 - **API** — laisser vos propres systèmes lire et écrire des données AroundLink. Ce
-  branchement est destiné à la DSI de votre établissement. **La clé est personnelle, pas
-  celle de l'établissement** : chacun a la sienne, et la régénérer laisse celle d'un collègue
-  fonctionner.
+  branchement est destiné à la DSI de votre établissement : une **clé d'intégration**
+  appartient à l'établissement et n'a que les droits de son rôle, une **clé personnelle**
+  agit avec tous les vôtres — voir [Paramètres](parametres.md#connectors-e-mail-calendrier-api).
 
 **Cas d'usage.**
 > La responsable écrit à son homologue de Bologne pour caler les dates du semestre. Le volet
