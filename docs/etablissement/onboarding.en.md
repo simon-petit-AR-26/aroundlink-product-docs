@@ -15,66 +15,70 @@ transcript. It is steered with two objects:
 
 ## Opening a welcome session
 
-**What it is for.** Keeping your intakes apart. Autumn and spring have neither the same dates
-nor necessarily the same requirements.
+**What it's for.** Keeping your intakes apart. Autumn and spring have neither the same
+dates nor necessarily the same requirements.
 
-**Who it is for.** <span class="al-audience">IO officer / coordinator</span>
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
-**How it works.** Under **Onboarding**, **New session**: you name the session — "Autumn 2026
-intake" — and pick the path it applies. Only **incoming** paths are offered.
+**How it works.** Under **Onboarding**, **New session**: you name the session — "Autumn
+intake" — and choose the path it applies. The path is required, and only active
+**incoming** paths are offered; if you have none, the screen sends you to build one under
+**Settings ▸ Workflows**.
 
-A session can be renamed, duplicated, and **closed** when the intake ends. Two sessions
-cannot carry the same name.
-
-!!! warning "A session without a path asks for nothing"
-    The path is what gives the student work to do. A session opened without one takes in files
-    that have no step to clear. The screen says so and offers to plug one in.
+The session list shows each one's path, number of steps and number of students. A session
+can be **renamed** and **closed** when the intake ends; a closed session leaves the list. Two
+sessions cannot share a name. **Open this workflow** opens a session's path.
 
 ## Accepting a nomination into a session
 
-**What it is for.** Attaching every incoming student to their intake at the moment of
-acceptance, rather than later and forgetting.
+**What it's for.** Attaching each incoming student to their intake as soon as you accept
+them.
 
-**How it works.** When you accept a nomination, the screen **always asks for the welcome
-session** the student joins. The student then receives that session's path, and their
-onboarding file knows which session it was opened in.
+**How it works.** When you accept a nomination, the screen offers the **welcome session**
+the student joins. The choice can wait — **Choose later** — but the student only receives
+their path once attached to a session. Sessions whose path has no steps are not offered.
 
-A file already under way **keeps its place**: changing a session's path does not restart the
-steps already cleared.
+A student already attached **keeps their path**: students who join the session later follow
+the one it applies at that time.
 
 !!! tip "Opening access"
-    Access is opened from the session. It asks you to pick the session — without that choice,
-    nothing is saved. The state of each access is read on the tracking: not sent yet, sent on
-    such a date, or already signed in.
+    Three ways to send the student their credentials: tick **Open their access now** when
+    accepting the nomination, the **Send access** button (then **Resend**) on their row, or
+    **Send access** on a selection. Each access's state shows on the tracking: **Not sent**,
+    sent on a given date, or **Connected**.
 
 ## Following where everyone stands
 
-**What it is for.** Knowing at a glance who is waiting for what.
+**What it's for.** Knowing at a glance who is waiting on what.
 
-**How it works.** The session carries the same [tracking](suivi-mobilites.md) as a campaign,
-with the same views and the same tools: table or kanban, search that suggests filters,
-sorting, card-line picker, saved views and **Export what is on screen**.
+**How it works.** The session carries the same [tracking](suivi-mobilites.md) as a campaign:
+table or kanban, search that suggests filters, sorting, choice of card lines and **Export
+what is on screen**. The kanban sorts files into **Before the mobility**, **During the
+mobility** and **After the mobility**. Views are borrowed, read-only, from those saved on
+the incoming students list.
 
 A session's table adds what only makes sense for an incoming student: their **home
-institution**, **country**, **level**, **field of study** and **home city**, alongside
-progress, current step and the state of their access.
+institution**, **country**, **level**, **field of study** and **home city**. It also shows
+the **phase**, the **path**, the access state and **Waiting on** — who has to act; when it is
+you, a link leads to the [validations](validations.md) queue. At the last step, **Close
+stay** closes the stay.
 
 ## What the hosted student sees
 
-**How it works.** The student finds their path on **My onboarding**: a single task list, in
-order, with what is asked of them at each step. Steps that mirror an act done elsewhere tick
-without them doing anything.
-
-Documents in their file **only open once validated**: a transcript or a certificate still
-being produced is not shown half-made.
+**How it works.** The student follows their stay from **My exchange**: their path's tasks
+are sorted by phase there, and each one takes them to the screen where they act — upload a
+document, accept a charter, choose their campus and courses. On that screen, only one step
+is open at a time; the next ones are visible, without their instructions. Steps that reflect
+something done elsewhere tick themselves without them doing anything.
 
 !!! note "One document, one validation"
-    A document uploaded by an incoming student is validated **by their home institution**, not
-    twice. The host institution can open it and read it; it does not redo the validation work.
+    A document uploaded by an incoming student is validated **by their home school**, not
+    twice. Your institution can open and read it once validated; it does not redo the
+    validation.
 
 **Use case.**
 > The school hosts twenty-six incoming students in the autumn. It builds an eight-step path —
-> proof of funds, language test, charter to accept, hosting certificate, campus choice, then
-> courses — and opens the "Autumn 2026 intake" session. Every accepted nomination joins that
+> proof of funds, language test, charter to accept, host certificate, campus choice, then
+> courses — and opens the "Autumn intake" session. Each accepted nomination joins that
 > session and receives the path. The coordinator filters the kanban on what is waiting for
-> her: three files, and the rest moves on without her.
+> her: three files, the rest moves on without her.

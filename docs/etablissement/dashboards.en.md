@@ -10,52 +10,47 @@ gets stuck.
 
 **Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
-**How it works.** A nineteen-bar histogram, spread over the **five stages of a mobility** —
-access, campaign, preparation, mobility, after — each with its own colour.
+**How it works.** You switch between your **outgoing** and **incoming** students, then pick
+what to look at: a campaign with a [path](parcours.md) plugged in, the onboarding at a
+partner (**Onboarding at…**), or a welcome session on the incoming side.
 
-You switch between your **outgoing** and **incoming** students, then pick the view: each
-button on the second row is a campaign, and the histogram shows only its students.
+The **Progress by step** block shows three phase cards — **Before mobility**, **During
+mobility**, **After mobility** — each with its gauge, then one bar per step of the path,
+giving how many students have passed it out of the cohort. Under **Not started yet**, small
+counters say how many have not started, and why. With no path plugged in, the block says
+so: **No workflow attached here**.
 
-!!! warning "The bars do not add up — and that is deliberate"
-    The first nine, those of access and campaign, are **mutually exclusive**: a student is
-    either "no access" or "connected", never both.
-
-    From preparation onwards they are **checklist items**: one student in mobility can raise
-    five bars at once — agreement validated, documents complete, arrival certificate. That is
-    why no total is shown: it would mean nothing.
+**Open this list in a new tab** opens the students concerned in their list.
 
 **Use case.**
-> The coordinator switches to her spring campaign and sees "awaiting proposal" climb to
-> forty-eight while "proposal" stays at zero. The matching round has not been run yet.
-
-![The dashboard](../assets/screenshots/tableau-de-bord.png)
-
-*A coordinator's dashboard: the pipeline and its five colours, the four counters for today, places distributed by period and track, where the agreements come from, and at the bottom the tiles of what awaits validation.*
+> The coordinator picks her spring campaign: the "Learning Agreement" bar is at 12 out of
+> 48. One click opens the list of those who do not have it yet.
 
 ## Today's figures
 
 **How it works.** Four counters at the top of the page: your **outgoing students**, with how
-many are abroad today; your **incoming** ones, with those on campus; your **active
-partners**; your **contacts**.
+many are abroad today; your **incoming students**, with how many are on campus today; your
+**active partners**; your **contacts**. Each counter opens the matching list.
 
-These are figures for right now, not year totals.
+Outgoing and incoming students are counted across all years; "abroad" and "on campus" are
+today's figures.
 
 ## Places distributed
 
-**How it works.** A cross-table: your **periods** as rows — autumn, spring, full year, summer
-— and your **tracks** as columns, with the total for the chosen school year at the top. You
-change year from a menu.
+**How it works.** A cross-table: your **periods** as rows — autumn, spring, full year,
+summer — and your **levels** as columns, with the total of places at the top. A menu changes
+the school year; it opens on the year with the most places.
 
-It is the overview of what you have opened, before going into one agreement's matrix.
+It is the overview of what you have opened, before going into an agreement's matrix.
 
 ## Where your agreements come from
 
-**How it works.** A ring splits your agreements by family — Erasmus+, bilateral, double
-degree, paying mobility — with each one's share.
+**How it works.** The **Agreement sources** card splits your agreements in a ring —
+**IIA**, **Bilateral**, **Double Degree**, **Paying** — with their share as a percentage.
 
 **Use case.**
-> The manager sees that 56% of their agreements are Erasmus+ and 7% paying mobility, and
-> decides to balance the network next year.
+> The head of office sees that most of his agreements are Erasmus+ IIAs and that paying
+> mobilities remain marginal, and decides to rebalance his network the following year.
 
 ## What is waiting on you
 
@@ -107,13 +102,18 @@ Results are ranked by relevance, and a counter says how many there are in total.
 
 ## Steering indicators
 
-**What it's for.** The underlying trends, for decisions from one year to the next rather than
-for this week.
+**What it's for.** Underlying trends, for year-on-year decisions rather than for the current
+week.
 
-**Who it's for.** <span class="al-audience">international office management</span>
+**Who it's for.** <span class="al-audience">international relations management</span>
 
-**How it works.** Below the operational blocks, a set of steering indicators: mobility
-growth, the most requested destinations, place occupancy, inclusion and fewer-opportunities
-groups.
+**How it works.** The **Strategic overview** block brings together indicators in four
+families — overview, decision, financial, inclusion: mobility growth, outgoing, incoming,
+destinations under pressure, Erasmus+ budget used, inclusion, place occupancy rate…
+**Personalize** chooses which ones show; the choice is kept in your browser. Budget and
+inclusion indicators require [mobility grants](bourse.md).
 
-They are read-only and cover your institution alone.
+The dashboard also shows the mobility flow over the last twelve months, the top destinations
+and recent activity; **Export PDF** prints it.
+
+They are read-only and cover your institution only.

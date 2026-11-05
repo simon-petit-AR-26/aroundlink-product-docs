@@ -1,30 +1,37 @@
 # Communications & notifications
 
 Ce module regroupe tout ce qui touche à la communication du bureau des relations
-internationales : diffuser un message à une audience ciblée, notifier en temps
-réel, échanger en direct avec un étudiant ou un partenaire, et relancer
-automatiquement les documents manquants. L'objectif : remplacer les envois manuels
+internationales : diffuser un message à une audience ciblée, notifier,
+échanger en direct avec un étudiant ou un partenaire, et relancer les documents
+manquants. L'objectif : remplacer les envois manuels
 dispersés par des outils intégrés et suivis.
 
 ## Diffusion de messages
 
 **À quoi ça sert.** Vous rédigez un message une seule fois et le diffusez sur
-plusieurs canaux — notification dans l'application, e-mail, épinglage au tableau de
-bord, message direct — vers des audiences ciblées. Fini le publipostage manuel :
-vous ciblez, vous envoyez, et vous gardez une trace.
+plusieurs canaux vers des audiences ciblées. Fini le publipostage manuel : vous ciblez,
+vous envoyez, et vous gardez une trace.
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** Le compositeur vous laisse choisir les audiences (étudiants
-sortants, étudiants entrants, partenaires) et des filtres optionnels (pays, campus,
-statut d'accès de l'étudiant), avec un compteur de destinataires en direct avant
-l'envoi. Vous pouvez aussi partir d'une **sélection explicite** : cochez les
-étudiants voulus dans votre liste, ou les contacts voulus dans votre annuaire, et
-lancez la diffusion sur eux seuls — utile quand le groupe visé ne se décrit par
-aucun filtre. Vous sélectionnez les canaux souhaités, vous pouvez enregistrer un
-brouillon, et un message envoyé est verrouillé. À l'envoi, un récapitulatif indique
-le nombre de destinataires, d'e-mails partis et de messages épinglés. Un message
-épinglé peut ensuite être retiré du tableau de bord.
+**Comment ça marche.** **Communication ▸ Diffusion**. Le compositeur vous laisse choisir :
+
+- les **audiences** — **Outgoing students (active)**, **Incoming students (active)**,
+  **Partners (IROs of partner universities)** — et des filtres facultatifs : **Campus**,
+  **Student status**, **Country**, avec un compteur de destinataires avant l'envoi ;
+- les **canaux** — **In-app notification**, **Email**, **Dashboard pin**, **Direct
+  message**.
+
+Vous pouvez aussi partir d'une **sélection explicite** : cochez les étudiants voulus dans
+votre liste, ou les contacts voulus dans votre annuaire — pour des contacts, seul l'e-mail
+est proposé. Une diffusion se lance aussi depuis le dossier d'un étudiant ou la fiche d'un
+partenaire.
+
+Un brouillon s'enregistre ; **Send this diffusion now?** confirme l'envoi, et un message
+envoyé est verrouillé. La liste montre pour chaque diffusion son statut, ses audiences, ses
+canaux et ses destinataires ; **Delivery history** donne les ouvertures, clics et rejets.
+**Pin on the students' dashboard** épingle ou retire un message du tableau de bord des
+étudiants.
 
 ![Fenêtre de composition d'une diffusion](../assets/screenshots/diffusion-nouveau-message.png)
 
@@ -43,28 +50,34 @@ qui ne sont pas vos utilisateurs : un partenaire, un contact, un étudiant qui n
 encore connecté. Ils reconnaissent **l'école avec qui ils travaillent**, pas un outil dont
 ils n'ont jamais entendu parler.
 
-**Comment ça marche.** Chaque message porte donc **votre logo et votre nom en tête**, la
-signature de la personne qui l'envoie au bas de la carte, et une mention discrète *powered
-by AroundLink* à droite. Un e-mail est écrit par **une personne à une personne**, pas par un
-système.
+**Comment ça marche.** Les e-mails adressés en votre nom — nominations et leurs relances,
+retrait d'une nomination, invitations, demandes de dates et d'exigences de langue, relances
+de documents — portent **votre logo et votre nom en tête**, la signature de la personne qui
+l'envoie au bas de la carte, et une mention discrète *powered by AroundLink*.
 
-!!! note "Quatre exceptions"
-    Les messages que personne n'envoie — réinitialisation de mot de passe, message
-    générique — gardent notre seule marque. La mention « powered by » n'a de sens que
-    derrière le nom de quelqu'un d'autre.
+Une **diffusion** se présente autrement : elle part au nom de « IRO *votre établissement* via
+AroundLink », s'ouvre sur « Message from *votre établissement* », et une réponse arrive
+directement à la personne qui l'a envoyée.
+
+Les messages automatiques que personne n'écrit — notifications, récapitulatif quotidien —
+gardent la marque AroundLink.
+
 
 ## Notifications dans l'application
 
-**À quoi ça sert.** Chaque utilisateur dispose d'un fil de notifications avec un
-compteur de non-lus en direct dans la barre supérieure. Coordinateurs, partenaires
-et étudiants restent informés des nouveaux messages et événements sans dépendre de
-l'e-mail.
+**À quoi ça sert.** Chaque utilisateur dispose d'un fil de notifications, signalé par une
+cloche dans la barre supérieure. Coordinateurs, partenaires et étudiants restent informés
+des nouveaux messages et événements sans dépendre de l'e-mail.
 
 **Pour qui.** <span class="al-audience">coordinateur / partenaire / étudiant</span>
 
-**Comment ça marche.** La cloche affiche le nombre de notifications non lues ;
-ouvrir une notification la marque comme lue, et un bouton permet de tout marquer
-lu d'un coup. Une notification peut renvoyer vers le message d'origine.
+**Comment ça marche.** La cloche affiche le nombre de notifications non lues ; il se met à
+jour au chargement des pages et après vos propres actions. Ouvrir une notification la marque
+comme lue et mène à l'écran concerné ; un message long se déplie dans la cloche même. Une
+page **Notifications** les reprend toutes, avec **Mark all as read**.
+
+Les coordinateurs reçoivent aussi, chaque jour, un e-mail qui récapitule leurs nouvelles
+alertes, avec un bouton **Open my alerts**.
 
 **Cas d'usage.**
 > Un étudiant voit un « 3 » sur la cloche, l'ouvre et découvre que son Learning
@@ -73,46 +86,51 @@ lu d'un coup. Une notification peut renvoyer vers le message d'origine.
 
 ## Messagerie directe
 
-**À quoi ça sert.** Une messagerie privée en fil de discussion entre les trois
-types d'acteurs — équipe RI, étudiants, équipe AroundLink. Les questions se
-règlent dans la plateforme plutôt que par e-mails éparpillés.
+**À quoi ça sert.** Une messagerie privée, en fil de discussion. Les questions se règlent
+dans la plateforme plutôt que par e-mails éparpillés.
 
-**Pour qui.** <span class="al-audience">coordinateur / étudiant / partenaire</span>
+**Pour qui.** <span class="al-audience">coordinateur / étudiant</span>
 
-**Comment ça marche.** Chaque profil a sa propre boîte de réception : liste des
-conversations, fil un-à-un avec lecture à l'ouverture, réponse, et un sélecteur
-« nouveau message » pour démarrer un échange. Un compteur de non-lus s'affiche dans
-la barre supérieure.
+**Comment ça marche.** Chaque profil a sa boîte de réception : liste des conversations, fil
+un-à-un, réponse, et **New message** pour démarrer un échange. On n'écrit qu'aux personnes
+que son rôle permet de joindre :
+
+| Qui écrit | À qui |
+|---|---|
+| Un coordinateur | son équipe, ses partenaires, ses propres étudiants, et l'équipe AroundLink |
+| Un étudiant | l'équipe de son propre établissement, et le support AroundLink |
+
+Côté coordinateur, le nombre de messages non lus s'affiche sur l'entrée **Messages** du
+menu. Votre établissement peut désactiver la messagerie.
 
 **Cas d'usage.**
-> Un étudiant entrant écrit au bureau d'accueil pour poser une question sur le
-> logement ; le coordinateur répond dans le fil.
+> Un étudiant sortant écrit à son coordinateur pour une question sur son contrat
+> pédagogique ; le coordinateur répond dans le fil.
 
 
 ## Campagnes de relance de documents
 
-**À quoi ça sert.** Des campagnes d'e-mails de relance automatisées et suivies
-poussent les étudiants à déposer leurs documents manquants, avec des statistiques
-d'ouverture, de clic et de rejet par campagne. La chasse aux documents devient une
-opération mesurable en un clic.
+**À quoi ça sert.** Des relances par e-mail, suivies, qui poussent les étudiants à déposer
+ce qui manque — avec les ouvertures, les clics et la délivrabilité. La chasse aux documents
+devient une opération mesurable.
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** Une campagne cible les étudiants par type de document,
-niveau d'études et campagnes associées. La liste des campagnes et une fenêtre de
-statistiques affichent le nombre d'envois, le taux d'ouverture, le taux de clic et
-le taux de délivrabilité. Les e-mails partent ensuite automatiquement en tâche de
-fond.
+**Comment ça marche.** **Reminder** demande d'abord ce que vous relancez : **Documents**,
+**Feedback** ou **Profile completion**. Une relance de documents cible les étudiants par
+type de document, niveau d'études et campagne ; un même étudiant n'en reçoit qu'une toutes
+les 48 heures, et les e-mails partent en tâche de fond.
+
+La liste des relances montre, pour chacune, le premier et le dernier envoi, les envois sur
+le total, les ouvertures, les clics et la délivrabilité, et se filtre sur ce qui n'est pas
+encore envoyé, en partie ou entièrement.
+
+On lance une relance depuis l'onglet **Reminders** des [validations](validations.md), depuis
+une sélection dans la liste des étudiants, ou depuis le dossier d'un étudiant.
 
 **Cas d'usage.**
-> Un coordinateur lance une relance pour tous les étudiants de Master à qui il
-> manque le Learning Agreement, puis vérifie un taux d'ouverture de 62 % dans la
-> fenêtre de statistiques.
-
-!!! tip "Depuis les campagnes"
-    Les relances se déclenchent aussi depuis le suivi des documents d'une
-    [campagne](../etablissement/campagnes.md) : c'est la même mécanique de relance
-    documentée ici.
+> Un coordinateur relance tous les étudiants de Master à qui il manque le Learning
+> Agreement, puis suit les ouvertures dans la liste des relances.
 
 
 ## Relances de demande d'avis
@@ -122,16 +140,13 @@ leur établissement d'accueil, sur le même principe que les relances de documen
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** Vous ciblez votre audience par niveau d'études et par
-campagne, ou vous désignez directement les étudiants concernés — nommer des
-étudiants prend alors le pas sur les filtres. Un aperçu vous indique combien de
-personnes seront touchées avant l'envoi, et ce nombre correspond exactement à qui
-recevra le message.
-
-Les étudiants ayant déjà répondu sortent d'eux-mêmes de la relance : inutile de
-tenir une liste à la main.
+**Comment ça marche.** Vous ciblez votre audience par niveau d'études et par campagne, ou
+vous désignez directement les étudiants concernés — nommer des étudiants prend alors le pas
+sur les filtres. Vous choisissez un ou plusieurs **thèmes** — chacun part comme une demande
+distincte — et pouvez ajouter un message. Un aperçu indique combien de personnes seront
+touchées avant l'envoi, et ce nombre correspond exactement à qui recevra le message.
 
 **Cas d'usage.**
-> En fin de semestre, le coordinateur relance les étudiants de Master rentrés de
-> mobilité qui n'ont pas encore laissé d'avis ; l'aperçu annonce 12 destinataires,
-> et 12 messages partent.
+> En fin de semestre, le coordinateur demande un avis « Logement » et « Cours » aux
+> étudiants de Master rentrés de mobilité ; l'aperçu annonce 12 destinataires, et 12
+> étudiants reçoivent les deux demandes.

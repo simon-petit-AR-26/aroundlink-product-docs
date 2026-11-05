@@ -21,63 +21,65 @@ dates, ni forcément les mêmes exigences.
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
 **Comment ça marche.** Sous **Onboarding**, **New session** : vous nommez la session —
-« Autumn 2026 intake » — et vous choisissez le parcours qu'elle applique. Seuls les parcours
-**d'accueil** sont proposés.
+« Autumn intake » — et vous choisissez le parcours qu'elle applique. Le parcours est
+obligatoire, et seuls les parcours **d'accueil** actifs sont proposés ; si vous n'en avez
+aucun, l'écran vous envoie le composer dans **Settings ▸ Workflows**.
 
-Une session se renomme, se duplique et se **clôture** quand la promotion s'achève. Deux
-sessions ne peuvent pas porter le même nom.
-
-!!! warning "Une session sans parcours ne demande rien"
-    Le parcours est ce qui donne du travail à l'étudiant. Une session ouverte sans parcours
-    accueille des dossiers qui n'ont aucune étape à franchir. L'écran vous le dit et propose
-    d'en brancher un.
+La liste des sessions montre, pour chacune, son parcours, son nombre d'étapes et
+d'étudiants. Une session se **renomme** et se **clôture** quand la promotion s'achève ; une
+session clôturée quitte la liste. Deux sessions ne peuvent pas porter le même nom.
+**Open this workflow** ouvre le parcours d'une session.
 
 ## Accepter une nomination dans une session
 
-**À quoi ça sert.** Rattacher chaque entrant à sa promotion dès l'acceptation, plutôt que de
-le faire plus tard et d'oublier.
+**À quoi ça sert.** Rattacher chaque entrant à sa promotion dès l'acceptation.
 
-**Comment ça marche.** Quand vous acceptez une nomination, l'écran **demande toujours la
-session d'accueil** que l'étudiant rejoint. L'étudiant reçoit alors le parcours de cette
-session, et son dossier d'accueil sait dans quelle session il a été ouvert.
+**Comment ça marche.** Quand vous acceptez une nomination, l'écran propose la **session
+d'accueil** que l'étudiant rejoint. Le choix peut attendre — **Choose later** — mais
+l'étudiant ne reçoit son parcours qu'une fois rattaché à une session. Les sessions dont le
+parcours n'a aucune étape ne sont pas proposées.
 
-Un dossier déjà en route **garde sa place** : changer le parcours d'une session n'en fait pas
-repartir les étapes déjà franchies.
+Un étudiant déjà rattaché **garde son parcours** : les étudiants qui rejoignent la session
+ensuite suivent celui qu'elle applique alors.
 
 !!! tip "Ouvrir les accès"
-    L'ouverture des accès se fait depuis la session. Elle demande de choisir la session —
-    sans ce choix, rien n'est enregistré. L'état de chaque accès se lit sur le suivi : pas
-    encore envoyé, envoyé à telle date, ou déjà connecté.
+    Trois façons d'envoyer à l'étudiant ses identifiants : cocher **Open their access now**
+    en acceptant la nomination, le bouton **Send access** (puis **Resend**) sur sa ligne, ou
+    **Send access** sur une sélection. L'état de chaque accès se lit sur le suivi : **Not
+    sent**, envoyé à telle date, ou **Connected**.
 
 ## Suivre où en est chacun
 
 **À quoi ça sert.** Savoir, d'un coup d'œil, qui attend quoi.
 
-**Comment ça marche.** La session porte le même [suivi](suivi-mobilites.md) qu'une campagne,
-avec les mêmes vues et les mêmes outils : tableau ou kanban, recherche qui propose des
-filtres, tri, choix des lignes de carte, vues enregistrées et **Export what is on screen**.
+**Comment ça marche.** La session porte le même [suivi](suivi-mobilites.md) qu'une campagne :
+tableau ou kanban, recherche qui propose des filtres, tri, choix des lignes de carte et
+**Export what is on screen**. Le kanban range les dossiers en **Before the mobility**,
+**During the mobility** et **After the mobility**. Les vues se reprennent, en lecture seule,
+de celles enregistrées sur la liste des étudiants entrants.
 
 Le tableau d'une session ajoute ce qui n'a de sens que pour un entrant : son **établissement
-d'origine**, son **pays**, son **niveau**, son **domaine d'études** et sa **ville d'origine**,
-en plus de l'avancement, de l'étape en cours et de l'état de son accès.
+d'origine**, son **pays**, son **niveau**, son **domaine d'études** et sa **ville d'origine**.
+On y lit aussi la **phase**, le **parcours**, l'état de l'accès et **Waiting on** — qui doit
+agir ; quand c'est vous, un lien mène à la file de [validations](validations.md). À la
+dernière étape, **Close stay** clôt le séjour.
 
 ## Ce que l'étudiant accueilli voit
 
-**Comment ça marche.** L'étudiant retrouve son parcours sur **My onboarding** : une seule
-liste de tâches, dans l'ordre, avec ce qui lui est demandé à chaque étape. Les étapes qui
+**Comment ça marche.** L'étudiant suit son séjour depuis **My exchange** : les tâches de son
+parcours y sont rangées par phase, et chacune le mène à l'écran où il agit — déposer une
+pièce, accepter une charte, choisir son campus et ses cours. Sur cet écran, une seule étape
+est ouverte à la fois ; les suivantes se voient, sans leurs consignes. Les étapes qui
 reflètent un acte fait ailleurs se cochent sans qu'il ait rien à faire.
-
-Les documents de son dossier **ne s'ouvrent qu'une fois validés** : un relevé ou une
-attestation en cours de production ne lui est pas montré à moitié fait.
 
 !!! note "Une pièce, une seule validation"
     Un document déposé par un entrant est validé **par son école d'origine**, pas deux fois.
-    L'établissement d'accueil peut l'ouvrir et le lire ; il ne refait pas le travail de
-    validation.
+    Votre établissement peut l'ouvrir et le lire une fois validé ; il ne refait pas le
+    travail de validation.
 
 **Cas d'usage.**
 > L'école accueille vingt-six entrants à l'automne. Elle compose un parcours en huit étapes —
 > justificatif de ressources, test de langue, charte à accepter, attestation d'accueil, choix
-> du campus, puis les cours — et ouvre la session « Autumn 2026 intake ». Chaque nomination
+> du campus, puis les cours — et ouvre la session « Autumn intake ». Chaque nomination
 > acceptée rejoint cette session et reçoit le parcours. La coordinatrice filtre le kanban sur
 > ce qui l'attend : trois dossiers, le reste avance sans elle.

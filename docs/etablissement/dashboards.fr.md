@@ -10,57 +10,49 @@ l'endroit où ça coince.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Un histogramme de dix-neuf barres, réparties sur les **cinq temps
-d'une mobilité** — l'accès, la campagne, la préparation, la mobilité, l'après — chacun avec
-sa couleur.
+**Comment ça marche.** Vous basculez entre vos **sortants** et vos **entrants**, puis vous
+choisissez ce que vous regardez : une campagne qui a un [parcours](parcours.md) branché,
+l'accueil chez un partenaire (**Onboarding at…**), ou côté entrants une session d'accueil.
 
-Vous basculez entre vos **sortants** et vos **entrants**, puis vous choisissez la vue :
-chaque bouton de la seconde rangée est une campagne, et l'histogramme ne montre plus que ses
-étudiants.
+Le bloc **Progress by step** montre trois cartes de phase — **Before mobility**, **During
+mobility**, **After mobility** — chacune avec sa jauge, puis une barre par étape du parcours,
+qui donne le nombre d'étudiants l'ayant franchie sur l'effectif. Sous **Not started yet**,
+de petits compteurs disent combien n'ont pas encore commencé, et pourquoi. Sans parcours
+branché, le bloc l'indique : **No workflow attached here**.
 
-!!! warning "Les barres ne s'additionnent pas — et c'est voulu"
-    Les neuf premières, celles de l'accès et de la campagne, **s'excluent** : un étudiant est
-    soit « sans accès », soit « connecté », jamais les deux.
-
-    À partir de la préparation, ce sont des **cases à cocher** : un même étudiant en mobilité
-    peut lever cinq barres à la fois — son contrat validé, ses documents complets, son
-    attestation d'arrivée. C'est pourquoi aucun total n'est affiché : il ne voudrait rien
-    dire.
+**Open this list in a new tab** ouvre les étudiants concernés dans leur liste.
 
 **Cas d'usage.**
-> La coordinatrice bascule sur sa campagne de printemps et voit la barre « en attente de
-> proposition » monter à quarante-huit, alors que « proposition » reste à zéro. Le tour
-> d'affectation n'a pas encore été lancé.
-
-![Le tableau de bord](../assets/screenshots/tableau-de-bord.png)
-
-*Le tableau de bord d'un coordinateur : le pipeline et ses cinq couleurs, les quatre compteurs du jour, les places distribuées par période et par parcours, l'origine des accords, et en bas les tuiles de ce qui attend une validation.*
+> La coordinatrice choisit sa campagne de printemps : la barre « Learning Agreement » est à
+> 12 sur 48. Un clic ouvre la liste de ceux qui ne l'ont pas encore.
 
 ## Vos chiffres du jour
 
 **Comment ça marche.** Quatre compteurs en tête de page : vos **étudiants sortants**, avec
 le nombre qui est à l'étranger aujourd'hui ; vos **entrants**, avec ceux présents sur le
-campus ; vos **partenaires actifs** ; vos **contacts**.
+campus aujourd'hui ; vos **partenaires actifs** ; vos **contacts**. Chaque compteur ouvre la
+liste correspondante.
 
-Ce sont des chiffres de l'instant, pas des totaux de l'année.
+Les sortants et les entrants se comptent toutes années confondues ; « à l'étranger » et
+« sur le campus » sont, eux, des chiffres du jour.
 
 ## Les places distribuées
 
 **Comment ça marche.** Un tableau croisé : vos **périodes** en lignes — automne, printemps,
-année complète, été — et vos **parcours** en colonnes, avec le total de places pour l'année
-scolaire choisie en haut. Vous changez d'année d'un menu.
+année complète, été — et vos **niveaux** en colonnes, avec le total de places en haut. Un
+menu change d'année scolaire ; il s'ouvre sur l'année qui porte le plus de places.
 
 C'est la vue d'ensemble de ce que vous avez ouvert, avant d'entrer dans la matrice d'un
 accord.
 
 ## D'où viennent vos accords
 
-**Comment ça marche.** Un anneau répartit vos accords par famille — Erasmus+, bilatéral,
-double diplôme, mobilité payante — avec leur part en pourcentage.
+**Comment ça marche.** La carte **Agreement sources** répartit vos accords en anneau —
+**IIA**, **Bilateral**, **Double Degree**, **Paying** — avec leur part en pourcentage.
 
 **Cas d'usage.**
-> Le responsable constate que 56 % de ses accords sont des Erasmus+ et 7 % des mobilités
-> payantes, et décide d'équilibrer son réseau l'année suivante.
+> Le responsable constate que l'essentiel de ses accords sont des IIA Erasmus+ et que les
+> mobilités payantes restent marginales, et décide d'équilibrer son réseau l'année suivante.
 
 ## Ce qui vous attend
 
@@ -119,8 +111,14 @@ plutôt que pour la semaine en cours.
 
 **Pour qui.** <span class="al-audience">direction des relations internationales</span>
 
-**Comment ça marche.** Sous les blocs opérationnels, une série d'indicateurs de pilotage :
-la croissance de la mobilité, les destinations les plus demandées, l'occupation des places,
-l'inclusion et les publics à moindres opportunités.
+**Comment ça marche.** Le bloc **Strategic overview** réunit des indicateurs rangés en
+quatre familles — vue d'ensemble, décision, finances, inclusion : croissance de la mobilité,
+sortants, entrants, destinations sous tension, budget Erasmus+ consommé, inclusion, taux
+d'occupation des places… **Personalize** choisit ceux qui s'affichent ; ce choix est gardé
+dans votre navigateur. Les indicateurs de budget et d'inclusion supposent la
+[bourse de mobilité](bourse.md).
+
+Le tableau de bord montre aussi le flux de mobilité des douze derniers mois, les
+destinations les plus demandées et l'activité récente ; **Export PDF** l'imprime.
 
 Ils sont en lecture seule et portent sur votre seul établissement.
