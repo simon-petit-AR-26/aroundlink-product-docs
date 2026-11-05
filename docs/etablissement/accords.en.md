@@ -203,3 +203,19 @@ templates are downloadable.
 > An office pastes 80 exchanges from a legacy spreadsheet, fixes 3 flagged rows in the
 > preview, then validates.
 
+## Agreement update review (IIA)
+
+**What it does.** When a partner institution pushes changes to an inter-institutional
+agreement (IIA) over the EWP network, this review shows a field-by-field comparison and
+lets you selectively accept or reject the changes before they touch local data.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** The coordinator opens the pending update and sees the comparison
+between their version and the partner's. They tick the fields to accept and apply — a
+count of applied/skipped fields is shown — or reject the update, in which case their data
+stays unchanged.
+
+**Use case.**
+> The partner changes the agreement's ECTS and languages; the coordinator accepts the
+> language change but rejects the ECTS one — only the accepted field is written locally.

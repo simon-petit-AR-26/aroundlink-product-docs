@@ -103,7 +103,6 @@ plugins:
             Accueil: Home
             Espace établissement: Institution workspace
             Espace étudiant: Student portal
-            Atlas — Annuaire mondial: Atlas — World directory
             Réseau EWP: EWP network
             Vue d'ensemble: Overview
             Référence des API (DSI): API reference (IT)
@@ -112,19 +111,10 @@ plugins:
             Sécurité &amp; données: Security &amp; data
             Plateforme &amp; sécurité: Platform &amp; security
             Annexes: Appendix
-            Tableaux de bord: Dashboards
-            Étudiants: Students
-            Partenaires &amp; accords: Partners &amp; agreements
-            Distribution des places: Place distribution
-            Campagnes de mobilité: Mobility campaigns
             Parcours de mobilité: Mobility paths
             Suivi des mobilités: Mobility tracking
             Emails &amp; connecteurs: Emails &amp; connectors
             Agenda: Agenda
-            Onboarding des entrants: Onboarding incoming students
-            Documents &amp; validation: Documents &amp; validation
-            Bourse de mobilité: Mobility grants
-            Communications: Communications
             Mon établissement: My institution
             Votre fiche publique: Your public page
             Paramètres &amp; équipe: Settings &amp; team
@@ -133,6 +123,16 @@ plugins:
             Une mobilité de bout en bout: A mobility from end to end
             Quand quelque chose ne passe pas: When something will not go through
             Glossaire: Glossary
+            Tableau de bord: Dashboard
+            Partenaires: Partners
+            Accords &amp; places: Agreements &amp; places
+            Étudiants sortants: Outgoing students
+            Campagnes: Campaigns
+            Étudiants entrants: Incoming students
+            Le dossier d'un étudiant: A student's record
+            Bourse &amp; paiements: Grants &amp; payments
+            Diffusion &amp; messages: Broadcasts &amp; messages
+            Documents &amp; modèles: Documents &amp; templates
         - locale: es
           name: Español
           build: true
@@ -140,7 +140,6 @@ plugins:
             Accueil: Inicio
             Espace établissement: Espacio institución
             Espace étudiant: Portal del estudiante
-            Atlas — Annuaire mondial: Atlas — Directorio mundial
             Réseau EWP: Red EWP
             Vue d'ensemble: Visión general
             Référence des API (DSI): Referencia de API (TI)
@@ -149,19 +148,10 @@ plugins:
             Sécurité &amp; données: Seguridad y datos
             Plateforme &amp; sécurité: Plataforma y seguridad
             Annexes: Anexos
-            Tableaux de bord: Panel de control
-            Étudiants: Estudiantes
-            Partenaires &amp; accords: Socios y acuerdos
-            Distribution des places: Distribución de plazas
-            Campagnes de mobilité: Campañas de movilidad
             Parcours de mobilité: Itinerarios de movilidad
             Suivi des mobilités: Seguimiento de movilidades
             Emails &amp; connecteurs: Correos y conectores
             Agenda: Agenda
-            Onboarding des entrants: Acogida de entrantes
-            Documents &amp; validation: Documentos y validación
-            Bourse de mobilité: Becas de movilidad
-            Communications: Comunicaciones
             Mon établissement: Mi institución
             Votre fiche publique: Su página pública
             Paramètres &amp; équipe: Ajustes y equipo
@@ -170,6 +160,16 @@ plugins:
             Une mobilité de bout en bout: Una movilidad de principio a fin
             Quand quelque chose ne passe pas: Cuando algo no funciona
             Glossaire: Glosario
+            Tableau de bord: Panel de control
+            Partenaires: Socios
+            Accords &amp; places: Acuerdos y plazas
+            Étudiants sortants: Estudiantes salientes
+            Campagnes: Campañas
+            Étudiants entrants: Estudiantes entrantes
+            Le dossier d'un étudiant: El expediente de un estudiante
+            Bourse &amp; paiements: Becas y pagos
+            Diffusion &amp; messages: Difusión y mensajes
+            Documents &amp; modèles: Documentos y plantillas
         - locale: it
           name: Italiano
           build: true
@@ -177,7 +177,6 @@ plugins:
             Accueil: Home
             Espace établissement: Spazio istituzione
             Espace étudiant: Portale studente
-            Atlas — Annuaire mondial: Atlas — Directory mondiale
             Réseau EWP: Rete EWP
             Vue d'ensemble: Panoramica
             Référence des API (DSI): Riferimento API (IT)
@@ -186,19 +185,10 @@ plugins:
             Sécurité &amp; données: Sicurezza e dati
             Plateforme &amp; sécurité: Piattaforma e sicurezza
             Annexes: Appendici
-            Tableaux de bord: Cruscotto
-            Étudiants: Studenti
-            Partenaires &amp; accords: Partner e accordi
-            Distribution des places: Distribuzione dei posti
-            Campagnes de mobilité: Campagne di mobilità
             Parcours de mobilité: Percorsi di mobilità
             Suivi des mobilités: Monitoraggio delle mobilità
             Emails &amp; connecteurs: Email e connettori
             Agenda: Agenda
-            Onboarding des entrants: Accoglienza in entrata
-            Documents &amp; validation: Documenti e validazione
-            Bourse de mobilité: Borse di mobilità
-            Communications: Comunicazioni
             Mon établissement: La mia istituzione
             Votre fiche publique: La vostra pagina pubblica
             Paramètres &amp; équipe: Impostazioni e team
@@ -207,6 +197,16 @@ plugins:
             Une mobilité de bout en bout: Una mobilità dall'inizio alla fine
             Quand quelque chose ne passe pas: Quando qualcosa non funziona
             Glossaire: Glossario
+            Tableau de bord: Cruscotto
+            Partenaires: Partner
+            Accords &amp; places: Accordi e posti
+            Étudiants sortants: Studenti in uscita
+            Campagnes: Campagne
+            Étudiants entrants: Studenti in entrata
+            Le dossier d'un étudiant: Il fascicolo di uno studente
+            Bourse &amp; paiements: Borse e pagamenti
+            Diffusion &amp; messages: Diffusione e messaggi
+            Documents &amp; modèles: Documenti e modelli
         - locale: de
           name: Deutsch
           build: true
@@ -214,7 +214,6 @@ plugins:
             Accueil: Startseite
             Espace établissement: Hochschulbereich
             Espace étudiant: Studierendenportal
-            Atlas — Annuaire mondial: Atlas — Weltweites Verzeichnis
             Réseau EWP: EWP-Netzwerk
             Vue d'ensemble: Überblick
             Référence des API (DSI): API-Referenz (IT)
@@ -223,19 +222,10 @@ plugins:
             Sécurité &amp; données: Sicherheit und Daten
             Plateforme &amp; sécurité: Plattform und Sicherheit
             Annexes: Anhang
-            Tableaux de bord: Dashboard
-            Étudiants: Studierende
-            Partenaires &amp; accords: Partner und Abkommen
-            Distribution des places: Platzverteilung
-            Campagnes de mobilité: Mobilitätskampagnen
             Parcours de mobilité: Mobilitätsverläufe
             Suivi des mobilités: Mobilitätsverfolgung
             Emails &amp; connecteurs: E-Mails &amp; Konnektoren
             Agenda: Kalender
-            Onboarding des entrants: Onboarding der Incomings
-            Documents &amp; validation: Dokumente und Freigabe
-            Bourse de mobilité: Mobilitätsstipendien
-            Communications: Kommunikation
             Mon établissement: Meine Hochschule
             Votre fiche publique: Ihre öffentliche Seite
             Paramètres &amp; équipe: Einstellungen und Team
@@ -244,6 +234,16 @@ plugins:
             Une mobilité de bout en bout: Eine Mobilität von Anfang bis Ende
             Quand quelque chose ne passe pas: Wenn etwas nicht funktioniert
             Glossaire: Glossar
+            Tableau de bord: Dashboard
+            Partenaires: Partner
+            Accords &amp; places: Abkommen &amp; Plätze
+            Étudiants sortants: Ausgehende Studierende
+            Campagnes: Kampagnen
+            Étudiants entrants: Eingehende Studierende
+            Le dossier d'un étudiant: Die Akte eines Studierenden
+            Bourse &amp; paiements: Stipendien &amp; Zahlungen
+            Diffusion &amp; messages: Rundsendungen &amp; Nachrichten
+            Documents &amp; modèles: Dokumente &amp; Vorlagen
   # Screenshots open full size on click — an interface capture is unreadable
   # at page width.
   - glightbox:
@@ -261,29 +261,46 @@ plugins:
       fallback_to_build_date: true
 
 nav:
+  # ── Le menu de la doc EST le menu du produit ─────────────────────────────────
+  # Les groupes portent les mots exacts de la barre latérale de l'application
+  # (NavigationCatalogue côté serveur) : un utilisateur retrouve ici, au même endroit,
+  # ce qu'il voit dans l'outil. Les pages, elles, gardent un titre français.
   - Accueil: index.md
   - Une mobilité de bout en bout: parcours-complet.md
   - Espace établissement:
-      - Tableaux de bord: etablissement/dashboards.md
-      - Étudiants: etablissement/etudiants.md
-      - Partenaires &amp; accords: etablissement/partenaires.md
-      - Distribution des places: etablissement/accords.md
-      - Campagnes de mobilité: etablissement/campagnes.md
-      - Parcours de mobilité: etablissement/parcours.md
-      - Suivi des mobilités: etablissement/suivi-mobilites.md
-      - Agenda: etablissement/agenda.md
-      - Onboarding des entrants: etablissement/onboarding.md
-      - Emails &amp; connecteurs: etablissement/emails.md
-      - Documents &amp; validation: etablissement/documents.md
-      - Bourse de mobilité: etablissement/bourse.md
-      - Communications: etablissement/communications.md
-      - Mon établissement: etablissement/mon-etablissement.md
-      - Votre fiche publique: etablissement/fiche-publique.md
-      - Paramètres &amp; équipe: etablissement/parametres.md
+      - Management:
+          - Tableau de bord: etablissement/dashboards.md
+          - Validations: etablissement/validations.md
+      - Mobility:
+          - Agenda: etablissement/agenda.md
+          - Institutions:
+              - Partenaires: etablissement/partenaires.md
+              - Accords &amp; places: etablissement/accords.md
+          - Atlas: atlas/atlas.md
+          - Outgoing:
+              - Étudiants sortants: etablissement/etudiants.md
+              - Campagnes: etablissement/campagnes.md
+          - Incoming:
+              - Étudiants entrants: etablissement/etudiants-entrants.md
+              - Onboarding: etablissement/onboarding.md
+          - Le dossier d'un étudiant: etablissement/fiche-etudiant.md
+          - Workflows:
+              - Parcours de mobilité: etablissement/parcours.md
+              - Suivi des mobilités: etablissement/suivi-mobilites.md
+      - Institution:
+          - Mon établissement: etablissement/mon-etablissement.md
+          - Votre fiche publique: etablissement/fiche-publique.md
+          - Bourse &amp; paiements: etablissement/bourse.md
+      - Communication:
+          - Diffusion &amp; messages: etablissement/communications.md
+      - Settings:
+          - Paramètres &amp; équipe: etablissement/parametres.md
+          - Documents &amp; modèles: etablissement/documents.md
+          - Emails &amp; connecteurs: etablissement/emails.md
   - Espace étudiant:
-      - Découverte &amp; candidature: etudiant/decouverte-candidature.md
-      - Pendant &amp; après la mobilité: etudiant/pendant-apres-mobilite.md
-  - Atlas — Annuaire mondial: atlas/atlas.md
+      - My exchange:
+          - Découverte &amp; candidature: etudiant/decouverte-candidature.md
+          - Pendant &amp; après la mobilité: etudiant/pendant-apres-mobilite.md
   - Réseau EWP:
       - Vue d'ensemble: ewp/ewp.md
       - Référence des API (DSI): ewp/reference-api.md
