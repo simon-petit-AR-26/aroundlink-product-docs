@@ -9,21 +9,23 @@
         <meta name="author" content="AroundLink">
       
       
+        <link rel="canonical" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/it/">
+      
       
       
         <link rel="next" href="parcours-complet/">
       
       
         
-          <link rel="alternate" href="/" hreflang="fr">
+          <link rel="alternate" href="/aroundlink-product-docs/" hreflang="fr">
         
-          <link rel="alternate" href="/en/" hreflang="en">
+          <link rel="alternate" href="/aroundlink-product-docs/en/" hreflang="en">
         
-          <link rel="alternate" href="/es/" hreflang="es">
+          <link rel="alternate" href="/aroundlink-product-docs/es/" hreflang="es">
         
-          <link rel="alternate" href="/it/" hreflang="it">
+          <link rel="alternate" href="/aroundlink-product-docs/it/" hreflang="it">
         
-          <link rel="alternate" href="/de/" hreflang="de">
+          <link rel="alternate" href="/aroundlink-product-docs/de/" hreflang="de">
         
       
       
@@ -149,31 +151,31 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/" hreflang="fr" class="md-select__link">
+            <a href="/aroundlink-product-docs/" hreflang="fr" class="md-select__link">
               Français
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/en/" hreflang="en" class="md-select__link">
+            <a href="/aroundlink-product-docs/en/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/es/" hreflang="es" class="md-select__link">
+            <a href="/aroundlink-product-docs/es/" hreflang="es" class="md-select__link">
               Español
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/it/" hreflang="it" class="md-select__link">
+            <a href="/aroundlink-product-docs/it/" hreflang="it" class="md-select__link">
               Italiano
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/de/" hreflang="de" class="md-select__link">
+            <a href="/aroundlink-product-docs/de/" hreflang="de" class="md-select__link">
               Deutsch
             </a>
           </li>
@@ -1820,11 +1822,27 @@ permessi. Si veda <a href="plateforme/plateforme/">Piattaforma e sicurezza</a>.<
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "search.highlight", "search.suggest", "search.share", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
     
     
+<script>
+  (function () {
+    var langue = document.documentElement.lang || "fr";
+    if (langue === "fr") return;
+    var ouvrir = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function (methode, url) {
+      var u = String(url);
+      if (/\/search\/search_index\.json(\?|$)/.test(u) && u.indexOf("/" + langue + "/search/") === -1) {
+        arguments[1] = u.replace(/\/search\/search_index\.json/, "/" + langue + "/search/search_index.json");
+      }
+      return ouvrir.apply(this, arguments);
+    };
+  })();
+</script>
+
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../assets/rendez-vous.js"></script>
       
     
+
   
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
 document$.subscribe(()=>{ lightbox.reload(); });

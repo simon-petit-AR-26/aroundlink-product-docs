@@ -9,6 +9,8 @@
         <meta name="author" content="AroundLink">
       
       
+        <link rel="canonical" href="https://simon-petit-ar-26.github.io/aroundlink-product-docs/es/etablissement/mon-etablissement/">
+      
       
         <link rel="prev" href="../communications/">
       
@@ -2033,11 +2035,27 @@ que pour une mobilité internationale.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "search.highlight", "search.suggest", "search.share", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
+<script>
+  (function () {
+    var langue = document.documentElement.lang || "fr";
+    if (langue === "fr") return;
+    var ouvrir = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function (methode, url) {
+      var u = String(url);
+      if (/\/search\/search_index\.json(\?|$)/.test(u) && u.indexOf("/" + langue + "/search/") === -1) {
+        arguments[1] = u.replace(/\/search\/search_index\.json/, "/" + langue + "/search/search_index.json");
+      }
+      return ouvrir.apply(this, arguments);
+    };
+  })();
+</script>
+
       <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../../assets/rendez-vous.js"></script>
       
     
+
   
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
 document$.subscribe(()=>{ lightbox.reload(); });
