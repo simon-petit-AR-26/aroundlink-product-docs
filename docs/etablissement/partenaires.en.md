@@ -448,3 +448,79 @@ to you, whatever its status.
 > A coordinator reads a pending review, publishes the positive ones and refuses an
 > inappropriate one with a reason.
 
+## Preview as student
+
+**What it's for.** Show the office exactly what a student sees on a partner's page
+— places by category, level and field, requirements, published reviews — to verify
+the file before students rely on it.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** The preview displays the partner's student page, with place
+distributions gathered across all agreement types, filterable by year, level and
+field. With no student profile, filters start on "All".
+
+**Use case.**
+> Before a campaign opens, the coordinator previews a partner to confirm the
+> display of places and requirements.
+
+
+## Hide, archive or merge a partner
+
+**What it's for.** Take a partner you no longer work with out of circulation, or
+bring together two records pointing at the same institution, without ever losing
+the history of past mobilities.
+
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+
+**How it works.** Three moves, from the lightest to the most final. **Hiding**
+removes the partner from your students' view while keeping it in your internal
+lists. **Archiving** also takes it out of your campaigns and destination counts.
+**Merging** brings two records into one: the agreements, contacts and mobilities
+of the absorbed record are attached to the one you keep.
+
+In all three cases, nothing is deleted. Mobilities already completed with that
+partner remain visible in the files of the students concerned.
+
+**Use case.**
+> After a university merger, the coordinator brings the two records into one; the
+> agreements from both end up in the same place, with no re-entry.
+
+!!! warning "Contact access"
+    Archiving a partner revokes the access you had opened for its contacts. They
+    can no longer sign in until the partner is reactivated.
+
+## Import partner institutions
+
+**What it's for.** Bulk-load or refresh many partners from an Excel file, with
+strict header checking so a badly-filled template doesn't silently import zero
+rows.
+
+**Who it's for.** <span class="al-audience">RI manager / admin</span>
+
+**How it works.** You upload the file; headers are checked up front (missing or
+unknown columns flagged); rows are imported and a failing row is skipped without
+blocking the others. Re-importing an existing institution refreshes its filled-in
+fields. A summary reports creations, updates and skipped rows.
+
+**Use case.**
+> The office uploads 300 partners: 280 created, 20 updated, a header typo caught
+> before any save.
+
+
+## Import partner contacts
+
+**What it's for.** Bulk-load partner contacts from a CSV or Excel file, matching
+them to partners by email domain, with a preview before writing.
+
+**Who it's for.** <span class="al-audience">RI manager / admin</span>
+
+**How it works.** You upload the file, a preview is shown without writing anything,
+then you confirm. A failing row is skipped, the others continue. The summary
+reports creations, updates, skipped rows and email domains matching no known
+partner.
+
+**Use case.**
+> The office uploads a contact list: each one joins the right partner, and 3
+> unknown domains are flagged.
+

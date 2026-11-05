@@ -475,3 +475,84 @@ suivez également, ne vous est jamais présenté — quel que soit son statut.
 > Un coordinateur lit un avis en attente, publie les avis positifs et refuse un
 > avis inapproprié en indiquant un motif.
 
+## Aperçu côté étudiant
+
+**À quoi ça sert.** Montrer au bureau exactement ce qu'un étudiant voit sur la page
+d'un partenaire — places par catégorie, niveau et discipline, exigences, avis
+publiés — pour vérifier la fiche avant que les étudiants s'y fient.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** L'aperçu affiche la page étudiante du partenaire, avec les
+distributions de places réunies pour tous les types d'accords, filtrables par
+année, niveau et discipline. Sans profil étudiant, les filtres démarrent sur
+« Tous ».
+
+**Cas d'usage.**
+> Avant l'ouverture d'une campagne, le coordinateur prévisualise un partenaire
+> pour confirmer l'affichage des places et des exigences.
+
+
+## Masquer, archiver ou fusionner un partenaire
+
+**À quoi ça sert.** Retirer de la circulation un partenaire avec lequel vous ne
+travaillez plus, ou réunir deux fiches qui désignent le même établissement, sans
+jamais perdre l'historique des mobilités passées.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
+
+**Comment ça marche.** Trois gestes, du plus léger au plus définitif. **Masquer**
+retire le partenaire de la vue de vos étudiants tout en le gardant dans vos
+listes internes. **Archiver** le sort en plus de vos campagnes et de vos
+décomptes de destinations. **Fusionner** réunit deux fiches en une seule : les
+accords, contacts et mobilités de la fiche absorbée sont rattachés à celle que
+vous conservez.
+
+Dans les trois cas, rien n'est supprimé. Les mobilités déjà réalisées avec ce
+partenaire restent consultables dans les dossiers des étudiants concernés.
+
+**Cas d'usage.**
+> Après une fusion d'universités, le coordinateur réunit les deux fiches en une
+> seule ; les accords des deux se retrouvent au même endroit, sans ressaisie.
+
+!!! warning "Accès des contacts"
+    Archiver un partenaire révoque les accès que vous aviez ouverts à ses
+    contacts. Ils ne peuvent plus se connecter tant que le partenaire n'est pas
+    réactivé.
+
+## Importer des établissements partenaires
+
+**À quoi ça sert.** Charger ou actualiser en masse de nombreux partenaires depuis
+un fichier Excel, avec une vérification stricte de l'en-tête pour qu'un modèle mal
+rempli n'importe pas silencieusement zéro ligne.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
+
+**Comment ça marche.** Vous téléversez le fichier ; les en-têtes sont vérifiés en
+amont (colonnes manquantes ou inconnues signalées) ; les lignes sont importées et
+une ligne en erreur est ignorée sans bloquer les autres. Réimporter un
+établissement existant actualise ses champs renseignés. Un bilan indique les
+créations, mises à jour et lignes ignorées.
+
+**Cas d'usage.**
+> Le bureau téléverse 300 partenaires : 280 créés, 20 mis à jour, une faute de
+> frappe dans l'en-tête détectée avant tout enregistrement.
+
+
+## Importer des contacts partenaires
+
+**À quoi ça sert.** Charger en masse des contacts partenaires depuis un fichier
+CSV ou Excel, en les rattachant aux partenaires par domaine e-mail, avec un aperçu
+avant écriture.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
+
+**Comment ça marche.** Vous téléversez le fichier, un aperçu s'affiche sans rien
+écrire, puis vous confirmez. Une ligne en erreur est ignorée, les autres se
+poursuivent. Le bilan indique les créations, mises à jour, lignes ignorées et les
+domaines e-mail ne correspondant à aucun partenaire connu.
+
+**Cas d'usage.**
+> Le bureau téléverse une liste de contacts : chacun rejoint le bon partenaire, et
+> 3 domaines inconnus sont signalés.
+
