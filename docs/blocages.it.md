@@ -10,27 +10,31 @@ invece di indovinare.
 
 Tre cause possibili, in quest'ordine di frequenza.
 
-**La campagna non è aperta.** Solo lo stato **Aperta** accetta preferenze. Una campagna
-«Pronta» è visibile a voi, non ai vostri studenti.
+**La campagna è ancora in bozza.** Uno studente vede una campagna **Pronta**, **Aperta** o
+**Terminata** — mai una **Bozza**. Solo **Aperta** accetta preferenze.
 
-**Lo studente non fa parte del bacino.** I criteri della campagna — livello, percorso,
-campus, etichette, filtri — non lo trattengono. Aprite la campagna e guardate l'elenco dei
-partecipanti: se non c'è, aggiungetelo a mano.
+**Lo studente non fa parte del bacino.** I criteri della campagna — livello, anno
+accademico, etichetta di livello, campus, tag, filtri — non lo trattengono, oppure ha già
+un'assegnazione. Aprite la campagna e guardate l'elenco dei partecipanti: se non c'è,
+aggiungetelo a mano.
 
 **Lo studente non ha un profilo.** Senza pratica, non esiste per nessuna campagna.
 
 ### «Non riesco a convalidare le mie preferenze»
 
-Avete fissato un **minimo di preferenze** e non l'ha raggiunto. Il minimo blocca quanto il
-massimo.
+Avete fissato un **minimo di preferenze** e non l'ha raggiunto: il suo elenco non viene
+salvato. Il minimo blocca quanto il massimo. Il messaggio che riceve indica anche cosa manca
+per una destinazione — un punteggio linguistico, un documento.
 
 ### «Non trovo nessuna destinazione»
 
-Il bacino di destinazioni della campagna è vuoto, oppure nessun posto è collocato sugli
-accordi che trattiene. Verificate la matrice dei posti prima di cercare altrove: una
-destinazione senza posti non compare.
+Lo studente vede solo le destinazioni in cui un posto è **pianificato per lui**: la sua riga
+della matrice — anno, livello, etichetta di livello, periodo. Verificate la matrice dei posti
+prima di cercare altrove.
 
-Verificate anche il **periodo**: un posto esiste sempre per un periodo dato.
+Restano esclusi anche: i partner nascosti o archiviati, il suo stesso campus, e i partner i
+cui **filtri studenti** non corrispondono ai suoi — quando sia lo studente sia il partner
+hanno dei filtri, devono averne almeno uno in comune.
 
 ### «Non vedo più la mia classifica»
 
@@ -48,15 +52,19 @@ già collegato — sono due domande diverse.
 
 ### «Il turno di assegnazione si rifiuta di partire»
 
-È il blocco più frequente, ed è sempre spiegato: il resoconto **nomina** gli studenti che
-bloccano e la ragione.
+Il resoconto **nomina** gli studenti che bloccano e la ragione. Tre ragioni impediscono
+l'avvio:
 
 | Messaggio | Cosa fare |
 |---|---|
-| Lo studente non ha **percorso** | Collegatelo a un percorso. Se il vostro istituto non ne usa, createne uno per livello. |
-| Lo studente non ha **classifica** | Importate la classifica prima di rilanciare. Il turno non la fabbrica. |
-| Lo studente non ha **profilo** | Non c'è nulla da collocare. |
-| La sua **pratica è incompleta** | Completatela, o impostate la campagna su «segnalare» anziché «bloccare». |
+| **no student record** | Non c'è nulla da collocare. |
+| **no level track** | Collegatelo a un'etichetta di livello (*Custom level*). Se il vostro istituto non ne usa, createne una per livello. |
+| **no imported class rank** | Importate la classifica prima di rilanciare. Il turno non la produce. |
+
+Una **pratica incompleta** non impedisce l'avvio. Se la campagna è impostata su **Block the
+assignment until everything is in hand**, lo studente viene messo da parte e nominato nel
+resoconto; con **Show it, assign anyway (recommended)**, viene collocato e segnalato. Gli
+studenti che hanno risposto «non desidero partire» non bloccano mai.
 
 !!! tip "Il turno non è un gesto unico"
     Correggete ciò che blocca e rilanciatelo tutte le volte che serve.
@@ -67,35 +75,39 @@ Si elimina solo una campagna in **bozza**. Una campagna aperta porta già delle 
 
 ### «Non riesco a riaprire questa campagna»
 
-Si riapre solo una campagna **terminata**. E se la riaprite senza spostare la data di fine, si
-richiuderà già il mattino dopo.
+Si riapre solo una campagna **terminata**. Se la riaprite dopo l'ora di chiusura, **resta
+aperta** finché non la chiudete voi: la chiusura automatica non la richiude.
 
 ### «La mia campagna si è chiusa da sola»
 
-La sua data di fine è passata. È il funzionamento normale da settembre 2026: il giorno dopo
-l'ultimo giorno la campagna si chiude, le preferenze in bozza diventano preferenze e voi
-ricevete il bilancio. Riapritela e spostate la data se era prematuro.
+La sua ora di chiusura è passata: la campagna si chiude al minuto che avete fissato, le
+preferenze vengono congelate e voi ricevete il bilancio. Riapritela se era prematuro.
 
 ### «I miei contatori dei posti non dicono la stessa cosa dell'esportazione»
 
-Da settembre 2026, tutti i contatori dei posti riguardano solo le mobilità **in uscita** —
-quelle che inviate voi. I posti che i vostri partner aprono da loro non gonfiano più i vostri
-totali. Se una cifra vi sorprende, probabilmente era sbagliata prima.
+I contatori dei posti riguardano le mobilità **in uscita** — quelle che inviate voi. I posti
+che i vostri partner aprono da loro non gonfiano i vostri totali; l'accordo li mostra a
+parte, in un indicatore delle mobilità in entrata.
 
 ## Lato partner
 
 ### «Non riesco a sollecitare questo partner»
 
-Una sollecitazione ogni ventiquattro ore. Il pulsante si disattiva dopo, e vi dirà quando.
+Una sollecitazione ogni ventiquattro ore. Dopo, il pulsante si disattiva e il suo tooltip
+indica la data dell'ultima sollecitazione.
 
 ### «Non riesco a nominare questo studente su questo accordo»
 
-C'è già una nomina in corso su quell'accordo per lui. Ritiratela prima, se volete rifarla.
+Due cause. **Nessun contatto presso questo partner**: "No contact for this partner — add one
+to be able to nominate." Aggiungete un contatto sulla sua scheda. **Lo studente è già
+nominato**: si può nominare solo un'assegnazione non ancora nominata. Per ricominciare,
+ritirate la nomina, poi assegnatelo di nuovo.
 
 ### «Questo partner non compare nella mia campagna»
 
-Il bacino di destinazioni non lo trattiene: verificate i tipi di accordo, i periodi e i
-filtri di istituto della campagna. Verificate anche che non sia archiviato o nascosto.
+Il bacino di destinazioni non lo trattiene: verificate i tipi di accordo, i periodi, il
+livello, l'anno accademico, il tipo di mobilità e i filtri di istituto della campagna, e che
+l'accordo sia attivo. Verificate anche che non sia archiviato o nascosto.
 
 ### «Non riesco a rifiutare questa nomina»
 
@@ -105,19 +117,19 @@ Un rifiuto richiede un motivo. Sarà trasmesso all'istituto che vi ha nominato l
 
 ### «Questa schermata è in sola lettura»
 
-Il vostro ruolo vi dà il livello **Consultare** su questa sezione. Un banner lo dice in alto.
-La vostra schermata [I miei permessi](etablissement/parametres.md) vi dice esattamente cosa
-potete fare e su chi.
+Il vostro ruolo vi dà il livello **View** su questa sezione. Un banner lo indica in alto
+nella schermata. La vostra schermata [I miei permessi](etablissement/parametres.md) vi dice
+esattamente cosa potete fare e su chi.
 
 ### «Questo studente è fuori dal mio perimetro»
 
-Il vostro ruolo è limitato a una direzione, un campus o delle coorti che non lo coprono. Non è
-un guasto: è il perimetro definito dal vostro amministratore.
+Il vostro ruolo è limitato a un ambito di attività, una direzione, un campus o delle coorti
+che non lo coprono. Non è un guasto: è il perimetro definito dal vostro amministratore.
 
 ### «Una parte della mia selezione non è stata trattata»
 
 La vostra azione riguardava righe fuori dal vostro perimetro. Vengono messe da parte, e la
-schermata vi dice quali.
+schermata vi dice quante sono.
 
 ### «Non riesco ad accedere con l'account del mio istituto»
 
@@ -129,7 +141,8 @@ vostro account deve esistere già in AroundLink. Si veda
 
 ### «Non riesco a salvare questo punteggio linguistico»
 
-Un punteggio richiede sempre un giustificativo. Il file e la data sono obbligatori.
+Un punteggio richiede sempre un giustificativo. Quando è lo studente stesso a inserirlo,
+anche la data del test è obbligatoria.
 
 ### «Mi viene chiesto un motivo per modificare il learning agreement»
 

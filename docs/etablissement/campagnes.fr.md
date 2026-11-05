@@ -28,8 +28,8 @@ brouillon deviennent des vœux, vos étudiants sont prévenus et vous recevez le
 exactement ce que fait le bouton « Terminer ».
 
 Si la clôture vous paraît prématurée, le bouton « Rouvrir » rend à vos étudiants le droit
-de modifier leurs vœux. Pensez alors à repousser la date de fin : sans cela, la campagne se
-refermera dès le lendemain matin.
+de modifier leurs vœux. Rouverte après son heure de fin, elle reste ouverte jusqu'à ce que
+vous la clôturiez : la clôture automatique ne la referme pas.
 
 ![Liste des campagnes, avec le nombre de campagnes en brouillon, ouvertes et terminées](../assets/screenshots/campagnes-liste.png)
 
@@ -70,7 +70,7 @@ celui de vos étudiants, pas celui d'un serveur.
 
 Qui participe. Vous combinez autant de critères que nécessaire :
 
-- **Niveau d'études** et **parcours** — le parcours est le libellé que vous avez donné à vos
+- **Niveau d'études** et **libellé de niveau** — le nom que vous avez donné à vos
   promotions (« Aero 4 », « PGE 26-27 ») ;
 - **Campus** — ou tous ;
 - **Tags généraux** et **filtres étudiants** ;
@@ -142,7 +142,7 @@ dit avant, pas après.
 
 !!! note "L'étudiant ne voit que ce qui lui est réellement ouvert"
     Une destination n'apparaît dans sa liste, et ne peut être demandée, que si **sa ligne de
-    la matrice** — son année, son niveau, son parcours, son semestre — déclare des places.
+    la matrice** — son année, son niveau, son libellé de niveau, son semestre — déclare des places.
     Une destination déclarée mais **pleine** reste demandable ; une destination jamais
     ouverte à sa promotion ne l'est pas.
 
@@ -157,20 +157,20 @@ tourner — et pourquoi il refuse parfois de démarrer.
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
 **Comment ça marche.** Le moteur place chaque étudiant sur la case de **son propre
-parcours** — « Aero 4 » n'est pas « Aero 5 » — et il ne devine jamais. Trois conditions sont
+libellé de niveau** — « Aero 4 » n'est pas « Aero 5 » — et il ne devine jamais. Trois conditions sont
 donc exigées de chaque participant :
 
 | Condition | Pourquoi |
 |---|---|
 | **Un profil** | Sans dossier, il n'y a rien à placer. |
-| **Un parcours** | C'est lui qui désigne la case. Sans parcours, aucune case ne lui correspond. |
+| **Un libellé de niveau** | C'est lui qui désigne la case. Sans libellé, aucune case ne lui correspond. |
 | **Un classement importé** | Le tour est un **ordre** : il sert le premier classé, et ce qui reste va au suivant. Sans rang, l'étudiant n'a pas de place dans cet ordre. |
 
-Un participant à qui il manque l'une des trois est **écarté et nommé** dans le compte rendu,
-avec la raison. Le tour ne part pas en silence.
+S'il manque l'une des trois à un participant, **le tour refuse de démarrer** et nomme les
+étudiants concernés, avec la raison. Il ne part jamais en silence.
 
-!!! warning "Le parcours est exigé même si vous n'en utilisez pas"
-    Si votre établissement ne distingue pas de promotions, donnez-vous un parcours par
+!!! warning "Le libellé de niveau est exigé même si vous n'en utilisez pas"
+    Si votre établissement ne distingue pas de promotions, donnez-vous un libellé par
     niveau utilisé — « Licence », « Master ». Un seul mécanisme porte alors tous les cas, et
     rien n'est jamais déduit à votre place.
 
@@ -178,9 +178,10 @@ avec la raison. Le tour ne part pas en silence.
     Le tour ne fabrique pas de classement. Importez-le d'abord ; sinon les étudiants sans
     rang seraient servis en dernier, ce qui serait une décision que personne n'a prise.
 
-**Rien de tout cela ne vous contraint à la main.** Vous restez libre d'affecter qui vous
-voulez, où vous voulez, classé ou non : c'est votre décision, et le moteur ne s'y oppose
-pas. Ces trois conditions ne valent que pour le tour automatique.
+**Ces trois conditions ne valent que pour le tour automatique.** À la main, vous restez
+libre d'affecter qui vous voulez, où vous voulez, classé ou non. Deux limites seulement : un
+étudiant déjà nominé ne se réaffecte pas, et si la campagne est réglée sur **Block the
+assignment until everything is in hand**, le dossier complet est exigé à la main aussi.
 
 Un tour peut être relancé autant de fois que nécessaire — ce n'est pas un geste unique.
 
@@ -225,12 +226,10 @@ pas pu placer, et **qui** il a laissé de côté.
 été servis et lesquels ont été écartés. Les étudiants écartés sont **nommés**, avec la
 raison — un simple total vous obligerait à parcourir toute la promotion pour les retrouver.
 
-Quatre raisons peuvent écarter un étudiant :
-
-- il n'a **pas de profil** ;
-- son niveau n'a **aucun parcours** rattaché ;
-- il n'a **pas de classement** ;
-- son **dossier est incomplet**.
+Un profil, un libellé de niveau et un classement manquants empêchent le tour de démarrer
+(voir ci-dessus). Pendant le tour, un étudiant est mis de côté quand **son dossier est
+incomplet** et que la campagne est réglée sur **Block the assignment until everything is in
+hand** : le moteur passe alors à son vœu suivant, ou le laisse sans place.
 
 Un tour qui ne place personne le dit maintenant clairement, au lieu de s'annoncer terminé.
 

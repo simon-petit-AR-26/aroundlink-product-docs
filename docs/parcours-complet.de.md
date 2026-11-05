@@ -4,7 +4,7 @@ Diese Seite verfolgt **eine ganze Mobilität**, von der ersten Einstellung bis z
 Transcript, und nennt bei jeder Etappe **wer handelt** und **was die nächste auslöst**.
 
 Der Rest der Dokumentation beschreibt die Bildschirme einzeln. Diese beschreibt die Abfolge —
-und genau die fehlt meist, wenn man sucht, warum ein Vorgang nicht weitergeht.
+und genau die fehlt oft, wenn man sucht, warum eine Akte nicht weitergeht.
 
 ## Vor jeder Kampagne: das Fundament
 
@@ -14,11 +14,11 @@ Nichts von dem, was folgt, funktioniert, wenn diese vier Dinge fehlen.
 |---|---|---|
 | **Ihre Partner** und deren **Abkommen** | Koordination | Kein Ziel zum Anbieten |
 | **Plätze** in der Matrix | Koordination | Die Ziele bestehen, öffnen aber nichts |
-| **Ihre Studiengänge** (einer je Jahrgang oder je Stufe) | Administration, in den Einstellungen | Die Zuteilungsrunde startet nicht |
-| **Ihre Mobilitätszeiträume** | Administration | Die Plätze haben keine Spalte |
+| **Ihre Studiengänge** (*Custom label*: einer je Jahrgang oder einer je Stufe), **jeder Person zugeordnet** | Administration, unter **Settings ▸ Academic levels** | Die Zuteilungsrunde startet nicht |
+| **Ihre Mobilitätszeiträume** | Administration | Die Plätze haben keine Spalte, in der sie stehen können |
 
 !!! tip "Der häufigste Fehlstart"
-    Eine Kampagne eröffnen, bevor Plätze eingetragen sind. Die Kampagne öffnet, die
+    Eine Kampagne anlegen, bevor Plätze eingetragen sind. Die Kampagne öffnet, die
     Studierenden sehen sie und finden kein einziges Ziel. Prüfen Sie die Matrix vor dem
     Öffnen.
 
@@ -31,24 +31,27 @@ Zahl der Wünsche, die geforderten Dokumente und die wenigen Optionen, die sich 
 mehr ändern lassen. Siehe
 [Eine Kampagne einrichten, Einstellung für Einstellung](etablissement/campagnes.md).
 
-Die Kampagne geht von **Entwurf** über **Bereit** zu **Geöffnet**.
+Die Kampagne geht von **Entwurf** über **Bereit** zu **Geöffnet**. Eine Kampagne im Zustand
+**Bereit** öffnet sich zu ihrem Startzeitpunkt von selbst, und die Studierenden werden dann
+eingeladen; eine Kampagne, die im **Entwurf** bleibt, öffnet sich nie von selbst.
 
 **Was das Nächste auslöst:** nur der Zustand **Geöffnet** nimmt Wünsche an. Eine Kampagne im
-Zustand „Bereit" kann man ansehen, nicht befüllen.
+Zustand „Bereit" ist für die Studierenden bereits sichtbar, lässt sich aber nicht befüllen.
 
 ## 2. Die Studierenden geben ihre Wünsche an
 
 **Wer handelt:** die Studierenden.
 
-Sie entdecken die Ziele, merken sich einige als Favoriten und geben ihre Wünsche auf
-derselben Seite an, auf der sie sie entdecken. Sie ordnen sie nach Priorität.
+Sie entdecken die Ziele, merken sich einige als Favoriten vor und übernehmen sie in ihre
+Wünsche, nach Präferenz geordnet. Sie sehen nur Ziele, für die ein Platz für sie eingeplant
+ist. Solange die Kampagne geöffnet ist, können sie ihre Liste ändern.
 
-Haben Sie ein **Mindestmaß an Wünschen** festgelegt, können sie erst abschicken, wenn sie es
-erreichen. Haben Sie die Antwort „Ich möchte nicht gehen" freigeschaltet, können sie auch das
-erklären — ohne sich rechtfertigen zu müssen.
+Haben Sie ein **Mindestmaß an Wünschen** festgelegt, wird ihre Liste erst gespeichert, wenn
+sie es erreichen. Haben Sie die Antwort „Ich möchte nicht gehen" freigeschaltet, können sie
+auch diese geben — ohne sich rechtfertigen zu müssen.
 
-**Was das Nächste auslöst:** der Abschluss der Kampagne, zum Enddatum oder durch Sie. Wünsche
-im Entwurf werden dann zu echten Wünschen.
+**Was das Nächste auslöst:** der Abschluss der Kampagne, zu ihrem Schlusszeitpunkt oder durch
+Sie. Ihre Wünsche werden dann eingefroren.
 
 ## 3. Die Zuteilung
 
@@ -56,24 +59,29 @@ im Entwurf werden dann zu echten Wünschen.
 
 Zwei Wege, die nebeneinander bestehen.
 
-**Die automatische Runde** bedient die Studierenden in der Reihenfolge des Rankings: die
-erstplatzierte Person erhält ihren besten verfügbaren Wunsch, der Rest geht an die nächste.
-Sie verlangt von jeder teilnehmenden Person ein Profil, einen Studiengang und ein
-importiertes Ranking — siehe [Was das Matching verlangt](etablissement/campagnes.md). Sie
-lässt sich beliebig oft erneut starten.
+**Die automatische Runde** (**Match all students**) bedient die Studierenden in der
+Reihenfolge des Rankings: die erstplatzierte Person erhält ihren besten verfügbaren Wunsch,
+der Rest geht an die nächste. Sie verlangt von jeder teilnehmenden Person ein Profil, einen
+Studiengang und ein importiertes Ranking — siehe
+[Was das Matching verlangt](etablissement/campagnes.md). Sie lässt sich beliebig oft erneut
+starten. Sie erzeugt **Vorschläge des Systems**, die Sie einzeln bestätigen.
 
-**Die Zuteilung von Hand** ist durch nichts eingeschränkt. Sie setzen, wen Sie wollen, wohin
-Sie wollen, mit Ranking oder ohne.
+**Die Zuteilung von Hand** lässt Sie setzen, wen Sie wollen, wohin Sie wollen, mit Ranking
+oder ohne — mit drei Einschränkungen: ein Zeitraum ist Pflicht, eine bereits nominierte
+Person lässt sich nicht neu zuteilen, und verlangt die Kampagne eine vollständige Akte, gilt
+das auch von Hand.
 
-**Was das Nächste auslöst:** eine Zuteilung besteht.
+**Was das Nächste auslöst:** **Send proposals** schickt die bestätigten Vorschläge an die
+Studierenden.
 
 ## 4. Die Studierenden nehmen an — oder nicht
 
 **Wer handelt:** die Studierenden, außer Sie haben die direkte Zuteilung gewählt.
 
-Sie erhalten ihr Angebot und nehmen es an oder lehnen es ab. Haben Sie die Kampagne auf
-**direkte Zuteilung** gestellt, entfällt dieser Schritt: Ihre Entscheidung schafft die
-Zuteilung.
+Sie erhalten ihren Vorschlag und nehmen ihn an oder lehnen ihn ab; eine E-Mail bestätigt
+ihre Antwort. Eine Ablehnung schließt auch ihre übrigen Wünsche in der Kampagne. Haben Sie
+die Kampagne auf **direkte Zuteilung** gestellt, entfällt dieser Schritt: der Versand schafft
+die Zuteilung.
 
 **Was das Nächste auslöst:** die Annahme.
 
@@ -81,16 +89,20 @@ Zuteilung.
 
 **Wer handelt:** die Koordination, dann die aufnehmende Hochschule.
 
-Sie nominieren die Person bei ihrem Ziel. Der Partner erhält die Information und antwortet —
-über die Plattform, das EWP-Netzwerk, per E-Mail oder telefonisch. Sie erfassen die Antwort
-und geben an, über welchen Kanal sie kam.
+Sie nominieren die Person bei ihrem Ziel; dafür braucht es einen Kontakt beim Partner. Der
+Partner antwortet über die Plattform oder das EWP-Netzwerk, und seine Antwort wird
+automatisch erfasst. Bestätigt er per E-Mail oder telefonisch, erfassen Sie das mit
+**Confirm manually** und geben den Kanal an.
 
-Solange keine Antwort vorliegt, können Sie **erinnern** (einmal in vierundzwanzig Stunden)
-oder die Nominierung **zurückziehen**, womit die Person für ein anderes Ziel frei wird.
+Solange keine Antwort vorliegt, können Sie ihn **erinnern** (einmal alle vierundzwanzig
+Stunden) oder die Nominierung **zurückziehen**, womit die Person für ein anderes Ziel frei
+wird.
 
 Eine Ablehnung trägt immer einen Grund, der an die nominierende Hochschule übermittelt wird.
 
-**Was das Nächste auslöst:** die Bestätigung des Partners.
+**Was das Nächste auslöst:** die Bestätigung des Partners. Ist ein
+[Mobilitätspfad](etablissement/parcours.md) mit der Kampagne verknüpft, tritt die Person ihm
+in diesem Moment bei: er liefert die Aufgaben des nächsten Schritts.
 
 ## 6. Die Akte füllt sich
 
@@ -100,8 +112,8 @@ Vertragsdokumente, Sprachnachweise, Learning Agreement. Jedes erwartete Stück i
 aufgeführt, und die Studierenden sehen, was ihnen fehlt. Säumige erinnern Sie über die
 Auswahlleiste Ihrer Liste, ohne eine eigene Liste zu führen.
 
-Je nach Einstellung der Kampagne **blockiert** eine unvollständige Akte die Zuteilung oder
-wird lediglich **angezeigt**.
+Eine unvollständige Akte zählt ab der Zuteilung (Schritt 3): je nach Einstellung der
+Kampagne **blockiert** sie diese oder wird lediglich **gekennzeichnet**.
 
 **Was das Nächste auslöst:** die Akte ist vollständig und die Termine rücken näher.
 
@@ -115,14 +127,16 @@ eines Bestandteils verlangt einen Grund. Die Termine des Zeitraums erscheinen im
 
 ## 8. Die Rückkehr
 
-**Wer handelt:** die aufnehmende Hochschule, dann die Studierenden.
+**Wer handelt:** die Studierenden, dann ihre Hochschule.
 
-Die aufnehmende Hochschule trägt die Noten in ihrer eigenen Skala ein und stellt das
-**Transcript** aus; die Person wird benachrichtigt und findet es in ihrer Akte.
+Die Person trägt für jeden Kurs ihres Learning Agreements die erzielte Note ein, wählt das
+Notensystem und kann das offizielle **Transcript** der aufnehmenden Hochschule anhängen. Ihre
+Hochschule gibt es frei oder verlangt eine Korrektur.
 
-Die Studierenden geben ihre **Rückmeldung** zur aufnehmenden Hochschule ab — und können die
-Veröffentlichung ihrer Fotos erlauben. Wer nicht geantwortet hat, wird wie bei den Dokumenten
-erinnert.
+Die Studierenden geben außerdem ihre **Rückmeldung** zur aufnehmenden Hochschule ab — und
+können die Veröffentlichung ihrer Fotos erlauben. Rückmeldungen werden in Ihren
+[Freigaben](etablissement/validations.md) moderiert, bevor sie veröffentlicht werden. Wer
+nicht geantwortet hat, wird wie bei den Dokumenten erinnert.
 
 **Was den Kreis schließt:** die Rückmeldung fließt in die Partnerseite ein, die die nächsten
 Studierenden lesen, bevor sie ihre Wünsche angeben.

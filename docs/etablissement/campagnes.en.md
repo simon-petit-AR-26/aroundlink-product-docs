@@ -25,8 +25,8 @@ campaign moves to Finished with nobody clicking: wishes still in draft become wi
 students are notified and you receive the summary — exactly what the "Finish" button does.
 
 If that closing feels premature, the "Reopen" button gives your students back the right to
-change their wishes. Remember to push the end date back: without that, the campaign closes
-again the next morning.
+change their wishes. Reopened after its closing time, it stays open until you close it: the
+automatic closing does not close it again.
 
 ![Campaign list, showing how many campaigns are draft, open and finished](../assets/screenshots/campagnes-liste.png)
 
@@ -67,7 +67,7 @@ not a server's.
 
 Who takes part. Combine as many criteria as you need:
 
-- **Academic level** and **track** — the track is the label you gave your cohorts
+- **Academic level** and **level label** — the name you gave your cohorts
   ("Aero 4", "MSc 26-27");
 - **Campus** — or all of them;
 - **General tags** and **student filters**;
@@ -136,7 +136,7 @@ beforehand, not after.
 
 !!! note "A student only sees what is genuinely open to them"
     A destination appears in their list, and can be wished for, only if **their row of the
-    matrix** — their year, their level, their track, their semester — declares places. A
+    matrix** — their year, their level, their level label, their semester — declares places. A
     destination that is declared but **full** can still be wished for; one never opened to
     their promotion cannot.
 
@@ -150,21 +150,21 @@ sometimes refuses to start.
 
 **Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
-**How it works.** The engine seats each student on the cell of **their own track** — "Aero
+**How it works.** The engine seats each student on the cell of **their own level label** — "Aero
 4" is not "Aero 5" — and it never guesses. Three conditions are therefore required of every
 participant:
 
 | Condition | Why |
 |---|---|
 | **A profile** | With no file, there is nothing to place. |
-| **A track** | It is what designates the cell. With no track, no cell matches them. |
+| **A level label** | It is what designates the cell. With no label, no cell matches them. |
 | **An imported ranking** | The round is an **order**: it serves the first-ranked, and what is left goes to the next. With no rank, a student has no position in that order. |
 
-A participant missing any of the three is **set aside and named** in the report, with the
-reason. The round does not run in silence.
+If a participant is missing any of the three, **the round refuses to start** and names the
+students concerned, with the reason. It never runs in silence.
 
-!!! warning "A track is required even if you do not use them"
-    If your institution does not distinguish cohorts, give yourself one track per level you
+!!! warning "A level label is required even if you do not use them"
+    If your institution does not distinguish cohorts, give yourself one label per level you
     use — "Bachelor", "Master". A single mechanism then carries every case, and nothing is
     ever inferred on your behalf.
 
@@ -172,9 +172,10 @@ reason. The round does not run in silence.
     The round does not produce a ranking. Import it first; otherwise unranked students would
     be served last, which would be a decision nobody took.
 
-**None of this constrains you by hand.** You remain free to place whoever you want, wherever
-you want, ranked or not: that is your call, and the engine does not stand in the way. These
-three conditions apply to the automatic round only.
+**These three conditions apply to the automatic round only.** By hand, you remain free to
+place whoever you want, wherever you want, ranked or not. Only two limits: a student already
+nominated cannot be reassigned, and if the campaign is set to **Block the assignment until
+everything is in hand**, the complete file is required by hand too.
 
 A round can be re-run as often as needed — it is not a one-shot.
 
@@ -217,12 +218,10 @@ and **who** it left aside.
 and which ones were left out. Skipped students are **named**, with the reason — a bare total
 would send you through the whole cohort to find them.
 
-Four reasons can leave a student aside:
-
-- they have **no profile**;
-- their level has **no track** attached;
-- they have **no ranking**;
-- their **file is incomplete**.
+A missing profile, level label or ranking prevents the round from starting (see above).
+During the round, a student is set aside when **their file is incomplete** and the campaign
+is set to **Block the assignment until everything is in hand**: the engine then moves to
+their next wish, or leaves them without a place.
 
 A round that places nobody now says so plainly, instead of reporting itself as completed.
 
