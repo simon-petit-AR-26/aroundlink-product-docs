@@ -477,82 +477,100 @@ suivez également, ne vous est jamais présenté — quel que soit son statut.
 
 ## Aperçu côté étudiant
 
-**À quoi ça sert.** Montrer au bureau exactement ce qu'un étudiant voit sur la page
-d'un partenaire — places par catégorie, niveau et discipline, exigences, avis
-publiés — pour vérifier la fiche avant que les étudiants s'y fient.
+**À quoi ça sert.** Voir exactement ce qu'un étudiant sortant voit d'un partenaire — places,
+exigences, liens, documents, galerie, carte, avis — pour vérifier la fiche avant qu'il s'y
+fie.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** L'aperçu affiche la page étudiante du partenaire, avec les
-distributions de places réunies pour tous les types d'accords, filtrables par
-année, niveau et discipline. Sans profil étudiant, les filtres démarrent sur
-« Tous ».
+**Comment ça marche.** Sur la fiche du partenaire, le menu **Partner actions** (« … »)
+propose **Preview as student**. Un volet s'ouvre, en lecture seule, avec la page telle que
+l'étudiant la lit — sans le cœur des favoris. Les nombres de places n'y figurent que si vous
+avez choisi de les montrer à vos étudiants.
+
+Votre propre page publique se prévisualise de la même façon depuis **My Institution**.
 
 **Cas d'usage.**
-> Avant l'ouverture d'une campagne, le coordinateur prévisualise un partenaire
-> pour confirmer l'affichage des places et des exigences.
+> Avant l'ouverture d'une campagne, le coordinateur prévisualise un partenaire pour
+> confirmer l'affichage des places et des exigences.
 
 
 ## Masquer, archiver ou fusionner un partenaire
 
-**À quoi ça sert.** Retirer de la circulation un partenaire avec lequel vous ne
-travaillez plus, ou réunir deux fiches qui désignent le même établissement, sans
-jamais perdre l'historique des mobilités passées.
+**À quoi ça sert.** Retirer de la circulation un partenaire avec lequel vous ne travaillez
+plus, ou réunir deux fiches qui désignent le même établissement, sans perdre l'historique
+des mobilités passées.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Trois gestes, du plus léger au plus définitif. **Masquer**
-retire le partenaire de la vue de vos étudiants tout en le gardant dans vos
-listes internes. **Archiver** le sort en plus de vos campagnes et de vos
-décomptes de destinations. **Fusionner** réunit deux fiches en une seule : les
-accords, contacts et mobilités de la fiche absorbée sont rattachés à celle que
-vous conservez.
+**Comment ça marche.** Quatre gestes, depuis le menu **Partner actions** de la fiche, du
+plus léger au plus définitif :
 
-Dans les trois cas, rien n'est supprimé. Les mobilités déjà réalisées avec ce
-partenaire restent consultables dans les dossiers des étudiants concernés.
+| Geste | Ce qu'il fait |
+|---|---|
+| **Hide from students** | le partenaire disparaît de **Find my Exchange** et ne peut plus être ajouté à une campagne ni aux vœux d'un étudiant ; il reste pleinement actif côté mobilité. **Make visible** l'annule |
+| **Archive** | il quitte vos écrans, vos menus, la recherche des étudiants, les campagnes et les vœux — avec ses accords. Les mobilités passées restent consultables ; **Restore** le ramène |
+| **Merge duplicate** | ses contacts, son code interne et ses tags passent sur la fiche que vous gardez. **Les accords et les mobilités ne sont pas déplacés** : le doublon est supprimé s'il n'en a pas, archivé sinon, et le message le dit |
+| **Delete** | il part dans la **Trash** de la page Institutions, d'où il se restaure. Un partenaire qui a des accords ne se supprime pas : l'écran propose de l'archiver |
+
+Archiver un partenaire qui a des accords en cours ou des étudiants en mobilité affiche un
+avertissement, sans bloquer : les mobilités en cours continuent. Votre propre campus ne
+peut être ni masqué, ni archivé, ni fusionné, ni supprimé.
+
+Sur la liste **Institutions**, les mêmes gestes existent en lot — **Hide for your
+students**, **Archive**, **Delete** — et le menu « … » ouvre **View archived institutions**
+et la **Trash**.
 
 **Cas d'usage.**
-> Après une fusion d'universités, le coordinateur réunit les deux fiches en une
-> seule ; les accords des deux se retrouvent au même endroit, sans ressaisie.
+> Un partenaire a été créé deux fois. Le coordinateur ouvre la bonne fiche, choisit **Merge
+> duplicate** et désigne le doublon : ses deux contacts passent sur la bonne fiche, et le
+> doublon, sans accord, est supprimé.
 
-!!! warning "Accès des contacts"
-    Archiver un partenaire révoque les accès que vous aviez ouverts à ses
-    contacts. Ils ne peuvent plus se connecter tant que le partenaire n'est pas
-    réactivé.
 
 ## Importer des établissements partenaires
 
-**À quoi ça sert.** Charger ou actualiser en masse de nombreux partenaires depuis
-un fichier Excel, avec une vérification stricte de l'en-tête pour qu'un modèle mal
-rempli n'importe pas silencieusement zéro ligne.
+**À quoi ça sert.** Charger ou actualiser en masse vos partenaires depuis un fichier, sans
+ressaisir ce qu'AroundLink sait déjà d'eux.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
 
-**Comment ça marche.** Vous téléversez le fichier ; les en-têtes sont vérifiés en
-amont (colonnes manquantes ou inconnues signalées) ; les lignes sont importées et
-une ligne en erreur est ignorée sans bloquer les autres. Réimporter un
-établissement existant actualise ses champs renseignés. Un bilan indique les
-créations, mises à jour et lignes ignorées.
+**Comment ça marche.** **Paramètres ▸ Integrations ▸ Import Institution**, en trois temps :
+
+1. **Download template**, puis remplissez-le. Seule la colonne **SCHAC** (le domaine de
+   l'établissement) est obligatoire : c'est elle qui l'identifie. Nom, pays, ville et
+   identifiants viennent du registre mondial ROR. Colonnes facultatives : adresse postale,
+   e-mail, site, accréditations, code interne, tags, filtres étudiants.
+2. **Upload a file** — .xlsx, .xls ou .csv, 5 Mo et 20 000 lignes au plus. Un aperçu
+   montre chaque ligne — nouvelle ou mise à jour d'un partenaire existant — avec ses
+   erreurs, que vous corrigez dans l'aperçu même.
+3. **Import N valid rows**. Une ligne en erreur n'empêche pas les autres.
+
+Une cellule vide n'efface jamais une donnée existante. Les domaines de messagerie
+personnelle (gmail…) sont refusés, comme un tag ou une accréditation inconnus. Relancer
+l'import est sans risque.
 
 **Cas d'usage.**
-> Le bureau téléverse 300 partenaires : 280 créés, 20 mis à jour, une faute de
-> frappe dans l'en-tête détectée avant tout enregistrement.
+> Le bureau charge 300 partenaires avec leur seul domaine et leur code interne : l'aperçu
+> en annonce 280 nouveaux et 20 mises à jour, deux lignes à corriger, puis l'import part.
 
 
 ## Importer des contacts partenaires
 
-**À quoi ça sert.** Charger en masse des contacts partenaires depuis un fichier
-CSV ou Excel, en les rattachant aux partenaires par domaine e-mail, avec un aperçu
-avant écriture.
+**À quoi ça sert.** Charger en masse les contacts de vos partenaires depuis un fichier,
+avec un aperçu avant écriture.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
 
-**Comment ça marche.** Vous téléversez le fichier, un aperçu s'affiche sans rien
-écrire, puis vous confirmez. Une ligne en erreur est ignorée, les autres se
-poursuivent. Le bilan indique les créations, mises à jour, lignes ignorées et les
-domaines e-mail ne correspondant à aucun partenaire connu.
+**Comment ça marche.** **Paramètres ▸ Integrations ▸ Import Contacts**. Deux colonnes sont
+obligatoires : **institution_domain** — le domaine SCHAC ou l'identifiant EWP de
+l'établissement du contact — et **email**. Facultatives : prénom, nom, téléphone, fonction,
+contact principal.
+
+L'aperçu signale chaque ligne dont l'établissement est introuvable, sans rien écrire ; vous
+confirmez ensuite. Réimporter le même e-mail pour le même partenaire met le contact à jour,
+et désigner un nouveau contact principal retire ce rôle au précédent. Une notification
+confirme la fin de l'import.
 
 **Cas d'usage.**
-> Le bureau téléverse une liste de contacts : chacun rejoint le bon partenaire, et
-> 3 domaines inconnus sont signalés.
-
+> Le bureau charge 60 contacts : l'aperçu signale deux domaines mal saisis, corrigés avant
+> l'import ; chaque contact rejoint son partenaire.

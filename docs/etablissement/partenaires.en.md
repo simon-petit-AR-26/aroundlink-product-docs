@@ -450,77 +450,97 @@ to you, whatever its status.
 
 ## Preview as student
 
-**What it's for.** Show the office exactly what a student sees on a partner's page
-— places by category, level and field, requirements, published reviews — to verify
-the file before students rely on it.
+**What it's for.** See exactly what an outgoing student sees of a partner — places,
+requirements, links, documents, gallery, map, reviews — to check the page before they rely
+on it.
 
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
-**How it works.** The preview displays the partner's student page, with place
-distributions gathered across all agreement types, filterable by year, level and
-field. With no student profile, filters start on "All".
+**How it works.** On the partner's page, the **Partner actions** menu ("…") offers
+**Preview as student**. A read-only panel opens with the page as the student reads it —
+without the favourite heart. Place counts only appear if you have chosen to show them to
+your students.
+
+Your own public page can be previewed the same way from **My Institution**.
 
 **Use case.**
-> Before a campaign opens, the coordinator previews a partner to confirm the
-> display of places and requirements.
+> Before a campaign opens, the coordinator previews a partner to confirm how places and
+> requirements are shown.
 
 
 ## Hide, archive or merge a partner
 
-**What it's for.** Take a partner you no longer work with out of circulation, or
-bring together two records pointing at the same institution, without ever losing
-the history of past mobilities.
+**What it's for.** Take out of circulation a partner you no longer work with, or bring
+together two records that describe the same institution, without losing past mobilities.
 
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
-**How it works.** Three moves, from the lightest to the most final. **Hiding**
-removes the partner from your students' view while keeping it in your internal
-lists. **Archiving** also takes it out of your campaigns and destination counts.
-**Merging** brings two records into one: the agreements, contacts and mobilities
-of the absorbed record are attached to the one you keep.
+**How it works.** Four actions, from the record's **Partner actions** menu, from lightest
+to most final:
 
-In all three cases, nothing is deleted. Mobilities already completed with that
-partner remain visible in the files of the students concerned.
+| Action | What it does |
+|---|---|
+| **Hide from students** | the partner disappears from **Find my Exchange** and can no longer be added to a campaign or to a student's wishes; it stays fully active on the mobility side. **Make visible** undoes it |
+| **Archive** | it leaves your screens, menus, the students' search, campaigns and wishes — with its agreements. Past mobilities stay available; **Restore** brings it back |
+| **Merge duplicate** | its contacts, internal code and tags move to the record you keep. **Agreements and mobilities are not moved**: the duplicate is deleted if it has none, archived otherwise, and the message says which |
+| **Delete** | it goes to the **Trash** on the Institutions page, where it can be restored. A partner with agreements cannot be deleted: the screen offers to archive it instead |
+
+Archiving a partner with running agreements or students on mobility shows a warning without
+blocking: running mobilities carry on. Your own campus can be neither hidden, archived,
+merged nor deleted.
+
+On the **Institutions** list, the same actions exist in bulk — **Hide for your students**,
+**Archive**, **Delete** — and the "…" menu opens **View archived institutions** and the
+**Trash**.
 
 **Use case.**
-> After a university merger, the coordinator brings the two records into one; the
-> agreements from both end up in the same place, with no re-entry.
+> A partner was created twice. The coordinator opens the right record, chooses **Merge
+> duplicate** and picks the duplicate: its two contacts move to the right record, and the
+> duplicate, with no agreement, is deleted.
 
-!!! warning "Contact access"
-    Archiving a partner revokes the access you had opened for its contacts. They
-    can no longer sign in until the partner is reactivated.
 
 ## Import partner institutions
 
-**What it's for.** Bulk-load or refresh many partners from an Excel file, with
-strict header checking so a badly-filled template doesn't silently import zero
-rows.
+**What it's for.** Load or refresh your partners in bulk from a file, without retyping what
+AroundLink already knows about them.
 
-**Who it's for.** <span class="al-audience">RI manager / admin</span>
+**Who it's for.** <span class="al-audience">IRO manager / admin</span>
 
-**How it works.** You upload the file; headers are checked up front (missing or
-unknown columns flagged); rows are imported and a failing row is skipped without
-blocking the others. Re-importing an existing institution refreshes its filled-in
-fields. A summary reports creations, updates and skipped rows.
+**How it works.** **Settings ▸ Integrations ▸ Import Institution**, in three steps:
+
+1. **Download template**, then fill it in. Only the **SCHAC** column (the institution's
+   domain) is required: it identifies the institution. Name, country, city and identifiers
+   come from the ROR world registry. Optional columns: postal address, email, website,
+   accreditations, internal code, tags, student filters.
+2. **Upload a file** — .xlsx, .xls or .csv, at most 5 MB and 20,000 rows. A preview shows
+   each row — new, or an update of an existing partner — with its errors, which you fix in
+   the preview itself.
+3. **Import N valid rows**. A row in error does not hold up the others.
+
+An empty cell never clears existing data. Personal mail domains (gmail…) are refused, as is
+an unknown tag or accreditation. Running the import again is safe.
 
 **Use case.**
-> The office uploads 300 partners: 280 created, 20 updated, a header typo caught
-> before any save.
+> The office loads 300 partners with only their domain and internal code: the preview
+> announces 280 new and 20 updates, two rows to fix, then the import runs.
 
 
 ## Import partner contacts
 
-**What it's for.** Bulk-load partner contacts from a CSV or Excel file, matching
-them to partners by email domain, with a preview before writing.
+**What it's for.** Load your partners' contacts in bulk from a file, with a preview before
+anything is written.
 
-**Who it's for.** <span class="al-audience">RI manager / admin</span>
+**Who it's for.** <span class="al-audience">IRO manager / admin</span>
 
-**How it works.** You upload the file, a preview is shown without writing anything,
-then you confirm. A failing row is skipped, the others continue. The summary
-reports creations, updates, skipped rows and email domains matching no known
-partner.
+**How it works.** **Settings ▸ Integrations ▸ Import Contacts**. Two columns are required:
+**institution_domain** — the SCHAC domain or EWP identifier of the contact's institution —
+and **email**. Optional: first name, last name, phone, position, main contact.
+
+The preview flags every row whose institution cannot be found, without writing anything;
+you then confirm. Re-importing the same email for the same partner updates the contact, and
+naming a new main contact removes that role from the previous one. A notification confirms
+when the import is done.
 
 **Use case.**
-> The office uploads a contact list: each one joins the right partner, and 3
-> unknown domains are flagged.
-
+> The office loads 60 contacts: the preview flags two mistyped domains, fixed before the
+> import; each contact joins their partner.
