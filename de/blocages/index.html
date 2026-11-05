@@ -2826,20 +2826,25 @@ Bildschirm verweigert, statt zu raten.</p>
 <h2 id="auf-seiten-der-studierenden">Auf Seiten der Studierenden<a class="headerlink" href="#auf-seiten-der-studierenden" title="Permanent link">¶</a></h2>
 <h3 id="ich-sehe-keine-kampagne">„Ich sehe keine Kampagne"<a class="headerlink" href="#ich-sehe-keine-kampagne" title="Permanent link">¶</a></h3>
 <p>Drei mögliche Ursachen, nach Häufigkeit geordnet.</p>
-<p><strong>Die Kampagne ist nicht geöffnet.</strong> Nur der Zustand <strong>Geöffnet</strong> nimmt Wünsche an. Eine
-Kampagne im Zustand „Bereit" sehen Sie, Ihre Studierenden nicht.</p>
+<p><strong>Die Kampagne ist noch ein Entwurf.</strong> Studierende sehen eine Kampagne im Zustand
+<strong>Bereit</strong>, <strong>Geöffnet</strong> oder <strong>Beendet</strong> — niemals einen <strong>Entwurf</strong>. Nur <strong>Geöffnet</strong> nimmt
+Wünsche an.</p>
 <p><strong>Die Person gehört nicht zum Teilnehmerkreis.</strong> Die Kriterien der Kampagne — Stufe,
-Studiengang, Campus, Etiketten, Filter — erfassen sie nicht. Öffnen Sie die Kampagne und
-sehen Sie sich die Teilnehmerliste an: fehlt sie, fügen Sie sie von Hand hinzu.</p>
+Studienjahr, Studiengang, Campus, Etiketten, Filter — erfassen sie nicht, oder sie hat
+bereits eine Zuteilung. Öffnen Sie die Kampagne und sehen Sie sich die Teilnehmerliste an:
+fehlt sie, fügen Sie sie von Hand hinzu.</p>
 <p><strong>Die Person hat kein Profil.</strong> Ohne Akte existiert sie für keine Kampagne.</p>
 <h3 id="ich-kann-meine-wunsche-nicht-abschicken">„Ich kann meine Wünsche nicht abschicken"<a class="headerlink" href="#ich-kann-meine-wunsche-nicht-abschicken" title="Permanent link">¶</a></h3>
-<p>Sie haben ein <strong>Mindestmaß an Wünschen</strong> festgelegt, und es ist nicht erreicht. Das Minimum
-blockiert ebenso wie das Maximum.</p>
+<p>Sie haben ein <strong>Mindestmaß an Wünschen</strong> festgelegt, und die Person hat es nicht erreicht:
+ihre Liste wird nicht gespeichert. Das Minimum blockiert ebenso wie das Maximum. Die Meldung,
+die sie erhält, sagt außerdem, was für ein Ziel fehlt — ein Sprachnachweis, ein Dokument.</p>
 <h3 id="ich-finde-kein-ziel">„Ich finde kein Ziel"<a class="headerlink" href="#ich-finde-kein-ziel" title="Permanent link">¶</a></h3>
-<p>Der Zielkreis der Kampagne ist leer, oder auf den erfassten Abkommen ist kein Platz
-eingetragen. Prüfen Sie die Platzmatrix, bevor Sie anderswo suchen: ein Ziel ohne Platz wird
-nicht angezeigt.</p>
-<p>Prüfen Sie auch den <strong>Zeitraum</strong>: ein Platz besteht immer für einen bestimmten Zeitraum.</p>
+<p>Die Person sieht nur Ziele, für die ein Platz <strong>für sie eingeplant</strong> ist: ihre Zeile der
+Matrix — Jahr, Stufe, Studiengang, Semester. Prüfen Sie die Platzmatrix, bevor Sie anderswo
+suchen.</p>
+<p>Ebenfalls ausgenommen sind: ausgeblendete oder archivierte Partner, ihr eigener Campus und
+Partner, deren <strong>Studierendenfilter</strong> nicht zu ihren passen — tragen sowohl die Person als
+auch der Partner Filter, müssen sie mindestens einen gemeinsam haben.</p>
 <h3 id="ich-sehe-mein-ranking-nicht-mehr">„Ich sehe mein Ranking nicht mehr"<a class="headerlink" href="#ich-sehe-mein-ranking-nicht-mehr" title="Permanent link">¶</a></h3>
 <p>Das ist beabsichtigt, wenn Ihre Hochschule das Ranking vor den Studierenden verbirgt. Die
 Einstellung steht unter <a href="../etablissement/parametres/">Was Ihre Studierenden sehen</a> — Sie und
@@ -2850,8 +2855,8 @@ Ihrer Studierendenliste nach: sie sagt, ob er versandt wurde und wann. Und die S
 <strong>Connected</strong> sagt, ob sich die Person bereits angemeldet hat — zwei verschiedene Fragen.</p>
 <h2 id="auf-seiten-der-kampagne">Auf Seiten der Kampagne<a class="headerlink" href="#auf-seiten-der-kampagne" title="Permanent link">¶</a></h2>
 <h3 id="die-zuteilungsrunde-startet-nicht">„Die Zuteilungsrunde startet nicht"<a class="headerlink" href="#die-zuteilungsrunde-startet-nicht" title="Permanent link">¶</a></h3>
-<p>Das ist die häufigste Blockade, und sie wird immer erklärt: der Bericht <strong>nennt</strong> die
-Studierenden, die blockieren, und den Grund.</p>
+<p>Der Bericht <strong>nennt</strong> die Studierenden, die blockieren, und den Grund. Drei Gründe verhindern
+den Start:</p>
 <table>
 <thead>
 <tr>
@@ -2861,72 +2866,78 @@ Studierenden, die blockieren, und den Grund.</p>
 </thead>
 <tbody>
 <tr>
-<td>Die Person hat <strong>keinen Studiengang</strong></td>
-<td>Ordnen Sie ihr einen zu. Nutzt Ihre Hochschule keine, legen Sie einen je Stufe an.</td>
-</tr>
-<tr>
-<td>Die Person hat <strong>kein Ranking</strong></td>
-<td>Importieren Sie das Ranking vor dem Neustart. Die Runde erzeugt keines.</td>
-</tr>
-<tr>
-<td>Die Person hat <strong>kein Profil</strong></td>
+<td><strong>no student record</strong></td>
 <td>Es gibt nichts zu platzieren.</td>
 </tr>
 <tr>
-<td>Ihre <strong>Akte ist unvollständig</strong></td>
-<td>Vervollständigen Sie sie, oder stellen Sie die Kampagne auf „anzeigen" statt „blockieren".</td>
+<td><strong>no level track</strong></td>
+<td>Ordnen Sie der Person einen Studiengang zu (<em>Custom level</em>). Nutzt Ihre Hochschule keine, legen Sie einen je Stufe an.</td>
+</tr>
+<tr>
+<td><strong>no imported class rank</strong></td>
+<td>Importieren Sie das Ranking vor dem Neustart. Die Runde erzeugt keines.</td>
 </tr>
 </tbody>
 </table>
+<p>Eine <strong>unvollständige Akte</strong> verhindert den Start nicht. Ist die Kampagne auf <strong>Block the
+assignment until everything is in hand</strong> eingestellt, wird die Person zurückgestellt und im
+Bericht genannt; mit <strong>Show it, assign anyway (recommended)</strong> wird sie platziert und
+gekennzeichnet. Studierende, die „Ich möchte nicht gehen" geantwortet haben, blockieren nie.</p>
 <div class="admonition tip">
 <p class="admonition-title">Die Runde ist keine einmalige Handlung</p>
-<p>Beheben Sie, was blockiert, und starten Sie sie so oft neu, wie nötig.</p>
+<p>Beheben Sie, was blockiert, und starten Sie sie erneut, so oft wie nötig.</p>
 </div>
 <h3 id="ich-kann-diese-kampagne-nicht-loschen">„Ich kann diese Kampagne nicht löschen"<a class="headerlink" href="#ich-kann-diese-kampagne-nicht-loschen" title="Permanent link">¶</a></h3>
-<p>Nur eine Kampagne im <strong>Entwurf</strong> lässt sich löschen. Eine geöffnete trägt bereits Wünsche.</p>
+<p>Nur eine Kampagne im <strong>Entwurf</strong> lässt sich löschen. Eine geöffnete Kampagne trägt bereits
+Wünsche.</p>
 <h3 id="ich-kann-diese-kampagne-nicht-wieder-offnen">„Ich kann diese Kampagne nicht wieder öffnen"<a class="headerlink" href="#ich-kann-diese-kampagne-nicht-wieder-offnen" title="Permanent link">¶</a></h3>
-<p>Nur eine <strong>beendete</strong> Kampagne lässt sich wieder öffnen. Und wenn Sie das tun, ohne das
-Enddatum zu verschieben, schließt sie sich am nächsten Morgen erneut.</p>
+<p>Nur eine <strong>beendete</strong> Kampagne lässt sich wieder öffnen. Wird sie nach ihrem Schlusszeitpunkt
+wieder geöffnet, <strong>bleibt sie geöffnet</strong>, bis Sie sie schließen: der automatische Abschluss
+schließt sie nicht erneut.</p>
 <h3 id="meine-kampagne-hat-sich-von-selbst-geschlossen">„Meine Kampagne hat sich von selbst geschlossen"<a class="headerlink" href="#meine-kampagne-hat-sich-von-selbst-geschlossen" title="Permanent link">¶</a></h3>
-<p>Ihr Enddatum ist verstrichen. Das ist seit September 2026 das normale Verhalten: am Tag nach
-dem letzten Tag schließt die Kampagne, Wünsche im Entwurf werden zu Wünschen, und Sie
-erhalten die Bilanz. Öffnen Sie sie wieder und verschieben Sie das Datum, falls es zu früh
-war.</p>
+<p>Ihr Schlusszeitpunkt ist verstrichen: die Kampagne schließt zu der von Ihnen festgelegten
+Minute, die Wünsche werden eingefroren, und Sie erhalten die Bilanz. Öffnen Sie sie wieder,
+falls das zu früh war.</p>
 <h3 id="meine-platzzahler-sagen-etwas-anderes-als-mein-export">„Meine Platzzähler sagen etwas anderes als mein Export"<a class="headerlink" href="#meine-platzzahler-sagen-etwas-anderes-als-mein-export" title="Permanent link">¶</a></h3>
-<p>Seit September 2026 erfassen alle Platzzähler ausschließlich <strong>ausgehende</strong> Mobilitäten — die,
-die Sie entsenden. Plätze, die Ihre Partner bei sich öffnen, blähen Ihre Summen nicht mehr
-auf. Überrascht Sie eine Zahl, war sie vermutlich vorher falsch.</p>
+<p>Die Platzzähler erfassen <strong>ausgehende</strong> Mobilitäten — die, die Sie entsenden. Plätze, die Ihre
+Partner bei sich öffnen, blähen Ihre Summen nicht auf; das Abkommen zeigt sie gesondert an, in
+einer Anzeige der eingehenden Mobilitäten.</p>
 <h2 id="auf-seiten-der-partner">Auf Seiten der Partner<a class="headerlink" href="#auf-seiten-der-partner" title="Permanent link">¶</a></h2>
 <h3 id="ich-kann-diesen-partner-nicht-erinnern">„Ich kann diesen Partner nicht erinnern"<a class="headerlink" href="#ich-kann-diesen-partner-nicht-erinnern" title="Permanent link">¶</a></h3>
-<p>Eine Erinnerung alle vierundzwanzig Stunden. Danach ist die Schaltfläche ausgegraut und sagt
-Ihnen, ab wann wieder.</p>
+<p>Eine Erinnerung alle vierundzwanzig Stunden. Danach ist die Schaltfläche ausgegraut, und ihr
+Tooltip nennt das Datum der letzten Erinnerung.</p>
 <h3 id="ich-kann-diese-person-nicht-auf-diesem-abkommen-nominieren">„Ich kann diese Person nicht auf diesem Abkommen nominieren"<a class="headerlink" href="#ich-kann-diese-person-nicht-auf-diesem-abkommen-nominieren" title="Permanent link">¶</a></h3>
-<p>Für sie läuft auf diesem Abkommen bereits eine Nominierung. Ziehen Sie sie zuerst zurück,
-wenn Sie neu nominieren wollen.</p>
+<p>Zwei Ursachen. <strong>Kein Kontakt bei diesem Partner</strong>: "No contact for this partner — add one to
+be able to nominate." Fügen Sie auf seiner Seite einen Kontakt hinzu. <strong>Die Person ist bereits
+nominiert</strong>: nominieren lässt sich nur eine Zuteilung, die noch nicht nominiert ist. Um neu
+anzufangen, ziehen Sie die Nominierung zurück und teilen Sie die Person dann erneut zu.</p>
 <h3 id="dieser-partner-erscheint-nicht-in-meiner-kampagne">„Dieser Partner erscheint nicht in meiner Kampagne"<a class="headerlink" href="#dieser-partner-erscheint-nicht-in-meiner-kampagne" title="Permanent link">¶</a></h3>
-<p>Der Zielkreis erfasst ihn nicht: prüfen Sie Abkommensarten, Zeiträume und
-Hochschulfilter der Kampagne. Prüfen Sie auch, ob er archiviert oder ausgeblendet ist.</p>
+<p>Der Zielkreis erfasst ihn nicht: prüfen Sie Abkommensarten, Zeiträume, Stufe, Studienjahr,
+Mobilitätsart und Hochschulfilter der Kampagne sowie, ob das Abkommen aktiv ist. Prüfen Sie
+auch, ob er archiviert oder ausgeblendet ist.</p>
 <h3 id="ich-kann-diese-nominierung-nicht-ablehnen">„Ich kann diese Nominierung nicht ablehnen"<a class="headerlink" href="#ich-kann-diese-nominierung-nicht-ablehnen" title="Permanent link">¶</a></h3>
 <p>Eine Ablehnung verlangt einen Grund. Er wird an die Hochschule übermittelt, die Ihnen die
 Person nominiert hat.</p>
 <h2 id="auf-seiten-von-zugangen-und-rechten">Auf Seiten von Zugängen und Rechten<a class="headerlink" href="#auf-seiten-von-zugangen-und-rechten" title="Permanent link">¶</a></h2>
 <h3 id="dieser-bildschirm-ist-schreibgeschutzt">„Dieser Bildschirm ist schreibgeschützt"<a class="headerlink" href="#dieser-bildschirm-ist-schreibgeschutzt" title="Permanent link">¶</a></h3>
-<p>Ihre Rolle gibt Ihnen die Stufe <strong>Ansehen</strong> in diesem Bereich. Ein Banner sagt es oben. Ihr
-Bildschirm <a href="../etablissement/parametres/">Meine Rechte</a> sagt Ihnen genau, was Sie tun dürfen
-und bei wem.</p>
+<p>Ihre Rolle gibt Ihnen die Stufe <strong>Ansehen</strong> in diesem Bereich. Ein Banner oben auf dem
+Bildschirm sagt es. Ihr Bildschirm <a href="../etablissement/parametres/">Meine Rechte</a> sagt Ihnen
+genau, was Sie tun dürfen und bei wem.</p>
 <h3 id="diese-person-liegt-auerhalb-meines-bereichs">„Diese Person liegt außerhalb meines Bereichs"<a class="headerlink" href="#diese-person-liegt-auerhalb-meines-bereichs" title="Permanent link">¶</a></h3>
-<p>Ihre Rolle ist auf eine Richtung, einen Campus oder Jahrgänge beschränkt, die sie nicht
-umfassen. Das ist keine Störung: es ist der Bereich, den Ihre Administration festgelegt hat.</p>
+<p>Ihre Rolle ist auf einen Fachbereich, eine Richtung, einen Campus oder Jahrgänge beschränkt,
+die sie nicht umfassen. Das ist keine Störung: es ist der Bereich, den Ihre Administration
+festgelegt hat.</p>
 <h3 id="ein-teil-meiner-auswahl-wurde-nicht-verarbeitet">„Ein Teil meiner Auswahl wurde nicht verarbeitet"<a class="headerlink" href="#ein-teil-meiner-auswahl-wurde-nicht-verarbeitet" title="Permanent link">¶</a></h3>
 <p>Ihre Aktion betraf Zeilen außerhalb Ihres Bereichs. Sie werden ausgenommen, und der
-Bildschirm nennt Ihnen welche.</p>
+Bildschirm sagt, wie viele.</p>
 <h3 id="ich-kann-mich-nicht-mit-meinem-hochschulkonto-anmelden">„Ich kann mich nicht mit meinem Hochschulkonto anmelden"<a class="headerlink" href="#ich-kann-mich-nicht-mit-meinem-hochschulkonto-anmelden" title="Permanent link">¶</a></h3>
 <p>Single Sign-on prüft, <strong>wer Sie sind</strong>; es entscheidet nicht, dass Sie hinein dürfen. Ihr
-Konto muss zuvor in AroundLink bestehen. Siehe
+Konto muss bereits in AroundLink bestehen. Siehe
 <a href="../plateforme/sso-microsoft/">Wer was liefert</a>.</p>
 <h2 id="auf-seiten-der-dokumente">Auf Seiten der Dokumente<a class="headerlink" href="#auf-seiten-der-dokumente" title="Permanent link">¶</a></h2>
 <h3 id="ich-kann-diesen-sprachnachweis-nicht-speichern">„Ich kann diesen Sprachnachweis nicht speichern"<a class="headerlink" href="#ich-kann-diesen-sprachnachweis-nicht-speichern" title="Permanent link">¶</a></h3>
-<p>Ein Nachweis verlangt immer einen Beleg. Datei und Datum sind Pflicht.</p>
+<p>Ein Sprachnachweis verlangt immer einen Beleg. Trägt die Person ihn selbst ein, ist auch das
+Datum des Tests Pflicht.</p>
 <h3 id="ich-werde-nach-einem-grund-gefragt-um-das-learning-agreement-zu-andern">„Ich werde nach einem Grund gefragt, um das Learning Agreement zu ändern"<a class="headerlink" href="#ich-werde-nach-einem-grund-gefragt-um-das-learning-agreement-zu-andern" title="Permanent link">¶</a></h3>
 <p>Jeder nach der Freigabe hinzugefügte oder entfernte Bestandteil verlangt eine Begründung. Das
 ist eine Anforderung des Vertrags, keine Einstellung.</p>
@@ -2950,7 +2961,7 @@ ist eine Anforderung des Vertrags, keine Einstellung.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="1. Oktober 2026 20:06:30 CEST">1. Oktober 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5. November 2026 13:43:10 CET">5. November 2026</span>
   </span>
 
     

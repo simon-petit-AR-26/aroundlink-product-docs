@@ -2705,8 +2705,8 @@ en Terminée sans que personne ait à cliquer : les vœux encore à l'état de
 brouillon deviennent des vœux, vos étudiants sont prévenus et vous recevez le bilan —
 exactement ce que fait le bouton « Terminer ».</p>
 <p>Si la clôture vous paraît prématurée, le bouton « Rouvrir » rend à vos étudiants le droit
-de modifier leurs vœux. Pensez alors à repousser la date de fin : sans cela, la campagne se
-refermera dès le lendemain matin.</p>
+de modifier leurs vœux. Rouverte après son heure de fin, elle reste ouverte jusqu'à ce que
+vous la clôturiez : la clôture automatique ne la referme pas.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/campagnes-liste.png" data-desc-position="bottom"><img alt="Liste des campagnes, avec le nombre de campagnes en brouillon, ouvertes et terminées" src="../../../assets/screenshots/campagnes-liste.png"></a></p>
 <p><em>Vos campagnes, tous statuts confondus. Les quatre compteurs du haut donnent l'état du parc en un coup d'œil. Cliquez sur l'image pour l'agrandir.</em></p>
 <p><strong>Cas d'usage.</strong></p>
@@ -2737,7 +2737,7 @@ qu'au moment où l'heure est franchie — jamais a posteriori contre votre déci
 <h3 id="le-vivier-detudiants">Le vivier d'étudiants<a class="headerlink" href="#le-vivier-detudiants" title="Permanent link">¶</a></h3>
 <p>Qui participe. Vous combinez autant de critères que nécessaire :</p>
 <ul>
-<li><strong>Niveau d'études</strong> et <strong>parcours</strong> — le parcours est le libellé que vous avez donné à vos
+<li><strong>Niveau d'études</strong> et <strong>libellé de niveau</strong> — le nom que vous avez donné à vos
   promotions (« Aero 4 », « PGE 26-27 ») ;</li>
 <li><strong>Campus</strong> — ou tous ;</li>
 <li><strong>Tags généraux</strong> et <strong>filtres étudiants</strong> ;</li>
@@ -2799,7 +2799,7 @@ dit avant, pas après.</p>
 <div class="admonition note">
 <p class="admonition-title">L'étudiant ne voit que ce qui lui est réellement ouvert</p>
 <p>Une destination n'apparaît dans sa liste, et ne peut être demandée, que si <strong>sa ligne de
-la matrice</strong> — son année, son niveau, son parcours, son semestre — déclare des places.
+la matrice</strong> — son année, son niveau, son libellé de niveau, son semestre — déclare des places.
 Une destination déclarée mais <strong>pleine</strong> reste demandable ; une destination jamais
 ouverte à sa promotion ne l'est pas.</p>
 <p>Vous, coordinateur, gardez toute votre liberté : ajouter un vœu, pré-affecter, nominer —
@@ -2810,7 +2810,7 @@ rien ne change de votre côté.</p>
 tourner — et pourquoi il refuse parfois de démarrer.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">gestionnaire RI / coordinateur</span></p>
 <p><strong>Comment ça marche.</strong> Le moteur place chaque étudiant sur la case de <strong>son propre
-parcours</strong> — « Aero 4 » n'est pas « Aero 5 » — et il ne devine jamais. Trois conditions sont
+libellé de niveau</strong> — « Aero 4 » n'est pas « Aero 5 » — et il ne devine jamais. Trois conditions sont
 donc exigées de chaque participant :</p>
 <table>
 <thead>
@@ -2825,8 +2825,8 @@ donc exigées de chaque participant :</p>
 <td>Sans dossier, il n'y a rien à placer.</td>
 </tr>
 <tr>
-<td><strong>Un parcours</strong></td>
-<td>C'est lui qui désigne la case. Sans parcours, aucune case ne lui correspond.</td>
+<td><strong>Un libellé de niveau</strong></td>
+<td>C'est lui qui désigne la case. Sans libellé, aucune case ne lui correspond.</td>
 </tr>
 <tr>
 <td><strong>Un classement importé</strong></td>
@@ -2834,11 +2834,11 @@ donc exigées de chaque participant :</p>
 </tr>
 </tbody>
 </table>
-<p>Un participant à qui il manque l'une des trois est <strong>écarté et nommé</strong> dans le compte rendu,
-avec la raison. Le tour ne part pas en silence.</p>
+<p>S'il manque l'une des trois à un participant, <strong>le tour refuse de démarrer</strong> et nomme les
+étudiants concernés, avec la raison. Il ne part jamais en silence.</p>
 <div class="admonition warning">
-<p class="admonition-title">Le parcours est exigé même si vous n'en utilisez pas</p>
-<p>Si votre établissement ne distingue pas de promotions, donnez-vous un parcours par
+<p class="admonition-title">Le libellé de niveau est exigé même si vous n'en utilisez pas</p>
+<p>Si votre établissement ne distingue pas de promotions, donnez-vous un libellé par
 niveau utilisé — « Licence », « Master ». Un seul mécanisme porte alors tous les cas, et
 rien n'est jamais déduit à votre place.</p>
 </div>
@@ -2847,9 +2847,10 @@ rien n'est jamais déduit à votre place.</p>
 <p>Le tour ne fabrique pas de classement. Importez-le d'abord ; sinon les étudiants sans
 rang seraient servis en dernier, ce qui serait une décision que personne n'a prise.</p>
 </div>
-<p><strong>Rien de tout cela ne vous contraint à la main.</strong> Vous restez libre d'affecter qui vous
-voulez, où vous voulez, classé ou non : c'est votre décision, et le moteur ne s'y oppose
-pas. Ces trois conditions ne valent que pour le tour automatique.</p>
+<p><strong>Ces trois conditions ne valent que pour le tour automatique.</strong> À la main, vous restez
+libre d'affecter qui vous voulez, où vous voulez, classé ou non. Deux limites seulement : un
+étudiant déjà nominé ne se réaffecte pas, et si la campagne est réglée sur <strong>Block the
+assignment until everything is in hand</strong>, le dossier complet est exigé à la main aussi.</p>
 <p>Un tour peut être relancé autant de fois que nécessaire — ce n'est pas un geste unique.</p>
 <h2 id="vux-propositions-et-affectations">Vœux, propositions et affectations<a class="headerlink" href="#vux-propositions-et-affectations" title="Permanent link">¶</a></h2>
 <p><strong>À quoi ça sert.</strong> Transforme la liste de vœux classés de chaque étudiant en une
@@ -2882,13 +2883,10 @@ pas pu placer, et <strong>qui</strong> il a laissé de côté.</p>
 <p><strong>Comment ça marche.</strong> À la fin du tour, un compte rendu vous dit combien d'étudiants ont
 été servis et lesquels ont été écartés. Les étudiants écartés sont <strong>nommés</strong>, avec la
 raison — un simple total vous obligerait à parcourir toute la promotion pour les retrouver.</p>
-<p>Quatre raisons peuvent écarter un étudiant :</p>
-<ul>
-<li>il n'a <strong>pas de profil</strong> ;</li>
-<li>son niveau n'a <strong>aucun parcours</strong> rattaché ;</li>
-<li>il n'a <strong>pas de classement</strong> ;</li>
-<li>son <strong>dossier est incomplet</strong>.</li>
-</ul>
+<p>Un profil, un libellé de niveau et un classement manquants empêchent le tour de démarrer
+(voir ci-dessus). Pendant le tour, un étudiant est mis de côté quand <strong>son dossier est
+incomplet</strong> et que la campagne est réglée sur <strong>Block the assignment until everything is in
+hand</strong> : le moteur passe alors à son vœu suivant, ou le laisse sans place.</p>
 <p>Un tour qui ne place personne le dit maintenant clairement, au lieu de s'annoncer terminé.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
@@ -3093,7 +3091,7 @@ tableaux.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 12:59:36 CET">5 novembre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 13:43:10 CET">5 novembre 2026</span>
   </span>
 
     

@@ -2432,8 +2432,8 @@ concatenazione — spesso ciò che manca quando si cerca perché una pratica non
 <td>Le destinazioni esistono ma non aprono nulla</td>
 </tr>
 <tr>
-<td><strong>I vostri percorsi</strong> (uno per coorte, o uno per livello)</td>
-<td>Amministratore, nelle impostazioni</td>
+<td><strong>Le vostre etichette di livello</strong> (<em>Custom label</em>: una per coorte, o una per livello), <strong>attribuite a ogni studente</strong></td>
+<td>Amministratore, in <strong>Settings ▸ Academic levels</strong></td>
 <td>Il turno di assegnazione si rifiuta di partire</td>
 </tr>
 <tr>
@@ -2451,52 +2451,61 @@ la vedono, e non trovano alcuna destinazione. Verificate la matrice prima di apr
 <h2 id="1-la-campagna-si-apre">1. La campagna si apre<a class="headerlink" href="#1-la-campagna-si-apre" title="Permanent link">¶</a></h2>
 <p><strong>Chi agisce:</strong> il coordinatore.</p>
 <p>Crea la campagna, sceglie <strong>chi partecipa</strong> e <strong>dove si può andare</strong>, imposta il numero di
-preferenze, i documenti richiesti e le poche opzioni che poi non si possono rifare. Si veda
+preferenze, i documenti richiesti e le poche opzioni che poi non si possono rivedere. Si veda
 <a href="../etablissement/campagnes/">Configurare una campagna, impostazione per impostazione</a>.</p>
-<p>La campagna passa da <strong>Bozza</strong> a <strong>Pronta</strong>, poi ad <strong>Aperta</strong>.</p>
+<p>La campagna passa da <strong>Bozza</strong> a <strong>Pronta</strong>, poi ad <strong>Aperta</strong>. Una campagna <strong>Pronta</strong> si
+apre da sola alla sua ora di apertura, e gli studenti vengono allora invitati; una campagna
+rimasta in <strong>Bozza</strong> non si apre mai da sola.</p>
 <p><strong>Cosa innesca il seguito:</strong> solo lo stato <strong>Aperta</strong> accetta preferenze. Una campagna
-«Pronta» si guarda, non si riempie.</p>
+«Pronta» è già visibile agli studenti, ma non si può compilare.</p>
 <h2 id="2-lo-studente-deposita-le-sue-preferenze">2. Lo studente deposita le sue preferenze<a class="headerlink" href="#2-lo-studente-deposita-le-sue-preferenze" title="Permanent link">¶</a></h2>
 <p><strong>Chi agisce:</strong> lo studente.</p>
-<p>Scopre le destinazioni, ne mette da parte alcune tra i preferiti, e deposita le sue
-preferenze dalla stessa schermata in cui le scopre. Le ordina per preferenza.</p>
-<p>Se avete fissato un <strong>minimo di preferenze</strong>, non può convalidare finché non lo raggiunge. Se
-avete attivato la risposta «non desidero partire», può anche dichiararlo — senza doversi
-giustificare.</p>
-<p><strong>Cosa innesca il seguito:</strong> la chiusura della campagna, alla sua data di fine o per vostra
-mano. Le preferenze ancora in bozza diventano allora preferenze vere.</p>
+<p>Scopre le destinazioni, ne mette da parte alcune tra i preferiti, e le trasferisce nelle sue
+preferenze, ordinate per preferenza. Vede solo le destinazioni in cui è pianificato un posto
+per lui. Finché la campagna è aperta, può modificare il suo elenco.</p>
+<p>Se avete fissato un <strong>minimo di preferenze</strong>, il suo elenco non viene salvato finché non lo
+raggiunge. Se avete attivato la risposta «non desidero partire», può anche darla — senza
+doversi giustificare.</p>
+<p><strong>Cosa innesca il seguito:</strong> la chiusura della campagna, alla sua ora di chiusura o per vostra
+mano. Le sue preferenze vengono allora congelate.</p>
 <h2 id="3-lassegnazione">3. L'assegnazione<a class="headerlink" href="#3-lassegnazione" title="Permanent link">¶</a></h2>
 <p><strong>Chi agisce:</strong> il coordinatore.</p>
 <p>Due strade, che coesistono.</p>
-<p><strong>Il turno automatico</strong> serve gli studenti nell'ordine della classifica: il primo ottiene la
-sua migliore preferenza disponibile, e ciò che resta passa al successivo. Esige da ogni
-partecipante un profilo, un percorso e una classifica importata — si veda
-<a href="../etablissement/campagnes/">Cosa esige l'abbinamento</a>. Può essere rilanciato tutte le volte
-che serve.</p>
-<p><strong>L'assegnazione manuale</strong> non è vincolata da nulla. Collocate chi volete, dove volete,
-classificato o no.</p>
-<p><strong>Cosa innesca il seguito:</strong> esiste un'assegnazione.</p>
+<p><strong>Il turno automatico</strong> (<strong>Match all students</strong>) serve gli studenti nell'ordine della
+classifica: il primo classificato ottiene la sua migliore preferenza disponibile, e ciò che
+resta passa al successivo. Esige da ogni partecipante un profilo, un'etichetta di livello e
+una classifica importata — si veda <a href="../etablissement/campagnes/">Cosa esige l'abbinamento</a>.
+Può essere rilanciato tutte le volte che serve. Produce delle <strong>proposte del sistema</strong>, che
+confermate una per una.</p>
+<p><strong>L'assegnazione manuale</strong> vi permette di collocare chi volete, dove volete, classificato o
+no — con tre limiti: un periodo è obbligatorio, uno studente già nominato non può essere
+riassegnato, e se la campagna esige una pratica completa, la esige anche a mano.</p>
+<p><strong>Cosa innesca il seguito:</strong> <strong>Send proposals</strong> invia agli studenti le proposte confermate.</p>
 <h2 id="4-lo-studente-accetta-oppure-no">4. Lo studente accetta — oppure no<a class="headerlink" href="#4-lo-studente-accetta-oppure-no" title="Permanent link">¶</a></h2>
 <p><strong>Chi agisce:</strong> lo studente, salvo se avete scelto l'assegnazione diretta.</p>
-<p>Riceve la sua proposta e l'accetta o la rifiuta. Se avete impostato la campagna su
-<strong>assegnazione diretta</strong>, questa tappa scompare: la vostra decisione crea l'assegnazione.</p>
+<p>Riceve la sua proposta e l'accetta o la rifiuta; un'e-mail conferma la sua risposta.
+Rifiutare chiude anche le sue altre preferenze nella campagna. Se avete impostato la campagna
+su <strong>assegnazione diretta</strong>, questa tappa scompare: l'invio crea l'assegnazione.</p>
 <p><strong>Cosa innesca il seguito:</strong> l'accettazione.</p>
 <h2 id="5-la-nomina-presso-il-partner">5. La nomina presso il partner<a class="headerlink" href="#5-la-nomina-presso-il-partner" title="Permanent link">¶</a></h2>
 <p><strong>Chi agisce:</strong> il coordinatore, poi l'istituto ospitante.</p>
-<p>Nominate lo studente presso la sua destinazione. Il partner riceve l'informazione e risponde
-— tramite la piattaforma, la rete EWP, e-mail o telefono. Registrate la sua risposta
-precisando da quale canale è arrivata.</p>
+<p>Nominate lo studente presso la sua destinazione; per farlo serve un contatto presso il
+partner. Il partner risponde tramite la piattaforma o la rete EWP, e la sua risposta si
+registra da sola. Se conferma per e-mail o per telefono, <strong>Confirm manually</strong> la registra
+precisando il canale.</p>
 <p>Finché non ha risposto, potete <strong>sollecitarlo</strong> (una volta ogni ventiquattro ore) o
 <strong>ritirare</strong> la nomina, il che rende lo studente disponibile per un'altra destinazione.</p>
 <p>Un rifiuto è sempre accompagnato da un motivo, trasmesso all'istituto che ha nominato.</p>
-<p><strong>Cosa innesca il seguito:</strong> la conferma del partner.</p>
+<p><strong>Cosa innesca il seguito:</strong> la conferma del partner. Se alla campagna è collegato un
+<a href="../etablissement/parcours/">percorso di mobilità</a>, lo studente vi entra in quel momento: è il
+percorso a fornire le attività della tappa successiva.</p>
 <h2 id="6-la-pratica-si-completa">6. La pratica si completa<a class="headerlink" href="#6-la-pratica-si-completa" title="Permanent link">¶</a></h2>
 <p><strong>Chi agisce:</strong> lo studente deposita, il coordinatore convalida.</p>
 <p>Documenti contrattuali, punteggi linguistici, learning agreement. Ogni elemento atteso è
 elencato, e lo studente vede cosa gli manca. Sollecitate chi è in ritardo dalla barra di
 selezione del vostro elenco, senza tenere una lista a parte.</p>
-<p>A seconda dell'impostazione della campagna, una pratica incompleta <strong>blocca</strong> l'assegnazione
-oppure si limita a essere <strong>segnalata</strong>.</p>
+<p>Una pratica incompleta conta già dall'assegnazione (tappa 3): a seconda dell'impostazione
+della campagna, la <strong>blocca</strong> oppure si limita a essere <strong>segnalata</strong>.</p>
 <p><strong>Cosa innesca il seguito:</strong> la pratica è completa e le date si avvicinano.</p>
 <h2 id="7-la-partenza-poi-il-soggiorno">7. La partenza, poi il soggiorno<a class="headerlink" href="#7-la-partenza-poi-il-soggiorno" title="Permanent link">¶</a></h2>
 <p><strong>Chi agisce:</strong> tutti, un po' alla volta.</p>
@@ -2504,11 +2513,14 @@ oppure si limita a essere <strong>segnalata</strong>.</p>
 cambio di componente richiede un motivo. Le scadenze del periodo compaiono nell'
 <a href="../etablissement/agenda/">agenda</a>, e nel calendario a cui ciascuno si è iscritto.</p>
 <h2 id="8-il-ritorno">8. Il ritorno<a class="headerlink" href="#8-il-ritorno" title="Permanent link">¶</a></h2>
-<p><strong>Chi agisce:</strong> l'istituto ospitante, poi lo studente.</p>
-<p>L'istituto che ha ospitato inserisce i voti nella propria scala ed emette il <strong>transcript</strong>;
-lo studente ne è avvisato e lo ritrova nella sua pratica.</p>
-<p>Lo studente deposita la sua <strong>valutazione</strong> sull'istituto ospitante — e può autorizzare la
-pubblicazione delle sue foto. Chi non ha risposto viene sollecitato come per i documenti.</p>
+<p><strong>Chi agisce:</strong> lo studente, poi il suo istituto.</p>
+<p>Lo studente inserisce il voto ottenuto per ciascun corso del suo learning agreement, sceglie
+il sistema di valutazione e può allegare il <strong>transcript</strong> ufficiale dell'istituto ospitante.
+Il suo istituto lo convalida o chiede una correzione.</p>
+<p>Lo studente deposita anche la sua <strong>valutazione</strong> sull'istituto ospitante — e può autorizzare
+la pubblicazione delle sue foto. La valutazione viene moderata nelle vostre
+<a href="../etablissement/validations/">convalide</a> prima di essere pubblicata. Chi non ha risposto
+viene sollecitato come per i documenti.</p>
 <p><strong>Cosa chiude il cerchio:</strong> la valutazione alimenta la scheda del partner, che gli studenti
 successivi leggeranno prima di esprimere le loro preferenze.</p>
 
@@ -2531,7 +2543,7 @@ successivi leggeranno prima di esprimere le loro preferenze.</p>
     <span class="md-icon" title="Ultimo aggiornamento">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="1 ottobre 2026 20:04:52 CEST">1 ottobre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 13:43:10 CET">5 novembre 2026</span>
   </span>
 
     

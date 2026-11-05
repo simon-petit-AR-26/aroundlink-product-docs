@@ -2432,8 +2432,8 @@ which is often what is missing when you are looking for why a file is not moving
 <td>Destinations exist but open nothing</td>
 </tr>
 <tr>
-<td><strong>Your tracks</strong> (one per cohort, or one per level)</td>
-<td>Administrator, in settings</td>
+<td><strong>Your level labels</strong> (<em>Custom label</em>: one per cohort, or one per level), <strong>carried by each student</strong></td>
+<td>Administrator, in <strong>Settings ▸ Academic levels</strong></td>
 <td>The matching round refuses to start</td>
 </tr>
 <tr>
@@ -2453,49 +2453,58 @@ find no destination. Check the matrix before you open.</p>
 <p>They create the campaign, choose <strong>who takes part</strong> and <strong>where one can go</strong>, set the number
 of wishes, the required documents and the few options that cannot be revisited later. See
 <a href="../etablissement/campagnes/">Setting up a campaign, setting by setting</a>.</p>
-<p>The campaign moves from <strong>Draft</strong> to <strong>Ready</strong>, then <strong>Opened</strong>.</p>
+<p>The campaign moves from <strong>Draft</strong> to <strong>Ready</strong>, then <strong>Opened</strong>. A <strong>Ready</strong> campaign opens
+on its own at its opening time, and students are then invited; a campaign left in <strong>Draft</strong>
+never opens by itself.</p>
 <p><strong>What triggers the next step:</strong> only the <strong>Opened</strong> state accepts wishes. A "Ready" campaign
-can be looked at, not filled in.</p>
+is already visible to students, but it cannot be filled in.</p>
 <h2 id="2-the-student-places-their-wishes">2. The student places their wishes<a class="headerlink" href="#2-the-student-places-their-wishes" title="Permanent link">¶</a></h2>
 <p><strong>Who acts:</strong> the student.</p>
-<p>They browse destinations, set some aside as favourites, and place their wishes from the very
-screen where they discover them. They rank them by preference.</p>
-<p>If you set a <strong>minimum number of wishes</strong>, they cannot submit until they reach it. If you
-enabled the "I do not wish to go" answer, they can also declare it — without having to
+<p>They browse destinations, set some aside as favourites, and pour them into their wishes,
+ranked by preference. They only see destinations where a place is planned for them. While
+the campaign is open, they can change their list.</p>
+<p>If you set a <strong>minimum number of wishes</strong>, their list does not save until they reach it. If
+you enabled the "I do not wish to go" answer, they can also give it — without having to
 justify themselves.</p>
-<p><strong>What triggers the next step:</strong> the campaign closing, on its end date or by your hand.
-Wishes still in draft then become real wishes.</p>
+<p><strong>What triggers the next step:</strong> the campaign closing, at its closing time or by your hand.
+Their wishes are then frozen.</p>
 <h2 id="3-placement">3. Placement<a class="headerlink" href="#3-placement" title="Permanent link">¶</a></h2>
 <p><strong>Who acts:</strong> the coordinator.</p>
 <p>Two paths, which coexist.</p>
-<p><strong>The automatic round</strong> serves students in ranking order: the first-ranked gets their best
-available wish, and what is left goes to the next. It requires a profile, a track and an
-imported ranking from every participant — see
-<a href="../etablissement/campagnes/">What matching requires</a>. It can be re-run as often as needed.</p>
-<p><strong>Placing by hand</strong> is constrained by nothing. You seat whoever you want, wherever you want,
-ranked or not.</p>
-<p><strong>What triggers the next step:</strong> a placement exists.</p>
+<p><strong>The automatic round</strong> (<strong>Match all students</strong>) serves students in ranking order: the
+first-ranked gets their best available wish, and what is left goes to the next. It requires
+a profile, a level label and an imported ranking from every participant — see
+<a href="../etablissement/campagnes/">What matching requires</a>. It can be re-run as often as needed.
+It produces <strong>system proposals</strong>, which you confirm one by one.</p>
+<p><strong>Placing by hand</strong> lets you seat whoever you want, wherever you want, ranked or not — with
+three limits: a term is required, a student already nominated cannot be reassigned, and if
+the campaign requires a complete file, it requires it by hand too.</p>
+<p><strong>What triggers the next step:</strong> <strong>Send proposals</strong> sends the confirmed proposals to the
+students.</p>
 <h2 id="4-the-student-accepts-or-not">4. The student accepts — or not<a class="headerlink" href="#4-the-student-accepts-or-not" title="Permanent link">¶</a></h2>
 <p><strong>Who acts:</strong> the student, unless you chose direct assignment.</p>
-<p>They receive their proposal and accept or decline it. If you set the campaign to <strong>direct
-assignment</strong>, this step disappears: your decision creates the placement.</p>
+<p>They receive their proposal and accept or decline it; an email confirms their answer.
+Declining also closes their other wishes in the campaign. If you set the campaign to
+<strong>direct assignment</strong>, this step disappears: sending creates the placement.</p>
 <p><strong>What triggers the next step:</strong> acceptance.</p>
 <h2 id="5-nominating-to-the-partner">5. Nominating to the partner<a class="headerlink" href="#5-nominating-to-the-partner" title="Permanent link">¶</a></h2>
 <p><strong>Who acts:</strong> the coordinator, then the host institution.</p>
-<p>You nominate the student to their destination. The partner receives the information and
-answers — through the platform, the EWP network, email or a phone call. You record their
-answer, stating which channel it came through.</p>
+<p>You nominate the student to their destination; this needs a contact at the partner. The
+partner answers through the platform or the EWP network, and their answer records itself.
+If they confirm by email or phone, <strong>Confirm manually</strong> records it, stating the channel.</p>
 <p>While they have not answered, you can <strong>remind</strong> them (once every twenty-four hours) or
 <strong>withdraw</strong> the nomination, which makes the student available for another destination.</p>
 <p>A refusal always comes with a reason, passed on to the institution that nominated.</p>
-<p><strong>What triggers the next step:</strong> the partner's confirmation.</p>
+<p><strong>What triggers the next step:</strong> the partner's confirmation. If a
+<a href="../etablissement/parcours/">mobility path</a> is plugged into the campaign, the student joins
+it at that point: it supplies the tasks of the next step.</p>
 <h2 id="6-the-file-fills-up">6. The file fills up<a class="headerlink" href="#6-the-file-fills-up" title="Permanent link">¶</a></h2>
 <p><strong>Who acts:</strong> the student uploads, the coordinator validates.</p>
 <p>Contractual documents, language scores, learning agreement. Every expected item is listed,
 and the student sees what is missing. You remind the stragglers from the selection bar of
 your list, without keeping a separate list.</p>
-<p>Depending on the campaign setting, an incomplete file either <strong>blocks</strong> the placement or is
-merely <strong>flagged</strong>.</p>
+<p>An incomplete file counts from placement onwards (step 3): depending on the campaign
+setting, it either <strong>blocks</strong> it or is merely <strong>flagged</strong>.</p>
 <p><strong>What triggers the next step:</strong> the file is complete, and the dates are near.</p>
 <h2 id="7-departure-then-the-stay">7. Departure, then the stay<a class="headerlink" href="#7-departure-then-the-stay" title="Permanent link">¶</a></h2>
 <p><strong>Who acts:</strong> everyone, a little at a time.</p>
@@ -2503,11 +2512,14 @@ merely <strong>flagged</strong>.</p>
 change asks for a reason. The period's deadlines appear in the
 <a href="../etablissement/agenda/">agenda</a>, and in whichever calendar each person subscribed to.</p>
 <h2 id="8-coming-back">8. Coming back<a class="headerlink" href="#8-coming-back" title="Permanent link">¶</a></h2>
-<p><strong>Who acts:</strong> the host institution, then the student.</p>
-<p>The institution that hosted enters the grades in its own scale and issues the <strong>transcript</strong>;
-the student is notified and finds it on their file.</p>
-<p>The student submits their <strong>feedback</strong> on the host institution — and may allow their photos
-to be published. Those who have not answered are reminded like documents.</p>
+<p><strong>Who acts:</strong> the student, then their institution.</p>
+<p>The student enters the grade obtained for each course of their learning agreement, picks
+the grading system and can attach the host institution's official <strong>transcript</strong>. Their
+institution validates it or asks for a correction.</p>
+<p>The student also submits their <strong>feedback</strong> on the host institution — and may allow their
+photos to be published. Feedback is moderated in your
+<a href="../etablissement/validations/">validations</a> before it is published. Those who have not
+answered are reminded like documents.</p>
 <p><strong>What closes the loop:</strong> feedback feeds the partner's record, which the next students will
 read before placing their wishes.</p>
 
@@ -2530,7 +2542,7 @@ read before placing their wishes.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 24, 2026 15:58:31 CEST">September 24, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 5, 2026 13:43:10 CET">November 5, 2026</span>
   </span>
 
     

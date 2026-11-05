@@ -2826,20 +2826,24 @@ l'écran refuse plutôt que de deviner.</p>
 <h2 id="cote-etudiant">Côté étudiant<a class="headerlink" href="#cote-etudiant" title="Permanent link">¶</a></h2>
 <h3 id="je-ne-vois-aucune-campagne">« Je ne vois aucune campagne »<a class="headerlink" href="#je-ne-vois-aucune-campagne" title="Permanent link">¶</a></h3>
 <p>Trois causes possibles, dans cet ordre de fréquence.</p>
-<p><strong>La campagne n'est pas ouverte.</strong> Seul l'état <strong>Ouverte</strong> accepte des vœux. Une campagne
-« Prête » est visible de vous, pas de vos étudiants.</p>
-<p><strong>L'étudiant ne fait pas partie du vivier.</strong> Les critères de la campagne — niveau, parcours,
-campus, tags, filtres — ne le retiennent pas. Ouvrez la campagne, regardez la liste des
-participants : s'il n'y est pas, ajoutez-le à la main.</p>
+<p><strong>La campagne est encore en brouillon.</strong> Un étudiant voit une campagne <strong>Prête</strong>, <strong>Ouverte</strong>
+ou <strong>Terminée</strong> — jamais un <strong>Brouillon</strong>. Seule <strong>Ouverte</strong> accepte des vœux.</p>
+<p><strong>L'étudiant ne fait pas partie du vivier.</strong> Les critères de la campagne — niveau, année
+scolaire, libellé de niveau, campus, tags, filtres — ne le retiennent pas, ou il a déjà une
+affectation. Ouvrez la campagne, regardez la liste des participants : s'il n'y est pas,
+ajoutez-le à la main.</p>
 <p><strong>L'étudiant n'a pas de profil.</strong> Sans dossier, il n'existe pour aucune campagne.</p>
 <h3 id="je-ne-peux-pas-valider-mes-vux">« Je ne peux pas valider mes vœux »<a class="headerlink" href="#je-ne-peux-pas-valider-mes-vux" title="Permanent link">¶</a></h3>
-<p>Vous avez posé un <strong>minimum de vœux</strong> et il ne l'a pas atteint. Le minimum bloque autant que
-le maximum.</p>
+<p>Vous avez posé un <strong>minimum de vœux</strong> et il ne l'a pas atteint : sa liste ne s'enregistre
+pas. Le minimum bloque autant que le maximum. Le message qu'il reçoit dit aussi ce qui
+manque pour une destination — un score de langue, un document.</p>
 <h3 id="je-ne-trouve-aucune-destination">« Je ne trouve aucune destination »<a class="headerlink" href="#je-ne-trouve-aucune-destination" title="Permanent link">¶</a></h3>
-<p>Le vivier de destinations de la campagne est vide, ou aucune place n'est posée sur les
-accords qu'il retient. Vérifiez la matrice des places avant de chercher ailleurs : une
-destination sans place ne s'affiche pas.</p>
-<p>Vérifiez aussi la <strong>période</strong> : une place existe toujours pour une période donnée.</p>
+<p>L'étudiant ne voit que les destinations où une place est <strong>planifiée pour lui</strong> : sa ligne
+de la matrice — année, niveau, libellé de niveau, semestre. Vérifiez la matrice des places
+avant de chercher ailleurs.</p>
+<p>Restent écartés aussi : les partenaires masqués ou archivés, son propre campus, et les
+partenaires dont les <strong>filtres étudiants</strong> ne croisent pas les siens — quand l'étudiant et
+le partenaire portent des filtres, ils doivent en partager au moins un.</p>
 <h3 id="je-ne-vois-plus-mon-classement">« Je ne vois plus mon classement »<a class="headerlink" href="#je-ne-vois-plus-mon-classement" title="Permanent link">¶</a></h3>
 <p>C'est volontaire, si votre établissement a masqué le classement aux étudiants. Le réglage
 est dans <a href="../etablissement/parametres/">Ce que vos étudiants voient</a> — vous et votre équipe
@@ -2850,8 +2854,8 @@ liste d'étudiants : elle dit s'il est parti et quand. Et la colonne <strong>Con
 s'est déjà connecté — ce sont deux questions différentes.</p>
 <h2 id="cote-campagne">Côté campagne<a class="headerlink" href="#cote-campagne" title="Permanent link">¶</a></h2>
 <h3 id="le-tour-daffectation-refuse-de-demarrer">« Le tour d'affectation refuse de démarrer »<a class="headerlink" href="#le-tour-daffectation-refuse-de-demarrer" title="Permanent link">¶</a></h3>
-<p>C'est le blocage le plus fréquent, et il est toujours expliqué : le compte rendu <strong>nomme</strong>
-les étudiants qui bloquent et la raison.</p>
+<p>Le compte rendu <strong>nomme</strong> les étudiants qui bloquent et la raison. Trois raisons empêchent
+le départ :</p>
 <table>
 <thead>
 <tr>
@@ -2861,23 +2865,23 @@ les étudiants qui bloquent et la raison.</p>
 </thead>
 <tbody>
 <tr>
-<td>L'étudiant n'a <strong>pas de parcours</strong></td>
-<td>Rattachez-le à un parcours. Si votre établissement n'en utilise pas, créez-en un par niveau.</td>
-</tr>
-<tr>
-<td>L'étudiant n'a <strong>pas de classement</strong></td>
-<td>Importez le classement avant de relancer. Le tour ne le fabrique pas.</td>
-</tr>
-<tr>
-<td>L'étudiant n'a <strong>pas de profil</strong></td>
+<td><strong>no student record</strong> — pas de profil</td>
 <td>Il n'a rien à placer.</td>
 </tr>
 <tr>
-<td>Son <strong>dossier est incomplet</strong></td>
-<td>Complétez-le, ou réglez la campagne sur « signaler » plutôt que « bloquer ».</td>
+<td><strong>no level track</strong> — pas de libellé de niveau</td>
+<td>Rattachez-le à un libellé de niveau (<em>Custom level</em>). Si votre établissement n'en utilise pas, créez-en un par niveau.</td>
+</tr>
+<tr>
+<td><strong>no imported class rank</strong> — pas de classement</td>
+<td>Importez le classement avant de relancer. Le tour ne le fabrique pas.</td>
 </tr>
 </tbody>
 </table>
+<p>Un <strong>dossier incomplet</strong> n'empêche pas le départ. Si la campagne est réglée sur <strong>Block the
+assignment until everything is in hand</strong>, l'étudiant est mis de côté et nommé dans le compte
+rendu ; avec <strong>Show it, assign anyway (recommended)</strong>, il est placé et signalé. Les
+étudiants qui ont répondu « je ne souhaite pas partir » ne bloquent jamais.</p>
 <div class="admonition tip">
 <p class="admonition-title">Le tour n'est pas un geste unique</p>
 <p>Corrigez ce qui bloque et relancez-le autant de fois que nécessaire.</p>
@@ -2885,26 +2889,28 @@ les étudiants qui bloquent et la raison.</p>
 <h3 id="je-ne-peux-pas-supprimer-cette-campagne">« Je ne peux pas supprimer cette campagne »<a class="headerlink" href="#je-ne-peux-pas-supprimer-cette-campagne" title="Permanent link">¶</a></h3>
 <p>Seule une campagne en <strong>brouillon</strong> se supprime. Une campagne ouverte porte déjà des vœux.</p>
 <h3 id="je-ne-peux-pas-rouvrir-cette-campagne">« Je ne peux pas rouvrir cette campagne »<a class="headerlink" href="#je-ne-peux-pas-rouvrir-cette-campagne" title="Permanent link">¶</a></h3>
-<p>Seule une campagne <strong>terminée</strong> se rouvre. Et si vous la rouvrez sans repousser sa date de
-fin, elle se refermera dès le lendemain matin.</p>
+<p>Seule une campagne <strong>terminée</strong> se rouvre. Rouverte après son heure de fin, elle <strong>reste
+ouverte</strong> jusqu'à ce que vous la clôturiez : la clôture automatique ne la referme pas.</p>
 <h3 id="ma-campagne-sest-fermee-toute-seule">« Ma campagne s'est fermée toute seule »<a class="headerlink" href="#ma-campagne-sest-fermee-toute-seule" title="Permanent link">¶</a></h3>
-<p>Sa date de fin est passée. C'est le fonctionnement normal depuis septembre 2026 : le
-lendemain du dernier jour, la campagne se clôt, les vœux en brouillon deviennent des vœux et
-vous recevez le bilan. Rouvrez-la et repoussez la date si c'était prématuré.</p>
+<p>Son heure de fin est passée : la campagne se clôt à la minute fixée, les vœux sont figés et
+vous recevez le bilan. Rouvrez-la si c'était prématuré.</p>
 <h3 id="mes-compteurs-de-places-ne-disent-pas-la-meme-chose-que-mon-export">« Mes compteurs de places ne disent pas la même chose que mon export »<a class="headerlink" href="#mes-compteurs-de-places-ne-disent-pas-la-meme-chose-que-mon-export" title="Permanent link">¶</a></h3>
-<p>Depuis septembre 2026, tous les compteurs de places ne portent plus que sur les mobilités
-<strong>sortantes</strong> — celles que vous envoyez. Les places que vos partenaires ouvrent chez eux ne
-gonflent plus vos totaux. Si un chiffre vous surprend, c'est probablement qu'il était faux
-avant.</p>
+<p>Les compteurs de places portent sur les mobilités <strong>sortantes</strong> — celles que vous envoyez.
+Les places que vos partenaires ouvrent chez eux ne gonflent pas vos totaux ; l'accord les
+montre à part, dans une jauge des entrants.</p>
 <h2 id="cote-partenaire">Côté partenaire<a class="headerlink" href="#cote-partenaire" title="Permanent link">¶</a></h2>
 <h3 id="je-ne-peux-pas-relancer-ce-partenaire">« Je ne peux pas relancer ce partenaire »<a class="headerlink" href="#je-ne-peux-pas-relancer-ce-partenaire" title="Permanent link">¶</a></h3>
-<p>Une relance par vingt-quatre heures. Le bouton se grise ensuite, et il vous dira quand.</p>
+<p>Une relance par vingt-quatre heures. Le bouton se grise ensuite, et son infobulle donne la
+date de la dernière relance.</p>
 <h3 id="je-ne-peux-pas-nominer-cet-etudiant-sur-cet-accord">« Je ne peux pas nominer cet étudiant sur cet accord »<a class="headerlink" href="#je-ne-peux-pas-nominer-cet-etudiant-sur-cet-accord" title="Permanent link">¶</a></h3>
-<p>Une nomination est déjà en cours sur cet accord pour lui. Retirez-la d'abord si vous voulez
-la refaire.</p>
+<p>Deux causes. <strong>Aucun contact chez ce partenaire</strong> : « No contact for this partner — add one
+to be able to nominate. » Ajoutez un contact sur sa fiche. <strong>L'étudiant est déjà nominé</strong> :
+seule une affectation pas encore nominée se nomine. Pour recommencer, retirez la nomination,
+puis réaffectez-le.</p>
 <h3 id="ce-partenaire-napparait-pas-dans-ma-campagne">« Ce partenaire n'apparaît pas dans ma campagne »<a class="headerlink" href="#ce-partenaire-napparait-pas-dans-ma-campagne" title="Permanent link">¶</a></h3>
-<p>Le vivier de destinations ne le retient pas : vérifiez les types d'accord, les périodes et
-les filtres d'établissement de la campagne. Vérifiez aussi qu'il n'est pas archivé ou masqué.</p>
+<p>Le vivier de destinations ne le retient pas : vérifiez les types d'accord, les périodes, le
+niveau, l'année scolaire, le type de mobilité et les filtres d'établissement de la campagne,
+et que l'accord est actif. Vérifiez aussi qu'il n'est pas archivé ou masqué.</p>
 <h3 id="je-ne-peux-pas-refuser-cette-nomination">« Je ne peux pas refuser cette nomination »<a class="headerlink" href="#je-ne-peux-pas-refuser-cette-nomination" title="Permanent link">¶</a></h3>
 <p>Un refus demande un motif. Il sera transmis à l'établissement qui vous a nommé l'étudiant.</p>
 <h2 id="cote-acces-et-permissions">Côté accès et permissions<a class="headerlink" href="#cote-acces-et-permissions" title="Permanent link">¶</a></h2>
@@ -2913,18 +2919,19 @@ les filtres d'établissement de la campagne. Vérifiez aussi qu'il n'est pas arc
 l'écran. Votre écran <a href="../etablissement/parametres/">Mes permissions</a> vous dit exactement ce
 que vous pouvez faire et sur qui.</p>
 <h3 id="cet-etudiant-est-hors-de-mon-perimetre">« Cet étudiant est hors de mon périmètre »<a class="headerlink" href="#cet-etudiant-est-hors-de-mon-perimetre" title="Permanent link">¶</a></h3>
-<p>Votre rôle est limité à une direction, un campus ou des promotions qui ne le couvrent pas.
-Ce n'est pas une panne : c'est le périmètre défini par votre administrateur.</p>
+<p>Votre rôle est limité à un domaine métier, une direction, un campus ou des promotions qui ne
+le couvrent pas. Ce n'est pas une panne : c'est le périmètre défini par votre administrateur.</p>
 <h3 id="une-partie-de-ma-selection-na-pas-ete-traitee">« Une partie de ma sélection n'a pas été traitée »<a class="headerlink" href="#une-partie-de-ma-selection-na-pas-ete-traitee" title="Permanent link">¶</a></h3>
-<p>Votre action portait sur des lignes hors de votre périmètre. Elles sont écartées, et
-l'écran vous dit lesquelles.</p>
+<p>Votre action portait sur des lignes hors de votre périmètre. Elles sont écartées, et l'écran
+indique combien.</p>
 <h3 id="je-ne-peux-pas-me-connecter-avec-mon-compte-de-letablissement">« Je ne peux pas me connecter avec mon compte de l'établissement »<a class="headerlink" href="#je-ne-peux-pas-me-connecter-avec-mon-compte-de-letablissement" title="Permanent link">¶</a></h3>
 <p>L'authentification unique vérifie <strong>qui vous êtes</strong>, elle ne décide pas que vous avez le
 droit d'entrer. Votre compte doit exister dans AroundLink au préalable. Voir
 <a href="../plateforme/sso-microsoft/">Qui fournit quoi</a>.</p>
 <h2 id="cote-documents">Côté documents<a class="headerlink" href="#cote-documents" title="Permanent link">¶</a></h2>
 <h3 id="je-ne-peux-pas-enregistrer-ce-score-de-langue">« Je ne peux pas enregistrer ce score de langue »<a class="headerlink" href="#je-ne-peux-pas-enregistrer-ce-score-de-langue" title="Permanent link">¶</a></h3>
-<p>Un score demande toujours une pièce justificative. Le fichier et la date sont obligatoires.</p>
+<p>Un score demande toujours une pièce justificative. Quand l'étudiant le saisit lui-même, la
+date du test est aussi obligatoire.</p>
 <h3 id="on-me-demande-un-motif-pour-modifier-le-contrat-pedagogique">« On me demande un motif pour modifier le contrat pédagogique »<a class="headerlink" href="#on-me-demande-un-motif-pour-modifier-le-contrat-pedagogique" title="Permanent link">¶</a></h3>
 <p>Tout composant ajouté ou retiré après validation demande une justification. C'est une
 exigence du contrat, pas un réglage.</p>
@@ -2948,7 +2955,7 @@ exigence du contrat, pas un réglage.</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="24 septembre 2026 15:58:31 CEST">24 septembre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 13:43:10 CET">5 novembre 2026</span>
   </span>
 
     

@@ -2826,20 +2826,23 @@ adivinar.</p>
 <h2 id="del-lado-del-estudiante">Del lado del estudiante<a class="headerlink" href="#del-lado-del-estudiante" title="Permanent link">¶</a></h2>
 <h3 id="no-veo-ninguna-campana">«No veo ninguna campaña»<a class="headerlink" href="#no-veo-ninguna-campana" title="Permanent link">¶</a></h3>
 <p>Tres causas posibles, en este orden de frecuencia.</p>
-<p><strong>La campaña no está abierta.</strong> Solo el estado <strong>Abierta</strong> acepta preferencias. Una campaña
-«Lista» es visible para usted, no para sus estudiantes.</p>
-<p><strong>El estudiante no forma parte del grupo.</strong> Los criterios de la campaña — nivel, itinerario,
-campus, etiquetas, filtros — no lo retienen. Abra la campaña y mire la lista de
-participantes: si no está, añádalo a mano.</p>
+<p><strong>La campaña sigue en borrador.</strong> Un estudiante ve una campaña <strong>Lista</strong>, <strong>Abierta</strong> o
+<strong>Terminada</strong> — nunca una en <strong>Borrador</strong>. Solo <strong>Abierta</strong> acepta preferencias.</p>
+<p><strong>El estudiante no forma parte del grupo.</strong> Los criterios de la campaña — nivel, año
+académico, denominación de nivel, campus, etiquetas, filtros — no lo retienen, o ya tiene una
+asignación. Abra la campaña y mire la lista de participantes: si no está, añádalo a mano.</p>
 <p><strong>El estudiante no tiene perfil.</strong> Sin expediente, no existe para ninguna campaña.</p>
 <h3 id="no-puedo-validar-mis-preferencias">«No puedo validar mis preferencias»<a class="headerlink" href="#no-puedo-validar-mis-preferencias" title="Permanent link">¶</a></h3>
-<p>Usted ha fijado un <strong>mínimo de preferencias</strong> y no lo ha alcanzado. El mínimo bloquea tanto
-como el máximo.</p>
+<p>Usted ha fijado un <strong>mínimo de preferencias</strong> y el estudiante no lo ha alcanzado: su lista no
+se guarda. El mínimo bloquea tanto como el máximo. El mensaje que recibe indica también lo que
+le falta para un destino — un resultado de idioma, un documento.</p>
 <h3 id="no-encuentro-ningun-destino">«No encuentro ningún destino»<a class="headerlink" href="#no-encuentro-ningun-destino" title="Permanent link">¶</a></h3>
-<p>El grupo de destinos de la campaña está vacío, o no hay ninguna plaza colocada en los
-acuerdos que retiene. Compruebe la matriz de plazas antes de buscar en otra parte: un destino
-sin plaza no se muestra.</p>
-<p>Compruebe también el <strong>periodo</strong>: una plaza existe siempre para un periodo dado.</p>
+<p>El estudiante solo ve los destinos en los que hay una plaza <strong>prevista para él</strong>: su fila de
+la matriz — año, nivel, denominación de nivel, semestre. Compruebe la matriz de plazas antes de
+buscar en otra parte.</p>
+<p>También quedan excluidos: los socios ocultos o archivados, su propio campus, y los socios cuyos
+<strong>filtros de estudiantes</strong> no coinciden con los suyos — cuando tanto el estudiante como el
+socio tienen filtros, deben compartir al menos uno.</p>
 <h3 id="ya-no-veo-mi-clasificacion">«Ya no veo mi clasificación»<a class="headerlink" href="#ya-no-veo-mi-clasificacion" title="Permanent link">¶</a></h3>
 <p>Es intencionado, si su institución ha ocultado la clasificación a los estudiantes. El ajuste
 está en <a href="../etablissement/parametres/">Lo que ven sus estudiantes</a> — usted y su equipo siguen
@@ -2850,8 +2853,8 @@ de estudiantes: dice si ha salido y cuándo. Y la columna <strong>Connected</str
 conectado — son dos preguntas distintas.</p>
 <h2 id="del-lado-de-la-campana">Del lado de la campaña<a class="headerlink" href="#del-lado-de-la-campana" title="Permanent link">¶</a></h2>
 <h3 id="la-ronda-de-asignacion-se-niega-a-arrancar">«La ronda de asignación se niega a arrancar»<a class="headerlink" href="#la-ronda-de-asignacion-se-niega-a-arrancar" title="Permanent link">¶</a></h3>
-<p>Es el bloqueo más frecuente, y siempre viene explicado: el informe <strong>nombra</strong> a los
-estudiantes que bloquean y la razón.</p>
+<p>El informe <strong>nombra</strong> a los estudiantes que bloquean, y la razón. Tres motivos impiden el
+arranque:</p>
 <table>
 <thead>
 <tr>
@@ -2861,23 +2864,23 @@ estudiantes que bloquean y la razón.</p>
 </thead>
 <tbody>
 <tr>
-<td>El estudiante no tiene <strong>itinerario</strong></td>
-<td>Asígnele uno. Si su institución no los usa, cree uno por nivel.</td>
-</tr>
-<tr>
-<td>El estudiante no tiene <strong>clasificación</strong></td>
-<td>Importe la clasificación antes de relanzar. La ronda no la fabrica.</td>
-</tr>
-<tr>
-<td>El estudiante no tiene <strong>perfil</strong></td>
+<td><strong>no student record</strong></td>
 <td>No hay nada que colocar.</td>
 </tr>
 <tr>
-<td>Su <strong>expediente está incompleto</strong></td>
-<td>Complételo, o ajuste la campaña a «señalar» en vez de «bloquear».</td>
+<td><strong>no level track</strong></td>
+<td>Asígnele una denominación de nivel (<em>Custom level</em>). Si su institución no las usa, cree una por nivel.</td>
+</tr>
+<tr>
+<td><strong>no imported class rank</strong></td>
+<td>Importe la clasificación antes de relanzar. La ronda no la fabrica.</td>
 </tr>
 </tbody>
 </table>
+<p>Un <strong>expediente incompleto</strong> no impide el arranque. Si la campaña está configurada en <strong>Block
+the assignment until everything is in hand</strong>, el estudiante queda apartado y se le nombra en el
+informe; con <strong>Show it, assign anyway (recommended)</strong>, se le asigna y se le señala. Los
+estudiantes que han respondido «no deseo irme» nunca bloquean.</p>
 <div class="admonition tip">
 <p class="admonition-title">La ronda no es un gesto único</p>
 <p>Corrija lo que bloquea y relánsela tantas veces como haga falta.</p>
@@ -2885,43 +2888,48 @@ estudiantes que bloquean y la razón.</p>
 <h3 id="no-puedo-eliminar-esta-campana">«No puedo eliminar esta campaña»<a class="headerlink" href="#no-puedo-eliminar-esta-campana" title="Permanent link">¶</a></h3>
 <p>Solo se elimina una campaña en <strong>borrador</strong>. Una campaña abierta ya lleva preferencias.</p>
 <h3 id="no-puedo-reabrir-esta-campana">«No puedo reabrir esta campaña»<a class="headerlink" href="#no-puedo-reabrir-esta-campana" title="Permanent link">¶</a></h3>
-<p>Solo se reabre una campaña <strong>terminada</strong>. Y si la reabre sin aplazar su fecha de fin, volverá
-a cerrarse a la mañana siguiente.</p>
+<p>Solo se reabre una campaña <strong>terminada</strong>. Si se reabre después de su hora de cierre,
+<strong>permanece abierta</strong> hasta que usted la cierre: el cierre automático no vuelve a cerrarla.</p>
 <h3 id="mi-campana-se-ha-cerrado-sola">«Mi campaña se ha cerrado sola»<a class="headerlink" href="#mi-campana-se-ha-cerrado-sola" title="Permanent link">¶</a></h3>
-<p>Su fecha de fin ha pasado. Es el funcionamiento normal desde septiembre de 2026: al día
-siguiente del último día, la campaña se cierra, las preferencias en borrador se convierten en
-preferencias y usted recibe el balance. Reábrala y aplace la fecha si era prematuro.</p>
+<p>Su hora de cierre ha pasado: la campaña se cierra en el minuto que usted fijó, las preferencias
+quedan congeladas y usted recibe el balance. Reábrala si era prematuro.</p>
 <h3 id="mis-contadores-de-plazas-no-dicen-lo-mismo-que-mi-exportacion">«Mis contadores de plazas no dicen lo mismo que mi exportación»<a class="headerlink" href="#mis-contadores-de-plazas-no-dicen-lo-mismo-que-mi-exportacion" title="Permanent link">¶</a></h3>
-<p>Desde septiembre de 2026, todos los contadores de plazas cubren únicamente las movilidades
-<strong>salientes</strong> — las que usted envía. Las plazas que sus socios abren en su casa ya no inflan
-sus totales. Si una cifra le sorprende, probablemente era falsa antes.</p>
+<p>Los contadores de plazas cubren las movilidades <strong>salientes</strong> — las que usted envía. Las plazas
+que sus socios abren en su casa no inflan sus totales; el acuerdo las muestra aparte, en un
+indicador de entrantes.</p>
 <h2 id="del-lado-del-socio">Del lado del socio<a class="headerlink" href="#del-lado-del-socio" title="Permanent link">¶</a></h2>
 <h3 id="no-puedo-recordarselo-a-este-socio">«No puedo recordárselo a este socio»<a class="headerlink" href="#no-puedo-recordarselo-a-este-socio" title="Permanent link">¶</a></h3>
-<p>Un recordatorio cada veinticuatro horas. El botón se desactiva después, y le dirá cuándo.</p>
+<p>Un recordatorio cada veinticuatro horas. El botón se desactiva después, y su información
+emergente indica la fecha del último recordatorio.</p>
 <h3 id="no-puedo-nominar-a-este-estudiante-en-este-acuerdo">«No puedo nominar a este estudiante en este acuerdo»<a class="headerlink" href="#no-puedo-nominar-a-este-estudiante-en-este-acuerdo" title="Permanent link">¶</a></h3>
-<p>Ya hay una nominación en curso en ese acuerdo para él. Retírela primero si quiere rehacerla.</p>
+<p>Dos causas. <strong>No hay ningún contacto en este socio</strong>: "No contact for this partner — add one
+to be able to nominate." Añada un contacto en su ficha. <strong>El estudiante ya está nominado</strong>:
+solo se puede nominar una asignación que aún no lo esté. Para empezar de nuevo, retire la
+nominación y vuelva a asignarlo.</p>
 <h3 id="este-socio-no-aparece-en-mi-campana">«Este socio no aparece en mi campaña»<a class="headerlink" href="#este-socio-no-aparece-en-mi-campana" title="Permanent link">¶</a></h3>
-<p>El grupo de destinos no lo retiene: compruebe los tipos de acuerdo, los periodos y los
-filtros de institución de la campaña. Compruebe también que no esté archivado ni oculto.</p>
+<p>El grupo de destinos no lo retiene: compruebe los tipos de acuerdo, los periodos, el nivel, el
+año académico, el tipo de movilidad y los filtros de institución de la campaña, y que el
+acuerdo esté activo. Compruebe también que no esté archivado ni oculto.</p>
 <h3 id="no-puedo-rechazar-esta-nominacion">«No puedo rechazar esta nominación»<a class="headerlink" href="#no-puedo-rechazar-esta-nominacion" title="Permanent link">¶</a></h3>
 <p>Un rechazo exige un motivo. Se transmitirá a la institución que le nominó al estudiante.</p>
 <h2 id="del-lado-de-accesos-y-permisos">Del lado de accesos y permisos<a class="headerlink" href="#del-lado-de-accesos-y-permisos" title="Permanent link">¶</a></h2>
 <h3 id="esta-pantalla-es-de-solo-lectura">«Esta pantalla es de solo lectura»<a class="headerlink" href="#esta-pantalla-es-de-solo-lectura" title="Permanent link">¶</a></h3>
-<p>Su rol le da el nivel <strong>Consultar</strong> en esta sección. Un banner lo indica en la parte superior.
-Su pantalla <a href="../etablissement/parametres/">Mis permisos</a> le dice exactamente qué puede hacer y
-sobre quién.</p>
+<p>Su rol le da el nivel <strong>View</strong> en esta sección. Un banner lo indica en la parte superior de la
+pantalla. Su pantalla <a href="../etablissement/parametres/">Mis permisos</a> le dice exactamente qué puede
+hacer y sobre quién.</p>
 <h3 id="este-estudiante-esta-fuera-de-mi-perimetro">«Este estudiante está fuera de mi perímetro»<a class="headerlink" href="#este-estudiante-esta-fuera-de-mi-perimetro" title="Permanent link">¶</a></h3>
-<p>Su rol se limita a una dirección, un campus o unas promociones que no lo cubren. No es una
-avería: es el perímetro definido por su administrador.</p>
+<p>Su rol se limita a un ámbito de actividad, una dirección, un campus o unas promociones que no lo
+cubren. No es una avería: es el perímetro definido por su administrador.</p>
 <h3 id="parte-de-mi-seleccion-no-se-ha-procesado">«Parte de mi selección no se ha procesado»<a class="headerlink" href="#parte-de-mi-seleccion-no-se-ha-procesado" title="Permanent link">¶</a></h3>
-<p>Su acción afectaba a filas fuera de su perímetro. Se apartan, y la pantalla le dice cuáles.</p>
+<p>Su acción afectaba a filas fuera de su perímetro. Se apartan, y la pantalla le dice cuántas.</p>
 <h3 id="no-puedo-conectarme-con-mi-cuenta-de-la-institucion">«No puedo conectarme con mi cuenta de la institución»<a class="headerlink" href="#no-puedo-conectarme-con-mi-cuenta-de-la-institucion" title="Permanent link">¶</a></h3>
-<p>El inicio de sesión único verifica <strong>quién es usted</strong>, no decide que tenga derecho a entrar.
+<p>El inicio de sesión único verifica <strong>quién es usted</strong>; no decide que tenga derecho a entrar.
 Su cuenta debe existir previamente en AroundLink. Véase
 <a href="../plateforme/sso-microsoft/">Quién aporta qué</a>.</p>
 <h2 id="del-lado-de-los-documentos">Del lado de los documentos<a class="headerlink" href="#del-lado-de-los-documentos" title="Permanent link">¶</a></h2>
 <h3 id="no-puedo-guardar-este-resultado-de-idioma">«No puedo guardar este resultado de idioma»<a class="headerlink" href="#no-puedo-guardar-este-resultado-de-idioma" title="Permanent link">¶</a></h3>
-<p>Un resultado exige siempre un justificante. El archivo y la fecha son obligatorios.</p>
+<p>Un resultado exige siempre un justificante. Cuando lo introduce el propio estudiante, la fecha
+del examen también es obligatoria.</p>
 <h3 id="me-piden-un-motivo-para-modificar-el-contrato-de-estudios">«Me piden un motivo para modificar el contrato de estudios»<a class="headerlink" href="#me-piden-un-motivo-para-modificar-el-contrato-de-estudios" title="Permanent link">¶</a></h3>
 <p>Todo componente añadido o retirado tras la validación exige una justificación. Es una
 exigencia del contrato, no un ajuste.</p>
@@ -2945,7 +2953,7 @@ exigencia del contrato, no un ajuste.</p>
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="1 de octubre de 2026 20:06:30 CEST">1 de octubre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de noviembre de 2026 13:43:10 CET">5 de noviembre de 2026</span>
   </span>
 
     

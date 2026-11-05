@@ -2697,8 +2697,8 @@ campaign remains editable.</p>
 campaign moves to Finished with nobody clicking: wishes still in draft become wishes, your
 students are notified and you receive the summary — exactly what the "Finish" button does.</p>
 <p>If that closing feels premature, the "Reopen" button gives your students back the right to
-change their wishes. Remember to push the end date back: without that, the campaign closes
-again the next morning.</p>
+change their wishes. Reopened after its closing time, it stays open until you close it: the
+automatic closing does not close it again.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/campagnes-liste.png" data-desc-position="bottom"><img alt="Campaign list, showing how many campaigns are draft, open and finished" src="../../../assets/screenshots/campagnes-liste.png"></a></p>
 <p><em>Your campaigns, whatever their status. The four counters at the top give you the state of play at a glance. Click the image to enlarge it.</em></p>
 <p><strong>Use case.</strong></p>
@@ -2729,7 +2729,7 @@ afterwards against your decision.</p>
 <h3 id="the-student-pool">The student pool<a class="headerlink" href="#the-student-pool" title="Permanent link">¶</a></h3>
 <p>Who takes part. Combine as many criteria as you need:</p>
 <ul>
-<li><strong>Academic level</strong> and <strong>track</strong> — the track is the label you gave your cohorts
+<li><strong>Academic level</strong> and <strong>level label</strong> — the name you gave your cohorts
   ("Aero 4", "MSc 26-27");</li>
 <li><strong>Campus</strong> — or all of them;</li>
 <li><strong>General tags</strong> and <strong>student filters</strong>;</li>
@@ -2788,7 +2788,7 @@ beforehand, not after.</p>
 <div class="admonition note">
 <p class="admonition-title">A student only sees what is genuinely open to them</p>
 <p>A destination appears in their list, and can be wished for, only if <strong>their row of the
-matrix</strong> — their year, their level, their track, their semester — declares places. A
+matrix</strong> — their year, their level, their level label, their semester — declares places. A
 destination that is declared but <strong>full</strong> can still be wished for; one never opened to
 their promotion cannot.</p>
 <p>You, the coordinator, keep all your freedom: adding a wish, pre-assigning, nominating —
@@ -2798,7 +2798,7 @@ nothing changes on your side.</p>
 <p><strong>What it's for.</strong> Knowing what must be ready for a matching round to run — and why it
 sometimes refuses to start.</p>
 <p><strong>Who it's for.</strong> <span class="al-audience">IRO manager / coordinator</span></p>
-<p><strong>How it works.</strong> The engine seats each student on the cell of <strong>their own track</strong> — "Aero
+<p><strong>How it works.</strong> The engine seats each student on the cell of <strong>their own level label</strong> — "Aero
 4" is not "Aero 5" — and it never guesses. Three conditions are therefore required of every
 participant:</p>
 <table>
@@ -2814,8 +2814,8 @@ participant:</p>
 <td>With no file, there is nothing to place.</td>
 </tr>
 <tr>
-<td><strong>A track</strong></td>
-<td>It is what designates the cell. With no track, no cell matches them.</td>
+<td><strong>A level label</strong></td>
+<td>It is what designates the cell. With no label, no cell matches them.</td>
 </tr>
 <tr>
 <td><strong>An imported ranking</strong></td>
@@ -2823,11 +2823,11 @@ participant:</p>
 </tr>
 </tbody>
 </table>
-<p>A participant missing any of the three is <strong>set aside and named</strong> in the report, with the
-reason. The round does not run in silence.</p>
+<p>If a participant is missing any of the three, <strong>the round refuses to start</strong> and names the
+students concerned, with the reason. It never runs in silence.</p>
 <div class="admonition warning">
-<p class="admonition-title">A track is required even if you do not use them</p>
-<p>If your institution does not distinguish cohorts, give yourself one track per level you
+<p class="admonition-title">A level label is required even if you do not use them</p>
+<p>If your institution does not distinguish cohorts, give yourself one label per level you
 use — "Bachelor", "Master". A single mechanism then carries every case, and nothing is
 ever inferred on your behalf.</p>
 </div>
@@ -2836,9 +2836,10 @@ ever inferred on your behalf.</p>
 <p>The round does not produce a ranking. Import it first; otherwise unranked students would
 be served last, which would be a decision nobody took.</p>
 </div>
-<p><strong>None of this constrains you by hand.</strong> You remain free to place whoever you want, wherever
-you want, ranked or not: that is your call, and the engine does not stand in the way. These
-three conditions apply to the automatic round only.</p>
+<p><strong>These three conditions apply to the automatic round only.</strong> By hand, you remain free to
+place whoever you want, wherever you want, ranked or not. Only two limits: a student already
+nominated cannot be reassigned, and if the campaign is set to <strong>Block the assignment until
+everything is in hand</strong>, the complete file is required by hand too.</p>
 <p>A round can be re-run as often as needed — it is not a one-shot.</p>
 <h2 id="wishes-proposals-and-placements">Wishes, proposals and placements<a class="headerlink" href="#wishes-proposals-and-placements" title="Permanent link">¶</a></h2>
 <p><strong>What it's for.</strong> Turns each student's ranked wish list into a confirmed placement,
@@ -2869,13 +2870,10 @@ and <strong>who</strong> it left aside.</p>
 <p><strong>How it works.</strong> At the end of the round, a report tells you how many students were served
 and which ones were left out. Skipped students are <strong>named</strong>, with the reason — a bare total
 would send you through the whole cohort to find them.</p>
-<p>Four reasons can leave a student aside:</p>
-<ul>
-<li>they have <strong>no profile</strong>;</li>
-<li>their level has <strong>no track</strong> attached;</li>
-<li>they have <strong>no ranking</strong>;</li>
-<li>their <strong>file is incomplete</strong>.</li>
-</ul>
+<p>A missing profile, level label or ranking prevents the round from starting (see above).
+During the round, a student is set aside when <strong>their file is incomplete</strong> and the campaign
+is set to <strong>Block the assignment until everything is in hand</strong>: the engine then moves to
+their next wish, or leaves them without a place.</p>
 <p>A round that places nobody now says so plainly, instead of reporting itself as completed.</p>
 <p><strong>Use case.</strong></p>
 <blockquote>
@@ -3068,7 +3066,7 @@ the discussion is about the twelve unplaced students rather than about reading t
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 5, 2026 12:59:36 CET">November 5, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 5, 2026 13:43:10 CET">November 5, 2026</span>
   </span>
 
     

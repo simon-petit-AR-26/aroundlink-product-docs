@@ -2432,8 +2432,8 @@ c'est souvent ce qui manque quand on cherche pourquoi un dossier n'avance pas.</
 <td>Les destinations existent mais n'ouvrent rien</td>
 </tr>
 <tr>
-<td><strong>Vos parcours</strong> (un par promotion, ou un par niveau)</td>
-<td>Administrateur, dans les paramètres</td>
+<td><strong>Vos libellés de niveau</strong> (<em>Custom label</em> : un par promotion, ou un par niveau), <strong>portés par chaque étudiant</strong></td>
+<td>Administrateur, dans <strong>Paramètres ▸ Academic levels</strong></td>
 <td>Le tour d'affectation refuse de démarrer</td>
 </tr>
 <tr>
@@ -2453,50 +2453,60 @@ voient, et ne trouvent aucune destination. Vérifiez la matrice avant d'ouvrir.<
 <p>Il crée la campagne, choisit <strong>qui participe</strong> et <strong>où l'on peut partir</strong>, règle le nombre de
 vœux, les documents requis et les quelques options qui ne se reprennent pas ensuite. Voir
 <a href="../etablissement/campagnes/">Paramétrer une campagne, réglage par réglage</a>.</p>
-<p>La campagne passe de <strong>Brouillon</strong> à <strong>Prête</strong>, puis à <strong>Ouverte</strong>.</p>
+<p>La campagne passe de <strong>Brouillon</strong> à <strong>Prête</strong>, puis à <strong>Ouverte</strong>. Une campagne <strong>Prête</strong>
+s'ouvre d'elle-même à son heure d'ouverture, et les étudiants sont alors invités ; une
+campagne restée en <strong>Brouillon</strong> ne s'ouvre jamais seule.</p>
 <p><strong>Ce qui déclenche la suite :</strong> seul l'état <strong>Ouverte</strong> accepte des vœux. Une campagne
-« Prête » se regarde, elle ne se remplit pas.</p>
+« Prête » est déjà visible des étudiants, mais elle ne se remplit pas.</p>
 <h2 id="2-letudiant-depose-ses-vux">2. L'étudiant dépose ses vœux<a class="headerlink" href="#2-letudiant-depose-ses-vux" title="Permanent link">¶</a></h2>
 <p><strong>Qui agit :</strong> l'étudiant.</p>
-<p>Il découvre les destinations, en met de côté en favori, et dépose ses vœux depuis l'écran
-même où il les découvre. Il les classe par ordre de préférence.</p>
-<p>Si vous avez posé un <strong>minimum de vœux</strong>, il ne peut pas valider tant qu'il ne l'a pas
-atteint. Si vous avez activé la réponse « je ne souhaite pas partir », il peut aussi le
-déclarer — sans avoir à se justifier.</p>
-<p><strong>Ce qui déclenche la suite :</strong> la clôture de la campagne, à sa date de fin ou par vous.
-Les vœux encore en brouillon deviennent alors de vrais vœux.</p>
+<p>Il découvre les destinations, en met de côté en favori, et les verse dans ses vœux, qu'il
+classe par ordre de préférence. Il ne voit que les destinations où une place est planifiée
+pour lui. Tant que la campagne est ouverte, il peut revenir sur sa liste.</p>
+<p>Si vous avez posé un <strong>minimum de vœux</strong>, sa liste ne s'enregistre pas tant qu'il ne l'a pas
+atteint. Si vous avez activé la réponse « je ne souhaite pas partir », il peut aussi la
+donner — sans avoir à se justifier.</p>
+<p><strong>Ce qui déclenche la suite :</strong> la clôture de la campagne, à son heure de fin ou par vous.
+Ses vœux sont alors figés.</p>
 <h2 id="3-laffectation">3. L'affectation<a class="headerlink" href="#3-laffectation" title="Permanent link">¶</a></h2>
 <p><strong>Qui agit :</strong> le coordinateur.</p>
 <p>Deux chemins, qui coexistent.</p>
-<p><strong>Le tour automatique</strong> sert les étudiants dans l'ordre du classement : le premier classé
-obtient son meilleur vœu disponible, et ce qui reste va au suivant. Il exige de chaque
-participant un profil, un parcours et un classement importé — voir
-<a href="../etablissement/campagnes/">Ce que le matchmaking exige</a>. Il peut être relancé autant de
-fois que nécessaire.</p>
-<p><strong>L'affectation à la main</strong> n'est contrainte par rien. Vous placez qui vous voulez, où vous
-voulez, classé ou non.</p>
-<p><strong>Ce qui déclenche la suite :</strong> une affectation existe.</p>
+<p><strong>Le tour automatique</strong> (<strong>Match all students</strong>) sert les étudiants dans l'ordre du
+classement : le premier classé obtient son meilleur vœu disponible, et ce qui reste va au
+suivant. Il exige de chaque participant un profil, un libellé de niveau et un classement
+importé — voir <a href="../etablissement/campagnes/">Ce que le matchmaking exige</a>. Il peut être
+relancé autant de fois que nécessaire. Il produit des <strong>propositions du système</strong>, que vous
+confirmez une à une.</p>
+<p><strong>L'affectation à la main</strong> vous laisse placer qui vous voulez, où vous voulez, classé ou
+non — avec trois limites : une période est obligatoire, un étudiant déjà nominé ne se
+réaffecte pas, et si la campagne exige un dossier complet, elle l'exige aussi à la main.</p>
+<p><strong>Ce qui déclenche la suite :</strong> <strong>Send proposals</strong> envoie aux étudiants les propositions
+confirmées.</p>
 <h2 id="4-letudiant-accepte-ou-pas">4. L'étudiant accepte — ou pas<a class="headerlink" href="#4-letudiant-accepte-ou-pas" title="Permanent link">¶</a></h2>
 <p><strong>Qui agit :</strong> l'étudiant, sauf si vous avez choisi l'affectation directe.</p>
-<p>Il reçoit sa proposition, l'accepte ou la refuse. Si vous avez réglé la campagne sur
-<strong>affectation directe</strong>, cette étape disparaît : votre décision crée l'affectation.</p>
+<p>Il reçoit sa proposition, l'accepte ou la refuse ; un e-mail confirme sa réponse. Refuser
+clôt aussi ses autres vœux de la campagne. Si vous avez réglé la campagne sur
+<strong>affectation directe</strong>, cette étape disparaît : l'envoi crée l'affectation.</p>
 <p><strong>Ce qui déclenche la suite :</strong> l'acceptation.</p>
 <h2 id="5-la-nomination-chez-le-partenaire">5. La nomination chez le partenaire<a class="headerlink" href="#5-la-nomination-chez-le-partenaire" title="Permanent link">¶</a></h2>
 <p><strong>Qui agit :</strong> le coordinateur, puis l'établissement d'accueil.</p>
-<p>Vous nominez l'étudiant auprès de sa destination. Le partenaire reçoit l'information et
-répond — par la plateforme, par le réseau EWP, par e-mail ou par téléphone. Vous enregistrez
-sa réponse en précisant par quel canal elle est arrivée.</p>
+<p>Vous nominez l'étudiant auprès de sa destination ; il faut pour cela un contact chez le
+partenaire. Le partenaire répond par la plateforme ou par le réseau EWP, et sa réponse
+s'enregistre d'elle-même. S'il vous confirme par e-mail ou par téléphone, <strong>Confirm
+manually</strong> l'enregistre en précisant le canal.</p>
 <p>Tant qu'il n'a pas répondu, vous pouvez le <strong>relancer</strong> (une fois par vingt-quatre heures)
 ou <strong>retirer</strong> la nomination, ce qui rend l'étudiant disponible pour une autre destination.</p>
 <p>Un refus s'accompagne toujours d'un motif, transmis à l'établissement qui a nommé.</p>
-<p><strong>Ce qui déclenche la suite :</strong> la confirmation du partenaire.</p>
+<p><strong>Ce qui déclenche la suite :</strong> la confirmation du partenaire. Si un
+<a href="../etablissement/parcours/">parcours de mobilité</a> est branché sur la campagne, l'étudiant y
+entre à ce moment : c'est lui qui fournit les tâches de l'étape suivante.</p>
 <h2 id="6-le-dossier-se-remplit">6. Le dossier se remplit<a class="headerlink" href="#6-le-dossier-se-remplit" title="Permanent link">¶</a></h2>
 <p><strong>Qui agit :</strong> l'étudiant dépose, le coordinateur valide.</p>
 <p>Documents contractuels, scores de langue, contrat pédagogique. Chaque pièce attendue est
 listée, et l'étudiant voit ce qui lui manque. Vous relancez ceux qui traînent depuis la
 barre de sélection de votre liste, sans tenir de liste à part.</p>
-<p>Selon le réglage de la campagne, un dossier incomplet <strong>bloque</strong> l'affectation ou se
-contente d'être <strong>signalé</strong>.</p>
+<p>Un dossier incomplet compte dès l'affectation (étape 3) : selon le réglage de la campagne,
+il la <strong>bloque</strong> ou se contente d'être <strong>signalé</strong>.</p>
 <p><strong>Ce qui déclenche la suite :</strong> le dossier est complet, et les dates approchent.</p>
 <h2 id="7-le-depart-puis-le-sejour">7. Le départ, puis le séjour<a class="headerlink" href="#7-le-depart-puis-le-sejour" title="Permanent link">¶</a></h2>
 <p><strong>Qui agit :</strong> tout le monde, peu à la fois.</p>
@@ -2504,11 +2514,13 @@ contente d'être <strong>signalé</strong>.</p>
 changement de composant demande un motif. Les échéances de la période apparaissent dans
 l'<a href="../etablissement/agenda/">agenda</a>, et dans le calendrier auquel chacun s'est abonné.</p>
 <h2 id="8-le-retour">8. Le retour<a class="headerlink" href="#8-le-retour" title="Permanent link">¶</a></h2>
-<p><strong>Qui agit :</strong> l'établissement d'accueil, puis l'étudiant.</p>
-<p>L'établissement qui a accueilli saisit les notes dans son propre barème et émet le <strong>relevé
-de notes</strong> ; l'étudiant en est prévenu et le retrouve sur son dossier.</p>
-<p>L'étudiant dépose son <strong>avis</strong> sur l'établissement d'accueil — et peut autoriser la
-publication de ses photos. Ceux qui n'ont pas répondu se relancent comme les documents.</p>
+<p><strong>Qui agit :</strong> l'étudiant, puis son établissement.</p>
+<p>L'étudiant saisit la note obtenue à chaque cours de son contrat pédagogique, choisit le
+système de notation et peut joindre le <strong>relevé de notes</strong> officiel de l'établissement
+d'accueil. Son établissement le valide ou demande une correction.</p>
+<p>L'étudiant dépose aussi son <strong>avis</strong> sur l'établissement d'accueil — et peut autoriser la
+publication de ses photos. L'avis est modéré dans vos <a href="../etablissement/validations/">validations</a>
+avant d'être publié. Ceux qui n'ont pas répondu se relancent comme les documents.</p>
 <p><strong>Ce qui clôt la boucle :</strong> l'avis alimente la fiche du partenaire, que les étudiants
 suivants liront avant de faire leurs vœux.</p>
 
@@ -2531,7 +2543,7 @@ suivants liront avant de faire leurs vœux.</p>
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="24 septembre 2026 15:58:31 CEST">24 septembre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 13:43:10 CET">5 novembre 2026</span>
   </span>
 
     
