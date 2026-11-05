@@ -89,15 +89,25 @@ what you already use.
 | **Calendar** | your [agenda](agenda.md) read from Outlook, Google Calendar or Apple Calendar, read-only |
 | **API** | your own systems read and write AroundLink data |
 
-!!! warning "The API key is personal, not your institution's"
-    Each user has their own. Regenerating it **leaves a colleague's working** — and revokes
-    yours only. It is a sensitive credential: never share it publicly, and regenerate it if
-    you believe it may have been exposed.
+The **API** section offers two kinds of keys:
+
+| Key | Who owns it | Its rights |
+|---|---|---|
+| **Integration key** | the institution; it has a name ("Student information system") and survives the departure of whoever created it | those of the role chosen when it is created, nothing more |
+| **Personal key** | you alone; regenerating it leaves a colleague's working | all of yours |
+
+For a system that runs on its own, use an **integration key** and give its role just what
+the integration needs. A key is shown only once: copy it straight away. The date of last
+use, on each row, tells you whether the integration is still running.
+
+!!! warning "A key is a sensitive credential"
+    Never share it publicly. If it may have been exposed, replace it: the old one stops
+    working at once.
 
 **Use case.**
-> The school's IT team plugs its student registry into the API with the key of the developer
-> who looks after it. When they leave the institution, that key is regenerated: the other
-> integrations keep running.
+> The school's IT team creates a "Student information system" integration key with a role
+> limited to outgoing students. When the developer who set it up leaves the institution,
+> their account is deleted: the integration keeps running.
 
 
 ## Protected deletions

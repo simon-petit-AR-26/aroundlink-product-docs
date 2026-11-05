@@ -59,80 +59,89 @@ with no interference.
 ## Account types
 
 **What it is for.** Three user profiles coexist, each with its own space and
-permissions, so every actor only sees what concerns them.
+rights, so that each party only sees what concerns them.
 
-**Who it is for.** <span class="al-audience">IRO coordinator · student · invited partner</span>
+**Who it is for.** <span class="al-audience">IRO coordinator · student · partner</span>
 
 **How it works.** There are:
 
-- the **IRO coordinator** (mobility officer) who runs the institution workspace;
+- the **IRO coordinator** (mobility officer) who works in the institution workspace;
 - the **student** who accesses their [personal space](../etudiant/decouverte-candidature.md);
-- the **invited partner** — a contact at a partner institution granted access to
-  collaborate (for example, to approve a bilateral agreement).
+- the **partner** — a contact at a partner institution. They receive their access when you
+  nominate a student to them: they land in **their own space**, where they only find the
+  students you send them and your fiche, never the rest of yours.
 
 **Use case.**
-> An institution invites a partner's Erasmus officer; they sign in to their own
-> space to approve an agreement, seeing nothing else.
+> A school nominates three students to a partner. Its Erasmus officer receives the message,
+> opens their access, and reviews the three files — seeing nothing else.
 
 
 ## Team roles & permissions (RBAC)
 
-**What it is for.** Within an institution, you can define custom team roles and set,
-module by module, whether each role has no access, read, or write. This lets a large
-IRO delegate safely.
+**What it is for.** Within an institution, you define custom team roles and set, section
+by section, what each role can do. A large IRO can delegate without opening everything to
+everyone.
 
 **Who it is for.** <span class="al-audience">IRO coordinator (institution administrator)</span>
 
-**How it works.** A matrix editor crosses the institution's roles (rows) with the
-main functional modules (columns) — Institution, Documents, Forms, Workflow,
-Integrations, Team permissions — each cell being None / Read / Write. Permissions
-are enforced everywhere: a user without a right neither sees the menu entry nor can
-reach it via a direct address.
+**How it works.** A role says **who it covers** — business domains, outgoing or incoming,
+campuses, promotions — then **what it can do**, section by section of the menu, with four
+levels: **None**, **View**, **Prepare** (the file moves forward inside your institution),
+**Decide** (it leaves the tool: validate, send, export). Setting a category is enough,
+everything inside follows; refine section by section if needed. A user without rights does
+not see the menu entry and cannot reach it through a direct address either. Details in
+[Settings & team](../etablissement/parametres.md#roles-permissions).
 
 **Use case.**
-> The head of the IRO gives the "Assistant" role read access everywhere, but write
-> access only on Documents.
+> The head of office creates an "Incoming officer" role: incoming only, Lyon campus,
+> "Decide" on documents, "View" on agreements, "None" on grants.
 
 
 ## Sign-in & single sign-on (SSO)
 
-**What it is for.** Institutions can let their staff (and students) sign in with
-their existing Microsoft/Azure institutional account instead of a separate password
-— and can enforce it. Fewer passwords to manage and compliance with IT
-requirements.
+**What it is for.** Your staff and students sign in with the account they already have —
+Microsoft or Google — rather than with one more password. Your institution can also enforce
+it.
 
-**Who it is for.** Configured by the AroundLink team per institution; used by the
-institution's staff and students
+**Who it is for.** <span class="al-audience">The institution's staff and students</span>
 
-**How it works.** At sign-in, the platform recognises the institution from the email
-address entered; if single sign-on is enabled (or enforced), the user is redirected
-to the Microsoft sign-in page, otherwise they can use a password. Password sign-in
-also offers standard password reset.
+**How it works.** The sign-in screen offers everyone, at all times, the password and the
+**Sign in with Microsoft** and **Sign in with Google** buttons. Each user **links their own**
+account from their profile, once, then signs in with it. Password sign-in offers a reset by
+link.
 
 **Use case.**
-> A coordinator at an Azure university clicks "Sign in", enters their work email, and
-> is automatically routed to Microsoft authentication.
+> A coordinator links her work Microsoft account from her profile. The next day she clicks
+> "Sign in with Microsoft" and gets in without a password.
 
-!!! info "Are you an IT department?"
-    Protocol, requested permissions, step-by-step onboarding, security checks and
-    known limitations: **[Microsoft single sign-on (IT)](sso.md)**.
+!!! info "Are you in IT?"
+    Protocol, requested permissions, enforced sign-in, security checks:
+    **[Single sign-on (IT)](sso.md)**.
 
 
 ## Application access (API key & EWP network)
 
-**What it is for.** Machine-access channels, separate from the user session, let you
-connect AroundLink to external systems and authenticate exchanges with partner
-universities on the [EWP](../ewp/ewp.md) network.
+**What it is for.** Machine access, separate from a user's sign-in, links AroundLink to
+your own systems and authenticates exchanges with universities of the
+[EWP](../ewp/ewp.md) network.
 
-**Who it is for.** <span class="al-audience">IT / integrations · partner university systems</span>
+**Who it is for.** <span class="al-audience">IT / integrations · partner universities' systems</span>
 
-**How it works.** Each institution has a regenerable API key (managed in
-[Settings](../etablissement/parametres.md)) for its integrations, plus dedicated
-authentication for the EWP network. These machine accesses are deliberately distinct
-from browser sign-in. The REST API has interactive documentation (resources, schemas,
-operations) — see the [API documentation (demo)](https://demo.aroundlink.com/api/docs)
-and, for the EWP network, the [EWP API reference](../ewp/reference-api.md).
+**How it works.** Two kinds of keys, under **Settings ▸ Connectors ▸ API**:
 
+| Key | Who owns it | What for |
+|---|---|---|
+| **Integration key** | the **institution**, not a person — it survives the departure of whoever created it | a system that runs on its own, such as your student information system; it only has its role's rights |
+| **Personal key** | **one person** | occasional use; it acts with all of that person's rights |
+
+A key is shown **only once**, when it is created: copy it straight away. Each row shows
+the date of last use — an old date means an integration that has stopped. Replacing or
+revoking a key cuts the old one off at once. The EWP network has its own, separate
+authentication.
+
+The API is documented in OpenAPI format:
+[api.aroundlink.com/apis/docs](https://api.aroundlink.com/apis/docs); for the EWP network,
+see the [API reference](../ewp/reference-api.md).
 
 
 ## Contextual help

@@ -71,8 +71,9 @@ In contact grids, a **Last contact** column gives the date of the latest exchang
   Apple Calendar. The link carries your whole agenda and reads **one way only**: your calendar
   comes to read, it changes nothing.
 - **API** — let your own systems read and write AroundLink data. This connection is meant for
-  your institution's IT team. **The key is personal, not your institution's**: everyone has
-  their own, and regenerating it leaves a colleague's working.
+  your institution's IT team: an **integration key** belongs to the institution and only has
+  its role's rights, a **personal key** acts with all of yours — see
+  [Settings](parametres.md#connectors-email-calendar-api).
 
 **Use case.**
 > The head of office writes to her counterpart in Bologna to settle the semester dates. The

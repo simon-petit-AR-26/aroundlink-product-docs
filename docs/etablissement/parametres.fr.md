@@ -95,16 +95,25 @@ que vous utilisez déjà.
 | **Calendar** | votre [agenda](agenda.md) lu depuis Outlook, Google Agenda ou Apple Calendrier, en lecture seule |
 | **API** | vos propres systèmes lisent et écrivent des données AroundLink |
 
-!!! warning "La clé d'API est personnelle, pas celle de l'établissement"
-    Chaque utilisateur a la sienne. La régénérer **laisse celle d'un collègue
-    fonctionner** — et révoque la vôtre seulement. C'est un identifiant sensible : ne la
-    diffusez jamais publiquement, et régénérez-la si vous pensez qu'elle a pu être
-    exposée.
+La section **API** propose deux sortes de clés :
+
+| Clé | À qui elle appartient | Ses droits |
+|---|---|---|
+| **Clé d'intégration** | à l'établissement ; elle porte un nom (« Logiciel de scolarité ») et survit au départ de qui l'a créée | ceux du rôle choisi à sa création, rien de plus |
+| **Clé personnelle** | à vous seul ; la régénérer laisse celle d'un collègue fonctionner | tous les vôtres |
+
+Pour un système qui tourne seul, prenez une **clé d'intégration** et donnez à son rôle
+juste ce dont l'intégration a besoin. Une clé n'est affichée qu'une fois : copiez-la tout
+de suite. La date de dernier usage, sur chaque ligne, dit si l'intégration tourne encore.
+
+!!! warning "Une clé est un identifiant sensible"
+    Ne la diffusez jamais publiquement. Si elle a pu être exposée, remplacez-la : l'ancienne
+    cesse de fonctionner aussitôt.
 
 **Cas d'usage.**
-> La DSI de l'école branche son référentiel étudiants sur l'API avec la clé du
-> développeur qui s'en occupe. Quand il quitte l'établissement, sa clé est régénérée : les
-> autres intégrations continuent de tourner.
+> La DSI de l'école crée une clé d'intégration « Logiciel de scolarité » avec un rôle limité
+> aux étudiants sortants. Quand le développeur qui l'a posée quitte l'établissement, son
+> compte est supprimé : l'intégration continue de tourner.
 
 
 ## Suppressions protégées

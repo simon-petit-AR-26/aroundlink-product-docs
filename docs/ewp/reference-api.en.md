@@ -125,7 +125,7 @@ business resources (agreements, students, learning agreements, transcripts…). 
 **interactive** documentation — contract, resources and schemas, always up to date —
 is generated automatically:
 
-- :material-api: [AroundLink API documentation (demo instance)](https://demo.aroundlink.com/api/docs)
+- :material-api: [AroundLink API documentation](https://api.aroundlink.com/apis/docs)
 
 ### Official EWP specifications
 
