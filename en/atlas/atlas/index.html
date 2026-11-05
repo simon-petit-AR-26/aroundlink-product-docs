@@ -2261,39 +2261,41 @@ search for any institution, locate it on a world map, and immediately see whethe
 is already a partner or reachable through the Erasmus/EWP network. "Who else is out
 there?" becomes a map you explore, rather than a spreadsheet.</p>
 <h2 id="world-directory-table-cards-map">World directory (table / cards / map)<a class="headerlink" href="#world-directory-table-cards-map" title="Permanent link">¶</a></h2>
-<p><strong>What it's for.</strong> Atlas gathers every higher-education institution in the world into
-a searchable directory. You look up any institution, see where it sits on a map, and
-tell at a glance which ones are already your partners from those reachable through the
-EWP network.</p>
-<p><strong>Who it's for.</strong> <span class="al-audience">coordinator / IR manager</span></p>
-<p><strong>How it works.</strong> A single page offers three synchronized views: table, cards and an
-interactive world map. You filter by free text (name, city), country, institution
-type and EWP factsheet status. Each row shows its network status and marks the
-institutions already partnered with your institution. The page is read-only: you
-consult it, you don't create or edit a record here.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/atlas-carte.png" data-desc-position="bottom"><img alt="World Atlas in map view" src="../../../assets/screenshots/atlas-carte.png"></a></p>
-<p><em>Atlas in map view: each dot is an institution from the world registry. The Table and Cards views offer the same search.</em></p>
+<p><strong>What it's for.</strong> The Atlas brings together the higher-education institutions of the ROR
+world registry in a searchable directory. You look up an institution, place it on a map,
+and see whether it is already your partner and whether it is connected to the EWP network.</p>
+<p><strong>Who it's for.</strong> <span class="al-audience">coordinator / IRO manager</span></p>
+<p><strong>How it works.</strong> <strong>Mobility ▸ Atlas</strong>, when the Atlas is turned on for your institution.
+One page, three views: <strong>Table</strong>, <strong>Cards</strong> and the world map. The filters — search,
+country, type, <strong>EWP status</strong> (synced, declared, not in EWP) — apply to the table and the
+cards; the map follows the search, country and type, and loads the area on screen, up to
+5,000 points.</p>
+<p>In the table and cards, each institution carries its EWP status and, where relevant, the
+<strong>Partner</strong> badge. The page is read-only: you look things up, you create nothing.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/atlas-carte.png" data-desc-position="bottom"><img alt="World Atlas in world-map view" src="../../../assets/screenshots/atlas-carte.png"></a></p>
+<p><em>The Atlas in map view: each point is an institution from the world registry. The Table and Cards views offer the same search.</em></p>
 <p><strong>Use case.</strong></p>
 <blockquote>
-<p>A coordinator searches "Antalya", filters to Turkey, sees on the map which nearby
-universities already expose an EWP factsheet, and spots that one of them is already
-a partner.</p>
+<p>A coordinator searches "Antalya", filters on Turkey and switches to Cards: they see which
+universities are connected to EWP, and that one of them is already their partner.</p>
 </blockquote>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/atlas-cartes.png" data-desc-position="bottom"><img alt="World Atlas in cards view" src="../../../assets/screenshots/atlas-cartes.png"></a></p>
-<p><em>The same search in cards view: each institution with its country, its type and whether it is connected to the EWP network.</em></p>
+<p><em>The same search in cards view: each institution with its country, type and EWP connection.</em></p>
 <h2 id="live-factsheet-on-demand">Live factsheet on demand<a class="headerlink" href="#live-factsheet-on-demand" title="Permanent link">¶</a></h2>
-<p><strong>What it's for.</strong> From any institution in the network, you open its EWP factsheet
-live — nomination deadlines, application contacts — without waiting for a bulk sync.
-The directory fills in over time as institutions are consulted.</p>
-<p><strong>Who it's for.</strong> <span class="al-audience">coordinator / IR manager</span></p>
-<p><strong>How it works.</strong> Opening an institution's record fetches its factsheet live (if
-declared), then shows the nomination calendar (autumn / spring) and application
-contact details (email, phone). A successful lookup updates the institution's cached
-summary, so the directory fills in as it is used.</p>
+<p><strong>What it's for.</strong> Read an institution's EWP factsheet live — application calendar,
+deadlines, contacts — without waiting for a synchronisation.</p>
+<p><strong>Who it's for.</strong> <span class="al-audience">coordinator / IRO manager</span></p>
+<p><strong>How it works.</strong> An institution's record shows its identifiers (ROR, SCHAC), founding date
+and links. In the <strong>EWP factsheet</strong> block, <strong>Load</strong> queries the partner over the network,
+right now; <strong>Reload</strong> reads it again. It then shows: application dates (autumn / spring),
+decision and transcript deadlines in weeks, housing, visa and insurance contacts, and links
+to the course catalogue, the institution's site and the application site.</p>
+<p>Nothing is kept: each opening queries the partner again. It requires your own institution
+to have an EWP identifier.</p>
 <p><strong>Use case.</strong></p>
 <blockquote>
-<p>Before nominating their students, a coordinator opens a partner's factsheet to
-confirm the spring nomination deadline.</p>
+<p>Before nominating students, a coordinator opens a partner's record, clicks <strong>Load</strong> and
+confirms the spring application deadline.</p>
 </blockquote>
 
 
@@ -2315,7 +2317,7 @@ confirm the spring nomination deadline.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 24, 2026 15:37:08 CEST">September 24, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 5, 2026 13:33:23 CET">November 5, 2026</span>
   </span>
 
     

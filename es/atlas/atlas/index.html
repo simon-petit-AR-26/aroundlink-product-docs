@@ -2263,45 +2263,46 @@
 <h1 id="atlas-annuaire-mondial">Atlas — Annuaire mondial<a class="headerlink" href="#atlas-annuaire-mondial" title="Permanent link">¶</a></h1>
 <p>Atlas est un annuaire mondial des établissements d'enseignement supérieur : un seul
 endroit pour rechercher n'importe quel établissement, le situer sur une carte du
-monde, et voir immédiatement s'il est déjà partenaire ou joignable via le réseau
-Erasmus/EWP. « Qui d'autre existe ? » devient une carte que l'on explore, plutôt
+monde, et voir s'il est déjà partenaire ou joignable via le réseau Erasmus/EWP. « Qui d'autre existe ? » devient une carte que l'on explore, plutôt
 qu'un tableur.</p>
 <h2 id="annuaire-mondial-tableau-cartes-carte">Annuaire mondial (tableau / cartes / carte)<a class="headerlink" href="#annuaire-mondial-tableau-cartes-carte" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> Atlas rassemble tous les établissements d'enseignement supérieur
-du monde dans un annuaire consultable. Vous y cherchez n'importe quel établissement,
-voyez où il se trouve sur une carte, et distinguez d'un coup d'œil ceux qui sont
-déjà vos partenaires de ceux qui sont accessibles via le réseau EWP.</p>
+<p><strong>À quoi ça sert.</strong> L'Atlas rassemble les établissements d'enseignement supérieur du
+registre mondial ROR dans un annuaire consultable. Vous y cherchez un établissement, le
+situez sur une carte, et voyez s'il est déjà votre partenaire et s'il est raccordé au
+réseau EWP.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">coordinateur / gestionnaire RI</span></p>
-<p><strong>Comment ça marche.</strong> Une seule page propose trois vues synchronisées : tableau,
-cartes et carte du monde interactive. Vous filtrez par texte libre (nom, ville),
-pays, type d'établissement et statut de factsheet EWP. Chaque ligne indique son
-statut réseau et signale d'un repère les établissements déjà partenaires de votre
-établissement. La page est en lecture seule : on y consulte, on n'y crée ni ne
-modifie de fiche.</p>
+<p><strong>Comment ça marche.</strong> <strong>Mobility ▸ Atlas</strong>, quand l'Atlas est activé pour votre
+établissement. Une page, trois vues : <strong>Table</strong>, <strong>Cards</strong> et la carte du monde. Les filtres
+— recherche, pays, type, <strong>EWP status</strong> (synchronisé, déclaré, absent d'EWP) — s'appliquent
+au tableau et aux cartes ; la carte suit la recherche, le pays et le type, et charge la zone
+affichée, jusqu'à 5 000 points.</p>
+<p>Dans le tableau et les cartes, chaque établissement porte son statut EWP et, s'il y a lieu,
+le badge <strong>Partner</strong>. La page est en lecture seule : on y consulte, on n'y crée rien.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/atlas-carte.png" data-desc-position="bottom"><img alt="Atlas mondial en vue carte du monde" src="../../../assets/screenshots/atlas-carte.png"></a></p>
 <p><em>L'Atlas en vue carte : chaque point est un établissement du registre mondial. Les vues Tableau et Cartes offrent la même recherche.</em></p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>Un coordinateur cherche « Antalya », filtre sur la Turquie, voit sur la carte
-quelles universités proches exposent déjà une factsheet EWP et repère que l'une
-d'elles est déjà partenaire.</p>
+<p>Un coordinateur cherche « Antalya », filtre sur la Turquie et passe en vue Cards : il voit
+quelles universités sont raccordées à EWP, et que l'une d'elles est déjà son partenaire.</p>
 </blockquote>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/screenshots/atlas-cartes.png" data-desc-position="bottom"><img alt="Atlas mondial en vue cartes" src="../../../assets/screenshots/atlas-cartes.png"></a></p>
 <p><em>La même recherche en vue cartes : chaque établissement avec son pays, son type et son raccordement au réseau EWP.</em></p>
 <h2 id="factsheet-en-direct-a-la-demande">Factsheet en direct à la demande<a class="headerlink" href="#factsheet-en-direct-a-la-demande" title="Permanent link">¶</a></h2>
-<p><strong>À quoi ça sert.</strong> Depuis n'importe quel établissement du réseau, vous ouvrez sa
-factsheet EWP en direct — délais de nomination, contacts de candidature — sans
-attendre une synchronisation groupée. L'annuaire se complète au fil des consultations.</p>
+<p><strong>À quoi ça sert.</strong> Lire la factsheet EWP d'un établissement en direct — calendrier de
+candidature, délais, contacts — sans attendre une synchronisation.</p>
 <p><strong>Pour qui.</strong> <span class="al-audience">coordinateur / gestionnaire RI</span></p>
-<p><strong>Comment ça marche.</strong> Ouvrir la fiche d'un établissement récupère sa factsheet en
-direct (si elle est déclarée), puis affiche le calendrier de nomination (automne /
-printemps) et les coordonnées de candidature (e-mail, téléphone). Une consultation
-réussie met à jour le résumé mis en cache de l'établissement, si bien que l'annuaire
-se remplit au fur et à mesure.</p>
+<p><strong>Comment ça marche.</strong> La fiche d'un établissement affiche ses identifiants (ROR, SCHAC),
+sa date de fondation et ses liens. Dans le bloc <strong>EWP factsheet</strong>, <strong>Load</strong> interroge le
+partenaire sur le réseau, à l'instant ; <strong>Reload</strong> relance la lecture. S'affichent alors :
+les dates de candidature (automne / printemps), les délais de décision et de relevé de
+notes en semaines, les contacts logement, visa et assurance, et les liens vers le catalogue
+de cours, le site de l'établissement et le site de candidature.</p>
+<p>La lecture ne garde rien : chaque ouverture interroge de nouveau le partenaire. Elle
+suppose que votre établissement dispose lui-même d'un identifiant EWP.</p>
 <p><strong>Cas d'usage.</strong></p>
 <blockquote>
-<p>Avant de nominer ses étudiants, un coordinateur ouvre la factsheet d'un partenaire
-pour confirmer la date limite de nomination du printemps.</p>
+<p>Avant de nominer ses étudiants, un coordinateur ouvre la fiche d'un partenaire, clique sur
+<strong>Load</strong> et confirme la date limite de candidature du printemps.</p>
 </blockquote>
 
 
@@ -2323,7 +2324,7 @@ pour confirmer la date limite de nomination du printemps.</p>
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="24 septembre 2026 15:37:08 CEST">24 septembre 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 novembre 2026 13:33:23 CET">5 novembre 2026</span>
   </span>
 
     
