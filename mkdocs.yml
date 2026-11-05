@@ -8,10 +8,15 @@ copyright: >
   <a href="https://cal.com/simon-petit-aroundlink/30minds">Prendre rendez-vous</a>
 
 # ⚠️  Publié via GitHub Pages. Ne jamais mettre de secrets ici ni dans les pages.
-# site_url est renseigné automatiquement par `mkdocs gh-deploy`.
+# ⚠️ site_url est OBLIGATOIRE — `mkdocs gh-deploy` ne le renseigne PAS, contrairement à ce
+# que disait ce commentaire. Sans lui, le sélecteur de langue pointe vers la racine du
+# domaine (« / », « /en/ »…) au lieu de la racine du site, et les cinq liens rendent 404.
+site_url: https://simon-petit-ar-26.github.io/aroundlink-product-docs/
 
 theme:
   name: material
+  # Surcharges : l'index de recherche par langue (voir overrides/main.html).
+  custom_dir: overrides
   language: fr
   logo: assets/logo.png
   favicon: assets/favicon.png
@@ -45,6 +50,10 @@ extra:
     - icon: fontawesome/solid/arrow-right-to-bracket
       link: https://app.aroundlink.com
       name: Accéder à l'application
+
+# Découpe l'index de recherche par langue après la construction.
+hooks:
+  - hooks/search_par_langue.py
 
 extra_css:
   - assets/extra.css

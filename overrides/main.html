@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{#
+  La page d'une langue va chercher l'index de recherche de SA langue.
+
+  Material demande toujours `<racine du site>/search/search_index.json`, quelle que soit
+  la page. Le hook `hooks/search_par_langue.py` a découpé cet index par langue ; il reste
+  à envoyer chaque page vers le bon fichier.
+
+  ⚠️ Material passe par XMLHttpRequest, pas par fetch — c'est donc `open` qu'on enveloppe.
+  Le script est posé AVANT le bundle de Material : il doit être en place quand celui-ci
+  lance sa requête au démarrage.
+#}
+{% block scripts %}
+<script>
+  (function () {
+    var langue = document.documentElement.lang || "fr";
+    if (langue === "fr") return;
+    var ouvrir = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function (methode, url) {
+      var u = String(url);
+      if (/\/search\/search_index\.json(\?|$)/.test(u) && u.indexOf("/" + langue + "/search/") === -1) {
+        arguments[1] = u.replace(/\/search\/search_index\.json/, "/" + langue + "/search/search_index.json");
+      }
+      return ouvrir.apply(this, arguments);
+    };
+  })();
+</script>
+{{ super() }}
+{% endblock %}
