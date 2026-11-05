@@ -2,34 +2,34 @@
 
 Atlas est un annuaire mondial des établissements d'enseignement supérieur : un seul
 endroit pour rechercher n'importe quel établissement, le situer sur une carte du
-monde, et voir immédiatement s'il est déjà partenaire ou joignable via le réseau
-Erasmus/EWP. « Qui d'autre existe ? » devient une carte que l'on explore, plutôt
+monde, et voir s'il est déjà partenaire ou joignable via le réseau Erasmus/EWP. « Qui d'autre existe ? » devient une carte que l'on explore, plutôt
 qu'un tableur.
 
 ## Annuaire mondial (tableau / cartes / carte)
 
-**À quoi ça sert.** Atlas rassemble tous les établissements d'enseignement supérieur
-du monde dans un annuaire consultable. Vous y cherchez n'importe quel établissement,
-voyez où il se trouve sur une carte, et distinguez d'un coup d'œil ceux qui sont
-déjà vos partenaires de ceux qui sont accessibles via le réseau EWP.
+**À quoi ça sert.** L'Atlas rassemble les établissements d'enseignement supérieur du
+registre mondial ROR dans un annuaire consultable. Vous y cherchez un établissement, le
+situez sur une carte, et voyez s'il est déjà votre partenaire et s'il est raccordé au
+réseau EWP.
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** Une seule page propose trois vues synchronisées : tableau,
-cartes et carte du monde interactive. Vous filtrez par texte libre (nom, ville),
-pays, type d'établissement et statut de factsheet EWP. Chaque ligne indique son
-statut réseau et signale d'un repère les établissements déjà partenaires de votre
-établissement. La page est en lecture seule : on y consulte, on n'y crée ni ne
-modifie de fiche.
+**Comment ça marche.** **Mobility ▸ Atlas**, quand l'Atlas est activé pour votre
+établissement. Une page, trois vues : **Table**, **Cards** et la carte du monde. Les filtres
+— recherche, pays, type, **EWP status** (synchronisé, déclaré, absent d'EWP) — s'appliquent
+au tableau et aux cartes ; la carte suit la recherche, le pays et le type, et charge la zone
+affichée, jusqu'à 5 000 points.
+
+Dans le tableau et les cartes, chaque établissement porte son statut EWP et, s'il y a lieu,
+le badge **Partner**. La page est en lecture seule : on y consulte, on n'y crée rien.
 
 ![Atlas mondial en vue carte du monde](../assets/screenshots/atlas-carte.png)
 
 *L'Atlas en vue carte : chaque point est un établissement du registre mondial. Les vues Tableau et Cartes offrent la même recherche.*
 
 **Cas d'usage.**
-> Un coordinateur cherche « Antalya », filtre sur la Turquie, voit sur la carte
-> quelles universités proches exposent déjà une factsheet EWP et repère que l'une
-> d'elles est déjà partenaire.
+> Un coordinateur cherche « Antalya », filtre sur la Turquie et passe en vue Cards : il voit
+> quelles universités sont raccordées à EWP, et que l'une d'elles est déjà son partenaire.
 
 ![Atlas mondial en vue cartes](../assets/screenshots/atlas-cartes.png)
 
@@ -38,19 +38,21 @@ modifie de fiche.
 
 ## Factsheet en direct à la demande
 
-**À quoi ça sert.** Depuis n'importe quel établissement du réseau, vous ouvrez sa
-factsheet EWP en direct — délais de nomination, contacts de candidature — sans
-attendre une synchronisation groupée. L'annuaire se complète au fil des consultations.
+**À quoi ça sert.** Lire la factsheet EWP d'un établissement en direct — calendrier de
+candidature, délais, contacts — sans attendre une synchronisation.
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** Ouvrir la fiche d'un établissement récupère sa factsheet en
-direct (si elle est déclarée), puis affiche le calendrier de nomination (automne /
-printemps) et les coordonnées de candidature (e-mail, téléphone). Une consultation
-réussie met à jour le résumé mis en cache de l'établissement, si bien que l'annuaire
-se remplit au fur et à mesure.
+**Comment ça marche.** La fiche d'un établissement affiche ses identifiants (ROR, SCHAC),
+sa date de fondation et ses liens. Dans le bloc **EWP factsheet**, **Load** interroge le
+partenaire sur le réseau, à l'instant ; **Reload** relance la lecture. S'affichent alors :
+les dates de candidature (automne / printemps), les délais de décision et de relevé de
+notes en semaines, les contacts logement, visa et assurance, et les liens vers le catalogue
+de cours, le site de l'établissement et le site de candidature.
+
+La lecture ne garde rien : chaque ouverture interroge de nouveau le partenaire. Elle
+suppose que votre établissement dispose lui-même d'un identifiant EWP.
 
 **Cas d'usage.**
-> Avant de nominer ses étudiants, un coordinateur ouvre la factsheet d'un partenaire
-> pour confirmer la date limite de nomination du printemps.
-
+> Avant de nominer ses étudiants, un coordinateur ouvre la fiche d'un partenaire, clique sur
+> **Load** et confirme la date limite de candidature du printemps.

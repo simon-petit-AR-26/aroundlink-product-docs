@@ -1,176 +1,194 @@
-# Mobility grants (Erasmus+)
+# Mobility grants
 
-The Mobility grants module manages your institution's entire Erasmus+ financial side:
-annual allocation, grant allocation to students, payment tracking, supporting-document
-checklist and export to the official report. Erasmus+ rules (documents conditioning each
-payment, budget safeguards, per-country scales) are applied automatically, which
-safeguards your audits.
+Mobility grants handle the Erasmus+ financial side — and that of your other funding: your
+grant programmes, awarding students, the documents each payment depends on, the payment
+circuit through to the accountant, and the file the Commission's Beneficiary Module expects.
 
-## Finance dashboard
+## Grant programmes
 
-**What it does.** The module's landing page: a per-academic-year view combining the budget
-indicators, grant tracking and the case table, so the office has the Erasmus+ financial
-picture in front of them at a single glance.
+**What it's for.** Keep each source of funding apart: this year's Erasmus+ agreement, a
+regional grant, a campus scheme. Each has its own budget, rates and files.
 
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+**Who it's for.** <span class="al-audience">grants office / IRO coordinator</span>
 
-**How it works.** The coordinator picks the academic year; the dashboard then shows the
-allocation, the amounts committed and paid, the remaining budget and the progress of the
-grant cases.
+**How it works.** **Bourse** opens the list of your programmes; **New program** creates
+one: name, academic year, type (**Erasmus+ KA131** or **Other (regional, campus…)**), grant
+agreement number, start and end dates, and status:
 
-![Mobility grant tracking](../assets/screenshots/bourse-pipeline.png)
+| Status | What it allows |
+|---|---|
+| **Draft** | the programme is being set up |
+| **Open** | it accepts grants |
+| **Closed** | no new grants |
 
-*The agency allocation, what is committed and what remains, then each grant tracked by stage: agreement to sign, advance to pay, in mobility, missing documents, closed.*
-
-**Use case.**
-> At the start of the year, the coordinator opens the dashboard and sees at a glance how
-> much of the allocation is already committed and how much remains available.
-
-## Erasmus+ allocation (budget)
-
-**What it does.** Records the institution's total Erasmus+ allocation for the academic
-year and shows consolidated figures in real time — allocation, amount committed to grants,
-amount actually paid, remaining balance — so the office never over-commits its funding.
-
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
-
-**How it works.** The coordinator enters the allocation amount for the year; the module
-automatically computes and shows the committed amount, the paid amount and the remaining
-balance, consolidated at the institution level (all campuses combined).
+A student has at most one grant per programme. The year belongs to the programme: it is not
+picked on the screen.
 
 **Use case.**
-> The coordinator records a €120,000 allocation; as grants are created, the dashboard
-> shows €80,000 committed, €45,000 paid, €40,000 remaining.
+> The grants office creates "Erasmus+ KA131 2026-2027" with its agreement number, leaves it
+> in Draft while entering its rates, then opens it.
 
+## A programme's screen
 
-## Grant management and lifecycle
+**What it's for.** See where the money and each file stand, on one screen.
 
-**What it does.** The central grant record: one record per student per year, carrying the
-mobility type, dates, attributed amount, payments and the 7-item Erasmus+ checklist. Its
-status advances automatically as signatures and payments come in, so the office always
-knows where each case stands without manual bookkeeping.
+**Who it's for.** <span class="al-audience">grants office / IRO coordinator</span>
 
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+**How it works.** At the top, four figures: **Agency allocation**, **Engaged (signed GA)**,
+**Paid (advances + balances)** and **Docs pending**. If the programme is split into pockets,
+the **Budget by category** table gives each one's planned, committed, paid and
+**remaining** amounts.
 
-**How it works.** The coordinator creates a grant for a student, enters the mobility type,
-dates and amount. The status is not set by hand: the case starts "awaiting agreement",
-then moves on its own to "active" once the grant agreement and the learning agreement are
-signed and the advance is paid, to "documents awaited" at the end of the mobility, and
-closes once all final documents are received.
+The **Pipeline** bar counts files by status and the oldest wait; a click filters the list.
+Files read as **Kanban** or **Table**:
 
-**Use case.**
-> The coordinator creates a grant for a study mobility to Berlin; as the grant agreement
-> and the learning agreement are signed and the advance paid, the grant moves on its own
-> to "active", then closes itself once the certificate of attendance, the transcript and
-> the final report are received.
+| Column | Statuses it groups |
+|---|---|
+| **Before award** | To award, Zero grant, Waiting list |
+| **Contract** | Contract to generate, Contract sent, Contract signed |
+| **Advance** | Advance to pay, Advance paid |
+| **In mobility** | In mobility |
+| **Final documents** | Final documents expected, Certificate received, Balance to pay, Balance paid |
+| **Closed** | Closed |
 
-
-## Budget safeguards
-
-**What it does.** Prevents the office from allocating more grants than the Erasmus+
-allocation allows, including when two coordinators act at the same time. Clearly
-distinguishes "allocation not set" (action needed) from "allocation exhausted".
-
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
-
-**How it works.** When creating or editing a grant, the module checks that the requested
-amount does not exceed the remaining balance and blocks the operation if it would, with an
-explicit message. Only increases in commitment are blocked: correcting an amount downward
-or clearing it always remains possible.
+Panels point out what needs action: overpaid files, files waiting on end-of-mobility
+documents (**Remind** chases the students), and documents no longer needed that can be
+deleted.
 
 **Use case.**
-> Two coordinators try at the same time to add €5,000 grants when only €6,000 remain: the
-> first goes through, the second is rejected with "insufficient budget".
+> In September, the head of office opens her programme: the Pipeline bar shows 12 files in
+> "Advance to pay", the oldest waiting for 9 days. One click and the list shows just those.
 
+## Awarding grants
 
-## Payment conditions
+**What it's for.** Create files from the mobilities already recorded, and set amounts
+without working them out by hand.
 
-**What it does.** Applies the Erasmus+ rules that condition each payment tranche, so the
-office cannot record a payment before the required documents exist. Protects compliance in
-the event of an inspection.
+**Who it's for.** <span class="al-audience">grants office</span>
 
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+**How it works.**
 
-**How it works.** When recording a payment, the module blocks an increase of the advance
-as long as the grant agreement and the learning agreement are not signed, and an increase
-of the balance as long as the certificate of attendance and the final report are not
-received. It also ensures no payment is entered without an attributed amount and that the
-total paid does not exceed the attributed amount.
+- **Add students** offers students with an active assignment to a country that has a rate
+  — destination, period, suggested type —; those who already have a grant are greyed out.
+  **Add N** creates the files.
+- **New grant** creates a single file. Next to the amount, **Suggest** works out a proposal
+  and breaks it down: stay, travel, traineeship, inclusion and green-travel top-ups, total,
+  then advance and balance.
+- In **Table** view, ticking files opens a decision bar: an amount (or the scale), then
+  **Award**, **Zero grant** or **Hold** for the whole selection.
+- **Import CSV** loads grants in bulk, with a preview flagging each row in error; an empty
+  amount cell gets the suggested amount.
 
-**Use case.**
-> The coordinator tries to record the advance before the learning agreement is signed:
-> "Advance payment blocked — the grant agreement and the learning agreement must be signed
-> first".
-
-
-## Grant amount calculation
-
-**What it does.** Computes the suggested grant amount from the official Erasmus+ scale
-(per-country monthly rate × duration, or daily rate for blended intensive programmes), so
-the office no longer computes amounts by hand and stays aligned with the national agency
-rates, revised every year.
-
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
-
-**How it works.** During entry, the module proposes an amount in real time from the
-institution, the mobility type and the dates. For a study or traineeship mobility, the
-calculation applies the host country's monthly rate to the duration; for a blended
-intensive programme, a daily rate to the duration in days.
+**Budget safeguards.** Creating a grant, importing or awarding in bulk refuses anything that
+would exceed the year's allocation — "This grant would exceed the remaining allocation for
+the year by X €" — or the pocket concerned. With no allocation entered, the screen says so
+instead of letting it through.
 
 **Use case.**
-> The coordinator enters a study mobility to Germany from 01/09 to 31/12; the form
-> instantly shows the suggested amount, computed from the country-group rate and 4 months.
+> The head of office adds the 48 students placed this year in one go, ticks those going to
+> Germany and clicks **Award** with the scale: 14 files move to "Contract to generate".
 
+## A grant file
 
-## Grant CSV import
+**What it's for.** Everything about a student's grant, from award to balance.
 
-**What it does.** Lets the office create many grants at once from a spreadsheet, rather
-than one by one, with a "check then confirm" flow that flags errors and warnings line by
-line and refuses any breach of the allocation.
+**Who it's for.** <span class="al-audience">grants office</span>
 
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
+**How it works.** The file holds the financial details, bank details, documents and six
+dated milestones: **Grant Agreement signed**, **Learning Agreement signed**, **Arrival
+confirmed**, **Certificate of attendance**, **Transcript of Records**, **EU Survey
+received**.
 
-**How it works.** The coordinator downloads a template file, fills it in, uploads it for
-preview — they get a per-line report (errors, warnings, suggested amount if the cell is
-empty) — then confirms to create the valid grants. An invalid line does not prevent the
-others from being imported.
+The status follows from those milestones and the payments, in order: a file only reaches
+**Closed** once the balance is paid and the final documents are in.
 
-**Use case.**
-> The coordinator imports 40 grants from a spreadsheet; 3 lines flag a breach of the
-> allocation and are set aside, 37 are created.
+**Payment conditions.** Depending on your settings, each document can **block nothing**,
+**block the advance** or **block the balance**. The file names what is missing for each
+payment; overriding requires a reason. A recorded payment can no longer be rewritten: to
+correct it, you recalculate the grant.
 
-
-## Export (Beneficiary Module) and audit log
-
-**What it does.** Produces the rich CSV the office needs to report mobilities into the
-Erasmus+ Beneficiary Module (official organisation identities, ISCED subject area,
-participant data, unique mobility ID, distance band, derived indicators), as well as an
-export of the change log (who changed what, when) for internal audit.
-
-**Who it's for.** <span class="al-audience">RI manager / coordinator ; finance and compliance</span>
-
-**How it works.** The coordinator exports, for the chosen year, the grants CSV ready to be
-reported into the Beneficiary Module, and separately the audit log that traces each change
-with its author and date.
+A file can be **deleted** as long as nothing has been paid; after that it is **cancelled**
+(reason required) and can be **reopened**. Its **history** says who changed what, and when.
 
 **Use case.**
-> At reporting time, the coordinator exports the year's grants to report them into the
-> Beneficiary Module, and pulls the audit log for the internal auditor.
+> A student's advance stays blocked: the file shows the Learning Agreement is not signed. It
+> is signed the next day, and the advance becomes payable.
 
+## Rates and rules
 
-## Eligible-student picker
+**What it's for.** Set the programme's calculation and payment rules once and for all.
 
-**What it does.** When creating a grant, only proposes students actually eligible for an
-Erasmus+ grant (active affectation to a programme country covered by the scale) and flags
-those who already have a grant, to avoid invalid or duplicate cases.
+**Who it's for.** <span class="al-audience">grants office</span>
 
-**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
-
-**How it works.** In the creation window, the module shows the list of eligible students
-for the year and the institution, each with the suggested mobility type, the host
-institution, and an indication of whether they already have a grant.
+**How it works.** **Rates** opens the programme's settings: budget and pockets, funded
+duration, stay rate, travel scale, top-ups, advance percentage, required documents, payment
+blocks — with what differs from the Commission's default —, reminders (first reminder after
+the end of mobility, then every N days) and closing the programme.
 
 **Use case.**
-> In the "new grant" window, the coordinator sees only the 22 eligible students; 3 already
-> have a grant and are flagged as such.
+> For its regional grant, the school sets the advance at 70% and decides the transcript
+> blocks nothing.
 
+## Paying: requests, approval, accounting
+
+**What it's for.** Move money through three separate hands: who prepares, who approves,
+who transfers.
+
+**Who it's for.** <span class="al-audience">grants office · approver · accountant</span>
+
+**How it works.**
+
+1. **Prepare.** **Payments ▸ New payment request**: advance or balance, then the files to
+   pay. Those that cannot be paid say why (blocked, already in a request, file cancelled).
+   **Submit for approval** sends the request.
+2. **Approve.** Whoever holds the **Payment approval** function sees it under **Awaiting
+   your approval**, then **Approve** or **Send back** with a reason.
+3. **Transfer.** The accountant opens **Payments**, a section of their own under
+   **Institution**: approved batches to transfer, with beneficiary, IBAN, BIC, reference and
+   amount. **Mark as paid** records the transfer, **Attach receipt** adds the proof. They
+   see no student file.
+
+| Request status | |
+|---|---|
+| **In preparation** | being put together |
+| **Submitted** | awaiting approval |
+| **Returned for correction** | sent back with a reason |
+| **Approved** | to transfer |
+| **Paid** | transferred |
+
+The student is told when a payment is recorded, and confirms they received it — or reports
+a discrepancy, which shows up under **Reported by students**.
+
+**Use case.**
+> The officer prepares October's advances request, the director approves it, the accountant
+> transfers and marks it paid: the 14 files move to "Advance paid".
+
+## The Commission's Beneficiary Module
+
+**What it's for.** Produce the file the Beneficiary Module expects without rebuilding it by
+hand, and check the two stay in agreement.
+
+**Who it's for.** <span class="al-audience">grants office</span>
+
+**How it works.** **Erasmus & mail merge** opens the export screen:
+
+- **Erasmus file** — for the whole programme or a selection, in the Beneficiary Module's
+  exact template. A check runs first: rows that would be rejected are held back, and a
+  blocking issue prevents the download.
+- **Mail merge file** — the mail-merge file for grant agreements; exported files move to
+  "Contract sent".
+- **Export history** — which file, by whom, when.
+
+**Re-import BM file** links your files to the Beneficiary Module's activity IDs, and
+**Compare with BM** shows the differences, read-only, with **Download the differences**.
+**Export**, on the programme screen, only gives the list on screen.
+
+**Use case.**
+> Before the interim report, the head of office compares her programme with the Beneficiary
+> Module: two amounts differ, she fixes them and exports the Erasmus file.
+
+## On the student side
+
+The **Bourse** tab of their profile asks whether they are applying for an Erasmus+ grant
+(saying no does not take them out of Erasmus+), shows their grant and has them confirm each
+payment received. See the [student portal](../etudiant/decouverte-candidature.md).
