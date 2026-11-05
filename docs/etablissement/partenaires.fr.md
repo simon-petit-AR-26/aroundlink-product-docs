@@ -1,33 +1,46 @@
-# Partenaires & fiches établissement
+# Institutions
 
-Le module **Partenaires** rassemble en un seul endroit tous les établissements
-avec lesquels votre bureau des relations internationales travaille : où ils se
-trouvent, quels accords vous lient, combien de places restent ouvertes et l'état
-de leurs données officielles. Chaque partenaire dispose d'une fiche complète que
-vos étudiants et votre équipe consultent tout au long de l'année.
+**Mobility ▸ Institutions** rassemble les établissements avec lesquels votre bureau travaille.
+L'écran porte trois onglets, et cette documentation les suit :
+
+| Onglet | Ce qu'on y trouve |
+|---|---|
+| **Institutions** | vos partenaires, et la fiche de chacun — cette page |
+| **Agreements** | tous vos accords, tous partenaires confondus — [Accords & places](accords.md) |
+| **Contacts** | vos interlocuteurs chez vos partenaires — [Contacts](contacts.md) |
+
+Chaque partenaire a une fiche complète, que votre équipe et vos étudiants consultent toute
+l'année.
 
 ## Annuaire des partenaires
 
-**À quoi ça sert.** Un tableau unique et filtrable de tous vos établissements
-partenaires. Il donne une vue d'ensemble immédiate — pays, ville, accréditations,
-étiquettes, langues, niveaux, places restantes, nombre et type d'accords — et
-sert de point d'entrée vers chaque fiche partenaire.
+**À quoi ça sert.** Un tableau unique de tous vos partenaires, qui sert d'entrée vers chaque
+fiche.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** L'annuaire liste les partenaires que votre établissement
-suit (ceux avec qui vous avez un accord ou que vous avez créés). Vous filtrez la
-liste directement depuis la barre de recherche, puis cliquez sur une ligne pour
-ouvrir la fiche. Un bouton bascule le même tableau vers la vue consolidée des
-accords.
+**Comment ça marche.** Une ligne par partenaire : code interne, pays, région, ville, date du
+dernier contact, accréditations, et bien d'autres colonnes à afficher ou masquer — tags,
+langues, niveaux, places… Chaque colonne se trie et se filtre ; la recherche couvre
+toute la ligne. Le bas du tableau compte ce que vous voyez : lignes, pays, villes.
+
+La barre d'outils, à droite de la recherche :
+
+- **+** crée un partenaire ;
+- l'export reprend ce que vous voyez — vos filtres, vos colonnes, votre sélection ;
+- le choix des **colonnes**, et les **vues** enregistrées, partagées avec votre équipe ;
+- le menu « … » ouvre les partenaires archivés et la corbeille.
+
+Cocher des lignes fait apparaître une barre d'actions en lot : **Tags**, **Student filters**,
+**Hide for your students**, **Archive**, **Delete**.
 
 ![Liste des établissements partenaires](../assets/screenshots/partenaires-liste.png)
 
-*Vos partenaires, avec leur code interne, leurs accréditations, vos tags et les niveaux ouverts. Cliquez sur l'image pour l'agrandir.*
+*Vos partenaires, deux d'entre eux cochés : la barre du bas regroupe ce qui s'applique à toute la sélection.*
 
 **Cas d'usage.**
-> Un coordinateur filtre sur « Espagne + accords actifs », puis ouvre la fiche
-> d'une université pour vérifier ses contacts.
+> Un coordinateur filtre la région sur « Asia & Oceania », coche les huit partenaires
+> concernés et leur pose le tag « Asie 2027 » en une fois.
 
 
 ## Créer un établissement partenaire
@@ -225,64 +238,6 @@ chacune annonçant ce qu'elle porte déjà. Trois campus n'ajoutent donc pas tro
     Une ville allumée comme destination ne se supprime pas : des étudiants ont pu la
     choisir, et ses places partiraient avec elle. Éteignez-la d'abord — l'écran le dit et
     refuse clairement. La suppression se confirme ensuite, et elle est définitive.
-
-## Contacts partenaires
-
-**À quoi ça sert.** Un annuaire des personnes avec qui le bureau échange chez
-chaque partenaire, dont un contact désigné comme principal. Ces contacts
-alimentent les listes déroulantes des accords et des signataires.
-
-**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
-
-**Comment ça marche.** Deux entrées : une liste globale de vos contacts et un
-onglet « Relation » par partenaire. Chaque contact possède nom, e-mail,
-téléphone, fonction et un indicateur « principal ». À l'enregistrement, un contact
-est automatiquement relié à un compte existant qui lui correspond.
-
-![Liste des contacts partenaires](../assets/screenshots/partenaires-contacts.png)
-
-*Vos interlocuteurs chez vos partenaires, l'étiquette « Main » marquant celui à qui partent les demandes et les nominations. C'est d'ici que vous leur ouvrez un accès.*
-
-**Cas d'usage.**
-> Le coordinateur ajoute la responsable Erasmus d'un partenaire et la marque
-> comme contact principal.
-
-
-### Ouvrir un accès au portail (invitations)
-
-**À quoi ça sert.** Ouvrir un accès côté partenaire pour un contact, afin qu'il
-collabore directement (par exemple pour approuver un accord). En un clic, le
-système invite le contact, le relie à un compte existant, ou signale un conflit.
-
-**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
-
-**Comment ça marche.** Depuis un contact partenaire, « Ouvrir l'accès » envoie une
-invitation par e-mail ; une action « Renvoyer » réémet l'invitation. Les deux
-sont limitées en fréquence pour éviter les envois répétés.
-
-**Cas d'usage.**
-> Le coordinateur invite la responsable Erasmus du partenaire afin qu'elle
-> examine un accord dans son propre portail.
-
-
-## Vue consolidée des accords
-
-**À quoi ça sert.** Une vue unifiée qui fusionne les accords Erasmus (IIA) et les
-accords bilatéraux de tous vos partenaires, pour voir et filtrer en un seul
-endroit le statut, les années de validité, la date de signature et l'état
-d'approbation de chaque accord.
-
-**Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
-
-**Comment ça marche.** Un bouton bascule l'annuaire vers cette vue normalisée, une
-ligne par accord. Chaque ligne indique le partenaire, l'origine (IIA ou
-bilatéral), le type, le statut (actif / inactif / résilié), l'approbation locale
-et partenaire, et les années de validité.
-
-**Cas d'usage.**
-> Le bureau filtre « Tous les accords » sur « Expiré » pour planifier les
-> renouvellements.
-
 
 ## Recherche d'établissement (autocomplétion)
 
@@ -554,23 +509,3 @@ l'import est sans risque.
 > en annonce 280 nouveaux et 20 mises à jour, deux lignes à corriger, puis l'import part.
 
 
-## Importer des contacts partenaires
-
-**À quoi ça sert.** Charger en masse les contacts de vos partenaires depuis un fichier,
-avec un aperçu avant écriture.
-
-**Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
-
-**Comment ça marche.** **Paramètres ▸ Integrations ▸ Import Contacts**. Deux colonnes sont
-obligatoires : **institution_domain** — le domaine SCHAC ou l'identifiant EWP de
-l'établissement du contact — et **email**. Facultatives : prénom, nom, téléphone, fonction,
-contact principal.
-
-L'aperçu signale chaque ligne dont l'établissement est introuvable, sans rien écrire ; vous
-confirmez ensuite. Réimporter le même e-mail pour le même partenaire met le contact à jour,
-et désigner un nouveau contact principal retire ce rôle au précédent. Une notification
-confirme la fin de l'import.
-
-**Cas d'usage.**
-> Le bureau charge 60 contacts : l'aperçu signale deux domaines mal saisis, corrigés avant
-> l'import ; chaque contact rejoint son partenaire.

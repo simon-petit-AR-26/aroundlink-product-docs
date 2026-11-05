@@ -274,8 +274,9 @@ nav:
       - Mobility:
           - Agenda: etablissement/agenda.md
           - Institutions:
-              - Partenaires: etablissement/partenaires.md
-              - Accords &amp; places: etablissement/accords.md
+              - Institutions: etablissement/partenaires.md
+              - Agreements: etablissement/accords.md
+              - Contacts: etablissement/contacts.md
           - Atlas: atlas/atlas.md
           - Outgoing:
               - Étudiants sortants: etablissement/etudiants.md

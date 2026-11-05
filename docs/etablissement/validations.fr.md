@@ -12,48 +12,68 @@ est archivée avec son auteur, son issue et son motif.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** La file se range par nature de ce qui est soumis :
+**Comment ça marche.** Quatre onglets :
 
-| Rubrique | Ce qu'on y décide |
+| Onglet | Ce qu'il contient |
 |---|---|
-| **Documents** | les pièces demandées à vos étudiants |
-| **Learning Agreements** | les contrats pédagogiques qui attendent votre signature |
-| **Transcripts** | les relevés de notes |
-| **Language scores** | les certificats et scores de langue |
-| **Course choices** · **Campus choices** | les choix de cours et de campus de vos entrants |
-| **Feedback** | les avis de vos étudiants sur leur établissement d'accueil |
-| **Grant documents** | les pièces du dossier de bourse |
+| **To Do** | tout ce qui attend votre décision |
+| **Late** | les versements de bourse et les pièces de bourse qui ont dépassé les délais fixés par votre établissement |
+| **History** | ce qui a été validé ou refusé, par qui et quand |
+| **Reminders** | les relances déjà parties — voir plus bas |
 
-Deux onglets : **To Do** pour ce qui attend, **History** pour ce qui a été validé ou refusé. Vous
-filtrez par sens — **Outgoing** ou **Incoming** —, vous isolez ce qui est **en retard**, et une
-recherche retrouve un étudiant ou un partenaire.
+Dans **To Do**, vous choisissez le sens — **Outgoing**, **Incoming**, ou les deux — et des
+pastilles filtrent par nature de pièce. Elles suivent le sens, parce que le travail n'est pas le
+même :
 
-Vous ouvrez chaque élément et vous le **validez** ou le **refusez**. Un refus demande un
-**motif** : il part chez l'étudiant, qui sait ce qu'il doit corriger.
+| Sens | Pastilles |
+|---|---|
+| les deux | **Language scores**, **Other documents**, **Feedback** |
+| **Outgoing** | **Grant documents**, **Learning Agreements**, **Transcripts** |
+| **Incoming** | **Course choices**, **Campus choices**, **Other steps** — les étapes de votre onboarding |
+
+**Overdue only** isole ce qui attend depuis plus de sept jours ; elle se combine aux autres
+pastilles. Une recherche retrouve un étudiant ou un partenaire.
 
 ![Hub de validation](../assets/screenshots/validations-hub.png)
 
-*Tout ce qui attend votre décision, avec le nombre d'éléments en retard et les filtres par nature de pièce.*
+*La file : les quatre onglets, le sens, les pastilles par nature de pièce, et l'ancienneté de chaque élément en rouge quand il a passé sept jours.*
+
+**Décider.** Chaque ligne se décide sur place — ✓ pour valider, ✗ pour refuser — ou s'ouvre :
+la pièce s'affiche alors dans une fenêtre, avec son statut, pour la lire avant de trancher.
+Un refus demande toujours un **motif** : il part chez l'étudiant, qui sait ce qu'il doit
+corriger.
+
+![Une pièce ouverte depuis la file](../assets/screenshots/validations-document.png)
+
+*Une pièce ouverte depuis la file : on la lit, on la télécharge, puis on valide ou on refuse.*
 
 **Cas d'usage.**
-> Lundi matin, le coordinateur voit 12 éléments en attente dont 3 en retard. Il valide deux
-> passeports, signe un contrat pédagogique et refuse une attestation d'assurance illisible en
-> indiquant pourquoi — le tout depuis la même file.
+> Lundi matin, le coordinateur clique sur **Overdue only** : 3 éléments. Il ouvre un relevé
+> de score de langue, le valide, et refuse une attestation illisible en indiquant pourquoi —
+> sans quitter la file.
+
 
 ## Relancer depuis la file
 
-**À quoi ça sert.** Ce qui ne vous a pas été envoyé ne peut pas être validé. L'onglet
-**Reminders** relance les étudiants à l'endroit même où vous constatez ce qui manque.
+**À quoi ça sert.** Ce qui ne vous a pas été envoyé ne peut pas être validé. Le bouton
+**Reminder**, sur la même ligne que les onglets, relance les étudiants à l'endroit même où vous
+constatez ce qui manque.
 
 **Comment ça marche.** Vous choisissez ce que vous voulez relancer :
 
 - **Documents** — les étudiants qui n'ont pas déposé une pièce demandée, ou dont la pièce a été
   refusée ;
-- **Profile completion** — ceux dont le profil n'est pas complet ; ceux déjà à 100 % sont laissés
-  tranquilles ;
 - **Feedback** — un groupe d'étudiants à qui demander un avis sur un thème ; ils arrivent sur le
-  formulaire, le thème déjà choisi.
+  formulaire, le thème déjà choisi ;
+- **Profile completion** — ceux dont le profil n'est pas complet ; ceux déjà à 100 % sont laissés
+  tranquilles.
 
-Chaque relance garde son historique : combien de messages sont partis sur combien, quand est
-parti le premier et le dernier. Le détail de chaque type de relance est dans
-[Diffusion & messages](communications.md).
+![Le choix d'une relance](../assets/screenshots/validations-nouvelle-relance.png)
+
+*Trois sortes de relance, chacune avec sa cible.*
+
+L'onglet **Reminders** garde l'historique de chaque relance : combien de messages sont partis
+sur combien, quand est parti le premier et le dernier. Le détail de chaque type de relance est
+dans [Diffusion & messages](communications.md).
+
+
