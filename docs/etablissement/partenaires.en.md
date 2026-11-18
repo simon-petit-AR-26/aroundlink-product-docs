@@ -264,21 +264,21 @@ from a file.
 
 ## Partner document library
 
-**What it's for.** Keep the files attached to a partner (signed agreements,
-brochures…), to gather all partner documents in one place.
+**What it's for.** Finding, on a partner's file, the documents that concern it.
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** You upload named documents to a partner (duplicate names are
-rejected), list them, and delete them individually.
+**How it works.** Two cases:
 
-![A partner's document library](../assets/screenshots/partenaire-bibliotheque.png)
-
-*The documents you publish to your students about this partner.*
+- **The partner keeps its own library on AroundLink**: you read it, organised in its folders,
+  without changing it. You only see what it addresses to its partners and their students; the
+  eye shows a document without downloading it.
+- **Otherwise**, you upload named documents there yourself — a name is used only once per
+  partner — for your students.
 
 **Use case.**
-> The coordinator uploads the signed cooperation-agreement PDF to the partner
-> file.
+> Before nominating students, a coordinator opens a partner's library and finds its welcome
+> guide, filed in the "Incoming" folder.
 
 
 ## Partner course catalogue

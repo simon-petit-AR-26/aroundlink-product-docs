@@ -17,7 +17,9 @@ through the mailbox of a colleague who is on holiday.
 
 **How it works.** An **Outlook add-in** files the emails you exchange with your contacts on
 the right fiche, from your mail client. A message is filed only when it is **authenticated**
-and involves a **contact already in AroundLink**; everything else is read and forgotten.
+and involves a **contact in AroundLink**. A message exchanged with someone not in your contacts
+yet waits, for twelve months at most: the [Contacts](contacts.md#the-people-who-wrote-to-you)
+page points them out, and their messages join their file as soon as you create it.
 
 Installation takes six steps, given directly on the page — Microsoft only allows an add-in to
 be added from a buried page of its own site, and the second half of the guide (where to click

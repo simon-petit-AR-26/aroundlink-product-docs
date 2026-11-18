@@ -278,22 +278,21 @@ import groupé permet aussi de charger ces contenus depuis un fichier.
 
 ## Bibliothèque de documents du partenaire
 
-**À quoi ça sert.** Conserver les fichiers rattachés à un partenaire (accords
-signés, brochures…), pour regrouper tous les documents partenaires au même
-endroit.
+**À quoi ça sert.** Retrouver, sur la fiche d'un partenaire, les documents qui le concernent.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Vous envoyez des documents nommés à un partenaire (les noms
-en double sont refusés), vous les listez et les supprimez individuellement.
+**Comment ça marche.** Deux cas :
 
-![Bibliothèque de documents d'un partenaire](../assets/screenshots/partenaire-bibliotheque.png)
-
-*Les documents que vous publiez à vos étudiants au sujet de ce partenaire.*
+- **Le partenaire tient lui-même sa bibliothèque sur AroundLink** : vous la consultez,
+  rangée dans ses dossiers, sans la modifier. Vous n'y voyez que ce qu'il adresse à ses
+  partenaires et à leurs étudiants ; l'œil affiche un document sans le télécharger.
+- **Sinon**, c'est vous qui y déposez des documents nommés — un nom ne sert qu'une fois par
+  partenaire — à l'attention de vos étudiants.
 
 **Cas d'usage.**
-> Le coordinateur téléverse le PDF de l'accord de coopération signé sur la fiche
-> du partenaire.
+> Avant de nominer ses étudiants, un coordinateur ouvre la bibliothèque d'un partenaire et
+> y trouve son guide d'accueil, rangé dans le dossier « Incoming ».
 
 
 ## Catalogue de cours du partenaire

@@ -21,6 +21,11 @@ everywhere — here, in My Institution and on a partner's page: name, address, c
 country, email, main campus. A campus with no address or email of its own shows the main
 campus's, greyed. An institution's address and email are therefore kept on its main campus.
 
+Three columns count each campus's students: **Total students**, **Incoming** and **Outgoing**.
+While some of your students have no campus, a panel lists them: tick them and pick the campus
+to attach them to (**Attach to**). Nothing is attached automatically; the panel disappears once
+everyone has a campus.
+
 ![The campuses screen](../assets/screenshots/parametres-campus.png)
 
 *Your physical sites, with the number of students attached to each.*

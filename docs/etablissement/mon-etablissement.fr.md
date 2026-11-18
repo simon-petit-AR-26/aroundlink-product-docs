@@ -55,8 +55,30 @@ cours, liens externes, documents téléchargeables et questions fréquentes.
 
 **Comment ça marche.** Chaque sous-onglet propose une gestion complète (ajout,
 modification, suppression) de ses éléments, avec le réglage de visibilité par
-audience. La bibliothèque accepte des fichiers téléchargeables ; la FAQ se rédige
-en questions-réponses.
+audience. La FAQ se rédige en questions-réponses.
+
+### La bibliothèque, rangée en dossiers
+
+**À quoi ça sert.** Ranger vos guides, formulaires et brochures comme dans un drive, et
+décider qui les voit.
+
+**Comment ça marche.** **Student Info ▸ Library**. On entre dans un dossier en cliquant
+dessus ; le fil d'Ariane ramène où l'on veut. **New folder** et **Add document** agissent dans
+le dossier ouvert.
+
+- **Le public se règle sur le dossier** — sortants, entrants, ou vos partenaires. Un document
+  rangé prend le public de son dossier ; un sous-dossier suit son parent, et n'est jamais
+  plus large que lui. À la racine, chaque document a son propre public.
+- **Déplacer** : glisser-déposer sur un dossier ou sur le fil d'Ariane, ou **Move to…**.
+- **Modifier** un document : son nom, et son public tant qu'il est à la racine.
+- **L'œil** affiche un document sans le télécharger.
+- Un dossier plein ne se supprime pas : il faut d'abord le vider. Rien ne part en cascade.
+
+Formats acceptés : PDF, images, Word, Excel, CSV, PowerPoint, OpenDocument et texte.
+
+**Cas d'usage.**
+> Le bureau crée un dossier « Avant le départ » pour ses sortants, y glisse le guide
+> pré-départ et la check-list visa, et un dossier « Welcome » pour ses entrants.
 
 ### Factsheet IIA (EWP)
 

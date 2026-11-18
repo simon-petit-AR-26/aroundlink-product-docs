@@ -137,8 +137,11 @@ contrôle, informations pré-départ).
 **Pour qui.** <span class="al-audience">étudiant</span>
 
 **Comment ça marche.** La page liste les fichiers de l'établissement destinés au
-public « sortant ». Elle reste vide si aucun établissement de rattachement n'est
-disponible pour l'étudiant.
+public « sortant », rangés dans leurs dossiers. Elle reste vide si aucun établissement
+de rattachement n'est disponible pour l'étudiant.
+
+Sur la page de sa destination, l'étudiant trouve aussi les documents que l'établissement
+d'accueil publie, dans ses dossiers, en lecture seule.
 
 **Cas d'usage.**
 > Un étudiant télécharge le guide pré-départ Erasmus de son établissement.

@@ -53,8 +53,30 @@ before and during mobility: institution overview, course offer, external links,
 downloadable documents and frequently asked questions.
 
 **How it works.** Each sub-tab offers full management (add, edit, delete) of its
-items, with per-audience visibility settings. The library accepts downloadable
-files; the FAQ is authored as question-and-answer pairs.
+items, with per-audience visibility settings. The FAQ is authored as
+question-and-answer pairs.
+
+### The library, organised in folders
+
+**What it's for.** Organising your guides, forms and brochures as in a drive, and deciding
+who sees them.
+
+**How it works.** **Student Info ▸ Library**. Click a folder to enter it; the breadcrumb takes
+you back anywhere. **New folder** and **Add document** act in the open folder.
+
+- **The audience is set on the folder** — outgoing, incoming, or your partners. A filed
+  document takes its folder's audience; a sub-folder follows its parent, and is never wider
+  than it. At the root, each document has its own audience.
+- **Moving**: drag and drop onto a folder or onto the breadcrumb, or **Move to…**.
+- **Editing** a document: its name, and its audience while it sits at the root.
+- **The eye** shows a document without downloading it.
+- A folder that is not empty cannot be deleted: empty it first. Nothing goes in cascade.
+
+Accepted formats: PDF, images, Word, Excel, CSV, PowerPoint, OpenDocument and text.
+
+**Use case.**
+> The office creates a "Before departure" folder for its outgoing students, drops in the
+> pre-departure guide and the visa checklist, and a "Welcome" folder for its incoming ones.
 
 ### IIA factsheet (EWP)
 

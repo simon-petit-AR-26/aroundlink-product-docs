@@ -40,6 +40,25 @@ The same contact also shows on their partner's file, with the same columns.
 > Before sending nominations, the coordinator checks that every partner has a "Main" contact.
 
 
+## The people who wrote to you
+
+**What it's for.** Not losing the emails exchanged with someone who is not in your contacts
+yet.
+
+**How it works.** An email [filed](emails.md) with a person missing from your contacts is not
+thrown away: it waits, for twelve months at most. At the top of the **Contacts** page, one line
+per person says so — *You archived 3 emails from …* —, with their address and the number of
+emails, never their content.
+
+- **Create the contact** asks for the partner, then opens the usual window with the address
+  already filled in. Once created, their emails join their file on their own.
+- The cross (**Don't add**) sets the person aside.
+
+**Use case.**
+> A partner's new coordinator has written to the office three times. Her line shows on
+> Contacts; one click creates her file, and the three emails are already there.
+
+
 ## Opening access for a contact
 
 **What it's for.** Giving a contact their own AroundLink access.

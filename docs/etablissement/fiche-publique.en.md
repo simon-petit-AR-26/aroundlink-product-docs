@@ -48,10 +48,13 @@ is not a block to tick. The rest is your choice.
 | **Academic data** | Mobility periods · Language requirements · Course catalogue · Catalogue filter by promotion |
 | **Your sections** | every section of your student content, in the order of your categories — general information, academic aspects, student life, scholarships, logistics |
 | **FAQ** | your frequently asked questions, which close the page |
-| **Side panel** | Nomination and application deadlines · Team contacts (role and email only) · Postal address · Student reviews (no names) · Useful links |
+| **Side panel** | Nomination and application deadlines · Team contacts (name and role, and a button to write to them) · Postal address · Student reviews (no names) · Useful links |
 
 !!! warning "What never goes out"
-    Team contacts only expose **the role and the email address** — never a personal number.
+    No email address and no phone number is written in the page. A **Send an email** button
+    gives the contact's address at the moment of the click and opens the visitor's mail app.
+    You choose which contacts show: the **Visible on my public page** switch, in your
+    contacts.
     Student reviews are published **without their author's name**. And no content belonging
     to another institution appears on your page.
 

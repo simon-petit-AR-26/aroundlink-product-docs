@@ -42,6 +42,25 @@ Le même contact se lit aussi sur la fiche de son partenaire, avec les mêmes co
 > « Main ».
 
 
+## Les personnes qui vous ont écrit
+
+**À quoi ça sert.** Ne pas perdre les e-mails échangés avec quelqu'un qui n'est pas encore
+dans vos contacts.
+
+**Comment ça marche.** Un e-mail [classé](emails.md) avec une personne absente de vos contacts
+n'est pas jeté : il attend, douze mois au plus. En tête de la page **Contacts**, une ligne par
+personne le signale — *You archived 3 emails from …* —, avec son adresse et le nombre d'e-mails,
+jamais leur contenu.
+
+- **Create the contact** demande le partenaire, puis ouvre la fenêtre habituelle, l'adresse
+  déjà remplie. À la création, ses e-mails rejoignent sa fiche d'eux-mêmes.
+- La croix (**Don't add**) écarte la personne.
+
+**Cas d'usage.**
+> Une nouvelle coordinatrice d'un partenaire a écrit trois fois au bureau. Sa ligne apparaît
+> sur Contacts ; un clic crée sa fiche, et les trois e-mails y sont déjà.
+
+
 ## Ouvrir un accès à un contact
 
 **À quoi ça sert.** Donner à un interlocuteur son propre accès à AroundLink.
