@@ -183,10 +183,14 @@ mention en tête du bloc le dit :
 | **Provided by this partner** | la fiche est tenue par le partenaire : vous consultez, vous ne modifiez pas |
 | **Only your institution sees this** | c'est **votre** relevé pour ce partenaire — cloisonné, personne d'autre ne le voit |
 
-Quand le partenaire publie son exigence, c'est elle qui décide : votre ligne reste
-affichée mais ne s'applique plus, et le compteur ne compte que ce qui agit. Vous
-pouvez **reprendre la main chez vous** — votre valeur redevient celle qui
-s'applique, pour votre établissement seulement.
+**Vous décidez de ce qui compte pour vos étudiants.** Chaque ligne — la vôtre comme
+celle que le partenaire a publiée — porte un **interrupteur**. Éteinte, elle reste
+affichée, en grisé, dans son exigence, mais ne s'applique plus à vos étudiants. Le
+partenaire et ses autres clients n'en voient rien : votre choix ne vaut que chez vous.
+
+Le mot **and** / **or** entre deux exigences se clique toujours, y compris entre deux
+exigences publiées par le partenaire : « anglais **ou** portugais » devient « anglais
+**et** portugais » pour vos étudiants, sans toucher à ce qu'il publie.
 
 Une colonne de **provenance** donne la même information ligne par ligne, et la
 fiche indique qui a rempli.

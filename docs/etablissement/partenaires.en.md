@@ -174,9 +174,14 @@ top of the block says which:
 | **Provided by this partner** | the fiche is kept by the partner: you view, you do not change |
 | **Only your institution sees this** | this is **your** record for this partner — ring-fenced, nobody else sees it |
 
-When the partner publishes its requirement, that one decides: your line stays
-visible but no longer applies, and the counter only counts what acts. You can
-**take it back at home** — your value applies again, for your institution only.
+**You decide what counts for your students.** Each line — yours, or the one the partner
+published — carries a **switch**. Off, it stays visible, dimmed, in its requirement, but no
+longer applies to your students. The partner and its other clients see nothing: your choice
+only holds for you.
+
+The **and** / **or** word between two requirements is always clickable, including between
+two requirements the partner published: "English **or** Portuguese" becomes "English **and**
+Portuguese" for your students, without touching what the partner publishes.
 
 A **source** column gives the same information row by row, and the fiche says who
 filled it in.
