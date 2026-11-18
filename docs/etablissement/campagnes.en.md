@@ -310,7 +310,12 @@ While the partner has not replied, two actions save you leaving the tool:
     A nomination left unanswered beyond the delay you set — **six days by default**,
     adjustable from 1 to 60 — is reminded **once, automatically**. It has its own counter:
     it does not consume your manual reminder, so you can still remind by hand the same day.
-    An accepted, refused or withdrawn nomination is never reminded.
+    An accepted, refused or withdrawn nomination is never reminded. The delay is set in
+    **Settings ▸ Institution ▸ Nominations**.
+
+![Setting the automatic reminder delay](../assets/screenshots/parametres-nominations.png)
+
+*Settings ▸ Institution ▸ Nominations: the number of days after which an unanswered nomination is reminded, once, with a new access link.*
 
 ![Campaign nominations screen, showing each nomination's state and confirmation channel](../assets/screenshots/campagne-nominations.png)
 
