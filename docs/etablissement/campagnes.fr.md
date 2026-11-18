@@ -324,7 +324,11 @@ Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de
     défaut**, réglable de 1 à 60 — est relancée **une fois, automatiquement**. Elle a son
     propre compteur : elle ne consomme pas votre relance manuelle, vous pouvez donc toujours
     relancer à la main le même jour. Une nomination acceptée, refusée ou retirée n'est jamais
-    relancée.
+    relancée. Le délai se règle dans **Paramètres ▸ Institution ▸ Nominations**.
+
+![Le réglage du délai de relance automatique](../assets/screenshots/parametres-nominations.png)
+
+*Paramètres ▸ Institution ▸ Nominations : le nombre de jours au-delà duquel une nomination sans réponse est relancée, une fois, avec un nouveau lien d'accès.*
 
 ![Écran des nominations d'une campagne, avec l'état de chaque nomination et le canal de confirmation](../assets/screenshots/campagne-nominations.png)
 

@@ -67,3 +67,4 @@ things-to-do.png	/my-institution	2026-11-01
 things-to-do-pastille.png	/my-institution	2026-11-01
 validations-document.png	/validations	2026-11-05
 validations-nouvelle-relance.png	/validations	2026-11-05
+parametres-nominations.png	/settings/institution/nominations	2026-11-18
