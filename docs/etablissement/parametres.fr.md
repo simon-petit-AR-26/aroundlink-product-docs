@@ -18,6 +18,12 @@ votre structure réelle.
 campus avec le nombre d'étudiants rattachés à chacun. La suppression est bloquée
 si des étudiants y sont encore rattachés, pour éviter toute perte de lien.
 
+**Chaque campus porte son adresse postale et son e-mail.** Le même formulaire sert
+partout — ici, dans Mon établissement et sur la fiche d'un partenaire : nom, adresse,
+ville, pays, e-mail, campus principal. Un campus sans adresse ni e-mail à lui affiche,
+en grisé, ceux du campus principal. L'adresse et l'e-mail d'un établissement se tiennent
+donc sur son campus principal.
+
 ![Écran des campus](../assets/screenshots/parametres-campus.png)
 
 *Vos sites physiques, avec le nombre d'étudiants rattachés à chacun.*

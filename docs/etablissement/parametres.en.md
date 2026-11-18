@@ -16,6 +16,11 @@ main campus), to attach students to a campus and reflect your real structure.
 with the number of students attached to each. Deletion is blocked while students
 are still attached, to prevent any loss of link.
 
+**Each campus carries its own postal address and email.** The same form is used
+everywhere — here, in My Institution and on a partner's page: name, address, city,
+country, email, main campus. A campus with no address or email of its own shows the main
+campus's, greyed. An institution's address and email are therefore kept on its main campus.
+
 ![The campuses screen](../assets/screenshots/parametres-campus.png)
 
 *Your physical sites, with the number of students attached to each.*
