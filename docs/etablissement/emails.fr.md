@@ -18,8 +18,10 @@ chercher dans la boîte d'un collègue parti en vacances.
 
 **Comment ça marche.** Un **add-in Outlook** classe les emails que vous échangez avec vos
 contacts sur la bonne fiche, depuis votre messagerie. Un message n'est classé que s'il est
-**authentifié** et s'il concerne un **contact déjà présent dans AroundLink** ; tout le reste
-est lu puis oublié.
+**authentifié** et s'il concerne un **contact présent dans AroundLink**. Un message échangé
+avec une personne qui n'est pas encore dans vos contacts attend, douze mois au plus : la page
+[Contacts](contacts.md#les-personnes-qui-vous-ont-ecrit) vous la signale, et ses messages
+rejoignent sa fiche dès que vous la créez.
 
 L'installation se fait en six étapes, données directement sur la page — Microsoft ne permet
 l'ajout d'un add-in que depuis une page enfouie de son propre site, et la seconde moitié du

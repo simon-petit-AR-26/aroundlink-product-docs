@@ -1,58 +1,66 @@
 # Atlas — Annuaire mondial
 
-Atlas est un annuaire mondial des établissements d'enseignement supérieur : un seul
-endroit pour rechercher n'importe quel établissement, le situer sur une carte du
-monde, et voir s'il est déjà partenaire ou joignable via le réseau Erasmus/EWP. « Qui d'autre existe ? » devient une carte que l'on explore, plutôt
-qu'un tableur.
+L'Atlas rassemble les établissements d'enseignement supérieur du monde entier : un seul
+endroit pour en trouver un, le situer sur une carte, voir s'il est déjà votre partenaire, et
+ouvrir sa page. « Qui d'autre existe ? » devient une carte que l'on explore, plutôt qu'un
+tableur.
 
-## Annuaire mondial (tableau / cartes / carte)
+## Trouver un établissement
 
-**À quoi ça sert.** L'Atlas rassemble les établissements d'enseignement supérieur du
-registre mondial ROR dans un annuaire consultable. Vous y cherchez un établissement, le
-situez sur une carte, et voyez s'il est déjà votre partenaire et s'il est raccordé au
-réseau EWP.
+**À quoi ça sert.** Chercher un établissement n'importe où dans le monde, et repérer ceux qui
+valent une prise de contact.
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** **Mobility ▸ Atlas**, quand l'Atlas est activé pour votre
-établissement. Une page, trois vues : **Table**, **Cards** et la carte du monde. Les filtres
-— recherche, pays, type, **EWP status** (synchronisé, déclaré, absent d'EWP) — s'appliquent
-au tableau et aux cartes ; la carte suit la recherche, le pays et le type, et charge la zone
-affichée, jusqu'à 5 000 points.
+**Comment ça marche.** **Mobility ▸ Atlas**. Deux vues : **Cards** et **Map**.
 
-Dans le tableau et les cartes, chaque établissement porte son statut EWP et, s'il y a lieu,
-le badge **Partner**. La page est en lecture seule : on y consulte, on n'y crée rien.
+Une barre, collée en haut de la page, porte les filtres :
+
+- **Région**, **pays** et **accréditation**, chacun en sélection multiple. Plusieurs
+  accréditations cochées gardent les établissements qui les ont **toutes** ;
+- une **recherche** sur le nom, la ville ou le pays ;
+- **My partners**, pour ne garder que vos partenaires.
+
+Chaque carte montre la photo de couverture de l'établissement — celle de sa page publique
+quand il en a publié une —, son logo, son nom, son pays, et le badge **Partner** s'il est
+déjà le vôtre. Sur la carte du monde, survoler un point affiche la même carte en réduit.
+
+![L'Atlas en vue cartes](../assets/screenshots/atlas-cartes.png)
+
+*La vue Cards : les filtres région, pays et accréditation, la recherche, « My partners », et en haut à droite la jauge de votre propre page publique.*
 
 ![Atlas mondial en vue carte du monde](../assets/screenshots/atlas-carte.png)
 
-*L'Atlas en vue carte : chaque point est un établissement du registre mondial. Les vues Tableau et Cartes offrent la même recherche.*
+*L'Atlas en vue carte : chaque point est un établissement ; le survoler montre sa carte.*
 
 **Cas d'usage.**
-> Un coordinateur cherche « Antalya », filtre sur la Turquie et passe en vue Cards : il voit
-> quelles universités sont raccordées à EWP, et que l'une d'elles est déjà son partenaire.
-
-![Atlas mondial en vue cartes](../assets/screenshots/atlas-cartes.png)
-
-*La même recherche en vue cartes : chaque établissement avec son pays, son type et son raccordement au réseau EWP.*
+> Une coordinatrice cherche des partenaires en Amérique latine accrédités AACSB : elle coche
+> la région et l'accréditation, et parcourt les cartes.
 
 
-## Factsheet en direct à la demande
+## La page d'un établissement
 
-**À quoi ça sert.** Lire la factsheet EWP d'un établissement en direct — calendrier de
-candidature, délais, contacts — sans attendre une synchronisation.
+**À quoi ça sert.** Découvrir un établissement comme il se présente lui-même.
 
-**Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
+**Comment ça marche.** Un clic sur une carte ouvre la page de l'établissement :
 
-**Comment ça marche.** La fiche d'un établissement affiche ses identifiants (ROR, SCHAC),
-sa date de fondation et ses liens. Dans le bloc **EWP factsheet**, **Load** interroge le
-partenaire sur le réseau, à l'instant ; **Reload** relance la lecture. S'affichent alors :
-les dates de candidature (automne / printemps), les délais de décision et de relevé de
-notes en semaines, les contacts logement, visa et assurance, et les liens vers le catalogue
-de cours, le site de l'établissement et le site de candidature.
+- **s'il a publié sa [page publique](../etablissement/fiche-publique.md)**, c'est elle qui
+  s'affiche, telle qu'il l'a composée ;
+- **sinon**, la même mise en page se remplit de ce que disent les registres publics — le
+  registre mondial des établissements et Wikidata — avec un bandeau qui dit d'où vient
+  l'information, pour qu'on ne la prenne pas pour la parole de l'établissement.
 
-La lecture ne garde rien : chaque ouverture interroge de nouveau le partenaire. Elle
-suppose que votre établissement dispose lui-même d'un identifiant EWP.
+Rien de ce que vous savez de vos partenaires n'apparaît ici : la page ne lit que ce que
+l'établissement publie lui-même et les registres publics. **Back to the Atlas** ramène à
+votre recherche.
+
+**Votre propre page.** En tête de l'Atlas, une jauge dit où en est **votre** page
+publique, avec un bouton qui mène à l'écran de composition. Elle compte les mêmes éléments
+que la liste [de ce qu'il vous reste à remplir](../etablissement/mon-etablissement.md#ce-quil-vous-reste-a-remplir),
+et disparaît quand votre page est complète et publiée.
 
 **Cas d'usage.**
-> Avant de nominer ses étudiants, un coordinateur ouvre la fiche d'un partenaire, clique sur
-> **Load** et confirme la date limite de candidature du printemps.
+> Avant d'écrire à une université brésilienne, un coordinateur ouvre sa page dans l'Atlas :
+> photos, périodes, exigences de langue — de quoi préparer son premier message.
+
+

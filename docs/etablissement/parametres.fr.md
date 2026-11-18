@@ -24,6 +24,11 @@ ville, pays, e-mail, campus principal. Un campus sans adresse ni e-mail à lui a
 en grisé, ceux du campus principal. L'adresse et l'e-mail d'un établissement se tiennent
 donc sur son campus principal.
 
+Trois colonnes comptent les étudiants de chaque campus : **Total students**, **Incoming** et
+**Outgoing**. Tant que certains de vos étudiants n'ont aucun campus, un encart les liste : vous
+les cochez et choisissez le campus où les rattacher (**Attach to**). Rien n'est rattaché
+automatiquement ; l'encart disparaît quand chacun a son campus.
+
 ![Écran des campus](../assets/screenshots/parametres-campus.png)
 
 *Vos sites physiques, avec le nombre d'étudiants rattachés à chacun.*

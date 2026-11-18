@@ -136,8 +136,11 @@ pre-departure information).
 **Who it's for.** <span class="al-audience">student</span>
 
 **How it works.** The page lists the institution's files intended for the
-"outgoing" audience. It stays empty if no home institution is available for the
-student.
+"outgoing" audience, organised in their folders. It stays empty if no home
+institution is available for the student.
+
+On their destination's page, the student also finds the documents the host institution
+publishes, in its folders, read-only.
 
 **Use case.**
 > A student downloads their institution's Erasmus pre-departure guide.

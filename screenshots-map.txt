@@ -20,8 +20,8 @@ partenaire-bibliotheque.png	/institutions/:id/student-info/library	2026-08-31
 places-matrice.png	/institutions/:id/iia-agreements/:id/places	2026-08-31
 bourse-pipeline.png	/bourse	2026-08-31
 diffusion-nouveau-message.png	/diffusion	2026-08-31
-atlas-carte.png	/atlas	2026-08-31
-atlas-cartes.png	/atlas	2026-08-31
+atlas-carte.png	/atlas	2026-11-18
+atlas-cartes.png	/atlas	2026-11-18
 mon-etablissement-fiche-ewp.png	/my-institution/iia-factsheet	2026-08-31
 mon-etablissement-avis.png	/my-institution/student-info/feedback	2026-08-31
 parametres-campus.png	/settings/institution/campuses	2026-08-31

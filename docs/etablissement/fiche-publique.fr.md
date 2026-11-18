@@ -49,11 +49,13 @@ il n'est pas un bloc à cocher. Le reste se choisit.
 | **Données académiques** | Périodes de mobilité · Exigences de langue · Catalogue de cours · Filtre du catalogue par promotion |
 | **Vos rubriques** | toutes les rubriques de votre contenu étudiant, dans l'ordre de vos catégories — informations générales, aspects académiques, vie étudiante, bourses, logistique |
 | **FAQ** | votre foire aux questions, qui ferme la page |
-| **Volet latéral** | Échéances de nomination et de candidature · Contacts de l'équipe (fonction et e-mail seulement) · Adresse postale · Avis d'étudiants (sans nom) · Liens utiles |
+| **Volet latéral** | Échéances de nomination et de candidature · Contacts de l'équipe (nom et fonction, et un bouton pour leur écrire) · Adresse postale · Avis d'étudiants (sans nom) · Liens utiles |
 
 !!! warning "Ce qui ne sort jamais"
-    Les contacts de l'équipe n'exposent que **la fonction et l'adresse e-mail** — jamais un
-    numéro personnel. Les avis d'étudiants sont publiés **sans le nom de leur auteur**. Et
+    Aucune adresse e-mail ni aucun numéro de téléphone n'est écrit dans la page. Un bouton
+    **Send an email** donne l'adresse du contact au moment du clic et ouvre la messagerie du
+    visiteur. Vous choisissez les contacts montrés : interrupteur **Visible on my public
+    page**, dans vos contacts. Les avis d'étudiants sont publiés **sans le nom de leur auteur**. Et
     aucun contenu d'un autre établissement n'apparaît sur votre page.
 
 ![La fiche publique telle qu'on la voit de l'extérieur](../assets/screenshots/fiche-publique-publiee.png)

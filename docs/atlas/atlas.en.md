@@ -1,56 +1,64 @@
 # Atlas — World directory
 
-Atlas is a worldwide directory of higher-education institutions: a single place to
-search for any institution, locate it on a world map, and immediately see whether it
-is already a partner or reachable through the Erasmus/EWP network. "Who else is out
-there?" becomes a map you explore, rather than a spreadsheet.
+The Atlas gathers higher-education institutions from all over the world: one place to find
+one, locate it on a map, see whether it is already your partner, and open its page. "Who else
+is out there?" becomes a map you explore, rather than a spreadsheet.
 
-## World directory (table / cards / map)
+## Finding an institution
 
-**What it's for.** The Atlas brings together the higher-education institutions of the ROR
-world registry in a searchable directory. You look up an institution, place it on a map,
-and see whether it is already your partner and whether it is connected to the EWP network.
+**What it's for.** Finding an institution anywhere in the world, and spotting the ones worth
+reaching out to.
 
-**Who it's for.** <span class="al-audience">coordinator / IRO manager</span>
+**Who it's for.** <span class="al-audience">coordinator / RI manager</span>
 
-**How it works.** **Mobility ▸ Atlas**, when the Atlas is turned on for your institution.
-One page, three views: **Table**, **Cards** and the world map. The filters — search,
-country, type, **EWP status** (synced, declared, not in EWP) — apply to the table and the
-cards; the map follows the search, country and type, and loads the area on screen, up to
-5,000 points.
+**How it works.** **Mobility ▸ Atlas**. Two views: **Cards** and **Map**.
 
-In the table and cards, each institution carries its EWP status and, where relevant, the
-**Partner** badge. The page is read-only: you look things up, you create nothing.
+A bar, stuck to the top of the page, holds the filters:
 
-![World Atlas in world-map view](../assets/screenshots/atlas-carte.png)
+- **Region**, **country** and **accreditation**, each multi-select. Several accreditations
+  ticked keep the institutions that hold **all** of them;
+- a **search** on name, city or country;
+- **My partners**, to keep only your partners.
 
-*The Atlas in map view: each point is an institution from the world registry. The Table and Cards views offer the same search.*
+Each card shows the institution's cover photo — the one from its public page when it has
+published one —, its logo, name, country, and the **Partner** badge if it is already yours.
+On the world map, hovering a point shows the same card, smaller.
 
-**Use case.**
-> A coordinator searches "Antalya", filters on Turkey and switches to Cards: they see which
-> universities are connected to EWP, and that one of them is already their partner.
+![The Atlas in cards view](../assets/screenshots/atlas-cartes.png)
 
-![World Atlas in cards view](../assets/screenshots/atlas-cartes.png)
+*The Cards view: region, country and accreditation filters, the search, "My partners", and at the top right the gauge of your own public page.*
 
-*The same search in cards view: each institution with its country, type and EWP connection.*
+![World Atlas, world map view](../assets/screenshots/atlas-carte.png)
 
-
-## Live factsheet on demand
-
-**What it's for.** Read an institution's EWP factsheet live — application calendar,
-deadlines, contacts — without waiting for a synchronisation.
-
-**Who it's for.** <span class="al-audience">coordinator / IRO manager</span>
-
-**How it works.** An institution's record shows its identifiers (ROR, SCHAC), founding date
-and links. In the **EWP factsheet** block, **Load** queries the partner over the network,
-right now; **Reload** reads it again. It then shows: application dates (autumn / spring),
-decision and transcript deadlines in weeks, housing, visa and insurance contacts, and links
-to the course catalogue, the institution's site and the application site.
-
-Nothing is kept: each opening queries the partner again. It requires your own institution
-to have an EWP identifier.
+*The Atlas in map view: each point is an institution; hovering it shows its card.*
 
 **Use case.**
-> Before nominating students, a coordinator opens a partner's record, clicks **Load** and
-> confirms the spring application deadline.
+> A coordinator looks for AACSB-accredited partners in Latin America: she ticks the region
+> and the accreditation, and browses the cards.
+
+
+## An institution's page
+
+**What it's for.** Discovering an institution as it presents itself.
+
+**How it works.** Clicking a card opens the institution's page:
+
+- **if it has published its [public page](../etablissement/fiche-publique.md)**, that page
+  shows, as it composed it;
+- **otherwise**, the same layout fills with what public registries say — the world registry of
+  institutions and Wikidata — with a banner saying where the information comes from, so it is
+  not mistaken for the institution's own words.
+
+Nothing you know about your partners appears here: the page only reads what the institution
+publishes itself and the public registries. **Back to the Atlas** returns to your search.
+
+**Your own page.** At the top of the Atlas, a gauge shows where **your** public page stands,
+with a button leading to the composition screen. It counts the same items as the list of
+[what you still have to fill in](../etablissement/mon-etablissement.md#what-you-still-have-to-fill-in),
+and disappears once your page is complete and published.
+
+**Use case.**
+> Before writing to a Brazilian university, a coordinator opens its page in the Atlas:
+> photos, periods, language requirements — enough to prepare a first message.
+
+
