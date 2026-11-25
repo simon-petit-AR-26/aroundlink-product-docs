@@ -20,6 +20,10 @@ Elle ne masque pas le tableau, qui se met à jour pendant que vous cochez. Vous 
 l'agrandissez, la repliez ; un champ retrouve un filtre ou une valeur, et **Clear all** remet
 tout à zéro. La fermer **garde les filtres actifs**.
 
+![La fenêtre de filtres d'une liste](../assets/screenshots/listes-filtres.png)
+
+*La fenêtre « Filters · Institutions », posée sur la liste : on coche un pays, le tableau se met à jour derrière.*
+
 ## Enregistrer une vue
 
 L'icône de signet enregistre ce que vous voyez — colonnes, filtres et tri — sous un nom :
@@ -40,9 +44,17 @@ choisies.
 En bas à droite, à côté de la pagination, vous réglez la **hauteur des lignes** en liste et la
 **taille des cartes** en cartes : S, M ou L.
 
+![Les étudiants sortants en cartes](../assets/screenshots/etudiants-sortants-cartes.png)
+
+*Les sortants en cartes : la photo, le nom, la promotion, la nationalité et le statut, puis les colonnes choisies.*
+
 **Paramètres ▸ Account ▸ Display** fixe, pour chaque liste, comment elle s'ouvre : en liste
 ou en cartes, la hauteur des lignes, la taille des cartes. Ce réglage vous est personnel et
 reste propre à votre navigateur.
+
+![Le réglage Display](../assets/screenshots/parametres-display.png)
+
+*Settings ▸ Account ▸ Display : pour chaque liste, la vue d'ouverture, la hauteur des lignes et la taille des cartes.*
 
 ## Remplir une case vide
 

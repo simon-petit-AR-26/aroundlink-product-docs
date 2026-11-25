@@ -40,6 +40,10 @@ Cocher des lignes fait apparaître une barre d'actions en lot : **Tags**, **Stud
 **Activate**, **Deactivate**, **Show to your students**, **Hide for your students**,
 **Delete**.
 
+![Les partenaires en cartes](../assets/screenshots/partenaires-cartes.png)
+
+*La même liste en cartes : code interne, accréditations, tags, et l'interrupteur Active / Inactive sur chaque carte.*
+
 ![Liste des établissements partenaires](../assets/screenshots/partenaires-liste.png)
 
 *Vos partenaires, deux d'entre eux cochés : la barre du bas regroupe ce qui s'applique à toute la sélection.*

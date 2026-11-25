@@ -52,6 +52,10 @@ On the world map, hovering a point shows the same card, smaller.
 Nothing you know about your partners appears here: the page only reads what the institution
 publishes itself and the public registries. **Back to the Atlas** returns to your search.
 
+![An institution's page in the Atlas](../assets/screenshots/atlas-page-etablissement.png)
+
+*The page of a partner that published its own: its photos, campuses, catalogue, and on the right its next deadlines and student reviews.*
+
 **Asking it to complete its page.** At the top of an institution's page, a **Page** gauge
 shows where it stands, on four items: contact details, semester dates, language levels,
 social links. While it is not full, **Ask** opens *Ask to complete the page*: you pick one of

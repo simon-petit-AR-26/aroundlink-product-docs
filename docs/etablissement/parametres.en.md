@@ -141,6 +141,10 @@ anything is written.
 4. **Import N rows**. Above 500 rows, the import runs in the background: a notification and
    an email tell you when it ends.
 
+![The first step of an import](../assets/screenshots/parametres-import.png)
+
+*Settings ▸ Imports: pick what you import, drop the file, and the four steps follow at the top.*
+
 The **History** tab lists your imports. **Undo import** removes what an import created and
 restores what it changed — except what someone has changed since, and unless it touched
 students already engaged in a mobility.

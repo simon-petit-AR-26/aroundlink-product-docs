@@ -29,6 +29,10 @@ The session list shows each one's path, number of steps and number of students. 
 can be **renamed** and **closed** when the intake ends; a closed session leaves the list. Two
 sessions cannot share a name. **Open this workflow** opens a session's path.
 
+![The welcome session list](../assets/screenshots/sessions-accueil.png)
+
+*Incoming ▸ Mobility: your welcome sessions, each with its path, its steps and its students.*
+
 ## Accepting a nomination into a session
 
 **What it's for.** Attaching each incoming student to their intake as soon as you accept

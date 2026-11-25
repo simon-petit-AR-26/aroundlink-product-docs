@@ -10,6 +10,10 @@ l'endroit où ça coince.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
+![Le tableau de bord](../assets/screenshots/tableau-de-bord.png)
+
+*Le tableau de bord : l'avancement par étape et par phase à gauche, vos chiffres du jour et les places distribuées à droite.*
+
 **Comment ça marche.** Vous basculez entre vos **sortants** et vos **entrants**, puis vous
 choisissez ce que vous regardez : une campagne qui a un [parcours](parcours.md) branché,
 l'accueil chez un partenaire (**Onboarding at…**), ou côté entrants une session d'accueil.

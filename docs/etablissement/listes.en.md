@@ -20,6 +20,10 @@ not hide the table, which updates while you tick. You move it, enlarge it, fold 
 finds a filter or a value, and **Clear all** resets everything. Closing it **keeps the
 filters on**.
 
+![A list's filters window](../assets/screenshots/listes-filtres.png)
+
+*The "Filters · Institutions" window, over the list: tick a country, the table updates behind it.*
+
 ## Saving a view
 
 The bookmark icon saves what you see — columns, filters and sort — under a name: **Save
@@ -39,8 +43,16 @@ the columns you chose.
 Bottom right, next to the pagination, you set the **row height** in list view and the **card
 size** in card view: S, M or L.
 
+![Outgoing students as cards](../assets/screenshots/etudiants-sortants-cartes.png)
+
+*Outgoing students as cards: photo, name, cohort, nationality and status, then the chosen columns.*
+
 **Settings ▸ Account ▸ Display** sets, for each list, how it opens: as a list or as cards, the
 row height, the card size. This setting is personal and stays in your browser.
+
+![The Display setting](../assets/screenshots/parametres-display.png)
+
+*Settings ▸ Account ▸ Display: for each list, the opening view, the row height and the card size.*
 
 ## Filling an empty cell
 
