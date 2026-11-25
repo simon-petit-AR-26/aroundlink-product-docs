@@ -325,7 +325,7 @@ Two columns summarise this in the list: **Open to** — the promotions — and
 from learning agreements signed years ago, typing is not viable — and that is precisely
 where the material most useful to your students sits.
 
-**How it works.** **Settings ▸ Integrations ▸ Import Courses**, in three steps: you
+**How it works.** **Settings ▸ Imports** (see [Importing a file](parametres.md#importing-a-file)), or the former page **Settings ▸ Integrations ▸ Import Courses**, in three steps: you
 download the template, you upload your file to **preview every row** and fix errors inline,
 then you confirm — only valid rows are written. Excel or CSV.
 
@@ -452,7 +452,7 @@ history of past mobilities.
 
 - **Active** — a partner you work with;
 - **Inactive** — it stays in your list, you open it, edit it and write to it as before, but
-  **your students no longer see it**: it leaves **Find my Exchange**, campaigns and wishes.
+  **your students no longer see it**: it leaves **Find your exchange**, campaigns and wishes.
   Its agreements stay on record and read *Inactive (partner inactive)*; nothing is deleted.
 
 The status partly sets itself:
@@ -469,7 +469,7 @@ partner that still has running agreements or students on mobility shows a warnin
 
 | Action | What it does |
 |---|---|
-| **Hide from students** | the partner leaves **Find my Exchange** and wishes, but stays active. **Make visible** undoes it. No effect on an inactive partner, which your students never see anyway |
+| **Hide from students** | the partner leaves **Find your exchange** and wishes, but stays active. **Make visible** undoes it. No effect on an inactive partner, which your students never see anyway |
 | **Deactivate** | it becomes **Inactive**: see above. An inactive partner carries an **Activate** button next to the menu |
 | **Merge duplicate** | its contacts, internal code and tags move to the record you keep. **Agreements and mobilities are not moved**: the duplicate is deleted if it has none, deactivated otherwise, and the message says so |
 | **Delete** | for a partner added by mistake: only a partner **with no agreement and no mobility** can be deleted. It goes to the **Trash** of the Institutions page, where it can be restored. Otherwise, the screen offers **Deactivate instead** |
@@ -492,13 +492,13 @@ AroundLink already knows about them.
 
 **Who it's for.** <span class="al-audience">IRO manager / admin</span>
 
-**How it works.** **Settings ▸ Integrations ▸ Import Institution**, in three steps:
+**How it works.** **Settings ▸ Imports** (see [Importing a file](parametres.md#importing-a-file)), or the former page **Settings ▸ Integrations ▸ Import Institution**, in three steps:
 
 1. **Download template**, then fill it in. Only the **SCHAC** column (the institution's
    domain) is required: it identifies the institution. Name, country, city and identifiers
    come from the ROR world registry. Optional columns: postal address, email, website,
    accreditations, internal code, tags, student filters.
-2. **Upload a file** — .xlsx, .xls or .csv, at most 5 MB and 20,000 rows. A preview shows
+2. **Upload a file** — .xlsx, .xls or .csv, at most 5 MB and 20,000 rows on this page (10,000 rows through Settings ▸ Imports). A preview shows
    each row — new, or an update of an existing partner — with its errors, which you fix in
    the preview itself.
 3. **Import N valid rows**. A row in error does not hold up the others.

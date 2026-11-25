@@ -25,7 +25,7 @@ This documentation lists **every feature** of the tool and, for each one, its
     **The AroundLink website**: [aroundlink.com](https://aroundlink.com) — the product
     presentation, and how to reach us.
 
-    **A meeting**: [thirty minutes with our team](https://cal.com/simon-petit-aroundlink/30minds) — to talk about your own
+    **A meeting**: [fifteen minutes with our team](https://cal.com/simon-petit-aroundlink/30minds) — to talk about your own
     institution rather than hunting for the answer page by page.
 
     **This documentation** describes what the tool does; it does not replace the application.
@@ -78,15 +78,15 @@ and **invited partner** — each with its own space and permissions. See
 
 This documentation follows the application's menu: each section matches an entry of the sidebar, in the same place.
 
-- **Management** — [Dashboard](etablissement/dashboards.md) · [Validations](etablissement/validations.md)
-- **Mobility** — [Agenda](etablissement/agenda.md) · [Partners](etablissement/partenaires.md) · [Agreements &amp; places](etablissement/accords.md) · [Atlas](atlas/atlas.md)
-    - **Outgoing** — [Outgoing students](etablissement/etudiants.md) · [Campaigns](etablissement/campagnes.md)
-    - **Incoming** — [Incoming students](etablissement/etudiants-entrants.md) · [Onboarding](etablissement/onboarding.md)
+- [Your lists](etablissement/listes.md) — searching, filtering, displaying: what holds for every list
+- **Management** — [Dashboard](etablissement/dashboards.md) · [Validation Hub](etablissement/validations.md)
+- **International** — [Agenda](etablissement/agenda.md) · [Institutions](etablissement/partenaires.md) ([Agreements](etablissement/accords.md) · [Contacts](etablissement/contacts.md)) · [Atlas](atlas/atlas.md)
+    - **Outgoing** — [Outgoing students](etablissement/etudiants.md) · [Campaigns](etablissement/campagnes.md) · [Mobility tracking](etablissement/suivi-mobilites.md)
+    - **Incoming** — [Incoming students](etablissement/etudiants-entrants.md) · [Welcoming incoming students](etablissement/onboarding.md)
     - [A student's record](etablissement/fiche-etudiant.md)
-    - **Workflows** — [Mobility paths](etablissement/parcours.md) · [Mobility tracking](etablissement/suivi-mobilites.md)
 - **Institution** — [My institution](etablissement/mon-etablissement.md) · [Your public page](etablissement/fiche-publique.md) · [Grants &amp; payments](etablissement/bourse.md)
 - **Communication** — [Broadcasts &amp; messages](etablissement/communications.md)
-- **Settings** — [Settings &amp; team](etablissement/parametres.md) · [Documents &amp; templates](etablissement/documents.md) · [Emails &amp; connectors](etablissement/emails.md)
+- **Settings** (the gear, top right) — [Settings &amp; team](etablissement/parametres.md) · [Mobility paths](etablissement/parcours.md) · [Documents &amp; templates](etablissement/documents.md) · [Emails &amp; connectors](etablissement/emails.md)
 - **Student portal** — [Discover &amp; apply](etudiant/decouverte-candidature.md) · [During &amp; after mobility](etudiant/pendant-apres-mobilite.md)
 - **EWP network** — [Overview](ewp/ewp.md) · [API reference](ewp/reference-api.md)
 - **Platform &amp; security** — [Overview](plateforme/plateforme.md) · [Single sign-on](plateforme/sso.md) · [Security &amp; data](plateforme/securite.md)

@@ -47,11 +47,12 @@ with no interference.
 > its own course catalogue and its own guidance there, never seeing the other's.
 
 !!! info "Identity belongs to the institution"
-    A partner's name, country, city, address, email address, website and
-    accreditations can only be edited **by that institution itself**, from its own
-    workspace. You cannot change them from their record: this identity is unique and
-    serves everyone — search, Atlas, ROR matching, EWP exchanges. What you control on
-    their record is your own layer: your internal code and your tags.
+    A partner's name, country, city and official identifiers can only be edited **by that
+    institution itself**, from its own
+    workspace: this identity is unique and serves everyone — search, Atlas, ROR matching,
+    EWP exchanges. What you control on their record is **your own layer** — what you know
+    about them: your internal code, your tags, the website and accreditations you know of,
+    their campuses and addresses, your contacts there. Only your institution sees it.
 
     Official identifiers — ROR, Erasmus code, EWP id, SCHAC — cannot be edited by
     anyone: they are the reference.

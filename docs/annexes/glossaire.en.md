@@ -37,7 +37,7 @@ The acronyms and terms you meet across AroundLink and international mobility.
 | **SSO** | *Single Sign-On* — signing in with an existing account, Microsoft or Google. |
 | **Mobility path** | The sequence of steps a student follows before, during and after their mobility (*Workflow*). It is built in **Settings ▸ Workflows** and plugged into a campaign (*Mobility workflow*) or a welcome session. See [Mobility paths](../etablissement/parcours.md). |
 | **Phase** | The stage of the mobility a student is in: before, during, after, closed. |
-| **Welcome session** | The group of incoming students following the same path. See [Onboarding](../etablissement/onboarding.md). |
+| **Welcome session** | The group of incoming students following the same path. See [Welcoming incoming students](../etablissement/onboarding.md). |
 | **Public page** | What your partners and their students read about your institution. See [Your public page](../etablissement/fiche-publique.md). |
 | **Requirement** | A condition set by a destination — language level, document — that a student must meet to ask for it (*Requirements per destination*). |
 | **Direct assignment** | A campaign setting where the coordinator's decision creates the placement, without the student accepting. |
@@ -68,8 +68,8 @@ same thing in four places: it is four steps.
 The **academic level** is a shared European scale — bachelor, master, doctorate. It lets you
 compare two students from two countries.
 
-The **level label** (*Custom label*) is the name *you* give your cohorts: "Aero 4", "MSc
-26-27". It only means something at home, it is set in **Settings ▸ Academic levels**, each
+The **level label** (*Custom level* on the student list, *Custom label* on partners and agreements) is the name *you* give your cohorts: "Aero 4", "MSc
+26-27". It only means something at home, it is set in **Settings ▸ Institution ▸ Academic Levels**, each
 student carries their own, and it is what designates the cell in the place matrix.
 
 That is why the matching round requires a level label and not just a level: "Aero 4" and
@@ -82,7 +82,7 @@ Not to be confused with the **mobility path**, which is a sequence of steps.
 A **tag** stays with you. A **student filter** can be shown to your students, who use it to
 search for a destination — and it also **restricts** what they can ask for: when a student
 and a partner both carry filters, they must share at least one. See
-[Tag or student filter?](../etablissement/parametres.md).
+[Tag or student filter?](../etablissement/parametres.md#tag-or-student-filter).
 
 ### Agreement, exchange, place
 

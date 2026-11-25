@@ -180,7 +180,7 @@ Distinguishes fee-generating mobility from free Erasmus exchange.
 with no two-sided negotiation phase): fee amount, currency, subtype (individual placement
 or high volume), duration and mobility type. They then distribute places via the
 distribution matrix. When an institution offers paying mobility, these offers are visible
-to students (in "Find Exchange") with their indicative price, so the student knows the cost
+to students (in "Find your exchange") with their indicative price, so the student knows the cost
 before applying. An import with preview is available.
 
 **Use case.**
@@ -213,7 +213,7 @@ preview before anything is written.
 
 **Who it's for.** <span class="al-audience">RI manager</span>
 
-**How it works.** **Settings ▸ Integrations** offers one import per family: IIA, bilateral,
+**How it works.** **Settings ▸ Imports** (see [Importing a file](parametres.md#importing-a-file)) imports each agreement family; the former **Settings ▸ Integrations** page also offers one import per family: IIA, bilateral,
 double degree and paying mobility, each with its file template. The file is checked row by row
 in a preview, where each row can be fixed, before the validation that saves it all.
 

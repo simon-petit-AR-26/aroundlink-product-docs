@@ -182,19 +182,20 @@ in the institution's colours.
 **Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
 **How it works.** From the OLA list, the coordinator downloads the PDF of the learning
-agreement or the transcript of records. The agreement can only be downloaded once fully
-validated; the transcript once the transcript itself is validated. The system fills the
+agreement or the transcript of records. The agreement can be downloaded at any time — as a
+draft until all three signatures are in — once a template is configured; the transcript once
+the transcript itself is validated. The system fills the
 template with the courses (and the grades, for the transcript).
 
 **Use case.**
-> After both signatures, the coordinator downloads the Learning Agreement as a PDF, on
+> Once all three signatures are in, the coordinator downloads the Learning Agreement as a PDF, on
 > the institution's letterhead, for the student's file.
 
 ## Transcript of Records (ToR)
 
 **What it does.** Manages the incoming student's transcript that the host institution
-must return to the home institution. The coordinator reviews the entered grades and the
-uploaded official transcript, then validates or requests corrections.
+The host institution validates nothing in AroundLink: the student enters their grades and
+uploads the host's official transcript; you review, then validate or request corrections.
 
 **Who it's for.** <span class="al-audience">RI manager / coordinator (validation) ; student (entry)</span>
 

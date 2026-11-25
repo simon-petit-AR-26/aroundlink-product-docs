@@ -100,7 +100,7 @@ avec un aperçu avant écriture.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
 
-**Comment ça marche.** **Paramètres ▸ Integrations ▸ Import Contacts**. Deux colonnes sont
+**Comment ça marche.** **Paramètres ▸ Imports** (voir [Importer un fichier](parametres.md#importer-un-fichier)), ou l'ancienne page **Paramètres ▸ Integrations ▸ Import Contacts**. Deux colonnes sont
 obligatoires : **institution_domain** — le domaine SCHAC ou l'identifiant EWP de
 l'établissement du contact — et **email**. Facultatives : prénom, nom, téléphone, fonction,
 contact principal.

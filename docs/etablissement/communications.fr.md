@@ -118,14 +118,15 @@ devient une opération mesurable.
 
 **Comment ça marche.** **Reminder** demande d'abord ce que vous relancez : **Documents**,
 **Feedback** ou **Profile completion**. Une relance de documents cible les étudiants par
-type de document, niveau d'études et campagne ; un même étudiant n'en reçoit qu'une toutes
-les 48 heures, et les e-mails partent en tâche de fond.
+type de document, niveau d'études et campagne. Si certains ont déjà été relancés ces deux
+derniers jours, l'écran le signale avant l'envoi — ils recevront quand même celle-ci. Les
+e-mails partent en tâche de fond.
 
 La liste des relances montre, pour chacune, le premier et le dernier envoi, les envois sur
 le total, les ouvertures, les clics et la délivrabilité, et se filtre sur ce qui n'est pas
 encore envoyé, en partie ou entièrement.
 
-On lance une relance depuis l'onglet **Reminders** des [validations](validations.md), depuis
+On lance une relance depuis le bouton **Reminder** du [Validation Hub](validations.md), depuis
 une sélection dans la liste des étudiants, ou depuis le dossier d'un étudiant.
 
 **Cas d'usage.**

@@ -1,13 +1,13 @@
 # Mobility campaigns
 
-The Campaigns module structures application rounds: eligible students rank a set number
-of wishes among the catalogue's offers, and the IRO drives the whole thing — from opening
+The Campaigns module structures application rounds: eligible students rank their
+wishes among the catalogue's offers, and the IRO drives the whole thing — from opening
 to final placement — without rebuilding the list by hand.
 
 ## Mobility campaigns
 
 **What it's for.** Lets an international relations office run a framed application round,
-where students rank a fixed number of exchange wishes within a given window. The campaign
+where students rank their exchange wishes, within the limit you set, within a given window. The campaign
 automatically determines which students and which partner offers belong to it, avoiding
 hand-picking each participant.
 
@@ -17,8 +17,10 @@ hand-picking each participant.
 number of allowed wishes, the target academic levels, the mobility periods, the eligible
 agreement types and an optional partner-tag filter. On save, the system builds the pool of
 participating students and the pool of eligible offers from those criteria. The campaign
-moves from Draft to Ready (opening it to students), then Opened and Finished; only a draft
-campaign remains editable.
+moves from Draft to Ready (opening it to students), then Opened and Finished. Its settings
+stay editable afterwards — the screen then says what the change affects —, except the start
+date, free only in draft, and the mobility refusal, which cannot be removed once a student
+has used it.
 
 **The closing time closes the campaign on its own.** At the minute you set, the
 campaign moves to Finished with nobody clicking: wishes still in draft become wishes, your

@@ -6,7 +6,7 @@ candidature. Son menu tient en quatre rubriques :
 | Rubrique | Ce qu'on y trouve |
 |---|---|
 | **Overview** | le tableau de bord, et la messagerie si votre établissement l'a ouverte |
-| **My exchange** | **Find exchange** et **Campaigns & wishes** pour un sortant ; **My exchange** dès qu'il a une destination |
+| **My exchange** | **Find your exchange** et **Campaigns & wishes** pour un sortant ; **My exchange** dès qu'il a une destination |
 | **My institution** | les ressources que vous publiez, et les services si la marketplace est activée |
 | **My profile** | son dossier : identité, documents, bourse, contrat pédagogique, relevé, avis |
 
@@ -93,15 +93,14 @@ Quand vous lui remettez un document qu'il n'a pas encore ouvert, une **pastille*
 
 ## Profil — Bourse de mobilité
 
-**À quoi ça sert.** Vue en lecture seule des bourses de mobilité rattachées à
-l'exchange de l'étudiant, pour qu'il visualise le soutien financier qui lui a
-été accordé.
+**À quoi ça sert.** Sa bourse de mobilité : dire s'il candidate, donner ce que le dossier
+demande, et suivre ce qui lui est accordé.
 
 **Pour qui.** <span class="al-audience">étudiant</span>
 
-**Comment ça marche.** L'onglet liste les bourses associées au profil de
-l'étudiant, de la plus récente à la plus ancienne. L'étudiant consulte le
-montant et l'état de sa bourse ; il n'y a pas de saisie depuis cet écran.
+**Comment ça marche.** L'onglet lui demande d'abord s'il candidate à une bourse
+Erasmus+ — répondre non ne le sort pas d'Erasmus+. Il renseigne ensuite les détails de sa
+mobilité et dépose les pièces demandées, puis suit le montant et l'état de sa bourse.
 
 **Cas d'usage.**
 > Un étudiant consulte le montant et le statut de sa bourse Erasmus+.
@@ -150,7 +149,7 @@ fait en direct, sans rechargement complet de la page.
 *La recherche de destinations : cartes, liste ou carte du monde, filtres par niveau, langue, période et type de mobilité, et mise en favori.*
 
 **Cas d'usage.**
-> Un étudiant de 4e année en aéronautique clique sur « Correspond à mon profil »
+> Un étudiant de 4e année en aéronautique clique sur « Match my profile »
 > et voit aussitôt les seuls partenaires offrant son niveau et son domaine pour
 > un semestre d'hiver.
 

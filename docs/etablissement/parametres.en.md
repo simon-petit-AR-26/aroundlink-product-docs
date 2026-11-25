@@ -428,10 +428,6 @@ and free-text search.
 **How it works.** A page gathers all the organisation's users and lets you filter
 them by category, status or name/email.
 
-![An import screen](../assets/screenshots/parametres-imports.png)
-
-*An import: the template to download, the required columns, and the row-by-row preview before you confirm.*
-
 **Use case.**
 > The admin searches a user by email to check their status and category.
 

@@ -98,7 +98,7 @@ anything is written.
 
 **Who it's for.** <span class="al-audience">RI manager / admin</span>
 
-**How it works.** **Settings ▸ Integrations ▸ Import Contacts**. Two columns are required:
+**How it works.** **Settings ▸ Imports** (see [Importing a file](parametres.md#importing-a-file)), or the former page **Settings ▸ Integrations ▸ Import Contacts**. Two columns are required:
 **institution_domain** — the contact's institution SCHAC domain or EWP identifier — and
 **email**. Optional: first name, last name, phone, position, main contact.
 

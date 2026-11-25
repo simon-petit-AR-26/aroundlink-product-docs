@@ -37,7 +37,7 @@ Les sigles et termes que l'on croise dans AroundLink et la mobilité internation
 | **SSO** | *Single Sign-On* — la connexion via un compte existant, Microsoft ou Google. |
 | **Parcours de mobilité** | L'enchaînement d'étapes qu'un étudiant suit avant, pendant et après sa mobilité (*Workflow*). Il se compose dans **Settings ▸ Workflows** et se branche sur une campagne (*Mobility workflow*) ou une session d'accueil. Voir [Parcours de mobilité](../etablissement/parcours.md). |
 | **Phase** | Le temps de la mobilité où se trouve un étudiant : avant, pendant, après, clôturée. |
-| **Session d'accueil** | Le groupe d'étudiants entrants qui suivent un même parcours (*Welcome session*). Voir [Onboarding](../etablissement/onboarding.md). |
+| **Session d'accueil** | Le groupe d'étudiants entrants qui suivent un même parcours (*Welcome session*). Voir [Accueil des entrants](../etablissement/onboarding.md). |
 | **Fiche publique** | Ce que vos partenaires et leurs étudiants lisent de votre établissement (*Public page*). Voir [Votre fiche publique](../etablissement/fiche-publique.md). |
 | **Exigence** | Une condition posée par une destination — niveau de langue, document — que l'étudiant doit remplir pour la demander (*Requirements per destination*). |
 | **Affectation directe** | Un réglage de campagne où la décision du coordinateur crée l'affectation, sans acceptation de l'étudiant. |
@@ -68,9 +68,9 @@ n'est pas la même chose à quatre endroits : c'est quatre étapes.
 Le **niveau d'études** est une échelle européenne commune — licence, master, doctorat. Il
 permet de comparer deux étudiants de deux pays.
 
-Le **libellé de niveau** (*Custom label*) est le nom que *vous* donnez à vos promotions :
+Le **libellé de niveau** (*Custom level* sur la liste des étudiants, *Custom label* sur les partenaires et les accords) est le nom que *vous* donnez à vos promotions :
 « Aero 4 », « PGE 26-27 ». Il n'a de sens que chez vous, il se règle dans **Paramètres ▸
-Academic levels**, chaque étudiant porte le sien, et c'est lui qui désigne la case dans la
+Institution ▸ Academic Levels**, chaque étudiant porte le sien, et c'est lui qui désigne la case dans la
 matrice des places.
 
 C'est pourquoi le tour d'affectation exige un libellé de niveau et pas seulement un niveau :
@@ -83,7 +83,7 @@ C'est pourquoi le tour d'affectation exige un libellé de niveau et pas seulemen
 Un **tag** reste chez vous. Un **filtre étudiant** peut être montré à vos étudiants, qui
 s'en servent pour chercher une destination — et il **restreint** aussi ce qu'ils peuvent
 demander : quand un étudiant et un partenaire portent des filtres, ils doivent en partager
-au moins un. Voir [Tag ou filtre étudiant ?](../etablissement/parametres.md).
+au moins un. Voir [Tag ou filtre étudiant ?](../etablissement/parametres.md#tag-ou-filtre-etudiant).
 
 ### Accord, échange, place
 

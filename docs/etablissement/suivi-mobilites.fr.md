@@ -38,7 +38,7 @@ du travail réellement fait.
 filtres, choix des colonnes, vues enregistrées et export.
 
 Le **tableau** aligne les dossiers en lignes, avec l'avancement chiffré, l'étape en cours et
-qui est attendu. Huit colonnes facultatives s'ajoutent et se trient : **Destination**,
+qui est attendu. Neuf colonnes facultatives s'ajoutent et se trient : **Destination**,
 **City**, **Country**, **Region**, **Period**, **Level**, **Field of study**,
 **Agreement**, **Workflow**.
 

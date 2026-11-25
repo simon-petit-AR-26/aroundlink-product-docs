@@ -68,9 +68,10 @@ If the institution was not in your list yet, it joins it, **inactive**: your stu
 see it until an agreement binds you.
 
 **Your own page.** At the top of the Atlas, a gauge shows where **your** public page stands,
-with a button leading to the composition screen. It counts the same items as the list of
-[what you still have to fill in](../etablissement/mon-etablissement.md#what-you-still-have-to-fill-in),
-and disappears once your page is complete and published.
+with a button leading to the composition screen. It counts your page's items — contact details, semester dates, language levels, social
+links — and disappears once your page is complete and published. The list of
+[what you still have to fill in](../etablissement/mon-etablissement.md#what-you-still-have-to-fill-in)
+goes further: photos, catalogue, FAQ.
 
 **Use case.**
 > Before writing to a Brazilian university, a coordinator opens its page in the Atlas:

@@ -189,19 +189,21 @@ prêt à archiver, aux couleurs de l'établissement.
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
 **Comment ça marche.** Depuis la liste des OLA, le coordinateur télécharge le PDF du
-contrat pédagogique ou du relevé de notes. Le contrat n'est téléchargeable qu'une fois
-pleinement validé ; le relevé de notes une fois le relevé lui-même validé. Le système
+contrat pédagogique ou du relevé de notes. Le contrat se télécharge à tout moment — en
+brouillon tant que les trois signatures ne sont pas réunies — dès qu'un modèle est
+configuré ; le relevé de notes, une fois le relevé lui-même validé. Le système
 remplit le modèle avec les cours (et les notes, pour le relevé).
 
 **Cas d'usage.**
-> Après la double signature, le coordinateur télécharge le Learning Agreement en PDF,
+> Une fois les trois signatures réunies, le coordinateur télécharge le Learning Agreement en PDF,
 > à l'en-tête de l'établissement, pour le dossier de l'étudiant.
 
 ## Relevé de notes (Transcript of Records)
 
-**À quoi ça sert.** Gère le relevé de notes de l'étudiant entrant que l'établissement
-d'accueil doit renvoyer à l'établissement d'origine. Le coordinateur relit les notes
-saisies et le relevé officiel déposé, puis valide ou demande des corrections.
+**À quoi ça sert.** Le relevé de notes de votre étudiant **sortant**, au retour de sa
+mobilité : il saisit ses notes et dépose le relevé officiel de l'établissement d'accueil ;
+vous relisez, puis vous validez ou lui demandez des corrections. L'établissement d'accueil
+ne valide rien dans AroundLink.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur (validation) ; étudiant (saisie)</span>
 

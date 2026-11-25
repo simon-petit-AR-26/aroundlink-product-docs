@@ -11,7 +11,7 @@ following where each one stands, and acting on several of them at once.
 **Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
 **How it works.** Each row is a student. The list sorts and filters on every column
-— level, campus, year, campaigns, tags, access status. The *Access* column shows
+— level, campus, year, campaigns, tags, access status. Two columns say where their account stands: **Access** — has the invitation gone out — and **Connected** — have they used it. The *Access* column shows
 where their account stands: never sent, sending, or connected.
 
 Select several students and you can open their access, apply or remove tags, send

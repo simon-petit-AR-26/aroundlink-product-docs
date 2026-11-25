@@ -37,7 +37,7 @@ actually done.
 picker, saved views and export.
 
 The **table** lines the files up in rows, with progress in figures, the current step and who
-is expected. Eight optional columns can be added and sorted: **Destination**, **City**,
+is expected. Nine optional columns can be added and sorted: **Destination**, **City**,
 **Country**, **Region**, **Period**, **Level**, **Field of study**, **Agreement**,
 **Workflow**.
 

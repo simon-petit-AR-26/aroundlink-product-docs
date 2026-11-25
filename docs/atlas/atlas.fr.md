@@ -70,9 +70,10 @@ Si l'établissement n'était pas encore dans votre liste, il y entre, **inactif*
 étudiants ne le voient pas tant qu'aucun accord ne vous lie.
 
 **Votre propre page.** En tête de l'Atlas, une jauge dit où en est **votre** page
-publique, avec un bouton qui mène à l'écran de composition. Elle compte les mêmes éléments
-que la liste [de ce qu'il vous reste à remplir](../etablissement/mon-etablissement.md#ce-quil-vous-reste-a-remplir),
-et disparaît quand votre page est complète et publiée.
+publique, avec un bouton qui mène à l'écran de composition. Elle compte les éléments de votre page — coordonnées, dates de semestre, niveaux de
+langue, réseaux sociaux — et disparaît quand votre page est complète et publiée. La liste
+[de ce qu'il vous reste à remplir](../etablissement/mon-etablissement.md#ce-quil-vous-reste-a-remplir)
+va plus loin : photos, catalogue, FAQ.
 
 **Cas d'usage.**
 > Avant d'écrire à une université brésilienne, un coordinateur ouvre sa page dans l'Atlas :

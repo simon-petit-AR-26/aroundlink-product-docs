@@ -15,15 +15,14 @@ place to keep the information students see accurate and up to date.
 
 **Who it's for.** <span class="al-audience">coordinator / IR manager</span>
 
-**How it works.** The page is organized into four tabs. **Information**: identity
+**How it works.** The page is organized into five tabs — **Information**, **Student Info**, **IIA Factsheet**, **Contacts**, **Public page**. **Information**: identity
 fields (code, name, country…), the logo, accreditations, your language requirements and
 your agenda. **Student Info**: your content for students — factsheet, courses and
 programmes, links, library, reviews and FAQ — where each item carries its visibility
 audiences. **Contacts**: your team and your counterparts. **Public page**: composing
 [your public page](fiche-publique.md).
 
-A **vertical index** lists the sections with, next to each, **what is left to fill in** —
-17/17 when everything is there. Content is written as blocks attached to categories and
+A **vertical index** lists the sections with, next to each, **what it contains** — 17/17 when everything is there; what is missing is read in the list of [what you still have to fill in](#what-you-still-have-to-fill-in). Content is written as blocks attached to categories and
 sub-categories.
 
 ![My institution, Student Info tab](../assets/screenshots/mon-etablissement-student-info.png)
@@ -167,12 +166,20 @@ students. It's a trusted, first-hand review layer to help with destination choic
 **Who it's for.** <span class="al-audience">coordinator / IR manager</span>
 
 **How it works.** A review carries a rating, a topic, the author's name, the country
-type, content and optional photos. From the "feedback" sub-tab, you accept or refuse
-each contribution; accepted, public reviews then surface to students.
+type, content and optional photos. You accept or refuse each contribution; accepted,
+public reviews then surface to students.
 
-![Moderating the reviews received about your institution](../assets/screenshots/mon-etablissement-avis.png)
+The same review is moderated in three places, and the decision is the same:
 
-*The reviews left about your institution, split between pending, accepted and refused. Each carries its topic, rating and author, and you choose to accept it internally, accept and publish it, or refuse it.*
+| Screen | What it shows |
+|---|---|
+| **Student Info ▸ Feedback** in My Institution | the reviews written by your students, and those left about you by the students you host |
+| a partner's record, **Student Info ▸ Feedback** | your students' reviews about that partner — see [Institutions](partenaires.md#student-feedback-moderation) |
+| the **Validation Hub**, **Feedback** chip | the same ones, in the queue of what awaits your decision |
+
+![Moderating reviews](../assets/screenshots/mon-etablissement-avis.png)
+
+*The reviews, split between pending, accepted and refused. Each carries its topic, rating and author, and you choose to accept it internally, accept and publish it, or refuse it.*
 
 **Use case.**
 > A student back from Antalya leaves a 4-star review with photos; the coordinator

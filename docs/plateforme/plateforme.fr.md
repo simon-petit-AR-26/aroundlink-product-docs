@@ -49,12 +49,13 @@ contenus, sans interférence.
 > ceux de l'autre.
 
 !!! info "L'identité appartient à l'établissement"
-    Le nom, le pays, la ville, l'adresse, l'adresse e-mail, le site web et les
-    accréditations d'un partenaire ne sont modifiables **que par cet établissement
-    lui-même**, depuis son propre espace. Vous ne pouvez pas les changer depuis sa
-    fiche : cette identité est unique et sert à tous — recherche, Atlas,
-    correspondance ROR, échanges EWP. Ce que vous maîtrisez sur sa fiche, c'est
-    votre propre couche : votre code interne et vos tags.
+    Le nom, le pays, la ville et les identifiants officiels d'un partenaire ne sont
+    modifiables **que par cet établissement
+    lui-même**, depuis son propre espace : cette identité est unique et sert à tous —
+    recherche, Atlas, correspondance ROR, échanges EWP. Ce que vous maîtrisez sur sa
+    fiche, c'est **votre propre couche** — ce que vous savez de lui : votre code interne,
+    vos tags, le site web et les accréditations que vous lui connaissez, ses campus et
+    leurs adresses, vos contacts chez lui. Elle n'est vue que par votre établissement.
 
     Les identifiants officiels — ROR, code Erasmus, identifiant EWP, SCHAC — ne
     sont modifiables par personne : ils font foi.

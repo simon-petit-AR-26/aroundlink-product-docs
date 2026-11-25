@@ -14,7 +14,7 @@ Rien de ce qui suit ne fonctionne si ces quatre choses n'existent pas.
 |---|---|---|
 | **Vos partenaires** et leurs **accords** | Coordinateur | Aucune destination à proposer |
 | **Des places** posées dans la matrice | Coordinateur | Les destinations existent mais n'ouvrent rien |
-| **Vos libellés de niveau** (*Custom label* : un par promotion, ou un par niveau), **portés par chaque étudiant** | Administrateur, dans **Paramètres ▸ Academic levels** | Le tour d'affectation refuse de démarrer |
+| **Vos libellés de niveau** (*Custom level* : un par promotion, ou un par niveau), **portés par chaque étudiant** | Administrateur, dans **Settings ▸ Institution ▸ Academic Levels** | Le tour d'affectation refuse de démarrer |
 | **Vos périodes** de mobilité | Administrateur | Les places n'ont pas de colonne où se poser |
 
 !!! tip "L'erreur de démarrage la plus fréquente"
@@ -27,7 +27,7 @@ Rien de ce qui suit ne fonctionne si ces quatre choses n'existent pas.
 
 Il crée la campagne, choisit **qui participe** et **où l'on peut partir**, règle le nombre de
 vœux, les documents requis et les quelques options qui ne se reprennent pas ensuite. Voir
-[Paramétrer une campagne, réglage par réglage](etablissement/campagnes.md).
+[Paramétrer une campagne, réglage par réglage](etablissement/campagnes.md#parametrer-une-campagne-reglage-par-reglage).
 
 La campagne passe de **Brouillon** à **Prête**, puis à **Ouverte**. Une campagne **Prête**
 s'ouvre d'elle-même à son heure d'ouverture, et les étudiants sont alors invités ; une
@@ -60,7 +60,7 @@ Deux chemins, qui coexistent.
 **Le tour automatique** (**Match all students**) sert les étudiants dans l'ordre du
 classement : le premier classé obtient son meilleur vœu disponible, et ce qui reste va au
 suivant. Il exige de chaque participant un profil, un libellé de niveau et un classement
-importé — voir [Ce que le matchmaking exige](etablissement/campagnes.md). Il peut être
+importé — voir [Ce que le matchmaking exige](etablissement/campagnes.md#ce-que-le-matchmaking-exige). Il peut être
 relancé autant de fois que nécessaire. Il produit des **propositions du système**, que vous
 confirmez une à une.
 

@@ -13,8 +13,8 @@ la fois.
 
 **Comment ça marche.** Chaque ligne est un étudiant. La liste se trie et se filtre
 sur toutes ses colonnes — niveau, campus, année, campagnes, tags, statut d'accès.
-La colonne *Accès* indique où en est l'ouverture de son compte : jamais envoyé, en
-cours d'envoi, ou connecté.
+Deux colonnes disent où en est son compte : **Access** — l'invitation est-elle partie —
+et **Connected** — s'en est-il servi.
 
 En sélectionnant plusieurs étudiants, vous leur ouvrez les accès, posez ou retirez
 des tags, envoyez un e-mail, un message interne ou une relance — en une seule

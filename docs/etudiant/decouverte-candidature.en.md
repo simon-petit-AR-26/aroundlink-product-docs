@@ -90,14 +90,14 @@ menu, tells them and takes them straight there.
 
 ## Profile — Mobility grant
 
-**What it's for.** A read-only view of the mobility grants attached to the
-student's exchange, so they can see the financial support awarded to them.
+**What it's for.** Their mobility grant: saying whether they apply, providing what the file
+asks for, and following what is awarded.
 
 **Who it's for.** <span class="al-audience">student</span>
 
-**How it works.** The tab lists the grants linked to the student's profile,
-newest first. The student views the amount and status of their grant; there is
-no data entry from this screen.
+**How it works.** The tab first asks whether they apply for an Erasmus+ grant — saying no
+does not take them out of Erasmus+. They then enter their mobility details and upload the
+documents asked for, and follow the amount and status of their grant.
 
 **Use case.**
 > A student checks the amount and status of their Erasmus+ grant.

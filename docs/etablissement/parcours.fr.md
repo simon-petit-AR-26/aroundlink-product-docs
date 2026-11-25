@@ -7,7 +7,7 @@ rythme, et vous voyez où en est tout le monde.
 Un même atelier sert aux étudiants que vous envoyez **et** à ceux que vous accueillez.
 
 !!! info "Où ça se passe"
-    **Paramètres ▸ Workflows** pour fabriquer un parcours. On le **branche** ailleurs : sur
+    **Settings ▸ Workflows** pour fabriquer un parcours. On le **branche** ailleurs : sur
     une campagne pour les sortants, sur une session d'accueil pour les entrants. Un parcours
     qui n'est branché nulle part ne fait rien.
 
