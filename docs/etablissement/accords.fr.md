@@ -186,7 +186,7 @@ l'échange Erasmus gratuit.
 sans phase de négociation à deux) : montant des frais, devise, sous-type (placement
 individuel ou gros flux), durée et type de mobilité. Il répartit ensuite les places via
 la matrice de distribution. Lorsqu'un établissement propose de la mobilité payante, ces
-offres sont visibles côté étudiant (dans « Find Exchange ») avec leur prix indicatif, pour
+offres sont visibles côté étudiant (dans « Find your exchange ») avec leur prix indicatif, pour
 que l'étudiant connaisse le coût avant de candidater. Un import avec aperçu est disponible.
 
 **Cas d'usage.**
@@ -219,7 +219,7 @@ aperçu avant écriture.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI</span>
 
-**Comment ça marche.** **Paramètres ▸ Integrations** propose un import par famille : IIA,
+**Comment ça marche.** **Paramètres ▸ Imports** (voir [Importer un fichier](parametres.md#importer-un-fichier)) importe chaque famille d'accords ; l'ancienne page **Paramètres ▸ Integrations** propose aussi un import par famille : IIA,
 bilatéral, double diplôme et mobilité payante, chacun avec son modèle de fichier. Le fichier
 est contrôlé ligne par ligne dans un aperçu, où chaque ligne se corrige, avant la validation
 qui enregistre l'ensemble.

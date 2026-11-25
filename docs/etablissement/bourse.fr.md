@@ -161,8 +161,7 @@ approuve, qui vire.
 | **Approved** | à virer |
 | **Paid** | virée |
 
-L'étudiant est prévenu quand un versement est enregistré, et confirme qu'il l'a reçu — ou
-signale un écart, qui remonte dans **Reported by students**.
+L'étudiant est prévenu quand un versement est enregistré.
 
 **Cas d'usage.**
 > La gestionnaire prépare la demande des avances d'octobre, la directrice l'approuve, le
@@ -195,5 +194,5 @@ differences**. **Export**, sur l'écran du programme, ne donne que la liste affi
 ## Côté étudiant
 
 L'onglet **Bourse** de son profil lui demande s'il candidate à une bourse Erasmus+
-(répondre non ne le sort pas d'Erasmus+), lui montre sa bourse et lui fait confirmer chaque
-versement reçu. Voir l'[espace étudiant](../etudiant/decouverte-candidature.md).
+(répondre non ne le sort pas d'Erasmus+), lui fait renseigner les détails de sa mobilité et
+déposer ses pièces, et lui montre sa bourse. Voir l'[espace étudiant](../etudiant/decouverte-candidature.md).

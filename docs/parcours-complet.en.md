@@ -14,7 +14,7 @@ Nothing below works if these four things do not exist.
 |---|---|---|
 | **Your partners** and their **agreements** | Coordinator | No destination to offer |
 | **Places** set in the matrix | Coordinator | Destinations exist but open nothing |
-| **Your level labels** (*Custom label*: one per cohort, or one per level), **carried by each student** | Administrator, in **Settings ▸ Academic levels** | The matching round refuses to start |
+| **Your level labels** (*Custom level*: one per cohort, or one per level), **carried by each student** | Administrator, in **Settings ▸ Institution ▸ Academic Levels** | The matching round refuses to start |
 | **Your mobility periods** | Administrator | Places have no column to sit in |
 
 !!! tip "The most common false start"
@@ -27,7 +27,7 @@ Nothing below works if these four things do not exist.
 
 They create the campaign, choose **who takes part** and **where one can go**, set the number
 of wishes, the required documents and the few options that cannot be revisited later. See
-[Setting up a campaign, setting by setting](etablissement/campagnes.md).
+[Setting up a campaign, setting by setting](etablissement/campagnes.md#setting-up-a-campaign-setting-by-setting).
 
 The campaign moves from **Draft** to **Ready**, then **Opened**. A **Ready** campaign opens
 on its own at its opening time, and students are then invited; a campaign left in **Draft**
@@ -60,7 +60,7 @@ Two paths, which coexist.
 **The automatic round** (**Match all students**) serves students in ranking order: the
 first-ranked gets their best available wish, and what is left goes to the next. It requires
 a profile, a level label and an imported ranking from every participant — see
-[What matching requires](etablissement/campagnes.md). It can be re-run as often as needed.
+[What matching requires](etablissement/campagnes.md#what-matching-requires). It can be re-run as often as needed.
 It produces **system proposals**, which you confirm one by one.
 
 **Placing by hand** lets you seat whoever you want, wherever you want, ranked or not — with

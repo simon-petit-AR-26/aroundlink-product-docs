@@ -61,7 +61,7 @@ It is the overview of what you have opened, before going into an agreement's mat
 **What it's for.** Starting your day with what is blocking somebody else.
 
 **How it works.** A row of tiles mirrors the **validation queue's own buckets**: learning
-agreements, nominations, transcripts, language scores, feedback, grant documents, other
+agreements, transcripts, language scores, feedback, grant documents, other
 documents.
 
 Each tile opens the queue **already filtered on its bucket**. Clicking a precise number only

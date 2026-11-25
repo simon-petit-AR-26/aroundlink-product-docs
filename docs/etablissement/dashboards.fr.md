@@ -63,7 +63,7 @@ accord.
 **À quoi ça sert.** Attaquer sa journée par ce qui bloque quelqu'un d'autre.
 
 **Comment ça marche.** Une rangée de tuiles reprend les **paniers de la file de validation** :
-contrats pédagogiques, nominations, relevés de notes, scores de langue, avis, documents de
+contrats pédagogiques, relevés de notes, scores de langue, avis, documents de
 bourse, autres documents.
 
 Chaque tuile ouvre la file **déjà filtrée sur son panier**. Cliquer sur un nombre précis

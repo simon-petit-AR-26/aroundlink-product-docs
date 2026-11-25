@@ -111,14 +111,14 @@ with opens, clicks and deliverability. Chasing documents becomes a measurable op
 
 **How it works.** **Reminder** first asks what you are chasing: **Documents**, **Feedback**
 or **Profile completion**. A document reminder targets students by document type, academic
-level and campaign; a given student gets at most one every 48 hours, and emails go out in
-the background.
+level and campaign. If some were already reminded in the last two days, the screen says so
+before sending — they will receive this one too. Emails go out in the background.
 
 The reminders list shows, for each one, the first and last send, sends out of the total,
 opens, clicks and deliverability, and can be filtered on what is not sent yet, partly or
 fully sent.
 
-A reminder is started from the **Reminders** tab of the [validations](validations.md), from a
+A reminder is started from the **Reminder** button of the [Validation Hub](validations.md), from a
 selection in the students list, or from a student's file.
 
 **Use case.**

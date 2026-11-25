@@ -72,7 +72,7 @@ Dans les grilles de contacts, une colonne **Last contact** donne la date du dern
 **Comment ça marche.** Les deux autres branchements vivent au même endroit.
 
 - **Calendar** — lire votre [agenda](agenda.md) AroundLink depuis Outlook, Google Agenda ou
-  Apple Calendrier. Le lien porte tout votre agenda et ne va **que dans un sens** : votre
+  Apple Calendrier. Le lien copié ici porte tout votre agenda (celui de la page Agenda peut reprendre vos filtres) et ne va **que dans un sens** : votre
   calendrier vient lire, il ne modifie rien.
 - **API** — laisser vos propres systèmes lire et écrire des données AroundLink. Ce
   branchement est destiné à la DSI de votre établissement : une **clé d'intégration**

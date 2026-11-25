@@ -342,7 +342,7 @@ Deux colonnes le résument dans la liste : **Open to** — les promotions — et
 vous repartez de contrats pédagogiques signés il y a des années, la saisie manuelle n'est
 pas tenable — et c'est pourtant là que se trouve la matière la plus utile à vos étudiants.
 
-**Comment ça marche.** **Paramètres ▸ Integrations ▸ Import Courses**, en trois temps :
+**Comment ça marche.** **Paramètres ▸ Imports** (voir [Importer un fichier](parametres.md#importer-un-fichier)), ou l'ancienne page **Paramètres ▸ Integrations ▸ Import Courses**, en trois temps :
 vous téléchargez le gabarit, vous téléversez votre fichier pour **prévisualiser chaque
 ligne** et corriger les erreurs sur place, puis vous confirmez — seules les lignes valides
 sont écrites. Excel ou CSV.
@@ -475,7 +475,7 @@ perdre l'historique des mobilités passées.
 
 - **Active** — un partenaire avec qui vous travaillez ;
 - **Inactive** — il reste dans votre liste, vous l'ouvrez, le modifiez et lui écrivez comme
-  avant, mais **vos étudiants ne le voient plus** : il quitte **Find my Exchange**, les
+  avant, mais **vos étudiants ne le voient plus** : il quitte **Find your exchange**, les
   campagnes et les vœux. Ses accords restent enregistrés et se lisent *Inactive (partner
   inactive)* ; rien n'est supprimé.
 
@@ -493,7 +493,7 @@ avertissement (**Deactivate anyway**), sans bloquer.
 
 | Geste | Ce qu'il fait |
 |---|---|
-| **Hide from students** | le partenaire disparaît de **Find my Exchange** et des vœux, mais reste actif. **Make visible** l'annule. Sans effet sur un partenaire inactif, que vos étudiants ne voient de toute façon pas |
+| **Hide from students** | le partenaire disparaît de **Find your exchange** et des vœux, mais reste actif. **Make visible** l'annule. Sans effet sur un partenaire inactif, que vos étudiants ne voient de toute façon pas |
 | **Deactivate** | il passe **Inactive** : voir plus haut. Un partenaire inactif porte un bouton **Activate** à côté du menu |
 | **Merge duplicate** | ses contacts, son code interne et ses tags passent sur la fiche que vous gardez. **Les accords et les mobilités ne sont pas déplacés** : le doublon est supprimé s'il n'en a pas, désactivé sinon, et le message le dit |
 | **Delete** | réservé au partenaire ajouté par erreur : seul un partenaire **sans accord ni mobilité** se supprime. Il part dans la **Trash** de la page Institutions, d'où il se restaure. Sinon, l'écran propose **Deactivate instead** |
@@ -516,13 +516,13 @@ ressaisir ce qu'AroundLink sait déjà d'eux.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
 
-**Comment ça marche.** **Paramètres ▸ Integrations ▸ Import Institution**, en trois temps :
+**Comment ça marche.** **Paramètres ▸ Imports** (voir [Importer un fichier](parametres.md#importer-un-fichier)), ou l'ancienne page **Paramètres ▸ Integrations ▸ Import Institution**, en trois temps :
 
 1. **Download template**, puis remplissez-le. Seule la colonne **SCHAC** (le domaine de
    l'établissement) est obligatoire : c'est elle qui l'identifie. Nom, pays, ville et
    identifiants viennent du registre mondial ROR. Colonnes facultatives : adresse postale,
    e-mail, site, accréditations, code interne, tags, filtres étudiants.
-2. **Upload a file** — .xlsx, .xls ou .csv, 5 Mo et 20 000 lignes au plus. Un aperçu
+2. **Upload a file** — .xlsx, .xls ou .csv, 5 Mo et 20 000 lignes au plus sur cette page (10 000 lignes par Paramètres ▸ Imports). Un aperçu
    montre chaque ligne — nouvelle ou mise à jour d'un partenaire existant — avec ses
    erreurs, que vous corrigez dans l'aperçu même.
 3. **Import N valid rows**. Une ligne en erreur n'empêche pas les autres.

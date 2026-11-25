@@ -14,7 +14,7 @@ votre structure réelle.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
 
-**Comment ça marche.** Un écran de gestion (Paramètres ▸ Établissement) liste les
+**Comment ça marche.** Un écran de gestion (**Paramètres ▸ Institution ▸ Campuses**) liste les
 campus avec le nombre d'étudiants rattachés à chacun. La suppression est bloquée
 si des étudiants y sont encore rattachés, pour éviter toute perte de lien.
 
@@ -64,7 +64,7 @@ correspondance standard (EQF) — pour que les listes déroulantes soient famili
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
 
-**Comment ça marche.** Un écran de gestion (Paramètres ▸ Établissement) permet de
+**Comment ça marche.** Un écran de gestion (**Paramètres ▸ Institution ▸ Academic Levels**) permet de
 créer, modifier et supprimer vos libellés de niveaux, chacun associé à un niveau
 EQF. Chaque ligne indique combien de places ou d'accords utilisent ce niveau. Les
 libellés en double sont refusés.
@@ -80,7 +80,7 @@ libellés en double sont refusés.
 
 ## Les parcours de mobilité
 
-**À quoi ça sert.** Composer, dans **Paramètres ▸ Workflows**, la liste de ce qu'un
+**À quoi ça sert.** Composer, dans **Settings ▸ Workflows**, la liste de ce qu'un
 étudiant a à faire pendant sa mobilité — pour ceux que vous envoyez comme pour ceux
 que vous accueillez.
 
@@ -446,10 +446,6 @@ utilisateurs partenaires invités — filtrable par type, statut et recherche li
 **Comment ça marche.** Une page regroupe l'ensemble des utilisateurs de
 l'organisation et permet de les filtrer par catégorie, par statut ou par
 nom/e-mail.
-
-![Écran d'import](../assets/screenshots/parametres-imports.png)
-
-*Un import : le modèle à télécharger, les colonnes obligatoires, et l'aperçu ligne par ligne avant confirmation.*
 
 **Cas d'usage.**
 > L'admin recherche un utilisateur par e-mail pour vérifier son statut et sa

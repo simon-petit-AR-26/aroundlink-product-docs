@@ -16,15 +16,16 @@ reste juste et à jour.
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** La page est organisée en quatre onglets. **Information** :
+**Comment ça marche.** La page est organisée en cinq onglets — **Information**, **Student Info**, **IIA Factsheet**, **Contacts**, **Public page**. **Information** :
 les champs d'identité (code, nom, pays…), le logo, les accréditations, vos exigences
 de langue et votre agenda. **Student Info** : vos contenus pour les étudiants — fiche
 pratique, cours et programmes, liens, bibliothèque, avis et FAQ — où chaque élément
 porte ses audiences de visibilité. **Contacts** : votre équipe et vos interlocuteurs.
 **Public page** : la composition de [votre fiche publique](fiche-publique.md).
 
-Un **index vertical** liste les rubriques avec, en face de chacune, **ce qu'il reste à
-remplir** — 17/17 quand tout y est. Les contenus se rédigent sous forme de blocs
+Un **index vertical** liste les rubriques avec, en face de chacune, **ce qu'elle
+contient** — 17/17 quand tout y est ; ce qui manque, lui, se lit dans la liste [de ce qu'il
+vous reste à remplir](#ce-quil-vous-reste-a-remplir). Les contenus se rédigent sous forme de blocs
 rattachés à des catégories et sous-catégories.
 
 ![Mon établissement, onglet Student Info](../assets/screenshots/mon-etablissement-student-info.png)
@@ -172,13 +173,20 @@ choix de destination.
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
 **Comment ça marche.** Un avis porte une note, un thème, le nom de l'auteur, le type
-de pays, un contenu et d'éventuelles photos. Depuis le sous-onglet « avis », vous
-acceptez ou refusez chaque contribution ; les avis acceptés et publics remontent
-ensuite vers les étudiants.
+de pays, un contenu et d'éventuelles photos. Vous acceptez ou refusez chaque
+contribution ; les avis acceptés et publics remontent ensuite vers les étudiants.
 
-![Modération des avis reçus sur votre établissement](../assets/screenshots/mon-etablissement-avis.png)
+Le même avis se modère à trois endroits, et la décision est la même :
 
-*Les avis laissés sur votre établissement, répartis entre en attente, acceptés et refusés. Chaque avis porte son thème, sa note et son auteur, et vous choisissez de l'accepter en interne, de l'accepter et de le publier, ou de le refuser.*
+| Écran | Ce qu'il montre |
+|---|---|
+| **Student Info ▸ Feedback** de Mon établissement | les avis écrits par vos étudiants, et ceux laissés sur vous par les étudiants que vous accueillez |
+| la fiche d'un partenaire, **Student Info ▸ Feedback** | les avis de vos étudiants sur ce partenaire — voir [Institutions](partenaires.md#moderation-des-avis-etudiants) |
+| le **Validation Hub**, pastille **Feedback** | les mêmes, dans la file de ce qui attend votre décision |
+
+![Modération des avis](../assets/screenshots/mon-etablissement-avis.png)
+
+*Les avis, répartis entre en attente, acceptés et refusés. Chaque avis porte son thème, sa note et son auteur, et vous choisissez de l'accepter en interne, de l'accepter et de le publier, ou de le refuser.*
 
 **Cas d'usage.**
 > Un étudiant de retour d'Antalya laisse un avis 4 étoiles avec photos ; le

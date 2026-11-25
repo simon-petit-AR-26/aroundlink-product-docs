@@ -70,7 +70,7 @@ In contact grids, a **Last contact** column gives the date of the latest exchang
 **How it works.** The two other connections live in the same place.
 
 - **Calendar** — read your AroundLink [agenda](agenda.md) from Outlook, Google Calendar or
-  Apple Calendar. The link carries your whole agenda and reads **one way only**: your calendar
+  Apple Calendar. The link copied here carries your whole agenda (the one on the Agenda page can keep your filters) and reads **one way only**: your calendar
   comes to read, it changes nothing.
 - **API** — let your own systems read and write AroundLink data. This connection is meant for
   your institution's IT team: an **integration key** belongs to the institution and only has

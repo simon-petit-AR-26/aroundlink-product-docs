@@ -28,7 +28,7 @@ chacune, sa **valeur métier**. Elle s'adresse à vous :
     **Le site AroundLink** : [aroundlink.com](https://aroundlink.com) — la présentation du
     produit, et le moyen de nous joindre.
 
-    **Un rendez-vous** : [trente minutes avec notre équipe](https://cal.com/simon-petit-aroundlink/30minds) — pour parler de votre
+    **Un rendez-vous** : [quinze minutes avec notre équipe](https://cal.com/simon-petit-aroundlink/30minds) — pour parler de votre
     établissement plutôt que de chercher la réponse page par page.
 
     **Cette documentation** décrit ce que fait l'outil ; elle ne remplace pas l'application.
@@ -81,15 +81,15 @@ isolées de celles des autres. Trois types de comptes coexistent — **coordinat
 
 La documentation suit le menu de l'application : chaque rubrique correspond à une entrée de la barre latérale, au même endroit.
 
-- **Management** — [Tableau de bord](etablissement/dashboards.md) · [Validations](etablissement/validations.md)
-- **Mobility** — [Agenda](etablissement/agenda.md) · [Partenaires](etablissement/partenaires.md) · [Accords &amp; places](etablissement/accords.md) · [Atlas](atlas/atlas.md)
-    - **Outgoing** — [Étudiants sortants](etablissement/etudiants.md) · [Campagnes](etablissement/campagnes.md)
-    - **Incoming** — [Étudiants entrants](etablissement/etudiants-entrants.md) · [Onboarding](etablissement/onboarding.md)
+- [Vos listes](etablissement/listes.md) — chercher, filtrer, afficher : ce qui vaut pour toutes les listes
+- **Management** — [Tableau de bord](etablissement/dashboards.md) · [Validation Hub](etablissement/validations.md)
+- **International** — [Agenda](etablissement/agenda.md) · [Institutions](etablissement/partenaires.md) ([Agreements](etablissement/accords.md) · [Contacts](etablissement/contacts.md)) · [Atlas](atlas/atlas.md)
+    - **Outgoing** — [Étudiants sortants](etablissement/etudiants.md) · [Campagnes](etablissement/campagnes.md) · [Suivi des mobilités](etablissement/suivi-mobilites.md)
+    - **Incoming** — [Étudiants entrants](etablissement/etudiants-entrants.md) · [Accueil des entrants](etablissement/onboarding.md)
     - [Le dossier d'un étudiant](etablissement/fiche-etudiant.md)
-    - **Workflows** — [Parcours de mobilité](etablissement/parcours.md) · [Suivi des mobilités](etablissement/suivi-mobilites.md)
 - **Institution** — [Mon établissement](etablissement/mon-etablissement.md) · [Votre fiche publique](etablissement/fiche-publique.md) · [Bourse &amp; paiements](etablissement/bourse.md)
 - **Communication** — [Diffusion &amp; messages](etablissement/communications.md)
-- **Settings** — [Paramètres &amp; équipe](etablissement/parametres.md) · [Documents &amp; modèles](etablissement/documents.md) · [Emails &amp; connecteurs](etablissement/emails.md)
+- **Settings** (la roue dentée, en haut) — [Paramètres &amp; équipe](etablissement/parametres.md) · [Parcours de mobilité](etablissement/parcours.md) · [Documents &amp; modèles](etablissement/documents.md) · [Emails &amp; connecteurs](etablissement/emails.md)
 - **Espace étudiant** — [Découverte &amp; candidature](etudiant/decouverte-candidature.md) · [Pendant &amp; après la mobilité](etudiant/pendant-apres-mobilite.md)
 - **Réseau EWP** — [Vue d'ensemble](ewp/ewp.md) · [Référence des API](ewp/reference-api.md)
 - **Plateforme &amp; sécurité** — [Vue d'ensemble](plateforme/plateforme.md) · [Authentification unique](plateforme/sso.md) · [Sécurité &amp; données](plateforme/securite.md)

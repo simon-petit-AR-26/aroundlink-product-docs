@@ -82,15 +82,15 @@ jede mit eigenem Bereich und eigenen Rechten. Siehe
 
 Diese Dokumentation folgt dem Menü der Anwendung: Jeder Abschnitt entspricht einem Eintrag der Seitenleiste, an derselben Stelle.
 
-- **Management** — [Dashboard](etablissement/dashboards.md) · [Validierungen](etablissement/validations.md)
-- **Mobility** — [Agenda](etablissement/agenda.md) · [Partner](etablissement/partenaires.md) · [Abkommen &amp; Plätze](etablissement/accords.md) · [Atlas](atlas/atlas.md)
-    - **Outgoing** — [Ausgehende Studierende](etablissement/etudiants.md) · [Kampagnen](etablissement/campagnes.md)
-    - **Incoming** — [Eingehende Studierende](etablissement/etudiants-entrants.md) · [Onboarding](etablissement/onboarding.md)
+- [Ihre Listen](etablissement/listes.md) — suchen, filtern, anzeigen: was für alle Listen gilt
+- **Management** — [Dashboard](etablissement/dashboards.md) · [Validation Hub](etablissement/validations.md)
+- **International** — [Agenda](etablissement/agenda.md) · [Institutionen](etablissement/partenaires.md) ([Abkommen](etablissement/accords.md) · [Kontakte](etablissement/contacts.md)) · [Atlas](atlas/atlas.md)
+    - **Outgoing** — [Ausgehende Studierende](etablissement/etudiants.md) · [Kampagnen](etablissement/campagnes.md) · [Mobilitätsverfolgung](etablissement/suivi-mobilites.md)
+    - **Incoming** — [Eingehende Studierende](etablissement/etudiants-entrants.md) · [Empfang der Incomings](etablissement/onboarding.md)
     - [Die Akte eines Studierenden](etablissement/fiche-etudiant.md)
-    - **Workflows** — [Mobilitätsverläufe](etablissement/parcours.md) · [Mobilitätsverfolgung](etablissement/suivi-mobilites.md)
 - **Institution** — [Meine Hochschule](etablissement/mon-etablissement.md) · [Ihre öffentliche Seite](etablissement/fiche-publique.md) · [Stipendien &amp; Zahlungen](etablissement/bourse.md)
 - **Communication** — [Rundsendungen &amp; Nachrichten](etablissement/communications.md)
-- **Settings** — [Einstellungen &amp; Team](etablissement/parametres.md) · [Dokumente &amp; Vorlagen](etablissement/documents.md) · [E-Mails &amp; Konnektoren](etablissement/emails.md)
+- **Settings** (das Zahnrad, oben) — [Einstellungen &amp; Team](etablissement/parametres.md) · [Mobilitätsverläufe](etablissement/parcours.md) · [Dokumente &amp; Vorlagen](etablissement/documents.md) · [E-Mails &amp; Konnektoren](etablissement/emails.md)
 - **Studierendenportal** — [Entdecken &amp; bewerben](etudiant/decouverte-candidature.md) · [Während &amp; nach der Mobilität](etudiant/pendant-apres-mobilite.md)
 - **EWP-Netzwerk** — [Überblick](ewp/ewp.md) · [API-Referenz](ewp/reference-api.md)
 - **Plattform &amp; Sicherheit** — [Überblick](plateforme/plateforme.md) · [Single Sign-on](plateforme/sso.md) · [Sicherheit &amp; Daten](plateforme/securite.md)

@@ -156,8 +156,7 @@ who transfers.
 | **Approved** | to transfer |
 | **Paid** | transferred |
 
-The student is told when a payment is recorded, and confirms they received it — or reports
-a discrepancy, which shows up under **Reported by students**.
+The student is told when a payment is recorded.
 
 **Use case.**
 > The officer prepares October's advances request, the director approves it, the accountant
@@ -190,5 +189,5 @@ hand, and check the two stay in agreement.
 ## On the student side
 
 The **Bourse** tab of their profile asks whether they are applying for an Erasmus+ grant
-(saying no does not take them out of Erasmus+), shows their grant and has them confirm each
-payment received. See the [student portal](../etudiant/decouverte-candidature.md).
+(saying no does not take them out of Erasmus+), has them enter their mobility details and
+upload their documents, and shows their grant. See the [student portal](../etudiant/decouverte-candidature.md).

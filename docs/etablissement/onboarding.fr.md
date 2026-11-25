@@ -1,10 +1,10 @@
-# Onboarding des entrants
+# Accueil des entrants
 
 L'onboarding est le **séjour d'un étudiant que vous accueillez**, de son premier accès
 jusqu'à son relevé de notes. Il se pilote en deux objets :
 
 - un **[parcours](parcours.md)** d'accueil, qui décrit ce que l'étudiant a à faire — composé
-  une fois dans **Paramètres ▸ Workflows** ;
+  une fois dans **Settings ▸ Workflows** ;
 - une **session d'accueil**, qui regroupe une promotion d'entrants et désigne le parcours
   qu'elle applique.
 

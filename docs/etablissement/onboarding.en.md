@@ -1,4 +1,4 @@
-# Onboarding incoming students
+# Welcoming incoming students
 
 Onboarding is the **stay of a student you host**, from their first access to their
 transcript. It is steered with two objects:

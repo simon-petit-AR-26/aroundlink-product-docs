@@ -37,7 +37,7 @@ must share at least one.
 ### "I no longer see my ranking"
 
 That is deliberate, if your institution hid the ranking from students. The setting is in
-[What your students see](etablissement/parametres.md) — you and your team still see it.
+[What your students see](etablissement/parametres.md#what-your-students-see) — you and your team still see it.
 
 ### "I did not get my access"
 
@@ -95,8 +95,10 @@ the date of the last reminder.
 
 ### "I cannot nominate this student on this agreement"
 
-Two causes. **No contact at this partner**: "No contact for this partner — add one to be
-able to nominate." Add a contact on their record. **The student is already nominated**: only
+Two causes. **Nobody to send it to at this partner**: "No contact for this partner". The
+nomination looks, in order, for its main contact, the agreement's signatory, the agreement's
+contact, then a coordinator of the partner already on AroundLink; if none has an email
+address, nothing is sent and the student stays placed. Add a contact on their record. **The student is already nominated**: only
 a placement not yet nominated can be nominated. To start again, withdraw the nomination, then
 place them again.
 
@@ -116,7 +118,7 @@ student to you.
 ### "This screen is read-only"
 
 Your role gives you the **View** level on this section. A banner says so at the top of the
-screen. Your [My permissions](etablissement/parametres.md) screen tells you exactly what you
+screen. Your [My permissions](etablissement/parametres.md#my-permissions) screen tells you exactly what you
 can do, and to whom.
 
 ### "This student is outside my perimeter"
@@ -133,7 +135,7 @@ many.
 
 Single sign-on verifies **who you are**; it does not decide that you are allowed in. Your
 account must already exist in AroundLink. See
-[Who provides what](plateforme/sso-microsoft.md).
+[The common case: everyone links their own account](plateforme/sso-microsoft.md#the-common-case-everyone-links-their-own-account).
 
 ## On documents
 

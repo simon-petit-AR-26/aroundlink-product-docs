@@ -1,13 +1,13 @@
 # Campagnes de mobilité
 
 Le module Campagnes structure les sessions de candidature : les étudiants éligibles
-classent un nombre défini de vœux parmi les offres du catalogue, et le bureau RI pilote
+classent leurs vœux parmi les offres du catalogue, et le bureau RI pilote
 l'ensemble — de l'ouverture au placement final — sans reconstituer la liste à la main.
 
 ## Campagnes de mobilité
 
 **À quoi ça sert.** Permet à un bureau des relations internationales d'organiser une
-session de candidature cadrée, où les étudiants classent un nombre fixe de vœux d'échange
+session de candidature cadrée, où les étudiants classent leurs vœux d'échange, dans la limite que vous fixez,
 dans une période donnée. La campagne détermine automatiquement quels étudiants et quelles
 offres partenaires en font partie, ce qui évite de sélectionner chaque participant
 manuellement.
@@ -19,8 +19,10 @@ universitaire, le nombre de vœux autorisés, les niveaux d'études visés, les 
 mobilité, les types d'accords éligibles et un filtre optionnel par tag de partenaire. À
 l'enregistrement, le système constitue automatiquement le vivier d'étudiants participants
 et le vivier d'offres éligibles selon ces critères. La campagne passe de Brouillon à
-Prête (ouverture aux étudiants), puis Ouverte et Terminée ; seule une campagne en
-brouillon reste modifiable.
+Prête (ouverture aux étudiants), puis Ouverte et Terminée. Ses réglages restent
+modifiables ensuite — l'écran vous dit alors ce que le changement touche —, sauf la date
+de début, libre seulement en brouillon, et le refus de mobilité, qu'on ne retire plus
+une fois qu'un étudiant l'a utilisé.
 
 **L'heure de fin clôt la campagne d'elle-même.** À la minute fixée, la campagne passe
 en Terminée sans que personne ait à cliquer : les vœux encore à l'état de
@@ -308,8 +310,9 @@ de votre espace.
 
 !!! warning "Sans contact joignable, la nomination ne part pas"
     Le message va au **contact principal** du partenaire ; à défaut, au signataire de
-    l'accord, puis au contact de l'accord. Si aucun des trois n'est renseigné, l'étudiant
-    reste en attente et l'écran vous renvoie vers l'onglet Contacts du partenaire.
+    l'accord, puis au contact de l'accord, puis à un coordinateur du partenaire déjà sur
+    AroundLink — qui devient alors son contact. Si personne n'a d'adresse e-mail, rien ne
+    part, l'étudiant reste affecté, et l'écran vous propose d'ajouter un contact.
 
 Tant que le partenaire n'a pas répondu, deux actions vous évitent de sortir de l'outil :
 

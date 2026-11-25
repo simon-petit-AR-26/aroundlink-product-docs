@@ -39,7 +39,7 @@ le partenaire portent des filtres, ils doivent en partager au moins un.
 ### « Je ne vois plus mon classement »
 
 C'est volontaire, si votre établissement a masqué le classement aux étudiants. Le réglage
-est dans [Ce que vos étudiants voient](etablissement/parametres.md) — vous et votre équipe
+est dans [Ce que vos étudiants voient](etablissement/parametres.md#ce-que-vos-etudiants-voient) — vous et votre équipe
 continuez de le voir.
 
 ### « Je n'ai pas reçu mes accès »
@@ -98,8 +98,11 @@ date de la dernière relance.
 
 ### « Je ne peux pas nominer cet étudiant sur cet accord »
 
-Deux causes. **Aucun contact chez ce partenaire** : « No contact for this partner — add one
-to be able to nominate. » Ajoutez un contact sur sa fiche. **L'étudiant est déjà nominé** :
+Deux causes. **Personne à qui l'envoyer chez ce partenaire** : « No contact for this
+partner ». La nomination cherche, dans l'ordre, son contact principal, le signataire de
+l'accord, le contact de l'accord, puis un coordinateur du partenaire déjà sur AroundLink ;
+si aucun n'a d'adresse e-mail, rien ne part et l'étudiant reste affecté. Ajoutez un contact
+sur sa fiche. **L'étudiant est déjà nominé** :
 seule une affectation pas encore nominée se nomine. Pour recommencer, retirez la nomination,
 puis réaffectez-le.
 
@@ -118,7 +121,7 @@ Un refus demande un motif. Il sera transmis à l'établissement qui vous a nomm�
 ### « Cet écran est en lecture seule »
 
 Votre rôle vous donne le niveau **Consulter** sur cette section. Un bandeau le dit en haut de
-l'écran. Votre écran [Mes permissions](etablissement/parametres.md) vous dit exactement ce
+l'écran. Votre écran [Mes permissions](etablissement/parametres.md#mes-permissions) vous dit exactement ce
 que vous pouvez faire et sur qui.
 
 ### « Cet étudiant est hors de mon périmètre »
@@ -135,7 +138,7 @@ indique combien.
 
 L'authentification unique vérifie **qui vous êtes**, elle ne décide pas que vous avez le
 droit d'entrer. Votre compte doit exister dans AroundLink au préalable. Voir
-[Qui fournit quoi](plateforme/sso-microsoft.md).
+[Le cas courant : chacun relie son compte](plateforme/sso-microsoft.md#le-cas-courant-chacun-relie-son-compte).
 
 ## Côté documents
 
