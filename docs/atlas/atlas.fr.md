@@ -12,7 +12,7 @@ valent une prise de contact.
 
 **Pour qui.** <span class="al-audience">coordinateur / gestionnaire RI</span>
 
-**Comment ça marche.** **Mobility ▸ Atlas**. Deux vues : **Cards** et **Map**.
+**Comment ça marche.** **International ▸ Atlas**. Deux vues : **Cards** et **Map**.
 
 Une barre, collée en haut de la page, porte les filtres :
 
@@ -53,6 +53,17 @@ déjà le vôtre. Sur la carte du monde, survoler un point affiche la même cart
 Rien de ce que vous savez de vos partenaires n'apparaît ici : la page ne lit que ce que
 l'établissement publie lui-même et les registres publics. **Back to the Atlas** ramène à
 votre recherche.
+
+**Lui demander de compléter sa page.** En haut de la page d'un établissement, une jauge
+**Page** dit où il en est, sur quatre éléments : coordonnées, dates de semestre, niveaux de
+langue, réseaux sociaux. Tant qu'elle n'est pas pleine, **Ask** ouvre *Ask to complete the
+page* : vous choisissez l'un de vos contacts chez lui, ou quelqu'un d'autre, et **Send**. Il
+reçoit un e-mail à votre nom qui dit ce qui manque, avec un lien pour compléter — ou pour
+créer son accès s'il n'en a pas. Ensuite, le bouton dit qui a demandé et quand ; **Remind**
+apparaît au bout de sept jours. Quand sa page atteint 100 %, une notification vous prévient.
+
+Si l'établissement n'était pas encore dans votre liste, il y entre, **inactif** : vos
+étudiants ne le voient pas tant qu'aucun accord ne vous lie.
 
 **Votre propre page.** En tête de l'Atlas, une jauge dit où en est **votre** page
 publique, avec un bouton qui mène à l'écran de composition. Elle compte les mêmes éléments

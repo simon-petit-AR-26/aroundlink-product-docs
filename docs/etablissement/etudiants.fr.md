@@ -20,6 +20,16 @@ En sélectionnant plusieurs étudiants, vous leur ouvrez les accès, posez ou re
 des tags, envoyez un e-mail, un message interne ou une relance — en une seule
 opération. La liste s'importe et s'exporte depuis un tableur.
 
+**Mobility status** montre **une pastille par campagne**, la plus récente d'abord : campagne,
+statut, période, destination, type d'accord — chaque élément dès qu'il est connu. Une
+mobilité hors campagne a sa pastille « No campaign » ; une pastille grisée est une mobilité
+qui ne se fera pas (vœu refusé, désistement, nomination refusée). Un clic ouvre la mobilité
+dans le dossier de l'étudiant.
+
+Le filtre de la colonne croise **Status**, **Campaign**, **Period**, **Destination** et
+**Agreement type**, et tous les critères doivent tenir **sur la même pastille** : « campagne
+A + Accepted » ne retrouve pas un étudiant accepté dans une autre campagne.
+
 ![Liste des étudiants sortants avec la barre d'actions groupées](../assets/screenshots/etudiants-sortants.png)
 
 *Vos étudiants sortants. La barre du haut apparaît dès qu'une sélection est faite et regroupe les actions applicables à tout le lot. Cliquez sur l'image pour l'agrandir.*

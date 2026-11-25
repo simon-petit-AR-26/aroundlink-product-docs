@@ -32,7 +32,7 @@ Lo studente vede solo le destinazioni in cui un posto è **pianificato per lui**
 della matrice — anno, livello, etichetta di livello, periodo. Verificate la matrice dei posti
 prima di cercare altrove.
 
-Restano esclusi anche: i partner nascosti o archiviati, il suo stesso campus, e i partner i
+Restano esclusi anche: i partner nascosti o inattivi, il suo stesso campus, e i partner i
 cui **filtri studenti** non corrispondono ai suoi — quando sia lo studente sia il partner
 hanno dei filtri, devono averne almeno uno in comune.
 
@@ -107,7 +107,7 @@ ritirate la nomina, poi assegnatelo di nuovo.
 
 Il bacino di destinazioni non lo trattiene: verificate i tipi di accordo, i periodi, il
 livello, l'anno accademico, il tipo di mobilità e i filtri di istituto della campagna, e che
-l'accordo sia attivo. Verificate anche che non sia archiviato o nascosto.
+l'accordo sia attivo. Verificate anche che non sia inattivo o nascosto.
 
 ### «Non riesco a rifiutare questa nomina»
 

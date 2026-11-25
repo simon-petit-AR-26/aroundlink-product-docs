@@ -112,6 +112,8 @@ plugins:
             Plateforme &amp; sécurité: Platform &amp; security
             Annexes: Appendix
             Parcours de mobilité: Mobility paths
+            Vos listes: Your lists
+            Accueil des entrants: Welcoming incoming students
             Suivi des mobilités: Mobility tracking
             Emails &amp; connecteurs: Emails &amp; connectors
             Agenda: Agenda
@@ -149,6 +151,8 @@ plugins:
             Plateforme &amp; sécurité: Plataforma y seguridad
             Annexes: Anexos
             Parcours de mobilité: Itinerarios de movilidad
+            Vos listes: Sus listas
+            Accueil des entrants: Acogida de los entrantes
             Suivi des mobilités: Seguimiento de movilidades
             Emails &amp; connecteurs: Correos y conectores
             Agenda: Agenda
@@ -186,6 +190,8 @@ plugins:
             Plateforme &amp; sécurité: Piattaforma e sicurezza
             Annexes: Appendici
             Parcours de mobilité: Percorsi di mobilità
+            Vos listes: Le vostre liste
+            Accueil des entrants: Accoglienza degli studenti in entrata
             Suivi des mobilités: Monitoraggio delle mobilità
             Emails &amp; connecteurs: Email e connettori
             Agenda: Agenda
@@ -223,6 +229,8 @@ plugins:
             Plateforme &amp; sécurité: Plattform und Sicherheit
             Annexes: Anhang
             Parcours de mobilité: Mobilitätsverläufe
+            Vos listes: Ihre Listen
+            Accueil des entrants: Empfang der Incomings
             Suivi des mobilités: Mobilitätsverfolgung
             Emails &amp; connecteurs: E-Mails &amp; Konnektoren
             Agenda: Kalender
@@ -268,10 +276,11 @@ nav:
   - Accueil: index.md
   - Une mobilité de bout en bout: parcours-complet.md
   - Espace établissement:
+      - Vos listes: etablissement/listes.md
       - Management:
           - Tableau de bord: etablissement/dashboards.md
-          - Validations: etablissement/validations.md
-      - Mobility:
+          - Validation Hub: etablissement/validations.md
+      - International:
           - Agenda: etablissement/agenda.md
           - Institutions:
               - Institutions: etablissement/partenaires.md
@@ -281,13 +290,11 @@ nav:
           - Outgoing:
               - Étudiants sortants: etablissement/etudiants.md
               - Campagnes: etablissement/campagnes.md
+              - Suivi des mobilités: etablissement/suivi-mobilites.md
           - Incoming:
               - Étudiants entrants: etablissement/etudiants-entrants.md
-              - Onboarding: etablissement/onboarding.md
+              - Accueil des entrants: etablissement/onboarding.md
           - Le dossier d'un étudiant: etablissement/fiche-etudiant.md
-          - Workflows:
-              - Parcours de mobilité: etablissement/parcours.md
-              - Suivi des mobilités: etablissement/suivi-mobilites.md
       - Institution:
           - Mon établissement: etablissement/mon-etablissement.md
           - Votre fiche publique: etablissement/fiche-publique.md
@@ -296,6 +303,7 @@ nav:
           - Diffusion &amp; messages: etablissement/communications.md
       - Settings:
           - Paramètres &amp; équipe: etablissement/parametres.md
+          - Parcours de mobilité: etablissement/parcours.md
           - Documents &amp; modèles: etablissement/documents.md
           - Emails &amp; connecteurs: etablissement/emails.md
   - Espace étudiant:

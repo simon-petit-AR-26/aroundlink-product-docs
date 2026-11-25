@@ -1,6 +1,6 @@
 # Institutions
 
-**Mobility ▸ Institutions** rassemble les établissements avec lesquels votre bureau travaille.
+**International ▸ Institutions** rassemble les établissements avec lesquels votre bureau travaille.
 L'écran porte trois onglets, et cette documentation les suit :
 
 | Onglet | Ce qu'on y trouve |
@@ -29,10 +29,16 @@ La barre d'outils, à droite de la recherche :
 - **+** crée un partenaire ;
 - l'export reprend ce que vous voyez — vos filtres, vos colonnes, votre sélection ;
 - le choix des **colonnes**, et les **vues** enregistrées, partagées avec votre équipe ;
-- le menu « … » ouvre les partenaires archivés et la corbeille.
+- le menu « … » ouvre la corbeille (**Trash**).
+
+Trois colonnes disent où en est chaque partenaire : **Agreement** (au moins un accord en
+cours, ou non), **Status** (**Active** / **Inactive**, avec son interrupteur) et **Student
+visibility** (**Visible** / **Hidden**). Le bas du tableau les compte : combien de
+partenaires dans votre base, combien d'actifs, combien visibles de vos étudiants.
 
 Cocher des lignes fait apparaître une barre d'actions en lot : **Tags**, **Student filters**,
-**Hide for your students**, **Archive**, **Delete**.
+**Activate**, **Deactivate**, **Show to your students**, **Hide for your students**,
+**Delete**.
 
 ![Liste des établissements partenaires](../assets/screenshots/partenaires-liste.png)
 
@@ -453,31 +459,45 @@ Votre propre page publique se prévisualise de la même façon depuis **My Insti
 > confirmer l'affichage des places et des exigences.
 
 
-## Masquer, archiver ou fusionner un partenaire
+## Activer, désactiver, masquer ou fusionner un partenaire
 
-**À quoi ça sert.** Retirer de la circulation un partenaire avec lequel vous ne travaillez
-plus, ou réunir deux fiches qui désignent le même établissement, sans perdre l'historique
-des mobilités passées.
+**À quoi ça sert.** Mettre de côté un partenaire avec lequel vous ne travaillez plus, le
+cacher à vos étudiants, ou réunir deux fiches qui désignent le même établissement — sans
+perdre l'historique des mobilités passées.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Quatre gestes, depuis le menu **Partner actions** de la fiche, du
-plus léger au plus définitif :
+**Actif ou inactif.** Chaque partenaire a un statut :
+
+- **Active** — un partenaire avec qui vous travaillez ;
+- **Inactive** — il reste dans votre liste, vous l'ouvrez, le modifiez et lui écrivez comme
+  avant, mais **vos étudiants ne le voient plus** : il quitte **Find my Exchange**, les
+  campagnes et les vœux. Ses accords restent enregistrés et se lisent *Inactive (partner
+  inactive)* ; rien n'est supprimé.
+
+Le statut se règle en partie tout seul :
+
+- un établissement ajouté **sans accord** arrive **Inactive** — par la création, l'import
+  ou l'Atlas ;
+- **créer un accord** avec lui le rend **Active**, et une notification vous le dit.
+
+Un accord qui prend fin ne désactive pas le partenaire : c'est vous qui décidez. Désactiver
+un partenaire qui a encore des accords en cours ou des étudiants en mobilité affiche un
+avertissement (**Deactivate anyway**), sans bloquer.
+
+**Les gestes**, depuis le menu **Partner actions** de la fiche ou en lot sur la liste :
 
 | Geste | Ce qu'il fait |
 |---|---|
-| **Hide from students** | le partenaire disparaît de **Find my Exchange** et ne peut plus être ajouté à une campagne ni aux vœux d'un étudiant ; il reste pleinement actif côté mobilité. **Make visible** l'annule |
-| **Archive** | il quitte vos écrans, vos menus, la recherche des étudiants, les campagnes et les vœux — avec ses accords. Les mobilités passées restent consultables ; **Restore** le ramène |
-| **Merge duplicate** | ses contacts, son code interne et ses tags passent sur la fiche que vous gardez. **Les accords et les mobilités ne sont pas déplacés** : le doublon est supprimé s'il n'en a pas, archivé sinon, et le message le dit |
-| **Delete** | il part dans la **Trash** de la page Institutions, d'où il se restaure. Un partenaire qui a des accords ne se supprime pas : l'écran propose de l'archiver |
+| **Hide from students** | le partenaire disparaît de **Find my Exchange** et des vœux, mais reste actif. **Make visible** l'annule. Sans effet sur un partenaire inactif, que vos étudiants ne voient de toute façon pas |
+| **Deactivate** | il passe **Inactive** : voir plus haut. Un partenaire inactif porte un bouton **Activate** à côté du menu |
+| **Merge duplicate** | ses contacts, son code interne et ses tags passent sur la fiche que vous gardez. **Les accords et les mobilités ne sont pas déplacés** : le doublon est supprimé s'il n'en a pas, désactivé sinon, et le message le dit |
+| **Delete** | réservé au partenaire ajouté par erreur : seul un partenaire **sans accord ni mobilité** se supprime. Il part dans la **Trash** de la page Institutions, d'où il se restaure. Sinon, l'écran propose **Deactivate instead** |
 
-Archiver un partenaire qui a des accords en cours ou des étudiants en mobilité affiche un
-avertissement, sans bloquer : les mobilités en cours continuent. Votre propre campus ne
-peut être ni masqué, ni archivé, ni fusionné, ni supprimé.
+Les favoris de vos étudiants suivent la même règle : un partenaire inactif ou masqué
+disparaît de leur liste, et y revient si vous le rendez de nouveau visible.
 
-Sur la liste **Institutions**, les mêmes gestes existent en lot — **Hide for your
-students**, **Archive**, **Delete** — et le menu « … » ouvre **View archived institutions**
-et la **Trash**.
+Votre propre campus ne peut être ni masqué, ni désactivé, ni fusionné, ni supprimé.
 
 **Cas d'usage.**
 > Un partenaire a été créé deux fois. Le coordinateur ouvre la bonne fiche, choisit **Merge

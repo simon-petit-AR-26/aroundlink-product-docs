@@ -50,7 +50,7 @@ l'attachez à un groupe.
   workflow**. Chaque étudiant accepté par un partenaire reçoit alors le parcours
   automatiquement. Le champ est facultatif : vous pouvez brancher plus tard depuis l'onglet
   **Mobility** de la campagne.
-- **Entrants** — sous **Onboarding**, créez une **session d'accueil**, nommez-la, choisissez
+- **Entrants** — sous **Incoming ▸ Mobility**, créez une **session d'accueil**, nommez-la, choisissez
   son parcours. Quand vous acceptez une nomination, vous désignez la session que l'étudiant
   rejoint.
 

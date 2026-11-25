@@ -127,6 +127,41 @@ de suite. La date de dernier usage, sur chaque ligne, dit si l'intégration tour
 > compte est supprimé : l'intégration continue de tourner.
 
 
+## Importer un fichier
+
+**À quoi ça sert.** Charger vos données depuis un tableur, en voyant ce qui va se passer
+avant que rien ne s'écrive.
+
+**Pour qui.** <span class="al-audience">gestionnaire RI / admin</span>
+
+**Comment ça marche.** **Paramètres ▸ Imports**, ou le bouton **Import / Export** d'une
+liste. Quatre étapes :
+
+1. **File** — ce que vous importez (étudiants, classement, boursiers, établissements,
+   contacts, les quatre familles d'accords, contenus étudiants, FAQ, liens, cours, campus),
+   puis votre fichier : xlsx, xls ou csv, 10 000 lignes au plus. **Download a template**
+   donne le modèle. Une ligne dont la clé existe déjà met à jour la fiche ; sinon, elle la crée.
+2. **Match your columns** — chaque colonne de votre fichier face au champ AroundLink ; les
+   champs obligatoires sont marqués.
+3. **Review before importing** — chaque ligne : prête, en erreur ou à trancher. Les cellules
+   se corrigent sur place. Une valeur inconnue n'est **jamais créée sans votre accord**. Pour
+   un doublon, vous choisissez de ne remplir que les champs vides, de remplacer, ou de créer
+   une nouvelle fiche.
+4. **Import N rows**. Au-delà de 500 lignes, l'import tourne en arrière-plan : une
+   notification et un e-mail vous préviennent à la fin.
+
+L'onglet **History** liste vos imports. **Undo import** retire ce qu'un import a créé et
+remet ce qu'il a modifié — sauf ce que quelqu'un a changé depuis, et sauf s'il a touché des
+étudiants déjà engagés dans une mobilité.
+
+Les anciennes pages d'import de **Paramètres ▸ Integrations** restent disponibles.
+
+**Cas d'usage.**
+> Le bureau charge 2 000 étudiants. L'aperçu signale 12 promotions inconnues : il les crée
+> d'un clic, corrige trois e-mails, lance l'import et ferme l'onglet ; l'e-mail de fin arrive
+> dix minutes plus tard.
+
+
 ## Suppressions protégées
 
 **À quoi ça sert.** Vous empêcher de supprimer un réglage encore utilisé quelque
@@ -243,25 +278,12 @@ comme sienne et sur laquelle il choisira sa destination : c'est un **filtre étu
 
 ## Vues enregistrées
 
-**À quoi ça sert.** Enregistrer une configuration de tableau (colonnes choisies,
-largeurs, filtres, ordre de tri) sur une page donnée, puis la réappliquer en un
-clic. Chaque coordinateur retrouve instantanément sa mise en page de travail sans
-la reconstruire à chaque fois.
+**À quoi ça sert.** Retrouver en un clic une mise en page de tableau — colonnes, filtres, tri
+— sans la reconstruire.
 
-**Pour qui.** <span class="al-audience">gestionnaire RI</span>
+**Comment ça marche.** Voir [Vos listes](listes.md#enregistrer-une-vue) : les vues sont
+partagées avec votre équipe, et le signet dit si l'écran correspond encore à la vue.
 
-**Comment ça marche.** Sur une page à tableau, vous ajustez les colonnes, les
-filtres et le tri, puis vous enregistrez cette disposition comme une vue. Vous
-pouvez ensuite basculer d'un clic entre vos vues. Les vues sont propres à votre
-établissement.
-
-![Périodes de mobilité](../assets/screenshots/parametres-periodes.png)
-
-*Vos périodes, chacune avec sa direction et son rang dans l'année — « le 1er sur 2 ». Le bandeau du haut signale celles qui restent à classer : sans ce rang, vos nominations ne peuvent pas partir vers le Dashboard EWP.*
-
-**Cas d'usage.**
-> Un coordinateur enregistre une vue « Partenaires Espagne — accords actifs » avec
-> ses colonnes et filtres, et la rouvre en un clic à chaque session.
 
 ## Équipe & invitations
 
@@ -359,7 +381,18 @@ c'était l'autre.
 
 *Le même arbre, une colonne par rôle : on lit d'un trait qui décide, qui prépare et qui ne voit rien.*
 
-**Un filet.** Vous ne pouvez pas retirer le dernier administrateur de votre établissement.
+**Ce que le périmètre couvre.** Un rôle limité à des campus, des promotions, une direction
+ou des domaines métier ne voit que ses étudiants **partout** : listes, dossiers, contrats
+pédagogiques, documents, campagnes et nominations, accueil des entrants, relances,
+communications, bourse, exports. Il ne peut agir que sur eux ; un lien direct vers un
+étudiant hors périmètre est refusé. Un étudiant sans campus n'est pas visible d'un rôle
+limité à certains campus.
+
+**Chaque niveau compte.** **Consulter** ne permet aucune modification, **Préparer** ne permet
+pas de décider ni de supprimer : chaque action vérifie le niveau du rôle.
+
+**Un filet.** Vous ne pouvez pas retirer le dernier administrateur de votre établissement, et
+chaque compte de l'équipe a un rôle : une invitation sans rôle est refusée.
 
 **Ce que voient les autres.** Quand un droit manque, l'écran le dit au lieu de faire
 semblant : un bandeau annonce la lecture seule, et une mention explique qu'un étudiant est

@@ -254,7 +254,7 @@ demande. Des pages dédiées présentent les résultats et les acceptés, et deu
 produisent la liste de tous les vœux et celle des affectations finales.
 
 **Fiabilité des compteurs.** Les décomptes de destinations et d'établissements ne retiennent
-que ce qui est réellement ouvert aux étudiants : les partenaires masqués ou archivés en sont
+que ce qui est réellement ouvert aux étudiants : les partenaires masqués ou inactifs en sont
 exclus, tout comme les destinations sans place disponible. Les chiffres affichés
 correspondent donc à ce que l'étudiant verra.
 

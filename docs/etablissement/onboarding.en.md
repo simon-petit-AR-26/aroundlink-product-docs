@@ -20,7 +20,7 @@ dates nor necessarily the same requirements.
 
 **Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
-**How it works.** Under **Onboarding**, **New session**: you name the session — "Autumn
+**How it works.** Under **Incoming ▸ Mobility**, **New session**: you name the session — "Autumn
 intake" — and choose the path it applies. The path is required, and only active
 **incoming** paths are offered; if you have none, the screen sends you to build one under
 **Settings ▸ Workflows**.

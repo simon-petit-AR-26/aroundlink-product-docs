@@ -120,6 +120,39 @@ use, on each row, tells you whether the integration is still running.
 > their account is deleted: the integration keeps running.
 
 
+## Importing a file
+
+**What it's for.** Loading your data from a spreadsheet, seeing what will happen before
+anything is written.
+
+**Who it's for.** <span class="al-audience">RI manager / admin</span>
+
+**How it works.** **Settings ▸ Imports**, or a list's **Import / Export** button. Four steps:
+
+1. **File** — what you are importing (students, ranking, grant beneficiaries, institutions,
+   contacts, the four agreement families, student content, FAQ, links, courses, campuses),
+   then your file: xlsx, xls or csv, 10,000 rows at most. **Download a template** gives the
+   template. A row whose key already exists updates the record; otherwise it creates it.
+2. **Match your columns** — each column of your file against the AroundLink field; required
+   fields are marked.
+3. **Review before importing** — each row: ready, in error or to decide. Cells can be fixed
+   on the spot. An unknown value is **never created without your say-so**. For a duplicate,
+   you choose to fill empty fields only, to replace, or to create a new record.
+4. **Import N rows**. Above 500 rows, the import runs in the background: a notification and
+   an email tell you when it ends.
+
+The **History** tab lists your imports. **Undo import** removes what an import created and
+restores what it changed — except what someone has changed since, and unless it touched
+students already engaged in a mobility.
+
+The former import pages of **Settings ▸ Integrations** remain available.
+
+**Use case.**
+> The office loads 2,000 students. The preview flags 12 unknown cohorts: it creates them in
+> one click, fixes three emails, starts the import and closes the tab; the closing email
+> arrives ten minutes later.
+
+
 ## Protected deletions
 
 **What it's for.** Stop you from deleting a setting still in use somewhere, and
@@ -232,23 +265,12 @@ and will pick a destination on: that is a **student filter**.
 
 ## Saved views
 
-**What it's for.** Save a table configuration (chosen columns, widths, filters,
-sort order) on a given page, then reapply it in one click. Each coordinator
-instantly recovers their working layout without rebuilding it every time.
+**What it's for.** Getting back a table layout — columns, filters, sort — in one click,
+without rebuilding it.
 
-**Who it's for.** <span class="al-audience">RI manager</span>
+**How it works.** See [Your lists](listes.md#saving-a-view): views are shared with your team,
+and the bookmark says whether the screen still matches the view.
 
-**How it works.** On a table page, you adjust the columns, filters and sort, then
-save that layout as a view. You can then switch between your views in one click.
-Views are private to your institution.
-
-![Mobility periods](../assets/screenshots/parametres-periodes.png)
-
-*Your periods, each with its direction and its rank in the year — "the 1st of 2". The banner at the top flags those still to classify: without that rank, your nominations cannot be exported to the EWP Dashboard.*
-
-**Use case.**
-> A coordinator saves a "Spain partners — active agreements" view with its columns
-> and filters, and reopens it in one click each session.
 
 ## Team & invitations
 
@@ -342,7 +364,17 @@ you find out in time that nobody can, because everyone assumed someone else did.
 
 *The same tree, one column per role: you read at a glance who decides, who prepares and who sees nothing.*
 
-**A safety net.** You cannot remove your institution's last administrator.
+**What the perimeter covers.** A role limited to campuses, cohorts, a direction or business
+domains only sees its students **everywhere**: lists, files, learning agreements, documents,
+campaigns and nominations, incoming welcome, reminders, communications, grants, exports. It
+can only act on them; a direct link to a student outside the perimeter is refused. A student
+with no campus is not visible to a role limited to certain campuses.
+
+**Every level counts.** **View** allows no change, **Prepare** does not allow deciding or
+deleting: every action checks the role's level.
+
+**A safety net.** You cannot remove your institution's last administrator, and every team
+account has a role: an invitation without a role is refused.
 
 **What others see.** When a right is missing, the screen says so instead of pretending: a
 banner announces read-only mode, and a note explains that a student is outside your
