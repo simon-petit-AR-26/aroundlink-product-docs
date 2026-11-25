@@ -28,6 +28,10 @@ aucun, l'écran vous envoie le composer dans **Settings ▸ Workflows**.
 La liste des sessions montre, pour chacune, son parcours, son nombre d'étapes et
 d'étudiants. Une session se **renomme** et se **clôture** quand la promotion s'achève ; une
 session clôturée quitte la liste. Deux sessions ne peuvent pas porter le même nom.
+
+![La liste des sessions d'accueil](../assets/screenshots/sessions-accueil.png)
+
+*Incoming ▸ Mobility : vos sessions d'accueil, chacune avec son parcours, ses étapes et ses étudiants.*
 **Open this workflow** ouvre le parcours d'une session.
 
 ## Accepter une nomination dans une session

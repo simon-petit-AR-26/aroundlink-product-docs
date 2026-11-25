@@ -50,6 +50,14 @@ apparaître sur les cartes, et toute la carte mène au dossier.
 La recherche du kanban **propose des filtres pendant que vous tapez** : Destination, City,
 Country, Region, Period, Level, Field of study, Agreement, Phase.
 
+![Le suivi en vue tableau](../assets/screenshots/suivi-mobilite-tableau.png)
+
+*La vue tableau : l'avancement, la phase, ce qui est attendu et de qui, et la colonne Reminder.*
+
+![Le suivi en kanban](../assets/screenshots/suivi-mobilite-kanban.png)
+
+*Le kanban : une colonne par phase, une carte par étudiant, et sous chaque carte les documents encore dus.*
+
 !!! tip "L'export reprend ce que vous avez sous les yeux"
     Le bouton **Export what is on screen** reprend vos filtres, vos colonnes affichées et
     votre tri. Il est disponible sur les deux vues et dans les deux sens.
@@ -66,6 +74,10 @@ Country, Region, Period, Level, Field of study, Agreement, Phase.
 - **l'onglet Mobility d'une fiche étudiant** — un bloc par mobilité : un étudiant parti deux
   fois a deux dossiers, chacun avec ses dates et son avancement ;
 - **le tableau de bord**, qui en donne le résumé par phase.
+
+![La liste Outgoing ▸ Mobility](../assets/screenshots/mobilites-sortantes.png)
+
+*Outgoing ▸ Mobility : une ligne par campagne, avec son parcours, son année et ses étudiants suivis.*
 
 L'en-tête d'une mobilité se lit toujours de la même façon : **où**, **quoi**, **quand** — le
 partenaire avec son logo, la famille d'accord, la période. Et le fil d'Ariane descend jusqu'à
@@ -85,6 +97,10 @@ On relance de trois façons : la cloche d'une carte (au survol), la cloche d'une
 tous ses étudiants, ou celle de la colonne **Reminder**. La fenêtre ne propose que les
 documents encore dus, ceux de la phase déjà cochés : décochez ce que vous ne voulez pas
 demander, puis **Send the reminder**.
+
+![La fenêtre de relance d'une colonne](../assets/screenshots/suivi-mobilite-relance.png)
+
+*Relancer toute une colonne : les pièces de la phase sont cochées, celles des autres phases proposées en dessous.*
 
 !!! warning "Une relance récente ne bloque rien"
     Si certains étudiants ont déjà été relancés ces deux derniers jours, la fenêtre le

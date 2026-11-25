@@ -150,6 +150,10 @@ liste. Quatre étapes :
 4. **Import N rows**. Au-delà de 500 lignes, l'import tourne en arrière-plan : une
    notification et un e-mail vous préviennent à la fin.
 
+![La première étape de l'import](../assets/screenshots/parametres-import.png)
+
+*Paramètres ▸ Imports : on choisit ce qu'on importe, on dépose le fichier, et les quatre étapes se suivent en haut.*
+
 L'onglet **History** liste vos imports. **Undo import** retire ce qu'un import a créé et
 remet ce qu'il a modifié — sauf ce que quelqu'un a changé depuis, et sauf s'il a touché des
 étudiants déjà engagés dans une mobilité.

@@ -49,6 +49,14 @@ and the whole card leads to the file.
 The kanban's search **suggests filters as you type**: Destination, City, Country, Region,
 Period, Level, Field of study, Agreement, Phase.
 
+![Tracking in table view](../assets/screenshots/suivi-mobilite-tableau.png)
+
+*Table view: progress, phase, what is expected and from whom, and the Reminder column.*
+
+![Tracking as a kanban](../assets/screenshots/suivi-mobilite-kanban.png)
+
+*The kanban: one column per phase, one card per student, and under each card the documents still owed.*
+
 !!! tip "The export takes what you have in front of you"
     The **Export what is on screen** button takes your filters, your visible columns and your
     sorting. It is available on both views and in both directions.
@@ -65,6 +73,10 @@ Period, Level, Field of study, Agreement, Phase.
 - **a student's Mobility tab** — one block per mobility: a student who left twice has two
   files, each with its dates and its progress;
 - **the dashboard**, which gives the summary by phase.
+
+![The Outgoing ▸ Mobility list](../assets/screenshots/mobilites-sortantes.png)
+
+*Outgoing ▸ Mobility: one row per campaign, with its path, its year and the students tracked.*
 
 A mobility header always reads the same way: **where**, **what**, **when** — the partner with
 its logo, the agreement family, the period. And the breadcrumb goes all the way down to the
@@ -84,6 +96,10 @@ You chase in three ways: a card's bell (on hover), a column's bell for all its s
 the bell in the **Reminder** column. The window only offers documents still owed, those of
 the phase already ticked: untick what you do not want to ask for, then **Send the
 reminder**.
+
+![A column's reminder window](../assets/screenshots/suivi-mobilite-relance.png)
+
+*Reminding a whole column: the phase's documents are ticked, the other phases' offered below.*
 
 !!! warning "A recent reminder blocks nothing"
     If some students were already reminded in the last two days, the window says so before

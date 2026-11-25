@@ -54,6 +54,10 @@ Rien de ce que vous savez de vos partenaires n'apparaît ici : la page ne lit qu
 l'établissement publie lui-même et les registres publics. **Back to the Atlas** ramène à
 votre recherche.
 
+![La page d'un établissement dans l'Atlas](../assets/screenshots/atlas-page-etablissement.png)
+
+*La page d'un partenaire qui a publié la sienne : ses photos, ses campus, son catalogue, et à droite ses prochaines échéances et les avis d'étudiants.*
+
 **Lui demander de compléter sa page.** En haut de la page d'un établissement, une jauge
 **Page** dit où il en est, sur quatre éléments : coordonnées, dates de semestre, niveaux de
 langue, réseaux sociaux. Tant qu'elle n'est pas pleine, **Ask** ouvre *Ask to complete the

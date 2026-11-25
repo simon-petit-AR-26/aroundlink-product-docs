@@ -37,6 +37,10 @@ how many active, how many visible to your students.
 Ticking rows brings up a bulk-action bar: **Tags**, **Student filters**, **Activate**,
 **Deactivate**, **Show to your students**, **Hide for your students**, **Delete**.
 
+![Partners as cards](../assets/screenshots/partenaires-cartes.png)
+
+*The same list as cards: internal code, accreditations, tags, and the Active / Inactive switch on each card.*
+
 ![List of partner institutions](../assets/screenshots/partenaires-liste.png)
 
 *Your partners, two of them ticked: the bottom bar holds what applies to the whole selection.*

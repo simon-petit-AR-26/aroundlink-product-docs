@@ -10,6 +10,10 @@ gets stuck.
 
 **Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
 
+![The dashboard](../assets/screenshots/tableau-de-bord.png)
+
+*The dashboard: progress by step and by phase on the left, today's figures and the places distributed on the right.*
+
 **How it works.** You switch between your **outgoing** and **incoming** students, then pick
 what to look at: a campaign with a [path](parcours.md) plugged in, the onboarding at a
 partner (**Onboarding at…**), or a welcome session on the incoming side.
