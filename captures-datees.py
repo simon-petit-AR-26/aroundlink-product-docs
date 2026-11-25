@@ -2,7 +2,7 @@
 """L'âge de chaque capture d'écran publiée — Simon, 05/11 : « il faut que tu aies la date des
 screens ». Une capture périmée montre un écran qui n'existe plus : le lecteur le cherche en vain.
 
-    ./.venv/bin/python captures-datees.py [jours]      # 60 par défaut
+    ./.venv/bin/python captures-datees.py [jours]      # 30 par défaut — règle de Simon (25/11) : plus d'un mois = à refaire
 
 La date est celle du dernier remplacement de l'image dans le dépôt. Le script informe et ne
 bloque pas la publication : refaire une capture demande l'écran, pas le code.
@@ -21,7 +21,7 @@ IMAGES = DOCS / "assets/screenshots"
 
 
 def main() -> int:
-    seuil = int(sys.argv[1]) if len(sys.argv) > 1 else 60
+    seuil = int(sys.argv[1]) if len(sys.argv) > 1 else 30
     usage: dict[str, list[str]] = {}
     for p in sorted(DOCS.rglob("*.fr.md")):
         for nom in re.findall(r"assets/screenshots/([\w.-]+\.png)", p.read_text(encoding="utf-8")):
