@@ -1,6 +1,6 @@
 # Contacts
 
-The people you work with at your partners: **Mobility ▸ Institutions ▸ Contacts**. They are
+The people you work with at your partners: **International ▸ Institutions ▸ Contacts**. They are
 the ones who receive your nominations, your date requests and your emails.
 
 ## Your contact list

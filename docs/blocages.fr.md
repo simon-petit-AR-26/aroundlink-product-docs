@@ -32,7 +32,7 @@ L'étudiant ne voit que les destinations où une place est **planifiée pour lui
 de la matrice — année, niveau, libellé de niveau, semestre. Vérifiez la matrice des places
 avant de chercher ailleurs.
 
-Restent écartés aussi : les partenaires masqués ou archivés, son propre campus, et les
+Restent écartés aussi : les partenaires masqués ou inactifs, son propre campus, et les
 partenaires dont les **filtres étudiants** ne croisent pas les siens — quand l'étudiant et
 le partenaire portent des filtres, ils doivent en partager au moins un.
 
@@ -107,7 +107,7 @@ puis réaffectez-le.
 
 Le vivier de destinations ne le retient pas : vérifiez les types d'accord, les périodes, le
 niveau, l'année scolaire, le type de mobilité et les filtres d'établissement de la campagne,
-et que l'accord est actif. Vérifiez aussi qu'il n'est pas archivé ou masqué.
+et que l'accord est actif. Vérifiez aussi qu'il n'est pas inactif ou masqué.
 
 ### « Je ne peux pas refuser cette nomination »
 

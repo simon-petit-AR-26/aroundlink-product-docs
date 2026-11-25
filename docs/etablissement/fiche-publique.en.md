@@ -91,6 +91,10 @@ looking at it.
 
 **How it works.** One switch publishes the page. The address copies with a button.
 
+**Share by email** opens your mail app with an email already written — your name, your role,
+the page's link —, with no recipient: you choose whom to send it to. **Copy the text** copies
+the same text, to paste wherever you want.
+
 !!! warning "The address never regenerates"
     That is deliberate: you must be able to leave this link everywhere — in your emails, on
     your website, in a printed PDF — without it breaking one day. If you no longer want to

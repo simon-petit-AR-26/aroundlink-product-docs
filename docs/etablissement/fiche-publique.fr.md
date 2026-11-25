@@ -92,6 +92,10 @@ qu'on la regarde.
 
 **Comment ça marche.** Un interrupteur publie la page. L'adresse se copie d'un bouton.
 
+**Share by email** ouvre votre messagerie avec un e-mail déjà rédigé — votre nom, votre
+fonction, le lien de la page —, sans destinataire : vous choisissez à qui l'envoyer.
+**Copy the text** copie le même texte, pour le coller où vous voulez.
+
 !!! warning "L'adresse ne se régénère jamais"
     C'est délibéré : vous devez pouvoir laisser ce lien partout — dans vos mails, sur votre
     site, dans un PDF imprimé — sans qu'il casse un jour. Si vous ne voulez plus être

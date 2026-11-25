@@ -11,7 +11,7 @@ reaching out to.
 
 **Who it's for.** <span class="al-audience">coordinator / RI manager</span>
 
-**How it works.** **Mobility ▸ Atlas**. Two views: **Cards** and **Map**.
+**How it works.** **International ▸ Atlas**. Two views: **Cards** and **Map**.
 
 A bar, stuck to the top of the page, holds the filters:
 
@@ -51,6 +51,17 @@ On the world map, hovering a point shows the same card, smaller.
 
 Nothing you know about your partners appears here: the page only reads what the institution
 publishes itself and the public registries. **Back to the Atlas** returns to your search.
+
+**Asking it to complete its page.** At the top of an institution's page, a **Page** gauge
+shows where it stands, on four items: contact details, semester dates, language levels,
+social links. While it is not full, **Ask** opens *Ask to complete the page*: you pick one of
+your contacts there, or someone else, and **Send**. They receive an email in your name saying
+what is missing, with a link to complete it — or to create their access if they have none.
+Afterwards, the button says who asked and when; **Remind** appears after seven days. When
+their page reaches 100%, a notification tells you.
+
+If the institution was not in your list yet, it joins it, **inactive**: your students do not
+see it until an agreement binds you.
 
 **Your own page.** At the top of the Atlas, a gauge shows where **your** public page stands,
 with a button leading to the composition screen. It counts the same items as the list of

@@ -1,6 +1,6 @@
 # Accords & distribution des places
 
-**Mobility ▸ Institutions ▸ Agreements** : tout ce que votre établissement peut proposer à ses
+**International ▸ Institutions ▸ Agreements** : tout ce que votre établissement peut proposer à ses
 étudiants, en quatre familles d'accords — **IIA** (Erasmus+), **Bilateral**, **Double Degree**
 et **Paying** (mobilité payante). Chaque accord porte ses places, réparties par année, niveau,
 période et domaine : ce sont elles que vos étudiants voient et demandent.

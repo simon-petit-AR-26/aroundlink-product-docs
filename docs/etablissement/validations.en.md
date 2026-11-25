@@ -1,4 +1,4 @@
-# Validations
+# Validation Hub
 
 Everything waiting for a decision from you, in one place: documents uploaded by your students,
 learning agreements to sign, transcripts to issue. It is the screen you open in the morning to

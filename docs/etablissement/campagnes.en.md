@@ -245,7 +245,7 @@ and accepted students, and two exports produce the all-wishes list and the final
 list.
 
 **Counter accuracy.** Destination and institution counts only include what is genuinely open
-to students: hidden or archived partners are excluded, as are destinations with no place
+to students: hidden or inactive partners are excluded, as are destinations with no place
 available. The figures shown match what the student will see.
 
 **Use case.**

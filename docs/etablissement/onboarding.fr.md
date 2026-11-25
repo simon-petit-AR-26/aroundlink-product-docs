@@ -20,7 +20,7 @@ dates, ni forcément les mêmes exigences.
 
 **Pour qui.** <span class="al-audience">gestionnaire RI / coordinateur</span>
 
-**Comment ça marche.** Sous **Onboarding**, **New session** : vous nommez la session —
+**Comment ça marche.** Sous **Incoming ▸ Mobility**, **New session** : vous nommez la session —
 « Autumn intake » — et vous choisissez le parcours qu'elle applique. Le parcours est
 obligatoire, et seuls les parcours **d'accueil** actifs sont proposés ; si vous n'en avez
 aucun, l'écran vous envoie le composer dans **Settings ▸ Workflows**.

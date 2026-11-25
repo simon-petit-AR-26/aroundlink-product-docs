@@ -58,9 +58,11 @@ Country, Region, Period, Level, Field of study, Agreement, Phase.
 
 **Comment ça marche.** Le suivi apparaît à quatre endroits, et c'est toujours le même écran :
 
-- **l'onglet Mobility d'une campagne** — tous les sortants de cette campagne. Si aucun
+- **Outgoing ▸ Mobility**, qui liste vos campagnes, puis **l'onglet Mobility d'une
+  campagne** — tous les sortants de cette campagne. Si aucun
   parcours n'est branché, l'onglet dit ce qui manque et propose de le brancher sur place ;
-- **une session d'accueil** — tous les entrants de cette session ;
+- **Incoming ▸ Mobility**, qui liste vos sessions d'accueil, puis **une session** — tous
+  les entrants de cette session ;
 - **l'onglet Mobility d'une fiche étudiant** — un bloc par mobilité : un étudiant parti deux
   fois a deux dossiers, chacun avec ses dates et son avancement ;
 - **le tableau de bord**, qui en donne le résumé par phase.
@@ -68,6 +70,34 @@ Country, Region, Period, Level, Field of study, Agreement, Phase.
 L'en-tête d'une mobilité se lit toujours de la même façon : **où**, **quoi**, **quand** — le
 partenaire avec son logo, la famille d'accord, la période. Et le fil d'Ariane descend jusqu'à
 la session ouverte.
+
+## Ce qui manque, et relancer
+
+**À quoi ça sert.** Voir d'un coup d'œil qui doit encore quoi, et le lui réclamer sans changer
+d'écran.
+
+**Comment ça marche.** Sur le kanban, chaque carte liste les **documents encore dus** dans sa
+phase — non remis ou refusés —, avec une étiquette **Overdue** quand l'échéance de l'étape
+est passée. Une étape validée ne doit plus rien, quoi qu'il ait été déposé. Dans la vue
+tableau, la colonne **Reminder** donne le nombre de documents dus.
+
+On relance de trois façons : la cloche d'une carte (au survol), la cloche d'une colonne pour
+tous ses étudiants, ou celle de la colonne **Reminder**. La fenêtre ne propose que les
+documents encore dus, ceux de la phase déjà cochés : décochez ce que vous ne voulez pas
+demander, puis **Send the reminder**.
+
+!!! warning "Une relance récente ne bloque rien"
+    Si certains étudiants ont déjà été relancés ces deux derniers jours, la fenêtre le
+    signale avant l'envoi — mais ils recevront quand même celle-ci.
+
+Les relances partent aussi vers vos **entrants** — ceux de vos sessions d'accueil, jamais
+ceux d'un autre établissement.
+
+**Cas d'usage.**
+> Fin septembre, la colonne « During the mobility » montre six étudiants sans attestation
+> d'arrivée. Un clic sur la cloche de la colonne, la pièce est déjà cochée : les six sont
+> relancés.
+
 
 ## La frise de la mobilité
 

@@ -1,4 +1,4 @@
-# Validations
+# Validation Hub
 
 Tout ce qui attend une décision de votre part, au même endroit : les pièces déposées par vos
 étudiants, les contrats pédagogiques à signer, les relevés à émettre. C'est l'écran qu'on ouvre le

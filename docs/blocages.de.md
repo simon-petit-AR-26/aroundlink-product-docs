@@ -33,7 +33,7 @@ Die Person sieht nur Ziele, für die ein Platz **für sie eingeplant** ist: ihre
 Matrix — Jahr, Stufe, Studiengang, Semester. Prüfen Sie die Platzmatrix, bevor Sie anderswo
 suchen.
 
-Ebenfalls ausgenommen sind: ausgeblendete oder archivierte Partner, ihr eigener Campus und
+Ebenfalls ausgenommen sind: ausgeblendete oder inaktive Partner, ihr eigener Campus und
 Partner, deren **Studierendenfilter** nicht zu ihren passen — tragen sowohl die Person als
 auch der Partner Filter, müssen sie mindestens einen gemeinsam haben.
 
@@ -111,7 +111,7 @@ anzufangen, ziehen Sie die Nominierung zurück und teilen Sie die Person dann er
 
 Der Zielkreis erfasst ihn nicht: prüfen Sie Abkommensarten, Zeiträume, Stufe, Studienjahr,
 Mobilitätsart und Hochschulfilter der Kampagne sowie, ob das Abkommen aktiv ist. Prüfen Sie
-auch, ob er archiviert oder ausgeblendet ist.
+auch, ob er inaktiv oder ausgeblendet ist.
 
 ### „Ich kann diese Nominierung nicht ablehnen"
 

@@ -49,7 +49,7 @@ group.
 - **Outgoing** — open a campaign, **Edit**, settings tab, **Mobility workflow** field. Every
   student accepted by a partner then receives the path automatically. The field is optional:
   you can plug it in later from the campaign's **Mobility** tab.
-- **Incoming** — under **Onboarding**, create a **welcome session**, name it, pick its path.
+- **Incoming** — under **Incoming ▸ Mobility**, create a **welcome session**, name it, pick its path.
   When you accept a nomination, you choose which session the student joins.
 
 The same path can serve several campaigns or sessions. The **Used by** column in the list

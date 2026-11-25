@@ -30,7 +30,7 @@ missing for a destination — a language score, a document.
 The student only sees destinations where a place is **planned for them**: their row of the
 matrix — year, level, level label, term. Check the place matrix before looking elsewhere.
 
-Also left out: hidden or archived partners, their own campus, and partners whose **student
+Also left out: hidden or inactive partners, their own campus, and partners whose **student
 filters** do not meet theirs — when both the student and the partner carry filters, they
 must share at least one.
 
@@ -104,7 +104,7 @@ place them again.
 
 The destination pool does not retain it: check the campaign's agreement types, periods,
 level, school year, mobility type and institution filters, and that the agreement is
-active. Check too that it is not archived or hidden.
+active. Check too that it is not inactive or hidden.
 
 ### "I cannot refuse this nomination"
 

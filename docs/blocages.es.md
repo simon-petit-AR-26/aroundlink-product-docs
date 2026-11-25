@@ -31,7 +31,7 @@ El estudiante solo ve los destinos en los que hay una plaza **prevista para él*
 la matriz — año, nivel, denominación de nivel, semestre. Compruebe la matriz de plazas antes de
 buscar en otra parte.
 
-También quedan excluidos: los socios ocultos o archivados, su propio campus, y los socios cuyos
+También quedan excluidos: los socios ocultos o inactivos, su propio campus, y los socios cuyos
 **filtros de estudiantes** no coinciden con los suyos — cuando tanto el estudiante como el
 socio tienen filtros, deben compartir al menos uno.
 
@@ -106,7 +106,7 @@ nominación y vuelva a asignarlo.
 
 El grupo de destinos no lo retiene: compruebe los tipos de acuerdo, los periodos, el nivel, el
 año académico, el tipo de movilidad y los filtros de institución de la campaña, y que el
-acuerdo esté activo. Compruebe también que no esté archivado ni oculto.
+acuerdo esté activo. Compruebe también que no esté inactivo ni oculto.
 
 ### «No puedo rechazar esta nominación»
 

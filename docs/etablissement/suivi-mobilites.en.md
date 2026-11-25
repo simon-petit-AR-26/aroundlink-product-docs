@@ -57,9 +57,11 @@ Period, Level, Field of study, Agreement, Phase.
 
 **How it works.** Tracking appears in four places, and it is always the same screen:
 
-- **a campaign's Mobility tab** — every outgoing student of that campaign. If no path is
+- **Outgoing ▸ Mobility**, which lists your campaigns, then **a campaign's Mobility tab** —
+  every outgoing student of that campaign. If no path is
   plugged in, the tab says what is missing and offers to plug it in on the spot;
-- **a welcome session** — every incoming student of that session;
+- **Incoming ▸ Mobility**, which lists your welcome sessions, then **a session** — every
+  incoming student of that session;
 - **a student's Mobility tab** — one block per mobility: a student who left twice has two
   files, each with its dates and its progress;
 - **the dashboard**, which gives the summary by phase.
@@ -67,6 +69,34 @@ Period, Level, Field of study, Agreement, Phase.
 A mobility header always reads the same way: **where**, **what**, **when** — the partner with
 its logo, the agreement family, the period. And the breadcrumb goes all the way down to the
 open session.
+
+## What is missing, and chasing it
+
+**What it's for.** Seeing at a glance who still owes what, and asking for it without leaving
+the screen.
+
+**How it works.** On the kanban, each card lists the **documents still owed** in its phase —
+not handed in or refused —, with an **Overdue** tag once the step's due date has passed. A
+validated step owes nothing, whatever was uploaded. In table view, the **Reminder** column
+gives the number of documents owed.
+
+You chase in three ways: a card's bell (on hover), a column's bell for all its students, or
+the bell in the **Reminder** column. The window only offers documents still owed, those of
+the phase already ticked: untick what you do not want to ask for, then **Send the
+reminder**.
+
+!!! warning "A recent reminder blocks nothing"
+    If some students were already reminded in the last two days, the window says so before
+    sending — but they will receive this one too.
+
+Reminders also go to your **incoming** students — those of your welcome sessions, never
+another institution's.
+
+**Use case.**
+> At the end of September, the "During the mobility" column shows six students without an
+> arrival certificate. One click on the column's bell, the document is already ticked: all
+> six are reminded.
+
 
 ## The mobility timeline
 

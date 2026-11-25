@@ -1,6 +1,6 @@
 # Institutions
 
-**Mobility ▸ Institutions** gathers the institutions your office works with. The screen has
+**International ▸ Institutions** gathers the institutions your office works with. The screen has
 three tabs, and this documentation follows them:
 
 | Tab | What is there |
@@ -27,10 +27,15 @@ The toolbar, to the right of the search:
 - **+** creates a partner;
 - the export takes what you see — your filters, your columns, your selection;
 - the **columns** chooser, and saved **views**, shared with your team;
-- the "…" menu opens archived partners and the trash.
+- the "…" menu opens the **Trash**.
 
-Ticking rows brings up a bulk-action bar: **Tags**, **Student filters**, **Hide for your
-students**, **Archive**, **Delete**.
+Three columns say where each partner stands: **Agreement** (at least one running agreement,
+or not), **Status** (**Active** / **Inactive**, with its switch) and **Student visibility**
+(**Visible** / **Hidden**). The table's footer counts them: how many partners in your base,
+how many active, how many visible to your students.
+
+Ticking rows brings up a bulk-action bar: **Tags**, **Student filters**, **Activate**,
+**Deactivate**, **Show to your students**, **Hide for your students**, **Delete**.
 
 ![List of partner institutions](../assets/screenshots/partenaires-liste.png)
 
@@ -431,30 +436,44 @@ Your own public page can be previewed the same way from **My Institution**.
 > requirements are shown.
 
 
-## Hide, archive or merge a partner
+## Activate, deactivate, hide or merge a partner
 
-**What it's for.** Take out of circulation a partner you no longer work with, or bring
-together two records that describe the same institution, without losing past mobilities.
+**What it's for.** Setting aside a partner you no longer work with, hiding it from your
+students, or merging two records that designate the same institution — without losing the
+history of past mobilities.
 
-**Who it's for.** <span class="al-audience">IRO manager / coordinator</span>
+**Who it's for.** <span class="al-audience">RI manager / coordinator</span>
 
-**How it works.** Four actions, from the record's **Partner actions** menu, from lightest
-to most final:
+**Active or inactive.** Each partner has a status:
+
+- **Active** — a partner you work with;
+- **Inactive** — it stays in your list, you open it, edit it and write to it as before, but
+  **your students no longer see it**: it leaves **Find my Exchange**, campaigns and wishes.
+  Its agreements stay on record and read *Inactive (partner inactive)*; nothing is deleted.
+
+The status partly sets itself:
+
+- an institution added **without an agreement** arrives **Inactive** — through creation,
+  import or the Atlas;
+- **creating an agreement** with it makes it **Active**, and a notification tells you.
+
+An agreement that ends does not deactivate the partner: that is your call. Deactivating a
+partner that still has running agreements or students on mobility shows a warning
+(**Deactivate anyway**), without blocking.
+
+**The actions**, from the record's **Partner actions** menu or in bulk on the list:
 
 | Action | What it does |
 |---|---|
-| **Hide from students** | the partner disappears from **Find my Exchange** and can no longer be added to a campaign or to a student's wishes; it stays fully active on the mobility side. **Make visible** undoes it |
-| **Archive** | it leaves your screens, menus, the students' search, campaigns and wishes — with its agreements. Past mobilities stay available; **Restore** brings it back |
-| **Merge duplicate** | its contacts, internal code and tags move to the record you keep. **Agreements and mobilities are not moved**: the duplicate is deleted if it has none, archived otherwise, and the message says which |
-| **Delete** | it goes to the **Trash** on the Institutions page, where it can be restored. A partner with agreements cannot be deleted: the screen offers to archive it instead |
+| **Hide from students** | the partner leaves **Find my Exchange** and wishes, but stays active. **Make visible** undoes it. No effect on an inactive partner, which your students never see anyway |
+| **Deactivate** | it becomes **Inactive**: see above. An inactive partner carries an **Activate** button next to the menu |
+| **Merge duplicate** | its contacts, internal code and tags move to the record you keep. **Agreements and mobilities are not moved**: the duplicate is deleted if it has none, deactivated otherwise, and the message says so |
+| **Delete** | for a partner added by mistake: only a partner **with no agreement and no mobility** can be deleted. It goes to the **Trash** of the Institutions page, where it can be restored. Otherwise, the screen offers **Deactivate instead** |
 
-Archiving a partner with running agreements or students on mobility shows a warning without
-blocking: running mobilities carry on. Your own campus can be neither hidden, archived,
-merged nor deleted.
+Your students' favourites follow the same rule: an inactive or hidden partner leaves their
+list, and comes back if you make it visible again.
 
-On the **Institutions** list, the same actions exist in bulk — **Hide for your students**,
-**Archive**, **Delete** — and the "…" menu opens **View archived institutions** and the
-**Trash**.
+Your own campus can be neither hidden, deactivated, merged nor deleted.
 
 **Use case.**
 > A partner was created twice. The coordinator opens the right record, chooses **Merge
